@@ -1,0 +1,37 @@
+.noDisp {
+  display: none;
+}
+.shield {
+  position: fixed;
+  top: 0; bottom:0; left: 0; right: 0;
+  z-index: 2022; /*need to be higher than other indices*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-name: shieldFadeIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.loadingIcon {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.loadingText {
+  position: absolute;
+  bottom: 4px;
+  left: 26px;
+  font-size: 12px;
+  color: white;
+  user-select: none;
+}
+@keyframes shieldFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
