@@ -1,6 +1,6 @@
 import sgMail from "@sendgrid/mail"
 import { DeDuplicate } from "./H/Array.js"
-import { bConfig } from "../../../../bConfig.js"
+import { bConfig } from "../../../../../bConfig.js"
 
 export class SendGrid {
   senderEmail

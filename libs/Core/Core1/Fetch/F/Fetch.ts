@@ -1,5 +1,5 @@
 import { Alert, AlertSysError } from "./Alert"
-import { bConfig } from "../../../../bConfig"
+import { bConfig } from "../../../../../bConfig"
 
 function Domain() {
   if(process.env.NODE_ENV === "development") {
