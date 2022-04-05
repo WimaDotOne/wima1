@@ -1,0 +1,11 @@
+@use "../../CSS/color.module";
+@use "../../CSS/dimension.module";
+
+.div0 {
+  display: grid;
+  grid-template-columns: 15px auto;
+  grid-column-gap: 10px;
+  color: color.$errorRed;
+  align-items: center;
+  font-size: dimension.$fontSize14;
+}

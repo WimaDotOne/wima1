@@ -1,0 +1,48 @@
+.pagination {
+  display: inline-flex;
+  background-color: #f7f7f7;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.paddle {
+  width: 50px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.inputWrap {
+  height: 45px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input:focus {
+  box-shadow: 0 0 0 3px #b8d9ef;
+}
+.input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width:  45px;
+  height: 25px;
+  font-size: 17px;
+  text-align: center;
+} 
+
+.totalPage {
+  height: 45px;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+.totalPageInner {
+  line-height: 18px;
+  font-size: 18px;
+  padding-left: 5px;
+  position: relative;
+  top: -1px;
+}

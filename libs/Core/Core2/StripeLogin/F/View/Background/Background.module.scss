@@ -1,0 +1,86 @@
+@use "../../CSS/dimension.module";
+
+$grayTop: -300px;
+$grayHeight: 200px;
+$grayTopL: -600px;
+$grayHeightL: 350px;
+$stripeHeight: 40px;
+$overLapHeight: 10px;
+$shiftUp: 100px;
+
+.div0 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.skewDiv {
+  transform: skewY(-12deg);
+}
+
+.grayDiv {
+  position: absolute;
+  top: $grayTop;
+  height: calc(-1*$grayTop + $grayHeight);
+  left: 0;
+  right: 0;
+  background-color: #f7fafc;
+}
+
+.stripeLeft1 {
+  position: absolute;
+  top: $grayHeight;
+  height: $stripeHeight;
+  width: 40%;
+  background-color: #7a73ff;
+}
+
+.stripeRight1, .stripeRight1OverLap {
+  position: absolute;
+  right: 5%;
+  width: 15%;
+  min-width: 200px;
+}
+.stripeRight1 {
+  top: $grayHeight - $shiftUp - $stripeHeight + $overLapHeight;
+  height: $stripeHeight;
+  background-color: #80e9ff;
+}
+.stripeRight1OverLap {
+  top: $grayHeight - $shiftUp;
+  height: $overLapHeight;
+  background-color: #0048e5;
+}
+.stripeRight2 {
+  position: absolute;
+  top: $grayHeight - $shiftUp;
+  right: 0;
+  height: $stripeHeight;
+  width: 40%;
+  background-color: #7a73ff;
+  min-width: 300px;
+}
+
+
+@media screen and (min-width: dimension.$maxPhoneHeight) {
+  .grayDiv {
+    top: $grayTopL;
+    height: -$grayTopL + $grayHeightL;
+  }
+
+  .stripeLeft1 {
+    top: $grayHeightL;
+  }
+  .stripeRight1 {
+    top: $grayHeightL - $shiftUp - $stripeHeight + $overLapHeight;
+  }
+  .stripeRight1OverLap {
+    top: $grayHeightL - $shiftUp;
+  }
+  .stripeRight2 {
+    top: $grayHeightL - $shiftUp;
+  }
+}

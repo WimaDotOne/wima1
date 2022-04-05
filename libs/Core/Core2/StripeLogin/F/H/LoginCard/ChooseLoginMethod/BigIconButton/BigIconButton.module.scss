@@ -1,0 +1,23 @@
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background: white;
+  border: 3px dashed #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon:hover {
+  border-style: solid;
+}
+
+.text {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  color: #697386;
+  user-select: none;
+  cursor: default;
+}

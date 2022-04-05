@@ -1,0 +1,18 @@
+@use "../../CSS/color.module";
+
+.button {
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: color.$buttonBlue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button.disable {
+  opacity: 0.3;
+  cursor: default;
+}

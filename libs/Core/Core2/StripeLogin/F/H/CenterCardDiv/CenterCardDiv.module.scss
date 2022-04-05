@@ -1,0 +1,58 @@
+@use "../../CSS/dimension.module";
+
+.div0 {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  padding: 28px 10px;
+}
+
+.centerDiv {
+  width: 100%;
+  max-width: 380px;
+}
+
+.brandDiv {
+  padding-left: 20px;
+  padding-bottom: 24px;
+}
+
+.brand {
+  color: rgb(42, 47, 69);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  user-select: none;
+  cursor: default;
+}
+
+.card {
+  padding: 32px 20px;
+  background-color: white;
+  box-shadow:  1px 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.footer {
+  padding-left: 20px;
+  padding-top: 100px;
+  display: flex;
+}
+.footLink {
+  margin-right: 25px;
+  font-size: 15px;
+  color: rgb(105, 115, 134);
+  user-select: none;
+  cursor: pointer;
+}
+.footLink:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: dimension.$maxPhoneHeight) {
+  .centerDiv {
+    max-width: 450px;
+  }
+}

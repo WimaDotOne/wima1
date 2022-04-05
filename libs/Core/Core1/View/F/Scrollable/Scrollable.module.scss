@@ -1,0 +1,7 @@
+.scrollDiv {
+  height: 100%; //let parent design height
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #aaa #f1f1f1;
+  scrollbar-width: thin;
+}

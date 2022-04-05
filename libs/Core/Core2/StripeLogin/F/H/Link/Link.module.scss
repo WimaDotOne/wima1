@@ -1,0 +1,13 @@
+@use "../../CSS/color.module";
+
+.link {
+  cursor: pointer;
+  user-select: none;
+  color: color.$linkBlue;
+}
+
+.link:hover {
+  color: color.$textDark;
+}
+
+
