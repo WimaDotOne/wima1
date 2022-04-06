@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { WimaHome } from '../apps/WimaHome/F/WimaHome/WimaHome'
 
 const Home: NextPage = () => {
   return (<>
@@ -8,7 +9,8 @@ const Home: NextPage = () => {
       <meta name="description" content="Wima" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    Wima
+    
+    <WimaHome />
   </>)
 }
 

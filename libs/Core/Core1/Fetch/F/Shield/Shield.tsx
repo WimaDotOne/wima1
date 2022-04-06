@@ -40,7 +40,7 @@ export function ShieldProvider({children}: IShieldProviderProp) {
       {children}
       <div className={cl.noDisp} ref={loadingRef}>
         <div className={cl.shield} >
-          <div className={cl.loadingIcon} style={{backgroundImage:'url(/Core/img/loading.gif)'}}>
+          <div className={cl.loadingIcon} style={{backgroundImage:'url(/loading.gif)'}}>
             <div className={cl.loadingText}>Waiting...</div>
           </div>
         </div>
