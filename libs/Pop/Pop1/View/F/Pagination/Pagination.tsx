@@ -1,5 +1,4 @@
-import { SvgIcon } from "../../../../Svg/SvgIcon"
-import { color } from "../../CSS/Color"
+import { SvgIcon } from "../../../../../Core/Core2/Svg/SvgIcon"
 import cl from "./Pagination.module.scss"
 
 interface IPaginationProp {
@@ -41,11 +40,12 @@ export function Pagination({
     setPage(num)
   }
 
+  const arrowBlue="#2e69ff"
   return(<>
     <div className={cl.pagination}>
       <div className={cl.paddle} onClick={prevPage}>
         <SvgIcon name="fatarrow.left" width={20}
-          color={color.paginationArrowBlue} />
+          color={arrowBlue} />
       </div>
       <div className={cl.inputWrap}>
         <input type="text" value={page || ""}
@@ -61,7 +61,7 @@ export function Pagination({
      
       <div className={cl.paddle} onClick={nextPage}>
         <SvgIcon name="fatarrow.right" width={20} 
-          color={color.paginationArrowBlue} />
+          color={arrowBlue} />
       </div>
     
     </div>
