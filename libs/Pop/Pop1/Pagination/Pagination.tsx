@@ -1,4 +1,4 @@
-import { SvgIcon } from "../../../../../Core/Core2/Svg/SvgIcon"
+import { SvgIcon } from "../../../Core/Core2/Svg/SvgIcon"
 import cl from "./Pagination.module.scss"
 
 interface IPaginationProp {
