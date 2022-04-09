@@ -1,0 +1,24 @@
+@use "../../CSS/dimension.module";
+
+.viewDiv {
+  width: 100%; //100vw could cause horizontal scroll bar
+  box-sizing: border-box;
+  padding-left: 0;
+  transition: padding-left 0.2s;
+}
+.viewDivInner {
+  position: relative;
+  min-height: calc(100vh - dimension.$windowBottomBarHeight);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bottomBarFill {
+  height: dimension.$windowBottomBarHeight;
+}
+
+@media screen and (min-width: dimension.$maxPhoneHeight) {
+  .viewDiv.open {
+    padding-left: dimension.$windowLeftBarWidth;
+  }
+}

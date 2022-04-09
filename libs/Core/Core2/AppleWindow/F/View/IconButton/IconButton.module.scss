@@ -1,0 +1,20 @@
+@use "../../CSS/dimension.module";
+
+.wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap.enabled:hover {
+  background: #eae6ec;
+}
+
+@media only screen and (max-width: dimension.$maxPhoneHeight){
+  .wrap.enabled:hover {
+    background: none;
+  }
+}

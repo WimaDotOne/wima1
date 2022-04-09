@@ -1,0 +1,60 @@
+@use "../../CSS/color.module";
+@use "../../CSS/dimension.module";
+
+.leftBar, .bottomBar {
+  position: fixed;
+  left: 0;
+  width: dimension.$windowLeftBarWidth;
+  max-width: 0;
+  transition: max-width 0.2s;
+  overflow: hidden;
+  user-select: none;
+  box-sizing: border-box;
+  border-right: 0.5px solid color.$barBorderGray;
+}
+
+.leftBar.open, .bottomBar.open {
+  max-width: dimension.$windowLeftBarWidth;
+}
+
+.leftBar {
+  top: 0;
+  height: 100vh;  
+  background-color: color.$leftBarGray;
+  z-index: dimension.$windowLeftBarZIndex;
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .leftBar, .bottomBar {
+    background-color: color.$leftBarTransparentGray;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.menuDiv {
+  height: 100vh;
+}
+
+.bottomBarSpaceFill {
+  height: dimension.$windowBottomBarHeight;
+}
+
+.bottomBar {
+  bottom: 0;
+  z-index: dimension.$windowLeftBottomBarZIndex;
+  height: dimension.$windowBottomBarHeight;
+  display: flex;
+  align-items: center;
+  background-color: color.$leftBarGray;
+  border-top: 0.5px solid color.$barBorderGray;
+}
+
+.brand {
+  padding-left: dimension.$windowBottomBarHeight + 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  color: color.$theme;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
