@@ -5,8 +5,17 @@ import {
   LogoBar,
   Paragraph, SubParagraph,
   SectionHeader, SubSectionHeader,
-  TermHeader
+  TermHeader,
 } from "./StripeLogin/fLogin"
+
+import {
+  color,
+  GroupModel,
+  ItemModel,
+  MenuModel,
+  BottomBarDiv,
+  AppleWindow
+} from "./AppleWindow/fAppleWindow"
 
 export {
   Login,
@@ -15,5 +24,11 @@ export {
   LogoBar,
   Paragraph, SubParagraph,
   SectionHeader, SubSectionHeader,
-  TermHeader
+  TermHeader,
+
+  GroupModel,
+  ItemModel,
+  MenuModel,
+  BottomBarDiv,
+  AppleWindow
 }
