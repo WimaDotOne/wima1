@@ -47,7 +47,7 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
   myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies"))
 
   const publicGroup = new GroupModel("Public", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.Landing, "Welcome")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.Landing, "About")) 
 
   const menu = new MenuModel(viewId, MovicColor.purple)
   menu.AddGroup(myGroup)
