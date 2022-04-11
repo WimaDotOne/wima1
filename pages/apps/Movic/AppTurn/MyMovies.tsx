@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { MovicApp } from '../../apps/Movic/F/MovicApp/MovicApp'
+import { MyMovies } from '../../../../apps/Movic/F/MyMovies/MyMovies'
 
 const Movic: NextPage = () => {
   return (<>
@@ -10,7 +10,7 @@ const Movic: NextPage = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     
-    <MovicApp />
+    <MyMovies />
   </>)
 }
 

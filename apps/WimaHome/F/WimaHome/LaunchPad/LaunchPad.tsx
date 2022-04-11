@@ -13,7 +13,7 @@ export function LaunchPad({
   const router = useRouter()
 
   function goToApp(route: string) {
-    router.push(`/${route}`)
+    router.push(`/apps/${route}`)
   }
 
   return(<>

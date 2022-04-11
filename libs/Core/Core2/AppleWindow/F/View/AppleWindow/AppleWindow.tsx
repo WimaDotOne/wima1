@@ -6,17 +6,17 @@ import { ViewDiv } from "../../H/ViewDiv/ViewDiv"
 import { MenuModel } from "../../Model/Menu"
 
 interface IAppleWindowProp {
-  isLeftBarOpen: boolean
-  setIsLeftBarOpen: Dispatch<SetStateAction<boolean>>
-  viewId: string
-  setViewId: (viewId: string) => void
-  menu: MenuModel
+  isLeftBarOpen?: boolean
+  setIsLeftBarOpen?: Dispatch<SetStateAction<boolean>>
+  viewId?: string
+  goToView: (viewId: string)=>void
+  menu?: MenuModel
   children: ReactNode
   brand?: string
 }
 export function AppleWindow({
   isLeftBarOpen, setIsLeftBarOpen,
-  viewId, setViewId,
+  viewId, goToView,
   menu,
   children,
   brand
@@ -27,7 +27,7 @@ export function AppleWindow({
       {children}
     </ViewDiv>
     <LeftBarDiv open={isLeftBarOpen} brand={brand}>
-      <Menu menu={menu} selectedItemId={viewId} setSelectedItemId={setViewId}/>
+      <Menu menu={menu} selectedItemId={viewId} onSelectItem={goToView}/>
     </LeftBarDiv>
     <Hamburger setOpen={setIsLeftBarOpen} />
   </>)

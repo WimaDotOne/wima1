@@ -7,13 +7,13 @@ import { Title } from "../Title/Title"
 interface IGroupProp {
   group: GroupModel
   iconColor?: string
-  selectedItemId: string
-  setSelectedItemId: (selectedItemId: string) => void
+  selectedItemId?: string
+  onSelectItem: (itemId: string)=>void
 }
 export function Group({
   group,
   iconColor,
-  selectedItemId, setSelectedItemId
+  selectedItemId, onSelectItem
 }: IGroupProp) {
 
   const [collasped, setCollapsed] = useState<boolean>(group.defaultCollapsed)
@@ -25,8 +25,8 @@ export function Group({
     {
       group.items.map((item, i)=>
         <Button key={item.id} text={item.text} iconName={item.iconName} iconColor={iconColor}
-          onClick={()=>{setSelectedItemId(item.id)}}
-          selected={item.id == selectedItemId}
+          onClick={()=>{onSelectItem(item.id)}}
+          selected={item.id === selectedItemId}
         />
       )
     }

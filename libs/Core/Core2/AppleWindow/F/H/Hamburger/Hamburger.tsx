@@ -3,14 +3,16 @@ import { IconButton } from "../../View/IconButton/IconButton"
 import cl from "./Hamburger.module.scss"
 
 interface IHamburgerProp {
-  setOpen: Dispatch<SetStateAction<boolean>>
+  setOpen?: Dispatch<SetStateAction<boolean>>
 }
 export function Hamburger({
   setOpen
 }: IHamburgerProp) {
 
   function toggle() {
-   setOpen((open: any)=>!open)
+    if(setOpen) {
+      setOpen((open: any)=>!open)
+    }
   }
 
   return(<>

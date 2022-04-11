@@ -2,13 +2,13 @@ import { MenuModel } from "../../Model/Menu"
 import { Group } from "./Group/Group"
 
 interface IMenuProp {
-  menu: MenuModel
-  selectedItemId: string
-  setSelectedItemId: (selectedItemId: string) => void
+  menu?: MenuModel
+  selectedItemId?: string
+  onSelectItem: (itemId: string) => void
 }
 export function Menu({
   menu,
-  selectedItemId, setSelectedItemId
+  selectedItemId, onSelectItem
 }: IMenuProp) {
   
   if(!menu || !menu.groups) return null
@@ -17,7 +17,7 @@ export function Menu({
   {
     menu.groups.map((group, i)=>
       <Group key={i} group={group} iconColor={menu.iconColor} 
-        selectedItemId={selectedItemId} setSelectedItemId={setSelectedItemId}
+        selectedItemId={selectedItemId} onSelectItem={onSelectItem}
       />
     )
   }
