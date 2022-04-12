@@ -8,6 +8,10 @@ export function AppleWindowDemo() {
   const [isLeftBarOpen, setIsLeftBarOpen] = useState<boolean>(false)
   const menu = AppleNewsMenu(viewId)
 
+  function goToView(viewId: string) {
+    setViewId(viewId)
+  }
+
   return(<>
     <Head>
       <title>Apple Window</title>
@@ -16,7 +20,7 @@ export function AppleWindowDemo() {
     </Head>
     <AppleWindow menu={menu} brand="Wima" 
       isLeftBarOpen={isLeftBarOpen} setIsLeftBarOpen={setIsLeftBarOpen}
-      viewId={viewId} setViewId={setViewId}>
+      viewId={viewId} goToView={goToView}>
       <Landing />
     </AppleWindow>
     <BottomBarDiv isLeftBarOpen={isLeftBarOpen}>
