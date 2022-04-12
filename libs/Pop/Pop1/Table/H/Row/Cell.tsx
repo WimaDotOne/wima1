@@ -17,10 +17,11 @@ export function Cell({
     width: width+"px"
   }
   const clHead = isHead ? cl.head : ""
+
   return(<>
-    <div className={ClassNames([cl.cell, clHead])} style={cellStyle}>
-      <div className={ClassNames([cl.cellInner, clHead])}>
-        {text}
+    <div className={cl.cellWrap} style={cellStyle}>
+      <div className={ClassNames([cl.cell, clHead])}>
+          {text}
       </div>
     </div>
   </>)

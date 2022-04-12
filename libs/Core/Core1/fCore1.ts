@@ -9,7 +9,26 @@ import { Post, Post2, Get, Get2 } from "./Fetch/F/Fetch"
 import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
+import {
+  Login,
+  LoginConfig,
+  Contact,
+  LogoBar,
+  Paragraph, SubParagraph,
+  SectionHeader, SubSectionHeader,
+  TermHeader,
+} from "../Core1/StripeLogin/fLogin"
+
 export {
+
+  Login,
+  LoginConfig,
+  Contact,
+  LogoBar,
+  Paragraph, SubParagraph,
+  SectionHeader, SubSectionHeader,
+  TermHeader,
+
   useShield,
   ShieldProvider,
 

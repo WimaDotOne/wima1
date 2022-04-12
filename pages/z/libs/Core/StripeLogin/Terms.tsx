@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Terms } from '../../../../../libs/Core/Core2/StripeLogin/Demo/Terms'
+import { Terms } from '../../../../../libs/Core/Core1/StripeLogin/Demo/Terms'
 
 export default function DemoPage() {
 

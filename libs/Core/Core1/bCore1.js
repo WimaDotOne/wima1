@@ -4,6 +4,8 @@ import { HtmlEncode } from "./Email/B/HtmlEncode.js"
 import { ConnectDb } from "./StartServer/B/Mongo.js"
 import { FilePath } from "./StartServer/B/FilePath.js"
 import { DevCors } from "./StartServer/B/DevCors.js" 
+import { LoginRouter } from "./StripeLogin/bLogin.js"
+import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytics.js"
 
 export {
   IsEmail,
@@ -11,5 +13,8 @@ export {
   HtmlEncode,
   ConnectDb,
   FilePath,
-  DevCors
+  DevCors,
+  LoginRouter,
+  MonitorDailyPasscodeSend,
+  AnalyticsRouter
 }

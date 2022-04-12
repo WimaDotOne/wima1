@@ -1,4 +1,4 @@
-import { StripeLoginDemo } from '../../../../../libs/Core/Core2/StripeLogin/Demo/StripeLoginDemo'
+import { StripeLoginDemo } from '../../../../../libs/Core/Core1/StripeLogin/Demo/StripeLoginDemo'
 
 export default function DemoPage() {
 

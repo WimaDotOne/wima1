@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Privacy } from '../../../../../libs/Core/Core2/StripeLogin/Demo/Privacy'
+import { Privacy } from '../../../../../libs/Core/Core1/StripeLogin/Demo/Privacy'
 
 export default function DemoPage() {
 

@@ -1,11 +1,11 @@
+.cellWrap {
+  padding: 2px 0;
+}
 .cell {
   overflow: hidden;
-  padding: 2px 4px;
+  padding: 3px 4px;
   font-size: 12px;
 }
-.cellInner {
-  padding: 3px 0;
-}
-.cellInner.head {
+.cell.head {
   border-right: 1px solid #ddd;
 }
