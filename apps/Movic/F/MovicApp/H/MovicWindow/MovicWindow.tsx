@@ -1,9 +1,9 @@
 import { useRouter } from "next/router"
 import { ReactNode, useState } from "react"
-import { useAppleWindow } from "../../../../../libs/Core/Core2/AppleWindow/fAppleWindow"
+import { useAppleWindow } from "../../../../../../libs/Core/Core2/AppleWindow/fAppleWindow"
 import { AppleWindow, GroupModel, ItemModel, MenuModel 
-} from "../../../../../libs/Core/Core2/fCore2"
-import { MovicColor } from "../../CSS/MovicColor"
+} from "../../../../../../libs/Core/Core2/fCore2"
+import { MovicColor } from "../../../CSS/MovicColor"
 
 interface IMovicWindowProp {
   children: ReactNode
@@ -38,7 +38,7 @@ export function MovicWindow({
 
 export const AppTurn = {
   MyMovies: "MyMovies",
-  Landing: "Landing"
+  About: "About"
 }
 
 function MovicMenu(viewId?: string): MenuModel | undefined {
@@ -47,7 +47,7 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
   myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies"))
 
   const publicGroup = new GroupModel("Public", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.Landing, "About")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.About, "About")) 
 
   const menu = new MenuModel(viewId, MovicColor.purple)
   menu.AddGroup(myGroup)

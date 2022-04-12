@@ -1,6 +1,6 @@
-import { Table } from "../../../../libs/Pop/Pop1/fPop1"
-import { TableModel } from "../../../../libs/Pop/Pop1/Table/Model/TableModel"
-import { MovicWindow } from "../MovicApp/H/MovicWindow"
+import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
+import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
+import { MovicWindow } from "../../H/MovicWindow/MovicWindow"
 import cl from "./MyMovies.module.scss"
 
 export function MyMovies() {

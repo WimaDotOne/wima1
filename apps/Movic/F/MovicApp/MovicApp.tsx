@@ -1,4 +1,4 @@
-import { MovicWindow } from "./H/MovicWindow"
+import { MovicWindow } from "./H/MovicWindow/MovicWindow"
 
 export function MovicApp() {
 
