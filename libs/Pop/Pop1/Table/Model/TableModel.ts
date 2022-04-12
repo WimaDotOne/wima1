@@ -1,12 +1,23 @@
 
 export interface IColumnInfo {
   title: string
+  width: number
 }
 export interface IRecord {
-  text: string
+  attributes: Array<IAttribute>
 }
 
-export class MTable {
+export interface IAttribute {
+  type: string,
+  value: string
+}
+
+export const AttributeType = {
+  text: "text",
+  icon: "icon"
+}
+
+export class TableModel {
   schema: Array<IColumnInfo>
   data: Array<IRecord>
 
@@ -15,3 +26,4 @@ export class MTable {
     this.data = data
   }
 }
+

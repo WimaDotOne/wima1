@@ -1,0 +1,11 @@
+.cell {
+  overflow: hidden;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+.cellInner {
+  padding: 3px 0;
+}
+.cellInner.head {
+  border-right: 1px solid #ddd;
+}
