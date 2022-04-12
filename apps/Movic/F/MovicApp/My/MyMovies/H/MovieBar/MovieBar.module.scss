@@ -1,0 +1,15 @@
+
+.movie {
+  display: flex;
+  align-items: center;
+}
+.movieImageDiv {
+  padding: 10px;
+}
+.movieImage {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

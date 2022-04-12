@@ -11,14 +11,16 @@ const Movic: NextPage = () => {
   const [landingViewId, setLandingViewId] = useState<string>(AppTurn.About)
   const win = useAppleWindow()
 
-  function land() {
 
-    if(win) {
-      win?.setViewId(landingViewId)
-    }
-  }
 
   useEffect(()=>{
+    function land() {
+
+      if(win) {
+        win?.setViewId(landingViewId)
+      }
+    }
+    
     land()
   },[])
 

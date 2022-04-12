@@ -1,6 +1,7 @@
 import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
 import { MovicWindow } from "../../H/MovicWindow/MovicWindow"
+import { MovieBar } from "./H/MovieBar/MovieBar"
 import cl from "./MyMovies.module.scss"
 
 export function MyMovies() {
@@ -24,6 +25,7 @@ export function MyMovies() {
   }
   return(<>
     <MovicWindow>
+      <MovieBar />
       <Table table={movieTable}/>
     </MovicWindow>
   </>)

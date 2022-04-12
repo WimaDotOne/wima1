@@ -20,6 +20,7 @@ export function SvgIcon({
   name,
   width,
   color,
+  color2,
   strokeWidth
 }: ISvgIcon) {
 
@@ -64,7 +65,6 @@ export function SvgIcon({
 
     case "home": return <SvgHome width={width} fill={color} />
     case "door.batwing": return <SvgDoorBatwing width={width} />
-
     case "audio": return <SvgAudio width={width} fill={color} />
     case "mic": return <SvgMic width={width} fill={color} />
 
