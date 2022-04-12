@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Div } from '../../../libs/Core/Core1/fCore1'
+import { Div } from '../../../libs/Core/Core2/fCore2'
 import cl from "./index.module.scss"
 
 const Home: NextPage = () => {

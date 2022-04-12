@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Collapsible } from "../../../../../../Core1/fCore1"
+import { Collapsible } from "../../../../../fCore2"
 import { GroupModel } from "../../../Model/Group"
 import { Button } from "../Button/Button"
 import { Title } from "../Title/Title"

@@ -1,6 +1,7 @@
 import { MutableRefObject, useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../../../bConfig"
-import { Div, Post2, useShield } from "../../../../../../fCore1"
+import { Div } from "../../../../../../../Core2/fCore2"
+import { Post2, useShield } from "../../../../../../fCore1"
 import { Button } from "../../../Button/Button"
 import { Description } from "../../../Description/Description"
 import { Error } from "../../../Error/Error"

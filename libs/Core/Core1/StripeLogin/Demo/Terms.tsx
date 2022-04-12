@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Div, HLine, LimitWidth } from "../../fCore1"
+import { Div, HLine, LimitWidth } from "../../../Core2/fCore2"
 import { LogoBar, Paragraph, SectionHeader, SubParagraph, SubSectionHeader, TermHeader } from "../fLogin"
 
 interface ITermsProp {

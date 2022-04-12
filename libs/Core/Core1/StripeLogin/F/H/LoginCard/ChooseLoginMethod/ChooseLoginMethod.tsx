@@ -1,4 +1,4 @@
-import { Div } from "../../../../../fCore1"
+import { Div } from "../../../../../../Core2/fCore2"
 import { LoginConfig } from "../../../Model/LoginConfig"
 import { Title } from "../../Title/Title"
 import { LoginCardTurn } from "../LoginCard"

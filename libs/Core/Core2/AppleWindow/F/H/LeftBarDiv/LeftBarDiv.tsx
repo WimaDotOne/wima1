@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
-import { ClassNames, Scrollable } from "../../../../../Core1/fCore1"
+import { ClassNames } from "../../../../../Core1/fCore1"
+import { Scrollable } from "../../../../fCore2"
 import cl from "./LeftBarDiv.module.scss"
 
 interface ILeftBarDivProp {

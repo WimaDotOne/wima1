@@ -1,5 +1,5 @@
 import { CSSProperties, ReactNode } from "react"
-import { ClassNames } from "../../../fCore1"
+import { ClassNames } from "../../../Core1/fCore1"
 import cl from "./LimitWidth.module.scss"
 
 interface ILimitWidth {
