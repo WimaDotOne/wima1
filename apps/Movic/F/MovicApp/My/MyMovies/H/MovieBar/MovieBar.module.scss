@@ -1,15 +1,31 @@
-
+.movieBar {
+  padding: 5px;
+}
 .movie {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  border: 0.5px solid #ddd;
+  max-width: 300px;
+  width: 70%;
+  border-radius: 3px;
 }
 .movieImageDiv {
   padding: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .movieImage {
-  width: 30px;
-  height: 30px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.movieNameDiv {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }

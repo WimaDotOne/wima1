@@ -1,3 +1,4 @@
+import { SvgIcon } from "../../../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import cl from "./MovieBar.module.scss"
 
 interface IMovieBarprop {
@@ -5,18 +6,15 @@ interface IMovieBarprop {
 }
 export function MovieBar() {
 
-  const imageBackgroundColor = "#ccc"
-  const movieImageStyle ={
-    backgroundImage: "url(/apps/Movic/Icon/film.svg)"
-  }
   return(<>
     <div className={cl.movieBar}>
       <div className={cl.movie}>
         <div className={cl.movieImageDiv}>
-          <div className={cl.movieImage} style={movieImageStyle}>
-          </div>
+          <SvgIcon name="film" width={20} color="#bbb" />
         </div>
-        <div className={cl.moiveName}>Scott Pilgrilm vs the World</div>
+        <div className={cl.movieNameDiv}>
+          <div>Scott Pilgrilm vs the World</div>
+        </div>
       </div>
     </div>
   </>)
