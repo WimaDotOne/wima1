@@ -12,8 +12,10 @@ import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationT
 import { SvgHamburger } from "./Common/Hamburger/SvgHamburger"
 import { SvgHome } from "./Common/Home/SvgHome"
 import { SvgMagnifyingGlass } from "./Common/MagnifyingGlass/SvgMagnifyingGlass"
+import { SvgSmile } from "./Common/Smile/SvgSmile"
 import { SvgAudio } from "./Common/Sound/SvgAudio"
 import { SvgMic } from "./Common/Sound/SvgMic"
+import { SvgFilm } from "./Entertainment/Film/SvgFilm"
 import { ISvgIcon } from "./H/ISvg"
 
 export function SvgIcon({
@@ -69,6 +71,10 @@ export function SvgIcon({
     case "mic": return <SvgMic width={width} fill={color} />
 
     case "checkmark": return <SvgCheckMark width={width} fill={color} />
+    case "smile": return <SvgSmile width={width} fill={color} />
+
+    //Entertainment
+    case "film": return <SvgFilm width={width} fill={color} />
     default: return null
   }
 }

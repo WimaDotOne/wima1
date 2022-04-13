@@ -55,12 +55,12 @@ export const AppTurn = {
 function MovicMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.MyMovies
   const myGroup = new GroupModel("My Space", false)
-  myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies"))
+  myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies", "film"))
 
   const publicGroup = new GroupModel("Public", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.About, "About")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile")) 
 
-  const menu = new MenuModel(viewId, MovicColor.purple)
+  const menu = new MenuModel(viewId, MovicColor.red)
   menu.AddGroup(myGroup)
   menu.AddGroup(publicGroup)
   return menu

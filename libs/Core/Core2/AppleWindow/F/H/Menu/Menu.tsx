@@ -16,7 +16,7 @@ export function Menu({
   return(<>
   {
     menu.groups.map((group, i)=>
-      <Group key={i} group={group} iconColor={menu.iconColor} 
+      <Group key={i} group={group} themeColor={menu.themeColor} 
         selectedItemId={selectedItemId} onSelectItem={onSelectItem}
       />
     )

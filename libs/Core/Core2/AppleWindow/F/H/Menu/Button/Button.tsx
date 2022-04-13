@@ -6,7 +6,7 @@ import cl from "./Button.module.scss"
 interface IButtonProp {
   text: string
   iconName?: string
-  iconColor?: string
+  themeColor?: string
   selected?: boolean
   onClick: (e: MouseEvent<HTMLDivElement>) => void
 }
@@ -14,7 +14,7 @@ interface IButtonProp {
 export function Button({
   text,
   iconName,
-  iconColor,
+  themeColor,
   selected,
   onClick
 }:IButtonProp) {
@@ -25,7 +25,7 @@ export function Button({
       <div className={ClassNames([cl.rowInner, clSelected])}>
         <div className={cl.iconDiv}>
         {
-          iconName ? <SvgIcon name={iconName} width={13} color={iconColor}/>:null
+          iconName ? <SvgIcon name={iconName} width={13} color={themeColor}/>:null
         }
         </div>
         <div className={cl.textDiv}>

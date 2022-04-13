@@ -6,13 +6,13 @@ import { Title } from "../Title/Title"
 
 interface IGroupProp {
   group: GroupModel
-  iconColor?: string
+  themeColor?: string
   selectedItemId?: string
   onSelectItem: (itemId: string)=>void
 }
 export function Group({
   group,
-  iconColor,
+  themeColor,
   selectedItemId, onSelectItem
 }: IGroupProp) {
 
@@ -24,7 +24,7 @@ export function Group({
     <Collapsible collapsed={collasped}>
     {
       group.items.map((item, i)=>
-        <Button key={item.id} text={item.text} iconName={item.iconName} iconColor={iconColor}
+        <Button key={item.id} text={item.text} iconName={item.iconName} themeColor={themeColor}
           onClick={()=>{onSelectItem(item.id)}}
           selected={item.id === selectedItemId}
         />

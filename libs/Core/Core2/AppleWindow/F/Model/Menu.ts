@@ -2,12 +2,12 @@ import { GroupModel } from "./Group"
 
 export class MenuModel {
   selectedItemId: string
-  iconColor: string
+  themeColor: string
   groups: GroupModel[] = []
 
-  constructor(selectedItemId: string, iconColor: string) {
+  constructor(selectedItemId: string, themeColor: string) {
     this.selectedItemId = selectedItemId
-    this.iconColor = iconColor
+    this.themeColor = themeColor
   }
 
   AddGroup(group: GroupModel) {

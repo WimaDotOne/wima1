@@ -7,13 +7,20 @@ interface ILeftBarDivProp {
   children: ReactNode,
   open?: boolean
   brand?: string
+  brandColor?: string
 }
 export function LeftBarDiv({
   children,
   open,
-  brand
+  brand,
+  brandColor
 }: ILeftBarDivProp) {
   const clOpen = open ? cl.open : ""
+  const brandStyle = { color: "gray"}
+  if(brandColor) {
+    brandStyle.color = brandColor
+  }
+
   return(<>
     <div className={ClassNames([cl.leftBar, clOpen])}>
       <div className={cl.menuDiv}>
@@ -23,7 +30,7 @@ export function LeftBarDiv({
         </Scrollable>
       </div>
       <div className={ClassNames([cl.bottomBar, clOpen])}>
-        <div className={cl.brand}>{brand}</div>
+        <div className={cl.brand} style={brandStyle}>{brand}</div>
       </div>
     </div>
   </>)
