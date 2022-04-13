@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import { ReactNode, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { useAppleWindow } from "../../../../../../libs/Core/Core2/AppleWindow/fAppleWindow"
 import { AppleWindow, GroupModel, ItemModel, MenuModel 
 } from "../../../../../../libs/Core/Core2/fCore2"
@@ -16,11 +16,22 @@ export function MovicWindow({
   const router = useRouter()
 
   function goToView(viewId: string) {
-    if(win) {
-      win.setViewId(viewId)
-    }
     router.push(`/apps/Movic/AppTurn/${viewId}`)
   }
+
+  function updateViewId() {
+    //Update viewId based on path rather than setViewId during goToView because this also works when browser back arrow is clicked.
+    const route = router.asPath
+    let viewIdPiece = route.split("AppTurn/")[1]
+    if(viewIdPiece) {
+      viewIdPiece = viewIdPiece.split("/")[0]
+      win?.setViewId(viewIdPiece)
+    }
+  }
+
+  useEffect(()=>{
+    updateViewId()
+  }, [])
 
   const movicMenu = MovicMenu(win?.viewId)
   return(<>
