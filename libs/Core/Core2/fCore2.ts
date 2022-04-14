@@ -4,7 +4,8 @@ import {
   ItemModel,
   MenuModel,
   BottomBarDiv,
-  AppleWindow
+  AppleWindow,
+  AppleIconButton
 } from "./AppleWindow/fAppleWindow"
 
 import { Collapsible } from "./Controls/Collapsible/Collapsible"
@@ -19,6 +20,7 @@ export {
   MenuModel,
   BottomBarDiv,
   AppleWindow,
+  AppleIconButton,
 
   Collapsible,
   Scrollable,

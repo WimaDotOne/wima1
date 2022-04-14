@@ -6,7 +6,7 @@ import { BottomBarDiv } from "./F/View/BottomBarDiv/BottomBarDiv";
 import { Landing } from "./F/View/Landing/Landing"
 import { AppleWindow } from "./F/View/AppleWindow/AppleWindow"
 import { useAppleWindow, AppleWindowContext } from "./F/View/AppleWindow/AppleWindowContext"
-
+import { IconButton as AppleIconButton} from "./F/View/IconButton/IconButton"
 export {
   color,
   GroupModel,
@@ -16,6 +16,8 @@ export {
   Landing,
   AppleWindow,
   useAppleWindow,
-  AppleWindowContext
+  AppleWindowContext,
+
+  AppleIconButton
 }
 

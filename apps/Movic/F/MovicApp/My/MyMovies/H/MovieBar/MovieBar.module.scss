@@ -1,12 +1,22 @@
 .movieBar {
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
-.movie {
+.playButtonDiv {
+  width: 20%;
+  max-width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.movieDiv {
+  flex: 1;
   display: flex;
   align-items: stretch;
   border: 0.5px solid #ddd;
-  max-width: 300px;
-  width: 70%;
+  max-width: 400px;
   border-radius: 3px;
 }
 .movieImageDiv {
