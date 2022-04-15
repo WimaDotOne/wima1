@@ -6,27 +6,35 @@ import cl from "./MyMovies.module.scss"
 
 export function MyMovies() {
 
-  const movieTable: TableModel = {
-    schema: [
-      {title: "Title", width: 100}
-    ],
-    data: [
-      { 
-        attributes : [
-          {type: "text", value: "Scott Pilgrilm vs the World"}
-        ]
-      }, 
-      {
-        attributes : [
-          {type: "text", value: "Knives Out"}
-        ]
-      }
-    ]
-  }
+  const movieTable = fakeTable()
   return(<>
     <MovicWindow>
       <MovieBar />
       <Table table={movieTable}/>
     </MovicWindow>
   </>)
+}
+
+function fakeTable() {
+  const schema = [
+    {title: "Title", width: 150},
+    {title: "Director", width: 100 }
+  ]
+  const data = [
+    { 
+      attributes : [
+        {type: "text", value: "Scott Pilgrilm vs the World"},
+        {type: "text", value: "James Noble"}
+      ]
+    }, 
+    {
+      attributes : [
+        {type: "text", value: "Knives Out"},
+        {type: "text", value: "Peter Savings"}
+      ]
+    }
+  ]
+  const table = new TableModel(schema, data)
+  table.narrowScreenWidth = 300
+  return table
 }

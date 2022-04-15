@@ -8,10 +8,12 @@ interface IRowProp {
   schema: Array<IColumnInfo>
   attributes?: Array<IAttribute>
   gray?: boolean
+  hasPrompt?: boolean
 }
 export function Row({
   isHead, schema, attributes,
-  gray
+  gray,
+  hasPrompt
 }: IRowProp) {
 
   const clGray = gray ? cl.gray : ""
@@ -21,6 +23,7 @@ export function Row({
   {
     schema.map((columnInfo, i)=>{
       let text = ""
+      let prompt = ""
       if(isHead) {
         text = columnInfo.title
       } else if(attributes) {
@@ -28,9 +31,14 @@ export function Row({
         if(attribute.type === AttributeType.text) {
           text = attribute.value
         }
+        if(hasPrompt) {
+          prompt = columnInfo.title || " "
+        }
       }
       return(
-        <Cell key={i} isHead={isHead} text={text} width={columnInfo.width}/>
+        <Cell key={i} isHead={isHead} 
+          prompt={prompt}
+          text={text} width={columnInfo.width}/>
       )
     })
   }

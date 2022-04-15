@@ -20,6 +20,7 @@ export const AttributeType = {
 export class TableModel {
   schema: Array<IColumnInfo>
   data: Array<IRecord>
+  narrowScreenWidth: number = 800
 
   constructor(schema: Array<IColumnInfo>, data: Array<IRecord>) {
     this.schema = schema
