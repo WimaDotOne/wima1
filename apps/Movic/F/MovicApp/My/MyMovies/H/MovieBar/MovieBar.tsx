@@ -1,6 +1,7 @@
 import { SvgIcon } from "../../../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import { AppleIconButton } from "../../../../../../../../libs/Core/Core2/fCore2"
 import cl from "./MovieBar.module.scss"
+import { Picture } from "../../../../H/Controls/Picture/Picture"
 
 interface IMovieBarprop {
   
@@ -11,6 +12,7 @@ export function MovieBar() {
 
   }
 
+  const dvdCoverUrl = "/apps/WimaHome/WallPaper/macRainbowFlow.jpg"
   return(<>
     <div className={cl.movieBar}>
       <div className={cl.playButtonDiv}>
@@ -18,7 +20,7 @@ export function MovieBar() {
       </div>
       <div className={cl.movieDiv}>
         <div className={cl.movieImageDiv}>
-          <SvgIcon name="film" width={20} color="#bbb" />
+          <Picture url={dvdCoverUrl} svgName="film" svgWidth={20} svgColor="#bbb" />
         </div>
         <div className={cl.movieNameDiv}>
           <div>Scott Pilgrilm vs the World</div>

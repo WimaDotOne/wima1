@@ -20,11 +20,9 @@
   border-radius: 3px;
 }
 .movieImageDiv {
-  padding: 10px;
+  min-height: 35px;
+  width: 35px;
   background-color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .movieImage {
   background-position: center;
