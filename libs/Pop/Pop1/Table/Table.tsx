@@ -38,7 +38,7 @@ export function Table({
         tBodyNarrow!.style.display = "none"
       }
     }
- console.log(table.narrowScreenWidth)
+    
     const mediaQuery = window.matchMedia(`(max-width: ${table.narrowScreenWidth}px)`)
     AdjustTable(mediaQuery)
     mediaQuery.addEventListener("change" , (e)=>{
