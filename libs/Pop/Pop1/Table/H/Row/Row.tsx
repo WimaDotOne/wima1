@@ -37,7 +37,6 @@ export function Row({
       }
       return(
         <Cell key={i} isHead={isHead} 
-          prompt={prompt}
           text={text} width={columnInfo.width}/>
       )
     })
