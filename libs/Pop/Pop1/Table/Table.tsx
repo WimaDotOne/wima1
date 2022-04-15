@@ -6,9 +6,11 @@ import cl from "./Table.module.scss"
 
 interface ITableProp {
   table: TableModel
+  rowId?: string
+  setRowId?: (rowId: string)=>void
 }
 export function Table({
-  table
+  table, rowId, setRowId
 }: ITableProp) {
 
   const tHeadRef = useRef<HTMLDivElement>(null)
@@ -48,6 +50,12 @@ export function Table({
     })
   }, [])
 
+  function selectRow(rowId: string) {
+    if(setRowId) {
+      setRowId(rowId)
+    }
+  }
+
   return(<>
     <div className={cl.table}>
       <div className={cl.tHead} ref={tHeadRef}>
@@ -57,14 +65,22 @@ export function Table({
       {
         data.map((record, i)=>
           <Row key={i} schema={schema} attributes={record.attributes}
-            gray={i%2 ===1} />
+            gray={i%2 ===1} 
+            selected={rowId === record.id}
+            selectedColor = {table.selectedRowColor}
+            onClick={()=>{ selectRow(record.id)}}
+          />
         )
       }
       </div>
       <div className={cl.tBodyNarrow} ref={tBodyNarrowRef}>
       {
         data.map((record, i) =>
-        <WrapRow key={i} schema={schema} attributes={record.attributes}/>)
+        <WrapRow key={i} schema={schema} attributes={record.attributes}
+          selected={rowId === record.id}
+          selectedColor = { table.selectedRowColor}
+          onClick={()=>{ selectRow(record.id)}}
+        />)
       }
       </div>
     </div>

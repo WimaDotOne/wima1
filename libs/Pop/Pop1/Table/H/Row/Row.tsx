@@ -9,17 +9,29 @@ interface IRowProp {
   attributes?: Array<IAttribute>
   gray?: boolean
   hasPrompt?: boolean
+  selected?: boolean
+  selectedColor?: string
+  onClick?: ()=>void,
 }
 export function Row({
   isHead, schema, attributes,
   gray,
-  hasPrompt
+  hasPrompt,
+  selected,
+  selectedColor,
+  onClick,
 }: IRowProp) {
 
   const clGray = gray ? cl.gray : ""
-
+  const selectedStyle = { backgroundColor: ""}
+  let textColor = "black"
+  if(selected && selectedColor) {
+    textColor = "white"
+    selectedStyle.backgroundColor = selectedColor
+  }
   return(<>
-  <div className={ClassNames([cl.row, clGray])}>
+  <div className={ClassNames([cl.row, clGray])} style={selectedStyle}
+    onClick={onClick}>
   {
     schema.map((columnInfo, i)=>{
       let text = ""
@@ -36,7 +48,7 @@ export function Row({
         }
       }
       return(
-        <Cell key={i} isHead={isHead} 
+        <Cell key={i} isHead={isHead} textColor={textColor}
           text={text} width={columnInfo.width}/>
       )
     })

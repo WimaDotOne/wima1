@@ -3,18 +3,22 @@ import cl from "./Cell.module.scss"
 
 interface ICellProp {
   text?: string
+  textColor?: string
   width?: number
   isHead?: boolean
 }
 export function Cell({
   text,
+  textColor,
   width,
   isHead
 }: ICellProp) {
   width = width || 100
+  textColor = textColor || "black"
 
   const cellStyle = {
-    width: width+"px"
+    width: width+"px",
+    color: textColor
   }
   const clHead = isHead ? cl.head : ""
 
