@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import { Scrollable2 } from "../../../Core/Core2/fCore2"
 import { Row } from "./H/Row/Row"
 import { WrapRow } from "./H/Row/WrapRow"
 import { TableModel } from "./Model/TableModel"
@@ -56,11 +57,13 @@ export function Table({
     }
   }
 
+  const topNode = 
+  <div className={cl.tHead} ref={tHeadRef}>
+    <Row isHead schema={schema} />
+  </div>
   return(<>
     <div className={cl.table}>
-      <div className={cl.tHead} ref={tHeadRef}>
-        <Row isHead schema={schema} />
-      </div>
+      <Scrollable2 topNode={topNode}>
       <div className={cl.tBody} ref={tBodyRef}>
       {
         data.map((record, i)=>
@@ -83,6 +86,7 @@ export function Table({
         />)
       }
       </div>
+      </Scrollable2>
     </div>
   </>)
 }

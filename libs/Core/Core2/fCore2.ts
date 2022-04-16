@@ -11,6 +11,7 @@ import {
 
 import { Collapsible } from "./Controls/Collapsible/Collapsible"
 import { Scrollable } from "./Controls/Scrollable/Scrollable"
+import { Scrollable2 } from "./Controls/Scrollable/Scrollable2"
 import { Div } from "./Controls/Div/Div"
 import { HLine } from "./Controls/HLine/HLine"
 import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
@@ -25,7 +26,7 @@ export {
   AppleIconButton,
 
   Collapsible,
-  Scrollable,
+  Scrollable, Scrollable2,
   Div,
   HLine,
   LimitWidth,
