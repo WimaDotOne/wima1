@@ -1,8 +1,11 @@
 import { useState } from "react"
+import { Scrollable2 } from "../../../../../../libs/Core/Core2/Controls/Scrollable/Scrollable2"
+import { AppleWindowBottomBarFill } from "../../../../../../libs/Core/Core2/fCore2"
 import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
 import { MovicColor } from "../../../CSS/MovicColor"
 import { MovicWindow } from "../../H/MovicWindow/MovicWindow"
+import { MovicWindowBottomBar } from "../../H/MovicWindow/MovicWindowBottomBar"
 import { MovieBar } from "./H/MovieBar/MovieBar"
 import cl from "./MyMovies.module.scss"
 
@@ -10,11 +13,21 @@ export function MyMovies() {
 
   const [movieId, setMovieId] = useState<string>("a")
   const movieTable = fakeTable()
+
+  const topNode = <MovieBar />
+  const bottomNode = <AppleWindowBottomBarFill />
+
   return(<>
     <MovicWindow>
-      <MovieBar />
-      <Table table={movieTable} rowId={movieId} setRowId={setMovieId}/>
+      <div className={cl.scrollableWrap}>
+        <Scrollable2 topNode={topNode} bottomNode={bottomNode}>
+          <Table table={movieTable} rowId={movieId} setRowId={setMovieId}/>
+        </Scrollable2>
+      </div>
     </MovicWindow>
+    <MovicWindowBottomBar>
+      {}
+    </MovicWindowBottomBar>
   </>)
 }
 

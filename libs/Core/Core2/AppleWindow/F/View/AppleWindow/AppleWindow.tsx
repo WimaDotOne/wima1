@@ -20,7 +20,7 @@ export function AppleWindow({
   viewId, goToView,
   menu,
   children,
-  brand
+  brand,
 }:IAppleWindowProp) {
 
   function goToViewAndCloseLeftBar(viewId: string) {

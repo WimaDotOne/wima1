@@ -23,7 +23,7 @@ export function Row({
 }: IRowProp) {
 
   const clGray = gray ? cl.gray : ""
-  const selectedStyle = { backgroundColor: ""}
+  const selectedStyle: { backgroundColor?: string} = {}
   let textColor = "black"
   if(selected && selectedColor) {
     textColor = "white"

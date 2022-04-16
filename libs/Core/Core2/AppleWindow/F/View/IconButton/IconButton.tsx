@@ -18,7 +18,7 @@ export function IconButton({
 
   const clEnabled = disabled ?  "" : cl.enabled
   const svgColor = disabled ? color.iconLightGray : color.iconGray
-  const buttonStyle = { backgroundColor: ""}
+  const buttonStyle: { backgroundColor?: string } = {}
   if(backgroundColor) {
     buttonStyle.backgroundColor = backgroundColor
   }

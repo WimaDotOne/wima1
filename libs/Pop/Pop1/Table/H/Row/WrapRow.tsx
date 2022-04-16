@@ -17,7 +17,7 @@ export function WrapRow({
   onClick
 }: IWrapRowProp) {
 
-  const selectedStyle = { backgroundColor: ""}
+  const selectedStyle: { backgroundColor?: string} = {}
   let textColor = "black"
   let promptColor = "#ccc"
   if(selected && selectedColor) {

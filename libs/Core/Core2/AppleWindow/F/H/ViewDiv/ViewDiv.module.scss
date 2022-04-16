@@ -13,10 +13,6 @@
   box-sizing: border-box;
 }
 
-.bottomBarFill {
-  height: dimension.$windowBottomBarHeight;
-}
-
 @media screen and (min-width: dimension.$maxPhoneHeight) {
   .viewDiv.open {
     padding-left: dimension.$windowLeftBarWidth;

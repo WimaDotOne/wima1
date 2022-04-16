@@ -14,6 +14,7 @@ export function BottomBarDiv({
   return(<>
     <div className={ClassNames([cl.bottomBarDiv, clOpen])}>
       { children }
+      <div className={cl.bottomBarFill}></div>
     </div>
   </>)
 }

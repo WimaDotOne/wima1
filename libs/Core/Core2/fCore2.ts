@@ -3,7 +3,8 @@ import {
   GroupModel,
   ItemModel,
   MenuModel,
-  BottomBarDiv,
+  BottomBarDiv as AppleWindowBottomBarDiv,
+  BottomBarFill as AppleWindowBottomBarFill,
   AppleWindow,
   AppleIconButton
 } from "./AppleWindow/fAppleWindow"
@@ -18,7 +19,8 @@ export {
   GroupModel,
   ItemModel,
   MenuModel,
-  BottomBarDiv,
+  AppleWindowBottomBarDiv,
+  AppleWindowBottomBarFill,
   AppleWindow,
   AppleIconButton,
 

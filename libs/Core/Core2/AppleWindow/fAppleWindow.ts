@@ -2,7 +2,8 @@ import { color } from "./F/CSS/Color";
 import { GroupModel } from "./F/Model/Group";
 import { ItemModel } from "./F/Model/Item";
 import { MenuModel } from "./F/Model/Menu";
-import { BottomBarDiv } from "./F/View/BottomBarDiv/BottomBarDiv";
+import { BottomBarDiv } from "./F/View/BottomBarDiv/BottomBarDiv"
+import { BottomBarFill } from "./F/View/BottomBarDiv/BottomBarFill"
 import { Landing } from "./F/View/Landing/Landing"
 import { AppleWindow } from "./F/View/AppleWindow/AppleWindow"
 import { useAppleWindow, AppleWindowContext } from "./F/View/AppleWindow/AppleWindowContext"
@@ -13,6 +14,7 @@ export {
   ItemModel,
   MenuModel,
   BottomBarDiv,
+  BottomBarFill,
   Landing,
   AppleWindow,
   useAppleWindow,

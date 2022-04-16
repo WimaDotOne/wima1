@@ -14,7 +14,7 @@ interface IViewDivProp {
 */
 export function ViewDiv({
   children,
-  isLeftBarOpen
+  isLeftBarOpen,
 }: IViewDivProp) {
 
   const clOpen = isLeftBarOpen ? cl.open : ""
@@ -23,7 +23,6 @@ export function ViewDiv({
       <div className={cl.viewDivInner}>
         {children}
       </div>
-      <div className={cl.bottomBarFill}></div>
     </div>
   </>)
 }
