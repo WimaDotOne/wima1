@@ -4,6 +4,8 @@ import cl from "./Scrollable.module.scss"
 interface IScrollableProp {
   children: ReactNode
 }
+
+// Parent of Scrollable needs to have a fixed height to work
 export function Scrollable({
   children
 }: IScrollableProp) {

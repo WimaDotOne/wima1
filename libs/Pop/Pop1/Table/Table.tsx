@@ -19,11 +19,9 @@ export function Table({
   const tBodyNarrowRef = useRef<HTMLDivElement>(null)
   const schema = table.schema
   const data = table.data
-const xRef = useRef<HTMLDivElement>(null)
 
   useEffect(()=>{
     if(!window) return
-    console.log(xRef.current?.clientHeight)
     const tHead = tHeadRef.current
     const tBody = tBodyRef.current
     const tBodyNarrow = tBodyNarrowRef.current
@@ -64,7 +62,7 @@ const xRef = useRef<HTMLDivElement>(null)
   </div>
   
   return(<>
-    <div className={cl.table} ref={xRef}>
+    <div className={cl.table}>
       <Scrollable2 topNode={topNode}>
       <div className={cl.tBody} ref={tBodyRef}>
       {

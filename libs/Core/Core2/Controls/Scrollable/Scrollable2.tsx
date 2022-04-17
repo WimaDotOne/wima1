@@ -7,6 +7,8 @@ interface IScrollable2Prop {
   children: ReactNode
   bottomNode?: ReactNode
 }
+
+// Parent of Scrollable2 needs to have a fixed height to work
 export function Scrollable2({
   topNode, 
   children,
@@ -19,16 +21,16 @@ export function Scrollable2({
   const wrapRef = useRef<HTMLDivElement>(null)
 
   useEffect(()=>{
-    if(!window) return
     const topDiv = topRef.current
     const middleDiv = middleRef.current
     const bottomDiv = bottomRef.current
     const wrapDiv = wrapRef.current
     
-    if(!wrapDiv) return
-    if(!middleDiv) return
+    if(!wrapDiv || !topDiv || !middleDiv || !bottomDiv) return
 
     ResizeMiddle(topDiv, middleDiv, bottomDiv, wrapDiv)
+
+    //ResizeMiddle might not get sizes right due to some unloaded element
     ResizeMiddleObserve(topDiv, middleDiv, bottomDiv, wrapDiv)
   })
 
@@ -46,14 +48,12 @@ export function Scrollable2({
 }
 
 function ResizeMiddleObserve(
-  topDiv: HTMLDivElement | null, 
+  topDiv: HTMLDivElement, 
   middleDiv: HTMLDivElement,
-  bottomDiv: HTMLDivElement | null,
+  bottomDiv: HTMLDivElement,
   wrapDiv: HTMLDivElement
 ) {
-
-  
-  const resizeObserver = new ResizeObserver(entries =>{
+  const resizeObserver = new ResizeObserver(() =>{
     ResizeMiddle(topDiv, middleDiv, bottomDiv, wrapDiv)
   })
 
@@ -61,19 +61,13 @@ function ResizeMiddleObserve(
 }
 
 function ResizeMiddle(
-  topDiv: HTMLDivElement | null, 
+  topDiv: HTMLDivElement, 
   middleDiv: HTMLDivElement,
-  bottomDiv: HTMLDivElement | null,
+  bottomDiv: HTMLDivElement,
   wrapDiv: HTMLDivElement
 ) {
-  let topHeight = 0
-  let bottomHeight = 0
-  if(topDiv) {
-    topHeight = topDiv.clientHeight
-  }
-  if(bottomDiv) {
-    bottomHeight = bottomDiv.clientHeight
-  }
-  middleDiv.style.height 
-    = (wrapDiv.clientHeight - topHeight - bottomHeight) + "px"
+  middleDiv.style.height = (
+    wrapDiv.clientHeight 
+    - topDiv.clientHeight 
+    - bottomDiv.clientHeight) + "px"
 }

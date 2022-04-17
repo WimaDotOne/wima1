@@ -52,7 +52,7 @@ function fakeTable() {
       ]
     }
   ]
-  for(let i=0; i<100; i++) {
+  for(let i=0; i<4; i++) {
     data.push ({
       id: "c"+i,
       attributes: [
