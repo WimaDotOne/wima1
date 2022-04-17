@@ -24,22 +24,14 @@ export function Scrollable2({
     const middleDiv = middleRef.current
     const bottomDiv = bottomRef.current
     const wrapDiv = wrapRef.current
-  
-    if(!wrapDiv) return
-    let topHeight = 0
-    let bottomHeight = 0
-    if(topDiv) {
-      topHeight = topDiv.clientHeight
-    }
-    if(bottomDiv) {
-      bottomHeight = bottomDiv.clientHeight
-    }
-    if(middleDiv) {
-      middleDiv.style.height 
-      = (wrapDiv.clientHeight - topHeight - bottomHeight) + "px"
-    }
     
+    if(!wrapDiv) return
+    if(!middleDiv) return
+
+    ResizeMiddle(topDiv, middleDiv, bottomDiv, wrapDiv)
+
   })
+
   return(<>
     <div className={cl.wrap} ref={wrapRef}>
       <div ref={topRef}>{topNode}</div>
@@ -51,4 +43,37 @@ export function Scrollable2({
       <div ref={bottomRef}>{bottomNode}</div>
     </div>
   </>)
+}
+
+function ResizeMiddleObserve(
+  topDiv: HTMLDivElement | null, 
+  middleDiv: HTMLDivElement,
+  bottomDiv: HTMLDivElement | null,
+  wrapDiv: HTMLDivElement
+) {
+
+  
+  const resizeObserver = new ResizeObserver(entries =>{
+    ResizeMiddle(topDiv, middleDiv, bottomDiv, wrapDiv)
+  })
+
+  resizeObserver.observe(wrapDiv)
+}
+
+function ResizeMiddle(
+  topDiv: HTMLDivElement | null, 
+  middleDiv: HTMLDivElement,
+  bottomDiv: HTMLDivElement | null,
+  wrapDiv: HTMLDivElement
+) {
+  let topHeight = 0
+  let bottomHeight = 0
+  if(topDiv) {
+    topHeight = topDiv.clientHeight
+  }
+  if(bottomDiv) {
+    bottomHeight = bottomDiv.clientHeight
+  }
+  middleDiv.style.height 
+    = (wrapDiv.clientHeight - topHeight - bottomHeight) + "px"
 }
