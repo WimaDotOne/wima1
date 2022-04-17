@@ -29,7 +29,7 @@ export function Scrollable2({
     if(!middleDiv) return
 
     ResizeMiddle(topDiv, middleDiv, bottomDiv, wrapDiv)
-
+    ResizeMiddleObserve(topDiv, middleDiv, bottomDiv, wrapDiv)
   })
 
   return(<>
