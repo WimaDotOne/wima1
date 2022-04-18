@@ -6,6 +6,8 @@ import { SvgChevron } from "./Common/Arrow/SvgChevron"
 import { SvgFatArrow } from "./Common/Arrow/SvgFatArrow"
 import { SvgCheckMark } from "./Common/CheckMark/SvgCheckMark"
 import { SvgDoorBatwing } from "./Common/Door/SvgDoorBatwing"
+import { SvgPencil } from "./Common/Edit/Pencil"
+import { SvgPlus } from "./Common/Edit/Plus"
 import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
@@ -73,7 +75,11 @@ export function SvgIcon({
 
     case "checkmark": return <SvgCheckMark width={width} fill={color} />
     case "smile": return <SvgSmile width={width} fill={color} />
+    
+    case "pencil": return <SvgPencil width={width} fill={color} />
+    case "plus": return <SvgPlus width={width} fill={color} />
 
+    
     //Entertainment
     case "film": return <SvgFilm width={width} fill={color} />
     case "playbutton": return <SvgPlayButton width={width} fill={color} />
