@@ -17,7 +17,9 @@ import { SvgMagnifyingGlass } from "./Common/MagnifyingGlass/SvgMagnifyingGlass"
 import { SvgSmile } from "./Common/Smile/SvgSmile"
 import { SvgAudio } from "./Common/Sound/SvgAudio"
 import { SvgMic } from "./Common/Sound/SvgMic"
+import { SvgClapperBoard } from "./Entertainment/ClapperBoard/SvgClapperBoard"
 import { SvgFilm } from "./Entertainment/Film/SvgFilm"
+import { SvgPhoto } from "./Entertainment/Photo/SvgPhoto"
 import { SvgPlayButton } from "./Entertainment/PlayButton/SvgPlayButton"
 import { ISvgIcon } from "./H/ISvg"
 
@@ -82,6 +84,8 @@ export function SvgIcon({
     
     //Entertainment
     case "film": return <SvgFilm width={width} fill={color} />
+    case "clapperboard": return <SvgClapperBoard width={width} fill={color} />
+    case "photo": return <SvgPhoto width={width} fill={color} />
     case "playbutton": return <SvgPlayButton width={width} fill={color} />
     default: return null
   }

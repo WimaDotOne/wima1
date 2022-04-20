@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import { AppTurn } from '../../../apps/Movic/F/MovicApp/H/MovicWindow/MovicWindow'
+import { AppTurn } from '../../../apps/Movic/F/MovicApp/MovicWindow/MovicWindow'
 import { MyMovies } from '../../../apps/Movic/F/MovicApp/My/MyMovies/MyMovies'
 import { About } from '../../../apps/Movic/F/MovicApp/Public/About/About'
 import { useAppleWindow } from '../../../libs/Core/Core2/AppleWindow/fAppleWindow'

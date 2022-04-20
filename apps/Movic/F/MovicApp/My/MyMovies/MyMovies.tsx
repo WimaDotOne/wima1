@@ -4,8 +4,8 @@ import { AppleWindowBottomBarFill } from "../../../../../../libs/Core/Core2/fCor
 import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
 import { MovicColor } from "../../../CSS/MovicColor"
-import { MovicWindow } from "../../H/MovicWindow/MovicWindow"
-import { MovicWindowBottomBar } from "../../H/MovicWindow/MovicWindowBottomBar"
+import { MovicWindow } from "../../MovicWindow/MovicWindow"
+import { MovicWindowBottomBar } from "../../MovicWindow/MovicWindowBottomBar"
 import { MovieBar } from "./H/MovieBar/MovieBar"
 import cl from "./MyMovies.module.scss"
 
