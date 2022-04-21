@@ -1,5 +1,5 @@
 import { IconButton } from "../../../../../../../libs/Core/Core2/AppleWindow/F/View/IconButton/IconButton"
-import { AppleWindowBottomBarFill } from "../../../../../../../libs/Core/Core2/fCore2"
+import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { GoogleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/GoogleFolder"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
@@ -20,20 +20,14 @@ export function ProjectsHome({
    <div className={cl.board}>
      <HeadLine text="Projects" buttonText="New Project" 
       buttonOnClick={onClickNewProject}/>
-     <div className={cl.projects}>
-       <div className={cl.projectDiv}>
-         <GoogleFolder text="Scott Pilgrim and Romona xxx xxxx vs the World" onClick={()=>{}}/>
-       </div>
-       <div className={cl.projectDiv}>
+     <AutoRepeatGrid autoFit cellMinWidth={180} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
+        <GoogleFolder text="Scott Pilgrim and Romona xxx xxxx vs the World" onClick={()=>{}}/>
         <GoogleFolder text="Knvies Out" onClick={()=>{}}/>
-       </div>
        {
          arr.map((d, i)=>
-         <div key={i} className={cl.projectDiv}>
-          <GoogleFolder text={`Movie ${i}`} onClick={()=>{}}/>
-         </div>)
+          <GoogleFolder key={i} text={`Movie ${i}`} onClick={()=>{}}/>)
        }
-     </div>
+     </AutoRepeatGrid>
    </div>
    <AppleWindowBottomBarFill />
    <MovicWindowBottomBar>

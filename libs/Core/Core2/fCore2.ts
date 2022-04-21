@@ -15,6 +15,7 @@ import { Scrollable2 } from "./Controls/Scrollable/Scrollable2"
 import { Div } from "./Controls/Div/Div"
 import { HLine } from "./Controls/HLine/HLine"
 import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
+import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 export {
   GroupModel,
@@ -30,4 +31,5 @@ export {
   Div,
   HLine,
   LimitWidth,
+  AutoRepeatGrid
 }
