@@ -3,9 +3,11 @@ import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
   projectId: string
+  onBack: ()=>void
 }
 export function Project({
-  projectId
+  projectId,
+  onBack
 }: IProjectProp) {
 
   const [projectTurn, setProjectTurn] = useState<string>("")
@@ -13,11 +15,10 @@ export function Project({
   let project = null
   switch(projectTurn) {
 
-    default: project = (<ProjectHome />)
+    default: project = (<ProjectHome onBack={onBack}/>)
   }
 
   return(<>
-  <div>Back</div>
   { project } {projectId}
   </>)
   

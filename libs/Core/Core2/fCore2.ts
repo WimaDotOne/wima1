@@ -6,7 +6,8 @@ import {
   BottomBarDiv as AppleWindowBottomBarDiv,
   BottomBarFill as AppleWindowBottomBarFill,
   AppleWindow,
-  AppleIconButton
+  AppleIconButton,
+  AppleIconButtons
 } from "./AppleWindow/fAppleWindow"
 
 import { Collapsible } from "./Controls/Collapsible/Collapsible"
@@ -25,6 +26,7 @@ export {
   AppleWindowBottomBarFill,
   AppleWindow,
   AppleIconButton,
+  AppleIconButtons,
 
   Collapsible,
   Scrollable, Scrollable2,

@@ -8,6 +8,7 @@ import { Landing } from "./F/View/Landing/Landing"
 import { AppleWindow } from "./F/View/AppleWindow/AppleWindow"
 import { useAppleWindow, AppleWindowContext } from "./F/View/AppleWindow/AppleWindowContext"
 import { IconButton as AppleIconButton} from "./F/View/IconButton/IconButton"
+import { IconButtons as AppleIconButtons } from "./F/View/IconButtons/IconButtons"
 export {
   color,
   GroupModel,
@@ -20,6 +21,7 @@ export {
   useAppleWindow,
   AppleWindowContext,
 
-  AppleIconButton
+  AppleIconButton,
+  AppleIconButtons
 }
 

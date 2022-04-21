@@ -19,10 +19,15 @@ export function Projects({
     setProjectId(projectId)
   }
 
+  function onBack() {
+    console.log(ProjectsTurn.Home)
+    setProjectsTurn(ProjectsTurn.Home)
+  }
+
   let projects = null
   switch(projectsTurn) {
     case ProjectsTurn.Project:
-      projects = <Project projectId={projectId}/>
+      projects = <Project projectId={projectId} onBack={onBack}/>
       break
     default: projects = <ProjectsHome openProject={openProject}/>
   }
