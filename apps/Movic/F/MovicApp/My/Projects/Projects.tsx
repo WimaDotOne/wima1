@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
+import { Project } from "./Project/Project"
 import cl from "./Projects.module.scss"
 import { ProjectsHome } from "./ProjectsHome/ProjectsHome"
 
@@ -11,11 +12,19 @@ export function Projects({
 }: IProjectsProp) {
 
   const [projectsTurn, setProjectsTurn] = useState<string>("")
-  
+  const [projectId, setProjectId] = useState<string>("")
+
+  function openProject(projectId: string) {
+    setProjectsTurn(ProjectsTurn.Project)
+    setProjectId(projectId)
+  }
+
   let projects = null
   switch(projectsTurn) {
-
-    default: projects = <ProjectsHome />
+    case ProjectsTurn.Project:
+      projects = <Project projectId={projectId}/>
+      break
+    default: projects = <ProjectsHome openProject={openProject}/>
   }
 
   return (<>
@@ -26,5 +35,6 @@ export function Projects({
 }
 
 export const ProjectsTurn = {
-  Home: "Home"
+  Home: "Home",
+  Project: "Project"
 }

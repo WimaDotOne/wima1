@@ -11,7 +11,7 @@ export function AppleFolder({
   onClick
 }: IAppleFolderProp) {
   return(<>
-    <div className={cl.folder}>
+    <div className={cl.folder} onClick={onClick}>
       <SvgIcon name="folder2" width={50} />
       <div className={cl.folderName}>
         {text}

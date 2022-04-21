@@ -2,17 +2,20 @@ import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../l
 import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFolder"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
+import { ProjectsTurn } from "../Projects"
 import cl from "./ProjectsHome.module.scss"
 
 interface IProjectsHomeProp {
-
+  openProject: (projectId: string)=>void
 }
 export function ProjectsHome({
-
+  openProject
 }: IProjectsHomeProp) {
 
   function onClickNewProject() {
+    
   }
+
   const arr = []
   for(let i=0; i<30; i++) arr.push(i)
   return(<>
@@ -24,7 +27,10 @@ export function ProjectsHome({
        <AppleFolder text="Knvies Out" onClick={()=>{}}/>
        {
          arr.map((d, i)=>
-          <AppleFolder key={i} text={`Movie ${i}`} onClick={()=>{}}/>)
+          <AppleFolder key={i} text={`Movie ${i}`} onClick={
+            ()=>{openProject("12233435")}
+            
+          }/>)
        }
      </AutoRepeatGrid>
    </div>
