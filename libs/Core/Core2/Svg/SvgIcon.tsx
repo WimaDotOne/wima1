@@ -22,6 +22,7 @@ import { SvgFilm } from "./Entertainment/Film/SvgFilm"
 import { SvgPhoto } from "./Entertainment/Photo/SvgPhoto"
 import { SvgPlayButton } from "./Entertainment/PlayButton/SvgPlayButton"
 import { ISvgIcon } from "./H/ISvg"
+import { SvgFolderFill } from "./Office/Folder/FolderFill"
 
 export function SvgIcon({
   name,
@@ -87,6 +88,10 @@ export function SvgIcon({
     case "clapperboard": return <SvgClapperBoard width={width} fill={color} />
     case "photo": return <SvgPhoto width={width} fill={color} />
     case "playbutton": return <SvgPlayButton width={width} fill={color} />
+
+    //Office
+    case "folder.fill": return <SvgFolderFill width={width} fill={color} />
+    
     default: return null
   }
 }

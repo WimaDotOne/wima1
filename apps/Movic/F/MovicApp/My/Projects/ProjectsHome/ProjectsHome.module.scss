@@ -1,0 +1,21 @@
+@use "../../../../CSS/movic.module.scss";
+
+.board {
+  padding: 10px;
+}
+
+@media screen and (min-width: movic.$phoneMaxHeight) {
+  .board {
+    padding: 10px 30px;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.projectDiv {
+  padding: 0 5px 5px 0;
+}

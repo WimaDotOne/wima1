@@ -1,0 +1,25 @@
+.folder {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.folderIcon {
+  flex: 40px 0 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.folderName {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.folderNameInner {
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -63,6 +63,6 @@ function fakeTable() {
   }
   const table = new TableModel(schema, data)
   table.narrowScreenWidth = 700
-  table.selectedRowColor = MovicColor.red
+  table.selectedRowColor = MovicColor.themeRed
   return table
 }

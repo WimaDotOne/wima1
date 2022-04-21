@@ -48,7 +48,7 @@ export function MovicWindow({
 }
 
 export const AppTurn = {
-  ClapperBoard: "ClapperBoard",
+  Projects: "Projects",
   MyMovies: "MyMovies",
   About: "About"
 }
@@ -57,12 +57,12 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.MyMovies
   const myGroup = new GroupModel("My Space", false)
   myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies", "film"))
-  myGroup.AddItem(new ItemModel(AppTurn.ClapperBoard, "Clapper Board", "clapperboard"))
+  myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard"))
 
   const publicGroup = new GroupModel("Public", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile")) 
 
-  const menu = new MenuModel(viewId, MovicColor.red)
+  const menu = new MenuModel(viewId, MovicColor.themeRed)
   menu.AddGroup(myGroup)
   menu.AddGroup(publicGroup)
   return menu

@@ -1,3 +1,3 @@
 export const MovicColor = {
-  red: "#eb5569"
+  themeRed: "#eb5569"
 }
