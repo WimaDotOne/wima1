@@ -1,22 +1,11 @@
-.folder {
+.file {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.iconDiv {
-  position: relative;
-  height: 50px;
-}
-
-.iconDivInner {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -3px);
-}
-
-.folderName {
+.fileName {
   margin-top: 4px;
   font-size: 12px;
   color: #555;

@@ -20,7 +20,6 @@ export function Projects({
   }
 
   function onBack() {
-    console.log(ProjectsTurn.Home)
     setProjectsTurn(ProjectsTurn.Home)
   }
 

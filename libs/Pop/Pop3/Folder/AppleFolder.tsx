@@ -12,7 +12,11 @@ export function AppleFolder({
 }: IAppleFolderProp) {
   return(<>
     <div className={cl.folder} onClick={onClick}>
-      <SvgIcon name="folder2" width={50} />
+      <div className={cl.iconDiv}>
+        <div className={cl.iconDivInner}>
+          <SvgIcon name="folder2" width={55} />
+        </div>
+      </div>
       <div className={cl.folderName}>
         {text}
       </div>

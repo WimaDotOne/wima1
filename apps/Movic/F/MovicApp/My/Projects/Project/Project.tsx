@@ -19,7 +19,7 @@ export function Project({
   }
 
   return(<>
-  { project } {projectId}
+  { project }
   </>)
   
 }

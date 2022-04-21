@@ -35,7 +35,7 @@ export function AutoRepeatGrid({
   paddingTop, paddingBottom, paddingLeft, paddingRight
 }: IAutoRepeatGridProp) {
 
-  const auto = autoFill ? "auto-fill" : "auto-fit"
+  const auto = autoFit ? "auto-fit" : "auto-fill"
   cellMinWidth = cellMinWidth || 50
   columnGap = columnGap || 5
   rowGap = rowGap || 5
