@@ -12,7 +12,7 @@ export function ImagesFolder({
 
 }: IImagesFolderProp) {
   return(<>
-    <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={5} rowGap={5} padding={10}>
+    <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>
       <ImageFile url="/favicon.ico" fileName="W1"/>
       <ImageFile url="/apps/Movic/Test/test2.png" fileName="When no one's watching"/>
       <ImageFile url="/apps/Movic/Test/test.png" fileName="Knives Out"/>
