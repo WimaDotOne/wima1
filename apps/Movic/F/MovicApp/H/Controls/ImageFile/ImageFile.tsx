@@ -5,25 +5,25 @@ import cl from "./ImageFile.module.scss"
 interface IImageFileProp {
   url: string
   fileName: string
+  selected?: boolean
+  onClick?: ()=>void
 }
 export function ImageFile({
   url,
-  fileName
+  fileName,
+  selected,
+  onClick
 }: IImageFileProp) {
 
-  const [selected, setSelected] = useState<boolean>(false)
 
   const imageStyle = {
     backgroundImage: `url(${url})`
   }
 
-  function toggleSelect() {
-    setSelected((prev)=> !prev)
-  }
   return(<>
     <div className={cl.imageFile}>
       <div className={cl.image} style={imageStyle}
-        onClick={toggleSelect}>
+        onClick={onClick}>
       {
         selected ?       
         <div className={cl.checkMarkDiv}>

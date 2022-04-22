@@ -4,8 +4,10 @@ import { SvgGoogle } from "./Brand/Google/SvgGoogle"
 import { SvgArrow } from "./Common/Arrow/SvgArrow"
 import { SvgChevron } from "./Common/Arrow/SvgChevron"
 import { SvgFatArrow } from "./Common/Arrow/SvgFatArrow"
+import { SvgCheckDoubleSquare } from "./Common/CheckMark/SvgCheckDoubleSquare"
 import { SvgCheckMark } from "./Common/CheckMark/SvgCheckMark"
 import { SvgCheckMarkDisk } from "./Common/CheckMark/SvgCheckMarkDisk"
+import { SvgDoubleSquare } from "./Common/CheckMark/SvgDoubleSquare"
 import { SvgDoorBatwing } from "./Common/Door/SvgDoorBatwing"
 import { SvgPencil } from "./Common/Edit/Pencil"
 import { SvgPlus } from "./Common/Edit/Plus"
@@ -84,6 +86,8 @@ export function SvgIcon({
 
     case "checkmark": return <SvgCheckMark width={width} fill={color} />
     case "checkmark.disk": return <SvgCheckMarkDisk width={width} fill={color} />
+    case "checkmark.doublesquare": return <SvgCheckDoubleSquare width={width} fill={color} />
+    case "doublesquare": return <SvgDoubleSquare width={width} fill={color} />
     case "smile": return <SvgSmile width={width} fill={color} />
     
     case "pencil": return <SvgPencil width={width} fill={color} />
