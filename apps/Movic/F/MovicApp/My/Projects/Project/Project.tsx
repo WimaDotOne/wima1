@@ -4,22 +4,26 @@ import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
   projectId: string
-  onBack: ()=>void
+  backToProjectsHome: ()=>void
 }
 export function Project({
   projectId,
-  onBack
+  backToProjectsHome
 }: IProjectProp) {
 
   const [projectTurn, setProjectTurn] = useState<string>("")
+
+  function backToProjectHome() {
+    setProjectTurn(ProjectTurn.Home)
+  }
   
   let project = null
   switch(projectTurn) {
     case ProjectTurn.ImagesFolder: return(
-      <ImagesFolder />
+      <ImagesFolder backToProjectHome={backToProjectHome}/>
     )
     default: project = (
-      <ProjectHome onBack={onBack}
+      <ProjectHome backToProjectsHome={backToProjectsHome}
         setProjectTurn = {setProjectTurn}
       />
     )

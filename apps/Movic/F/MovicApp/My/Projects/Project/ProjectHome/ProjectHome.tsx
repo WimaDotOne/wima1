@@ -9,11 +9,11 @@ import { ProjectTurn } from "../Project"
 import cl from "./ProjectHome.module.scss"
 
 interface IProjectHomeProp {
-  onBack: ()=>void
+  backToProjectsHome: ()=>void
   setProjectTurn: (projectTurn: string)=>void
 }
 export function ProjectHome({
-  onBack,
+  backToProjectsHome,
   setProjectTurn
 }: IProjectHomeProp) {
 
@@ -40,7 +40,7 @@ export function ProjectHome({
     </div>
     <MovicWindowBottomBar>
       <IconButtons color={MovicColor.themeRed} strokeWidth={20}
-        icon1="chevron.left" onClick1={onBack} text1=""
+        icon1="chevron.left" onClick1={backToProjectsHome} text1=""
       /> 
     </MovicWindowBottomBar>
   </>)

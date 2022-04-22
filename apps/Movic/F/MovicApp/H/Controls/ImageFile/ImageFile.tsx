@@ -21,8 +21,9 @@ export function ImageFile({
     setSelected((prev)=> !prev)
   }
   return(<>
-    <div className={cl.imageFile} onClick={toggleSelect}>
-      <div className={cl.image} style={imageStyle}>
+    <div className={cl.imageFile}>
+      <div className={cl.image} style={imageStyle}
+        onClick={toggleSelect}>
       {
         selected ?       
         <div className={cl.checkMarkDiv}>

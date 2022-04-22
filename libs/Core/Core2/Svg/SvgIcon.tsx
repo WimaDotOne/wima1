@@ -9,6 +9,7 @@ import { SvgCheckMarkDisk } from "./Common/CheckMark/SvgCheckMarkDisk"
 import { SvgDoorBatwing } from "./Common/Door/SvgDoorBatwing"
 import { SvgPencil } from "./Common/Edit/Pencil"
 import { SvgPlus } from "./Common/Edit/Plus"
+import { SvgTrashBin } from "./Common/Edit/TrashBin"
 import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
@@ -36,7 +37,7 @@ export function SvgIcon({
   color2,
   strokeWidth
 }: ISvgIcon) {
-
+  
   switch(name) {
 
     //Google
@@ -87,6 +88,7 @@ export function SvgIcon({
     
     case "pencil": return <SvgPencil width={width} fill={color} />
     case "plus": return <SvgPlus width={width} fill={color} />
+    case "trashbin": return <SvgTrashBin width={width} fill={color} />
 
     
     //Entertainment

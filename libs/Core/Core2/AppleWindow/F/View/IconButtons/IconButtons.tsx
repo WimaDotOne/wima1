@@ -28,7 +28,7 @@ export function IconButtons({
   icon4, text4, onClick4,
   icon5, text5, onClick5
 }: IIconButtonsProp) {
-
+console.log(icon2)
   const iconWidth = text1 || text2 || text3 || text4 || text5 ? 18 : 20
   const textStyle: { color?: string} = {}
   if(color) {
@@ -49,11 +49,10 @@ export function IconButtons({
       {
         icon2 && onClick2 ? 
         <div className={cl.buttonDivWrap}>
-
-        <div className={cl.buttonDiv} onClick={onClick2}>
-          <SvgIcon name={icon2} color={color} width={iconWidth} strokeWidth={strokeWidth}/>
-          <div className={cl.text} style={textStyle}>{text2}</div>
-        </div>
+          <div className={cl.buttonDiv} onClick={onClick2}>
+            <SvgIcon name={icon2} color={color} width={iconWidth} strokeWidth={strokeWidth}/>
+            <div className={cl.text} style={textStyle}>{text2}</div>
+          </div>
         </div>:null
       }
       </div>
