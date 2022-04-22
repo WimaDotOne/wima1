@@ -5,24 +5,31 @@ import { AppleFolder, File, FileType } from "../../../../../../../../libs/Pop/Po
 import { MovicColor } from "../../../../../CSS/MovicColor"
 import { HeadLine } from "../../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindowBottomBar } from "../../../../MovicWindow/MovicWindowBottomBar"
+import { ProjectTurn } from "../Project"
 import cl from "./ProjectHome.module.scss"
 
 interface IProjectHomeProp {
   onBack: ()=>void
+  setProjectTurn: (projectTurn: string)=>void
 }
 export function ProjectHome({
-  onBack
+  onBack,
+  setProjectTurn
 }: IProjectHomeProp) {
 
   useEffect(()=>{
     window.scrollTo(0,0)
   })
 
+  function openImagesFolder() {
+    setProjectTurn(ProjectTurn.ImagesFolder)
+  }
+
   return(<>
     <div className={cl.home}>
       <HeadLine text="Scott Pilgrim vs the World" h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
-        <AppleFolder text="Images" onClick={()=>{}}/>
+        <AppleFolder text="Images" onClick={openImagesFolder}/>
         <File text="Movie Script" iconName="textfile" type={FileType.text} 
           onClick={()=>{}} />
         <File text="Preview" iconName="film" iconColor={MovicColor.themeRed}

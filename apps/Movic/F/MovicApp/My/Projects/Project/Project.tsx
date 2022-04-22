@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { ImagesFolder } from "./ImagesFolder/ImagesFolder"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
@@ -14,8 +15,14 @@ export function Project({
   
   let project = null
   switch(projectTurn) {
-
-    default: project = (<ProjectHome onBack={onBack}/>)
+    case ProjectTurn.ImagesFolder: return(
+      <ImagesFolder />
+    )
+    default: project = (
+      <ProjectHome onBack={onBack}
+        setProjectTurn = {setProjectTurn}
+      />
+    )
   }
 
   return(<>
@@ -25,5 +32,6 @@ export function Project({
 }
 
 export const ProjectTurn = {
-  Home: "Home"
+  Home: "Home",
+  ImagesFolder: "ImagesFolder"
 }

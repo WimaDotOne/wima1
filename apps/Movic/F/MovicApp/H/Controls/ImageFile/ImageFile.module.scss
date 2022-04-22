@@ -1,0 +1,23 @@
+.imageFile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkMarkDiv {
+  position: absolute;
+}
+
+.image {
+  width: 96px;
+  height: 54px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 7px;
+}
+.fileName {
+  margin-top: 2px;
+  font-size: 12px;
+  text-align: center;
+}
