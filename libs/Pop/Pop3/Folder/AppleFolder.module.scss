@@ -13,7 +13,8 @@
 .iconDivInner {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -3px);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .folderName {

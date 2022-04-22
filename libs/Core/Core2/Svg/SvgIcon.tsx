@@ -11,6 +11,7 @@ import { SvgPlus } from "./Common/Edit/Plus"
 import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
+import { SvgGear } from "./Common/Gear/Gear"
 import { SvgHamburger } from "./Common/Hamburger/SvgHamburger"
 import { SvgHome } from "./Common/Home/SvgHome"
 import { SvgMagnifyingGlass } from "./Common/MagnifyingGlass/SvgMagnifyingGlass"
@@ -22,6 +23,7 @@ import { SvgFilm } from "./Entertainment/Film/SvgFilm"
 import { SvgPhoto } from "./Entertainment/Photo/SvgPhoto"
 import { SvgPlayButton } from "./Entertainment/PlayButton/SvgPlayButton"
 import { ISvgIcon } from "./H/ISvg"
+import { SvgPreviewFile } from "./Office/File/PreviewFile"
 import { SvgTextFile } from "./Office/File/TextFile"
 import { SvgFolder2 } from "./Office/Folder/Folder2"
 import { SvgFolderFill } from "./Office/Folder/FolderFill"
@@ -92,7 +94,9 @@ export function SvgIcon({
     case "playbutton": return <SvgPlayButton width={width} fill={color} />
 
     //Office
+    case "previewfile": return <SvgPreviewFile width={width} fill={color} fill2={color2}/>
     case "textfile": return <SvgTextFile width={width} fill={color} fill2={color2}/>
+    case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
     

@@ -5,6 +5,18 @@
   width: 100%;
 }
 
+.iconDiv {
+  position: relative;
+  height: 50px;
+}
+
+.iconDivInner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .fileName {
   margin-top: 4px;
   font-size: 12px;
