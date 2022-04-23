@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { ImagesFolder } from "./ImagesFolder/ImagesFolder"
+import { MovieScript } from "./MovieScript/MovieScript"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
@@ -19,6 +20,9 @@ export function Project({
   
   let project = null
   switch(projectTurn) {
+    case ProjectTurn.MovieScript: return(
+      <MovieScript />
+    )
     case ProjectTurn.ImagesFolder: return(
       <ImagesFolder backToProjectHome={backToProjectHome}/>
     )
@@ -37,5 +41,6 @@ export function Project({
 
 export const ProjectTurn = {
   Home: "Home",
-  ImagesFolder: "ImagesFolder"
+  ImagesFolder: "ImagesFolder",
+  MovieScript: "MovieScript"
 }

@@ -1,0 +1,39 @@
+.editorWrap {
+  display: grid;
+  grid-template-columns: 50px auto;
+  height: 100%;
+}
+
+.lineCounter, .codeEditor {
+  font-family: lucida console, courier new, courier, monospace;
+  margin: 0;
+  padding: 10px 0;
+  height: 100%;
+  border-radius: 0;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.2;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.lineCounter {
+  display: flex;
+  overflow-y: hidden;
+  text-align: right;
+  background-color:#3E3D32;
+  border-color:#3E3D32;
+  color:#928869;
+  padding-right: 5px;
+  letter-spacing: -1px;
+  position: absolute;
+  width: 50px;
+}
+
+.codeEditor {
+  padding-left: 55px;
+  background-color:#272822;
+  border-color:#272822;
+  color:#ffffff;
+  width: 300px;
+}

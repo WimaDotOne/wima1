@@ -18,6 +18,7 @@ import { HLine } from "./Controls/HLine/HLine"
 import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
 import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
+import { TextEditor } from "./TextEditor/TextEditor"
 export {
   GroupModel,
   ItemModel,
@@ -33,5 +34,7 @@ export {
   Div,
   HLine,
   LimitWidth,
-  AutoRepeatGrid
+  AutoRepeatGrid,
+
+  TextEditor
 }

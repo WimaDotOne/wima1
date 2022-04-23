@@ -25,13 +25,17 @@ export function ProjectHome({
     setProjectTurn(ProjectTurn.ImagesFolder)
   }
 
+  function openMovieScript() {
+    setProjectTurn(ProjectTurn.MovieScript)
+  }
+
   return(<>
     <div className={cl.home}>
       <HeadLine text="Scott Pilgrim vs the World" h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Images" onClick={openImagesFolder}/>
         <File text="Movie Script" iconName="textfile" type={FileType.text} 
-          onClick={()=>{}} />
+          onClick={openMovieScript} />
         <File text="Preview" iconName="film" iconColor={MovicColor.themeRed}
           onClick={()=>{}} />
         <File text="Settings" iconName="gear" type={FileType.settings}
