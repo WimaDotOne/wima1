@@ -6,13 +6,15 @@
 
 .lineCounter, .codeEditor {
   appearance: none;
-  font-family: lucida console, courier new, courier, monospace;
+  font-family: monospace;
   margin: 0;
   padding: 10px 0;
   border-radius: 0;
+  border: none;
   resize: none;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
   outline: none;
   box-sizing: border-box;
   overflow-x: scroll;
@@ -22,11 +24,10 @@
   flex: 50px 0 0;
   overflow-y: hidden;
   text-align: right;
-  background-color:#3E3D32;
-  border-color:#3E3D32;
-  color:#928869;
+  background-color: #262626;
+  color:#717171;
   padding-right: 5px;
-  letter-spacing: 0px;
+  letter-spacing: -0.5px;
   width: 50px;
 }
 
@@ -35,9 +36,8 @@
   white-space: pre;
   overflow-wrap: normal;
   padding-left: 5px;
-  background-color:#272822;
-  border-color:#272822;
-  color:#ffffff;
+  background-color: #171717;
+  color: #fefefe;
   width: 100%;
 }
 
