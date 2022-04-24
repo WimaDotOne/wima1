@@ -11,9 +11,7 @@ export function MovieScript({
 
   const [script, setScript] = useState<string>("")
   return(<>
-    <div className={cl.editorWrap}>
-      <TextEditor text={script}/>
-    </div>
+    <TextEditor text={script} styleHeight="calc(100vh - 40px)"/>
     <AppleWindowBottomBarFill />
     <MovicWindowBottomBar>
 

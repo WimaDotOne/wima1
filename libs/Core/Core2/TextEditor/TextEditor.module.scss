@@ -1,39 +1,72 @@
 .editorWrap {
-  display: grid;
-  grid-template-columns: 50px auto;
+  display: flex;
+  width: 100%;
   height: 100%;
 }
 
 .lineCounter, .codeEditor {
+  appearance: none;
   font-family: lucida console, courier new, courier, monospace;
   margin: 0;
   padding: 10px 0;
-  height: 100%;
   border-radius: 0;
   resize: none;
   font-size: 14px;
   line-height: 1.2;
   outline: none;
   box-sizing: border-box;
+  overflow-x: scroll;
 }
 
 .lineCounter {
-  display: flex;
+  flex: 50px 0 0;
   overflow-y: hidden;
   text-align: right;
   background-color:#3E3D32;
   border-color:#3E3D32;
   color:#928869;
   padding-right: 5px;
-  letter-spacing: -1px;
-  position: absolute;
+  letter-spacing: 0px;
   width: 50px;
 }
 
 .codeEditor {
-  padding-left: 55px;
+  flex: 1;
+  white-space: pre;
+  overflow-wrap: normal;
+  padding-left: 5px;
   background-color:#272822;
   border-color:#272822;
   color:#ffffff;
-  width: 300px;
+  width: 100%;
+}
+
+.lineCounter::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 7px;
+}
+.lineCounter::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.lineCounter::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0)
+}
+
+.codeEditor::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  height: 7px;
+}
+.codeEditor::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.codeEditor::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .2)
+}
+
+.codeEditor::-webkit-scrollbar-corner {
+  background: #272822;
 }
