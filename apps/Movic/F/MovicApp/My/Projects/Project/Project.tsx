@@ -21,7 +21,7 @@ export function Project({
   let project = null
   switch(projectTurn) {
     case ProjectTurn.MovieScript: return(
-      <MovieScript />
+      <MovieScript backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.ImagesFolder: return(
       <ImagesFolder backToProjectHome={backToProjectHome}/>

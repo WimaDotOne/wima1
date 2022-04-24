@@ -1,4 +1,4 @@
-import { AppleIconButtons, AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
+import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { ImageFile } from "../../../../H/Controls/ImageFile/ImageFile"
 import { MovicWindowBottomBar } from "../../../../MovicWindow/MovicWindowBottomBar"
 import cl from "./ImagesFolder.module.scss"
@@ -84,7 +84,7 @@ export function ImagesFolder({
     }
     </AutoRepeatGrid>
     <AppleWindowBottomBarFill />
-    <MovicWindowBottomBar>
+    <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={MovicColor.themeRed}
        icon1="chevron.left" onClick1={backToProjectHome}
        icon2={selectAllIcon} onClick2={toggleSelectAll}
@@ -92,6 +92,6 @@ export function ImagesFolder({
        icon5="pencil" onClick5={edit} disabled5 = {!imageSelected}
        icon6="plus" onClick6={addImages}
       />
-    </MovicWindowBottomBar>
+    </AppleWindowPlainBottomBarDiv>
   </>)
 }

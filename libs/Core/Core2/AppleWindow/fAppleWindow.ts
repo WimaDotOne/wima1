@@ -3,6 +3,7 @@ import { GroupModel } from "./F/Model/Group";
 import { ItemModel } from "./F/Model/Item";
 import { MenuModel } from "./F/Model/Menu";
 import { BottomBarDiv } from "./F/View/BottomBarDiv/BottomBarDiv"
+import { PlainBottomBarDiv } from "./F/View/BottomBarDiv/PlainBottomBarDiv"
 import { BottomBarFill } from "./F/View/BottomBarDiv/BottomBarFill"
 import { Landing } from "./F/View/Landing/Landing"
 import { AppleWindow } from "./F/View/AppleWindow/AppleWindow"
@@ -15,6 +16,7 @@ export {
   ItemModel,
   MenuModel,
   BottomBarDiv,
+  PlainBottomBarDiv,
   BottomBarFill,
   Landing,
   AppleWindow,

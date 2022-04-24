@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { IconButtons } from "../../../../../../../../libs/Core/Core2/AppleWindow/F/View/IconButtons/IconButtons"
-import { AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
+import { AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder, File, FileType } from "../../../../../../../../libs/Pop/Pop3/fPop3"
 import { MovicColor } from "../../../../../CSS/MovicColor"
 import { HeadLine } from "../../../../H/Controls/HeadLine/HeadLine"
@@ -42,10 +42,10 @@ export function ProjectHome({
           onClick={()=>{}} />
       </AutoRepeatGrid>
     </div>
-    <MovicWindowBottomBar>
+    <AppleWindowPlainBottomBarDiv>
       <IconButtons color={MovicColor.themeRed} strokeWidth={20}
         icon1="chevron.left" onClick1={backToProjectsHome} text1=""
       /> 
-    </MovicWindowBottomBar>
+    </AppleWindowPlainBottomBarDiv>
   </>)
 }

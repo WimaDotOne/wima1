@@ -33,9 +33,7 @@ export function Projects({
   }
 
   return (<>
-    <MovicWindow>
-      {projects}
-    </MovicWindow>
+    {projects}
   </>)
 }
 

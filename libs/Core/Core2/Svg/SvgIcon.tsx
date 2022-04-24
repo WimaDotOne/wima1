@@ -9,9 +9,11 @@ import { SvgCheckMark } from "./Common/CheckMark/SvgCheckMark"
 import { SvgCheckMarkDisk } from "./Common/CheckMark/SvgCheckMarkDisk"
 import { SvgDoubleSquare } from "./Common/CheckMark/SvgDoubleSquare"
 import { SvgDoorBatwing } from "./Common/Door/SvgDoorBatwing"
+import { SvgFloppyDisk } from "./Common/Edit/floppyDisk"
 import { SvgPencil } from "./Common/Edit/Pencil"
 import { SvgPlus } from "./Common/Edit/Plus"
 import { SvgTrashBin } from "./Common/Edit/TrashBin"
+import { SvgX } from "./Common/Edit/X"
 import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
@@ -90,6 +92,8 @@ export function SvgIcon({
     case "doublesquare": return <SvgDoubleSquare width={width} fill={color} />
     case "smile": return <SvgSmile width={width} fill={color} />
     
+    case "x": return <SvgX width={width} fill={color} />
+    case "floppydisk": return <SvgFloppyDisk width={width} fill={color} />
     case "pencil": return <SvgPencil width={width} fill={color} />
     case "plus": return <SvgPlus width={width} fill={color} />
     case "trashbin": return <SvgTrashBin width={width} fill={color} />

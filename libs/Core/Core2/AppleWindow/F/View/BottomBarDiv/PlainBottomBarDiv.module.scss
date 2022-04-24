@@ -1,0 +1,21 @@
+@use "../../CSS/color.module";
+@use "../../CSS/dimension.module";
+
+.bottomBarDiv {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: dimension.$windowBottomBarHeight;
+  z-index: dimension.$windowBottomBarZIndex;
+  background-color: white;
+  border-top: 0.5px solid color.$barBorderGray;
+  box-sizing: border-box;
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .bottomBarDiv {
+    background-color: color.$bottomBarTransparentWhite;
+    backdrop-filter: blur(10px);
+  }
+}

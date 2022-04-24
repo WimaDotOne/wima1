@@ -1,6 +1,7 @@
 import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFolder"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
+import { MovicWindow } from "../../../MovicWindow/MovicWindow"
 import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
 import { ProjectsTurn } from "../Projects"
 import cl from "./ProjectsHome.module.scss"
@@ -18,7 +19,8 @@ export function ProjectsHome({
 
   const arr = []
   for(let i=0; i<9; i++) arr.push(i)
-  return(<>
+  return(<><MovicWindow>
+
    <div className={cl.board}>
      <HeadLine text="Projects" buttonText="New Project" 
       buttonOnClick={onClickNewProject}/>
@@ -38,5 +40,5 @@ export function ProjectsHome({
    <MovicWindowBottomBar>
    {}
    </MovicWindowBottomBar>
-  </>)
+   </MovicWindow></>)
 }

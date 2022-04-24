@@ -1,20 +1,23 @@
-import { ChangeEvent, KeyboardEvent, useEffect, useRef } from "react"
+import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
 import cl from "./TextEditor.module.scss"
 
 //https://medium.com/weekly-webtips/enable-line-numbering-to-any-html-textarea-35e15ea320e2
 
 interface ITextEditor {
-  text: string,
+  text: string
   setText: (text: string)=>void
   styleHeight: string
+  setHasChange: (hasChange: boolean)=>void
 }
 
 export function TextEditor({
   text,
   setText,
-  styleHeight
+  styleHeight,
+  setHasChange
 }: ITextEditor) {
 
+  const [changeRecorded, setChangeRecorded] = useState<boolean>(false)
   const lineCounterRef = useRef<HTMLTextAreaElement>(null)
   const codeEditorRef = useRef<HTMLTextAreaElement>(null)
 
@@ -38,6 +41,10 @@ export function TextEditor({
   })
 
   function onTextChange(e: ChangeEvent<HTMLTextAreaElement>) {
+    if(!changeRecorded) {
+      setChangeRecorded(true)
+      setHasChange(true)
+    }
     setText(e.target.value)
            const codeEditor = codeEditorRef.current
        if(!codeEditor) return
