@@ -26,6 +26,8 @@ export function TextEditor({
     const codeEditor = codeEditorRef.current
     if(!lineCounter || !codeEditor) return
 
+    codeEditor.focus()
+
     codeEditor.addEventListener("scroll", ()=>{
       lineCounter.scrollTop = codeEditor.scrollTop
     })
