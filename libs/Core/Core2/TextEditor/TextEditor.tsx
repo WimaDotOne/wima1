@@ -8,13 +8,15 @@ interface ITextEditor {
   setText: (text: string)=>void
   styleHeight: string
   setHasChange: (hasChange: boolean)=>void
+  autoFocus?: boolean
 }
 
 export function TextEditor({
   text,
   setText,
   styleHeight,
-  setHasChange
+  setHasChange,
+  autoFocus
 }: ITextEditor) {
 
   const [changeRecorded, setChangeRecorded] = useState<boolean>(false)
@@ -26,7 +28,9 @@ export function TextEditor({
     const codeEditor = codeEditorRef.current
     if(!lineCounter || !codeEditor) return
 
-    codeEditor.focus()
+    if(autoFocus) {
+      codeEditor.focus()
+    }
 
     codeEditor.addEventListener("scroll", ()=>{
       lineCounter.scrollTop = codeEditor.scrollTop

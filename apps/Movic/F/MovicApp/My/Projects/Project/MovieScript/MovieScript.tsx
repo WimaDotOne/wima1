@@ -22,7 +22,7 @@ export function MovieScript({
   }
   return(<>
     <TextEditor text={script} setText={setScript} styleHeight="calc(100vh - 40px)"
-      setHasChange={setHasChange}/>
+      setHasChange={setHasChange} autoFocus/>
     <AppleWindowBottomBarFill />
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={MovicColor.themeRed}
