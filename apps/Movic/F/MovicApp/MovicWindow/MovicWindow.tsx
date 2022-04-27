@@ -20,7 +20,7 @@ export function MovicWindow({
   }
 
   function updateViewId() {
-    //Update viewId based on path rather than setViewId during goToView because this also works when browser back arrow is clicked.
+    //Update viewId based on path rather than calling setViewId during goToView because this also works when browser back arrow is clicked.
     const route = router.asPath
     let viewIdPiece = route.split("AppTurn/")[1]
     if(viewIdPiece) {
@@ -50,7 +50,8 @@ export function MovicWindow({
 export const AppTurn = {
   Projects: "Projects",
   MyMovies: "MyMovies",
-  About: "About"
+  About: "About",
+  WimaCircle: "WimaCircle"
 }
 
 function MovicMenu(viewId?: string): MenuModel | undefined {
@@ -61,6 +62,7 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Public", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Wima Circle", "wimacircle")) 
 
   const menu = new MenuModel(viewId, MovicColor.themeRed)
   menu.AddGroup(myGroup)

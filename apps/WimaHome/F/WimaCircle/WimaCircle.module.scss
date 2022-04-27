@@ -1,0 +1,30 @@
+.goToWimaHome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wimaCircleBtn {
+  width: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wimaCircleBtn:hover {
+  background-color: #fcfcfc;
+  box-shadow: 0 0 4px #ccc;
+}
+
+.text {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 5px;
+  color: gray;
+  font-weight: 500;
+}

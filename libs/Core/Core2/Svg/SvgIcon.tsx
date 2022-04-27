@@ -1,6 +1,8 @@
 import { SvgAppleNews } from "./Brand/Apple/SvgAppleNews"
 import { SvgFacebook } from "./Brand/Facebook/SvgFacebook"
 import { SvgGoogle } from "./Brand/Google/SvgGoogle"
+import { SvgWimaCirlce } from "./Brand/Wima/SvgWimaCircle"
+import { SvgWimaCirlce1 } from "./Brand/Wima/SvgWimaCircle1"
 import { SvgArrow } from "./Common/Arrow/SvgArrow"
 import { SvgChevron } from "./Common/Arrow/SvgChevron"
 import { SvgFatArrow } from "./Common/Arrow/SvgFatArrow"
@@ -44,13 +46,14 @@ export function SvgIcon({
   
   switch(name) {
 
-    //Google
+    //Brand
     case "google": return <SvgGoogle width={width} fill={color} />
     case "facebook": return <SvgFacebook width={width} fill={color} />
     case "facebook.inverse": return <SvgFacebook width={width} fill={color} inverse/>
-
-    //AppleNews
     case "applenews": return <SvgAppleNews width={width} fill={color}/>
+    case "wimacircle": return <SvgWimaCirlce width={width} fill={color}/>
+    case "wimacircle1": return <SvgWimaCirlce1 width={width}/>
+
 
     //Common
     case "chevron.up": return <SvgChevron up width={width} fill={color}/>
