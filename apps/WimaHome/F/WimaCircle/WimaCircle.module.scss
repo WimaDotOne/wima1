@@ -7,15 +7,19 @@
 }
 
 .wimaCircleBtn {
-  width: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wimaCirleBtnInner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  cursor: pointer;
 }
-
 .wimaCircleBtn:hover {
   background-color: #fcfcfc;
   box-shadow: 0 0 4px #ccc;
@@ -23,8 +27,9 @@
 
 .text {
   text-align: center;
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 7px;
   color: gray;
   font-weight: 500;
 }

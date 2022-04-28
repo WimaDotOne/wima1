@@ -1,2 +1,2 @@
-Movic | movic.jpg | Movic
+Movic | movic.webp | Movic
 Settings | settings.png | Settings
