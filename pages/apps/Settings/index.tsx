@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { SettingsHome } from '../../../apps/Settings/SettingsHome/fSettingsHome'
 
 const Settings: NextPage = () => {
 
@@ -9,7 +10,8 @@ const Settings: NextPage = () => {
       <meta name="description" content="Settings" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    Settings
+    
+    <SettingsHome />
   </>)
 }
 
