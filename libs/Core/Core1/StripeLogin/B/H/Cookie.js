@@ -1,8 +1,8 @@
 import jwt from "jsonwebtoken"
-import { DevLogin } from "./DevLogin.js"
-const LOGIN = "Login"
+import { DevUser } from "./DevUser.js"
+const USER = "User"
 
-function SetLoginCookie(res, _id) {
+function SetUserCookie(res, _id) {
 
   if(!_id || !process.env.JWT_PRIVATE) {
     return
@@ -20,37 +20,37 @@ function SetLoginCookie(res, _id) {
     httpOnly: true
   }
 
-  res.cookie(LOGIN, token, cookieOption)
+  res.cookie(USER, token, cookieOption)
 
 }
 
-function GetLoginCookie(req) {
-  const token = req.cookies[LOGIN] //cookie parser
+function GetUserCookie(req) {
+  const token = req.cookies[USER] //cookie parser
   const payload = jwt.verify(token, process.env.JWT_PRIVATE)
   return payload
 }
 
-function DeleteLoginCookie(res) {
+function DeleteUserCookie(res) {
   const cookieOption =
   {
     maxAge: -24*60*60*1000,  //a day ago
     httpOnly: true
   }
-  res.cookie(LOGIN, "", cookieOption)
+  res.cookie(USER, "", cookieOption)
 }
 
-//Get login when user does not have to be logged in
-function TryGetLoginId(req) {
+//Get user when user does not have to be logged in
+function TryGetUserId(req) {
   try {
     //For development convenience
-    const devLogin = DevLogin()
-    if(devLogin) {
-      return devLogin._id
+    const devUser = DevUser()
+    if(devUser) {
+      return devUser._id
     }
-    let login = null
-    login = GetLoginCookie(req)
-    if(login) {
-      return login._id
+    let user = null
+    user = GetUserCookie(req)
+    if(user) {
+      return user._id
     }
   } catch (e) {
     //User does not have to be logged in, so don't return error message
@@ -59,8 +59,8 @@ function TryGetLoginId(req) {
 }
 
 export {
-  SetLoginCookie,
-  GetLoginCookie,
-  DeleteLoginCookie,
-  TryGetLoginId
+  SetUserCookie,
+  GetUserCookie,
+  DeleteUserCookie,
+  TryGetUserId
 }

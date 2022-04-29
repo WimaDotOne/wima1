@@ -5,7 +5,7 @@ async function iFacebookAuth(req, res, next) {
     const authResponse = req.body.authResponse
 
     if(!authResponse) {
-      return res.json({ok:false, error: "Facebook Auth failed."})
+      return res.json({ok:false, error: "Facebook authorization failed."})
     }
 
     const accessToken = authResponse.accessToken

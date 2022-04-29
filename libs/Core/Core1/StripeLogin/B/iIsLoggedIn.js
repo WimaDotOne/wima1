@@ -1,17 +1,17 @@
-import { DevLogin } from "./H/DevLogin.js"
-import { GetLoginCookie } from "./H/Cookie.js"
+import { DevUser } from "./H/DevUser.js"
+import { GetUserCookie } from "./H/Cookie.js"
 
 async function iIsLoggedIn(req, res) {
   try {
     //For development convenience
-    const devLogin = DevLogin()
-    if(devLogin) {
+    const devUser = DevUser()
+    if(devUser) {
       return res.json({ok: true, isLoggedIn: true})
     }
 
-    const login = GetLoginCookie(req)
+    const user = GetUserCookie(req)
 
-    if(login) {
+    if(user) {
       return res.json({ok: true, isLoggedIn: true})
     }
 

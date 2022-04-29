@@ -1,23 +1,24 @@
 import mongoose from "mongoose"
-import Login from "../Model/Login.js"
-import { SetLoginCookie } from "../H/Cookie.js"
+import GoogleAccount from "../Model/GoogleAccount.js"
+import { SetUserCookie } from "../H/Cookie.js"
+import User from "../Model/User.js"
 
 async function iGoogleLogIn(req, res) {
   try {
     const googleLogin = req.googleLogin
 
     if(!googleLogin) {
-      return res.json({ok: false, error: "Google login failed unexpectedly."})
+      return res.json({ok: false, error: "Google googleAccount failed unexpectedly."})
     }
 
     const googleId = googleLogin.sub
-    const gMail = googleLogin.email
-    const gName = googleLogin.name
-    const gPictureUrl = googleLogin.picture
-    const gGivenName = googleLogin.given_name
-    const gFamilyName = googleLogin.family_name
+    const gmail = googleLogin.email
+    const name = googleLogin.name
+    const pictureUrl = googleLogin.picture
+    const givenName = googleLogin.given_name
+    const familyName = googleLogin.family_name
 
-    if(!googleId || !gMail) {
+    if(!googleId || !gmail) {
       return res.json({ok: false, error: "No Gmail or Google Id."})
     }
 
@@ -25,25 +26,36 @@ async function iGoogleLogIn(req, res) {
       return res.json({ok: false, error: "Gmail is not verified."})
     }
 
-    let login = await Login.findOne({
+    let googleAccount = await GoogleAccount.findOne({
       googleId
     })
 
-    if(!login) {
-      login = new Login({
+    if(!googleAccount) {
+      googleAccount = new GoogleAccount({
         _id: mongoose.Types.ObjectId(),
         googleId,
-        gMail,
-        gName,
-        gGivenName,
-        gFamilyName,
-        gPictureUrl
+        gmail,
+        name,
+        givenName,
+        familyName,
+        pictureUrl
       })
 
-      await login.save()
+      await googleAccount.save()
     }
 
-    SetLoginCookie(res, login._id)
+    let user = await User.find({
+      googleAccountId: googleAccount._id
+    })
+
+    if(!user) {
+      user = new User({
+        googleAccountId: googleAccount._id
+      })
+      await user.save()
+    }
+
+    SetUserCookie(res, user._id)
 
     return res.json({ok: true})
   } catch (err) {

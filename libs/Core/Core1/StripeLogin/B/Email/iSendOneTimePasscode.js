@@ -1,9 +1,9 @@
 import { RandomPasscode } from "../H/Random.js"
 import { bConfig, GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
-import Login from "../Model/Login.js"
 import mongoose from "mongoose"
 import { MonitorDailyPasscodeSend } from "../../../bCore1.js"
-import { SendGrid, IsEmail } from "../../../../Core1/bCore1.js"
+import { SendGrid, IsEmail } from "../../../bCore1.js"
+import EmailAccount from "../Model/EmailAccount.js"
 
 async function iSendPasscode(req, res) {
   try {
@@ -13,11 +13,11 @@ async function iSendPasscode(req, res) {
       return res.json({ok:false, error: "Invalid Email"})
     }
 
-    let login = await Login.findOne({
+    let emailAccount = await EmailAccount.findOne({
       email
     })
-    if(!login) {
-      login = new Login({
+    if(!emailAccount) {
+      emailAccount = new EmailAccount({
         _id: mongoose.Types.ObjectId(),
         email,
       })
@@ -26,12 +26,12 @@ async function iSendPasscode(req, res) {
     await MonitorDailyPasscodeSend()
 
     const code = RandomPasscode(6)
-    login.passcode = code
-    login.numPasscodeFail = 0
+    emailAccount.oneTimePasscode = code
+    emailAccount.numOneTimePasscodeFail = 0
 
     const sg = new SendGrid()
 
-    await login.save()
+    await emailAccount.save()
 
     sg.SendEmail(email,
       `${bConfig.brand} one-time passcode`, `Your ${bConfig.brand} one-time passcode is ${code}`)

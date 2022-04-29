@@ -8,7 +8,7 @@ async function MonitorDailyPasscodeSend() {
     throw new Error("Email login is not supported.")
   }
 
-  const numDay = Date.now() / (24*60*60*1000)
+  const numDay = Math.floor(Date.now() / (24*60*60*1000))
   const counter = await DailyCounter.findOneAndUpdate({
     numDay
   }, {

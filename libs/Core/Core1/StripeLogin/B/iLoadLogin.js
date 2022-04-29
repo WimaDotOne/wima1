@@ -1,25 +1,36 @@
-import Login from "./Model/Login.js"
+import User from "./Model/User.js"
 
 async function iLoadLogin(req, res) {
   try {
-    const login = await Login.findById(req.login._id)
+    const user = await User.findById(req.user._id)
+      .populate("emailAccountId")
+      .populate("googleAccountId")
+      .populate("facebookAccountId")
 
-    if(!login) {
-      return res.json({ok: false, error: "Cannot find login info"})
+    const msgNoLoginInfo = "Cannot find login info"
+    if(!user) {
+      return res.json({ok: false, error: msgNoLoginInfo})
     }
 
     const loginInfo = { name: "", email: "", title: ""}
-    if(login.googleId) {
-      loginInfo.title = "Signed in with Google"
-      loginInfo.name = login.gName
-      loginInfo.email = login.gMail
-    } else if(login.facebookId) {
-      loginInfo.title = "Signed in with Facebook"
-      loginInfo.name = login.fName
-      loginInfo.email = login.fMail
-    } else {
+    if(user.emailAccountId) {
+      const emailAccount = user.emailAccountId
       loginInfo.title = "Signed in with Email"
-      loginInfo.email = login.email
+      loginInfo.email = emailAccount.email
+    } else if (user.googleAccountId) {
+      const googleAccount = user.googleAccountId
+      loginInfo.title = "Signed in with Google"
+      loginInfo.name = googleAccount.name
+      loginInfo.email = googleAccount.gmail
+    } else if (user.facebookAccountId) {
+      const facebookAccount = user.facebookAccountId
+      loginInfo.title = "Signed in with Facebook"
+      loginInfo.name = facebookAccount.name
+      loginInfo.email = facebookAccount.email
+    }
+
+    if(!loginInfo.title) {
+      return res.json({ok: false, error: msgNoLoginInfo})
     }
 
     return res.json({ok: true, loginInfo})

@@ -1,8 +1,8 @@
-import { DeleteLoginCookie } from "./H/Cookie.js"
+import { DeleteUserCookie } from "./H/Cookie.js"
 
 function iLogOut(req, res) {
   try {
-    DeleteLoginCookie(res)
+    DeleteUserCookie(res)
 
     return res.json({ok: true})
   } catch(err) {
