@@ -33,12 +33,13 @@ async function iFacebookLogIn(req, res) {
       await  facebookAccount.save()
     }
 
-    let user = await User.find({
+    let user = await User.findOne({
       facebookAccountId: facebookAccount._id
     })
 
     if(!user) {
       user = new User({
+        _id: mongoose.Types.ObjectId(),
         facebookAccountId: facebookAccount._id
       })
       await user.save()

@@ -44,12 +44,13 @@ async function iGoogleLogIn(req, res) {
       await googleAccount.save()
     }
 
-    let user = await User.find({
+    let user = await User.findOne({
       googleAccountId: googleAccount._id
     })
 
     if(!user) {
       user = new User({
+        _id: mongoose.Types.ObjectId(),
         googleAccountId: googleAccount._id
       })
       await user.save()
