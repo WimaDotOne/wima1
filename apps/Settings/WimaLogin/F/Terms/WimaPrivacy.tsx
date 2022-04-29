@@ -1,17 +1,21 @@
 import Head from "next/head"
 import { Div, HLine, LimitWidth } from "../../../../../libs/Core/Core2/fCore2"
 import { LogoBar, Paragraph, SectionHeader, TermHeader } from "../../../../../libs/Core/Core1/fCore1"
+import { useRouter } from "next/router"
 
 interface IWimaPrivacyProp {
-  onClickLogo?: ()=>void
 }
 export function WimaPrivacy({
-  onClickLogo,
 }: IWimaPrivacyProp) {
-  const logo = "Logo"
+  const logo = "Wima"
   const domain = "wima.one"
-  const brand = "Brand"
-  const lastUpdate = "Feb 2, 2022"
+  const brand = "Wima"
+  const lastUpdate = "June 1, 2022"
+
+  const router = useRouter()
+  function onClickLogo() {
+    router.push("/")
+  }
 
   return(<>
     <Head>
@@ -38,10 +42,10 @@ export function WimaPrivacy({
         We receive and store name, email address, and the profile picture associated with your social media account when you login {brand} through social media.
       </Paragraph>
       <Paragraph>
-        We receive and store any information you provide in relation to {brand} Services. Examples of such information includes, but not limited to ***, ***. You can choose not to provide certain information, but then you might not be able to take advantage of many of our {brand} Services.
+        We receive and store any information you provide in relation to {brand} Services. Examples of such information includes, but not limited to, texts you entered and images you uploaded. You can choose not to provide certain information, but then you might not be able to take advantage of many of our {brand} Services.
       </Paragraph>
       <Paragraph>
-        We automatically collect and store certain types of information about your use of {brand} Services, including information about your interaction with content and services available through {brand} Services. Like many websites, we use "cookies". Examples of automatically collected information includes, but not limited to, *** 
+        We automatically collect and store certain types of information about your use of {brand} Services, including information about your interaction with content and services available through {brand} Services. Like many websites, we use "cookies". Examples of automatically collected information includes, but not limited to, timestamps of actions. 
       </Paragraph>
       <SectionHeader text="2. Cookies" />
       <Paragraph>
@@ -54,13 +58,7 @@ export function WimaPrivacy({
       <Paragraph>
         We might send information to your email address to communicate the change of {brand} Services or to promote new services.
       </Paragraph>
-      <Paragraph>
-        ***
-      </Paragraph>
       <SectionHeader text="4. Do We Share Your Personal Data?" />
-      <Paragraph>
-        ***
-      </Paragraph>
       <Paragraph>
         We are not in the business of selling our users' personal information to others.
       </Paragraph>

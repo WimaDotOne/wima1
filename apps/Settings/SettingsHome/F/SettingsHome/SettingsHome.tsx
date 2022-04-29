@@ -4,6 +4,7 @@ import { ISetting } from "../Model/ISetting"
 import { SettingIcon } from "./SettingIcon/Settinglcon"
 import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../libs/Core/Core1/fCore1"
+import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv } from "../../../../../libs/Core/Core2/fCore2"
 
 interface ISettingsHomeProp {
 }
@@ -31,8 +32,15 @@ export function SettingsHome({
     router.push(`/apps/Settings/${route}`)
   }
 
+  function goBack() {
+    router.back()
+  }
+
   return(<>
-    <div className={cl.home}>
+    <div className={cl.header}>
+      Settings
+    </div>
+    <div className={cl.pad}>
     {
       settings.map((setting, i)=>
         <SettingIcon setting={setting} key={i}
@@ -43,5 +51,11 @@ export function SettingsHome({
       )
     }
     </div>
+    <AppleWindowBottomBarFill />
+    <AppleWindowPlainBottomBarDiv>
+      <AppleIconButtons 
+        icon1="chevron.left" onClick1={goBack}
+      />
+    </AppleWindowPlainBottomBarDiv>
   </>)
 }

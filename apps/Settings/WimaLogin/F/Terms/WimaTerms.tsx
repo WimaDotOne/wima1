@@ -1,20 +1,24 @@
 import Head from "next/head"
 import { Div, HLine, LimitWidth } from "../../../../../libs/Core/Core2/fCore2"
 import { LogoBar, Paragraph, SectionHeader, SubParagraph, SubSectionHeader, TermHeader } from "../../../../../libs/Core/Core1/fCore1"
+import { useRouter } from "next/router"
 
 interface IWimaTermsProp {
-  onClickLogo?: ()=>void
 }
 export function WimaTerms({
-  onClickLogo,
 }:IWimaTermsProp) {
-  const logo = "Logo"
+  const logo = "Wima"
   const domain = "wima.one"
-  const brand = "Brand"
-  const lastUpdate = "Feb 2, 2022"
+  const brand = "Wima"
+  const lastUpdate = "June 1, 2022"
+
+  const router = useRouter()
+
+  function onClickLogo() {
+    router.push("/")
+  }
 
   return(<>
-
     <Head>
       <title>Terms</title>
       <link rel="icon" href="/favicon.ico" />
@@ -37,15 +41,12 @@ export function WimaTerms({
       <Paragraph>
         Any new features or tools which are added to the current {brand} Services shall be also subject to the Terms of Service. You can review the current version of the Terms of Service at any time here. {brand} reserves the right to update and change the Terms of Service by updating the {brand} website. You are advised to check the Terms of Service from time to time for any updates or changes that may impact you. and if you do not accept such changes, you must cease using the {brand} Services.
       </Paragraph>
-      <SectionHeader text="How to ***" />
+      <SectionHeader text="Movic" />
       <Paragraph>
-        ***
+      Movic content should be appropriate for general audience.
       </Paragraph>
       <SubParagraph>
-        ***
-      </SubParagraph>
-      <SubParagraph>
-        ***
+        Images used in the Movic app must be PG-13.
       </SubParagraph>
       <SectionHeader text="Lawyer says" />
       <SubSectionHeader text="Copyright" />

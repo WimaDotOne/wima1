@@ -1,4 +1,11 @@
-.home {
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 50px 10px;
+  color: #666;
+  border-bottom: 0.5px solid #ddd;
+}
+.pad {
   padding: 50px 20px;
   min-height: 50vh;
   background-color: #dfdce299;
@@ -7,7 +14,10 @@
 }
 
 @media screen and (min-width: 800px) {
-  .home {
+  .header {
+    padding: 15px 100px 10px;
+  }
+  .pad {
     padding: 50px 100px;
   }
 }

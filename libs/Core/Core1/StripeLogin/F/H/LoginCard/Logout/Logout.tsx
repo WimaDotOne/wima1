@@ -46,7 +46,7 @@ export function Logout({
       <div className={cl.info}>{loginInfo.email}</div>
       <Div height={100} />
       <BigIconButton name="door.batwing" 
-        text="Exit" iconWidth={75} onClick={logout}
+        text="Log out" iconWidth={75} onClick={logout}
       />
     </div>
   </>)

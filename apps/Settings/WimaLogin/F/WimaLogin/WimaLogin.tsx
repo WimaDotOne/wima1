@@ -17,10 +17,14 @@ export function WimaLogin() {
   function goToTerms() {
     router.push("/apps/Settings/Terms/WimaTerms")
   }
+  function goToWimaHome() {
+    router.push("/")
+  }
  
   return(<>
 
     <Login config={config}
+      onBrand={goToWimaHome}
       onContact={goToContact}
       onTerms={goToTerms}
       onPrivacy={goToPrivacy}/>
