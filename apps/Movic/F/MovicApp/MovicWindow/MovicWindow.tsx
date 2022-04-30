@@ -30,6 +30,7 @@ export function MovicWindow({
   }
 
   useEffect(()=>{
+    win?.smartOpen()
     updateViewId()
   }, [])
 
@@ -60,9 +61,9 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
   myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies", "film"))
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard"))
 
-  const publicGroup = new GroupModel("Public", true)
+  const publicGroup = new GroupModel("Movic", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile")) 
-  publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Wima Circle", "wimacircle")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, MovicColor.themeRed)
   menu.AddGroup(myGroup)

@@ -8,7 +8,9 @@ const schema = mongoose.Schema({
   googleAccountId: {type: mongoose.Schema.Types.ObjectId, 
     index: true, sparse: true, unique: true, ref: "GoogleAccount"},
   facebookAccountId: {type: mongoose.Schema.Types.ObjectId, 
-    index: true, sparse: true, unique: true, ref: "FacebookAccount"}
+    index: true, sparse: true, unique: true, ref: "FacebookAccount"},
+  movicAccountId: {type: mongoose.Schema.Types.ObjectId, 
+    index: true, sparse: true, unique: true, ref: "MovicAccount"}
   
 }, {
   timestamps: { currentTime: () => Date.now() }
