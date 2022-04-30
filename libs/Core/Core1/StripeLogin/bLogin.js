@@ -17,7 +17,7 @@ LoginRouter.post('/GoogleLogIn', iGoogleAuth, iGoogleLogIn)
 LoginRouter.post('/FacebookLogIn', iFacebookAuth, iFacebookLogIn)
 LoginRouter.post('/IsLoggedIn', iIsLoggedIn)
 LoginRouter.post("/LoadLogin", iAuth, iLoadLogin)
-LoginRouter.post('/Logout', iAuth, iLogOut)
+LoginRouter.post('/Logout', iLogOut)
 LoginRouter.post('/SendPasscode', iSendPasscode)
 LoginRouter.post('/EmailLogin', iOneTimeEmailLogin)
 
