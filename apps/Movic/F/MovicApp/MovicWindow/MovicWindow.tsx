@@ -74,7 +74,7 @@ function IsViewRequreLogin(viewId?: string) {
 function MovicMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.MyMovies
   const myGroup = new GroupModel("My Space", false)
-  myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movies", "film", true))
+  myGroup.AddItem(new ItemModel(AppTurn.MyMovies, "Movics", "film", true))
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard", true))
 
   const publicGroup = new GroupModel("Movic", true)

@@ -2,6 +2,7 @@ import Link from "next/link"
 import cl from "./PleaseLogin.module.scss"
 
 export function PleaseLogin() {
+
   return(<>
     <div className={cl.pleaseLogin}>
       <div className={cl.pleaseLoginText}>
