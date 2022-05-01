@@ -15,6 +15,7 @@ export function LaunchPad({
   const router = useRouter()
   const user = useWimaUser()
   const shield = useShield()
+  
   async function goToApp(route: string) {
     await Get2(shield, "/login/IsLoggedIn", (res)=>{
       user?.setIsLoggedIn(!!res.isLoggedIn)

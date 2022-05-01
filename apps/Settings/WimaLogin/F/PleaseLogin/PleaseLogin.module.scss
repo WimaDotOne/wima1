@@ -4,3 +4,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.pleaseLoginText {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.loginText {
+  color: #0b47ca;
+  cursor: pointer;
+}
+
+.loginText:hover {
+  text-decoration: underline;
+}

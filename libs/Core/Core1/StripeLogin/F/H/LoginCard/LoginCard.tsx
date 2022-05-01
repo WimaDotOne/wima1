@@ -30,7 +30,7 @@ export function LoginCard({
   }
 
   async function IsLoggedIn() {
-    await Get2(shield, "/login/IsLoggedIn", {}, (res)=>{
+    await Get2(shield, "/login/IsLoggedIn", (res)=>{
       if(res.isLoggedIn) {
         setLoginCardTurn(LoginCardTurn.Logout)
       } else {
