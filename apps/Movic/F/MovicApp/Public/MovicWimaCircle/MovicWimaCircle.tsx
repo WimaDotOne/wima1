@@ -1,4 +1,4 @@
-import { WimaCircle } from "../../../../../WimaHome/F/WimaCircle/WimaCircle"
+import { WimaCircle } from "../../../../../Wima/F/WimaCircle/WimaCircle"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
 import cl from "./MovicWimaCircle.module.scss"
 

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { WimaHome } from '../apps/WimaHome/fWimaHome'
+import { WimaHome } from '../apps/Wima/fWima'
 
 const Home: NextPage = () => {
   return (<>

@@ -4,7 +4,7 @@ import { useAppleWindow } from "../../../../../libs/Core/Core2/AppleWindow/fAppl
 import { AppleWindow, GroupModel, ItemModel, MenuModel 
 } from "../../../../../libs/Core/Core2/fCore2"
 import { PleaseLogin } from "../../../../Settings/WimaLogin/F/PleaseLogin/PleaseLogin"
-import { useWimaUser } from "../../../../WimaHome/fWimaHome"
+import { useWimaUser } from "../../../../Wima/fWima"
 import { MovicColor } from "../../CSS/MovicColor"
 
 interface IMovicWindowProp {

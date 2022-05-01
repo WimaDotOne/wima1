@@ -11,7 +11,7 @@ export function WimaHome() {
 
   async function loadApps() {
 
-    await Get2(shield, "/wimaHome/LoadApps",
+    await Get2(shield, "/wima/LoadApps",
       (res)=>{
         setApps(res.apps)
       }

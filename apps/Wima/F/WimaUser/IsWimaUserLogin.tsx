@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Get2, useShield } from "../../../../../libs/Core/Core1/fCore1"
+import { Get2, useShield } from "../../../../libs/Core/Core1/fCore1"
 import { useWimaUser } from "./WimaUserContext"
 
 export function IsWimaUserLogin() {
@@ -15,8 +15,6 @@ export function IsWimaUserLogin() {
   }
   useEffect(()=>{
     if(!loaded) {
-    console.log("IsWimaUserLogin")
-
       UpdateUserLogin()
       setLoaded(true)
     }

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { MyMovies } from '../../../../apps/Movic/F/MovicApp/My/MyMovies/MyMovies'
-import { IsWimaUserLogin } from '../../../../apps/WimaHome/fWimaHome'
+import { IsWimaUserLogin } from '../../../../apps/Wima/fWima'
 
 const Movic: NextPage = () => {
   return (<>
