@@ -14,6 +14,7 @@ interface IAppleWindowProp {
   menu?: MenuModel
   children: ReactNode
   brand?: string
+  isLoggedIn?: boolean
 }
 export function AppleWindow({
   isLeftBarOpen, setIsLeftBarOpen,
@@ -21,6 +22,7 @@ export function AppleWindow({
   menu,
   children,
   brand,
+  isLoggedIn
 }:IAppleWindowProp) {
 
   function goToViewAndCloseLeftBar(viewId: string) {
@@ -42,7 +44,7 @@ export function AppleWindow({
       {children}
     </ViewDiv>
     <LeftBarDiv open={isLeftBarOpen} brand={brand} brandColor={menu?.themeColor}>
-      <Menu menu={menu} selectedItemId={viewId} onSelectItem={goToViewAndCloseLeftBar}/>
+      <Menu isLoggedIn={isLoggedIn} menu={menu} selectedItemId={viewId} onSelectItem={goToViewAndCloseLeftBar}/>
     </LeftBarDiv>
     <Hamburger setOpen={setIsLeftBarOpen} />
   </>)

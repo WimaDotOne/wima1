@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Post2, useShield } from "../../../../fCore1";
+import { Get2, useShield } from "../../../../fCore1";
 import { LoginConfig } from "../../Model/LoginConfig";
 import { ChooseLoginMethod } from "./ChooseLoginMethod/ChooseLoginMethod";
 import { EmailLogin } from "./EmailLogin/EmailLogin";
@@ -30,7 +30,7 @@ export function LoginCard({
   }
 
   async function IsLoggedIn() {
-    await Post2(shield, "/login/IsLoggedIn", {}, (res)=>{
+    await Get2(shield, "/login/IsLoggedIn", {}, (res)=>{
       if(res.isLoggedIn) {
         setLoginCardTurn(LoginCardTurn.Logout)
       } else {

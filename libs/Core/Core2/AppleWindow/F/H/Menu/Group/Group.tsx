@@ -9,11 +9,13 @@ interface IGroupProp {
   themeColor?: string
   selectedItemId?: string
   onSelectItem: (itemId: string)=>void
+  isLoggedIn?: boolean
 }
 export function Group({
   group,
   themeColor,
-  selectedItemId, onSelectItem
+  selectedItemId, onSelectItem,
+  isLoggedIn
 }: IGroupProp) {
 
   const [collasped, setCollapsed] = useState<boolean>(group.defaultCollapsed)
@@ -26,6 +28,7 @@ export function Group({
       group.items.map((item, i)=>
         <Button key={item.id} text={item.text} iconName={item.iconName} themeColor={themeColor}
           onClick={()=>{onSelectItem(item.id)}}
+          grayedOut={ !isLoggedIn && item.requireLogin}
           selected={item.id === selectedItemId}
         />
       )

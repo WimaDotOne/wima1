@@ -5,10 +5,12 @@ interface IMenuProp {
   menu?: MenuModel
   selectedItemId?: string
   onSelectItem: (itemId: string) => void
+  isLoggedIn?: boolean
 }
 export function Menu({
   menu,
-  selectedItemId, onSelectItem
+  selectedItemId, onSelectItem,
+  isLoggedIn
 }: IMenuProp) {
   
   if(!menu || !menu.groups) return null
@@ -16,7 +18,7 @@ export function Menu({
   return(<>
   {
     menu.groups.map((group, i)=>
-      <Group key={i} group={group} themeColor={menu.themeColor} 
+      <Group isLoggedIn={isLoggedIn} key={i} group={group} themeColor={menu.themeColor} 
         selectedItemId={selectedItemId} onSelectItem={onSelectItem}
       />
     )

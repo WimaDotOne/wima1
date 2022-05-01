@@ -15,9 +15,9 @@ import { iLoadLogin } from "./B/iLoadLogin.js"
 
 LoginRouter.post('/GoogleLogIn', iGoogleAuth, iGoogleLogIn)
 LoginRouter.post('/FacebookLogIn', iFacebookAuth, iFacebookLogIn)
-LoginRouter.post('/IsLoggedIn', iIsLoggedIn)
+LoginRouter.get('/IsLoggedIn', iIsLoggedIn)
 LoginRouter.post("/LoadLogin", iAuth, iLoadLogin)
-LoginRouter.post('/Logout', iLogOut)
+LoginRouter.post('/Logout', iLogOut)  // Don't auth before logout. Either user is logged in or not. If not, user will be stuck on logout page with no way out if asked for login.
 LoginRouter.post('/SendPasscode', iSendPasscode)
 LoginRouter.post('/EmailLogin', iOneTimeEmailLogin)
 
