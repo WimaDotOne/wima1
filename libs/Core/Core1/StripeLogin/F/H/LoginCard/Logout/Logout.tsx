@@ -1,5 +1,6 @@
+import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { Div } from "../../../../../../Core2/fCore2"
+import { Div, HLine } from "../../../../../../Core2/fCore2"
 import { Post2, useShield } from "../../../../../fCore1"
 import { BigIconButton } from "../ChooseLoginMethod/BigIconButton/BigIconButton"
 import cl from "./Logout.module.scss"
@@ -19,6 +20,7 @@ export function Logout({
   const [loginInfo, setLoginInfo] = useState<ILoginInfo>({})
 
   const shield = useShield()
+  const router = useRouter()
 
   async function loadLogin() {
 
@@ -39,12 +41,20 @@ export function Logout({
     }
     await Post2(shield, "/login/LogOut", {}, afterLogout)
   }
+  function goToWimaHome() {
+    router.push("/")
+  }
   return(<>
     <div className={cl.logoutDiv}>
       <div className={cl.title}>{loginInfo.title}</div>
       <div className={cl.info}>{loginInfo.name}</div>
       <div className={cl.info}>{loginInfo.email}</div>
-      <Div height={100} />
+      <Div height={30} />
+      <HLine />
+      <Div height={30} />
+      <BigIconButton name="wimacircle1" text="Wima Home" 
+        iconWidth={75} onClick={goToWimaHome} />
+      <Div height={20} />
       <BigIconButton name="door.batwing" 
         text="Log out" iconWidth={75} onClick={logout}
       />

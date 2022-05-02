@@ -43,10 +43,13 @@ export function WimaTerms({
       </Paragraph>
       <SectionHeader text="Movic" />
       <Paragraph>
-      Movic content should be appropriate for general audience.
+      Movic content must be appropriate for general audience.
       </Paragraph>
       <SubParagraph>
-        Images used in the Movic app must be PG-13.
+        Images used in the Movic app must be appropriate for general audience.
+      </SubParagraph>
+      <SubParagraph>
+        Text content used in the Movic app must be appropriate for general audience or PG-13.
       </SubParagraph>
       <SectionHeader text="Lawyer says" />
       <SubSectionHeader text="Copyright" />
