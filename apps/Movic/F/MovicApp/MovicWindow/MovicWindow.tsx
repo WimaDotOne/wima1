@@ -38,6 +38,7 @@ export function MovicWindow({
   }, [])
 
   const movicMenu = MovicMenu(win?.viewId)
+
   return(<>
     <AppleWindow menu={movicMenu} brand="Movic"
       isLeftBarOpen={win?.isOpen}
@@ -45,10 +46,15 @@ export function MovicWindow({
       viewId={win?.viewId} goToView={goToView}
       isLoggedIn={user?.isLoggedIn}
     >
-    { 
-      user && !user.isLoggedIn && IsViewRequreLogin(win?.viewId) ?
+    {
+      user && win && win.viewId ? //if variable not ready, don't load children
+      <>
+      {
+        !user.isLoggedIn && IsViewRequreLogin(win.viewId) ?
         <PleaseLogin />
         :children 
+      }
+      </>:null
     }
     </AppleWindow>
     
@@ -63,7 +69,6 @@ export const AppTurn = {
 }
 
 function IsViewRequreLogin(viewId?: string) {
-  if(!viewId) return false
   switch (viewId) {
     case AppTurn.MyMovies: return true
     case AppTurn.Projects: return true
