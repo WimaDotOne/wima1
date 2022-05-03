@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../bConfig"
-import { TextField1 } from "../../../../../../../libs/Core/Core1/fCore1"
+import { Post2, TextField1, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { MovicColor } from "../../../../CSS/MovicColor"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
@@ -16,8 +16,14 @@ export function NewProject({
 
   const [movicName, setMovicName] = useState<string>("")
 
-  function CreateNewProject() {
+  const shield = useShield()
 
+  async function CreateNewProject() {
+    await Post2(shield, "/movic/CreateMovicProject", {
+      movicName
+    }, (res)=>{
+      backToProjectsHome()
+    })
   }
 
   function IsNewProjectInfoValid() {

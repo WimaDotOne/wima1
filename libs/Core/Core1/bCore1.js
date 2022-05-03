@@ -7,6 +7,8 @@ import { DevCors } from "./StartServer/B/DevCors.js"
 import { LoginRouter } from "./StripeLogin/bLogin.js"
 import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytics.js"
 
+import User from "./StripeLogin/B/Model/User.js"
+
 export {
   IsEmail,
   SendGrid,
@@ -16,5 +18,7 @@ export {
   DevCors,
   LoginRouter,
   MonitorDailyPasscodeSend,
-  AnalyticsRouter
+  AnalyticsRouter,
+
+  User
 }
