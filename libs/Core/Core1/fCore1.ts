@@ -5,6 +5,8 @@ import { Post, Post2, Get, Get2 } from "./Fetch/F/Fetch"
 import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
+import { TextField1 } from "./Fields/TextField/TextField1"
+
 import {
   Login,
   LoginConfig,
@@ -31,5 +33,7 @@ export {
   ClassNames,
   Post, Post2, Get, Get2,
   Alert, AlertSysError,
-  IsEmail
+  IsEmail,
+
+  TextField1
 }

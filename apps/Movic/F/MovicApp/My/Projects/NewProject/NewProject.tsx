@@ -1,5 +1,9 @@
-import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv } from "../../../../../../../libs/Core/Core2/fCore2"
+import { useState } from "react"
+import { GENERAL_INPUT_MAX } from "../../../../../../../bConfig"
+import { TextField1 } from "../../../../../../../libs/Core/Core1/fCore1"
+import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { MovicColor } from "../../../../CSS/MovicColor"
+import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindow } from "../../../MovicWindow/MovicWindow"
 import cl from "./NewProject.module.scss"
 
@@ -10,16 +14,28 @@ export function NewProject({
   backToProjectsHome
 }:INewProjectProp) {
 
+  const [movicName, setMovicName] = useState<string>("")
+
   function CreateNewProject() {
 
   }
 
   function IsNewProjectInfoValid() {
+    if(!movicName) return false
     return true
   }
   
   return(<>
-    
+    <div className={cl.newProject}>
+      <HeadLine text="Start a new movic"/>
+      <Div height={30} />
+      <div className={cl.fields}>
+        <TextField1 value={movicName} 
+          maxLength={GENERAL_INPUT_MAX}
+          prompt="Movic Name"
+          onChange={(newValue)=>{setMovicName(newValue)}} />
+      </div>
+    </div>
     <AppleWindowBottomBarFill />
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={MovicColor.themeRed}
