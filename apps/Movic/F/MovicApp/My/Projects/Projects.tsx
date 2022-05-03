@@ -1,7 +1,6 @@
 import { useState } from "react"
-import { MovicWindow } from "../../MovicWindow/MovicWindow"
+import { NewProject } from "./NewProject/NewProject"
 import { Project } from "./Project/Project"
-import cl from "./Projects.module.scss"
 import { ProjectsHome } from "./ProjectsHome/ProjectsHome"
 
 interface IProjectsProp {
@@ -23,21 +22,24 @@ export function Projects({
     setProjectsTurn(ProjectsTurn.Home)
   }
 
-  let projects = null
-  switch(projectsTurn) {
-    case ProjectsTurn.Project:
-      projects = <Project projectId={projectId} 
-        backToProjectsHome={backToProjectsHome}/>
-      break
-    default: projects = <ProjectsHome openProject={openProject}/>
+  function goToNewProject() {
+    setProjectsTurn(ProjectsTurn.NewProject)
   }
 
-  return (<>
-    {projects}
-  </>)
+  switch(projectsTurn) {
+    case ProjectsTurn.NewProject:
+      return (<NewProject backToProjectsHome={backToProjectsHome}/>)
+    case ProjectsTurn.Project:
+      return (<Project projectId={projectId} 
+        backToProjectsHome={backToProjectsHome}/>)
+    default: return (<ProjectsHome openProject={openProject}
+      goToNewProject={goToNewProject}
+    />)
+  }
 }
 
 export const ProjectsTurn = {
   Home: "Home",
-  Project: "Project"
+  Project: "Project",
+  NewProject: "NewProject"
 }

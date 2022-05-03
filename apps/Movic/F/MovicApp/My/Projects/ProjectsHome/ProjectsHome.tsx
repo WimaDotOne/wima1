@@ -3,19 +3,16 @@ import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFold
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindow } from "../../../MovicWindow/MovicWindow"
 import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
-import { ProjectsTurn } from "../Projects"
 import cl from "./ProjectsHome.module.scss"
 
 interface IProjectsHomeProp {
   openProject: (projectId: string)=>void
+  goToNewProject: ()=>void
 }
 export function ProjectsHome({
-  openProject
+  openProject,
+  goToNewProject
 }: IProjectsHomeProp) {
-
-  function onClickNewProject() {
-    
-  }
 
   const arr = []
   for(let i=0; i<9; i++) arr.push(i)
@@ -23,7 +20,7 @@ export function ProjectsHome({
 
    <div className={cl.board}>
      <HeadLine text="Projects" buttonText="New Project" 
-      buttonOnClick={onClickNewProject}/>
+      buttonOnClick={goToNewProject}/>
      <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
        <AppleFolder text="Scott Pilgrim and Romona xxx xxxx vs the World" onClick={()=>{}}/>
        <AppleFolder text="Knvies Out" onClick={()=>{}}/>
