@@ -1,3 +1,4 @@
+import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
@@ -13,17 +14,16 @@ interface IProject {
 }
 
 interface IProjectsHomeProp {
-  openProject: (projectId: string)=>void
   goToNewProject: ()=>void
 }
 export function ProjectsHome({
-  openProject,
   goToNewProject
 }: IProjectsHomeProp) {
 
   const [loaded, setLoaded] = useState<boolean>(false)
   const [projects, setProjects] = useState<Array<IProject>>([])
   const shield = useShield()
+  const router = useRouter()
 
   async function LoadMyProjects() {
     if(loaded) return
@@ -37,6 +37,10 @@ export function ProjectsHome({
   useEffect(()=>{
     LoadMyProjects()
   })
+
+  function openProject(projectId: string, movicTitle: string) {
+    router.push(`/apps/Movic/AppTurn/Project?projectId=${projectId}&movicTitle=${movicTitle}`)
+  }
   return(<><MovicWindow>
 
    <div className={cl.board}>
@@ -46,7 +50,7 @@ export function ProjectsHome({
       {
         projects.map((project, i)=>
         <AppleFolder key={project.id} text={project.movicTitle} onClick={
-          ()=>{openProject(project.id)}
+          ()=>{openProject(project.id, project.movicTitle)}
           
         }/>)
       }

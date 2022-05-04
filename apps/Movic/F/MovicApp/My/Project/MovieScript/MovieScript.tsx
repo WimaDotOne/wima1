@@ -1,7 +1,6 @@
 import { useState } from "react"
-import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, TextEditor } from "../../../../../../../../libs/Core/Core2/fCore2"
-import { MovicColor } from "../../../../../CSS/MovicColor"
-import cl from "./MovieScript.module.scss"
+import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, TextEditor } from "../../../../../../../libs/Core/Core2/fCore2"
+import { MovicColor } from "../../../../CSS/MovicColor"
 
 interface IMovieScriptProp {
   backToProjectHome: ()=>void

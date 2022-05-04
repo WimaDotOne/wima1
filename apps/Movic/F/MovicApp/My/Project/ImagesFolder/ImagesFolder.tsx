@@ -1,9 +1,7 @@
-import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
-import { ImageFile } from "../../../../H/Controls/ImageFile/ImageFile"
-import { MovicWindowBottomBar } from "../../../../MovicWindow/MovicWindowBottomBar"
-import cl from "./ImagesFolder.module.scss"
-import { AppleWindowBottomBarFill } from "../../../../../../../../libs/Core/Core2/fCore2"
-import { MovicColor } from "../../../../../CSS/MovicColor"
+import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
+import { ImageFile } from "../../../H/Controls/ImageFile/ImageFile"
+import { AppleWindowBottomBarFill } from "../../../../../../../libs/Core/Core2/fCore2"
+import { MovicColor } from "../../../../CSS/MovicColor"
 import { useState } from "react"
 
 interface IImagesFolderProp {
