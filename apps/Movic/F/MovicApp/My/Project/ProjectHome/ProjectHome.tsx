@@ -3,15 +3,18 @@ import { IconButtons } from "../../../../../../../libs/Core/Core2/AppleWindow/F/
 import { AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder, File, FileType } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { MovicColor } from "../../../../CSS/MovicColor"
+import { IProject } from "../../../../Model/IProject"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { ProjectTurn } from "../Project"
 import cl from "./ProjectHome.module.scss"
 
 interface IProjectHomeProp {
+  project: IProject
   backToProjectsHome: ()=>void
   setProjectTurn: (projectTurn: string)=>void
 }
 export function ProjectHome({
+  project,
   backToProjectsHome,
   setProjectTurn
 }: IProjectHomeProp) {
@@ -30,7 +33,7 @@ export function ProjectHome({
 
   return(<>
     <div className={cl.home}>
-      <HeadLine text="Scott Pilgrim vs the World" h={3}/>
+      <HeadLine text={project.movicTitle} h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Images" onClick={openImagesFolder}/>
         <File text="Movie Script" iconName="textfile" type={FileType.text} 

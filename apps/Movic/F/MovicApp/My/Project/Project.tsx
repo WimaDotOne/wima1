@@ -1,18 +1,19 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { IProject } from "../../../Model/IProject"
 import { ImagesFolder } from "./ImagesFolder/ImagesFolder"
 import { MovieScript } from "./MovieScript/MovieScript"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
+
 }
 export function Project({
 }: IProjectProp) {
 
   const router = useRouter()
 
-  const [projectId, setProjectId] = useState<string>("")
-  const [movicTitle, setMovicTitle] = useState<string>("")
+  const [project, setProject] = useState<IProject>()
   const [projectTurn, setProjectTurn] = useState<string>("")
 
 
@@ -26,11 +27,14 @@ export function Project({
 
   useEffect(()=>{
     const query = router.query
-    const projectId0 = query.projectId as string
-    const movicTitle0 = query.movicTitle as string
-    setProjectId(projectId0)
-    setMovicTitle(movicTitle0)
+    const id = query.projectId as string
+    const movicTitle = query.movicTitle as string
+    setProject({id, movicTitle})
   })
+  
+  if(!project) {
+    return null
+  }
   
   switch(projectTurn) {
     case ProjectTurn.MovieScript: return(
@@ -40,7 +44,9 @@ export function Project({
       <ImagesFolder backToProjectHome={backToProjectHome}/>
     )
     default: return (
-      <ProjectHome backToProjectsHome={backToProjectsHome}
+      <ProjectHome 
+        project={project}
+        backToProjectsHome={backToProjectsHome}
         setProjectTurn = {setProjectTurn} />
     )
   }
