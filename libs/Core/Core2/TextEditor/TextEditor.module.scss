@@ -41,7 +41,7 @@
   width: 100%;
 }
 .codeEditor.wrapLine {
-  white-space: normal;
+  white-space: pre-wrap;
 }
 
 .lineCounter::-webkit-scrollbar {
