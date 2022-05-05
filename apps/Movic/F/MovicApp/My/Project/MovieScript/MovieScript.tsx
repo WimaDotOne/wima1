@@ -1,34 +1,57 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MovicConfig } from "../../../../../../../bConfig"
+import { Get2, Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, TextEditor } from "../../../../../../../libs/Core/Core2/fCore2"
 import { useWimaEnv } from "../../../../../../Wima/fWima"
 import { MovicColor } from "../../../../CSS/MovicColor"
+import { IProject } from "../../../../Model/IProject"
 
 
 interface IMovieScriptProp {
+  project: IProject
   backToProjectHome: ()=>void
-
 }
 export function MovieScript({
+  project,
   backToProjectHome
 }: IMovieScriptProp) {
 
   const [script, setScript] = useState<string>("")
   const [hasChange, setHasChange] = useState<boolean>(false)
   const [wrapLine, setWrapLine] = useState<boolean>(false)
+  const [loaded, setLoaded] = useState<boolean>(false)
 
   const wimaEnv = useWimaEnv()
+  const shield = useShield()
 
   function closeFile() {
     backToProjectHome()
   }
-  function saveFile() {
-    backToProjectHome()
+  async function saveFile() {
+    await Post2(shield, "/movic/SaveMovicScript", {
+      projectId: project.id,
+      script
+    }, (res)=>{
+      backToProjectHome()
+    })
+  }
+
+  async function LoadFile() {
+    if(!project.id) return
+    if(loaded) return
+    await Get2(shield, `/movic/LoadMovicScript?projectId=${project.id}`, (res)=>{
+      setLoaded(true)
+      setScript(res.script)
+    })
   }
 
   function toggleWrap() {
     setWrapLine(!wrapLine)
   }
+
+  useEffect(()=>{
+    LoadFile()
+  })
 
   const scriptMaxLength = +(wimaEnv?.movicEnv?.scriptFileMaxLength || MovicConfig.scritptFileMaxLength)
   

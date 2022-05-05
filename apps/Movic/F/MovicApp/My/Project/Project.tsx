@@ -31,18 +31,20 @@ export function Project({
     const id = query.projectId as string
     const movicTitle = query.movicTitle as string
 
-    if(!project) { //check project to avoid infinitely set
+    if(!project || !project.id) {
+      //check project to avoid infinitely setting
+      //check project.id to avoid setting a project with undefined id.
       setProject({id, movicTitle})
     }
   })
-  
+
   if(!project) {
     return null
   }
   
   switch(projectTurn) {
     case ProjectTurn.MovieScript: return(
-      <MovieScript backToProjectHome={backToProjectHome}/>
+      <MovieScript project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.ImagesFolder: return(
       <ImagesFolder backToProjectHome={backToProjectHome}/>
