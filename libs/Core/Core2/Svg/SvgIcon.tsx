@@ -12,6 +12,8 @@ import { SvgCheckMarkDisk } from "./Common/CheckMark/SvgCheckMarkDisk"
 import { SvgDoubleSquare } from "./Common/CheckMark/SvgDoubleSquare"
 import { SvgDoorBatwing } from "./Common/Door/SvgDoorBatwing"
 import { SvgFloppyDisk } from "./Common/Edit/SvgFloppyDisk"
+import { SvgLineUnwrap } from "./Common/Edit/SvgLineUnwrap"
+import { SvgLineWrap } from "./Common/Edit/SvgLineWrap"
 import { SvgPencil } from "./Common/Edit/SvgPencil"
 import { SvgPlus } from "./Common/Edit/SvgPlus"
 import { SvgTrashBin } from "./Common/Edit/SvgTrashBin"
@@ -100,7 +102,8 @@ export function SvgIcon({
     case "pencil": return <SvgPencil width={width} fill={color} />
     case "plus": return <SvgPlus width={width} fill={color} />
     case "trashbin": return <SvgTrashBin width={width} fill={color} />
-
+    case "linewrap": return <SvgLineWrap width={width} fill={color} />
+    case "lineunwrap": return <SvgLineUnwrap width={width} fill={color} />
     
     //Entertainment
     case "film": return <SvgFilm width={width} fill={color} />

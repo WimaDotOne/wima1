@@ -40,6 +40,9 @@
   color: #fefefe;
   width: 100%;
 }
+.codeEditor.wrapLine {
+  white-space: normal;
+}
 
 .lineCounter::-webkit-scrollbar {
   -webkit-appearance: none;

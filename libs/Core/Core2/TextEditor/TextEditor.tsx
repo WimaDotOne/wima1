@@ -1,4 +1,6 @@
+import { wrap } from "module"
 import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
+import { ClassNames } from "../../Core1/fCore1"
 import cl from "./TextEditor.module.scss"
 
 //https://medium.com/weekly-webtips/enable-line-numbering-to-any-html-textarea-35e15ea320e2
@@ -10,6 +12,7 @@ interface ITextEditor {
   setHasChange: (hasChange: boolean)=>void
   autoFocus?: boolean
   maxLength?: number
+  wrapLine?: boolean
 }
 
 export function TextEditor({
@@ -18,7 +21,8 @@ export function TextEditor({
   styleHeight,
   setHasChange,
   autoFocus,
-  maxLength
+  maxLength,
+  wrapLine
 }: ITextEditor) {
 
   const [changeRecorded, setChangeRecorded] = useState<boolean>(false)
@@ -44,7 +48,7 @@ export function TextEditor({
     for (var x = 0; x < lineCount; x++) {
       arr[x] = (x + 1)
     }
-    lineCounter.value = arr.join('\n');
+    lineCounter.value = wrapLine ? "": arr.join('\n');
     lineCounter.scrollTop = codeEditor.scrollTop
   })
 
@@ -76,11 +80,12 @@ export function TextEditor({
     //defined height adds directly on <textarea> to make line count scroll precisely with code editor
     height: styleHeight
   }
+  const clWrapLine = wrapLine ? cl.wrapLine : ""
   return(<>
     <div className={cl.editorWrap}>
       <textarea ref={lineCounterRef} className={cl.lineCounter} readOnly
         style={textareaStyle}></textarea>
-      <textarea ref={codeEditorRef} className={cl.codeEditor}
+      <textarea ref={codeEditorRef} className={ClassNames([cl.codeEditor, clWrapLine])}
         value={text} onChange={onTextChange} onKeyDown={onKeyDown}
         maxLength={maxLength}
         style={textareaStyle}></textarea>
