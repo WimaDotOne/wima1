@@ -9,6 +9,7 @@ interface IProjectProp {
 
 }
 export function Project({
+
 }: IProjectProp) {
 
   const router = useRouter()
@@ -29,7 +30,10 @@ export function Project({
     const query = router.query
     const id = query.projectId as string
     const movicTitle = query.movicTitle as string
-    setProject({id, movicTitle})
+
+    if(!project) { //check project to avoid infinitely set
+      setProject({id, movicTitle})
+    }
   })
   
   if(!project) {

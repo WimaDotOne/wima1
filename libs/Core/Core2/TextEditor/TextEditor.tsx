@@ -9,6 +9,7 @@ interface ITextEditor {
   styleHeight: string
   setHasChange: (hasChange: boolean)=>void
   autoFocus?: boolean
+  maxLength?: number
 }
 
 export function TextEditor({
@@ -16,7 +17,8 @@ export function TextEditor({
   setText,
   styleHeight,
   setHasChange,
-  autoFocus
+  autoFocus,
+  maxLength
 }: ITextEditor) {
 
   const [changeRecorded, setChangeRecorded] = useState<boolean>(false)
@@ -52,8 +54,6 @@ export function TextEditor({
       setHasChange(true)
     }
     setText(e.target.value)
-           const codeEditor = codeEditorRef.current
-       if(!codeEditor) return
   }
   function onKeyDown(e: KeyboardEvent<HTMLTextAreaElement>) {
     
@@ -82,6 +82,7 @@ export function TextEditor({
         style={textareaStyle}></textarea>
       <textarea ref={codeEditorRef} className={cl.codeEditor}
         value={text} onChange={onTextChange} onKeyDown={onKeyDown}
+        maxLength={maxLength}
         style={textareaStyle}></textarea>
     </div>
   </>)

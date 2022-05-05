@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Project } from '../../../../apps/Movic/F/MovicApp/My/Project/Project'
+import { GatherMovicEnv } from '../../../../apps/Wima/F/WimaEnv/GatherMovicEnv'
 import { IsWimaUserLogin } from '../../../../apps/Wima/fWima'
 
 const Movic: NextPage = () => {
@@ -12,6 +13,7 @@ const Movic: NextPage = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <IsWimaUserLogin />
+    <GatherMovicEnv />
     <Project />
   </>)
 }

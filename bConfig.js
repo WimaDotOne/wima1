@@ -12,7 +12,8 @@ const bConfig = {
 const GENERAL_INPUT_MAX = 100
 
 const MovicConfig = {
-  movicMaxPerAccount: 100
+  movicMaxPerAccount: 100,
+  scritptFileMaxLength: 200000
 }
 export {
   bConfig,
