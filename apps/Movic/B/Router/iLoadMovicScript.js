@@ -1,5 +1,6 @@
 import Movic from "../Model/Movic.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "./H/GetMovicAccount.js"
+import { ParseMovicScript } from "./H/ParseMovicScript.js"
 
 async function iLoadMovicScript(req, res) {
   try{
@@ -14,8 +15,10 @@ async function iLoadMovicScript(req, res) {
       return res.json({ ok: false, error: "Cannot find movic" })
     }
 
+    //Delete later
+    const scenes = ParseMovicScript(movic.script1)
 
-    return res.json({ok: true, script: movic.script1})
+    return res.json({ok: true, script: movic.script1, scenes})
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })

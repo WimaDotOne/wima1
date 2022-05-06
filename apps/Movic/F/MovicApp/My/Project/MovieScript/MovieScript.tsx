@@ -42,6 +42,7 @@ export function MovieScript({
     if(loaded) return
     await Get2(shield, `/movic/LoadMovicScript?projectId=${project.id}`, (res)=>{
       setLoaded(true)
+      console.log(res.scenes)
       setScript(res.script)
     })
   }
