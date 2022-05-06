@@ -1,0 +1,18 @@
+.fileNameBar {
+  background-color: #363636;
+  color: #ccc;
+  font-size: 13px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.fileNameBarInner {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  padding: 0 20px;
+}
