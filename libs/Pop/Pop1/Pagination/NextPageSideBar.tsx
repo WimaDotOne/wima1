@@ -38,7 +38,7 @@ export function NextPageSideBar({
     if(!setPage) { return }
     page = +page + 1
     if(isNaN(page)) { page = 1 }
-    if(page > totalPage) { return }
+    if(page > totalPage!) { return }
     setPage(page)
   }
   
