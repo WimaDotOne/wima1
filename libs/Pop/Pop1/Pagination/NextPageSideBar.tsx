@@ -5,7 +5,7 @@ import cl from "./NextPageSideBar.module.scss"
 interface INextPageSideBarProp {
   page: number | string
   setPage: (page: number|string)=>void
-  totalPage: number | string
+  totalPage?: number | string
   pedalColor?: string
   arrowColor?: string
   prev?: boolean

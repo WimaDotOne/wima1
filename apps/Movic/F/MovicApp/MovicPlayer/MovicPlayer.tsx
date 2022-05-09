@@ -21,7 +21,7 @@ export function MovicPlayer({
       </div>
       <NextPageSideBar page={page} setPage={setPage} totalPage={9} 
         pedalColor="#444" arrowColor="#333"/>
-      <NextPageSideBar page={page} setPage={setPage} totalPage={9} prev
+      <NextPageSideBar page={page} setPage={setPage} prev
         pedalColor="#444" arrowColor="#333"/>
       <MovicControlBar page={page} setPage={setPage} totalPage={9}
         onStop={onStop}
