@@ -2,7 +2,8 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { IProject } from "../../../Model/IProject"
 import { ImagesFolder } from "./ImagesFolder/ImagesFolder"
-import { MovieScript } from "./MovieScript/MovieScript"
+import { MovicScript } from "./MovicScript/MovicScript"
+import { Preview } from "./Preview/Preview"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
 
 interface IProjectProp {
@@ -43,11 +44,14 @@ export function Project({
   }
   
   switch(projectTurn) {
-    case ProjectTurn.MovieScript: return(
-      <MovieScript project={project} backToProjectHome={backToProjectHome}/>
+    case ProjectTurn.MovicScript: return(
+      <MovicScript project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.ImagesFolder: return(
       <ImagesFolder backToProjectHome={backToProjectHome}/>
+    )
+    case ProjectTurn.Preview: return(
+      <Preview backToProjectHome={backToProjectHome}/>
     )
     default: return (
       <ProjectHome 
@@ -62,5 +66,6 @@ export function Project({
 export const ProjectTurn = {
   Home: "Home",
   ImagesFolder: "ImagesFolder",
-  MovieScript: "MovieScript"
+  MovicScript: "MovicScript",
+  Preview: "Preview"
 }

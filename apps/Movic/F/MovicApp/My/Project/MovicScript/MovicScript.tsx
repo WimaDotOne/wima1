@@ -8,14 +8,14 @@ import { MovicColor } from "../../../../CSS/MovicColor"
 import { IProject } from "../../../../Model/IProject"
 
 
-interface IMovieScriptProp {
+interface IMovicScriptProp {
   project: IProject
   backToProjectHome: ()=>void
 }
-export function MovieScript({
+export function MovicScript({
   project,
   backToProjectHome
-}: IMovieScriptProp) {
+}: IMovicScriptProp) {
 
   const [script, setScript] = useState<string>("")
   const [hasChange, setHasChange] = useState<boolean>(false)
@@ -42,7 +42,6 @@ export function MovieScript({
     if(loaded) return
     await Get2(shield, `/movic/LoadMovicScript?projectId=${project.id}`, (res)=>{
       setLoaded(true)
-      console.log(res.scenes)
       setScript(res.script)
     })
   }

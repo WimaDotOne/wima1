@@ -27,8 +27,12 @@ export function ProjectHome({
     setProjectTurn(ProjectTurn.ImagesFolder)
   }
 
-  function openMovieScript() {
-    setProjectTurn(ProjectTurn.MovieScript)
+  function openMovicScript() {
+    setProjectTurn(ProjectTurn.MovicScript)
+  }
+
+  function preview() {
+    setProjectTurn(ProjectTurn.Preview)
   }
 
   return(<>
@@ -37,9 +41,9 @@ export function ProjectHome({
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Images" onClick={openImagesFolder}/>
         <File text="Movie Script" iconName="textfile" type={FileType.text} 
-          onClick={openMovieScript} />
+          onClick={openMovicScript} />
         <File text="Preview" iconName="film" iconColor={MovicColor.themeRed}
-          onClick={()=>{}} />
+          onClick={preview} />
         <File text="Settings" iconName="gear" type={FileType.settings}
           onClick={()=>{}} />
       </AutoRepeatGrid>

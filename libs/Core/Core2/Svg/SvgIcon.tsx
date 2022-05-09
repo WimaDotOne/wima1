@@ -32,6 +32,7 @@ import { SvgClapperBoard } from "./Entertainment/ClapperBoard/SvgClapperBoard"
 import { SvgFilm } from "./Entertainment/Film/SvgFilm"
 import { SvgPhoto } from "./Entertainment/Photo/SvgPhoto"
 import { SvgPlayButton } from "./Entertainment/PlayButton/SvgPlayButton"
+import { SvgStopButton } from "./Entertainment/StopButton/SvgStopButton"
 import { ISvgIcon } from "./H/ISvg"
 import { SvgPreviewFile } from "./Office/File/PreviewFile"
 import { SvgTextFile } from "./Office/File/TextFile"
@@ -110,6 +111,7 @@ export function SvgIcon({
     case "clapperboard": return <SvgClapperBoard width={width} fill={color} />
     case "photo": return <SvgPhoto width={width} fill={color} />
     case "playbutton": return <SvgPlayButton width={width} fill={color} />
+    case "stopbutton": return <SvgStopButton width={width} fill={color} />
 
     //Office
     case "previewfile": return <SvgPreviewFile width={width} fill={color} fill2={color2}/>

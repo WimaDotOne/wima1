@@ -1,3 +1,4 @@
+import { text } from "stream/consumers"
 import { SvgIcon } from "../../../Core/Core2/Svg/SvgIcon"
 import cl from "./Pagination.module.scss"
 
@@ -5,10 +6,18 @@ interface IPaginationProp {
   page: number | string
   setPage: (page: number | string)=>void
   totalPage: number | string
+  type?: string
+  textColor?: string
+  arrowColor?: string
+}
+
+export const PaginationType = {
+  Quora: "Quora",
+  Movic: "Movic"
 }
 
 export function Pagination({
-  page, setPage, totalPage
+  page, setPage, totalPage, type, textColor, arrowColor
 }: IPaginationProp) {
 
   page = page || ""
@@ -40,30 +49,72 @@ export function Pagination({
     setPage(num)
   }
 
-  const arrowBlue="#2e69ff"
-  return(<>
-    <div className={cl.pagination}>
-      <div className={cl.paddle} onClick={prevPage}>
-        <SvgIcon name="fatarrow.left" width={20}
-          color={arrowBlue} />
+  switch(type) {
+
+    case PaginationType.Movic:
+      arrowColor = arrowColor || "white"
+      textColor = textColor || "white"
+      return(<>
+      <div className={cl.movic} style={{color: textColor}}>
+        <div className={cl.pagination}>
+          <div className={cl.paddle} onClick={prevPage}>
+            <SvgIcon name="chevron.left" width={20}
+              color={arrowColor} />
+          </div>
+          <div className={cl.inputWrap}>
+            <input type="text" value={page || ""}
+              style={{color: textColor}}
+              className={cl.input}
+              onChange={(e)=>{
+                changePage(e.target.value)
+              }}
+            />
+          </div>
+          <div className={cl.totalPage}>
+            <div className={cl.totalPageInner}> / {totalPage}</div>
+          </div>
+        
+          <div className={cl.paddle} onClick={nextPage}>
+            <SvgIcon name="chevron.right" width={20} 
+              color={arrowColor} />
+          </div>
+        </div>
       </div>
-      <div className={cl.inputWrap}>
-        <input type="text" value={page || ""}
-          className={cl.input}
-          onChange={(e)=>{
-            changePage(e.target.value)
-          }}
-        />
+      </>)
+
+
+    default:
+    const arrowBlue="#2e69ff"
+    arrowColor = arrowColor || arrowBlue
+    textColor = textColor || "black"
+    return(<>
+    <div style={{color: textColor}}>
+        <div className={cl.pagination}>
+          <div className={cl.paddle} onClick={prevPage}>
+            <SvgIcon name="fatarrow.left" width={20}
+              color={arrowColor} />
+          </div>
+          <div className={cl.inputWrap}>
+            <input type="text" value={page || ""}
+              style={{color: textColor}}
+              className={cl.input}
+              onChange={(e)=>{
+                changePage(e.target.value)
+              }}
+            />
+          </div>
+          <div className={cl.totalPage}>
+            <div className={cl.totalPageInner}> / {totalPage}</div>
+          </div>
+        
+          <div className={cl.paddle} onClick={nextPage}>
+            <SvgIcon name="fatarrow.right" width={20} 
+              color={arrowColor} />
+          </div>
+        </div>
       </div>
-      <div className={cl.totalPage}>
-        <div className={cl.totalPageInner}> / {totalPage}</div>
-      </div>
-     
-      <div className={cl.paddle} onClick={nextPage}>
-        <SvgIcon name="fatarrow.right" width={20} 
-          color={arrowBlue} />
-      </div>
-    
-    </div>
-  </>)
+    </>)
+  }
+
+  
 }

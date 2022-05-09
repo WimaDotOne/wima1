@@ -1,0 +1,33 @@
+$progressHeight: 3px;
+
+.bar {
+  position: fixed;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+.progressDiv {
+  background-color: #9993;
+}
+.progress {
+  background-color: #ccc;
+  height: $progressHeight;
+}
+.barPannel {
+  height: calc(100% - $progressHeight);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stopBtnDiv {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.paginationDiv {
+  padding: 0 5px;
+}
