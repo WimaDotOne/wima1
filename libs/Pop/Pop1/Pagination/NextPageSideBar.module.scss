@@ -1,0 +1,16 @@
+.pagePedal {
+  position: fixed;
+  top: calc(50vh - 40px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagePedal.next {
+  right: 5px;
+}
+.pagePedal.prev {
+  left: 5px;
+}

@@ -1,12 +1,17 @@
+@use "../../../../CSS/movic.module.scss";
+
 $progressHeight: 3px;
 
 .bar {
+  height: movic.$movicControlBarHeight;
+  width: 100%;
+  user-select: none;
+}
+.bar.pin {
   position: fixed;
-  height: 40px;
   left: 0;
   right: 0;
   bottom: 0;
-  user-select: none;
 }
 .progressDiv {
   background-color: #9993;
@@ -20,14 +25,27 @@ $progressHeight: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
 }
 
+.barLeft, .barRight {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.pinDiv {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+}
 .stopBtnDiv {
   padding: 0 20px;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .paginationDiv {
-  padding: 0 5px;
+  padding: 0 15px;
 }

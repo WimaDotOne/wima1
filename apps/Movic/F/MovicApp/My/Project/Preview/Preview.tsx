@@ -7,6 +7,6 @@ export function Preview({
   backToProjectHome
 }: IPreviewProp) {
   return(<>
-    <MovicPlayer />
+    <MovicPlayer onStop={backToProjectHome}/>
   </>)
 }

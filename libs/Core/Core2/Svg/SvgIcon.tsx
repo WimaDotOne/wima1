@@ -6,6 +6,7 @@ import { SvgWimaCirlce1 } from "./Brand/Wima/SvgWimaCircle1"
 import { SvgArrow } from "./Common/Arrow/SvgArrow"
 import { SvgChevron } from "./Common/Arrow/SvgChevron"
 import { SvgFatArrow } from "./Common/Arrow/SvgFatArrow"
+import { SvgWideArrow } from "./Common/Arrow/SvgWideArrow"
 import { SvgCheckDoubleSquare } from "./Common/CheckMark/SvgCheckDoubleSquare"
 import { SvgCheckMark } from "./Common/CheckMark/SvgCheckMark"
 import { SvgCheckMarkDisk } from "./Common/CheckMark/SvgCheckMarkDisk"
@@ -38,6 +39,8 @@ import { SvgPreviewFile } from "./Office/File/PreviewFile"
 import { SvgTextFile } from "./Office/File/TextFile"
 import { SvgFolder2 } from "./Office/Folder/Folder2"
 import { SvgFolderFill } from "./Office/Folder/FolderFill"
+import { SvgPin } from "./Office/Pin/SvgPin"
+import { SvgUnPin } from "./Office/Pin/SvgUnpin"
 
 export function SvgIcon({
   name,
@@ -57,7 +60,6 @@ export function SvgIcon({
     case "wimacircle": return <SvgWimaCirlce width={width} fill={color}/>
     case "wimacircle1": return <SvgWimaCirlce1 width={width}/>
 
-
     //Common
     case "chevron.up": return <SvgChevron up width={width} fill={color}/>
     case "chevron.down": return <SvgChevron down width={width} fill={color}/>
@@ -68,6 +70,9 @@ export function SvgIcon({
     case "arrow.down": return <SvgArrow down width={width} stroke={color} strokeWidth={strokeWidth} />
     case "arrow.left": return <SvgArrow left width={width} stroke={color} strokeWidth={strokeWidth} />
     case "arrow.right": return <SvgArrow right width={width} stroke={color} strokeWidth={strokeWidth} />
+
+    case "widearrow.left": return <SvgWideArrow left width={width} fill={color} />
+    case "widearrow.right": return <SvgWideArrow right width={width} fill={color} />
 
     case "fatarrow.up": return <SvgFatArrow up width={width} stroke={color} strokeWidth={strokeWidth} />
     case "fatarrow.down": return <SvgFatArrow down width={width} stroke={color} strokeWidth={strokeWidth} />
@@ -119,6 +124,8 @@ export function SvgIcon({
     case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
+    case "pin": return <SvgPin width={width} fill={color} />
+    case "unpin": return <SvgUnPin width={width} fill={color} />
     
     default: return null
   }
