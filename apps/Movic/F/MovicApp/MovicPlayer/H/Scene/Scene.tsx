@@ -1,11 +1,23 @@
+import { IScene } from "../../../../Model/IMoment"
+import { Moment } from "../Moment/Moment"
 import cl from "./Scene.module.scss"
 
 interface ISceneProp {
-
+  scene: IScene
 }
-export function Scene() {
+export function Scene({
+  scene
+}: ISceneProp) {
+
+  scene = scene || []
 
   return(<>
-    Scene
+    <div className={cl.scene}>
+    {
+      scene.map((moment, i)=>
+        <Moment key={i} moment={moment} />
+      )
+    }
+    </div>
   </>)
 }

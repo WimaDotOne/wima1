@@ -6,6 +6,8 @@ $progressHeight: 3px;
   height: movic.$movicControlBarHeight;
   width: 100%;
   user-select: none;
+  background-color: #fff2;
+  backdrop-filter: blur(10px);
 }
 .bar.pin {
   position: fixed;

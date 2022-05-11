@@ -1,0 +1,43 @@
+.momentSpace {
+  padding: 10px;
+}
+.moment {
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.narratives {
+  padding: 0 10px;
+
+}
+.narrative {
+  padding-bottom: 5px;
+  color: #b8d5cd;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.imageSpace {
+  padding: 5px;
+}
+.image {
+  width: 320px;
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.lines {
+  padding: 0 10px;
+  color: #b8d5cd;
+}
+
+.line.odd {
+  color: #f1d8c5;
+}

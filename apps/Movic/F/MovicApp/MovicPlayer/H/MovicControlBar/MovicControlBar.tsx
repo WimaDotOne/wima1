@@ -41,8 +41,8 @@ export function MovicControlBar({
           <div className={cl.pinDiv} onClick={togglePin}>
           {
             pin ? 
-            <SvgIcon name="pin" width={20} color="white"/>:
-            <SvgIcon name="unpin" width={20} color="white"/>
+            <SvgIcon name="pin" width={24} color="white"/>:
+            <SvgIcon name="unpin" width={24} color="white"/>
           }
           </div>
           <div className={cl.paginationDiv}>
