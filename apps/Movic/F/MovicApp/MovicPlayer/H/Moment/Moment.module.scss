@@ -4,7 +4,7 @@
 .moment {
   padding: 10px 5px;
   border-radius: 10px;
-  background-color: #555;
+  background-color: #5555;
 }
 
 .narratives {
@@ -25,19 +25,79 @@
   padding: 5px;
 }
 .image {
-  width: 320px;
-  height: 180px;
+  width: 400px;
+  height: 225px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
 }
 
+.moment.image1 {
+  max-width: 420px;
+}
+.moment.image2 {
+  max-width: 830px;
+}
+.moment.image3 {
+  max-width: 1240px;
+}
+
 .lines {
   padding: 0 10px;
   color: #b8d5cd;
+  text-align: center;
 }
 
 .line.odd {
   color: #f1d8c5;
+}
+
+@media screen and (max-width: 1320px){
+  .moment.image3 {
+    max-width: 830px;
+  }
+}
+
+@media screen and (max-width: 910px){
+  .moment.image2 {
+    max-width: 420px;
+  }
+  .moment.image3 {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image {
+    width: 320px;
+    height: 180px;
+  }
+
+  .moment.image1 {
+    max-width: 340px;
+  }
+  .moment.image2 {
+    max-width: 340px;
+  }
+  .moment.image3 {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    width: 208px;
+    height: 117px;
+  }
+
+  .moment.image1 {
+    max-width: 228px;
+  }
+  .moment.image2 {
+    max-width: 228px;
+  }
+  .moment.image3 {
+    max-width: 228px;
+  }
 }

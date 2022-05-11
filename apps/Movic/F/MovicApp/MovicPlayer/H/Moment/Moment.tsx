@@ -16,23 +16,23 @@ export function Moment({
 
   const imageCount = imageUrls.length
 
-  let maxWidth = 340
-  if(imageCount <= 1) {
-    maxWidth = 360
+  let clImageCount = ""
+  if(imageCount < 2) {
+    clImageCount = cl.image1
   } else if(imageCount === 2) {
-    maxWidth = 720
+    clImageCount = cl.image2
   } else {
-    maxWidth = 1200
+    clImageCount = cl.image3
   }
   return(<>
-    <div className={cl.momentSpace} style={{maxWidth: maxWidth+"px"}}>
-    <div className={cl.moment}>
+    <div className={cl.momentSpace}>
+    <div className={ClassNames([cl.moment, clImageCount])}>
       <div className={cl.narratives}>
       {
         narratives.map((narrative, i)=>{
           const clOdd = i%2===1 ? cl.odd : ""
           return (
-            <div key={i} className={ClassNames([cl.narrative, clOdd])}>
+            <div key={"narrative"+i} className={ClassNames([cl.narrative, clOdd])}>
             { narrative }
             </div>
           )
@@ -44,7 +44,7 @@ export function Moment({
       {
         imageUrls.map((url, i)=>
           <div className={cl.imageSpace}>
-            <div key={i} className={cl.image} style={{backgroundImage: `url(${url})`}}>
+            <div key={"image"+ i} className={cl.image} style={{backgroundImage: `url(${url})`}}>
             </div>
           </div>
         )
@@ -56,7 +56,7 @@ export function Moment({
         lines.map((line, i)=>{
           const clOdd = i%2===1 ? cl.odd : ""
           return (
-            <div key={i} className={ClassNames([cl.line, clOdd])}>
+            <div key={"line"+i} className={ClassNames([cl.line, clOdd])}>
             { line }
             </div>
           )

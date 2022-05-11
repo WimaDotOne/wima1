@@ -15,7 +15,7 @@ export function Scene({
     <div className={cl.scene}>
     {
       scene.map((moment, i)=>
-        <Moment key={i} moment={moment} />
+        <Moment key={"moment"+i} moment={moment} />
       )
     }
     </div>
