@@ -1,15 +1,33 @@
+$imageWidthLarge: 400px;
+$imageWidthMedium: 320px;
+$imageWidthSmall: 208px;
+$momentSpacePadding: 5px;
+$momentPaddingV: 10px;
+$momentPaddingH: 5px;
+$imageSpacePaddingV: 5px;
+$imageSpacePaddingH: 5px;
+$imageHeightOverWidth: 9/16;
+
+$momentWidthLargeImage1: $imageWidthLarge + 2 * $imageSpacePaddingH + 2 * $momentPaddingH;
+$momentWidthLargeImage2: 2 * $imageWidthLarge + 2 * $momentPaddingH + 4 * $imageSpacePaddingH;
+$momentWidthLargeImage3: 3 * $imageWidthLarge + 2 * $momentPaddingH + 6 * $imageSpacePaddingH;
+
+$momentWidthMediumImage1: $imageWidthMedium + 2 * $imageSpacePaddingH + 2 * $momentPaddingH;
+$momentWidthSmallImage1: $imageWidthSmall + 2 * $imageSpacePaddingH + 2 * $momentPaddingH;
+
 .momentSpace {
-  padding: 10px;
+  padding: $momentSpacePadding;
 }
 .moment {
-  padding: 10px 5px;
+  padding: $momentPaddingV $momentPaddingH;
   border-radius: 10px;
-  background-color: #5555;
+  background-color: #5553;
 }
 
 .narratives {
   padding: 0 10px;
-
+  font-size: 16px;
+  font-weight: 500;
 }
 .narrative {
   padding-bottom: 5px;
@@ -22,82 +40,79 @@
 }
 
 .imageSpace {
-  padding: 5px;
+  padding: $imageSpacePaddingV $imageSpacePaddingH;
 }
 .image {
-  width: 400px;
-  height: 225px;
+  width: $imageWidthLarge;
+  height: $imageWidthLarge * $imageHeightOverWidth;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .moment.image1 {
-  max-width: 420px;
+  width: $momentWidthLargeImage1;
 }
 .moment.image2 {
-  max-width: 830px;
+  width: $momentWidthLargeImage2;
 }
 .moment.image3 {
-  max-width: 1240px;
+  width: $momentWidthLargeImage3;
 }
 
+.linesSpace {
+  padding: 5px $imageSpacePaddingH 0;
+}
 .lines {
-  padding: 0 10px;
   color: #b8d5cd;
   text-align: center;
+  background-color: #282828;
+  border-radius: 5px;
+  padding: 7px 5px;
+  font-size: 16px;
+  font-weight: 300;
 }
-
+.line {
+  padding: 2px 0;
+}
 .line.odd {
   color: #f1d8c5;
 }
 
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1500px){
   .moment.image3 {
-    max-width: 830px;
+    width: $momentWidthLargeImage2
   }
 }
 
-@media screen and (max-width: 910px){
+@media screen and (max-width: 1000px){
   .moment.image2 {
-    max-width: 420px;
+    width: $momentWidthLargeImage1
   }
   .moment.image3 {
-    max-width: 420px;
+    width: $momentWidthLargeImage1
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .image {
-    width: 320px;
-    height: 180px;
+    width: $imageWidthMedium; 
+    height: $imageWidthMedium * $imageHeightOverWidth;
   }
 
-  .moment.image1 {
-    max-width: 340px;
-  }
-  .moment.image2 {
-    max-width: 340px;
-  }
-  .moment.image3 {
-    max-width: 340px;
+  .moment.image1, .moment.image2, .moment.image3 {
+    width: $momentWidthMediumImage1
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   .image {
-    width: 208px;
-    height: 117px;
+    width: $imageWidthSmall;
+    height: $imageWidthSmall * $imageHeightOverWidth;
   }
 
-  .moment.image1 {
-    max-width: 228px;
-  }
-  .moment.image2 {
-    max-width: 228px;
-  }
-  .moment.image3 {
-    max-width: 228px;
+  .moment.image1, .moment.image2, .moment.image3 {
+    width: $momentWidthSmallImage1
   }
 }

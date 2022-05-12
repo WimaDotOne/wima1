@@ -43,25 +43,27 @@ export function Moment({
       <div className={cl.images}>
       {
         imageUrls.map((url, i)=>
-          <div className={cl.imageSpace}>
-            <div key={"image"+ i} className={cl.image} style={{backgroundImage: `url(${url})`}}>
+          <div className={cl.imageSpace} key={"image"+ i}>
+            <div className={cl.image} style={{backgroundImage: `url(${url})`}}>
             </div>
           </div>
         )
       }
       </div>
 
-      <div className={cl.lines}>
-      {
-        lines.map((line, i)=>{
-          const clOdd = i%2===1 ? cl.odd : ""
-          return (
-            <div key={"line"+i} className={ClassNames([cl.line, clOdd])}>
-            { line }
-            </div>
-          )
-        })
-      }
+      <div className={cl.linesSpace}>
+        <div className={cl.lines}>
+        {
+          lines.map((line, i)=>{
+            const clOdd = i%2===1 ? cl.odd : ""
+            return (
+              <div key={"line"+i} className={ClassNames([cl.line, clOdd])}>
+              { line }
+              </div>
+            )
+          })
+        }
+        </div>
       </div>
     </div>
     </div>
