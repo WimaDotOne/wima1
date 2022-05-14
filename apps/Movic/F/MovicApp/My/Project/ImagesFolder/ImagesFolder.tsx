@@ -3,6 +3,7 @@ import { ImageFile } from "../../../H/Controls/ImageFile/ImageFile"
 import { AppleWindowBottomBarFill } from "../../../../../../../libs/Core/Core2/fCore2"
 import { MovicColor } from "../../../../CSS/MovicColor"
 import { useState } from "react"
+import { ImageUpload } from "../../../../../../../libs/Core/Core1/fCore1"
 
 interface IImagesFolderProp {
   backToProjectHome: ()=>void
@@ -20,6 +21,7 @@ export function ImagesFolder({
 }: IImagesFolderProp) {
 
   const [toSelectAll, setToSelectAll] = useState<boolean>(true)
+  const [showImageUpload, setShowImageUpload] = useState<boolean>(false)
   const [images, setImages] = useState<Array<IImage>>([
     { id: "1", url: "/favicon.ico", name: "m1" },
     { id: "2", url: "/apps/Movic/Test/test.png", name: "m2" },
@@ -37,8 +39,8 @@ export function ImagesFolder({
 
   }
 
-  function addImages() {
-
+  function openImageUpload() {
+    setShowImageUpload(true)
   }
 
   function toggleSelectAll() {
@@ -88,8 +90,10 @@ export function ImagesFolder({
        icon2={selectAllIcon} onClick2={toggleSelectAll}
        icon3="trashbin" onClick3={trash} disabled3 = {!imageSelected}
        icon5="pencil" onClick5={edit} disabled5 = {!imageSelected}
-       icon6="plus" onClick6={addImages}
+       icon6="plus" onClick6={openImageUpload}
       />
     </AppleWindowPlainBottomBarDiv>
+    <ImageUpload show={showImageUpload} setShow={setShowImageUpload}
+      addFileText="Add Files" multiple/>
   </>)
 }

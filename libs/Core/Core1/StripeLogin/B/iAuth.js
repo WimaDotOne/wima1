@@ -10,7 +10,7 @@ function iAuth(req, res, next) {
       next()
       return
     }
-
+    
     req.user = GetUserCookie(req)
     next()
   } catch(err) {

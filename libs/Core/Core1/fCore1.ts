@@ -17,6 +17,8 @@ import {
   TermHeader,
 } from "../Core1/StripeLogin/fLogin"
 
+import { ImageUpload } from "./ImageUpload/fImageUpload"
+
 export {
 
   Login,
@@ -35,5 +37,7 @@ export {
   Alert, AlertSysError,
   IsEmail,
 
-  TextField1
+  TextField1,
+
+  ImageUpload
 }

@@ -1,5 +1,6 @@
 @use "../../CSS/color.module";
 @use "../../CSS/dimension.module";
+@use "../../../../../../CSS/libsDimension.module";
 
 .bottomBarDiv {
   position: fixed;
@@ -7,7 +8,7 @@
   left: 0;
   width: 100vw;
   height: dimension.$windowBottomBarHeight;
-  z-index: dimension.$windowBottomBarZIndex;
+  z-index: libsDimension.$appleWindowBottomBarZIndex;
   background-color: white;
   border-top: 0.5px solid color.$barBorderGray;
   box-sizing: border-box;

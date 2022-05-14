@@ -1,4 +1,5 @@
 @use "../../CSS/dimension.module";
+@use "../../../../../../CSS/libsDimension.module";
 
 .toggleBtn {
   position: fixed; // fixed because try best to show hamburger button
@@ -9,5 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: dimension.$windowHamburgerZIndex;
+  z-index: libsDimension.$appleWindowHamburgerZIndex;
 }

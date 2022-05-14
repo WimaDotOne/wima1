@@ -1,5 +1,6 @@
 @use "../../CSS/color.module";
 @use "../../CSS/dimension.module";
+@use "../../../../../../CSS/libsDimension.module";
 
 .leftBar, .bottomBar {
   position: fixed;
@@ -21,7 +22,7 @@
   top: 0;
   height: 100vh;  
   background-color: color.$leftBarGray;
-  z-index: dimension.$windowLeftBarZIndex;
+  z-index: libsDimension.$appleWindowLeftBarZIndex;
 }
 
 @supports (backdrop-filter: blur(10px)) {
@@ -41,7 +42,7 @@
 
 .bottomBar {
   bottom: 0;
-  z-index: dimension.$windowLeftBottomBarZIndex;
+  z-index: libsDimension.$appleWindowLeftBottomBarZIndex;
   height: dimension.$windowBottomBarHeight;
   display: flex;
   align-items: center;

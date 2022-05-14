@@ -1,0 +1,20 @@
+.fileBtn {
+  height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 10px;
+  background-color: #f5f8fa;
+  cursor: pointer;
+  user-select: none;
+  color: #67656a;
+  font-weight: 500;
+  position: relative;
+  top: -1px;
+}
+
+.input {
+  display: none;
+}
