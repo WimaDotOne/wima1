@@ -74,6 +74,7 @@ export function ImagesFolder({
   }
   const imageSelected = selectedImageCount() > 0
   const selectAllIcon =  toSelectAll ? "checkmark.doublesquare":"doublesquare"
+  
   return(<>
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>
     {
@@ -94,6 +95,6 @@ export function ImagesFolder({
       />
     </AppleWindowPlainBottomBarDiv>
     <ImageUpload show={showImageUpload} setShow={setShowImageUpload}
-      addFileText="Add Files" multiple/>
+      addFileText="Add Files" multiple themeColor={MovicColor.themeRed}/>
   </>)
 }

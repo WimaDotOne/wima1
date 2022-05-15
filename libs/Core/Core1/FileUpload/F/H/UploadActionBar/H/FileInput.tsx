@@ -1,15 +1,18 @@
 import { ChangeEvent, ChangeEventHandler, useRef } from "react"
+import { ImageUploadConfig } from "../../../Model/ImageUploadConfig"
 import cl from "./FileInput.module.scss"
 
 interface IFileInputProp {
   onAddFiles: (fileList: FileList)=>void
   multiple?: boolean
   text?: string
+  textColor?: string
 }
 export function FileInput({
   onAddFiles,
   multiple,
-  text
+  text,
+  textColor
 } : IFileInputProp) {
 
   const inputRef = useRef<HTMLInputElement>(null)
@@ -32,11 +35,17 @@ export function FileInput({
     }
   }
   text = text || "Add File"
+  const btnStyle: { color?: string } = {}
+  if(textColor) {
+    btnStyle.color = textColor
+  }
   return(<>
-    <div className={cl.fileBtn} onClick={onClick}>
+    <div className={cl.fileBtn} onClick={onClick}
+      style={btnStyle}>
     { text }
     </div>
     <input className={cl.input} ref={inputRef} type="file" 
+      name="file"
       multiple={multiple} onChange={onChange}/>
   </>)
 }

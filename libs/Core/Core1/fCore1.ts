@@ -1,7 +1,7 @@
 import { useShield, ShieldProvider } from "./Fetch/F/Shield/Shield"
 
 import { ClassNames } from "./Util/F/ClassName/ClassName"
-import { Post, Post2, Get, Get2 } from "./Fetch/F/Fetch"
+import { Post, Post2, Get, Get2, PostFormData, PostFormData2 } from "./Fetch/F/Fetch"
 import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
@@ -17,7 +17,7 @@ import {
   TermHeader,
 } from "../Core1/StripeLogin/fLogin"
 
-import { ImageUpload } from "./ImageUpload/fImageUpload"
+import { ImageUpload } from "./FileUpload/fFileUpload"
 
 export {
 
@@ -33,7 +33,7 @@ export {
   ShieldProvider,
 
   ClassNames,
-  Post, Post2, Get, Get2,
+  Post, Post2, Get, Get2, PostFormData, PostFormData2,
   Alert, AlertSysError,
   IsEmail,
 

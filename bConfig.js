@@ -9,6 +9,15 @@ const bConfig = {
   brand: "Wima"
 }
 
+const ImageUploadConfig = {
+  movic: {
+    widthPx: 320,
+    heightPx: 180,
+    smallWidthPx: 80,
+    smallHeightPx: 45
+  }
+}
+
 const GENERAL_INPUT_MAX = 100
 
 const MovicConfig = {

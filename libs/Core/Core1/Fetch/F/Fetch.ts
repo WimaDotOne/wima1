@@ -10,6 +10,17 @@ function Domain() {
   }
 }
 
+export function PostFormData(route: string, formData: FormData) {
+  const options = {
+    method: 'POST',
+    body: formData
+  }
+  return (
+    fetch(Domain()+route, options)
+    .then(res => res.json())
+  )
+}
+
 export function Post(route: string, body: any) {
   const options = {
     method: 'POST',
@@ -31,6 +42,32 @@ export function Get(route: string) {
     fetch(Domain()+route, options)
     .then(res => res.json())
   )
+}
+
+export async function PostFormData2(
+  shield: (show:boolean)=>void, 
+  route: string, formData: FormData, 
+  onOk?:(res: any)=>void,
+  onNotOk?:(res: any)=>void
+)
+{
+  try {
+    shield(true)
+    const res = await Post(route, formData)
+    if(res.ok) {
+      if(onOk) { onOk(res) }
+    } else {
+      if(onNotOk) {
+        onNotOk(res)
+      } else {
+        Alert(res.error)
+      }
+    }
+    shield(false)
+  } catch (err) {
+    shield(false)
+    AlertSysError(err)
+  }
 }
 
 
