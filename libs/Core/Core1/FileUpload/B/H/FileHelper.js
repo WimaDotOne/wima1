@@ -1,14 +1,15 @@
-import fileSystem from "fs"
+import fs from "fs/promises"
 import { FilePath } from "../../../FilePath/FilePath.js"
-
-const fs = fileSystem.promises
 
 const RootPath = FilePath(import.meta.url, "../../../../../..")
 
 async function asyNewFolder(path) {
   try {
-    await fs.rmdir(path, { recursive: true })
-    await fs.mkdir(path)
+    //depending on node js version
+    //To get a behavior similar to the rm -rf Unix command, use fs.rm() with options { recursive: true, force: true }.
+    await fs.rm(path, {force: true, recursive: true })
+    //Calling fs.mkdir() when path is a directory that exists results in an error only when recursive is false.
+    await fs.mkdir(path, {recursive: true})
     return null
   } catch (err) {
     return err
@@ -17,7 +18,7 @@ async function asyNewFolder(path) {
 
 async function asyMakeFolder(path) {
   try {
-    await fs.mkdir(path)
+    await fs.mkdir(path, {recursive: true})
     return null
   } catch (err) {
     if(err.code === 'EEXIST') { return null }

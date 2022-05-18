@@ -17,7 +17,8 @@ import {
   TermHeader,
 } from "../Core1/StripeLogin/fLogin"
 
-import { ImageUpload } from "./FileUpload/fFileUpload"
+import { FileInput } from "./Up/fUp"
+import { IFormTextField } from "./Up/fUp"
 
 export {
 
@@ -39,5 +40,9 @@ export {
 
   TextField1,
 
-  ImageUpload
+  FileInput
+}
+
+export type { 
+  IFormTextField 
 }

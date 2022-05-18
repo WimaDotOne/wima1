@@ -4,7 +4,7 @@ import { DevTempFolder } from "./H/DevTempFolder.js"
 import { ImageUploadConfig } from "../../../../../bConfig.js"
 import { SetTempFolderCookie } from "./H/Cookie.js"
 
-export async function iNewTempFolder(req, res) {
+export async function i(req, res) {
   try {
 
     const configKey = req.body.configKey

@@ -1,5 +1,5 @@
-import { ImageUpload } from "./F/View/ImageUpload/ImageUpload"
+import { ImageUploader } from "./F/View/ImageUploader/ImageUploader"
 
 export {
-  ImageUpload
+  ImageUploader
 }

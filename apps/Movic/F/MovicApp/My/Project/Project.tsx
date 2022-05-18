@@ -48,7 +48,7 @@ export function Project({
       <MovicScript project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.ImagesFolder: return(
-      <ImagesFolder backToProjectHome={backToProjectHome}/>
+      <ImagesFolder project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.Preview: return(
       <Preview backToProjectHome={backToProjectHome}/>

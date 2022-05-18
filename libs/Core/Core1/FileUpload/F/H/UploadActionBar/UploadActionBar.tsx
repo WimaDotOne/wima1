@@ -1,5 +1,4 @@
 import { SvgIcon } from "../../../../../Core2/Svg/SvgIcon"
-import { ImageUploadConfig } from "../../Model/ImageUploadConfig"
 import { FileInput } from "./H/FileInput"
 import cl from "./UploadActionBar.module.scss"
 

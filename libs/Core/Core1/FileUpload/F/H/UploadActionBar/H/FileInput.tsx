@@ -1,5 +1,4 @@
-import { ChangeEvent, ChangeEventHandler, useRef } from "react"
-import { ImageUploadConfig } from "../../../Model/ImageUploadConfig"
+import { ChangeEvent, useRef } from "react"
 import cl from "./FileInput.module.scss"
 
 interface IFileInputProp {

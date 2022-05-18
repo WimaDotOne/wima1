@@ -9,6 +9,8 @@ import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytic
 
 import User from "./StripeLogin/B/Model/User.js"
 
+import { asyNewTempFolder, asyRemoveTempFolder } from "./Up/bUp.js"
+
 export {
   IsEmail,
   SendGrid,
@@ -20,5 +22,7 @@ export {
   MonitorDailyPasscodeSend,
   AnalyticsRouter,
 
-  User
+  User,
+
+  asyNewTempFolder, asyRemoveTempFolder
 }

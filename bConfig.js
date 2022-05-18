@@ -6,11 +6,14 @@ const bConfig = {
   dailyPasscodeSendMax: 1000,
   sendGridSenderEmail: "fan@wima.one",
   sendGridSenderName: "Wima Auto",
-  brand: "Wima"
+  brand: "Wima",
+  
 }
 
-const ImageUploadConfig = {
+export const ImageUploadConfig = {
   movic: {
+    key: "movic", //must be the same as parent key "movic"
+    temp1: "Movic",
     widthPx: 320,
     heightPx: 180,
     smallWidthPx: 80,
@@ -19,6 +22,7 @@ const ImageUploadConfig = {
 }
 
 const GENERAL_INPUT_MAX = 100
+const FILE_BYTE_MAX = 10*1000*1000
 
 const MovicConfig = {
   movicMaxPerAccount: 100,
@@ -27,5 +31,6 @@ const MovicConfig = {
 export {
   bConfig,
   GENERAL_INPUT_MAX,
+  FILE_BYTE_MAX,
   MovicConfig
 }

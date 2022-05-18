@@ -53,7 +53,7 @@ export async function PostFormData2(
 {
   try {
     shield(true)
-    const res = await Post(route, formData)
+    const res = await PostFormData(route, formData)
     if(res.ok) {
       if(onOk) { onOk(res) }
     } else {

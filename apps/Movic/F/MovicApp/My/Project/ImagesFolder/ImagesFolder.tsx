@@ -2,10 +2,12 @@ import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "
 import { ImageFile } from "../../../H/Controls/ImageFile/ImageFile"
 import { AppleWindowBottomBarFill } from "../../../../../../../libs/Core/Core2/fCore2"
 import { MovicColor } from "../../../../CSS/MovicColor"
-import { useState } from "react"
-import { ImageUpload } from "../../../../../../../libs/Core/Core1/fCore1"
+import { useRef, useState } from "react"
+import { FileInput, IFormTextField } from "../../../../../../../libs/Core/Core1/fCore1"
+import { IProject } from "../../../../Model/IProject"
 
 interface IImagesFolderProp {
+  project: IProject
   backToProjectHome: ()=>void
 }
 
@@ -17,11 +19,12 @@ interface IImage {
 }
 
 export function ImagesFolder({
+  project,
   backToProjectHome
 }: IImagesFolderProp) {
 
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [toSelectAll, setToSelectAll] = useState<boolean>(true)
-  const [showImageUpload, setShowImageUpload] = useState<boolean>(false)
   const [images, setImages] = useState<Array<IImage>>([
     { id: "1", url: "/favicon.ico", name: "m1" },
     { id: "2", url: "/apps/Movic/Test/test.png", name: "m2" },
@@ -39,8 +42,20 @@ export function ImagesFolder({
 
   }
 
-  function openImageUpload() {
-    setShowImageUpload(true)
+  function upload() {
+    const input = fileInputRef.current
+    if(!input) return
+    input.click()
+  }
+
+  function fileInputClear() {
+    const input = fileInputRef.current
+    if(!input) return
+    input.value = ""
+  }
+
+  function afterUpload(res: any) {
+    console.log(res)
   }
 
   function toggleSelectAll() {
@@ -72,8 +87,14 @@ export function ImagesFolder({
     const selectedImages = images.filter((image)=> image.selected)
     return selectedImages.length
   }
+
+
   const imageSelected = selectedImageCount() > 0
   const selectAllIcon =  toSelectAll ? "checkmark.doublesquare":"doublesquare"
+  
+  const formTextFields: Array<IFormTextField> = [
+    {key: "projectId", value: project.id}
+  ]
   
   return(<>
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>
@@ -91,10 +112,12 @@ export function ImagesFolder({
        icon2={selectAllIcon} onClick2={toggleSelectAll}
        icon3="trashbin" onClick3={trash} disabled3 = {!imageSelected}
        icon5="pencil" onClick5={edit} disabled5 = {!imageSelected}
-       icon6="plus" onClick6={openImageUpload}
+       icon6="plus" onClick6={upload}
       />
     </AppleWindowPlainBottomBarDiv>
-    <ImageUpload show={showImageUpload} setShow={setShowImageUpload}
-      addFileText="Add Files" multiple themeColor={MovicColor.themeRed}/>
+    <FileInput formTextFields={formTextFields}
+      clear = { fileInputClear }
+      ref={fileInputRef}
+      route="/movic/UploadImages" onSuccess={afterUpload}/>
   </>)
 }
