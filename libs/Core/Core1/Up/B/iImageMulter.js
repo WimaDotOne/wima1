@@ -1,5 +1,4 @@
 import multer from "multer"
-import { IsMimeTypeImage } from "./H/ImageProcess.js"
 import { FILE_BYTE_MAX } from "../../../../../bConfig.js"
 
 //Application code middleware will set tempPath before calling iImageMulter
@@ -37,6 +36,12 @@ export async function iImageMulter(req, res, next) {
   } catch(err) {
     return res.json({ok: false, error: err.message})
   }
+}
+
+function IsMimeTypeImage(mimeType) {
+  const imageType = "image/"
+  const len = imageType.length
+  return mimeType.substring(0,len).toLowerCase()===imageType
 }
 
 function fileFilter(req, file, cb) {

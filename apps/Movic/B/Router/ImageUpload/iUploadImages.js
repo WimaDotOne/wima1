@@ -1,5 +1,5 @@
 import { asyRemoveTempFolder, User } from "../../../../../libs/Core/Core1/bCore1.js"
-import { asyResizeImageFiles } from "../../../../../libs/Core/Core1/Up/B/ResizeImageFiles.js"
+import { asyShrinkImageFiles } from "../../../../../libs/Core/Core1/Up/B/ShrinkImageFiles.js"
 import MovicProject from "../../Model/MovicProject.js"
 
 async function iUploadImages(req, res) {
@@ -25,11 +25,12 @@ async function iUploadImages(req, res) {
 
     const files = req.files
 
-    await asyResizeImageFiles(files, tempPath, 100, 100)
+    const imageList = await asyShrinkImageFiles(files, tempPath, 100, 100)
+
+    console.log(imageList)
 
 
-
-    //await asyRemoveTempFolder(tempPath)
+    await asyRemoveTempFolder(tempPath)
     return res.json({ok: true, tempPath})
 
   } catch(err) {

@@ -1,20 +1,26 @@
-import { asyGetImageType, asyResizeImage, asyCompress } from "./H/ImageProcess.js"
 import { v4 as uuidv4 } from "uuid"
+import { asyGetImageInfo } from "../../File/ImageInfo.js"
+import { asyImagePxResize } from "../../File/ImagePxResize.js"
+import { asyImageCompress } from "../../File/ImageCompress.js"
+
 import path from "path"
 
-export async function asyResizeImageFiles(files, tempFolderPath, width, height, smallWidth, smallHeight) {
+export async function asyShrinkImageFiles(files, tempFolderPath, width, height, smallWidth, smallHeight) {
   
   const imageList = []
   const inputFilePaths = []
 
   for(const file of files) {
 
-    let ext = await asyGetImageType(file.path)
+    const info = await asyGetImageInfo(file.path)
+    
+    let ext = info.type
     if(ext !== "png") {
       //image compress only png and jpg for now
       ext = "jpg"
     }
 
+    //rename image file using unique id
     const uuid = uuidv4()
     const imageId = uuid+"."+ext
     const smallImageId = "sm-"+imageId
@@ -29,19 +35,17 @@ export async function asyResizeImageFiles(files, tempFolderPath, width, height, 
     inputFilePaths.push(imagePath)
     imageList.push(image)
 
-    await asyResizeImage(file.path, imagePath, width, height)
+    await asyImagePxResize(file.path, image.path, width, height)
 
-    if(smallWidth) {
-      await asyResizeImage(file.path, smallImagePath)
-
+    if(smallWidth && smallHeight) {
       image.smallPath = smallImagePath
       image.smallId = smallImageId
       inputFilePaths.push(smallImagePath)
+
+      await asyImagePxResize(file.path, image.smallPath, smallWidth, smallHeight)
     }
 
-    await asyCompress(inputFilePaths, tempFolderPath)
-console.log(imageList)
-    return imageList
-
+    await asyImageCompress(inputFilePaths, tempFolderPath)
   }
+  return imageList
 }
