@@ -2,6 +2,9 @@ import multer from "multer"
 import { IsMimeTypeImage } from "./H/ImageProcess.js"
 import { FILE_BYTE_MAX } from "../../../../../bConfig.js"
 
+//Application code middleware will set tempPath before calling iImageMulter
+//iImageMulter store files in specified temp folder and set req.files
+//iImageMulter parse multi-part non-file data into req.body
 export async function iImageMulter(req, res, next) {
   try{
     const tempPath = req.tempPath
@@ -21,7 +24,7 @@ export async function iImageMulter(req, res, next) {
 
     const mwMulter = multer({
       storage, fileFilter,
-      limits: { fileSize: FILE_BYTE_MAX}
+      limits: { fileSize: FILE_BYTE_MAX }
     }).array("file")
 
     mwMulter(req, res, async (err)=>{
@@ -41,5 +44,7 @@ function fileFilter(req, file, cb) {
     cb(null, true)
     return
   }
-  cb(new Error("Non-image file cannot be added."), false)
+  cb(null, false)
+  //No need to provide error message, just silently filter out non-image file
+  //cb(new Error("Non-image file cannot be added."), false)
 }

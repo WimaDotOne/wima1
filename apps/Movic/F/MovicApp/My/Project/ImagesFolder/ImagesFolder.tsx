@@ -116,6 +116,7 @@ export function ImagesFolder({
       />
     </AppleWindowPlainBottomBarDiv>
     <FileInput formTextFields={formTextFields}
+      multiple
       clear = { fileInputClear }
       ref={fileInputRef}
       route="/movic/UploadImages" onSuccess={afterUpload}/>
