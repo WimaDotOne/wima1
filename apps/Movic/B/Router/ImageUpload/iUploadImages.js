@@ -25,7 +25,7 @@ async function iUploadImages(req, res) {
 
     const files = req.files
 
-    const imageList = await asyShrinkImageFiles(files, tempPath, 100, 100)
+    const imageList = await asyShrinkImageFiles(files, tempPath, 320, 180, 96, 54)
 
     console.log(imageList)
 
