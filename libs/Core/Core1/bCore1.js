@@ -9,7 +9,15 @@ import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytic
 
 import User from "./StripeLogin/B/Model/User.js"
 
-import { asyNewTempFolder, asyRemoveTempFolder } from "./Up/bUp.js"
+import { asyNewTempFolder, asyRemoveTempFolder,
+  asyUploadOne,
+  asyUploadMany,
+  asyDeleteOne,
+  asyDeleteMany,
+  asyUploadManyPlusSmall,
+
+  asyShrinkImageFiles
+} from "./Up/bUp.js"
 
 export {
   IsEmail,
@@ -24,5 +32,13 @@ export {
 
   User,
 
-  asyNewTempFolder, asyRemoveTempFolder
+  asyNewTempFolder, asyRemoveTempFolder,
+  asyUploadOne,
+  asyUploadMany,
+  asyDeleteOne,
+  asyDeleteMany,
+  asyUploadManyPlusSmall,
+
+  asyShrinkImageFiles
+
 }

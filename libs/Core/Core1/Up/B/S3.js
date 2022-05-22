@@ -53,18 +53,18 @@ async function asyUploadOne(bucket, file) {
 }
 
 async function asyUploadMany(bucket, fileArr) {
-    const promiseArr = []
-    for(const file of fileArr) {
-      promiseArr.push(UploadOnePromise(bucket, file))
-    }
-    const resArr = await Promise.all(promiseArr)
-    return resArr
+  const promiseArr = []
+  for(const file of fileArr) {
+    promiseArr.push(UploadOnePromise(bucket, file))
+  }
+  const resArr = await Promise.all(promiseArr)
+  return resArr
 }
 
 async function asyUploadOnePlusSmallOne(bucket, file) {
-  const {filePath, key, smallFilePath, smallKey } = file
+  const { filePath, key, smallFilePath, smallKey } = file
   const file1 = { filePath, key }
-  const file2 = { filePath: smallFilePath, key: smallKey}
+  const file2 = { filePath: smallFilePath, key: smallKey }
 
   const res1 = await asyUploadOne(bucket, file1)
   const res2 = await asyUploadOne(bucket, file2)
@@ -84,7 +84,7 @@ async function asyUploadManyPlusSmall(bucket, fileArr) {
 
 
 
-module.exports = {
+export {
   asyUploadOne,
   asyUploadMany,
   asyDeleteOne,

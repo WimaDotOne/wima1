@@ -1,8 +1,10 @@
+import ImageFile from "../Model/ImageFile.js"
 import Movic from "../Model/Movic.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "./H/GetMovicAccount.js"
 
-async function iLoadMovicScript(req, res) {
+export async function iLoadImageFolder(req, res) {
   try{
+    console.log("hello")
     const projectId = (req.query.projectId || "").toString()
     const movicAccount = await asyGetMovicAccount(req.user._id)
 
@@ -13,14 +15,13 @@ async function iLoadMovicScript(req, res) {
     if(!movic) {
       return res.json({ ok: false, error: "Cannot find movic" })
     }
+    const imageFiles = await ImageFile.find({
+      movicId: movic._id
+    })
 
-    return res.json({ok: true, script: movic.script1})
+    return res.json({ok: true, imageFiles})
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })
   }
-}
-
-export {
-  iLoadMovicScript
 }
