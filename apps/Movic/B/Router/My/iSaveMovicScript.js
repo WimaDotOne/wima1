@@ -1,6 +1,6 @@
-import { MovicConfig } from "../../../../bConfig.js"
-import Movic from "../Model/Movic.js"
-import { asyGetMovicAccount, asyGetMovicProject } from "./H/GetMovicAccount.js"
+import { MovicConfig } from "../../../../../bConfig.js"
+import Movic from "../../Model/Movic.js"
+import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 
 async function iSaveMovicScript(req, res) {
   try{

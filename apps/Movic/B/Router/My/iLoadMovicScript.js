@@ -1,5 +1,5 @@
-import Movic from "../Model/Movic.js"
-import { asyGetMovicAccount, asyGetMovicProject } from "./H/GetMovicAccount.js"
+import Movic from "../../Model/Movic.js"
+import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 
 async function iLoadMovicScript(req, res) {
   try{

@@ -1,7 +1,8 @@
 import multer from "multer"
-import { FILE_BYTE_MAX } from "../../../../../bConfig.js"
+import { ImageUploadConfig } from "../../../../../bConfig.js"
+import { asyRemoveTempFolder } from "../B/MakeTempFolder.js"
 
-//Application code middleware will set tempFolderPath before calling iImageMulter
+//Application code middleware (e.g. iNewTempFolder) will set tempFolderPath before calling iImageMulter
 //iImageMulter store files in specified temp folder and set req.files
 //iImageMulter parse multi-part non-file data into req.body
 export async function iImageMulter(req, res, next) {
@@ -23,12 +24,26 @@ export async function iImageMulter(req, res, next) {
 
     const mwMulter = multer({
       storage, fileFilter,
-      limits: { fileSize: FILE_BYTE_MAX }
+      limits: { fileSize: ImageUploadConfig.maxFileSize }  //every file need to be less than max to have an upload
     }).array("file")
 
     mwMulter(req, res, async (err)=>{
       if(err) {
+        await asyRemoveTempFolder(tempFolderPath)
+        if(err.code === "LIMIT_FILE_SIZE") {
+          const maxFileSizeMb = Math.round(ImageUploadConfig.maxFileSize/(1000*1000))
+          return res.json({ok:false, error: `Each file needs to be less than ${maxFileSizeMb} MB`})
+        }
         return res.json({ok:false, error: err.message})
+      }
+      let totalSize = 0
+      for(const file of req.files) {
+        totalSize = totalSize + file.size
+        if(totalSize > ImageUploadConfig.maxTotalFileSize) {
+          await asyRemoveTempFolder(tempFolderPath)
+          const maxTotalFileSizeMb = Math.round(ImageUploadConfig.maxTotalFileSize/(1000*1000))
+          return res.json({ok: false, error: `Only ${maxTotalFileSizeMb} MB of files can be uploaded at a time.`})
+        }
       }
       next()
     })

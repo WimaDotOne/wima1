@@ -1,9 +1,9 @@
 import mongoose from "mongoose"
-import { GENERAL_INPUT_MAX, MovicConfig } from "../../../../bConfig.js"
-import { User } from "../../../../libs/Core/Core1/bCore1.js"
-import Movic from "../Model/Movic.js"
-import MovicAccount from "../Model/MovicAccount.js"
-import MovicProject from "../Model/MovicProject.js"
+import { GENERAL_INPUT_MAX, MovicConfig } from "../../../../../bConfig.js"
+import { User } from "../../../../../libs/Core/Core1/bCore1.js"
+import Movic from "../../Model/Movic.js"
+import MovicAccount from "../../Model/MovicAccount.js"
+import MovicProject from "../../Model/MovicProject.js"
 
 async function iCreateMovicProject(req, res) {
   try{

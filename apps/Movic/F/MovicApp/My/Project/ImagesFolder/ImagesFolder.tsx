@@ -30,7 +30,6 @@ export function ImagesFolder({
     if(imageFolderLoaded) return
     await Get2(shield, `/movic/LoadImageFolder?projectId=${project.id}`, (res)=>{
       setImageFolderLoaded(true)
-      console.log(res.imageFiles)
       setImageFiles(OrderImageFilesByName(res.imageFiles))
     })
   }
