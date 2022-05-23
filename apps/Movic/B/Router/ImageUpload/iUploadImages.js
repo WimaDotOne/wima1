@@ -2,7 +2,7 @@ import { asyRemoveTempFolder, asyShrinkImageFiles, asyUploadManyPlusSmall, User 
 import ImageFile from "../../Model/ImageFile.js"
 import MovicProject from "../../Model/MovicProject.js"
 
-async function iUploadImages(req, res) {
+export async function iUploadImages(req, res) {
   try{
     const tempFolderPath = req.tempFolderPath
     const userId = req.user._id
@@ -28,7 +28,6 @@ async function iUploadImages(req, res) {
     // Shrink files
     const imageList = await asyShrinkImageFiles(files, tempFolderPath, 320, 180, 96, 54)
 
-
     //Upload files to Amazon
     const fileArr = []
 
@@ -50,7 +49,8 @@ async function iUploadImages(req, res) {
     for(const res of resArr) {
       const img = res[0]
       const smImg = res[1]
-      const image = imageDict[img.key]
+      const image = imageDict[img.Key]
+      if(!image) continue
       imageFiles.push({
         movicId: project.movicId,
         name: image.name,
@@ -69,10 +69,6 @@ async function iUploadImages(req, res) {
   } catch(err) {
     return res.json({ ok: false, error: err.message })
   }
-}
-
-export {
-  iUploadImages
 }
 
 function ImageDictionay(imageList) {
