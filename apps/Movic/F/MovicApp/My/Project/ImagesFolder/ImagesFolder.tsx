@@ -40,12 +40,16 @@ export function ImagesFolder({
   })
 
   async function trash() {
+    
     const imageFileIds = []
     for(const image of imageFiles) {
       if(image.selected) {
         imageFileIds.push(image._id.toString())
       }
     }
+    const wordImage = imageFileIds.length > 1 ? "images" : "image"
+    if(!confirm(`Delete ${imageFileIds.length} ${wordImage}?`)) return
+    
     await Post2(shield, "/movic/DeleteProjectImages",
     {
       projectId: project.id,
