@@ -30,7 +30,7 @@ export async function iDeleteProjectImages(req, res) {
       keyArr.push(image.s3Key)
       keyArr.push(image.s3KeySmall)
     }
-    console.log(await asyDeleteMany(process.env.AWS_MOVIC_BUCKET, keyArr))
+    await asyDeleteMany(process.env.AWS_MOVIC_BUCKET, keyArr)
 
     await ImageFile.deleteMany({
       _id: { $in: imageFileIds }

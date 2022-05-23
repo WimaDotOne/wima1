@@ -1,0 +1,17 @@
+.editName {
+  padding-bottom: 10px;
+  max-width: 150px;
+}
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.image {
+  width: 144px;
+  height: 81px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}

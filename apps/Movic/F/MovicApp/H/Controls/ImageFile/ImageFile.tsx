@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { SvgIcon } from "../../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import cl from "./ImageFile.module.scss"
 
