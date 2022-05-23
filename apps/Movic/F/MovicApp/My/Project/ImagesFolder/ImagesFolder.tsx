@@ -3,7 +3,7 @@ import { ImageFile } from "../../../H/Controls/ImageFile/ImageFile"
 import { AppleWindowBottomBarFill } from "../../../../../../../libs/Core/Core2/fCore2"
 import { MovicColor } from "../../../../CSS/MovicColor"
 import { useEffect, useRef, useState } from "react"
-import { FileInput, Get2, IFormTextField, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
+import { FileInput, Get2, IFormTextField, Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { IProject } from "../../../../Model/IProject"
 import { IImageFile2 } from "../../../../Model/IImageFile"
 import { OrderImageFilesByName } from "./Order.js"
@@ -38,8 +38,20 @@ export function ImagesFolder({
     loadImageFolder()
   })
 
-  function trash() {
-
+  async function trash() {
+    const imageFileIds = []
+    for(const image of imageFiles) {
+      if(image.selected) {
+        imageFileIds.push(image._id.toString())
+      }
+    }
+    await Post2(shield, "/movic/DeleteProjectImages",
+    {
+      projectId: project.id,
+      imageFileIds
+    }, (res)=>{
+      setImageFolderLoaded(false)
+    })
   }
   function edit() {
 

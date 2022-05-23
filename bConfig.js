@@ -10,8 +10,8 @@ export const bConfig = {
 }
 
 export const ImageUploadConfig = {
-  maxFileSize : 3*1000*1000,
-  maxTotalFileSize : 5*1000*1000
+  maxFileSize : 10*1000*1000,
+  maxTotalFileSize : 50*1000*1000
 }
 
 export const GENERAL_INPUT_MAX = 100

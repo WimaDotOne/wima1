@@ -41,7 +41,8 @@ export const FileInput = React.forwardRef<HTMLInputElement, IFileInputProp>(({
       }
       totalFileSize = totalFileSize + file.size
       if(totalFileSize > maxTotalFileSize) {
-        Alert(`Can only upload upto ${maxTotalFileSizeMb} MB at a time`)
+        Alert(`Only ${maxTotalFileSizeMb} MB of files can be uploaded at a time.`)
+        return
       }
       formData.append(name, file)
     }

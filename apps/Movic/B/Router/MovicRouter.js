@@ -9,6 +9,7 @@ import { iUploadImages} from "./ImageUpload/iUploadImages.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iImageMulter } from "../../../../libs/Core/Core1/FileUp/B/iImageMulter.js"
 import { iLoadImageFolder } from "./My/iLoadImageFolder.js"
+import { iDeleteProjectImages } from "./My/iDeleteProjectImages.js"
 
 const MovicRouter = express.Router()
 
@@ -22,6 +23,7 @@ MovicRouter.get("/LoadMyProject", iAuth, iLoadMyProject)
 MovicRouter.get("/LoadMovicScript", iAuth, iLoadMovicScript)
 MovicRouter.get("/LoadImageFolder", iAuth, iLoadImageFolder)
 MovicRouter.post("/SaveMovicScript", iAuth, iSaveMovicScript)
+MovicRouter.post("/DeleteProjectImages", iAuth, iDeleteProjectImages)
 
 
 

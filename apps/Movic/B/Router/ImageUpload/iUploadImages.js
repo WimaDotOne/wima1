@@ -40,7 +40,7 @@ export async function iUploadImages(req, res) {
       })
     }
 
-    const resArr = await asyUploadManyPlusSmall("movic-dev", fileArr)
+    const resArr = await asyUploadManyPlusSmall(process.env.AWS_MOVIC_BUCKET, fileArr)
 
     //Save files info in database
     const imageDict = ImageDictionay(imageList)
