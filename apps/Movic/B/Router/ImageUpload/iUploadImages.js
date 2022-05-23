@@ -4,14 +4,14 @@ import MovicProject from "../../Model/MovicProject.js"
 
 async function iUploadImages(req, res) {
   try{
-    const tempPath = req.tempPath
+    const tempFolderPath = req.tempFolderPath
     const userId = req.user._id
 
     //just like req.files, req.body only becomes available after multer middleware has parsed the multi-part form data post
     const projectId = req.body.projectId
 
     if(!projectId) {
-      await asyRemoveTempFolder(tempPath)
+      await asyRemoveTempFolder(tempFolderPath)
       return res.json({ok: false, error: "Cannot find project"})
     }
 
@@ -19,14 +19,14 @@ async function iUploadImages(req, res) {
     const project = await MovicProject.findById(projectId)
 
     if(!project || user.movicAccountId.toString() !== project.movicAccountId.toString()) {
-      await asyRemoveTempFolder(tempPath)
+      await asyRemoveTempFolder(tempFolderPath)
       return res.json({ok: false, error: "Cannot find matching project"})
     }
 
     const files = req.files
 
     // Shrink files
-    const imageList = await asyShrinkImageFiles(files, tempPath, 320, 180, 96, 54)
+    const imageList = await asyShrinkImageFiles(files, tempFolderPath, 320, 180, 96, 54)
 
 
     //Upload files to Amazon
@@ -63,7 +63,7 @@ async function iUploadImages(req, res) {
 
     await ImageFile.insertMany(imageFiles)
 
-    await asyRemoveTempFolder(tempPath)
+    await asyRemoveTempFolder(tempFolderPath)
     return res.json({ok: true})
 
   } catch(err) {

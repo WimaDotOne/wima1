@@ -18,16 +18,17 @@ export const FileInput = React.forwardRef<HTMLInputElement, IFileInputProp>(({
   clear
 }, ref)=>{
   const shield = useShield()
-  
+  const name = "file"
+
   async function onChange(e: ChangeEvent<HTMLInputElement>) {
     const formData = new FormData()
     const fileList = e.target.files
     if(!fileList || !fileList.length) return
     for(let i=0; i<fileList.length; i++) {
-      formData.append("file", fileList[i])
+      formData.append(name, fileList[i])
     }
     if(clear) { clear() }
-    if(formTextFields) {
+    if(formTextFields && formTextFields.length) {
       for(const field of formTextFields) {
         formData.append(field.key, field.value)
       }
@@ -39,13 +40,12 @@ export const FileInput = React.forwardRef<HTMLInputElement, IFileInputProp>(({
       }
     )
   }
-
   return(<>
-    <input ref={ref}
+    <input type="file"
+      ref={ref}
       onChange={onChange}
       style={{display: "none"}} 
-      type="file" 
-      name="file" 
+      name={name} 
       multiple={multiple}
     />
   </>)

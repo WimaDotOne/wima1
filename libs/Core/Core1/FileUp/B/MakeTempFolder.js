@@ -4,7 +4,6 @@ import { RootPath } from "../../File/FilePath.js"
 
 async function asyNewTempFolder(appFolder) {
 
-
   const path = `${RootPath}/Temp/${appFolder}/${uuidv4()}`
 
   await asyNewFolder(path)

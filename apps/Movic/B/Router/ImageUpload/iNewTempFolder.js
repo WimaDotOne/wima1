@@ -2,9 +2,10 @@ import { asyNewTempFolder } from "../../../../../libs/Core/Core1/bCore1.js"
 
 async function iNewTempFolder(req, res, next) {
   try{
-    const tempPath = await asyNewTempFolder("Movic")
+    //need a temp folder Movic already created in code
+    const tempFolderPath = await asyNewTempFolder("Movic")
 
-    req.tempPath = tempPath
+    req.tempFolderPath = tempFolderPath
     next()
 
   } catch(err) {

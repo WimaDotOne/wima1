@@ -7,7 +7,7 @@ import { iSaveMovicScript } from "./iSaveMovicScript.js"
 import { iLoadMovicScript } from "./iLoadMovicScript.js"
 import { iUploadImages} from "./ImageUpload/iUploadImages.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
-import { iImageMulter } from "../../../../libs/Core/Core1/Up/B/iImageMulter.js"
+import { iImageMulter } from "../../../../libs/Core/Core1/FileUp/B/iImageMulter.js"
 import { iLoadImageFolder } from "./iLoadImageFolder.js"
 
 const MovicRouter = express.Router()

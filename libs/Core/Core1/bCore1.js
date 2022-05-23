@@ -17,7 +17,7 @@ import { asyNewTempFolder, asyRemoveTempFolder,
   asyUploadManyPlusSmall,
 
   asyShrinkImageFiles
-} from "./Up/bUp.js"
+} from "./FileUp/bFileUp.js"
 
 export {
   IsEmail,

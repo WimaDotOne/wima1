@@ -17,8 +17,8 @@ import {
   TermHeader,
 } from "../Core1/StripeLogin/fLogin"
 
-import { FileInput } from "./Up/fUp"
-import { IFormTextField } from "./Up/fUp"
+import { FileInput } from "./FileUp/fFileUp"
+import { IFormTextField } from "./FileUp/fFileUp"
 
 export {
 

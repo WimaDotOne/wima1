@@ -5,18 +5,14 @@ import { MovicColor } from "../../../../CSS/MovicColor"
 import { useEffect, useRef, useState } from "react"
 import { FileInput, Get2, IFormTextField, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { IProject } from "../../../../Model/IProject"
+import { IImageFile2 } from "../../../../Model/IImageFile"
+import { OrderImageFilesByName } from "./Order.js"
 
 interface IImagesFolderProp {
   project: IProject
   backToProjectHome: ()=>void
 }
 
-interface IImage {
-  _id: string
-  urlSmall: string
-  name: string
-  selected?: boolean
-}
 
 export function ImagesFolder({
   project,
@@ -25,22 +21,22 @@ export function ImagesFolder({
 
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [toSelectAll, setToSelectAll] = useState<boolean>(true)
-  const [imagesLoaded, setImagesLoaded] = useState<boolean>(false)
-  const [images, setImages] = useState<Array<IImage>>([])
+  const [imageFolderLoaded, setImageFolderLoaded] = useState<boolean>(false)
+  const [imageFiles, setImageFiles] = useState<Array<IImageFile2>>([])
 
   const shield = useShield()
 
-  async function loadImages() {
-    if(imagesLoaded) return
+  async function loadImageFolder() {
+    if(imageFolderLoaded) return
     await Get2(shield, `/movic/LoadImageFolder?projectId=${project.id}`, (res)=>{
-      setImagesLoaded(true)
+      setImageFolderLoaded(true)
       console.log(res.imageFiles)
-      setImages(res.imageFiles)
+      setImageFiles(OrderImageFilesByName(res.imageFiles))
     })
   }
 
   useEffect(()=>{
-    loadImages()
+    loadImageFolder()
   })
 
   function trash() {
@@ -50,7 +46,7 @@ export function ImagesFolder({
 
   }
 
-  function upload() {
+  function startUpload() {
     const input = fileInputRef.current
     if(!input) return
     input.click()
@@ -63,36 +59,36 @@ export function ImagesFolder({
   }
 
   function afterUpload(res: any) {
-    setImagesLoaded(false)
+    setImageFolderLoaded(false)
   }
 
   function toggleSelectAll() {
-    const newImages = new Array<IImage>()
-    for(let i=0; i<images.length; i++) {
-      const image = images[i]
+    const newImages = new Array<IImageFile2>()
+    for(let i=0; i<imageFiles.length; i++) {
+      const image = imageFiles[i]
       if(image) {
         image.selected = toSelectAll
         newImages.push(image)
       }
     }
-    setImages(newImages)
+    setImageFiles(newImages)
     setToSelectAll(!toSelectAll)
   }
 
   function selectImage(imageId: string) {
-    const newImages = new Array<IImage>()
-    for(let i=0; i<images.length; i++) {
-      const image = images[i]
+    const newImages = new Array<IImageFile2>()
+    for(let i=0; i<imageFiles.length; i++) {
+      const image = imageFiles[i]
       if(image && image._id === imageId) {
         image.selected = !image.selected
       }
       newImages.push(image)
     }
-    setImages(newImages)
+    setImageFiles(newImages)
   }
 
   function selectedImageCount() {
-    const selectedImages = images.filter((image)=> image.selected)
+    const selectedImages = imageFiles.filter((image)=> image.selected)
     return selectedImages.length
   }
 
@@ -107,8 +103,9 @@ export function ImagesFolder({
   return(<>
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>
     {
-      images.map((image, i)=>
-        <ImageFile key={image._id.toString()} url={image.urlSmall} fileName={image.name} selected={image.selected}
+      imageFiles.map((image, i)=>
+        <ImageFile key={image._id.toString()} url={image.urlSmall} fileName={image.name} 
+          selected={image.selected}
           onClick={()=>{selectImage(image._id.toString())}}/>
       )
     }
@@ -120,7 +117,7 @@ export function ImagesFolder({
        icon2={selectAllIcon} onClick2={toggleSelectAll}
        icon3="trashbin" onClick3={trash} disabled3 = {!imageSelected}
        icon5="pencil" onClick5={edit} disabled5 = {!imageSelected}
-       icon6="plus" onClick6={upload}
+       icon6="plus" onClick6={startUpload}
       />
     </AppleWindowPlainBottomBarDiv>
     <FileInput formTextFields={formTextFields}

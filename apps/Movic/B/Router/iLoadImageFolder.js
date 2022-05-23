@@ -4,7 +4,6 @@ import { asyGetMovicAccount, asyGetMovicProject } from "./H/GetMovicAccount.js"
 
 export async function iLoadImageFolder(req, res) {
   try{
-    console.log("hello")
     const projectId = (req.query.projectId || "").toString()
     const movicAccount = await asyGetMovicAccount(req.user._id)
 
@@ -17,7 +16,7 @@ export async function iLoadImageFolder(req, res) {
     }
     const imageFiles = await ImageFile.find({
       movicId: movic._id
-    })
+    }).select("_id name urlSmall")
 
     return res.json({ok: true, imageFiles})
 
