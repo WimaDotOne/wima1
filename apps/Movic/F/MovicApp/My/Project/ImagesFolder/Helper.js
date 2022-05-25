@@ -33,3 +33,15 @@ function CompareFileName(A, B) {
   if (A === B) return 0
   return 1
 }
+
+export function FindADuplicateName(imageFiles) {
+  const imageDict = {}
+  for(const image of imageFiles) {
+    if(!imageDict[image.name]) {
+      imageDict[image.name] = true
+    } else {
+      return image.name
+    }
+  }
+  return ""
+}

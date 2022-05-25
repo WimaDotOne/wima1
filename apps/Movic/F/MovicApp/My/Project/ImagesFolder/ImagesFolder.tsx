@@ -6,8 +6,9 @@ import { useEffect, useRef, useState } from "react"
 import { FileInput, Get2, IFormTextField, Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { IProject } from "../../../../Model/IProject"
 import { IImageFile2 } from "../../../../Model/IImageFile"
-import { OrderImageFilesByName } from "./Order.js"
+import { FindADuplicateName, OrderImageFilesByName } from "./Helper.js"
 import { EditNames } from "./EditNames/EditNames"
+import cl from "./ImagesFolder.module.scss"
 
 interface IImagesFolderProp {
   project: IProject
@@ -49,7 +50,7 @@ export function ImagesFolder({
     }
     const wordImage = imageFileIds.length > 1 ? "images" : "image"
     if(!confirm(`Delete ${imageFileIds.length} ${wordImage}?`)) return
-    
+
     await Post2(shield, "/movic/DeleteProjectImages",
     {
       projectId: project.id,
@@ -122,9 +123,17 @@ export function ImagesFolder({
       quitEdit={()=>{setIsEdit(false)}}
     />)
   }
+
+  const duplicateName = FindADuplicateName(imageFiles)
   
   return(<>
     <Div height={10} />
+    {
+      duplicateName ? 
+      <div className={cl.warning}>
+      {`There are two images with the same name (${duplicateName}). Only one can be randomly chosen to be used in a movic.`}
+      </div>: null
+    }
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>
     {
       imageFiles.map((image, i)=>
