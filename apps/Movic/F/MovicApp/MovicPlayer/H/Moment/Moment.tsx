@@ -51,20 +51,24 @@ export function Moment({
       }
       </div>
 
-      <div className={cl.linesSpace}>
-        <div className={cl.lines}>
-        {
-          lines.map((line, i)=>{
-            const clOdd = i%2===1 ? cl.odd : ""
-            return (
-              <div key={"line"+i} className={ClassNames([cl.line, clOdd])}>
-              { line }
-              </div>
-            )
-          })
-        }
-        </div>
-      </div>
+      {
+        lines && lines.length ? 
+        <div className={cl.linesSpace}>
+          <div className={cl.lines}>
+          {
+            lines.map((line, i)=>{
+              const clOdd = i%2===1 ? cl.odd : ""
+              return (
+                <div key={"line"+i} className={ClassNames([cl.line, clOdd])}>
+                { line }
+                </div>
+              )
+            })
+          }
+          </div>
+        </div>:null
+      }
+      
     </div>
     </div>
   </>)

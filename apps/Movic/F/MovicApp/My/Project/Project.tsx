@@ -51,7 +51,7 @@ export function Project({
       <ImagesFolder project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.Preview: return(
-      <Preview backToProjectHome={backToProjectHome}/>
+      <Preview project={project} backToProjectHome={backToProjectHome}/>
     )
     default: return (
       <ProjectHome 

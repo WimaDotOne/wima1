@@ -1,5 +1,5 @@
 
-function ParseMovicScript(text) {
+function ParseMovicScript(text, imageDict) {
   const lines = (text || "").split("\n")
 
   const scenes = []
@@ -13,12 +13,12 @@ function ParseMovicScript(text) {
     if(!line) continue
 
     if(IsSceneDivider(line)) {
-
       scene = []
+      moment = {}
       isNewMoment = true
       isNewScene = true
     } else if(IsMomentDivider(line)) {
-
+      moment = {}
       isNewMoment = true
     } else if(IsNarrator(line)) {
 
@@ -26,7 +26,7 @@ function ParseMovicScript(text) {
       isNewMoment = PushMoment(scene, moment, isNewMoment)
       isNewScene = PushScene(scenes, scene, isNewScene)
     } else if(IsImage(line)) {
-      GatherImages(line, moment)
+      GatherImages(line, moment, imageDict)
       isNewMoment = PushMoment(scene, moment, isNewMoment)
       isNewScene = PushScene(scenes, scene, isNewScene)
     } else {
@@ -47,7 +47,7 @@ function PushScene(scenes, scene, isNewScene) {
 }
 
 function IsMomentEmpty(moment) {
-  if(moment.images && moment.images.length > 0) return false
+  if(moment.imageUrls && moment.imageUrls.length > 0) return false
   if(moment.lines && moment.lines.length > 0) return false
   if(moment.narratives && moment.narratives.length > 0) return false
   return true
@@ -99,18 +99,21 @@ function IsImage(line) {
   return firstChar === "["
 }
 
-function GatherImages(line, moment) {
+function GatherImages(line, moment, imageDict) {
   const a = line.split("[")[1] || ""
   const b = (a.split("]")[0] || "")
   
-  const imageNames = b.split[","]
-  for(let imageName of imageNames) {
-    imageName = imageName.trim()
+  const imageNames = b.split(",")
+  for(let i=0; i<imageNames.length; i++) {
+
+    const imageName = (imageNames[i] || "").trim()
     if(!imageName) continue
-    if(!moment.images) {
-      moment.images = []
+    const imageUrl = imageDict[imageName]
+    if(!imageUrl) continue
+    if(!moment.imageUrls) {
+      moment.imageUrls = []
     }
-    moment.images.push(imageName)
+    moment.imageUrls.push(imageUrl)
   }
 }
 
