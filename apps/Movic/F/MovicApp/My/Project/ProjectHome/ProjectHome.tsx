@@ -35,6 +35,10 @@ export function ProjectHome({
     setProjectTurn(ProjectTurn.Preview)
   }
 
+  function openSettings() {
+    setProjectTurn(ProjectTurn.Settings)
+  }
+
   return(<>
     <div className={cl.home}>
       <HeadLine text={project.movicTitle} h={3}/>
@@ -45,7 +49,7 @@ export function ProjectHome({
         <File text="Preview" iconName="film" iconColor={MovicColor.themeRed}
           onClick={preview} />
         <File text="Settings" iconName="gear" type={FileType.settings}
-          onClick={()=>{}} />
+          onClick={openSettings} />
       </AutoRepeatGrid>
     </div>
     <AppleWindowPlainBottomBarDiv>

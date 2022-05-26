@@ -5,6 +5,7 @@ import { ImagesFolder } from "./ImagesFolder/ImagesFolder"
 import { MovicScript } from "./MovicScript/MovicScript"
 import { Preview } from "./Preview/Preview"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
+import { Settings } from "./Settings/Settings"
 
 interface IProjectProp {
 
@@ -53,6 +54,9 @@ export function Project({
     case ProjectTurn.Preview: return(
       <Preview project={project} backToProjectHome={backToProjectHome}/>
     )
+    case ProjectTurn.Settings: return(
+      <Settings project={project} backToProjectHome={backToProjectHome}/>
+    )
     default: return (
       <ProjectHome 
         project={project}
@@ -67,5 +71,6 @@ export const ProjectTurn = {
   Home: "Home",
   ImagesFolder: "ImagesFolder",
   MovicScript: "MovicScript",
-  Preview: "Preview"
+  Preview: "Preview",
+  Settings: "Settings"
 }

@@ -1,0 +1,11 @@
+@use "../../../../CSS/movic.module.scss";
+
+.settings {
+  padding: 10px;
+}
+
+@media screen and (min-width: movic.$phoneMaxHeight) {
+  .settings {
+    padding: 10px 30px;
+  }
+}
