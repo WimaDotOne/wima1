@@ -26,7 +26,7 @@ export function MyMovies() {
       </div>
     </MovicWindow>
     <MovicWindowBottomBar>
-      {}
+    {}
     </MovicWindowBottomBar>
   </>)
 }
