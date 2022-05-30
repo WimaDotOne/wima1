@@ -3,6 +3,7 @@ import { SvgIcon } from "../../../../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import { MovicColor } from "../../../../../../CSS/MovicColor"
 import { Button } from "../../../../../H/Controls/Button/Button"
 import cl from "./SettingSection.module.scss"
+import { SettingSectionHeader } from "./SettingSectionHeader"
 
 interface ISettingSectionProp {
   title: string
@@ -24,19 +25,11 @@ export function SettingSection({
 
   return(<>
   <div>
-    <div className={cl.titleRow}>
-      <div className={cl.title}>{title}</div>
-      <div className={cl.pencilDiv} onClick={()=>{
-        setIsEdit(!isEdit)
-      }}>
-      {
-        isEdit ? null:
-        <div>
-          <SvgIcon name="pencil" width={17} color={MovicColor.themeRed}/>
-        </div>
-      }
-      </div>
-    </div>
+    <SettingSectionHeader title={title} 
+      description={description}
+      isEdit={isEdit} 
+      onClickPencil={()=>{setIsEdit(!isEdit)}}
+    />
     {
       description ? <div className={cl.description}>{description}</div>:null
     }

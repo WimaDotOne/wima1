@@ -12,6 +12,7 @@ export function CheckField1({
   onChange,
   disabled
 }:ITextField1Prop) {
+
   return(<>
   <div className={cl.checkboxRow}>
     <input type="checkbox" disabled={disabled} className={cl.input}

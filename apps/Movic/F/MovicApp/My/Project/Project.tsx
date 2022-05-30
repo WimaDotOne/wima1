@@ -40,6 +40,11 @@ export function Project({
     }
   })
 
+  function setProjectMovicTitle(movicTitle: string) {
+    if(!project) return
+    setProject({...project, movicTitle})
+  }
+
   if(!project) {
     return null
   }
@@ -55,7 +60,9 @@ export function Project({
       <Preview project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.Settings: return(
-      <Settings project={project} backToProjectHome={backToProjectHome}/>
+      <Settings project={project}  
+        setProjectMovicTitle={setProjectMovicTitle}
+        backToProjectHome={backToProjectHome}/>
     )
     default: return (
       <ProjectHome 

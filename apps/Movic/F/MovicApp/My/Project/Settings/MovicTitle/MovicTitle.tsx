@@ -1,26 +1,51 @@
 import { useState } from "react"
+import { Get2, Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { IProject } from "../../../../../Model/IProject"
 import { SettingSection } from "../H/SettingSection/SettingSection"
 import { EditMovicTitle } from "./EditMovicTitle/EditMovicTitle"
-import cl from "./MovicTitle.module.scss"
 import { ViewMovicTitle } from "./ViewMovicTitle/ViewMovicTitle"
 
 interface IMovicTitleProp {
-  title0: string
+  project: IProject
+  setProjectMovicTitle: (movicTitle: string)=>void
 }
 export function MovicTitle({
-  title0
+  project,
+  setProjectMovicTitle
 }: IMovicTitleProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [title, setTitle] = useState<string>(title0)
+  const [title, setTitle] = useState<string>(project.movicTitle)
+  const shield = useShield()
 
-  async function onCancel() {
-    
-    setIsEdit(false)
+  async function loadMovicTitle(onOk?:(res:any)=>void) {
+    await Get2(shield, `/movic/LoadSettingsMovicTitle?projectId=${project.id}`,
+      onOk
+    )
+  }
+
+  async function saveMovicTitle(onOk?:(res:any)=>void) {
+    await Post2(shield, "/movic/SaveSettingsMovicTitle",
+      {
+        projectId: project.id,
+        title
+      }, onOk
+    )
+  }
+
+  function onCancel() {
+    loadMovicTitle((res)=>{
+      setTitle(res.movicTitle)
+      setIsEdit(false)
+    })
   }
 
   async function onSave() {
-    setIsEdit(false)
+    saveMovicTitle((res)=>{
+      setTitle(res.movicTitle)
+      setProjectMovicTitle(res.movicTitle)
+      setIsEdit(false)
+    })
   }
 
   return(<>

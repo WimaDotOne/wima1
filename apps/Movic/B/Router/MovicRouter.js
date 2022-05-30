@@ -12,6 +12,10 @@ import { iLoadImageFolder } from "./My/iLoadImageFolder.js"
 import { iDeleteProjectImages } from "./My/iDeleteProjectImages.js"
 import { iChangeImageNames } from "./My/iChangeImageNames.js"
 import { iLoadScenes } from "./MovicPlayer/iLoadScenes.js"
+import { iLoadSettingsIsMovicPublic } from "./My/Settings/iLoadSettingsIsMovicPublic.js"
+import { iLoadSettingsMovicTitle } from "./My/Settings/iLoadSettingsMovicTitle.js"
+import { iSaveSettingsIsMovicPublic } from "./My/Settings/iSaveSettingsIsMovicPublic.js"
+import { iSaveSettingsMovicTitle } from "./My/Settings/iSaveSettingsMovicTitle.js"
 
 const MovicRouter = express.Router()
 
@@ -29,6 +33,11 @@ MovicRouter.post("/SaveMovicScript", iAuth, iSaveMovicScript)
 MovicRouter.post("/DeleteProjectImages", iAuth, iDeleteProjectImages)
 MovicRouter.post("/ChangeImageNames", iAuth, iChangeImageNames)
 
+//My Settings
+MovicRouter.get("/LoadSettingsMovicTitle", iAuth, iLoadSettingsMovicTitle)
+MovicRouter.get("/LoadSettingsIsMovicPublic", iAuth, iLoadSettingsIsMovicPublic)
+MovicRouter.post("/SaveSettingsMovicTitle", iAuth, iSaveSettingsMovicTitle)
+MovicRouter.post("/SaveSettingsIsMovicPublic", iAuth, iSaveSettingsIsMovicPublic)
 
 export {
   MovicRouter

@@ -15,8 +15,8 @@ export function IsWimaUserLogin() {
   }
   useEffect(()=>{
     if(!loaded) {
-      UpdateUserLogin()
       setLoaded(true)
+      UpdateUserLogin()
     }
   })
   return(<>
