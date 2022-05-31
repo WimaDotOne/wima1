@@ -18,6 +18,7 @@ import { iSaveSettingsIsMovicPublic } from "./My/Settings/iSaveSettingsIsMovicPu
 import { iSaveSettingsMovicTitle } from "./My/Settings/iSaveSettingsMovicTitle.js"
 import { iUploadDvdCover } from "./ImageUpload/iUploadDvdCover.js"
 import { iLoadDvdCover } from "./My/iLoadDvdCover.js"
+import { iLoadMyMovics } from "./My/iLoadMyMovics.js"
 
 const MovicRouter = express.Router()
 
@@ -35,6 +36,7 @@ MovicRouter.get("/LoadImageFolder", iAuth, iLoadImageFolder)
 MovicRouter.post("/SaveMovicScript", iAuth, iSaveMovicScript)
 MovicRouter.post("/DeleteProjectImages", iAuth, iDeleteProjectImages)
 MovicRouter.post("/ChangeImageNames", iAuth, iChangeImageNames)
+MovicRouter.get("/LoadMyMovics", iAuth, iLoadMyMovics)
 
 //My Settings
 MovicRouter.get("/LoadSettingsMovicTitle", iAuth, iLoadSettingsMovicTitle)

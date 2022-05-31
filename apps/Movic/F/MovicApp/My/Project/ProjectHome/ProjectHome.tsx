@@ -44,7 +44,7 @@ export function ProjectHome({
       <HeadLine text={project.movicTitle} h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Images" onClick={openImagesFolder}/>
-        <File text="Movie Script" iconName="textfile" type={FileType.text} 
+        <File text="Movic Script" iconName="textfile" type={FileType.text} 
           onClick={openMovicScript} />
         <File text="Preview" iconName="film" iconColor={MovicColor.themeRed}
           onClick={preview} />

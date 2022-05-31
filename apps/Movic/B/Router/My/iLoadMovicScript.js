@@ -1,7 +1,7 @@
 import Movic from "../../Model/Movic.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 
-async function iLoadMovicScript(req, res) {
+export async function iLoadMovicScript(req, res) {
   try{
     const projectId = (req.query.projectId || "").toString()
     const movicAccount = await asyGetMovicAccount(req.user._id)
@@ -19,8 +19,4 @@ async function iLoadMovicScript(req, res) {
   } catch(err) {
     return res.json({ ok: false, error: err.message })
   }
-}
-
-export {
-  iLoadMovicScript
 }

@@ -56,6 +56,7 @@ export async function iUploadDvdCover(req, res) {
     const smImg = result[1]
 
 
+    //Delete old image from Amazon S3 database
     if(movic.dvdCover) {
       const key1 = movic.dvdCover.s3Key
       const key2 = movic.dvdCover.s3KeySmall

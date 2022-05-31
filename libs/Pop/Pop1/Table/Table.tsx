@@ -6,13 +6,15 @@ import { TableModel } from "./Model/TableModel"
 import cl from "./Table.module.scss"
 
 interface ITableProp {
-  table: TableModel
+  table?: TableModel
   rowId?: string
   setRowId?: (rowId: string)=>void
 }
 export function Table({
   table, rowId, setRowId
 }: ITableProp) {
+
+  if(!table) return null
 
   const tHeadRef = useRef<HTMLDivElement>(null)
   const tBodyRef = useRef<HTMLDivElement>(null)
