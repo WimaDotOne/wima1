@@ -14,6 +14,7 @@ import { asyNewTempFolder, asyRemoveTempFolder,
   asyUploadMany,
   asyDeleteOne,
   asyDeleteMany,
+  asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
 
   asyShrinkImageFiles
@@ -37,6 +38,7 @@ export {
   asyUploadMany,
   asyDeleteOne,
   asyDeleteMany,
+  asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
 
   asyShrinkImageFiles

@@ -89,5 +89,6 @@ export {
   asyUploadMany,
   asyDeleteOne,
   asyDeleteMany,
+  asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall
 }

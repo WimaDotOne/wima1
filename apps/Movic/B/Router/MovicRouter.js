@@ -16,11 +16,14 @@ import { iLoadSettingsIsMovicPublic } from "./My/Settings/iLoadSettingsIsMovicPu
 import { iLoadSettingsMovicTitle } from "./My/Settings/iLoadSettingsMovicTitle.js"
 import { iSaveSettingsIsMovicPublic } from "./My/Settings/iSaveSettingsIsMovicPublic.js"
 import { iSaveSettingsMovicTitle } from "./My/Settings/iSaveSettingsMovicTitle.js"
+import { iUploadDvdCover } from "./ImageUpload/iUploadDvdCover.js"
+import { iLoadDvdCover } from "./My/iLoadDvdCover.js"
 
 const MovicRouter = express.Router()
 
 //Image Upload
 MovicRouter.post("/UploadImages", iAuth, iNewTempFolder, iImageMulter, iUploadImages)
+MovicRouter.post("/UPloadDvdCover", iAuth, iNewTempFolder, iImageMulter, iUploadDvdCover)
 
 //My
 MovicRouter.post("/CreateMovicProject", iAuth, iCreateMovicProject)
@@ -38,6 +41,7 @@ MovicRouter.get("/LoadSettingsMovicTitle", iAuth, iLoadSettingsMovicTitle)
 MovicRouter.get("/LoadSettingsIsMovicPublic", iAuth, iLoadSettingsIsMovicPublic)
 MovicRouter.post("/SaveSettingsMovicTitle", iAuth, iSaveSettingsMovicTitle)
 MovicRouter.post("/SaveSettingsIsMovicPublic", iAuth, iSaveSettingsIsMovicPublic)
+MovicRouter.get("/LoadDvdCover", iAuth, iLoadDvdCover)
 
 export {
   MovicRouter
