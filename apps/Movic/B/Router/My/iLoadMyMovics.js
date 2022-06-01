@@ -1,4 +1,3 @@
-import Movic from "../../Model/Movic.js"
 import MovicProject from "../../Model/MovicProject.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 
@@ -12,7 +11,7 @@ export async function iLoadMyMovics(req, res) {
     }).populate("movicId")
 
     const movics = []
-    
+
     for(const project of projects) {
       const movic0 = project.movicId
       const movic = {

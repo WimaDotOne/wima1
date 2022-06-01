@@ -3,7 +3,7 @@ import Movic from "../../Model/Movic.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 import { ParseMovicScript } from "../H/ParseMovicScript.js"
 
-export async function iLoadScenes(req, res) {
+export async function iLoadMovicPreview(req, res) {
   try{
     const projectId = (req.query.projectId || "").toString()
     const movicAccount = await asyGetMovicAccount(req.user._id)

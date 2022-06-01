@@ -66,7 +66,7 @@ export function Publish({
     {
       isEdit ? 
       <EditPublish checked={isMovicPublic} setChecked={setIsMovicPublic}/>:
-      <ViewPublish isMovicPublic={isMovicPublic}/>
+      <ViewPublish project={project} isMovicPublic={isMovicPublic}/>
     }
     </SettingSection>
   </>)

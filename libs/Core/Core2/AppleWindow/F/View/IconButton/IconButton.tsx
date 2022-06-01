@@ -5,7 +5,7 @@ import cl from "./IconButton.module.scss"
 
 interface IIconButtonProp {
   svgName: string
-  onClick: () => void
+  onClick?: () => void
   disabled?: boolean
   backgroundColor?: string
 }

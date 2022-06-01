@@ -11,7 +11,6 @@ import { iImageMulter } from "../../../../libs/Core/Core1/FileUp/B/iImageMulter.
 import { iLoadImageFolder } from "./My/iLoadImageFolder.js"
 import { iDeleteProjectImages } from "./My/iDeleteProjectImages.js"
 import { iChangeImageNames } from "./My/iChangeImageNames.js"
-import { iLoadScenes } from "./MovicPlayer/iLoadScenes.js"
 import { iLoadSettingsIsMovicPublic } from "./My/Settings/iLoadSettingsIsMovicPublic.js"
 import { iLoadSettingsMovicTitle } from "./My/Settings/iLoadSettingsMovicTitle.js"
 import { iSaveSettingsIsMovicPublic } from "./My/Settings/iSaveSettingsIsMovicPublic.js"
@@ -19,6 +18,9 @@ import { iSaveSettingsMovicTitle } from "./My/Settings/iSaveSettingsMovicTitle.j
 import { iUploadDvdCover } from "./ImageUpload/iUploadDvdCover.js"
 import { iLoadDvdCover } from "./My/iLoadDvdCover.js"
 import { iLoadMyMovics } from "./My/iLoadMyMovics.js"
+import { iLoadMovicPreview } from "./MovicPlayer/iLoadMovicPreview.js"
+import { iLoadMovic } from "./MovicPlayer/iLoadMovic.js"
+import { iLoadSettingsMovicId } from "./My/Settings/iLoadSettingsMovicId.js"
 
 const MovicRouter = express.Router()
 
@@ -31,7 +33,8 @@ MovicRouter.post("/CreateMovicProject", iAuth, iCreateMovicProject)
 MovicRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)
 MovicRouter.get("/LoadMyProject", iAuth, iLoadMyProject)
 MovicRouter.get("/LoadMovicScript", iAuth, iLoadMovicScript)
-MovicRouter.get("/LoadScenes", iAuth, iLoadScenes)
+MovicRouter.get("/LoadMovicPreview", iAuth, iLoadMovicPreview)
+MovicRouter.get("/LoadMovic", iLoadMovic) //no auth
 MovicRouter.get("/LoadImageFolder", iAuth, iLoadImageFolder)
 MovicRouter.post("/SaveMovicScript", iAuth, iSaveMovicScript)
 MovicRouter.post("/DeleteProjectImages", iAuth, iDeleteProjectImages)
@@ -40,6 +43,7 @@ MovicRouter.get("/LoadMyMovics", iAuth, iLoadMyMovics)
 
 //My Settings
 MovicRouter.get("/LoadSettingsMovicTitle", iAuth, iLoadSettingsMovicTitle)
+MovicRouter.get("/LoadSettingsMovicId", iAuth, iLoadSettingsMovicId)
 MovicRouter.get("/LoadSettingsIsMovicPublic", iAuth, iLoadSettingsIsMovicPublic)
 MovicRouter.post("/SaveSettingsMovicTitle", iAuth, iSaveSettingsMovicTitle)
 MovicRouter.post("/SaveSettingsIsMovicPublic", iAuth, iSaveSettingsIsMovicPublic)

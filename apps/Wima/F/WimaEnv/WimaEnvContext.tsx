@@ -2,6 +2,7 @@ import React, {ReactNode, useContext, useState} from "react"
 
 interface IMovicEnv {
   scriptFileMaxLength?: number
+  domain?: string
 }
 
 interface IEnvContext {

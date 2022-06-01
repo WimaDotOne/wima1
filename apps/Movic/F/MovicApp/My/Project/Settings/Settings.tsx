@@ -18,9 +18,6 @@ export function Settings({
   backToProjectHome
 }: ISettingsProp) {
 
-  function save() {
-
-  }
   return(<>
   <div className={cl.settings}>
     <HeadLine text={project.movicTitle} h={3} />

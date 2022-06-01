@@ -6,6 +6,7 @@ import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
 import { MovicColor } from "../../../CSS/MovicColor"
 import { IMovic } from "../../../Model/IMovic"
+import { MovicPlayer } from "../../MovicPlayer/MovicPlayer"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
 import { MovicWindowBottomBar } from "../../MovicWindow/MovicWindowBottomBar"
 import { MovicBar } from "./H/MovicBar/MovicBar"
@@ -13,9 +14,11 @@ import cl from "./MyMovics.module.scss"
 
 export function MyMovics() {
 
-  const [movicId, setMovicId] = useState<string>("a")
+  const [movicId, setMovicId] = useState<string>("")
+  const [movics, setMovics] = useState<Array<IMovic>>([])
   const [movicTable, setMovicTable] = useState<TableModel>()
   const [isTableLoaded, setIsTableLoaded] = useState<boolean>(false)
+  const [isPlaying, setIsPlaying] = useState<boolean>(false)
 
   const shield = useShield()
 
@@ -25,9 +28,14 @@ export function MyMovics() {
     await Get2(shield,"/movic/LoadMyMovics",
       (res)=>{
         setIsTableLoaded(true)
-        console.log(res.movics)
-        const table = MakeMovicTable(res.movics)
-        setMovicTable(table)
+        const movics = res.movics
+        if(movics && movics.length) {
+          setMovics(movics)
+          const movic0 = movics[0]
+          const table = MakeMovicTable(res.movics)
+          setMovicTable(table)
+          setMovicId(movic0.id)
+        }
       }
     )
   }
@@ -36,26 +44,40 @@ export function MyMovics() {
     loadMyMovics()
   })
 
-  const topNode = <MovicBar />
+  function play() {
+    setIsPlaying(true)
+  }
+
+  function stop() {
+    setIsPlaying(false)
+  }
+
+  const topNode = <MovicBar movic={GetMovic(movicId, movics)} onPlay={play}/>
   const bottomNode = <AppleWindowBottomBarFill />
 
   return(<>
-    <MovicWindow>
-      <div className={cl.scrollableWrap}>
-        <Scrollable2 topNode={topNode} bottomNode={bottomNode}>
-          <Table table={movicTable} rowId={movicId} setRowId={setMovicId}/>
-        </Scrollable2>
-      </div>
-    </MovicWindow>
-    <MovicWindowBottomBar>
-    {}
-    </MovicWindowBottomBar>
+  {
+    isPlaying ? 
+    <MovicPlayer movicId={movicId} onStop={stop}/>:
+    <>
+      <MovicWindow>
+        <div className={cl.scrollableWrap}>
+          <Scrollable2 topNode={topNode} bottomNode={bottomNode}>
+            <Table table={movicTable} rowId={movicId} setRowId={setMovicId}/>
+          </Scrollable2>
+        </div>
+      </MovicWindow>
+      <MovicWindowBottomBar>
+      {}
+      </MovicWindowBottomBar>
+    </>
+  }
   </>)
 }
 
 function MakeMovicTable(movics: Array<IMovic>) {
   const schema = [
-    {title: "Title", width: 150}
+    {title: "Title", width: 200}
   ]
   const data = []
   for(const movic of movics) {
@@ -71,4 +93,13 @@ function MakeMovicTable(movics: Array<IMovic>) {
   table.narrowScreenWidth = 500
   table.selectedRowColor = MovicColor.themeRed
   return table
+}
+
+function GetMovic(movicId: string, movics: Array<IMovic>) {
+  for(const movic of movics) {
+    if(movic.id === movicId) {
+      return movic
+    }
+  }
+  return undefined
 }

@@ -5,7 +5,7 @@ import cl from "./Row.module.scss"
 
 interface IRowProp {
   isHead?: boolean
-  schema: Array<IColumnInfo>
+  schema?: Array<IColumnInfo>
   attributes?: Array<IAttribute>
   gray?: boolean
   hasPrompt?: boolean
@@ -29,6 +29,11 @@ export function Row({
     textColor = "white"
     selectedStyle.backgroundColor = selectedColor
   }
+
+  if(!schema) {
+    return null
+  }
+
   return(<>
   <div className={ClassNames([cl.row, clGray])} style={selectedStyle}
     onClick={onClick}>

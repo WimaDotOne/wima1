@@ -14,13 +14,12 @@ export function Table({
   table, rowId, setRowId
 }: ITableProp) {
 
-  if(!table) return null
 
   const tHeadRef = useRef<HTMLDivElement>(null)
   const tBodyRef = useRef<HTMLDivElement>(null)
   const tBodyNarrowRef = useRef<HTMLDivElement>(null)
-  const schema = table.schema
-  const data = table.data
+  const schema = table?.schema
+  const data = table?.data
 
   useEffect(()=>{
     if(!window) return
@@ -43,7 +42,7 @@ export function Table({
       }
     }
     
-    const mediaQuery = window.matchMedia(`(max-width: ${table.narrowScreenWidth}px)`)
+    const mediaQuery = window.matchMedia(`(max-width: ${table?.narrowScreenWidth}px)`)
     AdjustTable(mediaQuery)
     mediaQuery.addEventListener("change" , (e)=>{
       if(e.target) {
@@ -62,6 +61,10 @@ export function Table({
   <div className={cl.tHead} ref={tHeadRef}>
     <Row isHead schema={schema} />
   </div>
+
+  if(!table || !data) {
+    return null
+  }
   
   return(<>
     <div className={cl.table}>
