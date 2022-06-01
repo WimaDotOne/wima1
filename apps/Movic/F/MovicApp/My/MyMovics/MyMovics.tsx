@@ -4,6 +4,7 @@ import { Scrollable2 } from "../../../../../../libs/Core/Core2/Controls/Scrollab
 import { AppleWindowBottomBarFill } from "../../../../../../libs/Core/Core2/fCore2"
 import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
+import { useWimaUser } from "../../../../../Wima/fWima"
 import { MovicColor } from "../../../CSS/MovicColor"
 import { IMovic } from "../../../Model/IMovic"
 import { MovicPlayer } from "../../MovicPlayer/MovicPlayer"
@@ -21,10 +22,11 @@ export function MyMovics() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
 
   const shield = useShield()
+  const user = useWimaUser()
 
   async function loadMyMovics() {
     if(isTableLoaded) return
-
+    if(!user?.isLoggedIn) return
     await Get2(shield,"/movic/LoadMyMovics",
       (res)=>{
         setIsTableLoaded(true)

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFolder"
+import { useWimaUser } from "../../../../../../Wima/fWima"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindow } from "../../../MovicWindow/MovicWindow"
 import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
@@ -24,10 +25,11 @@ export function ProjectsHome({
   const [projects, setProjects] = useState<Array<IProject>>([])
   const shield = useShield()
   const router = useRouter()
+  const user = useWimaUser()
 
   async function LoadMyProjects() {
     if(loaded) return
-
+    if(!user?.isLoggedIn) return
     await Get2(shield,"/movic/LoadMyProjects",(res)=>{
       setLoaded(true)
       setProjects(res.projects || [])
