@@ -4,7 +4,7 @@ import { WrapCell } from "./WrapCell"
 import cl from "./WrapRow.module.scss"
 
 interface IWrapRowProp {
-  schema: Array<IColumnInfo>
+  schema?: Array<IColumnInfo>
   attributes?: Array<IAttribute>
   selected?: boolean
   selectedColor?: string
@@ -25,6 +25,8 @@ export function WrapRow({
     promptColor = "#dedede"
     selectedStyle.backgroundColor = selectedColor
   }
+
+  if(!schema) return null
 
   return(<>
   <div className={cl.row} style={selectedStyle}
