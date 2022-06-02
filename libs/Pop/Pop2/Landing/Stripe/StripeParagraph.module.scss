@@ -1,0 +1,19 @@
+.paragraph {
+  padding-top: 12px;
+  color: #3c4257;
+  line-height: 26px;
+}
+
+.subParagraph {
+  padding-top: 12px;
+  color: #3c4257;
+  line-height: 26px;
+  display: grid;
+  grid-template-columns: 32px auto;
+}
+
+.dot {
+  color: #ccc;
+  text-align: center;
+  font-size: 24px;
+}

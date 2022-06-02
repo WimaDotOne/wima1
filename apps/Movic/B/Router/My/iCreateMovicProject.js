@@ -10,7 +10,7 @@ async function iCreateMovicProject(req, res) {
     const movicName = (req.body.movicName || "").trim()
 
     if(movicName.length > GENERAL_INPUT_MAX) {
-      return res.json({ ok: false, error: "Movic name is too long" })
+      return res.json({ ok: false, error: "Movic title is too long" })
     }
 
     const user = await User.findById(req.user._id)

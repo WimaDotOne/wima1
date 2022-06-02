@@ -65,6 +65,7 @@ export const AppTurn = {
   Projects: "Projects",
   MyMovics: "MyMovics",
   About: "About",
+  Tutorial: "Tutorial",
   WimaCircle: "WimaCircle"
 }
 
@@ -83,7 +84,8 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard", true))
 
   const publicGroup = new GroupModel("Movic", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "Tutrial", "graduationcap"))
   publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, MovicColor.themeRed)

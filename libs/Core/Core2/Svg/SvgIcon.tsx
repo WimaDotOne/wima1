@@ -23,6 +23,7 @@ import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
 import { SvgGear } from "./Common/Gear/Gear"
+import { SvgGraduationCap } from "./Common/GraduationCap/SvgGraduationCap"
 import { SvgHamburger } from "./Common/Hamburger/SvgHamburger"
 import { SvgHome } from "./Common/Home/SvgHome"
 import { SvgMagnifyingGlass } from "./Common/MagnifyingGlass/SvgMagnifyingGlass"
@@ -88,6 +89,7 @@ export function SvgIcon({
     case "exclamation.circle": return <SvgExclamationCircle width={width} stroke={color} strokeWidth={strokeWidth}/>
     case "exclamation.triangle.fill": return <SvgExclamationTriangleFill width={width} fill={color} />
     
+    case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />
     case "hamburger": return <SvgHamburger width={width} stroke={color} strokeWidth={strokeWidth} />
     case "magnifyingglass": return <SvgMagnifyingGlass width={width} stroke={color} strokeWidth={strokeWidth} />
     case "email": return <SvgEmail width={width} fill={color}/>

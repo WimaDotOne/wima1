@@ -7,7 +7,7 @@ export function About() {
   return(<>
     <MovicWindow>
       <LimitWidth maxWidth={800}>
-        <AppleNewsHeader1 text1="Movic" text2="movie + comic" />
+        <AppleNewsHeader1 text1="Movic" text2="= movie + comic" />
       </LimitWidth>
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />

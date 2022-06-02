@@ -37,7 +37,7 @@ export function NewProject({
       <div className={cl.fields}>
         <TextField1 value={movicName} 
           maxLength={GENERAL_INPUT_MAX}
-          prompt="Movic Name"
+          prompt="Movic title"
           onChange={(newValue)=>{setMovicName(newValue)}} />
       </div>
     </div>
