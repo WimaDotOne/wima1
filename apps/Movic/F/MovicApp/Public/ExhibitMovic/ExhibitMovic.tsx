@@ -23,6 +23,7 @@ export function ExhibitMovic({
 
   async function loadExhibitMovic() {
     if(loaded) return
+    if(!movicId) return
     await Get2(shield, `/movic/LoadExhibitMovic?movicId=${movicId}`,
       (res)=>{
         setLoaded(true)

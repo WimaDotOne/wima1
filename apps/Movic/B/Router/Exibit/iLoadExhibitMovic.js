@@ -6,7 +6,7 @@ export async function iLoadExhibitMovic(req, res) {
   try {
     const movicId = req.query.movicId
 
-    if(!movicId) {
+    if(!movicId || movicId==="undefined") {
       return res.json({ ok:false, error: "Movic id is missing"})
     }
     const path = FilePath(import.meta.url, `../../DB/ExhibitMovics/${movicId}.txt`)
