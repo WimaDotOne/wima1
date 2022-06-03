@@ -8,19 +8,18 @@ import { MovicControlBar } from "./H/MovicControlBar/MovicControlBar";
 import { Scene } from "./H/Scene/Scene";
 import cl from "./MovicPlayer.module.scss"
 
-interface IMovicPlayerProp {
+interface IMovicPlayer2Prop {
   movicId?: string
   projectId?: string
   onStop: ()=>void
 }
 
-export function MovicPlayer({
+export function MovicPlayer2({
   movicId,
   projectId,
   onStop
-}: IMovicPlayerProp) {
+}: IMovicPlayer2Prop) {
 
-  const [page, setPage] = useState<number|string>(1)
   const [scenes, setScenes] = useState<Array<IScene>>([])
   const [scenesLoaded, setScenesLoaded] = useState<boolean>(false)
   const [movicTitle, setMovicTitle] = useState<string>("")
@@ -50,32 +49,53 @@ export function MovicPlayer({
   useEffect(()=>{
     loadScenes()
   })
+  return(<>
+    <MovicPlayer movicTitle={movicTitle}
+      scenes={scenes} onStop={onStop}/>
+  </>)
+
+}
+
+interface IMovicPlayerProp {
+  movicTitle?: string,
+  scenes: Array<IScene>,
+  onStop: ()=>void
+}
+
+export function MovicPlayer({
+  movicTitle,
+  scenes,
+  onStop
+}: IMovicPlayerProp) {
+
+  const [page, setPage] = useState<number|string>(1)
 
   const totalPage = scenes.length || 1
-  return(<>
-  {
-    movicTitle?
-    <Head>
-      <title>{movicTitle}</title>
-    </Head>: null
-  }
 
-    <div className={cl.movicPlayer}>
-      <div className={cl.screen}>
-        <Div height={20} />
-        {
-          scenes && scenes.length ?
-            <Scene scene={scenes[(+page-1)]}/>: null
-        }
-        <Div height={40} />
+  return(<>
+    {
+      movicTitle?
+      <Head>
+        <title>{movicTitle}</title>
+      </Head>: null
+    }
+  
+      <div className={cl.movicPlayer}>
+        <div className={cl.screen}>
+          <Div height={20} />
+          {
+            scenes && scenes.length ?
+              <Scene scene={scenes[(+page-1)]}/>: null
+          }
+          <Div height={40} />
+        </div>
+        <NextPageSideBar page={page} setPage={setPage} totalPage={totalPage} 
+          pedalColor="#444" arrowColor="#333"/>
+        <NextPageSideBar page={page} setPage={setPage} prev
+          pedalColor="#444" arrowColor="#333"/>
+        <MovicControlBar page={page} setPage={setPage} totalPage={totalPage}
+          onStop={onStop}
+        />
       </div>
-      <NextPageSideBar page={page} setPage={setPage} totalPage={totalPage} 
-        pedalColor="#444" arrowColor="#333"/>
-      <NextPageSideBar page={page} setPage={setPage} prev
-        pedalColor="#444" arrowColor="#333"/>
-      <MovicControlBar page={page} setPage={setPage} totalPage={totalPage}
-        onStop={onStop}
-      />
-    </div>
-  </>)
+    </>)
 }

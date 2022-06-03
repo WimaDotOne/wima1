@@ -1,5 +1,5 @@
 import { IProject } from "../../../../Model/IProject";
-import { MovicPlayer } from "../../../MovicPlayer/MovicPlayer";
+import { MovicPlayer2 } from "../../../MovicPlayer/MovicPlayer";
 
 interface IPreviewProp {
   project: IProject
@@ -10,7 +10,7 @@ export function Preview({
   backToProjectHome
 }: IPreviewProp) {
   return(<>
-    <MovicPlayer projectId={project.id}
+    <MovicPlayer2 projectId={project.id}
       onStop={backToProjectHome}/>
   </>)
 }

@@ -7,7 +7,7 @@ import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableMod
 import { useWimaUser } from "../../../../../Wima/fWima"
 import { MovicColor } from "../../../CSS/MovicColor"
 import { IMovic } from "../../../Model/IMovic"
-import { MovicPlayer } from "../../MovicPlayer/MovicPlayer"
+import { MovicPlayer2 } from "../../MovicPlayer/MovicPlayer"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
 import { MovicWindowBottomBar } from "../../MovicWindow/MovicWindowBottomBar"
 import { MovicBar } from "./H/MovicBar/MovicBar"
@@ -60,7 +60,7 @@ export function MyMovics() {
   return(<>
   {
     isPlaying ? 
-    <MovicPlayer movicId={movicId} onStop={stop}/>:
+    <MovicPlayer2 movicId={movicId} onStop={stop}/>:
     <>
       <MovicWindow>
         <div className={cl.scrollableWrap}>

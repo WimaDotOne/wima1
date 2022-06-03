@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { MovicPlayer } from '../../../apps/Movic/F/MovicApp/MovicPlayer/MovicPlayer'
+import { MovicPlayer2 } from '../../../apps/Movic/F/MovicApp/MovicPlayer/MovicPlayer'
 
 export default function MovicPlay() {
 
@@ -10,6 +10,6 @@ export default function MovicPlay() {
     router.push("/")
   }
   return (<>
-    <MovicPlayer movicId={movicId} onStop={stop}/>
+    <MovicPlayer2 movicId={movicId} onStop={stop}/>
   </>)
 }
