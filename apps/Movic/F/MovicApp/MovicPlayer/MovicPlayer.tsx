@@ -90,9 +90,9 @@ export function MovicPlayer({
           <Div height={40} />
         </div>
         <NextPageSideBar page={page} setPage={setPage} totalPage={totalPage} 
-          pedalColor="#444" arrowColor="#333"/>
+          pedalColor="#444" arrowColor="#333" scrollTo0/>
         <NextPageSideBar page={page} setPage={setPage} prev
-          pedalColor="#444" arrowColor="#333"/>
+          pedalColor="#444" arrowColor="#333" scrollTo0/>
         <MovicControlBar page={page} setPage={setPage} totalPage={totalPage}
           onStop={onStop}
         />

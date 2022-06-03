@@ -1,4 +1,3 @@
-import { text } from "stream/consumers"
 import { SvgIcon } from "../../../Core/Core2/Svg/SvgIcon"
 import cl from "./Pagination.module.scss"
 
@@ -9,6 +8,7 @@ interface IPaginationProp {
   type?: string
   textColor?: string
   arrowColor?: string
+  scrollTo0?: boolean
 }
 
 export const PaginationType = {
@@ -17,7 +17,8 @@ export const PaginationType = {
 }
 
 export function Pagination({
-  page, setPage, totalPage, type, textColor, arrowColor
+  page, setPage, totalPage, type, textColor, arrowColor,
+  scrollTo0
 }: IPaginationProp) {
 
   page = page || ""
@@ -29,6 +30,9 @@ export function Pagination({
     if(isNaN(page)) { page = 1 }
     if(page < 1) { page = totalPage }
     setPage(page)
+    if(window && scrollTo0) {
+      window.scrollTo(0, 0)
+    }
   }
 
   function nextPage() {
@@ -37,6 +41,9 @@ export function Pagination({
     if(isNaN(page)) { page = 1 }
     if(page > totalPage) { page = 1 }
     setPage(page)
+    if(window && scrollTo0) {
+      window.scrollTo(0, 0)
+    }
   }
 
   function changePage(value: string) {
@@ -47,6 +54,9 @@ export function Pagination({
     if(num < 1) { return }
     if(num > totalPage) { return }
     setPage(num)
+    if(window && scrollTo0) {
+      window.scrollTo(0, 0)
+    }
   }
 
   switch(type) {

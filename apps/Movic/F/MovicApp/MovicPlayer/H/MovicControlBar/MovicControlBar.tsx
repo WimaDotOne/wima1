@@ -47,7 +47,7 @@ export function MovicControlBar({
           </div>
           <div className={cl.paginationDiv}>
             <Pagination page={page} setPage={setPage} totalPage={totalPage} 
-              type={PaginationType.Movic}
+              type={PaginationType.Movic} scrollTo0
             />
           </div>
         </div>

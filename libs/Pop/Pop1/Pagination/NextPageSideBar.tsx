@@ -9,13 +9,15 @@ interface INextPageSideBarProp {
   pedalColor?: string
   arrowColor?: string
   prev?: boolean
+  scrollTo0?: boolean
 }
 export function NextPageSideBar({
   page, setPage,
   totalPage,
   pedalColor,
   arrowColor,
-  prev
+  prev,
+  scrollTo0
 }: INextPageSideBarProp) {
 
   arrowColor = arrowColor || "#ccc"
@@ -32,6 +34,9 @@ export function NextPageSideBar({
     if(isNaN(page)) { page = 1 }
     if(page < 1) { return }
     setPage(page)
+    if(window && scrollTo0) {
+      window.scrollTo(0, 0)
+    }
   }
 
   function nextPage() {
@@ -40,6 +45,9 @@ export function NextPageSideBar({
     if(isNaN(page)) { page = 1 }
     if(page > totalPage!) { return }
     setPage(page)
+    if(window && scrollTo0) {
+      window.scrollTo(0, 0)
+    }
   }
   
   function onClick() {
