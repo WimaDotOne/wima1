@@ -9,9 +9,6 @@ export function About() {
     <MovicWindow>
       <LimitWidth maxWidth={800}>
         <AppleNewsHeader1 text1="Movic" text2="= movie + comic" />
-        <Div height={10} />
-        <Exhibit />
-        <Div height={10} />
       </LimitWidth>
 
       <LimitWidth gray maxWidth={800}>
@@ -20,6 +17,11 @@ export function About() {
           text1="Add photos with dialogs, turn your life into a movic."
           text2="Do I have ideas or scripts of a movie? Should I draft it into a movic?"
         />
+        <Div height={50} />
+      </LimitWidth>
+      <LimitWidth maxWidth={800}>
+        <Div height={10} />
+        <Exhibit />
         <Div height={50} />
       </LimitWidth>
     </MovicWindow>

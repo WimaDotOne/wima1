@@ -21,8 +21,13 @@ import { iLoadMyMovics } from "./My/iLoadMyMovics.js"
 import { iLoadMovicPreview } from "./MovicPlayer/iLoadMovicPreview.js"
 import { iLoadMovic } from "./MovicPlayer/iLoadMovic.js"
 import { iLoadSettingsMovicId } from "./My/Settings/iLoadSettingsMovicId.js"
+import { iLoadExhibitMovic } from "./Exibit/iLoadExhibitMovic.js"
 
 const MovicRouter = express.Router()
+
+//Exhibit
+MovicRouter.get("/LoadExhibitMovic", iLoadExhibitMovic)
+
 
 //Image Upload
 MovicRouter.post("/UploadImages", iAuth, iNewTempFolder, iImageMulter, iUploadImages)

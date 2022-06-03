@@ -1,53 +1,36 @@
-import { useState } from "react"
-import { IScene } from "../../../../Model/IMoment"
-import { IMovic } from "../../../../Model/IMovic"
+import { useRouter } from "next/router"
 import { DvdList } from "../../../H/DvdList/DvdList"
-import { MovicPlayer } from "../../../MovicPlayer/MovicPlayer"
 import cl from "./Exhibit.module.scss"
 
 export function Exhibit() {
 
-  const [isPlaying, setIsPlaying] = useState<boolean>(false)
-  const [scenes, setScenes] = useState<Array<IScene>>([])
-
+  const router = useRouter()
   const movics = GetMovics()
 
   function onClickDvd(movicId: string) {
-    setIsPlaying(true)
+    let movicTitle = ""
+    for(const movic of movics) {
+      if(movic.id === movicId) {
+        movicTitle = movic.title
+        break
+      }
+    }
+    router.push(`/apps/Movic/AppTurn/ExhibitMovic?movicId=${movicId}&movicTitle=${movicTitle}`)
   }
+
   return(<>
-  {
-    isPlaying ?
-    <MovicPlayer movicTitle="" scenes={scenes} 
-      onStop={()=>{setIsPlaying(false)}} />:
     <DvdList movics={movics} onClick={onClickDvd}/>
-  }
-    
   </>)
 }
 
 function GetMovics() {
 
+  const dvdFolder = "/apps/Movic/Exhibit/Dvds"
   return([
     {
-      id: "1",
-      title: "",
-      imageUrl: ""
-    },
-    {
-      id: "2",
-      title: "",
-      imageUrl: ""
-    },
-    {
-      id: "3",
-      title: "",
-      imageUrl: ""
-    },
-    {
-      id: "4",
-      title: "",
-      imageUrl: ""
+      id: "ScottPilgrimVsTheWorld",
+      title: "Scott Pilgrim Vs The World",
+      imageUrl: dvdFolder+"/ScottPilgrimVsTheWorld.jpg"
     }
   ])
 }

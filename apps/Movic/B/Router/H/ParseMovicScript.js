@@ -1,5 +1,5 @@
 
-function ParseMovicScript(text, imageDict) {
+function ParseMovicScript(text, imageDict, imageFolder) {
   const lines = (text || "").split("\n")
 
   const scenes = []
@@ -26,7 +26,7 @@ function ParseMovicScript(text, imageDict) {
       isNewMoment = PushMoment(scene, moment, isNewMoment)
       isNewScene = PushScene(scenes, scene, isNewScene)
     } else if(IsImage(line)) {
-      GatherImages(line, moment, imageDict)
+      GatherImages(line, moment, imageDict, imageFolder)
       isNewMoment = PushMoment(scene, moment, isNewMoment)
       isNewScene = PushScene(scenes, scene, isNewScene)
     } else {
@@ -99,7 +99,7 @@ function IsImage(line) {
   return firstChar === "["
 }
 
-function GatherImages(line, moment, imageDict) {
+function GatherImages(line, moment, imageDict, imageFolder) {
   const a = line.split("[")[1] || ""
   const b = (a.split("]")[0] || "")
   
@@ -108,7 +108,14 @@ function GatherImages(line, moment, imageDict) {
 
     const imageName = (imageNames[i] || "").trim()
     if(!imageName) continue
-    const imageUrl = imageDict[imageName]
+
+    let imageUrl = ""
+    if(imageDict) {
+      imageUrl = imageDict[imageName]
+    }
+    if(!imageUrl && imageFolder) {
+      imageUrl = imageFolder+"/"+imageName
+    }
     if(!imageUrl) continue
     if(!moment.imageUrls) {
       moment.imageUrls = []
