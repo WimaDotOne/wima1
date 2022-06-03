@@ -85,7 +85,7 @@ function MovicMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Movic", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "Tutrial", "graduationcap"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to make a movic ?", "graduationcap"))
   publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, MovicColor.themeRed)

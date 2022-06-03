@@ -33,7 +33,7 @@ function TutorialCore() {
   <StripeSubParagraph>
     A moment can have two or more images.
   </StripeSubParagraph>
-  <DemoImage url="/apps/Movic/DemoImage/demo1.png" />
+  <DemoImage url="/apps/Movic/DemoImage/MomentDemo.png" height={300}/>
   <StripeSubSectionHeader text="Scene" />
   <StripeParagraph>
     A scene consists of a few moments putting together on one page. To view the next scene, a viewer goes to to the next page.
@@ -43,22 +43,23 @@ function TutorialCore() {
   <StripeSubSectionHeader text="1. Create a project" />
   <StripeParagraph>Select menu option named "Projects" and click on "New Project". A project is represented as a folder.</StripeParagraph>
   <StripeSubSectionHeader text="2. Upload images" />
-  <StripeParagraph>After going into a project folder. Open the folder named "Images". This is where you manage all the images for one movic.</StripeParagraph>
+  <StripeParagraph>
+    After going into a project folder. Open the folder named "Images". This is where you add the images for one movic. The images will be referred by their names in the movic script.
+  </StripeParagraph>
 
   <StripeSubSectionHeader text="3. Write a movic script" />
   <StripeParagraph>
-  After going into a project folder. Open the file named "Movic Script". All the script of a movic is written here.
-  </StripeParagraph>
-  
-  <StripeSectionHeader text="Movic Script Cheatsheet" />
-  <StripeParagraph>
-  A script is simply a plain text document. A line in this text document can be
+  After going into a project folder. Open the file named "Movic Script". All the script of a movic is written here.  A script is simply a plain text document. A line in this text document can be
   </StripeParagraph>
   <StripeSubParagraph>a narrative</StripeSubParagraph>
   <StripeSubParagraph>a line of a dialog</StripeSubParagraph>
   <StripeSubParagraph>a scene divider</StripeSubParagraph>
   <StripeSubParagraph>a moment divider</StripeSubParagraph>
   <StripeSubParagraph>an image name</StripeSubParagraph>
+
+  <DemoImage url="/apps/Movic/DemoImage/ScriptDemo.jpg" height={300} />
+  
+  <StripeSectionHeader text="Movic Script Cheatsheet" />
   <StripeSectionHeader text="===" />
   <StripeParagraph>
   Three equal signs at the beginning of a line means starting a new scene
@@ -85,16 +86,13 @@ function TutorialCore() {
 
   <StripeSectionHeader text="Upload Images Tips"/>
   <StripeSubParagraph>
-    One can only upload limited number of images at a time depending on the image size.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    Name your images m001.jpg, m002.jpg, m003.jpg, etc.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    Images are ordered based on their names.
+    Name your images m001.jpg, m002.jpg, m003.jpg, etc, instead of basing on its content.
   </StripeSubParagraph>
   <StripeSubParagraph>
     You can rename your images. The new image name does not have to have the file extension
+  </StripeSubParagraph>
+  <StripeSubParagraph>
+    One can only upload limited number of images at a time depending on the image size. Upload 50 images at a time would be way too many.
   </StripeSubParagraph>
   <StripeSubParagraph>
     Adding or deleting images might take a few seconds to complete. Be patient and let the program run to finish before leaving the page.

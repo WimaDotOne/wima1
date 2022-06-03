@@ -12,8 +12,8 @@ export function About() {
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
         <StripeIntroText title="If we were a movie" 
-          text1="Take a few dozens of film stills, and add back the lines from the movie, one turns a movie into a movic."
-          text2="Take a few dozens of photos with friends in it, and add what you would say, you turn your life into a movic."
+          text1="Add photos with dialogs, turn your life into a movic."
+          text2="Do I have ideas or scripts of a movie? Should I draft it into a movic?"
         />
         <Div height={50} />
       </LimitWidth>
