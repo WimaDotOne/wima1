@@ -31,6 +31,21 @@ function GetMovics() {
       id: "ScottPilgrimVsTheWorld",
       title: "Scott Pilgrim Vs The World",
       imageUrl: dvdFolder+"/ScottPilgrimVsTheWorld.jpg"
-    }
+    },
+    {
+      id: "TheArtOfGettingBy",
+      title: "The Art of Getting By",
+      imageUrl: dvdFolder+"/TheArtOfGettingBy.jpg"
+    },
+    {
+      id: "KnivesOut",
+      title: "Knives Out",
+      imageUrl: dvdFolder+"/KnivesOut.jpg"
+    },
+    {
+      id: "AdventureLand",
+      title: "Adventure Land",
+      imageUrl: dvdFolder+"/AdventureLand.jpg"
+    },
   ])
 }
