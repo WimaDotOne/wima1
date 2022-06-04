@@ -565,7 +565,7 @@ SALLY: I'm just kidding. Bad idea. Can you imagine how weird that would be? You 
 [m126.jpg
 ---
 [m127.jpg
----
+===
 [m128.jpg
 SALLY: Should we check in with Will and Zoe?
 SALLY: George?
