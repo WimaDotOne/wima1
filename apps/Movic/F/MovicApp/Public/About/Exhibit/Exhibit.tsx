@@ -29,7 +29,7 @@ function GetMovics() {
   return([
     {
       id: "ScottPilgrimVsTheWorld",
-      title: "Scott Pilgrim Vs The World",
+      title: "Scott Pilgrim vs The World",
       imageUrl: dvdFolder+"/ScottPilgrimVsTheWorld.jpg"
     },
     {
@@ -44,7 +44,7 @@ function GetMovics() {
     },
     {
       id: "AdventureLand",
-      title: "Adventure Land",
+      title: "Adventureland",
       imageUrl: dvdFolder+"/AdventureLand.jpg"
     },
   ])
