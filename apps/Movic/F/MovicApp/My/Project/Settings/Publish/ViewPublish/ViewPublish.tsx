@@ -37,7 +37,7 @@ export function ViewPublish({
   let text = "The movic is not published. Only you can view it."
   let href = ""
   if(isMovicPublic) {
-    text = "The movic is public. Your friends can access the movic using following link"
+    text = "The movic is public to people with the following link. Share by sending the link to your friends."
     href = `${wimaEnv?.movicEnv?.domain}/apps/Movic/Play/?movicId=${movicId}`
   }
   

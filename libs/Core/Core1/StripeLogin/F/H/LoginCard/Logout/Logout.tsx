@@ -51,10 +51,10 @@ export function Logout({
       <div className={cl.info}>{loginInfo.email}</div>
       <Div height={30} />
       <HLine />
-      <Div height={30} />
+      <Div height={100} />
       <BigIconButton name="wimacircle1" text="Wima Home" 
         iconWidth={75} onClick={goToWimaHome} />
-      <Div height={20} />
+      <Div height={300} />
       <BigIconButton name="door.batwing" 
         text="Log out" iconWidth={75} onClick={logout}
       />
