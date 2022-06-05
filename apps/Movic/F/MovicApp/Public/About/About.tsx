@@ -1,7 +1,6 @@
 import { Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1, StripeIntroText } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
-import cl from "./About.module.scss"
 import { Exhibit } from "./Exhibit/Exhibit"
 
 export function About() {
