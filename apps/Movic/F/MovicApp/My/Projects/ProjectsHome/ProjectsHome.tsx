@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFolder"
+import { AppleWindowBottomBar } from "../../../../../../H/AppleWindowBottomBar"
 import { useWimaUser } from "../../../../../../Wima/fWima"
 import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { MovicWindow } from "../../../MovicWindow/MovicWindow"
-import { MovicWindowBottomBar } from "../../../MovicWindow/MovicWindowBottomBar"
 import cl from "./ProjectsHome.module.scss"
 
 interface IProject {
@@ -59,8 +59,8 @@ export function ProjectsHome({
      </AutoRepeatGrid>
    </div>
    <AppleWindowBottomBarFill />
-   <MovicWindowBottomBar>
+   <AppleWindowBottomBar>
    {}
-   </MovicWindowBottomBar>
+   </AppleWindowBottomBar>
    </MovicWindow></>)
 }

@@ -4,12 +4,12 @@ import { Scrollable2 } from "../../../../../../libs/Core/Core2/Controls/Scrollab
 import { AppleWindowBottomBarFill } from "../../../../../../libs/Core/Core2/fCore2"
 import { Table } from "../../../../../../libs/Pop/Pop1/fPop1"
 import { TableModel } from "../../../../../../libs/Pop/Pop1/Table/Model/TableModel"
+import { AppleWindowBottomBar } from "../../../../../H/AppleWindowBottomBar"
 import { useWimaUser } from "../../../../../Wima/fWima"
 import { MovicColor } from "../../../CSS/MovicColor"
 import { IMovic } from "../../../Model/IMovic"
 import { MovicPlayer2 } from "../../MovicPlayer/MovicPlayer"
 import { MovicWindow } from "../../MovicWindow/MovicWindow"
-import { MovicWindowBottomBar } from "../../MovicWindow/MovicWindowBottomBar"
 import { MovicBar } from "./H/MovicBar/MovicBar"
 import cl from "./MyMovics.module.scss"
 
@@ -69,9 +69,9 @@ export function MyMovics() {
           </Scrollable2>
         </div>
       </MovicWindow>
-      <MovicWindowBottomBar>
+      <AppleWindowBottomBar>
       {}
-      </MovicWindowBottomBar>
+      </AppleWindowBottomBar>
     </>
   }
   </>)
