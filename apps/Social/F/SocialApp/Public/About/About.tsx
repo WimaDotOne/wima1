@@ -6,14 +6,14 @@ export function About() {
   return(<>
     <SocialWindow>
       <LimitWidth maxWidth={800}>
-        <AppleNewsHeader1 text1="Social" text2="in college" />
+        <AppleNewsHeader1 text1="Social" text2="" />
       </LimitWidth>
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Make friends &amp; money" 
-          text1="Add photos with dialogs, turn your life into a movic."
-          text2="Do I have ideas or scripts of a movie? Should I draft it into a movic?"
+        <StripeIntroText title="Ask for help &amp; Help" 
+          text1="Let people in your university know what kind of help you need."
+          text2="Let people in your university know what kind of help you can provide. Make friends or money by helping people."
         />
         <Div height={50} />
       </LimitWidth>

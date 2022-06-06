@@ -80,7 +80,7 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to socialize?", "graduationcap"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to help?", "graduationcap"))
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, SocialColor.themeBlue)
