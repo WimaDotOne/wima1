@@ -13,7 +13,7 @@ export function About() {
         <Div height={40} />
         <StripeIntroText title="Ask for help &amp; Help" 
           text1="Let people in your university know what kind of help you need."
-          text2="Let people in your university know what kind of help you can provide. Make friends or money by helping people."
+          text2="Let people in your university know what kind of help you can provide. Help people while socializing or making money."
         />
         <Div height={50} />
       </LimitWidth>
