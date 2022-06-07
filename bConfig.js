@@ -1,3 +1,4 @@
+// Libs
 export const bConfig = {
   bRoute1: "/b",
   googleClientId: "147358888044-77a0k6bjhe7b7jee9opjkeseaf9lqir0.apps.googleusercontent.com", //Wima One
@@ -14,9 +15,18 @@ export const ImageUploadConfig = {
   maxTotalFileSize : 50*1000*1000
 }
 
+export const UniversityDomains = [
+  "wisc.edu"
+]
+
 export const GENERAL_INPUT_MAX = 100
 
+// Apps
 export const MovicConfig = {
   movicMaxPerAccount: 100,
   scritptFileMaxLength: 200000
+}
+
+export const SocialConfig = {
+
 }

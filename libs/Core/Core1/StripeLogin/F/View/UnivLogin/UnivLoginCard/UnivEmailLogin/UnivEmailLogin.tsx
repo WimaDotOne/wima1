@@ -2,28 +2,26 @@ import { useRef, useState } from "react"
 import { EnterEmail } from "./EnterEmail/EnterEmail"
 import { EnterPasscode } from "./EnterPasscode/EnterPasscode"
 
-interface IEmailLoginProp {
+interface IUnivEmailLoginProp {
   afterLogin: ()=>void
-  goToChooseLoginMethod: ()=>void
 }
 
-export function EmailLogin({
+export function UnivEmailLogin({
   afterLogin,
-  goToChooseLoginMethod,
-}: IEmailLoginProp) {
-  const [emailLoginTurn, setEmailLoginTurn] = useState<EmailLoginTurn>(EmailLoginTurn.EnterEmail)
+}: IUnivEmailLoginProp) {
+  const [emailLoginTurn, setUnivEmailLoginTurn] = useState<UnivEmailLoginTurn>(UnivEmailLoginTurn.EnterEmail)
   const emailRef = useRef<string>("")
 
   function goToEnterPasscode() {
-    setEmailLoginTurn(EmailLoginTurn.EnterPasscode)
+    setUnivEmailLoginTurn(UnivEmailLoginTurn.EnterPasscode)
   }
 
   function goToEnterEmail() {
-    setEmailLoginTurn(EmailLoginTurn.EnterEmail)
+    setUnivEmailLoginTurn(UnivEmailLoginTurn.EnterEmail)
   }
 
   switch(emailLoginTurn) {
-    case EmailLoginTurn.EnterPasscode: return(
+    case UnivEmailLoginTurn.EnterPasscode: return(
       <EnterPasscode 
         afterLogin={afterLogin}
         emailRef={emailRef}
@@ -31,13 +29,12 @@ export function EmailLogin({
     )
     default: return(
       <EnterEmail emailRef={emailRef}
-        goToChooseLoginMethod={goToChooseLoginMethod}
         goToEnterPasscode={goToEnterPasscode}/>
     )
   }
 }
 
-enum EmailLoginTurn {
+enum UnivEmailLoginTurn {
   EnterEmail = 1,
   EnterPasscode
 }

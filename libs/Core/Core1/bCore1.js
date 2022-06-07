@@ -1,4 +1,5 @@
 import { IsEmail } from "./Email/B/IsEmail.js"
+import { IsUniversityEmail } from "./Email/B/IsUniversityEmail.js"
 import { SendGrid } from "./Email/B/SendGrid.js"
 import { HtmlEncode } from "./Email/B/HtmlEncode.js"
 import { ConnectDb } from "./StartServer/B/Mongo.js"
@@ -21,7 +22,9 @@ import { asyNewTempFolder, asyRemoveTempFolder,
 } from "./FileUp/bFileUp.js"
 
 export {
-  IsEmail,
+  IsEmail, 
+  IsUniversityEmail,
+  
   SendGrid,
   HtmlEncode,
   ConnectDb,
