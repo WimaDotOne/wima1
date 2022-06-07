@@ -1,9 +1,9 @@
 import { CenterDiv } from "../../H/CenterCardDiv/CenterCardDiv"
-import { FacebookScript } from "../../H/LoginCard/FacebookLogin/FacebookScript"
-import { GoogleScript } from "../../H/LoginCard/GoogleLogin/GoogleScript"
-import { LoginCard, LoginCardTurn } from "../../H/LoginCard/LoginCard"
 import { LoginConfig } from "../../Model/LoginConfig"
 import { Background } from "../Background/Background"
+import { FacebookScript } from "./LoginCard/FacebookLogin/FacebookScript"
+import { GoogleScript } from "./LoginCard/GoogleLogin/GoogleScript"
+import { LoginCard } from "./LoginCard/LoginCard"
 
 interface ILoginProp {
   config: LoginConfig

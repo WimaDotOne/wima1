@@ -1,5 +1,9 @@
 @use "../../../../CSS/dimension.module";
 
+.button {
+  display: flex;
+  justify-content: center;
+}
 .back {
   text-align: center;
   font-size: dimension.$fontSize14;

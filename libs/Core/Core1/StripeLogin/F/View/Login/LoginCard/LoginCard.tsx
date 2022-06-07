@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Get2, useShield } from "../../../../fCore1";
-import { LoginConfig } from "../../Model/LoginConfig";
+import { Get2, useShield } from "../../../../../fCore1";
+import { LoginConfig } from "../../../Model/LoginConfig";
 import { ChooseLoginMethod } from "./ChooseLoginMethod/ChooseLoginMethod";
 import { EmailLogin } from "./EmailLogin/EmailLogin";
 import { FacebookLogin } from "./FacebookLogin/FacebookLogin";

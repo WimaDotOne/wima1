@@ -1,4 +1,4 @@
-import { SvgIcon } from "../../../../../../../Core2/Svg/SvgIcon"
+import { SvgIcon } from "../../../../../../../../Core2/Svg/SvgIcon"
 import cl from "./LoginButton.module.scss"
 
 interface ILoginButtonProp {

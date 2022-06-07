@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react"
-import { Div } from "../../../../../../Core2/fCore2"
-import { Post2, useShield } from "../../../../../fCore1"
-import { LoginConfig } from "../../../Model/LoginConfig"
-import { Link } from "../../Link/Link"
-import { Title } from "../../Title/Title"
+import { Div } from "../../../../../../../Core2/fCore2";
+import { Post2, useShield } from "../../../../../../fCore1";
+import { Link } from "../../../../H/Link/Link";
+import { Title } from "../../../../H/Title/Title";
+import { LoginConfig } from "../../../../Model/LoginConfig";
 import cl from "./GoogleLogin.module.scss"
 
 declare global {

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { Div, HLine } from "../../../../../../Core2/fCore2"
-import { Post2, useShield } from "../../../../../fCore1"
+import { Div, HLine } from "../../../../../../../Core2/fCore2"
+import { Post2, useShield } from "../../../../../../fCore1"
 import { BigIconButton } from "../ChooseLoginMethod/BigIconButton/BigIconButton"
 import cl from "./Logout.module.scss"
 
