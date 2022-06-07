@@ -12,7 +12,7 @@ export function About() {
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
         <StripeIntroText title="We're the world" 
-          text1="Let people in your university know what kind of help you need or others might need."
+          text1="What would be a service you can benefit from? Let people in your university know what you need or others might need."
           text2="What is your superpower? Let people in your university know what kind of help you can provide."
         />
         <Div height={50} />

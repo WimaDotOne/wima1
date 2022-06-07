@@ -8,6 +8,7 @@ import { IsEmail } from "./Email/B/IsEmail"
 import { TextField1 } from "./Fields/TextField/TextField1"
 
 import {
+  UnivLogin,
   Login,
   LoginConfig,
   Contact,
@@ -21,7 +22,7 @@ import { FileInput } from "./FileUp/fFileUp"
 import { IFormTextField } from "./FileUp/fFileUp"
 
 export {
-
+  UnivLogin,
   Login,
   LoginConfig,
   Contact,

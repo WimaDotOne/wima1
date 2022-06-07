@@ -64,6 +64,7 @@ export function SocialWindow({
 export const AppTurn = {
   About: "About",
   Tutorial: "Tutorial",
+  UniversityLogin: "UniversityLogin",
   Exit: "Exit"
 }
 
@@ -80,8 +81,9 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to help?", "graduationcap"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle")) 
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How it works?", "graduationcap"))
+  publicGroup.AddItem(new ItemModel(AppTurn.UniversityLogin, "University Login", "university"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 
   const menu = new MenuModel(viewId, SocialColor.themeBlue)
   menu.AddGroup(ideaGroup)

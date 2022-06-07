@@ -5,6 +5,7 @@ import { LogoBar } from "./F/View/Terms/LogoBar/LogoBar";
 import { Paragraph, SubParagraph } from "./F/View/Terms/Paragraph/Paragraph";
 import { SectionHeader, SubSectionHeader } from "./F/View/Terms/SectionHeader/SectionHeader";
 import { TermHeader } from "./F/View/Terms/TermHeader/TermHeader";
+import { UnivLogin } from "./F/View/UnivLogin/UnivLogin";
 
 export {
   Login,
@@ -13,5 +14,7 @@ export {
   LogoBar,
   Paragraph, SubParagraph,
   SectionHeader, SubSectionHeader,
-  TermHeader
+  TermHeader,
+
+  UnivLogin
 }

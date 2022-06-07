@@ -23,7 +23,7 @@ import { SvgEmail } from "./Common/Email/SvgEmail"
 import { SvgExclamationCircle } from "./Common/Exclamation/SvgExclamationCircle"
 import { SvgExclamationTriangleFill } from "./Common/Exclamation/SvgExclamationTriangleFill"
 import { SvgGear } from "./Common/Gear/Gear"
-import { SvgGraduationCap } from "./Common/GraduationCap/SvgGraduationCap"
+import { SvgGraduationCap } from "./School/GraduationCap/SvgGraduationCap"
 import { SvgHamburger } from "./Common/Hamburger/SvgHamburger"
 import { SvgHome } from "./Common/Home/SvgHome"
 import { SvgMagnifyingGlass } from "./Common/MagnifyingGlass/SvgMagnifyingGlass"
@@ -42,6 +42,7 @@ import { SvgFolder2 } from "./Office/Folder/Folder2"
 import { SvgFolderFill } from "./Office/Folder/FolderFill"
 import { SvgPin } from "./Office/Pin/SvgPin"
 import { SvgUnPin } from "./Office/Pin/SvgUnpin"
+import { SvgUniversity } from "./School/University/SvgUniversity"
 
 export function SvgIcon({
   name,
@@ -89,7 +90,6 @@ export function SvgIcon({
     case "exclamation.circle": return <SvgExclamationCircle width={width} stroke={color} strokeWidth={strokeWidth}/>
     case "exclamation.triangle.fill": return <SvgExclamationTriangleFill width={width} fill={color} />
     
-    case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />
     case "hamburger": return <SvgHamburger width={width} stroke={color} strokeWidth={strokeWidth} />
     case "magnifyingglass": return <SvgMagnifyingGlass width={width} stroke={color} strokeWidth={strokeWidth} />
     case "email": return <SvgEmail width={width} fill={color}/>
@@ -128,7 +128,11 @@ export function SvgIcon({
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
     case "pin": return <SvgPin width={width} fill={color} />
     case "unpin": return <SvgUnPin width={width} fill={color} />
-    
+
+    //School
+    case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />
+    case "university": return <SvgUniversity width={width} fill={color} />
+
     default: return null
   }
 }

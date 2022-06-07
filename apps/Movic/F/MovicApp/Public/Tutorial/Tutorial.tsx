@@ -62,31 +62,31 @@ function TutorialCore() {
   <StripeSectionHeader text="Movic Script Cheatsheet" />
   <StripeSectionHeader text="===" />
   <StripeParagraph>
-  Three equal signs at the beginning of a line means starting a new scene
+  Three equal signs in its own line means starting a new scene
   </StripeParagraph>
   <StripeSectionHeader text="---" />
   <StripeParagraph>
-  Three minus signs at the beginning of a line means starting a new moment
+  Three minus signs in its own line means starting a new moment
   </StripeParagraph>
   <StripeSectionHeader text="#" />
   <StripeParagraph>
   A hashtag at the beginning of line means means this line is a narrative instead of a line of dialog.
   </StripeParagraph>
-  <StripeSectionHeader text="[ ]" />
+  <StripeSectionHeader text="[" />
   <StripeParagraph>
-  A left braket at the beginning of line means this line is for images. For example a line of text that reads [m001.jpg], means an image named m001.jpg from Images folder will be shown for the corresponding moment.
+  A left braket at the beginning of line means this line is for images. You can optionally add a right braket at the end. For example a line of text that reads [m001.jpg or [m001.jpg], means an image named m001.jpg from Images folder will be shown for the corresponding moment.
   </StripeParagraph>
   <StripeSubSectionHeader text="Tips" />
   <StripeSubParagraph>
-    Write your script first in a text editor of your choosing, and copy and past it into our website when finished.
+    Write your script first in a text editor of your choosing, and copy and past it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    A line not beginning with above mentioned special characters corresponds to a line of movie dialog. Type in the name of character in uppercase followed by a colon to indicate who's talking.
+    A line not beginning with above mentioned special characters corresponds to a line of movie dialog. At the beginning of such a line, type in the name of character in uppercase followed by a colon to indicate who's talking.
   </StripeSubParagraph>
 
   <StripeSectionHeader text="Upload Images Tips"/>
   <StripeSubParagraph>
-    Name your images m001.jpg, m002.jpg, m003.jpg, etc, instead of basing on its content.
+    Name your images m001.jpg, m002.jpg, m003.jpg, etc. This is because images are ordered alphabetically. Naming images with numbers is the best way to keep the image order the same as the order they appear in a movie.
   </StripeSubParagraph>
   <StripeSubParagraph>
     You can rename your images. The new image name does not have to have the file extension
