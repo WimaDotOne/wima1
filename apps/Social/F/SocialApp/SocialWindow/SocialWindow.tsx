@@ -75,8 +75,8 @@ function IsViewRequreLogin(viewId?: string) {
 
 function SocialMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
-  const demandGroup = new GroupModel("Demand", false)
-  const supplyGroup = new GroupModel("Supply", false)
+  const ideaGroup = new GroupModel("Ideas", false)
+  const resourceGroup = new GroupModel("Resources", false)
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
@@ -84,8 +84,8 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, SocialColor.themeBlue)
-  menu.AddGroup(demandGroup)
-  menu.AddGroup(supplyGroup)
+  menu.AddGroup(ideaGroup)
+  menu.AddGroup(resourceGroup)
   menu.AddGroup(publicGroup)
   return menu
 }

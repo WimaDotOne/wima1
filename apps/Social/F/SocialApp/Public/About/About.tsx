@@ -11,9 +11,9 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Ask for help &amp; Help" 
-          text1="Let people in your university know what kind of help you need."
-          text2="Let people in your university know what kind of help you can provide. Help people while socializing or making money."
+        <StripeIntroText title="We're the world, we're the children." 
+          text1="Let people in your university know what kind of help you need or others might need."
+          text2="Let people in your university know what kind of help you can provide. Make friends or make money."
         />
         <Div height={50} />
       </LimitWidth>
