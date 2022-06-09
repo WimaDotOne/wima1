@@ -39,7 +39,7 @@ export function EnterPasscode({
       setError("Enter a passcode")
       return
     }
-    await Post2(shield, "/login/EmailLogin", {
+    await Post2(shield, "/login/UnivLogin", {
       email: emailRef.current,
       passcode
     }, afterLogin, (res)=>{

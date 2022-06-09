@@ -1,59 +1,67 @@
-import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { UniversityDataConfig } from "../../../../../../../../../bConfig"
 import { Div, HLine } from "../../../../../../../Core2/fCore2"
-import { Post2, useShield } from "../../../../../../fCore1"
+import { Get2, Post2, useShield } from "../../../../../../fCore1"
 import { BigIconButton } from "../../../Login/LoginCard/ChooseLoginMethod/BigIconButton/BigIconButton"
-import cl from "./Logout.module.scss"
+import cl from "./UnivLogout.module.scss"
 
-interface ILoginInfo {
-  title?: string
+interface IInfo {
   name?: string
   email?: string
+  domain?: string
 }
-interface ILogoutProp {
+interface IUnivLogoutProp {
   afterLogout: ()=>void
 }
-export function Logout({
+export function UnivLogout({
   afterLogout
-}:ILogoutProp) {
+}:IUnivLogoutProp) {
 
-  const [loginInfo, setLoginInfo] = useState<ILoginInfo>({})
+  const [info, setInfo] = useState<IInfo>({})
 
   const shield = useShield()
-  const router = useRouter()
 
-  async function loadLogin() {
+  async function loadUnivLogin() {
 
-    await Post2(shield, "/login/LoadLogin", {}, 
+    await Get2(shield, "/login/LoadUnivLogin", 
       (res)=>{
-        setLoginInfo(res.loginInfo)
+        setInfo(res.info)
       }
     )
   }
 
   useEffect(()=>{
-    loadLogin()
+    console.log("Load Univ Login")
+    loadUnivLogin()
   }, [])
 
   async function logout() {
-    if(!window.confirm("Log out?")) {
+    if(!window.confirm("Log out university account?")) {
       return
     }
-    await Post2(shield, "/login/LogOut", {}, afterLogout)
+    await Post2(shield, "/login/UnivLogOut", {}, afterLogout)
   }
-  function goToWimaHome() {
-    router.push("/")
+  
+  let univ: {logoUrl?: string, name?: string} = {}
+  if(info && info.domain) {
+    const universities: any = UniversityDataConfig
+    univ = universities[info.domain]
   }
+  const logoUrl = univ?.logoUrl
+
   return(<>
     <div className={cl.logoutDiv}>
-      <div className={cl.title}>{loginInfo.title}</div>
-      <div className={cl.info}>{loginInfo.name}</div>
-      <div className={cl.info}>{loginInfo.email}</div>
+      <div className={cl.univLogoDiv}>
+      {
+        logoUrl ?
+        <div className={cl.univLogo} style={{backgroundImage: `url(${logoUrl})`}} />
+        :null
+      }
+      </div>
+      <div className={cl.info}>{info.name}</div>
+      <div className={cl.info}>{info.email}</div>
       <Div height={30} />
       <HLine />
-      <Div height={100} />
-      <BigIconButton name="wimacircle1" text="Wima Home" 
-        iconWidth={75} onClick={goToWimaHome} />
       <Div height={300} />
       <BigIconButton name="door.batwing" 
         text="Log out" iconWidth={75} onClick={logout}

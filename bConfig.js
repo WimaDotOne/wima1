@@ -15,9 +15,21 @@ export const ImageUploadConfig = {
   maxTotalFileSize : 50*1000*1000
 }
 
-export const UniversityDomains = [
+export const UniversityDomainConfig = [
   "wisc.edu"
 ]
+
+const UnivLogo = "/libs/University/Logo"
+export const UniversityDataConfig = {
+  "wisc.edu" : {
+    name: "University of Wisconsin-Madison", 
+    logoUrl: `${UnivLogo}/uw-madison.png`
+  },
+  "gmail.com" : {
+    name: "Google",
+    logoUrl: `${UnivLogo}/google.png`
+  }
+}
 
 export const GENERAL_INPUT_MAX = 100
 

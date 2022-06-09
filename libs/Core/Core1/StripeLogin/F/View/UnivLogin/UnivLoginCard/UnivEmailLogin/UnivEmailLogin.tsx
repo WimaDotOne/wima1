@@ -11,6 +11,8 @@ export function UnivEmailLogin({
 }: IUnivEmailLoginProp) {
   const [emailLoginTurn, setUnivEmailLoginTurn] = useState<UnivEmailLoginTurn>(UnivEmailLoginTurn.EnterEmail)
   const emailRef = useRef<string>("")
+  const givenNameRef = useRef<string>("")
+  const familyNameRef = useRef<string>("")
 
   function goToEnterPasscode() {
     setUnivEmailLoginTurn(UnivEmailLoginTurn.EnterPasscode)
@@ -29,6 +31,8 @@ export function UnivEmailLogin({
     )
     default: return(
       <EnterEmail emailRef={emailRef}
+        givenNameRef={givenNameRef}
+        familyNameRef={familyNameRef}
         goToEnterPasscode={goToEnterPasscode}/>
     )
   }

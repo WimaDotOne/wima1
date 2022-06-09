@@ -1,8 +1,9 @@
 import jwt from "jsonwebtoken"
 import { DevUser } from "./DevUser.js"
 const USER = "User"
+const UNIVERSITY_ACCOUNT = "UniversityAccount"
 
-function SetUserCookie(res, _id) {
+function SetPermanentCookie(res, _id, cookieName) {
 
   if(!_id || !process.env.JWT_PRIVATE) {
     return
@@ -20,17 +21,32 @@ function SetUserCookie(res, _id) {
     httpOnly: true
   }
 
-  res.cookie(USER, token, cookieOption)
-
+  res.cookie(cookieName, token, cookieOption)
 }
 
-function GetUserCookie(req) {
-  const token = req.cookies[USER] //cookie parser
+function SetUserCookie(res, _id) {
+  SetPermanentCookie(res, _id, USER)
+}
+
+function SetUniversityAccountCookie(res, _id) {
+  SetPermanentCookie(res, _id, UNIVERSITY_ACCOUNT)
+}
+
+function GetCookie(req, cookieName) {
+  const token = req.cookies[cookieName] //cookie parser
   const payload = jwt.verify(token, process.env.JWT_PRIVATE)
   return payload
 }
 
-function DeleteUserCookie(res) {
+function GetUserCookie(req) {
+  return GetCookie(req, USER)
+}
+
+function GetUniversityAccountCookie(req) {
+  return GetCookie(req, UNIVERSITY_ACCOUNT)
+}
+
+function DeleteCookie(res, cookieName) {
   const cookieOption =
   {
     maxAge: -24*60*60*1000,  //a day ago
@@ -39,28 +55,20 @@ function DeleteUserCookie(res) {
   res.cookie(USER, "", cookieOption)
 }
 
-//Get user when user does not have to be logged in
-function TryGetUserId(req) {
-  try {
-    //For development convenience
-    const devUser = DevUser()
-    if(devUser) {
-      return devUser._id
-    }
-    let user = null
-    user = GetUserCookie(req)
-    if(user) {
-      return user._id
-    }
-  } catch (e) {
-    //User does not have to be logged in, so don't return error message
-  }
-  return ""
+function DeleteUserCookie(res) {
+  DeleteCookie(res, USER)
+}
+
+function DeleteUniversityAccountCookie(res) {
+  DeleteCookie(res, UNIVERSITY_ACCOUNT)
 }
 
 export {
   SetUserCookie,
   GetUserCookie,
   DeleteUserCookie,
-  TryGetUserId
+
+  SetUniversityAccountCookie,
+  GetUniversityAccountCookie,
+  DeleteUniversityAccountCookie
 }

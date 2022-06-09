@@ -1,7 +1,7 @@
 import { MutableRefObject, useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../../../../bConfig"
 import { Div } from "../../../../../../../../Core2/fCore2"
-import { IsEduEmail, Post2, useShield } from "../../../../../../../fCore1"
+import { IsEmail, Post2, useShield } from "../../../../../../../fCore1"
 import { Button } from "../../../../../H/Button/Button"
 import { Description } from "../../../../../H/Description/Description"
 import { Error } from "../../../../../H/Error/Error"
@@ -10,50 +10,88 @@ import { Title } from "../../../../../H/Title/Title"
 
 interface IEnterEmailProp {
   emailRef: MutableRefObject<string>
+  givenNameRef: MutableRefObject<string>
+  familyNameRef: MutableRefObject<string>
   goToEnterPasscode: ()=>void
 }
 
 export function EnterEmail({
   emailRef,
+  givenNameRef,
+  familyNameRef,
   goToEnterPasscode
 }:IEnterEmailProp) {
 
   const [email, setEmail] = useState<string>(emailRef?.current || "")
-  const [error, setError] = useState<string>("")
+  const [givenName, setGivenName] = useState<string>(givenNameRef?.current || "")
+  const [familyName, setFamilyName] = useState<string>(familyNameRef?.current || "")
+  const [emailError, setEmailError] = useState<string>("")
+  const [givenNameError, setGivenNameError] = useState<string>("")
+  const [familyNameError, setFamilyNameError] = useState<string>("")
   const [disableButton, setDisableButton] = useState<boolean>(false)
 
   const shield = useShield()
 
-  function onChange(newValue: string) {
+  function onChangeGivenName(newValue: string) {
     setDisableButton(false)
-    setError("")
+    setGivenNameError("")
+
+    setGivenName(newValue)
+  }
+
+  function onChangeFamilyName(newValue: string) {
+    setDisableButton(false)
+    setFamilyNameError("")
+
+    setFamilyName(newValue)
+  }
+
+  function onChangeEmail(newValue: string) {
+    setDisableButton(false)
+    setEmailError("")
 
     setEmail(newValue)
   }
 
   function Validate() {
-    return IsEduEmail(email?.trim().toLowerCase())
+    let isValid = true
+    if(!givenName) {
+      isValid = false
+      setGivenNameError("Required")
+    }
+    if(!familyName) {
+      isValid = false
+      setFamilyNameError("Required")
+    }
+    if(!email) {
+      isValid = false
+      setEmailError("Required")
+    } else if(!IsEmail(email?.trim().toLowerCase())) {
+      isValid = false
+      setEmailError("Invalid Email")
+    }
+
+    return isValid
   }
 
   async function sendPasscode() {
-    if(!email) {
-      setDisableButton(true)
-      setError("Enter an email")
-      return
-    }
+
     if(!Validate()) {
       setDisableButton(true)
-      setError("Invalid Email")
       return
     }
+    givenNameRef.current = givenName
+    familyNameRef.current = familyName
     emailRef.current = email
-    await Post2(shield, "/login/SendPasscode", {
-      email
+    await Post2(shield, "/login/SendUnivPasscode", {
+      email,
+      givenName,
+      familyName
     }, (res)=>{
       goToEnterPasscode()
     }, (res) => {
       setDisableButton(true)
-      setError(res.error)
+      setEmailError(res.error)
     })
   }
 
@@ -63,13 +101,33 @@ export function EnterEmail({
       Your university email will be your identification and we'll send you a one-time passcode to sign in.
     </Description>
     <Div height={24} />
-    <TextField prompt="University Email" value={email} 
-      onChange={onChange} maxLength={GENERAL_INPUT_MAX}/>
+    <TextField prompt="First Name" value={givenName} 
+      onChange={onChangeGivenName} maxLength={GENERAL_INPUT_MAX}/>
     {
-      error ?
+      givenNameError ?
+      <>
+      <Div height={6}/>
+      <Error text={givenNameError} />
+      </>:null
+    }
+    <Div height={12} />
+    <TextField prompt="Last Name" value={familyName} 
+      onChange={onChangeFamilyName} maxLength={GENERAL_INPUT_MAX}/>
+    {
+      familyNameError ?
+      <>
+      <Div height={6}/>
+      <Error text={familyNameError} />
+      </>:null
+    }
+    <Div height={12} />
+    <TextField prompt="University Email" value={email} 
+      onChange={onChangeEmail} maxLength={GENERAL_INPUT_MAX}/>
+    {
+      emailError ?
       <>
       <Div height={12}/>
-      <Error text={error} />
+      <Error text={emailError} />
       </>:null
     }
     <Div height={24} />

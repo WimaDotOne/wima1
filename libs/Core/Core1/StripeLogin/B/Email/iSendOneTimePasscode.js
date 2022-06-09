@@ -5,7 +5,7 @@ import { MonitorDailyPasscodeSend } from "../../../bCore1.js"
 import { SendGrid, IsEmail } from "../../../bCore1.js"
 import EmailAccount from "../Model/EmailAccount.js"
 
-async function iSendPasscode(req, res) {
+export async function iSendOneTimePasscode(req, res) {
   try {
     const email = (req.body.email || "").trim().toLowerCase()
 
@@ -41,7 +41,3 @@ async function iSendPasscode(req, res) {
     return res.json({ok:false, error: err.message})
   }
 }
-
-export {
-  iSendPasscode
-} 

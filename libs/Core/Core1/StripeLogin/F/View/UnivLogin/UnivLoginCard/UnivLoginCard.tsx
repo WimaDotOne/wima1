@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Get2, useShield } from "../../../../../fCore1";
 import { UnivEmailLogin } from "./UnivEmailLogin/UnivEmailLogin";
+import { UnivLogout } from "./UnivLogout/UnivLogout";
 
 interface IUnivLoginCardProp {
 }
@@ -18,9 +19,9 @@ export function UnivLoginCard({
     setUnivLoginCardTurn(UnivLoginCardTurn.UnivEmailLogin)
   }
 
-  async function IsUnivLoggedIn() {
-    await Get2(shield, "/login/IsUnivLoggedIn", (res)=>{
-      if(res.isUnivLoggedIn) {
+  async function IsLoggedInUniv() {
+    await Get2(shield, "/login/IsLoggedInUniv", (res)=>{
+      if(res.isLoggedIn) {
         setUnivLoginCardTurn(UnivLoginCardTurn.UnivLogout)
       } else {
         setUnivLoginCardTurn(UnivLoginCardTurn.UnivEmailLogin)
@@ -29,11 +30,14 @@ export function UnivLoginCard({
   }
 
   useEffect(()=>{
+    IsLoggedInUniv()
   }, [])
 
   switch(univLoginCardTurn) {
     case UnivLoginCardTurn.UnivEmailLogin:
-      return (<UnivEmailLogin afterLogin={()=>{}}/>)
+      return (<UnivEmailLogin afterLogin={afterLogin}/>)
+    case UnivLoginCardTurn.UnivLogout:
+      return (<UnivLogout afterLogout={afterLogout}/>)
     default: return null
   }
 }

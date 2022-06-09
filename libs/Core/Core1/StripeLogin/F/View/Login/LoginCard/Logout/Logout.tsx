@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Div, HLine } from "../../../../../../../Core2/fCore2"
-import { Post2, useShield } from "../../../../../../fCore1"
+import { Get2, Post2, useShield } from "../../../../../../fCore1"
 import { BigIconButton } from "../ChooseLoginMethod/BigIconButton/BigIconButton"
 import cl from "./Logout.module.scss"
 
@@ -24,7 +24,7 @@ export function Logout({
 
   async function loadLogin() {
 
-    await Post2(shield, "/login/LoadLogin", {}, 
+    await Get2(shield, "/login/LoadLogin", 
       (res)=>{
         setLoginInfo(res.loginInfo)
       }

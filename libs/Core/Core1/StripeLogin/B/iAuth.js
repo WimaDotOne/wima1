@@ -14,7 +14,7 @@ function iAuth(req, res, next) {
     req.user = GetUserCookie(req)
     next()
   } catch(err) {
-    return res.json({ ok:false, error: "Authorization failed."})
+    return res.json({ ok:false, error: "Please log in."})
   }
 }
 

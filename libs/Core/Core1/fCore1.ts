@@ -4,7 +4,6 @@ import { ClassNames } from "./Util/F/ClassName/ClassName"
 import { Post, Post2, Get, Get2, PostFormData, PostFormData2 } from "./Fetch/F/Fetch"
 import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
-import { IsEduEmail } from "./Email/F/IsEduEmail"
 
 import { TextField1 } from "./Fields/TextField/TextField1"
 
@@ -40,7 +39,6 @@ export {
   Alert, AlertSysError,
   
   IsEmail,
-  IsEduEmail,
 
   TextField1,
 

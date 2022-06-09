@@ -1,4 +1,4 @@
-function DevUser() {
+export function DevUser() {
   
   const _id = process.env.DEV_USER_ID
   if(_id) {
@@ -8,7 +8,12 @@ function DevUser() {
   return null
 }
 
-
-export {
-  DevUser
+export function DevUnivAccount() {
+  
+  const _id = process.env.DEV_UNIV_ACCOUNT_ID
+  if(_id) {
+    return {_id}
+  }
+  
+  return null
 }

@@ -5,12 +5,17 @@
   flex-direction: column;
   align-items: center;
 }
-
-.title {
-  font-size: 16px;
-  font-weight: 500;
+.univLogoDiv {
   margin-bottom: 20px;
-  color: color.$textDark;
+  width: 100%;
+}
+.univLogo {
+  height: 70px;
+  width: 100%;
+  min-width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .info {
   font-size: 13px;
