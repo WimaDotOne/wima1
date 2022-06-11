@@ -43,6 +43,7 @@ import { SvgFolderFill } from "./Office/Folder/FolderFill"
 import { SvgPin } from "./Office/Pin/SvgPin"
 import { SvgUnPin } from "./Office/Pin/SvgUnpin"
 import { SvgUniversity } from "./School/University/SvgUniversity"
+import { SvgProfile } from "./Social/Profile/SvgProfile"
 
 export function SvgIcon({
   name,
@@ -132,6 +133,10 @@ export function SvgIcon({
     //School
     case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />
     case "university": return <SvgUniversity width={width} fill={color} />
+
+    //Social
+    case "profile": return <SvgProfile width={width} fill={color} />
+
 
     default: return null
   }

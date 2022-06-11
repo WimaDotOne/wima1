@@ -13,3 +13,21 @@ export function PleaseLogin() {
     </div>
   </>)
 }
+
+interface IPleaseLoginUnivProp {
+  loginUrl: string
+}
+export function PleaseLoginUniv({
+  loginUrl
+}: IPleaseLoginUnivProp) {
+
+  return(<>
+    <div className={cl.pleaseLogin}>
+      <div className={cl.pleaseLoginText}>
+        <Link href={loginUrl}>
+          <span className={cl.loginText}>Verify university email</span>
+        </Link> &amp; come back
+      </div>
+    </div>
+  </>)
+}

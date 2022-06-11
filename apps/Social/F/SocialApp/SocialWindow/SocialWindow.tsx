@@ -3,7 +3,7 @@ import { ReactNode, useEffect, useState } from "react"
 import { useAppleWindow } from "../../../../../libs/Core/Core2/AppleWindow/fAppleWindow"
 import { AppleWindow, GroupModel, ItemModel, MenuModel 
 } from "../../../../../libs/Core/Core2/fCore2"
-import { PleaseLogin } from "../../../../Settings/WimaLogin/F/PleaseLogin/PleaseLogin"
+import { PleaseLoginUniv } from "../../../../Settings/WimaLogin/F/PleaseLogin/PleaseLogin"
 import { useWimaUser } from "../../../../Wima/fWima"
 import { SocialColor } from "../../CSS/SocialColor"
 
@@ -44,14 +44,14 @@ export function SocialWindow({
       isLeftBarOpen={win?.isOpen}
       setIsLeftBarOpen={win?.setIsOpen}
       viewId={win?.viewId} goToView={goToView}
-      isLoggedIn={user?.isLoggedIn}
+      isLoggedIn={user?.isLoggedInUniv}
     >
     {
       user && win && win.viewId ? //if variable not ready, don't load children
       <>
       {
-        !user.isLoggedIn && IsViewRequreLogin(win.viewId) ?
-        <PleaseLogin />
+        !user.isLoggedInUniv && IsViewRequreLogin(win.viewId) ?
+        <PleaseLoginUniv loginUrl="/apps/Social/AppTurn/UniversityLogin"/>
         :children 
       }
       </>:null
@@ -62,6 +62,9 @@ export function SocialWindow({
 }
 
 export const AppTurn = {
+
+  MyProfile: "MyProfile",
+
   About: "About",
   Tutorial: "Tutorial",
   UniversityLogin: "UniversityLogin",
@@ -70,6 +73,7 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
+    case AppTurn.MyProfile: return true
     default: return false
   }
 }
@@ -78,6 +82,9 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
   const ideaGroup = new GroupModel("Ideas", false)
   const resourceGroup = new GroupModel("Resources", false)
+
+  const myGroup = new GroupModel("My Profile", false)
+  myGroup.AddItem(new ItemModel(AppTurn.MyProfile, "Profile", "profile", true))
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
@@ -88,6 +95,7 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
   const menu = new MenuModel(viewId, SocialColor.themeBlue)
   menu.AddGroup(ideaGroup)
   menu.AddGroup(resourceGroup)
+  menu.AddGroup(myGroup)
   menu.AddGroup(publicGroup)
   return menu
 }

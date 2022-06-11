@@ -1,21 +1,30 @@
-import { DevUser } from "./H/DevUser.js"
-import { GetUserCookie } from "./H/Cookie.js"
+import { DevUser, DevUnivAccount } from "./H/DevUser.js"
+import { GetUserCookie, GetUniversityAccountCookie } from "./H/Cookie.js"
 
 async function iIsLoggedIn(req, res) {
   try {
     //For development convenience
     const devUser = DevUser()
+    const devUnivAccount = DevUnivAccount()
+
+    let user = null
+    let univAccount = null
+
     if(devUser) {
-      return res.json({ok: true, isLoggedIn: true})
+      user = devUser
+    } else {
+      user = GetUserCookie(req)
     }
 
-    const user = GetUserCookie(req)
-
-    if(user) {
-      return res.json({ok: true, isLoggedIn: true})
+    if(devUnivAccount) {
+      univAccount = devUnivAccount
+    } else {
+      univAccount = GetUniversityAccountCookie(req)
     }
+    const isLoggedIn = !!user
+    const isLoggedInUniv = !!univAccount
 
-    return res.json({ ok:true })
+    return res.json({ ok:true, isLoggedIn, isLoggedInUniv })
   } catch(err) {
     return res.json({ ok:true })
   }
