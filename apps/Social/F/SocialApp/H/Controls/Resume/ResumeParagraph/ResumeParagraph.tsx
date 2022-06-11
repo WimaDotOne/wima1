@@ -13,3 +13,17 @@ export function ResumeParagraph({
     </div>
   </>)
 }
+
+
+export function ResumeSubParagraph({
+  text
+}: IResumeParagraphProp) {
+  return(<>
+    <div className={cl.resumeSubParagraph}>
+      <div className={cl.dot}>&bull;</div>
+      <div className={cl.subParagraphText}>
+      {text}  
+      </div>
+    </div>
+  </>)
+}

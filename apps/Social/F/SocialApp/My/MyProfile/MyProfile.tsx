@@ -1,7 +1,7 @@
 import { LimitWidth } from "../../../../../../libs/Core/Core2/fCore2";
 import { QuickInfo } from "../../H/Controls/Resume/QuickInfo/QuickInfo";
 import { ResumeHeader } from "../../H/Controls/Resume/ResumeHeader/ResumeHeader";
-import { ResumeParagraph } from "../../H/Controls/Resume/ResumeParagraph/ResumeParagraph";
+import { ResumeParagraph, ResumeSubParagraph } from "../../H/Controls/Resume/ResumeParagraph/ResumeParagraph";
 import { ResumeSectionTitle } from "../../H/Controls/Resume/ResumeSectionTitle/ResumeSectionTitle";
 import { SocialWindow } from "../../SocialWindow/SocialWindow";
 
@@ -20,6 +20,11 @@ export function MyProfile() {
          And I like tutoring students. I am good at math.
   `
 
+  const experiences = [
+    "I have math tutor math 222",
+    "I have math tutor math 537 for a semester",
+    "I volunteer at Madison Senior center and make websites for seniors in Dane county to find resources of for seniors in the area."
+  ]
   return(<>
     <SocialWindow>
       <LimitWidth maxWidth={800}>
@@ -27,6 +32,12 @@ export function MyProfile() {
         <QuickInfo quickInfo={quickInfo}/>
         <ResumeSectionTitle text="About me" />
         <ResumeParagraph text={aboutMe} />
+        <ResumeSectionTitle text="Experience of helping others" />
+        {
+          experiences.map((exp, i)=>
+          <ResumeSubParagraph text={exp} />
+          )
+        }
       </LimitWidth>
     </SocialWindow>
   </>)

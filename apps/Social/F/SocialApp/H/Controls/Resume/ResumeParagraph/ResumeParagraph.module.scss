@@ -1,5 +1,22 @@
 .resumeParagraph {
   white-space: pre-wrap;
   font-size: 15px;
-  color: #666;
+  color: #3c4257;
+}
+
+.resumeSubParagraph {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #3c4257;
+  line-height: 20px;
+  display: grid;
+  grid-template-columns: 25px auto;
+}
+
+.dot {
+  color: #ccc;
+  font-size: 24px;
+  position: relative;
+  top: -2px;
+  left: 3px;
 }
