@@ -1,0 +1,23 @@
+.quickInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.info {
+  padding: 0 20px;
+  margin: 5px 0;
+}
+
+.prompt {
+  font-size: 10px;
+  color: #ede;
+  line-height: 14px;
+  height: 14px;
+}
+
+.value {
+  font-size: 14px;
+  color: #aaa;
+}
