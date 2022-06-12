@@ -1,4 +1,4 @@
-import { IQuickInfoPiece } from "../../../../../Model/IQuickInfo"
+import { IQuickInfoPiece } from "../../../../Model/IQuickInfo"
 import cl from "./QuickInfo.module.scss"
 
 interface IQuickInfoProp {
