@@ -1,4 +1,4 @@
-import { LimitWidth } from "../../../../../../libs/Core/Core2/fCore2";
+import { Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2";
 import { QuickInfo } from "../../H/Controls/Resume/QuickInfo/QuickInfo";
 import { ResumeHeader } from "../../H/Controls/Resume/ResumeHeader/ResumeHeader";
 import { ResumeParagraph, ResumeSubParagraph } from "../../H/Controls/Resume/ResumeParagraph/ResumeParagraph";
@@ -33,6 +33,13 @@ export function MyProfile() {
         <ResumeSectionTitle text="About me" />
         <ResumeParagraph text={aboutMe} />
         <ResumeSectionTitle text="Experience of helping others" />
+        {
+          experiences.map((exp, i)=>
+          <ResumeSubParagraph text={exp} />
+          )
+        }
+        <Div height={20} />
+        <ResumeSectionTitle text="Skills or resources that might help others" />
         {
           experiences.map((exp, i)=>
           <ResumeSubParagraph text={exp} />

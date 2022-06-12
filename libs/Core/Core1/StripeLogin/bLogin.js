@@ -21,7 +21,7 @@ import { iIsLoggedInUniv } from "./B/University/iIsLoggedInUniv.js"
 LoginRouter.post('/GoogleLogIn', iGoogleAuth, iGoogleLogIn)
 LoginRouter.post('/FacebookLogIn', iFacebookAuth, iFacebookLogIn)
 LoginRouter.get('/IsLoggedIn', iIsLoggedIn)
-LoginRouter.post("/LoadLogin", iAuth, iLoadLogin)
+LoginRouter.get("/LoadLogin", iAuth, iLoadLogin)
 LoginRouter.post('/Logout', iLogOut)  // Don't auth before logout. Either user is logged in or not. If not, user will be stuck on logout page with no way out if asked for login.
 LoginRouter.post('/SendPasscode', iSendOneTimePasscode)
 LoginRouter.post('/EmailLogin', iOneTimeEmailLogin)
