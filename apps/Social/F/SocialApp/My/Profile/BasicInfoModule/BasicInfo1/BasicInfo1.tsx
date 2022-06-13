@@ -31,6 +31,7 @@ export function BasicInfo1({
   }
 
   function onCancel() {
+    setIsEdit(false)
     // loadMovicTitle((res)=>{
     //   setTitle(res.movicTitle)
     //   setIsEdit(false)

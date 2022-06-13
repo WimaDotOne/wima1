@@ -1,6 +1,7 @@
 import { AppleIconButtons, 
   AppleWindowPlainBottomBarDiv,
-  AppleWindowBottomBarFill
+  AppleWindowBottomBarFill,
+  Div
 } from "../../../../../../../libs/Core/Core2/fCore2";
 import { AppleNewsHeader1 } from "../../../../../../../libs/Pop/Pop2/fPop2";
 import { SocialColor } from "../../../../CSS/SocialColor";
@@ -20,6 +21,7 @@ export function BasicInfoModule({
   <div className={cl.basicinfo}>
     <AppleNewsHeader1 text1="Basic Info" text2="" />
     <BasicInfo1 />
+    <Div height={10} />
     <BasicInfo2 />
     <BasicInfo3 />
   </div>
