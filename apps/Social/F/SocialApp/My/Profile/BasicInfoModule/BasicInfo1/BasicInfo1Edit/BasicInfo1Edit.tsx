@@ -6,6 +6,6 @@ interface IBasicInfo1EditProp {
 
 export function BasicInfo1Edit({}: IBasicInfo1EditProp) {
   return(<>
-  
+  Edit
   </>)
 }

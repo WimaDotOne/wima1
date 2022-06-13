@@ -34,7 +34,7 @@ export function ProfileMap({
           description="List things you could do for others on campus. You can also list things you want to sell or give away." 
           onClick={goServices}/>
         <NeonPlate pink title="3. Use Help" 
-          description="List things you need or need help with. This provide others with ideas of what services they could create." 
+          description="List things you need or need help with. This provides others with ideas of what services they could create." 
           onClick={goUseHelp}/>
       </div>
       <Div height={30} />

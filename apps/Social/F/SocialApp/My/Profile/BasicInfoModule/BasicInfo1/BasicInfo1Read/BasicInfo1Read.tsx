@@ -6,6 +6,6 @@ interface IBasicInfo1ReadProp {
 
 export function BasicInfo1Read({}: IBasicInfo1ReadProp) {
   return(<>
-  
+  Read
   </>)
 }
