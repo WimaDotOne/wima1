@@ -1,5 +1,4 @@
 import { ClassNames } from "../../../../../../../../libs/Core/Core1/fCore1"
-import { NeoCard } from "../../../H/Controls/NeoCard/NeoCard"
 import cl from "./NeonPlate.module.scss"
 
 interface INeonPlateProp {

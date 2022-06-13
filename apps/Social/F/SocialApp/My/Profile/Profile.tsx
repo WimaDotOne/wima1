@@ -31,12 +31,17 @@ export function Profile({
     setProfileTurn(ProfileTurn.UseHelpModule)
   }
 
+  function viewProfile() {
+    setProfileTurn(ProfileTurn.ViewProfile)
+  }
+
   switch(profileTurn) {
     case ProfileTurn.ProfileHome: return(
       <ProfileMap goBasicInfo={goBasicInfo}
         goGoods={goGoods}
         goServices={goServices}
         goUseHelp={goUseHelp}
+        viewProfile={viewProfile}
       />
     )
     case ProfileTurn.BasicInfoModule: return(
@@ -61,5 +66,6 @@ const ProfileTurn = {
   BasicInfoModule: "BasicInfoModule",
   ServicesModule: "ServicesModule",
   GoodsModule: "GoodsModule",
-  UseHelpModule: "UseHelpModule"
+  UseHelpModule: "UseHelpModule",
+  ViewProfile: "ViewProfile"
 }
