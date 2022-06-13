@@ -14,7 +14,7 @@ export function EditPublish({
     setChecked(checked)
   }
   return(<>
-    <div>
+    <div className={cl.editPublish}>
       <CheckField1 prompt="Publish" checked={checked}
         onChange={onChange} />
     </div>

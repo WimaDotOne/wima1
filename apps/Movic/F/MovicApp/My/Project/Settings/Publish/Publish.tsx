@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { Get2, Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
+import { MovicColor } from "../../../../../CSS/MovicColor"
 import { IProject } from "../../../../../Model/IProject"
-import { SettingSection } from "../H/SettingSection/SettingSection"
 import { EditPublish } from "./EditPublish/EditPublish"
 import { ViewPublish } from "./ViewPublish/ViewPublish"
 
@@ -58,16 +59,17 @@ export function Publish({
   })
 
   return(<>
-    <SettingSection title="Publish" isEdit={isEdit}
+    <ReadEdit title="Publish" isEdit={isEdit}
       setIsEdit={setIsEdit}
       onCancel={onCancel}
       onSave={onSave}
+      color={MovicColor.themeRed}
     >
     {
       isEdit ? 
       <EditPublish checked={isMovicPublic} setChecked={setIsMovicPublic}/>:
       <ViewPublish project={project} isMovicPublic={isMovicPublic}/>
     }
-    </SettingSection>
+    </ReadEdit>
   </>)
 }

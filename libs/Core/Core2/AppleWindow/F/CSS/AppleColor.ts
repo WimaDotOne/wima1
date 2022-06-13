@@ -1,4 +1,4 @@
-export const color = {
+export const AppleColor = {
   newsRed: "#eb5569",
 
   iconDarkGray: "#545256",

@@ -1,4 +1,4 @@
-import { color } from "./F/CSS/Color";
+import { AppleColor } from "./F/CSS/AppleColor";
 import { GroupModel } from "./F/Model/Group";
 import { ItemModel } from "./F/Model/Item";
 import { MenuModel } from "./F/Model/Menu";
@@ -11,7 +11,7 @@ import { useAppleWindow, AppleWindowContext } from "./F/View/AppleWindow/AppleWi
 import { IconButton as AppleIconButton} from "./F/View/IconButton/IconButton"
 import { IconButtons as AppleIconButtons } from "./F/View/IconButtons/IconButtons"
 export {
-  color,
+  AppleColor,
   GroupModel,
   ItemModel,
   MenuModel,

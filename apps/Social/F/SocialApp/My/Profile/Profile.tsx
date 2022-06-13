@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { BasicInfoModule } from "./BasicInfoModule/BasicInfoModule"
-import { GoodsModule } from "./GoodsModule/GoodsModule"
 import { ProfileMap } from "./ProfileMap/ProfileMap"
 import { ServicesModule } from "./ServicesModule/ServicesModule"
 import { UseHelpModule } from "./UseHelpModule/UseHelpModule"
+import { ViewProfile } from "./ViewProfile/ViewProfile"
 
 interface IProfileProp {
 
@@ -21,9 +21,6 @@ export function Profile({
   function goBasicInfo() {
     setProfileTurn(ProfileTurn.BasicInfoModule)
   }
-  function goGoods() {
-    setProfileTurn(ProfileTurn.GoodsModule)
-  }
   function goServices() {
     setProfileTurn(ProfileTurn.ServicesModule)
   }
@@ -38,7 +35,6 @@ export function Profile({
   switch(profileTurn) {
     case ProfileTurn.ProfileHome: return(
       <ProfileMap goBasicInfo={goBasicInfo}
-        goGoods={goGoods}
         goServices={goServices}
         goUseHelp={goUseHelp}
         viewProfile={viewProfile}
@@ -50,11 +46,11 @@ export function Profile({
     case ProfileTurn.ServicesModule: return(
       <ServicesModule goHome={goHome} />
     )
-    case ProfileTurn.GoodsModule: return(
-      <GoodsModule goHome={goHome} />
-    )
     case ProfileTurn.UseHelpModule: return(
       <UseHelpModule goHome={goHome} />
+    )
+    case ProfileTurn.ViewProfile: return(
+      <ViewProfile onLeave={goHome} />
     )
   }
 
@@ -65,7 +61,6 @@ const ProfileTurn = {
   ProfileHome: "ProfileHome",
   BasicInfoModule: "BasicInfoModule",
   ServicesModule: "ServicesModule",
-  GoodsModule: "GoodsModule",
   UseHelpModule: "UseHelpModule",
   ViewProfile: "ViewProfile"
 }

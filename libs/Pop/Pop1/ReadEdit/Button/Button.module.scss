@@ -1,0 +1,17 @@
+
+.button {
+  appearance: none;
+  height: 28px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 0 15px;
+  user-select: default;
+  color: #669;
+  cursor: pointer;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 3px #aed1ec;
+}

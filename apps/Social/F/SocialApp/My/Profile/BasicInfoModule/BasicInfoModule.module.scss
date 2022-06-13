@@ -1,0 +1,9 @@
+.basicinfo {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .basicinfo {
+    padding: 0 10px;
+  }
+}

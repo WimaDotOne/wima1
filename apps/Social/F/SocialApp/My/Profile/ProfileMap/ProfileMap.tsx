@@ -6,7 +6,6 @@ import { SocialWindow } from "../../../SocialWindow/SocialWindow"
 
 interface IProfileMapProp {
   goBasicInfo: ()=>void
-  goGoods: ()=>void
   goServices: ()=>void
   goUseHelp: ()=>void
   viewProfile: ()=>void
@@ -14,7 +13,6 @@ interface IProfileMapProp {
 
 export function ProfileMap({
   goBasicInfo,
-  goGoods,
   goServices,
   goUseHelp,
   viewProfile
@@ -25,21 +23,18 @@ export function ProfileMap({
       <AppleNewsHeader1 text1="Profile" text2=""/>
       <Div height={20} />
       <div className={cl.instruction}>
-        Fill the following 4 part of your profile.
+        Fill the following parts of your profile.
       </div>
       <Div height={10} />
       <div className={cl.plates}>
-        <NeonPlate pink title="1. Basic Info" 
+        <NeonPlate blue title="1. Basic Info" 
           description="Tell others about yourself" 
           onClick={goBasicInfo}/>
-        <NeonPlate green title="2. Services" 
-          description="List things you could do for others on campus." 
+        <NeonPlate brown title="2. Services" 
+          description="List things you could do for others on campus. You can also list things you want to sell or give away." 
           onClick={goServices}/>
-        <NeonPlate blue title="2. Goods" 
-          description="List things you want to sell or give away." 
-          onClick={goGoods}/>
-        <NeonPlate brown title="3. Use Help" 
-          description="List things you need or need help with" 
+        <NeonPlate pink title="3. Use Help" 
+          description="List things you need or need help with. This provide others with ideas of what services they could create." 
           onClick={goUseHelp}/>
       </div>
       <Div height={30} />

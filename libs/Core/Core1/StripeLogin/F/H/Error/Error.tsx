@@ -1,5 +1,5 @@
 import { SvgIcon } from "../../../../../Core2/Svg/SvgIcon"
-import { color } from "../../CSS/Color"
+import { StripeColor } from "../../CSS/StripeColor"
 import cl from "./Error.module.scss"
 
 interface IErrorProp {
@@ -11,7 +11,7 @@ export function Error({
 }: IErrorProp) {
   return(<>
     <div className={cl.div0}>
-      <SvgIcon name="exclamation.triangle.fill" width={12} color={color.errorRed} />
+      <SvgIcon name="exclamation.triangle.fill" width={12} color={StripeColor.errorRed} />
       <div>{text}</div>
     </div>
   </>)

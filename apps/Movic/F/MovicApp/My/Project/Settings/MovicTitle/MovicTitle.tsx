@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Get2, Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
+import { MovicColor } from "../../../../../CSS/MovicColor"
 import { IProject } from "../../../../../Model/IProject"
-import { SettingSection } from "../H/SettingSection/SettingSection"
 import { EditMovicTitle } from "./EditMovicTitle/EditMovicTitle"
 import { ViewMovicTitle } from "./ViewMovicTitle/ViewMovicTitle"
 
@@ -49,16 +50,17 @@ export function MovicTitle({
   }
 
   return(<>
-    <SettingSection title="Movic title" isEdit={isEdit}
+    <ReadEdit title="Movic title" isEdit={isEdit}
       setIsEdit={setIsEdit}
       onCancel={onCancel}
       onSave={onSave}
+      color={MovicColor.themeRed}
     >
     {
       isEdit ? 
       <EditMovicTitle title={title} setTitle={setTitle}/>:
       <ViewMovicTitle title={title}/>
     }
-    </SettingSection>
+    </ReadEdit>
   </>)
 }

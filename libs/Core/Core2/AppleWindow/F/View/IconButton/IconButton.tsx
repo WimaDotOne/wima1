@@ -1,6 +1,6 @@
 import { ClassNames } from "../../../../../Core1/fCore1"
 import { SvgIcon } from "../../../../Svg/SvgIcon"
-import { color } from "../../CSS/Color"
+import { AppleColor } from "../../CSS/AppleColor"
 import cl from "./IconButton.module.scss"
 
 interface IIconButtonProp {
@@ -8,16 +8,18 @@ interface IIconButtonProp {
   onClick?: () => void
   disabled?: boolean
   backgroundColor?: string
+  color?: string
 }
 export function IconButton({
   svgName,
   onClick,
   disabled,
-  backgroundColor
+  backgroundColor,
+  color
 }: IIconButtonProp) {
 
   const clEnabled = disabled ?  "" : cl.enabled
-  const svgColor = disabled ? color.iconLightGray : color.iconGray
+  const svgColor = disabled ? AppleColor.iconLightGray : color || AppleColor.iconGray
   const buttonStyle: { backgroundColor?: string } = {}
   if(backgroundColor) {
     buttonStyle.backgroundColor = backgroundColor

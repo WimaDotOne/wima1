@@ -1,6 +1,4 @@
-const color = {
+export const StripeColor = {
   facebookBlue: "#1877f2",
   errorRed: "#e54661"
 }
-
-export { color }

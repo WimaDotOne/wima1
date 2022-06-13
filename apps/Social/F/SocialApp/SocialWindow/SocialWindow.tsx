@@ -84,7 +84,7 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
   const demandGroup = new GroupModel("Demand", false)
 
   const myGroup = new GroupModel("My Business", false)
-  myGroup.AddItem(new ItemModel(AppTurn.Profile, "Profile", "profile", true))
+  myGroup.AddItem(new ItemModel(AppTurn.Profile, "Profile", "dashboard", true))
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
