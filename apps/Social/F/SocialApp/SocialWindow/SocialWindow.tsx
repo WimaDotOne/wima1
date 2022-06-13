@@ -63,7 +63,7 @@ export function SocialWindow({
 
 export const AppTurn = {
 
-  MyProfile: "MyProfile",
+  Profile: "Profile",
 
   About: "About",
   Tutorial: "Tutorial",
@@ -73,18 +73,18 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
-    case AppTurn.MyProfile: return true
+    case AppTurn.Profile: return true
     default: return false
   }
 }
 
 function SocialMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
-  const ideaGroup = new GroupModel("Ideas", false)
-  const resourceGroup = new GroupModel("Resources", false)
+  const supplyGroup = new GroupModel("Supply", false)
+  const demandGroup = new GroupModel("Demand", false)
 
-  const myGroup = new GroupModel("My Profile", false)
-  myGroup.AddItem(new ItemModel(AppTurn.MyProfile, "Profile", "profile", true))
+  const myGroup = new GroupModel("My Business", false)
+  myGroup.AddItem(new ItemModel(AppTurn.Profile, "Profile", "profile", true))
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
@@ -93,8 +93,8 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 
   const menu = new MenuModel(viewId, SocialColor.themeBlue)
-  menu.AddGroup(ideaGroup)
-  menu.AddGroup(resourceGroup)
+  menu.AddGroup(supplyGroup)
+  menu.AddGroup(demandGroup)
   menu.AddGroup(myGroup)
   menu.AddGroup(publicGroup)
   return menu

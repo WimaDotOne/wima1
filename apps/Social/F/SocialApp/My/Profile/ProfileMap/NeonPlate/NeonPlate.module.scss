@@ -1,0 +1,46 @@
+.plateSpace {
+  padding: 10px;
+  width: 250px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.plate {
+  box-shadow: 2px 2px 5px #3363, -2px -2px 5px white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #e3edf7;
+  cursor: pointer;
+}
+.plate.pink {
+  background-color: #e3a3a3;
+  color: white;
+}
+
+.plate.blue {
+  background-color: #7698b6;
+  color: white;
+}
+
+.plate.green {
+  background-color: #7c958c;
+  color: white;
+}
+
+.plate.yellow {
+  background-color: #f3c570;
+  color: #333;
+}
+
+.plate.brown {
+  background-color: #93786d;
+  color: white;
+}

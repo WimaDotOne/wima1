@@ -44,6 +44,7 @@ import { SvgPin } from "./Office/Pin/SvgPin"
 import { SvgUnPin } from "./Office/Pin/SvgUnpin"
 import { SvgUniversity } from "./School/University/SvgUniversity"
 import { SvgProfile } from "./Social/Profile/SvgProfile"
+import { SvgDashboard } from "./Common/Dashboard/SvgDashboard"
 
 export function SvgIcon({
   name,
@@ -94,7 +95,7 @@ export function SvgIcon({
     case "hamburger": return <SvgHamburger width={width} stroke={color} strokeWidth={strokeWidth} />
     case "magnifyingglass": return <SvgMagnifyingGlass width={width} stroke={color} strokeWidth={strokeWidth} />
     case "email": return <SvgEmail width={width} fill={color}/>
-
+    case "dashboard": return <SvgDashboard width={width} fill={color}/>
     case "home": return <SvgHome width={width} fill={color} />
     case "door.batwing": return <SvgDoorBatwing width={width} />
     case "audio": return <SvgAudio width={width} fill={color} />
