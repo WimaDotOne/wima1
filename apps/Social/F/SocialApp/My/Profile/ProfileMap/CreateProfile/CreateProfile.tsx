@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../../bConfig"
-import { ErrorLine, SelectField1, TextField1 } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { ErrorLine, Post2, SelectField1, TextField1, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1 } from "../../../../../../../../libs/Pop/Pop2/fPop2"
 import cl from "./CreateProfile.module.scss"
@@ -17,22 +17,24 @@ export function CreateProfile({
   setShow
 }: ICreateProfile) {
 
-  const [firstName, setFirstName] = useState<string>("")
-  const [lastName, setLastName] = useState<string>("")
+  const [givenName, setGivenName] = useState<string>("")
+  const [familyName, setFamilyName] = useState<string>("")
   const [affiliation, setAffiliation] = useState<string>("")
   const [major, setMajor] = useState<string>("")
-  const [firstNameError, setFirstNameError] = useState<string>("")
-  const [lastNameError, setLastNameError] = useState<string>("")
+  const [givenNameError, setGivenNameError] = useState<string>("")
+  const [familyNameError, setFamilyNameError] = useState<string>("")
   const [affiliationError, setAffiliationError] = useState<string>("")
+
+  const shield = useShield()
 
   function validate() {
     let hasError = false
-    if(!firstName || !firstName.trim()) {
-      setFirstNameError("Required")
+    if(!givenName || !givenName.trim()) {
+      setGivenNameError("Required")
       hasError = true
     }
-    if(!lastName || !lastName.trim()) {
-      setLastNameError("Required")
+    if(!familyName || !familyName.trim()) {
+      setFamilyNameError("Required")
       hasError = true
     }
     if(!affiliation) {
@@ -42,13 +44,13 @@ export function CreateProfile({
     return !hasError
   }
 
-  function changeFirstName(newValue: string) {
-    setFirstName(newValue)
-    setFirstNameError("")
+  function changeGivenName(newValue: string) {
+    setGivenName(newValue)
+    setGivenNameError("")
   }
-  function changeLastName(newValue: string) {
-    setLastName(newValue)
-    setLastNameError("")
+  function changeFamilyName(newValue: string) {
+    setFamilyName(newValue)
+    setFamilyNameError("")
   }
   function changeAffiliation(newValue: string) {
     setAffiliation(newValue)
@@ -57,6 +59,16 @@ export function CreateProfile({
 
   async function save() {
     if(!validate()) return
+
+    await Post2(shield, "/social/CreateProfile", {
+      givenName,
+      familyName,
+      universityAffiliation: affiliation,
+      major
+    }, (res)=>{
+      setShow(false)
+    })
+
   }
 
   return(<>
@@ -68,18 +80,18 @@ export function CreateProfile({
     <AppleNewsHeader1 text1="New Profile" h={2} />
     <Div height={20} />
     <TextField1 prompt="First Name" 
-      value={firstName}
-      onChange={changeFirstName}
+      value={givenName}
+      onChange={changeGivenName}
       maxLength={GENERAL_INPUT_MAX}
     />
-    <ErrorLine text={firstNameError} />
+    <ErrorLine text={givenNameError} />
     <Div height={15} />
     <TextField1 prompt="Last Name"
-      value={lastName} 
-      onChange={changeLastName}
+      value={familyName} 
+      onChange={changeFamilyName}
       maxLength={GENERAL_INPUT_MAX}
     />
-    <ErrorLine text={lastNameError} />
+    <ErrorLine text={familyNameError} />
     <Div height={15} />
     <SelectField1 prompt="University Affiliation" 
       value={affiliation}

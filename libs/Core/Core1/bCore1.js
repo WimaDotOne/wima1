@@ -9,6 +9,7 @@ import { LoginRouter } from "./StripeLogin/bLogin.js"
 import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytics.js"
 
 import User from "./StripeLogin/B/Model/User.js"
+import UniversityAccount from "./StripeLogin/B/Model/UniversityAccount.js"
 
 import { IsEnumExit } from "./Util/B/Enum/Enum.js"
 
@@ -37,6 +38,7 @@ export {
   AnalyticsRouter,
 
   User,
+  UniversityAccount,
 
   asyNewTempFolder, asyRemoveTempFolder,
   asyUploadOne,
