@@ -3,8 +3,9 @@ import { AppleNewsHeader1 } from "../../../../../../../libs/Pop/Pop2/fPop2"
 import cl from "./ProfileMap.module.scss"
 import { NeonPlate } from "./NeonPlate/NeonPlate"
 import { SocialWindow } from "../../../SocialWindow/SocialWindow"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { CreateProfile } from "./CreateProfile/CreateProfile"
+import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 
 interface IProfileMapProp {
   goBasicInfo: ()=>void
@@ -20,28 +21,52 @@ export function ProfileMap({
   viewProfile
 }: IProfileMapProp) {
 
-  const [showPopUp, setShowShowPopUp] = useState<boolean>(true)
+  const [showPopUp, setShowShowPopUp] = useState<boolean>(false)
+  const [loaded, setLoaded] = useState<boolean>(false)
+  const [hasProfile, setHasProfile] = useState<boolean>(true)
+
+  const shield = useShield()
 
   function openPopUP() {
     setShowShowPopUp(true)
   }
+
+  async function tryLoadProfile() {
+    if(loaded) return
+    await Get2(shield, "/social/HasProfile",
+      (res)=>{
+        setLoaded(true)
+        setHasProfile(res.hasProfile)
+      }
+    )
+  }
+
+  useEffect(()=>{
+    tryLoadProfile()
+  })
 
   return(<>
   <SocialWindow>
     <LimitWidth maxWidth={800}>
       <AppleNewsHeader1 text1="Profile" text2=""/>
       <Div height={20} />
-
-      <div className={cl.instruction}>
-        First thing first
-      </div>
-      <NeonPlate yellow title="Create a Profile" 
-          description="Create a profile to post services you want to provide and helps you could use." 
-          onClick={openPopUP}/>
-      <Div height={10} />
+      {
+        hasProfile ? null:
+        <div className={cl.createProfile}>
+          <div className={cl.instruction}>
+            First thing first
+          </div>
+          <NeonPlate yellow title="Create a Profile" 
+              description="Create a profile to post services you want to provide and helps you could use." 
+              onClick={openPopUP}/>
+          <Div height={10} />
+        </div>
+      }
     </LimitWidth>
     <div className={cl.map}>
-      <div className={cl.cover}></div>
+      {
+        hasProfile ? null : <div className={cl.cover} />
+      }
       <LimitWidth maxWidth={800}>
         <div className={cl.instruction}>
           Fill the following parts of your profile.
