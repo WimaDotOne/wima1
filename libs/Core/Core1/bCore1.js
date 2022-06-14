@@ -10,6 +10,8 @@ import { MonitorDailyPasscodeSend, AnalyticsRouter } from "./Analytics/bAnalytic
 
 import User from "./StripeLogin/B/Model/User.js"
 
+import { IsEnumExit } from "./Util/B/Enum/Enum.js"
+
 import { asyNewTempFolder, asyRemoveTempFolder,
   asyUploadOne,
   asyUploadMany,
@@ -44,6 +46,7 @@ export {
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
 
-  asyShrinkImageFiles
+  asyShrinkImageFiles,
 
+  IsEnumExit
 }

@@ -1,16 +1,48 @@
 .header {
+  border-bottom: 1px solid #ddd;
+}
+.header.h1 {
   padding-top: 40px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+}
+
+.header.h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header.h3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .text1 {
-  font-size: 30px;
   font-weight: bold;
 }
-
 .text2 {
-  font-size: 24px;
   color: gray;
   font-weight: bold;
+}
+.text1.h1 {
+  font-size: 30px;
+}
+
+.text1.h2 {
+  font-size: 24px;
+}
+
+.text1.h3 {
+  font-size: 16px;
+}
+
+.text2.h1 {
+  font-size: 22px;
+}
+
+.text2.h2 {
+  font-size: 16px;
+}
+
+.text2.h3 {
+  font-size: 12px;
 }

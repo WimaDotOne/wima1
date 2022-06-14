@@ -6,6 +6,8 @@ import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
 import { TextField1 } from "./Fields/TextField/TextField1"
+import { SelectField1 } from "./Fields/SelectField/SelectField1"
+import { ErrorLine } from "./Fields/ErrorLine/ErrorLine"
 
 import {
   UnivLogin,
@@ -20,6 +22,7 @@ import {
 
 import { FileInput } from "./FileUp/fFileUp"
 import { IFormTextField } from "./FileUp/fFileUp"
+import { EnumText } from "./Util/F/ClassName/Enum/Enum"
 
 export {
   UnivLogin,
@@ -41,8 +44,12 @@ export {
   IsEmail,
 
   TextField1,
+  SelectField1,
+  ErrorLine,
 
-  FileInput
+  FileInput,
+
+  EnumText
 }
 
 export type { 
