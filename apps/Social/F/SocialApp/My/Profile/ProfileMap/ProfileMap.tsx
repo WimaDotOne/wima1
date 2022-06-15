@@ -6,6 +6,7 @@ import { SocialWindow } from "../../../SocialWindow/SocialWindow"
 import { useEffect, useState } from "react"
 import { CreateProfile } from "./CreateProfile/CreateProfile"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
+import { useWimaUser } from "../../../../../../Wima/fWima"
 
 interface IProfileMapProp {
   goBasicInfo: ()=>void
@@ -26,6 +27,7 @@ export function ProfileMap({
   const [hasProfile, setHasProfile] = useState<boolean>(true)
 
   const shield = useShield()
+  const user = useWimaUser()
 
   function openPopUP() {
     setShowShowPopUp(true)
@@ -33,6 +35,7 @@ export function ProfileMap({
 
   async function tryLoadProfile() {
     if(loaded) return
+    if(!user?.isLoggedInUniv) return
     await Get2(shield, "/social/HasProfile",
       (res)=>{
         setLoaded(true)
