@@ -10,7 +10,6 @@ export function IsWimaUserLogin() {
 
   async function UpdateUserLogin() {
     await Get2(shield, "/login/IsLoggedIn", (res)=>{
-      console.log(res)
       user?.setIsLoggedIn(!!res.isLoggedIn)
       user?.setIsLoggedInUniv(!!res.isLoggedInUniv)
     })

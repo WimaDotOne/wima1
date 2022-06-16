@@ -6,7 +6,7 @@ const schema = mongoose.Schema({
   givenName: { type: String, index: true, required: true},
   familyName: { type: String, index: true, required: true},
   universityAffiliation: { type: String, index: true, required: true},
-  major: { type: String, required: true},
+  major: { type: String },
   personality2: { type: String },
   personality16: { type: String },
   zodiacSign: { type: String },

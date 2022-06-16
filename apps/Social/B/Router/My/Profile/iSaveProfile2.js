@@ -1,8 +1,8 @@
-import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
 import { ZodiacSignSelectOptions } from "../../../../Enum/ZodiacSignEnum.js"
 import { Personality2SelectOptions } from "../../../../Enum/Personality2Enum.js"
 import { Personality16SelectOptions } from "../../../../Enum/Personality16Enum.js"
 import { asyGetSocialProfile } from "../../H/GetSocialProfile.js"
+import { IsEnumExit } from "../../../../../../libs/Core/Core1/bCore1.js"
 
 export async function iSaveProfile2(req, res) {
   try{

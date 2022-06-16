@@ -1,69 +1,72 @@
 import { useEffect, useState } from "react"
+import { Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
 import { SocialColor } from "../../../../../CSS/SocialColor"
+import { ISocialProfile } from "../../../../../Model/ISocialProfile"
 import { BasicInfo2Edit } from "./BasicInfo2Edit/BasicInfo2Edit"
 import { BasicInfo2Read } from "./BasicInfo2Read/BasicInfo2Read"
 
 interface IBasicInfo2Prop {
-
+  profile: ISocialProfile
+  refresh: ()=>void
 }
 
 export function BasicInfo2({
-
+  profile,
+  refresh
 }: IBasicInfo2Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [isLoaded, setIsLoaded] = useState<boolean>(false)
+  const [personality2, setPersonality2] = useState<string>("")
+  const [personality16, setPersonality16] = useState<string>("")
+  const [zodiacSign, setZodiacSign] = useState<string>("")
+  const shield = useShield()
 
-  async function loadMovicTitle(onOk?:(res:any)=>void) {
-    // await Get2(shield, `/movic/LoadSettingsMovicTitle?projectId=${project.id}`,
-    //   onOk
-    // )
-  }
+  useEffect(()=>{
+    setPersonality2(profile.personality2)
+    setPersonality16(profile.personality16)
+    setZodiacSign(profile.zodiacSign)
+  }, [profile])
 
-  async function saveMovicTitle(onOk?:(res:any)=>void) {
-    // await Post2(shield, "/movic/SaveSettingsMovicTitle",
-    //   {
-    //     projectId: project.id,
-    //     title
-    //   }, onOk
-    // )
+  async function saveProfile2() {
+    await Post2(shield, "/social/SaveProfile2",
+    {
+      personality2,
+      personality16,
+      zodiacSign
+    }, (res)=>{
+      setIsEdit(false)
+      refresh()
+    })
   }
 
   function onCancel() {
     setIsEdit(false)
-    // loadMovicTitle((res)=>{
-    //   setTitle(res.movicTitle)
-    //   setIsEdit(false)
-    // })
+    refresh()
   }
-
-  function onSave() {
-    // saveIsMovicPublic((res)=>{
-    //   setIsMovicPublic(res.isMovicPublic)
-    //   setIsEdit(false)
-    // })
-  }
-
-  useEffect(()=>{
-    // if(isLoaded) return
-    // loadIsMovicPublic((res)=>{
-    //   setIsLoaded(true)
-    //   setIsMovicPublic(res.isMovicPublic)
-    // })
-  })
 
   return(<>
   <ReadEdit title="Personality" isEdit={isEdit}
     setIsEdit={setIsEdit}
     onCancel={onCancel}
-    onSave={onSave}
+    onSave={saveProfile2}
     color={SocialColor.themeBlue}
   >
   {
     isEdit ? 
-    <BasicInfo2Edit />:
-    <BasicInfo2Read />
+    <BasicInfo2Edit 
+      personality2={personality2}
+      personality16={personality16}
+      zodiacSign={zodiacSign}
+      setPersonality2={setPersonality2}
+      setPersonality16={setPersonality16}
+      setZodiacSign={setZodiacSign}
+    />:
+    <BasicInfo2Read 
+      personality2={personality2}
+      personality16={personality16}
+      zodiacSign={zodiacSign}
+    />
   }
   </ReadEdit>
   </>)

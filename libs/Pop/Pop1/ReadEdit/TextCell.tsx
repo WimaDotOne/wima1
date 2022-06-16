@@ -2,7 +2,7 @@ import cl from "./TextCell.module.scss"
 
 interface ITextCellProp {
   prompt: string
-  value: string
+  value?: string
 }
 
 export function TextCell({

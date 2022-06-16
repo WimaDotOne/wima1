@@ -27,31 +27,34 @@ export function ReadEdit({
   const lightGray = "#efefef"
   return(<>
   <div>
-    <div className={cl.titleRow}>
-      <div className={cl.title}>{title}</div>
+    <div className={cl.header}>
+      <div className={cl.titleRow}>
+        <div className={cl.title}>{title}</div>
+        {
+          isEdit ? 
+          <div>
+            <AppleIconButton svgName="x" 
+              color={color} 
+              backgroundColor={lightGray}
+              onClick={onCancel}
+            /> &nbsp;&nbsp;
+            <AppleIconButton svgName="floppydisk" 
+              color={color} 
+              backgroundColor={lightGray}
+              onClick={onSave}
+            />
+          </div>
+          :
+          <div className={cl.pencilDiv} onClick={()=>{setIsEdit(true)}}>
+            <SvgIcon name="pencil" width={17} color={color}/>
+          </div>
+        }
+
+      </div>
       {
-        isEdit ? 
-        <div>
-          <AppleIconButton svgName="x" 
-            color={color} 
-            backgroundColor={lightGray}
-            onClick={onCancel}
-          /> &nbsp;&nbsp;
-          <AppleIconButton svgName="floppydisk" 
-            color={color} 
-            backgroundColor={lightGray}
-            onClick={onSave}
-          />
-        </div>
-        :
-        <div className={cl.pencilDiv} onClick={()=>{setIsEdit(true)}}>
-          <SvgIcon name="pencil" width={17} color={color}/>
-        </div>
+        description ? <div className={cl.description}>{description}</div>:null
       }
     </div>
-    {
-      description ? <div className={cl.description}>{description}</div>:null
-    }
     {
       children
     }

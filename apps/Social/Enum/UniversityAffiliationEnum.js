@@ -9,11 +9,11 @@ const UniversityAffiliationEnum = {
 export const UniversityAffiliationSelectOptions = [
   { 
     value: UniversityAffiliationEnum.Undergrad,
-    text: "Undergraduate Student"
+    text: "Undergrad"
   },
   {
     value: UniversityAffiliationEnum.Grad,
-    text: "Graduate Student"
+    text: "Grad"
   },
   {
     value: UniversityAffiliationEnum.Employee,

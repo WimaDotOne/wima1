@@ -2,7 +2,7 @@ import cl from "./TextField1.module.scss"
 
 interface ITextField1Prop {
   prompt?: string
-  value: string
+  value?: string
   onChange: (newValue: string)=>void
   maxLength: number
 }

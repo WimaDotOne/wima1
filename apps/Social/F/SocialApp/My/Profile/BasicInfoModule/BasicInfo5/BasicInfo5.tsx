@@ -3,31 +3,31 @@ import { Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1
 import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
 import { SocialColor } from "../../../../../CSS/SocialColor"
 import { ISocialProfile } from "../../../../../Model/ISocialProfile"
-import { BasicInfo3Edit } from "./BasicInfo3Edit/BasicInfo3Edit"
-import { BasicInfo3Read } from "./BasicInfo3Read/BasicInfo3Read"
+import { BasicInfo5Edit } from "./BasicInfo5Edit/BasicInfo5Edit"
+import { BasicInfo5Read } from "./BasicInfo5Read/BasicInfo5Read"
 
-interface IBasicInfo3Prop {
+interface IBasicInfo5Prop {
   profile: ISocialProfile
   refresh: ()=>void
 }
 
-export function BasicInfo3({
+export function BasicInfo5({
   profile,
   refresh
-}: IBasicInfo3Prop) {
+}: IBasicInfo5Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [aboutMe, setAboutMe] = useState<string>("")
+  const [skills, setSkills] = useState<string>("")
   const shield = useShield()
 
   useEffect(()=>{
-    setAboutMe(profile.aboutMe)
+    setSkills(profile.skills)
   }, [profile])
 
-  async function saveProfile3() {
-    await Post2(shield, "/social/SaveProfile3",
+  async function saveProfile5() {
+    await Post2(shield, "/social/SaveProfile5",
     {
-      aboutMe
+      skills
     }, (res)=>{
       setIsEdit(false)
       refresh()
@@ -40,20 +40,22 @@ export function BasicInfo3({
   }
 
   return(<>
-  <ReadEdit title="About Me" isEdit={isEdit}
+  <ReadEdit title="Skills or Resources that might help others" 
+    description="For example, knowledge from your major area of study, your native language, or a car."
+    isEdit={isEdit}
     setIsEdit={setIsEdit}
     onCancel={onCancel}
-    onSave={saveProfile3}
+    onSave={saveProfile5}
     color={SocialColor.themeBlue}
   >
   {
     isEdit ? 
-    <BasicInfo3Edit 
-      aboutMe={aboutMe}
-      setAboutMe={setAboutMe}
+    <BasicInfo5Edit 
+      skills={skills}
+      setSkills={setSkills}
     />:
-    <BasicInfo3Read 
-      aboutMe={aboutMe}
+    <BasicInfo5Read 
+      skills={skills}
     />
   }
   </ReadEdit>

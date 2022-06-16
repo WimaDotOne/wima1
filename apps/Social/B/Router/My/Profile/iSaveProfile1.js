@@ -1,4 +1,5 @@
 import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
+import { IsEnumExit } from "../../../../../../libs/Core/Core1/bCore1.js"
 import { UniversityAffiliationSelectOptions } from "../../../../Enum/UniversityAffiliationEnum.js"
 import { asyGetSocialProfile } from "../../H/GetSocialProfile.js"
 

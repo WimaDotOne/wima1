@@ -11,7 +11,7 @@ export const Personality2SelectOptions = [
   },
   {
     value:Personality2Enum.Extrovert,
-    text: "Etrovert"
+    text: "Extrovert"
   }
 ]
 

@@ -3,7 +3,7 @@ import cl from "./SelectField1.module.scss"
 
 interface ISelectField1Prop {
   prompt?: string
-  value: string
+  value?: string
   onChange: (newValue: string)=>void
   options: Array<ISelectOption>
   defaultValue?: string

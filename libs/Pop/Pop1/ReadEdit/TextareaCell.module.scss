@@ -1,4 +1,4 @@
-.textCell {
+.textareaCell {
   display: inline-block;
   margin-right: 20px;
   margin-top: 6px;
@@ -13,4 +13,8 @@
   font-size: 15px;
   line-height: 18px;
   color: #669;
+}
+
+.value.pre {
+  white-space: pre-wrap;
 }

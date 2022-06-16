@@ -37,7 +37,6 @@ export function Publish({
 
   function onCancel() {
     loadIsMovicPublic((res)=>{
-      console.log(res)
       setIsMovicPublic(res.isMovicPublic)
       setIsEdit(false)
     })

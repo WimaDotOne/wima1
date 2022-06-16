@@ -16,11 +16,11 @@ const SocialRouter = express.Router()
 SocialRouter.post("/CreateProfile", iUnivAuth, iCreateProfile)
 SocialRouter.get("/HasProfile", iUnivAuth, iHasProfile)
 SocialRouter.get("/LoadProfile", iUnivAuth, iLoadProfile)
-SocialRouter.get("/SaveProfile1", iUnivAuth, iSaveProfile1)
-SocialRouter.get("/SaveProfile2", iUnivAuth, iSaveProfile2)
-SocialRouter.get("/SaveProfile3", iUnivAuth, iSaveProfile3)
-SocialRouter.get("/SaveProfile4", iUnivAuth, iSaveProfile4)
-SocialRouter.get("/SaveProfile5", iUnivAuth, iSaveProfile5)
+SocialRouter.post("/SaveProfile1", iUnivAuth, iSaveProfile1)
+SocialRouter.post("/SaveProfile2", iUnivAuth, iSaveProfile2)
+SocialRouter.post("/SaveProfile3", iUnivAuth, iSaveProfile3)
+SocialRouter.post("/SaveProfile4", iUnivAuth, iSaveProfile4)
+SocialRouter.post("/SaveProfile5", iUnivAuth, iSaveProfile5)
 
 
 export {
