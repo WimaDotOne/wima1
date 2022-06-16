@@ -7,9 +7,12 @@ const schema = mongoose.Schema({
   familyName: { type: String, index: true, required: true},
   universityAffiliation: { type: String, index: true, required: true},
   major: { type: String, required: true},
+  personality2: { type: String },
+  personality16: { type: String },
+  zodiacSign: { type: String },
   aboutMe: { type: String },
-  experiences: [String],
-  skills: [String]
+  experiences: { type: String },
+  skills: { type: String }
 }, {
   timestamps: { currentTime: () => Date.now() }
 })

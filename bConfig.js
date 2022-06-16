@@ -32,7 +32,7 @@ export const UniversityDataConfig = {
 }
 
 export const GENERAL_INPUT_MAX = 100
-
+export const GENERAL_TEXTAREA_MAX = 2000
 // Apps
 export const MovicConfig = {
   movicMaxPerAccount: 100,
@@ -40,5 +40,5 @@ export const MovicConfig = {
 }
 
 export const SocialConfig = {
-
+  
 }
