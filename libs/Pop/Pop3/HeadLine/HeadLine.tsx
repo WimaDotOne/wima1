@@ -1,5 +1,5 @@
-import { ClassNames } from "../../../../../../../libs/Core/Core1/fCore1"
-import { Button } from "../Button/Button"
+import { ClassNames } from "../../../Core/Core1/fCore1"
+import { Button1 } from "../../../Core/Core2/fCore2"
 import cl from "./HeadLine.module.scss"
 
 interface IHeadLineProp {
@@ -7,12 +7,14 @@ interface IHeadLineProp {
   buttonText?: string
   buttonOnClick?: ()=>void
   h?: number
+  color?: string
 }
 export function HeadLine({
   text,
   buttonText,
   buttonOnClick,
-  h
+  h,
+  color
 }: IHeadLineProp) {
 
   let clH = cl.h1
@@ -28,7 +30,10 @@ export function HeadLine({
       <div>
       {
         buttonText && buttonOnClick ?
-        <Button text={buttonText} onClick={buttonOnClick} />:null
+        <Button1 text={buttonText}
+          onClick={buttonOnClick}
+          color={color}
+        />:null
       }
       </div>
     </div>

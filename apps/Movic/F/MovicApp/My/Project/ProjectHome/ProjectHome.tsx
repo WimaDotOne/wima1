@@ -1,9 +1,8 @@
 import { useEffect } from "react"
 import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
-import { AppleFolder, File, FileType } from "../../../../../../../libs/Pop/Pop3/fPop3"
+import { AppleFolder, File, FileType, HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { MovicColor } from "../../../../CSS/MovicColor"
 import { IProject } from "../../../../Model/IProject"
-import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { ProjectTurn } from "../Project"
 import cl from "./ProjectHome.module.scss"
 

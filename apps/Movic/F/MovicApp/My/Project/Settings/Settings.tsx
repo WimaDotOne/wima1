@@ -1,7 +1,7 @@
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../../libs/Core/Core2/fCore2"
+import { HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { MovicColor } from "../../../../CSS/MovicColor"
 import { IProject } from "../../../../Model/IProject"
-import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
 import { DvdCover } from "./DvdCover/DvdCover"
 import { MovicTitle } from "./MovicTitle/MovicTitle"
 import { Publish } from "./Publish/Publish"

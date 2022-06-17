@@ -1,7 +1,6 @@
 import { ReactNode } from "react"
-import { AppleIconButton } from "../../../Core/Core2/fCore2"
+import { AppleIconButton, Button1 } from "../../../Core/Core2/fCore2"
 import { SvgIcon } from "../../../Core/Core2/Svg/SvgIcon"
-import { Button } from "./Button/Button"
 import cl from "./ReadEdit.module.scss"
 
 interface IReadEditProp {
@@ -62,10 +61,10 @@ export function ReadEdit({
       isEdit ?
       <div className={cl.saveBtns}>
         <div>
-          <Button text="Cancel" onClick={onCancel} color={color}/>
+          <Button1 text="Cancel" onClick={onCancel} color={color}/>
         </div>
         <div className={cl.saveBtnDiv}>
-          <Button text="Save" onClick={onSave} color={color}/>
+          <Button1 text="Save" onClick={onSave} color={color}/>
         </div>
       </div>: null
     }

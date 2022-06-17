@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react"
-import { ClassNames } from "../../../../Core/Core1/fCore1"
-import cl from "./Button.module.scss"
+import { ClassNames } from "../../../Core1/fCore1"
+import cl from "./Button1.module.scss"
 
-interface IButtonProp {
+interface IButton1Prop {
   text: string
   onClick: ()=>void
   color?: string
 }
-export function Button({
+export function Button1({
   text,
   onClick,
   color
-}: IButtonProp) {
+}: IButton1Prop) {
 
   const btnRef = useRef<HTMLButtonElement>(null)
   const lightGray = "#efefef"

@@ -3,9 +3,10 @@ import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleWindowBottomBarFill, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder } from "../../../../../../../libs/Pop/Pop3/Folder/AppleFolder"
+import { HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { AppleWindowBottomBar } from "../../../../../../H/AppleWindowBottomBar"
 import { useWimaUser } from "../../../../../../Wima/fWima"
-import { HeadLine } from "../../../H/Controls/HeadLine/HeadLine"
+import { MovicColor } from "../../../../CSS/MovicColor"
 import { MovicWindow } from "../../../MovicWindow/MovicWindow"
 import cl from "./ProjectsHome.module.scss"
 
@@ -45,22 +46,24 @@ export function ProjectsHome({
   }
   return(<><MovicWindow>
 
-   <div className={cl.board}>
-     <HeadLine text="Projects" buttonText="New Project" 
-      buttonOnClick={goToNewProject}/>
-     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
-      {
-        projects.map((project, i)=>
-        <AppleFolder key={project.id} text={project.movicTitle} onClick={
-          ()=>{openProject(project.id, project.movicTitle)}
-          
-        }/>)
-      }
-     </AutoRepeatGrid>
-   </div>
-   <AppleWindowBottomBarFill />
-   <AppleWindowBottomBar>
-   {}
-   </AppleWindowBottomBar>
-   </MovicWindow></>)
+  <div className={cl.board}>
+    <HeadLine text="Projects" buttonText="New Project" 
+      buttonOnClick={goToNewProject} 
+      color={MovicColor.themeRed}/>
+    
+    <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
+    {
+      projects.map((project, i)=>
+      <AppleFolder key={project.id} text={project.movicTitle} onClick={
+        ()=>{openProject(project.id, project.movicTitle)}
+        
+      }/>)
+    }
+    </AutoRepeatGrid>
+  </div>
+  <AppleWindowBottomBarFill />
+  <AppleWindowBottomBar>
+  {}
+  </AppleWindowBottomBar>
+  </MovicWindow></>)
 }

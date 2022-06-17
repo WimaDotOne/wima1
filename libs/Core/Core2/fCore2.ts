@@ -11,6 +11,8 @@ import {
   AppleIconButtons
 } from "./AppleWindow/fAppleWindow"
 
+import { Button1 } from "./Controls/Buttons/Button1"
+
 import { Collapsible } from "./Controls/Collapsible/Collapsible"
 import { Scrollable } from "./Controls/Scrollable/Scrollable"
 import { Scrollable2 } from "./Controls/Scrollable/Scrollable2"
@@ -30,6 +32,8 @@ export {
   AppleWindow,
   AppleIconButton,
   AppleIconButtons,
+
+  Button1,
 
   Collapsible,
   Scrollable, Scrollable2,
