@@ -6,6 +6,7 @@ import { HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { SocialColor } from "../../../../CSS/SocialColor"
 import { ISocialService } from "../../../../Model/ISocialService"
 import { ServiceCard } from "../../../H/ServiceCard/ServiceCard"
+import { EditServicePopUp } from "./EditServicePopUp/EditServicePopUp"
 import { NewServicePopUp } from "./NewServicePopUp/NewServicePopUp"
 import cl from "./ServicesModule.module.scss"
 
@@ -18,7 +19,9 @@ export function ServicesModule({
 }: IServicesModuleProp) {
 
   const [showNewServicePopUp, setShowNewServicePopUp] = useState<boolean>(false)
+  const [showEditServicePopUp, setShowEditServicePopUp] = useState<boolean>(false)
   const [services, setServices] = useState<Array<ISocialService>>([])
+  const [selectedService, setSelectedService] = useState<ISocialService>()
   const [isGoods, setIsGoods] = useState<boolean>(false)
   const [loaded, setLoaded] = useState(false)
   const shield = useShield()
@@ -35,6 +38,9 @@ export function ServicesModule({
     setShowNewServicePopUp(true)
     setIsGoods(true)
   }
+
+
+
 
   function reload() {
     setLoaded(false)
@@ -67,6 +73,10 @@ export function ServicesModule({
         <ServiceCard name={service.name}
           shortDescription={service.shortDescription}
           price={service.price}
+          onClick={()=>{
+            setSelectedService(service)
+            setShowEditServicePopUp(true)
+          }}
         />
       )
     }
@@ -80,9 +90,13 @@ export function ServicesModule({
     <div className={cl.services}>
     {
       goods.map((service, i)=>
-        <ServiceCard name={service.name}
+        <ServiceCard key={service._id.toString()} name={service.name}
           shortDescription={service.shortDescription}
           price={service.price}
+          onClick={()=>{
+            setSelectedService(service)
+            setShowEditServicePopUp(true)
+          }}
         />
       )
     }
@@ -100,5 +114,14 @@ export function ServicesModule({
     isGoods={isGoods}
     refresh={reload}
   />
+  {
+    selectedService ?
+    <EditServicePopUp show={showEditServicePopUp}
+      setShow={setShowEditServicePopUp}
+      service0={selectedService}
+      refresh={reload}
+    />: null
+  }
+
   </>)
 }

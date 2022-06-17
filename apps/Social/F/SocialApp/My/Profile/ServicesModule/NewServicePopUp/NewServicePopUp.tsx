@@ -5,9 +5,7 @@ import { TextArea1 } from "../../../../../../../../libs/Core/Core1/Fields/TextAr
 import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { PopUp } from "../../../../../../../../libs/Pop/Pop1/PopUp/PopUp"
 import { AppleNewsHeader1 } from "../../../../../../../../libs/Pop/Pop2/fPop2"
-import { HeadLine } from "../../../../../../../../libs/Pop/Pop3/fPop3"
 import { SocialColor } from "../../../../../CSS/SocialColor"
-import cl from "./NewServicePopUp.module.scss"
 
 interface INewServicePopUpProp {
   show: boolean
