@@ -7,6 +7,7 @@ interface IPopUpProp {
   setShow: (show: boolean)=>void
   children: ReactNode
   onSave?: ()=>void
+  onClose?: ()=>void
   color?: string
   maxWidth?: number
 }
@@ -16,6 +17,7 @@ export function PopUp({
   show,
   setShow,
   onSave,
+  onClose,
   color,
   maxWidth
 }: IPopUpProp) {
@@ -35,7 +37,10 @@ export function PopUp({
       <div className={cl.bottomBar}>
       <IconButtons color={color}
         icon1="x"
-        onClick1={()=>{setShow(false)}}
+        onClick1={()=>{
+          setShow(false)
+          if(onClose) { onClose() }
+        }}
         icon5="floppydisk"
         onClick5={onSave}
       />

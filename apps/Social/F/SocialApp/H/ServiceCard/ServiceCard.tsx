@@ -2,9 +2,9 @@ import cl from "./ServiceCard.module.scss"
 
 interface IServiceCardProp {
   name: string,
-  shortDescription: string
-  price: string
-  onClick: ()=>void
+  shortDescription?: string
+  price?: string
+  onClick?: ()=>void
 }
 
 export function ServiceCard({
