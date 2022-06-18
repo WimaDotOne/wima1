@@ -2,7 +2,7 @@ import { useState } from "react"
 import { BasicInfoModule } from "./BasicInfoModule/BasicInfoModule"
 import { ProfileMap } from "./ProfileMap/ProfileMap"
 import { ServicesModule } from "./ServicesModule/ServicesModule"
-import { UseHelpModule } from "./UseHelpModule/UseHelpModule"
+import { NeedsModule } from "./NeedsModule/NeedsModule"
 import { ViewProfile } from "./ViewProfile/ViewProfile"
 
 interface IProfileProp {
@@ -24,8 +24,8 @@ export function Profile({
   function goServices() {
     setProfileTurn(ProfileTurn.ServicesModule)
   }
-  function goUseHelp() {
-    setProfileTurn(ProfileTurn.UseHelpModule)
+  function goNeeds() {
+    setProfileTurn(ProfileTurn.NeedsModule)
   }
 
   function viewProfile() {
@@ -36,7 +36,7 @@ export function Profile({
     case ProfileTurn.ProfileHome: return(
       <ProfileMap goBasicInfo={goBasicInfo}
         goServices={goServices}
-        goUseHelp={goUseHelp}
+        goNeeds={goNeeds}
         viewProfile={viewProfile}
       />
     )
@@ -46,8 +46,8 @@ export function Profile({
     case ProfileTurn.ServicesModule: return(
       <ServicesModule goHome={goHome} />
     )
-    case ProfileTurn.UseHelpModule: return(
-      <UseHelpModule goHome={goHome} />
+    case ProfileTurn.NeedsModule: return(
+      <NeedsModule goHome={goHome} />
     )
     case ProfileTurn.ViewProfile: return(
       <ViewProfile onLeave={goHome} />
@@ -61,6 +61,6 @@ const ProfileTurn = {
   ProfileHome: "ProfileHome",
   BasicInfoModule: "BasicInfoModule",
   ServicesModule: "ServicesModule",
-  UseHelpModule: "UseHelpModule",
+  NeedsModule: "NeedsModule",
   ViewProfile: "ViewProfile"
 }

@@ -1,13 +1,13 @@
 import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX } from "../../../../../../bConfig.js"
-import SocialService from "../../../Model/SocialService.js"
+import SocialNeed from "../../../Model/SocialNeed.js"
 import { asyGetSocialAccountId } from "../../H/GetSocialAccountId.js"
 
-export async function iSaveService(req, res) {
+export async function iSaveNeed(req, res) {
   try{
-    const serviceId = req.body.serviceId
+    const needId = req.body.needId
     const name = (req.body.name || "").trim()
     const shortDescription = (req.body.shortDescription || "").trim()
-    const price = (req.body.price || "").trim()
+    const willPay = !!req.body.willPay
     const description = req.body.description || ""
 
     if(name.length > GENERAL_INPUT_MAX) {
@@ -16,9 +16,6 @@ export async function iSaveService(req, res) {
     if(shortDescription.length > GENERAL_INPUT_MAX) {
       return res.json({ ok: false, error: "Short Description is too long" })
     }
-    if(price.length > GENERAL_INPUT_MAX) {
-      return res.json({ ok: false, error: "Price is too long" })
-    }
     if(description.length > GENERAL_TEXTAREA_MAX) {
       return res.json({ ok: false, error: "Description is too long" })
     }
@@ -26,25 +23,25 @@ export async function iSaveService(req, res) {
     if(!name) {
       return res.json({ ok: false, error: "Name is required" })
     }
-    const service = await SocialService.findById(serviceId)
+    const need = await SocialNeed.findById(needId)
 
-    if(!service) {
-      return res.json({ ok: false, error: "Cannot find the service" })
+    if(!need) {
+      return res.json({ ok: false, error: "Cannot find the need" })
     }
     const socialAccountId = await asyGetSocialAccountId(req.univAccount._id)
   
     if(
-      !socialAccountId || !service.socialAccountId ||
-      service.socialAccountId.toString() !== socialAccountId.toString()) {
-      return res.json({ ok: false, error: "Service and Social Account do not match" })
+      !socialAccountId || !need.socialAccountId ||
+      need.socialAccountId.toString() !== socialAccountId.toString()) {
+      return res.json({ ok: false, error: "Need and Social Account do not match" })
     }
 
-    service.name = name
-    service.shortDescription = shortDescription
-    service.price = price
-    service.description = description
+    need.name = name
+    need.shortDescription = shortDescription
+    need.willPay = willPay
+    need.description = description
 
-    await service.save()
+    await need.save()
 
     return res.json({ok: true})
 

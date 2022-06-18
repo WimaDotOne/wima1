@@ -12,6 +12,12 @@ import { iSaveProfile5 } from "./My/Profile/iSaveProfile5.js"
 import { iLoadServices } from "./My/Service/iLoadServices.js"
 import { iCreateService } from "./My/Service/iCreateService.js"
 import { iSaveService } from "./My/Service/iSaveService.js"
+import { iDeleteService } from "./My/Service/iDeleteService.js"
+
+import { iLoadNeeds } from "./My/Need/iLoadNeeds.js"
+import { iCreateNeed } from "./My/Need/iCreateNeed.js"
+import { iSaveNeed } from "./My/Need/iSaveNeed.js"
+import { iDeleteNeed } from "./My/Need/iDeleteNeed.js"
 
 const SocialRouter = express.Router()
 
@@ -26,10 +32,16 @@ SocialRouter.post("/SaveProfile3", iUnivAuth, iSaveProfile3)
 SocialRouter.post("/SaveProfile4", iUnivAuth, iSaveProfile4)
 SocialRouter.post("/SaveProfile5", iUnivAuth, iSaveProfile5)
 
-
 SocialRouter.get("/LoadServices", iUnivAuth, iLoadServices)
 SocialRouter.post("/CreateService", iUnivAuth, iCreateService)
 SocialRouter.post("/SaveService", iUnivAuth, iSaveService)
+SocialRouter.post("/DeleteService", iUnivAuth, iDeleteService)
+
+SocialRouter.get("/LoadNeeds", iUnivAuth, iLoadNeeds)
+SocialRouter.post("/CreateNeed", iUnivAuth, iCreateNeed)
+SocialRouter.post("/SaveNeed", iUnivAuth, iSaveNeed)
+SocialRouter.post("/DeleteNeed", iUnivAuth, iDeleteNeed)
+
 
 
 export {

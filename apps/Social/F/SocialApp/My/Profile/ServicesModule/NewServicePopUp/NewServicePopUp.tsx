@@ -11,7 +11,7 @@ interface INewServicePopUpProp {
   show: boolean
   setShow: (show: boolean)=>void
   isGoods: boolean
-  refresh?: ()=>void
+  refresh: ()=>void
 }
 
 export function NewServicePopUp({
@@ -44,9 +44,7 @@ export function NewServicePopUp({
     },(res)=>{
       cleanFields()
       setShow(false)
-      if(refresh) {
-        refresh()
-      }
+      refresh()
     })
   }
 

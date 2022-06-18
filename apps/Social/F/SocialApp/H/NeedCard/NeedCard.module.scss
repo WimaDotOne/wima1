@@ -1,0 +1,47 @@
+.needCardSpace {
+  width: 100%;
+  padding: 7px;
+}
+
+@media screen and (min-width: 500px){
+  .needCardSpace {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .needCardSpace {
+    width: 33%;
+  }
+}
+
+.needCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0px 0.5px 4px #0a254033;
+  cursor: pointer;
+}
+
+.needCard:hover .name {
+  text-decoration: underline;
+}
+
+.name {
+  color: #0a2540;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.shortDescription {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.willPay {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: right;
+  color: #0a2540;
+}

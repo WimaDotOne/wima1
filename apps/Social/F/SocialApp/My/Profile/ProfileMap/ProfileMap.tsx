@@ -11,14 +11,14 @@ import { useWimaUser } from "../../../../../../Wima/fWima"
 interface IProfileMapProp {
   goBasicInfo: ()=>void
   goServices: ()=>void
-  goUseHelp: ()=>void
+  goNeeds: ()=>void
   viewProfile: ()=>void
 }
 
 export function ProfileMap({
   goBasicInfo,
   goServices,
-  goUseHelp,
+  goNeeds,
   viewProfile
 }: IProfileMapProp) {
 
@@ -84,7 +84,7 @@ export function ProfileMap({
             onClick={goServices}/>
           <NeonPlate pink title="3. Use Help" 
             description="List things you need or need help with. This provides others with ideas of what services they could create." 
-            onClick={goUseHelp}/>
+            onClick={goNeeds}/>
         </div>
         <Div height={30} />
         <div className={cl.instruction}>

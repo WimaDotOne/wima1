@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv } from "../../../../../../../libs/Core/Core2/fCore2"
-import { AppleNewsHeader1 } from "../../../../../../../libs/Pop/Pop2/fPop2"
 import { HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { SocialColor } from "../../../../CSS/SocialColor"
 import { ISocialService } from "../../../../Model/ISocialService"
@@ -22,7 +21,7 @@ export function ServicesModule({
   const [showEditServicePopUp, setShowEditServicePopUp] = useState<boolean>(false)
   const [services, setServices] = useState<Array<ISocialService>>([])
   const [selectedService, setSelectedService] = useState<ISocialService>()
-  const [isGoods, setIsGoods] = useState<boolean>(false)
+  const [isNewGoods, setIsNewGoods] = useState<boolean>(false)
   const [loaded, setLoaded] = useState(false)
   const shield = useShield()
 
@@ -31,16 +30,21 @@ export function ServicesModule({
 
   function openNewService() {
     setShowNewServicePopUp(true)
-    setIsGoods(false)
+    setShowEditServicePopUp(false)
+    setIsNewGoods(false)
   }
 
   function openNewItem() {
     setShowNewServicePopUp(true)
-    setIsGoods(true)
+    setShowEditServicePopUp(false)
+    setIsNewGoods(true)
   }
 
-
-
+  function openEditService(service: ISocialService) {
+    setSelectedService(service)
+    setShowEditServicePopUp(true)
+    setShowNewServicePopUp(false)
+  }
 
   function reload() {
     setLoaded(false)
@@ -73,10 +77,7 @@ export function ServicesModule({
         <ServiceCard name={service.name}
           shortDescription={service.shortDescription}
           price={service.price}
-          onClick={()=>{
-            setSelectedService(service)
-            setShowEditServicePopUp(true)
-          }}
+          onClick={()=>{openEditService(service)}}
         />
       )
     }
@@ -93,10 +94,7 @@ export function ServicesModule({
         <ServiceCard key={service._id.toString()} name={service.name}
           shortDescription={service.shortDescription}
           price={service.price}
-          onClick={()=>{
-            setSelectedService(service)
-            setShowEditServicePopUp(true)
-          }}
+          onClick={()=>{openEditService(service)}}
         />
       )
     }
@@ -111,7 +109,7 @@ export function ServicesModule({
 
   <NewServicePopUp show={showNewServicePopUp} 
     setShow={setShowNewServicePopUp}
-    isGoods={isGoods}
+    isGoods={isNewGoods}
     refresh={reload}
   />
   {
