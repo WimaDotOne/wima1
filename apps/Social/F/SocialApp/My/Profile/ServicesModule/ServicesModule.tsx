@@ -76,6 +76,7 @@ export function ServicesModule({
       nonGoodsServices.map((service, i)=>
         <ServiceCard name={service.name}
           shortDescription={service.shortDescription}
+          description={service.description}
           price={service.price}
           onClick={()=>{openEditService(service)}}
         />
@@ -93,6 +94,7 @@ export function ServicesModule({
       goods.map((service, i)=>
         <ServiceCard key={service._id.toString()} name={service.name}
           shortDescription={service.shortDescription}
+          description={service.description}
           price={service.price}
           onClick={()=>{openEditService(service)}}
         />

@@ -119,6 +119,7 @@ export function   ProfilePaper({
           <ServiceCard name={service.name}
             key={"service"+i}
             shortDescription={service.shortDescription}
+            description={service.description}
             price={service.price}
             onClick={GetOpenFun(service)}/>
         )
@@ -134,6 +135,7 @@ export function   ProfilePaper({
         <ServiceCard name={good.name}
           key={"good"+i}
           shortDescription={good.shortDescription}
+          description={good.description}
           price={good.price}
           onClick={GetOpenFun(good)}
         />
@@ -150,6 +152,7 @@ export function   ProfilePaper({
         <NeedCard name={need.name}
           key={"need"+i}
           shortDescription={need.shortDescription}
+          description={need.description}
           willPay={need.willPay}
           onClick={GetOpenFun(need)}
         />)

@@ -4,6 +4,7 @@ import cl from "./NeedCard.module.scss"
 interface INeedCardProp {
   name: string,
   shortDescription?: string
+  description?: string
   willPay?: boolean
   onClick?: ()=>void
 }
@@ -11,6 +12,7 @@ interface INeedCardProp {
 export function NeedCard({
   name,
   shortDescription,
+  description,
   willPay,
   onClick
 }: INeedCardProp) {
@@ -22,6 +24,9 @@ export function NeedCard({
     <div className={ClassNames([cl.needCard, clClick])} onClick={onClick}>
       <div className={cl.name}>{name}</div>
       <div className={cl.shortDescription}>{shortDescription}</div>
+      {
+        description?<div className={cl.ellipsis}>...</div>:null
+      }
       <div className={cl.willPay} title={willPayTooltip}>
       { willPay? "$": ""}
       </div>

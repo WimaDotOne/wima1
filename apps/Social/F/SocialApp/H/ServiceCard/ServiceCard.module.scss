@@ -41,7 +41,13 @@
   font-size: 14px;
   color: #999;
 }
-
+.ellipsis {
+  color: #ccc;
+  font-size: 30px;
+  line-height: 10px;
+  position: relative;
+  top: -10px;
+}
 .price {
   font-size: 13px;
   font-weight: 500;

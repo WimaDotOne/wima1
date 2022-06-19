@@ -65,6 +65,7 @@ export function NeedsModule({
       needs.map((need, i)=>
         <NeedCard name={need.name}
           shortDescription={need.shortDescription}
+          description={need.description}
           willPay={need.willPay}
           onClick={()=>{openEditNeed(need)}}
         />
