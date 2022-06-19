@@ -45,7 +45,6 @@ export function NeedsModule({
       (res)=>{
         setLoaded(true)
         setNeeds(res.needs)
-        console.log(res.needs)
       }
     )
   }

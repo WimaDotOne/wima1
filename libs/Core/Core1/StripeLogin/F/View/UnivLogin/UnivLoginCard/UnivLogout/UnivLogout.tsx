@@ -31,7 +31,6 @@ export function UnivLogout({
   }
 
   useEffect(()=>{
-    console.log("Load Univ Login")
     loadUnivLogin()
   }, [])
 
