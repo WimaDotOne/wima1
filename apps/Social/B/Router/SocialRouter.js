@@ -47,7 +47,7 @@ SocialRouter.post("/DeleteNeed", iUnivAuth, iDeleteNeed)
 
 //Profile Paper 
 SocialRouter.get("/LoadMyProfilePaper", iUnivAuth, iLoadMyProfilePaper)
-SocialRouter.get("/LoadProfilePaper", iLoadProfile)
+SocialRouter.get("/LoadProfilePaper", iLoadProfilePaper)
 
 
 export {

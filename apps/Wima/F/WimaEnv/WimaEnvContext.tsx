@@ -1,13 +1,10 @@
 import React, {ReactNode, useContext, useState} from "react"
 
-interface IMovicEnv {
-  scriptFileMaxLength?: number
-  domain?: string
-}
-
 interface IEnvContext {
-  movicEnv?: IMovicEnv
-  setMovicEnv: (movicEnv: IMovicEnv)=>void
+  domain?: string,
+  setDomain: (domain: string)=>void
+  movicScriptFileMaxLength?: number
+  setMovicScriptFileMaxLength: (len: number)=>void
 }
 
 const EnvContext = React.createContext<IEnvContext | null>(null)
@@ -25,11 +22,12 @@ export function WimaEnvContext({
   children,
 }: IWimaEnvContextProp) {
 
-  const [movicEnv, setMovicEnv] = useState<IMovicEnv>()
+  const [domain, setDomain] = useState<string>("")
+  const [movicScriptFileMaxLength, setMovicScriptFileMaxLength] = useState<number>(0)
 
   const context: IEnvContext = {
-    movicEnv,
-    setMovicEnv
+    domain, setDomain,
+    movicScriptFileMaxLength, setMovicScriptFileMaxLength
   } 
 
   return(<>

@@ -20,7 +20,7 @@ import cl from "./ProfilePaper.module.scss"
 interface IProfilePaperProp {
   socialAccountId?: string
 }
-export function ProfilePaper({
+export function   ProfilePaper({
   socialAccountId
 }: IProfilePaperProp) {
 
@@ -40,6 +40,8 @@ export function ProfilePaper({
     if(socialAccountId) {
       url = `/social/LoadProfilePaper?socialAccountId=${socialAccountId}`
     }
+    if(!url) return
+  
     await Get2(shield, url,
       (res)=>{
         setLoaded(true)
@@ -87,22 +89,24 @@ export function ProfilePaper({
     return open
   }
 
+  if(!profile) return null
+
   return(<>
     <LimitWidth maxWidth={800}>
-      <ResumeHeader text={`${profile?.givenName} ${profile?.familyInitial}`} />
+      <ResumeHeader text={`${profile.givenName} ${profile.familyInitial}`} />
       <QuickInfo quickInfo={quickInfo}/>
       <ResumeSectionTitle text="About me" />
-      <ResumeParagraph text={profile?.aboutMe} />
+      <ResumeParagraph text={profile.aboutMe} />
       <ResumeSectionTitle text="Experience of helping others" />
       {
         experiences.map((exp, i)=>
-        <ResumeSubParagraph key={i} text={exp} />
+        <ResumeSubParagraph key={"exp"+i} text={exp} />
         )
       }
       <ResumeSectionTitle text="Skills or resources that might help others" />
       {
         skills.map((skill, i)=>
-        <ResumeSubParagraph key={i} text={skill} />
+        <ResumeSubParagraph key={"skill"+i} text={skill} />
         )
       }
       <Div height={10} />
@@ -113,6 +117,7 @@ export function ProfilePaper({
       {
         nonGoodsServices.map((service, i)=> 
           <ServiceCard name={service.name}
+            key={"service"+i}
             shortDescription={service.shortDescription}
             price={service.price}
             onClick={GetOpenFun(service)}/>
@@ -127,9 +132,10 @@ export function ProfilePaper({
       {
         goods.map((good, i)=>
         <ServiceCard name={good.name}
-            shortDescription={good.shortDescription}
-            price={good.price}
-            onClick={GetOpenFun(good)}
+          key={"good"+i}
+          shortDescription={good.shortDescription}
+          price={good.price}
+          onClick={GetOpenFun(good)}
         />
         )
       }
@@ -142,13 +148,14 @@ export function ProfilePaper({
       {
         needs.map((need, i)=>
         <NeedCard name={need.name}
+          key={"need"+i}
           shortDescription={need.shortDescription}
           willPay={need.willPay}
           onClick={GetOpenFun(need)}
         />)
       }
       </div>
-      <Div height={100} />
+      <Div height={40} />
     </LimitWidth>
 
     <DetailPopUp show={showDetail} setShow={setShowDetail} 

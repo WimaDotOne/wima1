@@ -7,6 +7,7 @@ export async function iLoadProfilePaper(req, res) {
   try{
     
     const socialAccountId = req.query.socialAccountId
+
     const socialAccount = await SocialAccount.findById(socialAccountId)
       .populate("socialProfileId")
 

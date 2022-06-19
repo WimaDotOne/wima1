@@ -11,12 +11,12 @@ export function ResumeSectionTitle({
 }: IResumeSectionTitleProp) {
 
   text = ( text || "").toUpperCase()
-  const style = { marginTop: "" }
+  const titleStyle = { marginTop: "30px" }
   if(marginTop !== undefined) {
-    style.marginTop = marginTop + "px"
+    titleStyle.marginTop = marginTop + "px"
   }
   return(<>
-    <div className={cl.resumeSectionTitle} style={style}>
+    <div className={cl.resumeSectionTitle} style={titleStyle}>
       {text}
     </div>
   </>)

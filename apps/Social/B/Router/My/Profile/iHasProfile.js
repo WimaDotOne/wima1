@@ -11,13 +11,15 @@ export async function iHasProfile(req, res) {
     }
   
     const socialAccount = univAccount.socialAccountId
+    const socialAccountId = socialAccount._id.toString()
+
   
     if(!socialAccount || !socialAccount._id) {
-      return res.json({ ok: true, hasProfile})
+      return res.json({ ok: true })
     }
   
     if(!socialAccount.socialProfileId) {
-      return res.json({ ok: true, hasProfile})
+      return res.json({ ok: true })
     }
   
     const profile = await SocialProfile.findById(socialAccount.socialProfileId)
@@ -25,7 +27,7 @@ export async function iHasProfile(req, res) {
     if(profile && profile._id) {
       hasProfile = true
     }
-    return res.json({ ok: true, hasProfile})
+    return res.json({ ok: true, hasProfile, socialAccountId})
     
   } catch(err) {
     return res.json({ ok: false, error: err.message })

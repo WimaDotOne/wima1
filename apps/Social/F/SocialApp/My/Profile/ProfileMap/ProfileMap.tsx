@@ -6,7 +6,7 @@ import { SocialWindow } from "../../../SocialWindow/SocialWindow"
 import { useEffect, useState } from "react"
 import { CreateProfile } from "./CreateProfile/CreateProfile"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
-import { useWimaUser } from "../../../../../../Wima/fWima"
+import { useWimaEnv, useWimaUser } from "../../../../../../Wima/fWima"
 
 interface IProfileMapProp {
   goBasicInfo: ()=>void
@@ -25,29 +25,34 @@ export function ProfileMap({
   const [showPopUp, setShowShowPopUp] = useState<boolean>(false)
   const [loaded, setLoaded] = useState<boolean>(false)
   const [hasProfile, setHasProfile] = useState<boolean>(true)
+  const [socialAccountId, setSocialAccountId] = useState<string>("")
 
   const shield = useShield()
   const user = useWimaUser()
+  const wimaEnv = useWimaEnv()
 
   function openPopUP() {
     setShowShowPopUp(true)
   }
 
-  async function tryLoadProfile() {
+  async function loadHasProfile() {
     if(loaded) return
     if(!user?.isLoggedInUniv) return
     await Get2(shield, "/social/HasProfile",
       (res)=>{
         setLoaded(true)
         setHasProfile(res.hasProfile)
+        setSocialAccountId(res.socialAccountId)
       }
     )
   }
 
   useEffect(()=>{
-    tryLoadProfile()
+    loadHasProfile()
   })
 
+  const profileUrl = wimaEnv?.domain ?
+    wimaEnv?.domain+`/apps/Social/Profile?socialId=${socialAccountId}` : ""
   return(<>
   <SocialWindow>
     <LimitWidth maxWidth={800}>
@@ -94,6 +99,13 @@ export function ProfileMap({
         <NeonPlate blue title="Profile" 
           description="This is what others see" 
           onClick={viewProfile}/>
+        {
+          socialAccountId && hasProfile && profileUrl ? 
+          <div className={cl.shareInfo}>
+            <div className={cl.sharePrompt}>The profile is public to people who have the following link.</div>
+            <a className={cl.link} target="_blank" href={profileUrl}>{profileUrl}</a>
+          </div>:null
+        }
       </LimitWidth>
     </div>
   </SocialWindow>

@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Profile } from "../../../../apps/Social/F/SocialApp/My/Profile/Profile"
+import { GatherWimaEnv } from "../../../../apps/Wima/F/WimaEnv/GatherWimaEnv"
 import { IsWimaUserLogin } from "../../../../apps/Wima/fWima"
 
 export default function ProfilePage() {
@@ -11,5 +12,6 @@ export default function ProfilePage() {
     </Head>
     <IsWimaUserLogin />
     <Profile />
+    <GatherWimaEnv />
   </>)
 }
