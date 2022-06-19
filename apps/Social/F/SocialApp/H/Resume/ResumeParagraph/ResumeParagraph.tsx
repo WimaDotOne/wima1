@@ -1,7 +1,7 @@
 import cl from "./ResumeParagraph.module.scss"
 
 interface IResumeParagraphProp {
-  text: string
+  text?: string
 }
 
 export function ResumeParagraph({

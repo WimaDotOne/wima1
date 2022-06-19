@@ -19,6 +19,9 @@ import { iCreateNeed } from "./My/Need/iCreateNeed.js"
 import { iSaveNeed } from "./My/Need/iSaveNeed.js"
 import { iDeleteNeed } from "./My/Need/iDeleteNeed.js"
 
+import { iLoadMyProfilePaper } from "./ProfilePaper/iLoadMyProfilePaper.js"
+import { iLoadProfilePaper } from "./ProfilePaper/iLoadProfilePaper.js"
+
 const SocialRouter = express.Router()
 
 
@@ -42,6 +45,9 @@ SocialRouter.post("/CreateNeed", iUnivAuth, iCreateNeed)
 SocialRouter.post("/SaveNeed", iUnivAuth, iSaveNeed)
 SocialRouter.post("/DeleteNeed", iUnivAuth, iDeleteNeed)
 
+//Profile Paper 
+SocialRouter.get("/LoadMyProfilePaper", iUnivAuth, iLoadMyProfilePaper)
+SocialRouter.get("/LoadProfilePaper", iLoadProfile)
 
 
 export {

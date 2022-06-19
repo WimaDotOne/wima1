@@ -1,66 +1,108 @@
+import { useEffect, useState } from "react"
+import { EnumText, Get2, useShield } from "../../../../../libs/Core/Core1/fCore1"
 import { Div, LimitWidth } from "../../../../../libs/Core/Core2/fCore2"
+import { Personality16SelectOptions } from "../../../Enum/Personality16Enum"
+import { Personality2SelectOptions } from "../../../Enum/Personality2Enum"
+import { UniversityAffiliationSelectOptions } from "../../../Enum/UniversityAffiliationEnum"
+import { ZodiacSignSelectOptions } from "../../../Enum/ZodiacSignEnum"
+import { ISocialNeed } from "../../Model/ISocialNeed"
+import { ISocialProfile } from "../../Model/ISocialProfile"
+import { ISocialService } from "../../Model/ISocialService"
+import { NeedCard } from "../H/NeedCard/NeedCard"
 import { QuickInfo } from "../H/Resume/QuickInfo/QuickInfo"
 import { ResumeHeader } from "../H/Resume/ResumeHeader/ResumeHeader"
 import { ResumeParagraph, ResumeSubParagraph } from "../H/Resume/ResumeParagraph/ResumeParagraph"
 import { ResumeSectionTitle } from "../H/Resume/ResumeSectionTitle/ResumeSectionTitle"
 import { ServiceCard } from "../H/ServiceCard/ServiceCard"
+import { DetailPopUp } from "./DetailPopUp/DetailPopUp"
 import cl from "./ProfilePaper.module.scss"
 
 interface IProfilePaperProp {
-  
+  socialAccountId?: string
 }
 export function ProfilePaper({
-
+  socialAccountId
 }: IProfilePaperProp) {
 
+  const [profile, setProfile] = useState<ISocialProfile>()
+  const [services, setServices] = useState<Array<ISocialService>>([])
+  const [needs, setNeeds] = useState<Array<ISocialNeed>>([])
+  const [loaded, setLoaded] = useState<boolean>(false)
+  const [showDetail, setShowDetail] = useState<boolean>(false)
+  const [detailTitle, setDetailTitle] = useState<string>("")
+  const [detailDescription, setDetailDescription] = useState<string>("")
+
+  const shield = useShield()
+
+  async function loadProfilePaper() {
+    if(loaded) return
+    let url = "/social/LoadMyProfilePaper"
+    if(socialAccountId) {
+      url = `/social/LoadProfilePaper?socialAccountId=${socialAccountId}`
+    }
+    await Get2(shield, url,
+      (res)=>{
+        setLoaded(true)
+        setProfile(res.profile)
+        setServices(res.services)
+        setNeeds(res.needs)
+      })
+  }
+
+  useEffect(()=>{
+    loadProfilePaper()
+  })
+
   const quickInfo = [
-    { name: "Affiliation", value: "Alum"},
-    { name: "Major", value: "Math"},
-    { name: "Personality", value: "Introvert"},
-    { name: "16 Personality", value: "INFP"},
-    { name: "Sign", value: "Cancer" },
-    { name: "", value: "Programmer" },
+    { name: "Affiliation", value: EnumText(profile?.universityAffiliation, UniversityAffiliationSelectOptions)},
+    { name: "Major", value: profile?.major},
+    { name: "Personality", value: EnumText(profile?.personality2, Personality2SelectOptions)},
+    { name: "16 Personality", value: EnumText(profile?.personality16, Personality16SelectOptions)},
+    { name: "Sign", value: EnumText(profile?.zodiacSign, ZodiacSignSelectOptions) },
   ]
 
-  const aboutMe = `I am a dreamer, an entrepreneur. I like eating cookie
-         And I like tutoring students. I am good at math.`
+  const experiences = (profile?.experiences || "").split("\n")
+    .filter((exp)=> exp.trim())
+  const skills = (profile?.skills || "").split("\n")
+    .filter((skill)=> skill.trim())
 
-  const experiences = [
-    "I have math tutor math 222",
-    "I have math tutor math 537 for a semester",
-    "I volunteer at Madison Senior center and make websites for seniors in Dane county to find resources of for seniors in the area."
-  ]
+  const nonGoodsServices = services.filter((service)=> !service.isGoods)
+  const goods = services.filter((service)=> service.isGoods)
 
-  let services = [
-    { name: "Math Tutor", shortDescription: "Math 222, 221, 114, etc. Once a week on demand.", price: "$20 / hour"},
-    { name: "Uber service", shortDescription: "Take to shopping or airport", price: "$8 per mile"},
-    { name: "House renting", shortDescription: "Moving day find a place to stay", price: "Buy me a meal at Sichuan Flavor and a coffee at starbucks"},
-    { name: "Chinese Tutor", shortDescription: "Conversational Chinese 1 hour a week", price: "Free"},
-  ]
+  function openDetail(title?: string, description?: string) {
+    title = title || ""
+    description = description || ""
+    setDetailTitle(title)
+    setDetailDescription(description)
+    setShowDetail(true)
+  }
 
-  let goods = [
-    { name: "Keyboard piano", shortDescription: "It's oka", price: "$30"},
-    { name: "Real Analysis", shortDescription: "By Alexander Christoffel", price: "Free"},
-    { name: "Calculus II print book", shortDescription: "Paper print bind", price: "$1"},
-    { name: "Chemistry 22", shortDescription: "Version 6", price: "Free"},
-  ]
+  function GetOpenFun(service: ISocialService | ISocialNeed) {
+    let open = undefined
+    if((service.description || "").trim()) {
+      open = () => {
+        openDetail(service.name, service.description)
+      }
+    }
+    return open
+  }
 
   return(<>
     <LimitWidth maxWidth={800}>
-      <ResumeHeader text="Fan Zheng" />
+      <ResumeHeader text={`${profile?.givenName} ${profile?.familyInitial}`} />
       <QuickInfo quickInfo={quickInfo}/>
       <ResumeSectionTitle text="About me" />
-      <ResumeParagraph text={aboutMe} />
+      <ResumeParagraph text={profile?.aboutMe} />
       <ResumeSectionTitle text="Experience of helping others" />
       {
         experiences.map((exp, i)=>
-        <ResumeSubParagraph text={exp} />
+        <ResumeSubParagraph key={i} text={exp} />
         )
       }
       <ResumeSectionTitle text="Skills or resources that might help others" />
       {
-        experiences.map((exp, i)=>
-        <ResumeSubParagraph text={exp} />
+        skills.map((skill, i)=>
+        <ResumeSubParagraph key={i} text={skill} />
         )
       }
       <Div height={10} />
@@ -69,14 +111,11 @@ export function ProfilePaper({
       <ResumeSectionTitle text="Services" />
       <div className={cl.services}>
       {
-        services.map((service, i)=>
-        <ServiceCard name={service.name}
+        nonGoodsServices.map((service, i)=> 
+          <ServiceCard name={service.name}
             shortDescription={service.shortDescription}
             price={service.price}
-            onClick={()=>{
-
-            }}
-        />
+            onClick={GetOpenFun(service)}/>
         )
       }
       </div>
@@ -90,12 +129,30 @@ export function ProfilePaper({
         <ServiceCard name={good.name}
             shortDescription={good.shortDescription}
             price={good.price}
-            onClick={()=>{}}
+            onClick={GetOpenFun(good)}
         />
         )
       }
       </div>
+      <Div height={40} />
+    </LimitWidth>
+    <LimitWidth maxWidth={800} gray>
+      <ResumeSectionTitle text="Help I could use" />
+      <div className={cl.services}>
+      {
+        needs.map((need, i)=>
+        <NeedCard name={need.name}
+          shortDescription={need.shortDescription}
+          willPay={need.willPay}
+          onClick={GetOpenFun(need)}
+        />)
+      }
+      </div>
       <Div height={100} />
     </LimitWidth>
+
+    <DetailPopUp show={showDetail} setShow={setShowDetail} 
+      title={detailTitle} description={detailDescription}
+    />
   </>)
 }

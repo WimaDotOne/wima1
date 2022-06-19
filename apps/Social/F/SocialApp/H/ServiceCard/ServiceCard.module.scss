@@ -20,10 +20,13 @@
   border-radius: 10px;
   padding: 15px 20px;
   box-shadow: 0px 0.5px 4px #0a254033;
+  cursor: default;
+}
+.serviceCard.click {
   cursor: pointer;
 }
 
-.serviceCard:hover .name {
+.serviceCard.click:hover .name {
   text-decoration: underline;
 }
 

@@ -1,3 +1,4 @@
+import { ClassNames } from "../../../../../../libs/Core/Core1/fCore1"
 import cl from "./NeedCard.module.scss"
 
 interface INeedCardProp {
@@ -14,9 +15,11 @@ export function NeedCard({
   onClick
 }: INeedCardProp) {
   const willPayTooltip =  willPay ? "willing to pay": ""
+
+  const clClick = onClick ? cl.click : ""
   return(<>
   <div className={cl.needCardSpace}>
-    <div className={cl.needCard} onClick={onClick}>
+    <div className={ClassNames([cl.needCard, clClick])} onClick={onClick}>
       <div className={cl.name}>{name}</div>
       <div className={cl.shortDescription}>{shortDescription}</div>
       <div className={cl.willPay} title={willPayTooltip}>
