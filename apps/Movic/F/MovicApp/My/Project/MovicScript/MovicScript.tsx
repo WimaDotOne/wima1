@@ -54,7 +54,7 @@ export function MovicScript({
     LoadFile()
   })
 
-  const scriptMaxLength = +(wimaEnv?.movicEnv?.scriptFileMaxLength || MovicConfig.scritptFileMaxLength)
+  const scriptMaxLength = +(wimaEnv?.movicScriptFileMaxLength || MovicConfig.scritptFileMaxLength)
   
   return(<>
     <FileNameBar fileName={project.movicTitle} />

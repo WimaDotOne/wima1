@@ -17,10 +17,10 @@ export function BasicInfo1({
 }: IBasicInfo1Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [givenName, setGivenName] = useState<string>("")
-  const [familyName, setFamilyName] = useState<string>("")
-  const [universityAffiliation, setUniversityAffiliation] = useState<string>("")
-  const [major, setMajor] = useState<string>("")
+  const [givenName, setGivenName] = useState<string>()
+  const [familyName, setFamilyName] = useState<string>()
+  const [universityAffiliation, setUniversityAffiliation] = useState<string>()
+  const [major, setMajor] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{

@@ -17,7 +17,7 @@ export function BasicInfo4({
 }: IBasicInfo4Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [experiences, setExperiences] = useState<string>("")
+  const [experiences, setExperiences] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{

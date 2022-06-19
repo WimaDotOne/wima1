@@ -17,7 +17,7 @@ export function BasicInfo5({
 }: IBasicInfo5Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [skills, setSkills] = useState<string>("")
+  const [skills, setSkills] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{

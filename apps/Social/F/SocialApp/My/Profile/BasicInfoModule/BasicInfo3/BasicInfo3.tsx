@@ -17,7 +17,7 @@ export function BasicInfo3({
 }: IBasicInfo3Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [aboutMe, setAboutMe] = useState<string>("")
+  const [aboutMe, setAboutMe] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{

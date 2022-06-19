@@ -17,9 +17,9 @@ export function BasicInfo2({
 }: IBasicInfo2Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [personality2, setPersonality2] = useState<string>("")
-  const [personality16, setPersonality16] = useState<string>("")
-  const [zodiacSign, setZodiacSign] = useState<string>("")
+  const [personality2, setPersonality2] = useState<string>()
+  const [personality16, setPersonality16] = useState<string>()
+  const [zodiacSign, setZodiacSign] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{
