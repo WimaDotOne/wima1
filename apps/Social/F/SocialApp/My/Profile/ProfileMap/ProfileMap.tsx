@@ -102,7 +102,7 @@ export function ProfileMap({
         {
           socialAccountId && hasProfile && profileUrl ? 
           <div className={cl.shareInfo}>
-            <div className={cl.sharePrompt}>The profile is public to people who have the following link.</div>
+            <div className={cl.sharePrompt}>The profile is also public to people who have the following link.</div>
             <a className={cl.link} target="_blank" href={profileUrl}>{profileUrl}</a>
           </div>:null
         }
