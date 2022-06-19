@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { SocialColor } from '../../../apps/Social/F/CSS/SocialColor'
 import { ProfilePaper } from '../../../apps/Social/F/SocialApp/ProfilePaper/ProfilePaper'
@@ -12,6 +13,11 @@ export default function ProfilePage() {
     router.push("/apps/Social")
   }
   return (<>
+    <Head>
+      <title>Social</title>
+      <meta name="description" content="Social" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <ProfilePaper socialAccountId={socialAccountId} />
 
     <LimitWidth maxWidth={800}>
