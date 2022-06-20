@@ -9,7 +9,7 @@ export const bConfig = {
   sendGridSenderName: "Wima Auto",
   brand: "Wima",
 }
-
+ 
 export const ImageUploadConfig = {
   maxFileSize : 10*1000*1000,
   maxTotalFileSize : 50*1000*1000

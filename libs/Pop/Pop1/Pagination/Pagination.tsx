@@ -1,5 +1,7 @@
 import { SvgIcon } from "../../../Core/Core2/Svg/SvgIcon"
 import cl from "./Pagination.module.scss"
+import { MovicPagination } from "./PaginationStyle/MovicPagination"
+import { QuoraPagination } from "./PaginationStyle/QuoraPagination"
 
 interface IPaginationProp {
   page: number | string
@@ -64,66 +66,26 @@ export function Pagination({
     case PaginationType.Movic:
       arrowColor = arrowColor || "white"
       textColor = textColor || "white"
-      return(<>
-      <div className={cl.movic} style={{color: textColor}}>
-        <div className={cl.pagination}>
-          <div className={cl.paddle} onClick={prevPage}>
-            <SvgIcon name="chevron.left" width={20}
-              color={arrowColor} />
-          </div>
-          <div className={cl.inputWrap}>
-            <input type="text" value={page || ""}
-              style={{color: textColor}}
-              className={cl.input}
-              onChange={(e)=>{
-                changePage(e.target.value)
-              }}
-            />
-          </div>
-          <div className={cl.totalPage}>
-            <div className={cl.totalPageInner}> / {totalPage}</div>
-          </div>
-        
-          <div className={cl.paddle} onClick={nextPage}>
-            <SvgIcon name="chevron.right" width={20} 
-              color={arrowColor} />
-          </div>
-        </div>
-      </div>
-      </>)
+      return(
+        <MovicPagination page={page} totalPage={totalPage}
+          textColor={textColor} arrowColor={arrowColor}
+          prevPage={prevPage} nextPage={nextPage}
+          changePage={changePage}
+        />
+      )
 
 
     default:
     const arrowBlue="#2e69ff"
     arrowColor = arrowColor || arrowBlue
     textColor = textColor || "black"
-    return(<>
-    <div style={{color: textColor}}>
-        <div className={cl.pagination}>
-          <div className={cl.paddle} onClick={prevPage}>
-            <SvgIcon name="fatarrow.left" width={20}
-              color={arrowColor} />
-          </div>
-          <div className={cl.inputWrap}>
-            <input type="text" value={page || ""}
-              style={{color: textColor}}
-              className={cl.input}
-              onChange={(e)=>{
-                changePage(e.target.value)
-              }}
-            />
-          </div>
-          <div className={cl.totalPage}>
-            <div className={cl.totalPageInner}> / {totalPage}</div>
-          </div>
-        
-          <div className={cl.paddle} onClick={nextPage}>
-            <SvgIcon name="fatarrow.right" width={20} 
-              color={arrowColor} />
-          </div>
-        </div>
-      </div>
-    </>)
+    return(
+      <QuoraPagination page={page} totalPage={totalPage}
+        textColor={textColor} arrowColor={arrowColor}
+        prevPage={prevPage} nextPage={nextPage}
+        changePage={changePage}
+      />
+    )
   }
 
   

@@ -45,6 +45,9 @@ import { SvgUnPin } from "./Office/Pin/SvgUnpin"
 import { SvgUniversity } from "./School/University/SvgUniversity"
 import { SvgProfile } from "./Social/Profile/SvgProfile"
 import { SvgDashboard } from "./Common/Dashboard/SvgDashboard"
+import { SvgGoods } from "./Social/Goods/SvgGoods"
+import { SvgService } from "./Social/Service/SvgService"
+import { SvgHelp } from "./Social/Help/SvgHelp"
 
 export function SvgIcon({
   name,
@@ -137,7 +140,9 @@ export function SvgIcon({
 
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
-
+    case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />
+    case "service": return <SvgService width={width} fill={color} />
+    case "help": return <SvgHelp width={width} fill={color} />
 
     default: return null
   }

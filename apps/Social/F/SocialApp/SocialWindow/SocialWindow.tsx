@@ -63,6 +63,10 @@ export function SocialWindow({
 
 export const AppTurn = {
 
+  Services: "Services",
+  Goods: "Goods",
+  Needs: "Needs",
+
   Profile: "Profile",
 
   About: "About",
@@ -73,6 +77,9 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
+    case AppTurn.Services: return true
+    case AppTurn.Goods: return true
+    case AppTurn.Needs: return true
     case AppTurn.Profile: return true
     default: return false
   }
@@ -81,7 +88,10 @@ function IsViewRequreLogin(viewId?: string) {
 function SocialMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
   const supplyGroup = new GroupModel("Supply", false)
+  supplyGroup.AddItem(new ItemModel(AppTurn.Services, "Services", "service", true))
+  supplyGroup.AddItem(new ItemModel(AppTurn.Goods, "Goods", "goods", true))
   const demandGroup = new GroupModel("Demand", false)
+  demandGroup.AddItem(new ItemModel(AppTurn.Needs, "Ideas", "help", true))
 
   const myGroup = new GroupModel("My Business", false)
   myGroup.AddItem(new ItemModel(AppTurn.Profile, "Profile", "dashboard", true))
