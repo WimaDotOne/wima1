@@ -41,5 +41,7 @@ export const MovicConfig = {
 
 export const SocialConfig = {
   needMaxPerAccount: 20,
-  serviceMaxPerAccount: 20
+  serviceMaxPerAccount: 20,
+  needLoadMax: 10000,
+  needPageSize: 500
 }

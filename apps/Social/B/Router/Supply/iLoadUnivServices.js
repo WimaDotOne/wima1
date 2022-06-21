@@ -1,19 +1,20 @@
 import { SocialConfig } from "../../../../../bConfig.js"
-import SocialNeed from "../../Model/SocialNeed.js"
+import SocialService from "../../Model/SocialService.js"
 import { asyGetUnivAccountInfo } from "../H/GetUnivAccountInfo.js"
 import { PageBreak } from "../H/PageBreak.js"
 
-export async function iLoadUnivNeeds(req, res) {
+export async function iLoadUnivServices(req, res) {
   try{
 
     const univAccountInfo = await asyGetUnivAccountInfo(req)
     const domain = univAccountInfo.domain
 
-    const needs = await SocialNeed.find({
-      domain
+    const services = await SocialService.find({
+      domain,
+      isGoods: false
     }).sort({createUtcDay: -1}).limit(SocialConfig.needLoadMax)
 
-    const pages = PageBreak(needs, SocialConfig.needPageSize)
+    const pages = PageBreak(services, SocialConfig.needPageSize)
     return res.json({ok: true, pages})
 
   } catch(err) {
