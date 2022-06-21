@@ -40,10 +40,13 @@ export async function iCreateProfile(req, res) {
       return res.json({ ok: false, error: "Cannot find university account" })
     }
 
+    const domain = univAccount.domain
+
     let socialAccount = null
     if(!univAccount.socialAccountId) {
       socialAccount = new SocialAccount({
-        _id: mongoose.Types.ObjectId()
+        _id: mongoose.Types.ObjectId(),
+        domain
       })
 
       await socialAccount.save()
@@ -64,6 +67,7 @@ export async function iCreateProfile(req, res) {
 
     const profile = new SocialProfile({
       _id: mongoose.Types.ObjectId(),
+      domain,
       givenName,
       familyName,
       universityAffiliation,

@@ -24,6 +24,10 @@ import { asyNewTempFolder, asyRemoveTempFolder,
   asyShrinkImageFiles
 } from "./FileUp/bFileUp.js"
 
+import {
+  NowUtcDay
+} from "./Util/B/Time/Day.js"
+
 export {
   IsEmail, 
   IsUniversityEmail,
@@ -50,5 +54,7 @@ export {
 
   asyShrinkImageFiles,
 
-  IsEnumExit
+  IsEnumExit,
+
+  NowUtcDay
 }

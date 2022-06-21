@@ -1,5 +1,5 @@
 import SocialNeed from "../../../Model/SocialNeed.js"
-import { asyGetSocialAccountId } from "../../H/GetSocialAccountId.js"
+import { asyGetUnivAccountInfo } from "../../H/GetUnivAccountInfo.js"
 
 export async function iDeleteNeed(req, res) {
   try{
@@ -10,7 +10,9 @@ export async function iDeleteNeed(req, res) {
     if(!need) {
       return res.json({ ok: false, error: "Cannot find the need" })
     }
-    const socialAccountId = await asyGetSocialAccountId(req.univAccount._id)
+
+    const univAccountInfo = await asyGetUnivAccountInfo(req)
+    const socialAccountId = univAccountInfo.socialAccountId
   
     if(
       !socialAccountId || !need.socialAccountId ||

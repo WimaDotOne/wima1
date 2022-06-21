@@ -9,14 +9,13 @@ export async function iHasProfile(req, res) {
     if(!univAccount) {
       return res.json({ ok: false, error: "Cannot find university account" })
     }
-  
     const socialAccount = univAccount.socialAccountId
-    const socialAccountId = socialAccount._id.toString()
 
   
     if(!socialAccount || !socialAccount._id) {
       return res.json({ ok: true })
     }
+    const socialAccountId = socialAccount._id.toString()
   
     if(!socialAccount.socialProfileId) {
       return res.json({ ok: true })
@@ -27,6 +26,7 @@ export async function iHasProfile(req, res) {
     if(profile && profile._id) {
       hasProfile = true
     }
+
     return res.json({ ok: true, hasProfile, socialAccountId})
     
   } catch(err) {

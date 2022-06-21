@@ -2,12 +2,13 @@ import SocialAccount from "../../Model/SocialAccount.js"
 import SocialNeed from "../../Model/SocialNeed.js"
 import SocialService from "../../Model/SocialService.js"
 import { MarkFamilyName } from "../H/MarkFamilyName.js"
-import { asyGetSocialAccountId } from "../H/GetSocialAccountId.js"
+import { asyGetUnivAccountInfo } from "../H/GetUnivAccountInfo.js"
 
 export async function iLoadMyProfilePaper(req, res) {
   try{
     
-    const socialAccountId = await asyGetSocialAccountId(req.univAccount._id)
+    const univAccountInfo = await asyGetUnivAccountInfo(req)
+    const socialAccountId = univAccountInfo.socialAccountId
     
     const socialAccount = await SocialAccount.findById(socialAccountId)
       .populate("socialProfileId")

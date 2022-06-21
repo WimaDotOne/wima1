@@ -2,6 +2,7 @@ import mongoose from "mongoose"
 
 const schema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
+  domain: {type: String, index: true, required: true},
 
   givenName: { type: String, index: true, required: true},
   familyName: { type: String, index: true, required: true},

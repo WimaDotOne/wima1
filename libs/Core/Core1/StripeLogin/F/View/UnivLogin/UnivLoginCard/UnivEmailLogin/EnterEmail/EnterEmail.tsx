@@ -26,22 +26,18 @@ export function EnterEmail({
   const [givenName, setGivenName] = useState<string>(givenNameRef?.current || "")
   const [familyName, setFamilyName] = useState<string>(familyNameRef?.current || "")
   const [emailError, setEmailError] = useState<string>("")
-  const [givenNameError, setGivenNameError] = useState<string>("")
-  const [familyNameError, setFamilyNameError] = useState<string>("")
   const [disableButton, setDisableButton] = useState<boolean>(false)
 
   const shield = useShield()
 
   function onChangeGivenName(newValue: string) {
     setDisableButton(false)
-    setGivenNameError("")
 
     setGivenName(newValue)
   }
 
   function onChangeFamilyName(newValue: string) {
     setDisableButton(false)
-    setFamilyNameError("")
 
     setFamilyName(newValue)
   }
@@ -55,14 +51,7 @@ export function EnterEmail({
 
   function Validate() {
     let isValid = true
-    if(!givenName) {
-      isValid = false
-      setGivenNameError("Required")
-    }
-    if(!familyName) {
-      isValid = false
-      setFamilyNameError("Required")
-    }
+
     if(!email) {
       isValid = false
       setEmailError("Required")
@@ -100,26 +89,16 @@ export function EnterEmail({
     <Description>
       Your university email will be your identification and we'll send you a one-time passcode to sign in.
     </Description>
+    <Div height={10} />
+    <Description>
+      Enter your name if it your first time to log in or if you want to change your name.
+    </Description>
     <Div height={24} />
     <TextField prompt="First Name" value={givenName} 
       onChange={onChangeGivenName} maxLength={GENERAL_INPUT_MAX}/>
-    {
-      givenNameError ?
-      <>
-      <Div height={6}/>
-      <Error text={givenNameError} />
-      </>:null
-    }
     <Div height={12} />
     <TextField prompt="Last Name" value={familyName} 
       onChange={onChangeFamilyName} maxLength={GENERAL_INPUT_MAX}/>
-    {
-      familyNameError ?
-      <>
-      <Div height={6}/>
-      <Error text={familyNameError} />
-      </>:null
-    }
     <Div height={12} />
     <TextField prompt="University Email" value={email} 
       onChange={onChangeEmail} maxLength={GENERAL_INPUT_MAX}/>

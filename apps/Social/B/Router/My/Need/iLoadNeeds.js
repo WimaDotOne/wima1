@@ -1,9 +1,10 @@
 import SocialNeed from "../../../Model/SocialNeed.js"
-import { asyGetSocialAccountId } from "../../H/GetSocialAccountId.js"
+import { asyGetUnivAccountInfo } from "../../H/GetUnivAccountInfo.js"
 
 export async function iLoadNeeds(req, res) {
   try{
-    const socialAccountId = await asyGetSocialAccountId(req.univAccount._id)
+    const univAccountInfo = await asyGetUnivAccountInfo(req)
+    const socialAccountId = univAccountInfo.socialAccountId
 
     const needs = await SocialNeed.find({
       socialAccountId

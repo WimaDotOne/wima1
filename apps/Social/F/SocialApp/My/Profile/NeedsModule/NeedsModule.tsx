@@ -63,7 +63,8 @@ export function NeedsModule({
     <div className={cl.needs}>
     {
       needs.map((need, i)=>
-        <NeedCard name={need.name}
+        <NeedCard key={need._id.toString()}
+          name={need.name}
           shortDescription={need.shortDescription}
           description={need.description}
           willPay={need.willPay}

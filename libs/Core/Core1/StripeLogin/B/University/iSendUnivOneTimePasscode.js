@@ -12,10 +12,9 @@ export async function iSendUnivOneTimePasscode(req, res) {
     const givenName = (req.body.givenName || "").trim()
     const familyName = (req.body.familyName || "").trim()
 
-    if(!givenName || !familyName || 
-        givenName.length > GENERAL_INPUT_MAX ||
+    if( givenName.length > GENERAL_INPUT_MAX ||
         familyName.length > GENERAL_INPUT_MAX) {
-      return res.json({ok: false, error: "Invalid Name"})
+      return res.json({ok: false, error: "Name is too long"})
     }
 
     if(email.length > GENERAL_INPUT_MAX || !IsEmail(email)) {
@@ -30,6 +29,11 @@ export async function iSendUnivOneTimePasscode(req, res) {
       email
     })
     if(!univAccount) {
+
+      if(!familyName || !givenName) {
+        return res.json({ok: false, error: "Full name is required for first time login"})
+      }
+
       univAccount = new UniversityAccount({
         _id: mongoose.Types.ObjectId(),
         email,
@@ -40,8 +44,12 @@ export async function iSendUnivOneTimePasscode(req, res) {
     await MonitorDailyPasscodeSend()
 
     // Modify name if account exists
-    univAccount.givenName = givenName
-    univAccount.familyName = familyName
+    if(givenName) {
+      univAccount.givenName = givenName
+    }
+    if(familyName) {
+      univAccount.familyName = familyName
+    }
     const code = RandomPasscode(6)
     univAccount.oneTimePasscode = code
     univAccount.numOneTimePasscodeFail = 0

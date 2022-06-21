@@ -1,7 +1,8 @@
 import mongoose from "mongoose"
-import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX } from "../../../../../../bConfig.js"
+import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX, SocialConfig } from "../../../../../../bConfig.js"
+import { NowUtcDay } from "../../../../../../libs/Core/Core1/bCore1.js"
 import SocialService from "../../../Model/SocialService.js"
-import { asyGetSocialAccountId } from "../../H/GetSocialAccountId.js"
+import { asyGetUnivAccountInfo } from "../../H/GetUnivAccountInfo.js"
 
 export async function iCreateService(req, res) {
   try{
@@ -28,16 +29,29 @@ export async function iCreateService(req, res) {
       return res.json({ ok: false, error: "Name is required" })
     }
 
-    const socialAccountId = await asyGetSocialAccountId(req.univAccount._id)
+    const univAccountInfo = await asyGetUnivAccountInfo(req)
+    const socialAccountId = univAccountInfo.socialAccountId
+    const domain = univAccountInfo.domain
+    const createUtcDay = NowUtcDay()
+
+    const count = await SocialService.count({
+      socialAccountId
+    })
+    const maxCount = SocialConfig.serviceMaxPerAccount
+    if(count > maxCount) {
+      return res.json({ ok: false, error: `One can create at most ${maxCount} goods or services` })
+    }
 
     const service = new SocialService({
       _id: mongoose.Types.ObjectId(),
+      domain,
+      socialAccountId,
+      createUtcDay,
       name,
       shortDescription,
       price,
       description,
-      isGoods,
-      socialAccountId
+      isGoods
     })
 
     await service.save()

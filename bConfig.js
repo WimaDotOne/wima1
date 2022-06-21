@@ -40,5 +40,6 @@ export const MovicConfig = {
 }
 
 export const SocialConfig = {
-  
+  needMaxPerAccount: 20,
+  serviceMaxPerAccount: 20
 }

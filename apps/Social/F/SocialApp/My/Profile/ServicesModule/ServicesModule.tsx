@@ -74,7 +74,9 @@ export function ServicesModule({
     <div className={cl.services}>
     {
       nonGoodsServices.map((service, i)=>
-        <ServiceCard name={service.name}
+        <ServiceCard 
+          key={service._id.toString()}
+          name={service.name}
           shortDescription={service.shortDescription}
           description={service.description}
           price={service.price}
