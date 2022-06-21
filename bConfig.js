@@ -43,5 +43,5 @@ export const SocialConfig = {
   needMaxPerAccount: 20,
   serviceMaxPerAccount: 20,
   needLoadMax: 10000,
-  needPageSize: 500
+  needPageSize: 300
 }
