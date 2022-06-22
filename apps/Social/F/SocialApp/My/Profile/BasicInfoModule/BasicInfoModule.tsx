@@ -14,6 +14,7 @@ import { BasicInfo2 } from "./BasicInfo2/BasicInfo2";
 import { BasicInfo3 } from "./BasicInfo3/BasicInfo3";
 import { BasicInfo4 } from "./BasicInfo4/BasicInfo4";
 import { BasicInfo5 } from "./BasicInfo5/BasicInfo5";
+import { BasicInfo6 } from "./BasicInfo6/BasicInfo6";
 import cl from "./BasicInfoModule.module.scss"
 
 interface IBasicInfoModuleProp {
@@ -67,6 +68,9 @@ export function BasicInfoModule({
     <Div height={10} />
     <SectionLine />
     <BasicInfo3 profile={profile} refresh={reloadProfile}/>
+    <Div height={10} />
+    <SectionLine />
+    <BasicInfo6 profile={profile} refresh={reloadProfile}/>
     <Div height={10} />
     <SectionLine />
     <BasicInfo4 profile={profile} refresh={reloadProfile}/>

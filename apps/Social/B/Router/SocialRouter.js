@@ -8,6 +8,7 @@ import { iSaveProfile2 } from "./My/Profile/iSaveProfile2.js"
 import { iSaveProfile3 } from "./My/Profile/iSaveProfile3.js"
 import { iSaveProfile4 } from "./My/Profile/iSaveProfile4.js"
 import { iSaveProfile5 } from "./My/Profile/iSaveProfile5.js"
+import { iSaveProfile6 } from "./My/Profile/iSaveProfile6.js"
 
 import { iLoadServices } from "./My/Service/iLoadServices.js"
 import { iCreateService } from "./My/Service/iCreateService.js"
@@ -37,6 +38,7 @@ SocialRouter.post("/SaveProfile2", iUnivAuth, iSaveProfile2)
 SocialRouter.post("/SaveProfile3", iUnivAuth, iSaveProfile3)
 SocialRouter.post("/SaveProfile4", iUnivAuth, iSaveProfile4)
 SocialRouter.post("/SaveProfile5", iUnivAuth, iSaveProfile5)
+SocialRouter.post("/SaveProfile6", iUnivAuth, iSaveProfile6)
 
 SocialRouter.get("/LoadServices", iUnivAuth, iLoadServices)
 SocialRouter.post("/CreateService", iUnivAuth, iCreateService)

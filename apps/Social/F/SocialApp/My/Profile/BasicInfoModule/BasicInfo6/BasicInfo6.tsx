@@ -3,31 +3,31 @@ import { Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1
 import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
 import { SocialColor } from "../../../../../CSS/SocialColor"
 import { ISocialProfile } from "../../../../../Model/ISocialProfile"
-import { BasicInfo4Edit } from "./BasicInfo4Edit/BasicInfo4Edit"
-import { BasicInfo4Read } from "./BasicInfo4Read/BasicInfo4Read"
+import { BasicInfo6Edit } from "./BasicInfo6Edit/BasicInfo6Edit"
+import { BasicInfo6Read } from "./BasicInfo6Read/BasicInfo6Read"
 
-interface IBasicInfo4Prop {
+interface IBasicInfo6Prop {
   profile: ISocialProfile
   refresh: ()=>void
 }
 
-export function BasicInfo4({
+export function BasicInfo6({
   profile,
   refresh
-}: IBasicInfo4Prop) {
+}: IBasicInfo6Prop) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [experiences, setExperiences] = useState<string>()
+  const [experiences2, setExperiences2] = useState<string>()
   const shield = useShield()
 
   useEffect(()=>{
-    setExperiences(profile.experiences)
+    setExperiences2(profile.experiences2)
   }, [profile])
 
-  async function saveProfile4() {
-    await Post2(shield, "/social/SaveProfile4",
+  async function saveProfile6() {
+    await Post2(shield, "/social/SaveProfile6",
     {
-      experiences
+      experiences2
     }, (res)=>{
       setIsEdit(false)
       refresh()
@@ -40,22 +40,22 @@ export function BasicInfo4({
   }
 
   return(<>
-  <ReadEdit title="Experiences of Helping Others"
-    description="List experiences of Volunteering, Tutoring, or Jobs that directly serve other people."
+  <ReadEdit title="Experiences of being helped"
+    description="List experiences of receiving help from other people. For example tutoring, moving, support. List one experience in one line without newline breaks."
     isEdit={isEdit}
     setIsEdit={setIsEdit}
     onCancel={onCancel}
-    onSave={saveProfile4}
+    onSave={saveProfile6}
     color={SocialColor.themeBlue}
   >
   {
     isEdit ? 
-    <BasicInfo4Edit 
-      experiences={experiences}
-      setExperiences={setExperiences}
+    <BasicInfo6Edit 
+      experiences2={experiences2}
+      setExperiences2={setExperiences2}
     />:
-    <BasicInfo4Read 
-      experiences={experiences}
+    <BasicInfo6Read 
+      experiences2={experiences2}
     />
   }
   </ReadEdit>

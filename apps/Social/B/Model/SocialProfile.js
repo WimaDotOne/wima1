@@ -12,7 +12,8 @@ const schema = mongoose.Schema({
   personality16: { type: String },
   zodiacSign: { type: String },
   aboutMe: { type: String },
-  experiences: { type: String },
+  experiences2: { type: String }, //experience of being helped
+  experiences: { type: String }, //experience of helping others
   skills: { type: String }
 }, {
   timestamps: { currentTime: () => Date.now() }

@@ -65,6 +65,8 @@ export function   ProfilePaper({
 
   const experiences = (profile?.experiences || "").split("\n")
     .filter((exp)=> exp.trim())
+  const experiences2 = (profile?.experiences2 || "").split("\n")
+    .filter((exp)=> exp.trim())
   const skills = (profile?.skills || "").split("\n")
     .filter((skill)=> skill.trim())
 
@@ -97,6 +99,12 @@ export function   ProfilePaper({
       <QuickInfo quickInfo={quickInfo}/>
       <ResumeSectionTitle text="About me" />
       <ResumeParagraph text={profile.aboutMe} />
+      <ResumeSectionTitle text="Experience of being helped" />
+      {
+        experiences2.map((exp, i)=>
+        <ResumeSubParagraph key={"exp2"+i} text={exp} />
+        )
+      }
       <ResumeSectionTitle text="Experience of helping others" />
       {
         experiences.map((exp, i)=>

@@ -10,6 +10,7 @@ export function MarkFamilyName(profile) {
     personality16: profile.personality16,
     zodiacSign: profile.zodiacSign,
     aboutMe: profile.aboutMe,
+    experiences2: profile.experiences2,
     experiences: profile.experiences,
     skills: profile.skills
   }

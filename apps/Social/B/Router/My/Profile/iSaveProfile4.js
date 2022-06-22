@@ -7,7 +7,7 @@ export async function iSaveProfile4(req, res) {
     const experiences = (req.body.experiences || "").trim()
 
     if(experiences.length > GENERAL_TEXTAREA_MAX) {
-      return res.json({ ok: false, error: "About Me is too long" })
+      return res.json({ ok: false, error: "Experience is too long" })
     }
 
     const profile = await asyGetSocialProfile(req.univAccount._id)

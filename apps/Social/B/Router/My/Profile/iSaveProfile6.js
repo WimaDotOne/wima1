@@ -1,13 +1,13 @@
 import { GENERAL_TEXTAREA_MAX } from "../../../../../../bConfig.js"
 import { asyGetSocialProfile } from "../../H/GetSocialProfile.js"
 
-export async function iSaveProfile5(req, res) {
+export async function iSaveProfile6(req, res) {
   try{
 
-    const skills = (req.body.skills || "").trim()
+    const experiences2 = (req.body.experiences2 || "").trim()
 
-    if(skills.length > GENERAL_TEXTAREA_MAX) {
-      return res.json({ ok: false, error: "Skills is too long" })
+    if(experiences2.length > GENERAL_TEXTAREA_MAX) {
+      return res.json({ ok: false, error: "Experience is too long" })
     }
 
     const profile = await asyGetSocialProfile(req.univAccount._id)
@@ -16,7 +16,7 @@ export async function iSaveProfile5(req, res) {
       return res.json({ ok: false, error: "For some reason, profile cannot be found." })
     }
 
-    profile.skills = skills
+    profile.experiences2 = experiences2
 
     await profile.save()
 

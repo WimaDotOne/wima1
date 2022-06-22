@@ -8,6 +8,7 @@ export interface ISocialProfile {
   personality16?: string
   zodiacSign?: string
   aboutMe?: string
+  experiences2?: string
   experiences?: string
   skills?: string
 }
