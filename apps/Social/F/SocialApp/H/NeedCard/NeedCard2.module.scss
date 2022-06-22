@@ -1,9 +1,9 @@
-.serviceCardSpace {
+.needCardSpace {
   width: 170px;
   padding: 5px;
 }
 
-.serviceCard {
+.needCard {
   background-color: white;
   border-radius: 10px;
   padding: 0;
@@ -11,11 +11,11 @@
   cursor: default;
   overflow: hidden;
 }
-.serviceCard.click {
+.needCard.click {
   cursor: pointer;
 }
 
-.serviceCard.click:hover .name {
+.needCard.click:hover .name {
   color: #f6f9fc;
   background-color: #0a2540cc;
 }
