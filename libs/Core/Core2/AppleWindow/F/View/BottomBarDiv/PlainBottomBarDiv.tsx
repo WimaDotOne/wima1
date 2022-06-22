@@ -5,7 +5,7 @@ interface IPlainBottomBarDivProp {
   children: ReactNode
 }
 export function PlainBottomBarDiv({
-  children,
+  children
 }:IPlainBottomBarDivProp) {
   return(<>
     <div className={cl.bottomBarDiv}>

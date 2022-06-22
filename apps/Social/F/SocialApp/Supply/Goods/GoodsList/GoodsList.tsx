@@ -11,11 +11,13 @@ import { SocialWindow } from "../../../SocialWindow/SocialWindow"
 import cl from "./GoodsList.module.scss"
 
 interface IGoodsListProp {
-
+  goDetail: ()=>void
+  setSelectedGood: (good: ISocialService)=>void
 }
 
 export function GoodsList({
-
+  goDetail,
+  setSelectedGood
 }: IGoodsListProp) {
 
   const [pages, setPages] = useState<Array<Array<ISocialService>>>([])
@@ -56,6 +58,10 @@ export function GoodsList({
         <ServiceCard2 name={good.name} key={i}
           shortDescription={good.shortDescription}
           price={good.price}
+          onClick={()=>{
+            setSelectedGood(good)
+            goDetail()
+          }}
         />
         )
       }
