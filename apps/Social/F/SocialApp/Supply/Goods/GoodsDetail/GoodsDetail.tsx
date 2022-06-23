@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { GENERAL_TEXTAREA_MAX } from "../../../../../../../bConfig"
+import { Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { TextArea1 } from "../../../../../../../libs/Core/Core1/Fields/TextArea/TextArea1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Button1, Div, LimitWidth } from "../../../../../../../libs/Core/Core2/fCore2"
 import { SectionLine } from "../../../../../../../libs/Pop/Pop1/ReadEdit/SectionLine"
@@ -23,9 +24,17 @@ export function GoodsDetail({
 }: IGoodsDetailProp) {
 
   const [message, setMessage] = useState<string>("")
+  const [showConfirmation, setShowConfirmation] = useState<boolean>(false)
+  const shield = useShield()
 
   async function reply() {
-    
+    if(!good) return
+    await Post2(shield, "/social/ReplyService", {
+      message,
+      serviceId: (good._id || "").toString()
+    },(res)=>{
+      setShowConfirmation(true)
+    })
   }
 
   return(<>
@@ -41,13 +50,24 @@ export function GoodsDetail({
     <Div height={10} />
     <Button1 text="View Profile" onClick={goProfile} color={SocialColor.themeBlue} />
     <SectionLine />
-    <Div height={20} />
-    <TextArea1 prompt="Reply"
-      value={message} onChange={(value)=>{setMessage(value)}} 
-      maxLength={GENERAL_TEXTAREA_MAX} rows={4}
-    />
-    <Div height={5} />
-    <Button1 text="Reply" onClick={reply} color={SocialColor.themeBlue} />
+    {
+      showConfirmation ? 
+      <>
+      <div className={cl.confirmation}>
+        You replied to the post. You and the other person should soon receive email notifications containing the other's email address. Continue to communicate using emails.
+      </div>
+      </>: 
+      <>
+        <Div height={20} />
+        <TextArea1 prompt="Reply (an email will be sent to you and the other person with contact information)"
+          value={message} onChange={(value)=>{setMessage(value)}} 
+          maxLength={GENERAL_TEXTAREA_MAX} rows={4}
+        />
+        <Div height={5} />
+        <Button1 text="Reply" onClick={reply} color={SocialColor.themeBlue} />
+      </>
+    }
+   
   </LimitWidth>
   
   <AppleWindowBottomBarFill />

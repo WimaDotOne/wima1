@@ -4,6 +4,7 @@ import { AppleWindowBottomBarFill, Div, LimitWidth } from "../../../../../../../
 import { Pagination, PaginationType } from "../../../../../../../libs/Pop/Pop1/fPop1"
 import { AppleNewsHeader1 } from "../../../../../../../libs/Pop/Pop2/fPop2"
 import { AppleWindowBottomBar } from "../../../../../../H/AppleWindowBottomBar"
+import { useWimaUser } from "../../../../../../Wima/fWima"
 import { SocialColor } from "../../../../CSS/SocialColor"
 import { ISocialNeed } from "../../../../Model/ISocialNeed"
 import { NeedCard2 } from "../../../H/NeedCard/NeedCard2"
@@ -24,12 +25,14 @@ export function NeedList({
   const [page, setPage] = useState<number | string>(1)
   const [loaded, setLoaded] = useState<boolean>(false)
   const shield = useShield()
+  const user = useWimaUser()
 
   const needsPage = pages[+page-1] || []
   const totalPage = pages.length || 1
 
   async function loadUnivNeed() {
     if(loaded) return
+    if(!user?.isLoggedInUniv) return
     await Get2(shield, "/social/LoadUnivNeeds", (res)=>{
       setLoaded(true)
       setPages(res.pages || [])

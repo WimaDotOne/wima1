@@ -702,7 +702,7 @@ CONNELL: There's a science to it. You're probably pretty good at science.
 JOEL: Okay, observe. Two options. I can play it safe, pick them off from back here, or I can rush into the breach, guns a-blazing. Make a run right at the cortex, and bombs away.
 ---
 [m155.jpg
-JOEL: Fortune favors the bold. Birgil said that.
+JOEL: Fortune favors the bold. Virgil said that.
 EM: I'm sure Virgil had Bionic Mutant in mind. I'm gonna punch out.
 JAMES: All right, bye.
 JOEL: Your turn, man.

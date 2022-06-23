@@ -23,8 +23,18 @@ export async function asyGetUnivAccountInfo(req) {
     throw new Error("Domain is missing")
   }
 
+  const email = univAccount.email
+  if(!email || !univAccount.emailVerified) {
+    throw new Error("Email is missing")
+  }
+
+  const givenName = univAccount.givenName
+
   return {
+    univAccountId: univAccount._id,
     domain,
+    email,
+    givenName,
     socialAccountId: socialAccount._id
   }
 }

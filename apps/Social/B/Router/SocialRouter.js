@@ -25,6 +25,7 @@ import { iLoadProfilePaper } from "./ProfilePaper/iLoadProfilePaper.js"
 import { iLoadUnivNeeds } from "./Demand/iLoadUnivNeeds.js"
 import { iLoadUnivGoods } from "./Supply/iLoadUnivGoods.js"
 import { iLoadUnivServices } from "./Supply/iLoadUnivServices.js"
+import { iReplyService } from "./Supply/iReplyService.js"
 
 const SocialRouter = express.Router()
 
@@ -58,6 +59,7 @@ SocialRouter.get("/LoadProfilePaper", iLoadProfilePaper)
 SocialRouter.get("/LoadUnivNeeds", iUnivAuth, iLoadUnivNeeds)
 SocialRouter.get("/LoadUnivGoods", iUnivAuth, iLoadUnivGoods)
 SocialRouter.get("/LoadUnivServices", iUnivAuth, iLoadUnivServices)
+SocialRouter.post("/ReplyService", iUnivAuth, iReplyService)
 
 export {
   SocialRouter
