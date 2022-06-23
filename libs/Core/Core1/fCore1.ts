@@ -23,6 +23,7 @@ import {
 import { FileInput } from "./FileUp/fFileUp"
 import { IFormTextField } from "./FileUp/fFileUp"
 import { EnumText } from "./Util/F/ClassName/Enum/Enum"
+import { TextDate1 } from "./Util/F/Time/Date"
 
 export {
   UnivLogin,
@@ -49,7 +50,8 @@ export {
 
   FileInput,
 
-  EnumText
+  EnumText,
+  TextDate1
 }
 
 export type { 

@@ -10,6 +10,6 @@ export default function ServicesPage() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <IsWimaUserLogin />
-    <ServiceListing />
+    <ServiceListing isGoods={false} />
   </>)
 }

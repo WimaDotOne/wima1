@@ -5,5 +5,6 @@ export interface ISocialService {
   shortDescription?: string,
   description?: string,
   price?: string,
-  isGoods?: boolean
+  isGoods?: boolean,
+  createdAt?: string
 }

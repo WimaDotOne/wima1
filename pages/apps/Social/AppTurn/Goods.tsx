@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { GoodsListing } from "../../../../apps/Social/F/SocialApp/Supply/Goods/GoodsListing"
+import { ServiceListing } from "../../../../apps/Social/F/SocialApp/Supply/Services/ServiceListing"
 import { IsWimaUserLogin } from "../../../../apps/Wima/fWima"
 
 export default function GoodsPage() {
@@ -10,6 +10,6 @@ export default function GoodsPage() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <IsWimaUserLogin />
-    <GoodsListing />
+    <ServiceListing isGoods={true} />
   </>)
 }
