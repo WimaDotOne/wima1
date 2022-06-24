@@ -1,13 +1,14 @@
 import Head from "next/head";
-import { SocialWimaCircle } from "../../../../apps/Social/F/SocialApp/Public/SocialWimaCirlcle/SocialWimaCircle";
+import { Tutorial } from "../../../../apps/Social/F/SocialApp/Public/Tutorial/Tutorial";
 
-export default function WimaCirclePage() {
+export default function TutorialPage() {
   return(<>
     <Head>
       <title>Sociable</title>
       <meta name="description" content="Sociable" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <SocialWimaCircle />
+
+    <Tutorial />
   </>)
 }
