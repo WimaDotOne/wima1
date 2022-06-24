@@ -48,6 +48,7 @@ import { SvgDashboard } from "./Common/Dashboard/SvgDashboard"
 import { SvgGoods } from "./Social/Goods/SvgGoods"
 import { SvgService } from "./Social/Service/SvgService"
 import { SvgHelp } from "./Social/Help/SvgHelp"
+import { SvgClock } from "./Office/Clock/SvgClock"
 
 export function SvgIcon({
   name,
@@ -133,6 +134,7 @@ export function SvgIcon({
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
     case "pin": return <SvgPin width={width} fill={color} />
     case "unpin": return <SvgUnPin width={width} fill={color} />
+    case "clock": return <SvgClock width={width} fill={color} />
 
     //School
     case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />

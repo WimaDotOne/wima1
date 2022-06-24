@@ -68,6 +68,7 @@ export const AppTurn = {
   Needs: "Needs",
 
   Profile: "Profile",
+  Receipt: "Receipt",
 
   About: "About",
   Tutorial: "Tutorial",
@@ -95,6 +96,7 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
 
   const myGroup = new GroupModel("My Business", false)
   myGroup.AddItem(new ItemModel(AppTurn.Profile, "Profile", "dashboard", true))
+  myGroup.AddItem(new ItemModel(AppTurn.Receipt, "Reply Receipts", "clock", true))
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
