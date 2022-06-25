@@ -1,7 +1,6 @@
 import { AppleWindowBottomBarFill, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1, DemoImage, StripeParagraph, StripeSectionHeader, StripeSubParagraph, StripeSubSectionHeader } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { SocialWindow } from "../../SocialWindow/SocialWindow"
-import cl from "./Tutorial.module.scss"
 
 export function Tutorial() {
   return(<>
@@ -13,91 +12,53 @@ export function Tutorial() {
         <AppleWindowBottomBarFill />
       </LimitWidth>
     </SocialWindow>
-  
   </>)
 }
 
 function TutorialCore() {
   return(<>
-  <StripeSectionHeader text="How Sociable works by Examples"/>
+  <StripeSectionHeader text="Sociable use cases by Examples"/>
   <StripeSubSectionHeader text="Ex 1. Conversational English" />
   <StripeParagraph>
-  Fan is a international graduate student of mathematics who wants to improve his English communication skills. Rivers is a biology major undergraduate student, currently taking Calculus 2. Rivers is also interested in Asian culture.
+  Fan is an international graduate student at University of Wisconsin at Madison. Rivers, a native English speaker, is a undergraduate student at UW.
   </StripeParagraph>
   <StripeSubParagraph>
-    Fan creates a profile adding a need of a Conversational English tutor.
+    Fan creates a profile, adds a need of a Conversational English tutor. He describes that he would like to chat with a English native speaker for 2 hours a week. In return he offers to buy a Starbucks drink or a meal like Chipotle for each meeting.  (Fan's post can only be viewed but not replied)
   </StripeSubParagraph>
   <StripeSubParagraph>
-    Texts below the image are supposed to be words from the movie characters. We call them lines of dialogs.
+    Rivers sees Fan's post and creats a profile, adds a service of Conversational English Tutoring. She describes that she could meet and chat with a non-native speaker for 2 hours a week for 10 weeks during a semester. She would charge $7.5/hour.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    A moment can have two or more images.
+    Fan replies to Rivers' post, hence they get each other's wisc mail for future communications. They meet for 30 minutes to interview each other before agreeing on the tutoring. Rivers occasionally corrects Fan's grammar or pronucications, but mostly, they are just hanging out and chat.
   </StripeSubParagraph>
-  <DemoImage url="/apps/Movic/DemoImage/MomentDemo.png" height={300}/>
-  <StripeSubSectionHeader text="Scene" />
+  <DemoImage url="/apps/Social/TutorialImage/Meet.png" 
+    height={350} vPadding={10} noShadow/>
+  <StripeSubParagraph>
+    Rivers already spends 4 hours a week tutoring 2 people Conversational English in a one-to-one format, and still receives replies to her post. So she goes back to her profile and removes her Conversational English service post.
+  </StripeSubParagraph>
+  <StripeSubParagraph>
+    Next semester, Rivers agrees to continue to tutor Fan for free. In return Fan spends half the meeting time helping Rivers with Calculus.
+  </StripeSubParagraph>
+  <StripeSubSectionHeader text="Ex 2. Trainer" />
   <StripeParagraph>
-    A scene consists of a few moments putting together on one page. To view the next scene, a viewer goes to to the next page.
+    Hermione majors in Physical Education. Margaret, an Biochemical Engineering major, jogs regularly. James, a Music major, wants to jog at least once a week but lacks motivation. Pomona is a botany professor who wants to exercise more.
   </StripeParagraph>
-
-  <StripeSectionHeader text="Make a movic"/>
-  <StripeSubSectionHeader text="1. Create a project" />
-  <StripeParagraph>Select menu option named "Projects" and click on "New Project". A project is represented as a folder.</StripeParagraph>
-  <StripeSubSectionHeader text="2. Upload images" />
-  <StripeParagraph>
-    After going into a project folder. Open the folder named "Images". This is where you add the images for one movic. The images will be referred by their names in the movic script.
-  </StripeParagraph>
-
-  <StripeSubSectionHeader text="3. Write a movic script" />
-  <StripeParagraph>
-  After going into a project folder. Open the file named "Movic Script". All the script of a movic is written here.  A script is simply a plain text document. A line in this text document can be
-  </StripeParagraph>
-  <StripeSubParagraph>a narrative</StripeSubParagraph>
-  <StripeSubParagraph>a line of a dialog</StripeSubParagraph>
-  <StripeSubParagraph>a scene divider</StripeSubParagraph>
-  <StripeSubParagraph>a moment divider</StripeSubParagraph>
-  <StripeSubParagraph>an image name</StripeSubParagraph>
-
-  <DemoImage url="/apps/Movic/DemoImage/ScriptDemo.jpg" height={300} />
-  
-  <StripeSectionHeader text="Movic Script Cheatsheet" />
-  <StripeSectionHeader text="===" />
-  <StripeParagraph>
-  Three equal signs in its own line means starting a new scene
-  </StripeParagraph>
-  <StripeSectionHeader text="---" />
-  <StripeParagraph>
-  Three minus signs in its own line means starting a new moment
-  </StripeParagraph>
-  <StripeSectionHeader text="#" />
-  <StripeParagraph>
-  A hashtag at the beginning of line means means this line is a narrative instead of a line of dialog.
-  </StripeParagraph>
-  <StripeSectionHeader text="[" />
-  <StripeParagraph>
-  A left braket at the beginning of line means this line is for images. You can optionally add a right braket at the end. For example a line of text that reads [m001.jpg or [m001.jpg], means an image named m001.jpg from Images folder will be shown for the corresponding moment.
-  </StripeParagraph>
-  <StripeSubSectionHeader text="Tips" />
   <StripeSubParagraph>
-    Write your script first in a text editor of your choosing, and copy and past it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
+    Hermione posts a service of Personal Running Coaching. She describes her training plan of five 1-hour sessions and lists a price of $10 a session.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    A line not beginning with above mentioned special characters corresponds to a line of movie dialog. At the beginning of such a line, type in the name of character in uppercase followed by a colon to indicate who's talking.
+    Margaret posts a service of Running Buddy. She lists her Wednsday joggying schedule and route in March, and says anyone is welcome to join her for free during March.
   </StripeSubParagraph>
-
-  <StripeSectionHeader text="Upload Images Tips"/>
+  <DemoImage url="/apps/Social/TutorialImage/Run.jpg" 
+          height={400} noShadow/>
   <StripeSubParagraph>
-    Name your images m001.jpg, m002.jpg, m003.jpg, etc. This is because images are ordered alphabetically. Naming images with numbers is the best way to keep the image order the same as the order they appear in a movie.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    You can rename your images. The new image name does not have to have the file extension
+    Pomona replies to Herminone's post. They arrange time through emails and start the training session two weeks later.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    One can only upload limited number of images at a time depending on the image size. Upload 50 images at a time would be way too many.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    Adding or deleting images might take a few seconds to complete. Be patient and let the program run to finish before leaving the page.
+    James replies to Margaret's post. They arrange time through emails and start jogging together the next Wednesday.
   </StripeSubParagraph>
   </>)
 
+    
   
 }

@@ -1,5 +1,5 @@
 import { Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
-import { AppleNewsHeader1, StripeIntroText } from "../../../../../../libs/Pop/Pop2/fPop2"
+import { AppleNewsHeader1, DemoImage, StripeIntroText } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { SocialWindow } from "../../SocialWindow/SocialWindow"
 
 export function About() {
@@ -16,6 +16,8 @@ export function About() {
           text2="What is your superpower? Let people in your university know what kind of help you can provide to your fellow students. Feel free to volunteer, barter, or charge people a friendly price."
         />
         <Div height={50} />
+        <DemoImage url="/apps/Social/TutorialImage/College.png" 
+          height={400} noShadow/>
       </LimitWidth>
     </SocialWindow>
   </>)
