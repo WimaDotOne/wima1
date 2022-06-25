@@ -16,9 +16,9 @@ export function About() {
           text2="What is your superpower? Let people in your university know what kind of help you can provide to your fellow students. Feel free to volunteer, barter, or charge people a friendly price."
         />
         <Div height={50} />
+      </LimitWidth>
         <DemoImage url="/apps/Social/TutorialImage/College.png" 
           height={400} noShadow/>
-      </LimitWidth>
     </SocialWindow>
   </>)
 }
