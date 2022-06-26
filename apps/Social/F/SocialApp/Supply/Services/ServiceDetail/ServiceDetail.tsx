@@ -59,12 +59,16 @@ export function ServiceDetail({
         <div className={cl.checkmarkDiv}>
           <SvgIcon name="checkmark.disk" width={100} color="#04AA6D" />
         </div>
-        You and the other person will soon receive email notifications containing each other's email address. Continue to communicate with the other person using emails.
+        You and the other person will soon receive email notifications containing each other's email address. Continue to communicate with your partner using emails.
       </div>
       </>: 
       <>
         <Div height={20} />
-        <TextArea1 prompt="Reply (an email will be sent to you and the other person with contact information)"
+        <div className={cl.introduction}>
+          Introduce yourself when you reply to the post. After your reply, you and your partner will receive an email containing the other's email address. You can continue the communication through emails.
+        </div>
+        <Div height={20} />
+        <TextArea1 prompt="Reply"
           value={message} onChange={(value)=>{setMessage(value)}} 
           maxLength={GENERAL_TEXTAREA_MAX} rows={4}
         />

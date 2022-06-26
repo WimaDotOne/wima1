@@ -9,7 +9,7 @@ export async function iCreateService(req, res) {
     const name = (req.body.name || "").trim()
     const shortDescription = (req.body.shortDescription || "").trim()
     const price = (req.body.price || "").trim()
-    const description = req.body.description || ""
+    const description = (req.body.description || "").trim()
     const isGoods = !!req.body.isGoods
 
     if(name.length > GENERAL_INPUT_MAX) {

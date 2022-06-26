@@ -7,7 +7,7 @@ const schema = mongoose.Schema({
   socialAccountId: { type: mongoose.Schema.Types.ObjectId, required: true, index: true, ref: "SocialAccount"},
   createUtcDay: { type: Number, required: true, index: true},
   
-  name: { type: String, index: 'text', required: true},
+  name: { type: String, required: true},
   shortDescription: { type: String },
   description: { type: String },
   price: { type: String },

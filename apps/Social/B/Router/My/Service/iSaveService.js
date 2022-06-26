@@ -8,7 +8,7 @@ export async function iSaveService(req, res) {
     const name = (req.body.name || "").trim()
     const shortDescription = (req.body.shortDescription || "").trim()
     const price = (req.body.price || "").trim()
-    const description = req.body.description || ""
+    const description = (req.body.description || "").trim()
 
     if(name.length > GENERAL_INPUT_MAX) {
       return res.json({ ok: false, error: "Name is too long" })
