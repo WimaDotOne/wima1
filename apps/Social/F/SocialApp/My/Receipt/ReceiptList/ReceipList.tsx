@@ -21,10 +21,6 @@ export function ReceiptList({
   const shield = useShield()
   const user = useWimaUser()
 
-  function onClickRow() {
-
-  }
-
   async function loadReplyReceipts() {
     if(loaded) return
     if(!user?.isLoggedInUniv) return
@@ -43,11 +39,7 @@ export function ReceiptList({
       <AppleNewsHeader1 text1="Receipts" text2="Services you have replied recently" h={2} />
       {
         receipts.map((receipt, i)=>
-        <ReceiptRow key={i} receipt={receipt} onClick={
-          ()=>{
-
-          }
-        } />
+        <ReceiptRow key={i} receipt={receipt}/>
         )
       }
     </LimitWidth>

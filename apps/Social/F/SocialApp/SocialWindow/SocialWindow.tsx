@@ -82,6 +82,7 @@ function IsViewRequreLogin(viewId?: string) {
     case AppTurn.Goods: return true
     case AppTurn.Needs: return true
     case AppTurn.Profile: return true
+    case AppTurn.Receipt: return true
     default: return false
   }
 }

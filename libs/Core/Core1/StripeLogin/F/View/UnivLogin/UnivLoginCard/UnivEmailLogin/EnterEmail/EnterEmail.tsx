@@ -91,7 +91,7 @@ export function EnterEmail({
     </Description>
     <Div height={10} />
     <Description>
-      Enter your name if it your first time to log in or if you want to change your name.
+      Enter your name if it is your first time to log in or if you want to change your name.
     </Description>
     <Div height={24} />
     <TextField prompt="First Name" value={givenName} 
