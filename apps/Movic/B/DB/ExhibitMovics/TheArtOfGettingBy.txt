@@ -478,7 +478,7 @@ SALLY: What hormones?
 GEORGE: Mine.
 ---
 [m105.jpg
-Zinavoy, what's with the overcoat? We're indoors now.
+Zinavoy: what's with the overcoat? We're indoors now.
 ---
 [m106.jpg
 GEORGE: I like layers.
