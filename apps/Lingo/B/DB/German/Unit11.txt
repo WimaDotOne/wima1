@@ -25,7 +25,7 @@ Hunde und Pferde sind Tiere||dogsHorses1.jpg
 Das ist ein Tier||animal1.jpg
 Das ist ein Mensch||aHuman1.jpg
 Das sind Tiere||animals1.jpg
-Das sind Menschen||human2.jpg
+Das sind Menschen|They are humans|
 ===
 In Ägypten spricht man Arabish||egyptArabic1.jpg
 In China spricht man Chinesisch||chinaChinese1.jpg
