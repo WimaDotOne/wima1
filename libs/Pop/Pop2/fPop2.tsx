@@ -4,8 +4,7 @@ import { StripeIntroText } from "./Landing/Stripe/StripeIntroText"
 import { StripeParagraph, StripeSubParagraph } from "./Landing/Stripe/StripeParagraph"
 import { StripeSectionHeader, StripeSubSectionHeader } from "./Landing/Stripe/StripeSectionHeader"
 import { DemoImage } from "./Landing/DemoImage/DemoImage"
-
-
+import { Wave } from "./Fancy/Wave/Wave"
 
 export {
   AppleNewsHeader1,
@@ -14,5 +13,7 @@ export {
   StripeParagraph, StripeSubParagraph,
   StripeSectionHeader, StripeSubSectionHeader,
 
-  DemoImage
+  DemoImage,
+  
+  Wave
 }

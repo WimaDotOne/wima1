@@ -1,0 +1,136 @@
+der Pullover||pullover1.jpg
+die Jeans||jeans1.jpg
+der Gürtel||belt1.jpg
+===
+der Anzug||suit1.jpg
+der Anzug||suit2.jpg
+die Socken||socks1.jpg
+die Krawatte||tie1.jpg
+===
+ein Pullover||pullover1.jpg
+eine Krawatte||tie2.jpg
+ein Anzug||suit1.jpg
+die Socken||socks2.jpg
+ein Gürtel||belt2.jpg
+eine Jeans|a pair of jeans|
+===
+Seine Socken sind lila||hisSocksPurple1.jpg
+Ihre Socken sind grau||herSocksGray1.jpg
+Ihr Pullover ist lila||herPulloverPurple1.jpg
+Sein Pullover ist grau|His weater is gray|
+===
+Der große Mann trägt eine Krawatte|The tall man wears a tie|
+Der große Frau trägt jeans|The tall woman wear jeans|
+Die kleine Frau trägt en T-Shirt|The short woman wears a t-shirt|
+Der kleine Mann trägt einen Pullover|The short man wears a sweater|
+===
+Der große Mann trägt einen schwarzen Anzug||bigManBlackSuit1.jpg
+Die große Frau trägt einen grauen Anzug|The tall woman wears a gray suit|
+Der kleine Mann trägt einen schwarzen Anzug||shortManBlackSuit1.jpg
+Die kleine Frau trägt einen grauen Anzug|The short woman wears gray suit|
+===
+Mein Kleid ist rosa||myDressPink1.jpg
+Meine Schuhe sind braun||myShoesBrown1.jpg
+Mein Gürtel ist rosa||myBeltPink1.jpg
+Meine Krawatte ist braun||myTieBrown1.jpg
+===
+Ihr Kleid ist orange||herDressOrange1.jpg
+Ihr Mantel ist blau|Her coat is blue|
+Ihr T-Shirt ist orange||herTShirtOrange1.jpg
+Ihre Hose ist blau|Her pants are blue|
+===
+grau||gray1.jpg
+lila||purple1.jpg
+rosa||pink1.jpg
+brau||brown1.jpg
+orange||orange1.jpg
+blau||blue1.jpg
+gelb||yellow1.jpg
+grün||green1.jpg
+===
+Er hat braune Haare||boyBrownHair1.jpg
+Ich habe braune Haare||girlBrownHair1.jpg
+Wir haben blonde Haare|We have blond hair|
+Sie haben blonde Harre|They have blond hair|
+===
+Sie haben rote Haare|You have red hair|
+Ich habe rote Haare||girlRedHair1.jpg
+Wir haben graue Haare||weGrayHair1.jpg
+Er hat graue Haare|He has gray hair|
+===
+Ich bin groß||iTall1.jpg
+Ich bin klein||iShort1.jpg
+===
+Welche Farbe hat sein Pullover?|What color is his sweater?|
+Sein Pullover ist blau||bluePullover1.jpg
+Welche Farbe hat Ihr Anzug?|What color is your suit?|
+Mein Anzug ist grau||graySuit1.jpg
+Welche Farbe haben seine Haare|What color is his hair?|
+Seine Haare sind braun||hisHairBrown1.jpg
+===
+Welche Farbe haben ihre Haare?||whoColorHerHairBlone1.jpg
+Ihre Haare sind blond||herHairBlond1.jpg
+Welche Farbe haben ihre Haare?|What color are their hair?
+Ihre Haare sind schwarz||theirHairBlack1.jpg
+Welche Farbe haben deine Haare|What color is your hair?|
+Meine Haare sind rot.||myHairRed1.jpg
+===
+Der Frau ist warm||womanHot1.jpg
+Dem Jungen ist warm||boyHot1.jpg
+Dem Mädchen ist kalt||girlCold1.jpg
+Dem Mann ist kalt||manCold1.jpg
+===
+Der Junge hat Durst|The boy is thirsty|
+Der Mann hat Hunger||hungryMan1.jpg
+Das Mädchen hat Durst||thirstyGirl1.jpg
+Die Frau hat Hunger||hungryWoman1.jpg
+===
+Der Frau ist kalt||womanCold1.jpg
+Der Mann hat Durst||thirstyMan1.jpg
+Dem Mann ist warm||manHot1.jpg
+===
+Ich habe Hunger||iHungry1.jpg
+Ich habe Durst|I am thirsty|
+Mir ist warm|I am hot|
+Mir ist kalt||iCold1.jpg
+===
+Hast du Durst?|Are you thirsty?|
+Ja. Ich habe Durst||thirstyMan2.jpg
+Ist Ihnen kalt?|Are you cold?|
+Nein. Uns ist nicht kalt|We are not cold|
+Haben Sie Hunger?|Are you hungry?|
+Nein. Ich habe keinen Hunger||boyNotHungry1.jpg
+Ist euch warm?|Are you hot?|
+Ja. Uns ist warm||weHot1.jpg
+===
+Ist dir kalt?|Are you cold?|
+Ja. Mir ist kalt||womanCold1.jpg
+Haben Sie Durst|Are you thirsty?|
+Nein. Wir haben keinen Durst|No. We are not thirsty|
+Ist dir warm?|Are you hot?|
+Nein. Mir ist nicht warm|No. I am not hot.|
+Habt ihr Hunger?|Are you hungry?|
+Ja. Wir haben Hunger||weHungry1.jpg
+===
+Der Junge ist müde||boyTired1.jpg
+Die Frau ist müde||womanTired1.jpg
+Das Mädchen ist krank||girlSick1.jpg
+Der Mann ist krank||manSick1.jpg
+===
+Ich bin krank|I am sick|
+Ich bin müde||iTired1.jpg
+Mir ist kalt||iCold1.jpg
+Ich habe Hunger||iHungry1.jpg
+===
+Bist du krank?|Are you sick?|
+Nein. Mir geht es gut|No. I am good.|
+Bist du müde?|Are you tired?|
+Nein. Mir geht es gut||iGood1.jpg
+===
+Wie geht es Ihnen?|How are you?|
+Ich bin krank||iSick1.jpg
+Wie geht es Ihnen?||howAreYou1.jpg
+Mir geht es gut||iGood1.jpg
+Wie geht es dir?|How are you?|
+Mir geht es gut||iGood2.jpg
+===

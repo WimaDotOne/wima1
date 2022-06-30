@@ -1,0 +1,121 @@
+Er spricht||manSpeak1.jpg
+Sie spricht|She is speaking|
+===
+Das Mädchen schreibt Deutsch||girlWriteGerman1.jpg
+Die Frau liest Englisch||womanReadEnglish1.jpg
+Der Junge schreibt Arabisch||boyWriteArabic1.jpg
+Der Mann liest Chinesisch||manReadChinese1.jpg
+===
+Er schreibt Arabisch||heWriteArabic1.jpg
+Sie schreibt Chinesisch||sheWriteChinese1.jpg
+Er spricht Arabisch||heSpeakArabic1.jpg
+===
+Die Frau spricht Deutsch||womanSpeakGerman1.jpg
+Der Mann spricht Englisch||manSpeakEnglish1.jpg
+Das Mädchen spricht Englisch||girlSpeakEnglish1.jpg
+===
+Dieses Mädchen ist aus Japan||girlFromJapan1.jpg
+Dieser Junge ist aus Deutschland||boyFromGermany1.jpg
+Diese Frau ist aus Russland||womanFromRussia1.jpg
+Dieser Mann ist aus Australien||manFromAustralia1.jpg
+===
+Männer und Frauen sind Menschen||human1.jpg
+Hunde und Pferde sind Tiere||dogsHorses1.jpg
+===
+Das ist ein Tier||animal1.jpg
+Das ist ein Mensch||aHuman1.jpg
+Das sind Tiere||animals1.jpg
+Das sind Menschen||human2.jpg
+===
+In Ägypten spricht man Arabish||egyptArabic1.jpg
+In China spricht man Chinesisch||chinaChinese1.jpg
+In Deutschland spricht man Deutsch||germanyGerman1.jpg
+In Australien spricht man Englisch||australiaEnglish1.jpg
+===
+Dieser Mensch ist aus China. Sie spricht Chinesisch||chineseWoman1.jpg
+Dieses Tier ist aus China. Es spricht kein Chinesisch||panda1.jpg
+Dieser Mensch ist aus Australien. Er spricht Englisch||manFromAustralia1.jpg
+Dieses Tier ist aus Australien. Es spricht kein Englisch||kangaroo1.jpg
+====
+Ich spreche Chinesisch||chineseWoman2.jpg
+Ich spreche Arabisch||arabicMan1.jpg
+Ich spreche Englisch||americanMan1.jpg
+Ich spreche Deutsch||germanWoman1.jpg
+===
+Sprechen Sie Arabisch?|Do you speak Arabic?|
+Ja. Ich spreche Arabisch||arabicMan1.jpg
+Spichst du Chinesisch?|Do you speak Chinese?|
+Nein. Ich spreche kein Chinesisch.||arabicMan1.jpg
+===
+Entschuldigen Sie, sprechen Sie Chinesisch?|Excuse me, do you speak Chinese?|
+Ja. Ich spreche Chinesisch||chineseWoman3.jpg
+Entschuldigen Sie|Excuse me|
+Sprechen Sie Englisch?||rushHour1.jpg
+Ja. Ich spreche Englisch||rushHour2.jpg
+===
+zehn Gürtel|10 belts|
+zwanzig Tassen |20 cups|
+dreißig Bälle|30 balls|
+vierzig Teller|40 cups|
+fünfzig Kravatten|50 ties|
+sechzig Hüte|60 hats|
+===
+zehn|10
+zwanzig|20
+dreißig|30
+vierzig|40
+fünfzig|50
+sechzig|60
+===
+einundzwanzig|21|
+zweiundzwanzig|22|
+dreiundzwanzig|23|
+vierundzwanzig|24|
+fünfundzwanzig|25|
+===
+vierunddreißig|34
+fünfunddreißig|35
+sechsunddreißig|36
+siebenunddreißig|37
+achtunddreißig|38
+neununddreißig|39
+===
+vierundvierzig|44
+fünfundvierzig|45
+sechsundvierzig|46
+siebenundvierzig|47
+achtundvierzig|48
+neunundvierzig|49
+===
+Wie alt sind Sie?|How old are you?|
+Wie alt ist er?|How old is he?|
+Wie alt bist du?|How old are you?|
+Ich bin fünfunddreißig Jahre alt|I'm 35|
+===
+Wie viele Teller haben wir?||howManyPlates1.jpg
+Wir haben vierundzwanzig| We have 24|
+Wie viele Schüsseln haben wir?||howManyBows1.jpg
+Wir haben fünfundvierzig| We have 45|
+Wie viele Gäste haben wir?||howManyGuest1.jpg
+===
+Unterrichten Sie Deutsch?|Do you teach German?|
+Ich unterrichte Englisch||iTeachEnglish1.jpg
+Er unterrichtet Arabisch||heTeachArabic1.jpg
+Sie unterrichtet Chinesisch||sheTeachChinese1.jpg
+===
+Er unterrichtet die Mädchen in Deutsch||heTeachGirlsGerman1.jpg
+Sie unterrichtet die Jungen in Englisch||sheTeachBoysEnglish1.jpg
+Sie unterrichtet die Mädchen in Chinesisch|She teaches the girls Chinese|
+===
+Wir lernen Deutsch||weLearnGerman1.jpg
+Sie lernen Englisch||sheLearnEnglish1.jpg
+Ich lerne Chinesisch||iLearnChinese1.jpg
+Er lernt Arabisch|He is learning Arabic|
+===
+Ihr lernt Englisch|You are learning English|
+Sie unterrichten Arabisch|You are teaching Arabic|
+Wir lernen Arabisch|We are learning Arabic|
+===
+Wer ist dein Lehrer?|Who is your teacher?|
+Frau Li ist meine Lehrerin||pointChineseWomanTeacher1.jpg
+Herr Haddad ist mein Lehrer||pointArabicManTeacher1.jpg

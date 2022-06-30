@@ -1,0 +1,78 @@
+.selectField {
+  width: 100%;
+  position: relative;
+}
+.inputDiv {
+  border: 2px solid #aed1ec;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: white;
+}
+.inputDiv .text {
+  font-weight: 500;
+}
+.inputDiv.drop {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 2px solid #aed1ec;
+}
+.options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #aed1ec;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #aaa #f1f1f1;
+  scrollbar-width: thin;
+}
+.option {
+  padding-left: 10px;
+}
+.inputDiv, .option {
+  display: flex;
+  height: 40px;
+}
+.option:hover {
+  background-color: #eee;
+}
+.arrow {
+  flex: 0 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
+}
+.textInner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+.imgDiv {
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

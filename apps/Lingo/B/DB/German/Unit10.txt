@@ -1,0 +1,115 @@
+zwei Tage|2 days|
+Diese Katze ist zwanzig Tage alt||20DayCat1.jpg
+Diese Baby ist einen Tag alt||1DayBaby1.jpg
+sieben Tage|7 days|
+===
+Eine Woche hat sieben Tage||week1.jpg
+Ein Monat hat vier Wochen|A week has 4 weeks|
+Ein Jahr hat zwölf Monate||12Months1.jpg
+===
+der Tag|the day|
+die Woche|the week|
+der Monat|the month|
+das Jahr|the year|
+===
+Er ist achtzehn Tage alt||he18Day1.jpg
+Er ist achtzehn Wochen alt||he18Week1.jpg
+Er ist achtzehn Monate alt||he18Month1.jpg
+Er ist achtzehn Jahr alt||he18Year1.jpg
+===
+Dieser Tag ist ein Freitag||friday1.jpg
+Dieser Tag ist ein Samstag||weekend1.jpg
+Dieser Tag ist ein Sonntag||weekend1.jpg
+===
+Heute ist Samstag. Ich renne.|Today is Saturday. I am running|
+Heute ist Freitag. Ich arbeite||fridayIWork1.jpg
+Heute ist Sonntag. Ich sehe fern||iTv1.jpg
+===
+Heute ist Sonntag. Sie laufen im Park||theyWalkPark1.jpg
+Heute ist Montag. Wir essen zu Mittag||weLunch1.jpg
+Heute ist Dienstag. Ich kaufe Fische||iBuyFish1.jpg
+===
+Montag|Monday|
+Dienstag|Tuesday|
+Mittwoch|Wednesday|
+Donnerstag|Thursday|
+Freitag|Friday|
+Samstag|Saturday|
+Sonntag|Sunday|
+===
+Wir spielen ein Spiel||wePlayGame1.jpg
+Ich spiele ein Spiel||iPlayGame1.jpg
+Die Mädchen spielen ein Spiel||girlsPlayGame1.jpg
+Die Jungen spielen ein Spiel||boysPlayGame1.jpg
+===
+Das Mädchen isst mit ihren Freundinnen||girlsFriend1.jpg
+Der Junge schwimmt mit seinen Freunden||boysSwim1.jpg
+Sie spielen ein Spiel mit ihren Kindern||familyGame1.jpg
+Das Mädchen liest mit ihrem Großvater|The girl read with her grandpa|
+===
+Mit wem isst du zu Mittag?|Who are eating lunch with?|
+Ich esse mit meiner Schwester zu Mittag||sistersLunch1.jpg
+Mit wem essen Sie zu Abend?|Who are you eating dinner with?|
+Ich esse mit meinem Mann zu Abend||manWomanDinner1.jpg
+===
+Der Junge besucht seine Großmutter in ihrem Haus|The boy visted his grandma in her house|
+Das Mädchen besucht ihre Freundin||girlVisitGirl1.jpg
+Der Mann besucht Moskau||manVisitMoscow1.jpg
+Die Frau besucht Paris||womanVisitParis1.jpg
+===
+Was machst du?|What are you doing?|
+Ich besuche meine Großmutter im Krankenkaus||iVisitGrandmaHospital1.jpg
+Das ist unser Haus||ourHouse1.jpg
+Das sind unsere Gäste||ourGuests1.jpg
+===
+Der Junge besucht seinen Großvater||boyVisitGrandpa1.jpg
+Der Mann und seine Frau besuchen Peking||manWomanVisitBeijing1.jpg
+Die Familie besucht Rom||familyVisitRome1.jpg
+Ich besuche meine Freundinnen||iVisitGirlFriends1.jpg
+===
+Er ist ein Gast||heIsGuest1.jpg
+Sie sind Gäste||guests1.jpg
+Ich bin kein Gast. Ich arbeite.||waitress1.jpg
+===
+Unsere Gäste sind hier|Our guests are here|
+Unsere Gäste sitzen im Wohnzimmer|Our guests sit in living room|
+Wir essen mit unseren Gästen zu Abend||weFriendsDinner1.jpg
+Wir spielen ein spiel mit unseren Gästen||weFriendsPlayGame1.jpg
+===
+Willkommen in Deutschland!|Welcome to Germany|
+Willkommen in unserem Hotel!||welcomeHotel1.jpg
+Willkommen in unserem Haus!||welcomeHouse1.jpg
+Willkommen in unserem Restaurant!||welcomeRestaurant1.jpg
+Herzlich willkommen in unserem Haus|Welcom to our house|
+Vielen Dank|Thank you|
+===
+Sie probieren das Brot||theyTasteBread1.jpg
+Die Frau probiert den Reis||womanTasteRice1.jpg
+Die Frau riecht am Kaffee||womanSmellCoffee1.jpg
+Der Mann riecht an der Blume||manSmellFlower1.jpg
+===
+Die Blumen riechen gut||flowersSmellGood1.jpg
+Die Socken riechen schlecht|The socks smell bad|
+Das Brot schmeckt gut||breadTasteGood1.jpg
+Die Milch schmeckt schlecht||milkTasteBad1.jpg
+===
+Das riecht schlecht||itSmellBad1.jpg
+Das riecht gut||itSmellGood1.jpg
+Das schmeckt gut||itTasteGood1.jpg
+Das schmeckt schlecht||itTasteBad1.jpg
+===
+vier Finger|4 fingers|
+zehn Zehen|10 toes|
+drei Hände|3 hands|
+ein Fuß||foot1.jpg
+eine Hand||hand1.jpg
+===
+ein Park im Frühling||parkSpring1.jpg
+eine Stadt im Sommer|a city in summer
+ein Baum im Herbst||treeAutumn1.jpg
+ein Haus im Winter||houseWinter1.jpg
+===
+der Frühling||spring1.jpg
+der Sommer||summer1.jpg
+der Herbst||autumn1.jpg
+der Winter||winter1.jpg

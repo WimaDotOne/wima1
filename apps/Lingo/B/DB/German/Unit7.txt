@@ -1,0 +1,126 @@
+Ich wohne in einem Haus||iLiveHouse1.jpg
+Wir wohnen in einem Haus||weLiveHouse1.jpg
+Wir wohnen in einer Wohnung|We live in an apartment|
+Ich wohne in einer Wohnung||iLiveApartment1.jpg
+===
+Sie wohnen in einem Haus||theyLiveHouse1.jpg
+Sie wohnt in einer Wohnung||womanLiveApartment1.jpg
+Wir wohnen in einer Wohnung||weLiveApartment1.jpg
+Ich wohne in einem Haus||iLiveHouse1.jpg
+===
+Rom||Rome1.jpg
+Rom||Rome2.jpg
+Paris||Paris1.jpg
+Paris||Paris2.jpg
+Moskau||Moscow1.jpg
+===
+Wo wohnst du?||whichApartment1.jpg
+Ich wohne in Wohnung Nummer acht|I live in apartment 8|
+===
+Wo wohnen Sie?|Where do you (formal) live|
+Ich wohne in Moskau||iLiveMoscow1.jpg
+Wo wohnst du?|Where do you (informal) live|
+Ich wohne in Paris||iLiveParis1.jpg
+===
+Wo wohnt ihr?|Where do you live?|
+Wir wohnen in Rom||weLiveRome1.jpg
+Wir wohnen in Moskau|We live in Moscow|
+===
+das Land|the country|
+die Stadt|the city|
+die Brücke||bridge1.jpg
+===
+der Park||park1.jpg
+die Straße||street1.jpg
+die Straße||street2.jpg
+die Brücke||bridge2.jpg
+===
+ein Land|a country|
+eine Stadt||city1.jpg
+eine Straße||street3.jpg
+ein Park||park2.jpg
+eine Brücke||bridge3.jpg
+===
+Das Mädchen sitzt auf der Brücke||girlSitOnBridge1.jpg
+Die Frau sitzt im Park|The woman sit in the park|
+Die Mädchen stehen auf der Brücke||girlsStandOnBridge1.jpg
+Der Mann steht auf der Straße||manStandOnStreet1.jpg
+===
+Diese Straße ist in Paris|This street is in Paris|
+Diese Stadt ist in Frankreich||parisInFrance1.jpg
+Diese Brücke ist in New York||bridgeInNewYork1.jpg
+Diese Stadt ist in den USA||newYorkInUSA1.jpg
+===
+Sie kommen aus Frankreich|They are from France|
+Er kommt aus Frankreich||frenchMan1.jpg
+Sie kommt aus Frankreich||frenchWoman1.jpg
+Sie kommt aus den USA||americanGirl1.jpg
+Er kommt aus den USA||americanMan1.jpg
+Sie kommen aus den USA||americanFamily1.jpg
+===
+Wir kommen aus Deutschland|We come from Germany|
+Ich komme aus Deutschland||merkel1.jpg
+Er kommt aus Deutschland||gemanMan1.jpg
+Ihr kommt aus Deutschland|You are from Germany|
+===
+China||china1.jpg
+Russland||russia1.jpg
+Ägypten||egypt1.jpg
+===
+Wo kommst du her?|Where are you (informal) from?|
+Ich komme aus den USA||americanGirl1.jpg
+Wo kommen Sie her?|Where are you (formal) from?|
+Ich kommst aus Ägypten|I am from Egypt|
+Wir kommen aus Frankreich|We are from french|
+Wo kommt ihr her?|Where are you from?|
+Wir kommen aus China||weComeFromChina.jpg
+===
+Der Junge steht nahe am Haus|BoyStandNearHouse1.jpg
+Der Hund sitzt nahe am Haus|dogSitNearHouse1.jpg
+Das Mädchen steht weit weg vom Haus||girlStandFarHouse1.jpg
+Das Pferd steht weit weg vom Haus|The horse stands far away from the House|
+===
+Der Stuhl steht nahe an der Tür||chairNearDoor1.jpg
+Der Stuhl steht weit weg von der Tür||chairFarDoor1.jpg
+Mein Haus steht nahe an der Straße|My house is close to the street|
+Mein Haus steht weit weg von der Straße|My house is far away from the street|
+===
+Ich stehe nahe am Baum||iStandNearTree1.jpg
+Ich stehe weit weg vom Baum||iStandFarTree1.jpg
+Ich stehe nahe an der Brücke|I stand near the bridge|
+Ich stehe weit weg von der Brücke|I stand far away from the bridge|
+===
+Brasilen||brazil1.jpg
+Japan||japan1.jpg
+Italien||italy1.jpg
+===
+Dieses Land heißt Italien||italy2.jpg
+Dieses Land heißt Russland|This country is called Russia|
+Dieses Land heißt Japan||japan2.jpg
+Dieses Land heißt Ägypten||egypt2.jpg
+===
+Italien liegt in der Nähe von Frankreich||italyCloseFrance1.jpg
+Japan liegt in der Nähe von China||japanCloseChina1.jpg
+Japan liegt weit weg von Brasilen||japanFarBrazil1.jpg
+Italien liegt weit weg von Brasilen|Italy is far away from Brazil|
+===
+Ich bin Ärztin||iAmWomanDoctor1.jpg
+Ich heiße Natalie Wächter|I am Natalie Wächter|
+Ich bin Polizist||iAmManPoliceman1.jpg
+Ich heiße Jonas Baumann|I am Jonas Baumann|
+Ich bin Lehrerin||iAmWomanTeacher1.jpg
+Ich heiße Susi Richter|I am Susi Richter|
+Ich komme aus Russland||perelman1.jpg
+Ich heiße Grigori Perelman|I am Grigori Perelman|
+===
+Hallo. Wie heißt du?|Hello. What's your name?|
+Ich heiße Sabine||girlIAm1.jpg
+Nett, dich kennenzulernen|Nice to meet you|
+Hallo. Wie heißen Sie?|Hello. What's your (formal) name?|
+Ich bin Herr Weber||manIAm1.jpg
+Nett, Sie kennenzulernen||niceMeetYou1.jpg
+===
+Tschüss| Bye (informal)|
+Tschüss||bye1.jpg
+Auf Wiedersehen| Bye (formal)|
+===

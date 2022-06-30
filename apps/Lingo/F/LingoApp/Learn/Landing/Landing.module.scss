@@ -1,0 +1,33 @@
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.langDiv {
+  width: 100%;
+  max-width: 200px;
+  padding-right: 10px;
+}
+.unitDiv {
+  width: 100%;
+  max-width: 100px;
+}
+.goDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.attributes {
+  font-size: 13px;
+  font-weight: 500;
+}
+.vecteezy {
+  color: #ff7900;
+}
+.freepik {
+  color: #0f73ee;
+}
+.shutterstock {
+  color: #f12815;
+}

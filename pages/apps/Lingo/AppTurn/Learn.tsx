@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import { Learn } from '../../../apps/Lingo/F/LingoApp/Learn/Learn'
+import { Learn } from '../../../../apps/Lingo/F/LingoApp/Learn/Learn'
 
-export default function LingoPage() {
-
+export default function LearnPage() {
 
   return (<>
     <Head>

@@ -1,0 +1,142 @@
+Der Junge wacht auf||boyWakeUp1.jpg
+Der Mann weckt seinen Freund auf|The man wakes up his friend|
+Der Mann weckt seine Frau auf||manWakeWife1.jpg
+Das Mädchen wacht auf||girlWakeUp1.jpg
+===
+Der Junge wacht auf||boyWakeUp2.jpg
+Das Mädchen wacht auf||girlWakeUp2.jpg
+Der Mann wacht auf||manWakeUp1.jpg
+Die Frau wacht auf||womanWakeUp1.jpg
+===
+Der Mann weckt den Jungen auf||manWakeBoy1.jpg
+Die Frau weckt das Mädchen auf||womanWakeGirl1.jpg
+===
+Ich wasche das Hemd|I wash my shirt|
+Er wäscht die Hose|He washes the pants|
+Er wäscht das Auto||heWashCar1.jpg
+Sie wäscht den Pullover|She washes the sweater|
+===
+Ich wasche meine Socken|I wash my socks|
+Sie waschen ihr Auto||theyWashCar1.jpg
+Sie wäscht ihren Rock|She washes her skirt|
+Er wäscht sein T-Shirt|He washes his t-shirt|
+===
+Das Mädchen wäscht sich das Gesicht||girlWashFace1.jpg
+Die Frau wäscht sich das Gesicht||womanWashFace1.jpg
+Ihre Gesichter sind lila und orange||facesPurpleOrange1.jpg
+===
+Die Frau wäscht sich die Haare||womanWashHair1.jpg
+Ich wasche mir die Hände||iWashHands1.jpg
+Der Mann wäscht sich das Gesicht||manWashFace1.jpg
+===
+Der Ball ist auf seinem Finger||ballOnFinger1.jpg
+Der Ball ist auf seinem Gesicht||ballOnFace1.jpg
+Der Ball ist auf seinem Fuß||ballOnFoot1.jpg
+===
+Die Katze ist trocken|The cat is dry|
+Die Hemden sind trocken||shirtsDry1.jpg
+Die Straße ist nass||streetWet1.jpg
+Die Hunde sind nass||dogsWet1.jpg
+===
+Ihre Haare sind nass||herHairWet1.jpg
+Die Pferde sind nass||horsesWet1.jpg
+Ihre Haare sind trocken||herHairDry1.jpg
+Die Pferde sind trocken||horsesDry1.jpg
+===
+Das Hemd ist sauber||shirtClean1.jpg
+Die Socken sind schmutzig|The socks are dirty|
+Ihr Gesicht ist schmutzig||herFaceDirty1.jpg
+Sein Gesicht ist sauber||hisFaceClean1.jpg
+===
+Wo ist Mama?|Where is mama?|
+Sie ist im Badezimmer||womanInBathroom1.jpg
+Wo ist Papa?|Where is papa?|
+Er ist in der Küche||manInKitchen1.jpg
+===
+Warum wäschst du dir die Hände?|Why do you wash your hands?|
+Ich wasche mir die Hände, weil sie schmutzig sind|I wash my hands because they are dirty|
+Warum trägst du einen Pullover?|Why do you wear a sweater?|
+Ich trage einen Pullover, weil mir kalt ist.||iSweaterCold1.jpg
+===
+Warum ist Papa in der Küche?|Why is papa in the kitchen?|
+Papa ist in der Küche, weil er kocht||manInKitchen1.jpg
+Warum wäschst Mama den Hund?|Why does mama wash the dog?|
+Mama wäschst den Hund, weil er schmutzig ist||womanWashDog1.jpg
+Warum trinkst du Wasser?|Why do you drink water?|
+Ich trinke Wazzer, weil ich Durst habe||iDrinkWater1.jpg
+===
+Warum bist du im Badezimmer?|Why are you bathroom?|
+Ich bin im Badezimmer, weil ich mir die Hände wasche||iWashHandBathroom1.jpg
+Warum wäschst du dir die Hände?|Why do you wash your hand?|
+Ich wasche mir die Hände, weil sie schmutzig sind.|I wash my hands because they are dirty|
+===
+die Zahnbürste||toothbrush1.jpg
+die Zahnbürste||toothbrush2.jpg
+die Zahnpasta||toothpaste1.jpg
+die Zahnpasta||toothpaste2.jpg
+die Zähne||teeth1.jpg
+===
+die Bürste||hairbrush1.jpg
+die Bürste||hairbrush2.jpg
+die Seife||soap1.jpg
+das Handtuch|hand towel|
+das Handtuch||handTowel1.jpg
+===
+Der Mann putzt sich die Zähne||manBrushTeeth1.jpg
+Die Frau bürstet sich die Haare||womanBrushHair1.jpg
+Die Jungen putzen sich die Zähne||boysBrushTeeth1.jpg
+Die Mädchen bürsten sich die Haare||girlsBrushHair1.jpg
+===
+Ich putze mir die Zähne||iBrushTeeth1.jpg
+Sie bürstet sich die Haare||sheBrushHair1.jpg
+Sie waschen sich die Hände||theyWashHands1.jpg
+Er putzt sich die Zähne||heBrushTeeth1.jpg
+===
+Sie bürstet das Pferd mit einer Bürste||sheBrushHorse1.jpg
+Sie waschen sich die Hände mit Seife||theyWashHandSoap1.jpg
+Ich putze mir die Zähne mit einer Zahnbürste||iBrushTeeth2.jpg
+===
+Die mutter weckt ihre Tochter auf||womanWakeDaughter1.jpg
+Der Vater wäscht sich das Gesicht||manWashFace2.jpg
+Die Tochter bürstet sich die Haare||girlBrushHair1.jpg
+Ihr Bruder putzt sich die Zähne||boyBrushTeeth1.jpg
+===
+Ich trinke Kaffee nach dem Abendessen|I drink coffee after dinner|
+Ich wasche mir die Hände vor dem Mittagessen|I wash hand before lunch|
+Ich putze mir die Zähne nach dem Frühstück|I brush teeth after breakfast|
+===
+das Kissen||pillow1.jpg
+das Kissen||pillow2.jpg
+das Betttuch||bedsheet1.jpg
+das Betttuch||bedsheet2.jpg
+die Decke||blanket1.jpg
+die Decke||blanket2.jpg
+===
+Das Betttuch ist auf dem Bett||bedsheetOnBed1.jpg
+Das Handtuch ist im Badezimmer||handTowelInBathroom1.jpg
+Die Katze liegt auf dem Kissen||catOnPillow1.jpg
+Ich bin unter der Decke||iUnderBlanket1.jpg
+===
+Das rosa Handtuch ist sauber||pinkHandTowelDry1.jpg
+Das rosa Kissen ist sauber||pinkPillowDry1.jpg
+Die rosa Decke ist sauber||pinkBlanketDry1.jpg
+Das rosa Betttuch ist sauber||pinkBedsheetDry1.jpg
+===
+Warum riecht der Hund schlecht?||dogWetDirty1.jpg
+Weil er schmutzig und nass isst||dogWetDirty1.jpg
+Warum riechen die Bettücher gut?||bedsheets1.jpg
+Weil sie sauber sind||bedsheets1.jpg
+===
+Warum sind die Leute im Esszimmer|Why are people in dinning room?|
+Weil sie zu Abend essen||peopleEatDinning1.jpg
+Warum sind die Leute in der Küche|Why are people in the kitchen?|
+Weil sie Teller waschen||theyWashPlates1.jpg
+Warum sind die Leute im Wohnzimmer?|Why are people in the living room?|
+Weil sie fernsehen||theyWatchTv1.jpg
+===
+Was kaufst du?|What are you buying?|
+Ich kaufe Blumen||buyFlowers1.jpg
+Warum kaufst du Blumen?|Why are buying flowers?|
+Ich kaufe Blumen, weil ich heute Nachmittag meine Großmutter besuche||visitGrandma1.jpg
+Wo wohnt deine Großmutter?|Where does your grandma live?|
+Sie wohnt in New York||newYork1.jpg
