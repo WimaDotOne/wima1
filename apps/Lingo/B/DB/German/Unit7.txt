@@ -75,8 +75,8 @@ Wir kommen aus Frankreich|We are from french|
 Wo kommt ihr her?|Where are you from?|
 Wir kommen aus China||weComeFromChina.jpg
 ===
-Der Junge steht nahe am Haus|BoyStandNearHouse1.jpg
-Der Hund sitzt nahe am Haus|dogSitNearHouse1.jpg
+Der Junge steht nahe am Haus||BoyStandNearHouse1.jpg
+Der Hund sitzt nahe am Haus||dogSitNearHouse1.jpg
 Das Mädchen steht weit weg vom Haus||girlStandFarHouse1.jpg
 Das Pferd steht weit weg vom Haus|The horse stands far away from the House|
 ===
