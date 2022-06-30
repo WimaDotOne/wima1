@@ -61,7 +61,6 @@ export function LingoWindow({
 }
 
 export const AppTurn = {
-
   Learn: "Learn",
   Exit: "Exit"
 }
@@ -76,10 +75,10 @@ function LingoMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.Learn
 
   const publicGroup = new GroupModel("Lingo", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.Learn, "Learn", "smile"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Learn, "Learn", "language"))
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 
-  const menu = new MenuModel(viewId, "black")
+  const menu = new MenuModel(viewId, LingoColor.themeBlue)
   menu.AddGroup(publicGroup)
   return menu
 }

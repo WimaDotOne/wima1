@@ -49,6 +49,7 @@ import { SvgGoods } from "./Social/Goods/SvgGoods"
 import { SvgService } from "./Social/Service/SvgService"
 import { SvgHelp } from "./Social/Help/SvgHelp"
 import { SvgClock } from "./Office/Clock/SvgClock"
+import { SvgLanguage } from "./School/Language/SvgLanguage"
 
 export function SvgIcon({
   name,
@@ -139,6 +140,7 @@ export function SvgIcon({
     //School
     case "graduationcap": return <SvgGraduationCap width={width} stroke={color} strokeWidth={strokeWidth} />
     case "university": return <SvgUniversity width={width} fill={color} />
+    case "language": return <SvgLanguage width={width} fill={color} />
 
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
