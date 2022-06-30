@@ -8,6 +8,8 @@ import { SettingsHomeRouter } from "./apps/Settings/SettingsHome/bSettingsHome.j
 import { WimaRouter } from "./apps/Wima/bWima.js"
 import { MovicRouter } from "./apps/Movic/B/Router/MovicRouter.js"
 import { SocialRouter } from "./apps/Social/B/Router/SocialRouter.js"
+import { LingoRouter } from "./apps/Lingo/B/Router/LingoRouter.js"
+
 
 dotenv.config()
 ConnectDb(process.env.MONGO_DB)
@@ -23,6 +25,7 @@ server.use(bConfig.bRoute1+"/wima", WimaRouter)
 server.use(bConfig.bRoute1+"/settingsHome", SettingsHomeRouter)
 server.use(bConfig.bRoute1+"/movic", MovicRouter)
 server.use(bConfig.bRoute1+"/social", SocialRouter)
+server.use(bConfig.bRoute1+"/lingo", LingoRouter)
 
 server.use(express.static(FilePath(import.meta.url, "./out")))
 
