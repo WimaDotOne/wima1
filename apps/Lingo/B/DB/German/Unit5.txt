@@ -89,7 +89,7 @@ Das ist meine Freundin||thisIsMyFriendGirl2.jpg
 Das sind meine Freundinnen||theseAreMyFriendsGirls1.jpg
 ===
 Das ist meine Schwester|This is my sister|
-Das sind meine Schwestern||These are my sisters|
+Das sind meine Schwestern|These are my sisters|
 Das ist meine Mutter||thisIsMyMother1.jpg
 Das sind meine Eltern||theseAreMyParents1.jpg
 ===
