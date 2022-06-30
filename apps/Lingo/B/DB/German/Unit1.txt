@@ -25,7 +25,7 @@ Der Mann isst | The boy is eating | manEat1.jpg
 ====
 Das Mädchen isst | The girl is eating | girlEat2.jpg
 Das Mädchen trinkt | The girl is drinking | girlDrink2.jpg
-Der Mann trinkt | The man is drinking | manDrink1.png
+Der Mann trinkt | The man is drinking | manDrink1.jpg
 Der Mann isst | The boy is eating | manEat2.jpg
 ===
 Der Mann rennt | The man is running | manRun1.jpg
@@ -60,13 +60,13 @@ Das Mädchen rennt | The girl is running | girlRun1.jpg
 ===
 Die Frauen essen | The women are eating | womenEat1.jpg
 Die Frau isst | The woman is eating | womanEat3.jpg
-Die Jungen lesen | The boys are reading | boysRead1.png
+Die Jungen lesen | The boys are reading | boysRead1.jpg
 Der Junge liest | The boy is reading | boyRead2.jpg
 ===
 Die Frauen lesen | The women are reading | womenRead1.jpg
-Die Männer rennen | The men are running | menRun1.png
+Die Männer rennen | The men are running | menRun1.jpg
 Die Männer lesen | The men are reading | menRead1.jpg
-Die Frauen rennen | The women are running | womenRun1.png
+Die Frauen rennen | The women are running | womenRun1.jpg
 ===
 Die Frau liest | The woman is reading | womanRead3.jpg
 Die Mädchen lesen | The girls are reading | girlsRead1.jpg
