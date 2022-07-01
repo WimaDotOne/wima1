@@ -22,7 +22,7 @@ function LearnCore() {
 
   const [lang, setLang] = useState<string>(Lang.German)
   const [level, setLevel] = useState<string>("1")
-  const [unit, setUnit] = useState<string>("1")
+  const [lesson, setLesson] = useState<string>("1")
 
   function goHome() {
     setLearnTurn(LearnTurn.Landing)
@@ -34,13 +34,13 @@ function LearnCore() {
 
   switch(learnTurn) {
     case LearnTurn.Book: return(
-      <Book lang={lang} level={level} lesson={unit}
+      <Book lang={lang} level={level} lesson={lesson}
         goHome={goHome} />
     )
     default: return(
       <Landing lang={lang} setLang={setLang}
         level={level} setLevel={setLevel}
-        unit={unit} setUnit={setUnit}
+        lesson={lesson} setLesson={setLesson}
         goBook={goBook}
       />)
   }

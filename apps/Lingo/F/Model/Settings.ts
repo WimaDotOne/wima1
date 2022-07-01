@@ -3,7 +3,7 @@ import { Lang } from "./Lang"
 
 const Settings = {
   German: [8, 5], // [8,5] means 2 levels with 8 units and 5 units
-  French: [1],
+  French: [1,2,3,4,5,6,7,8,9,10],
   Chinese: [1]
 }
 
@@ -31,7 +31,7 @@ export function CalcUnit(lang: string, level: string, lesson: string) {
   return sum+numLesson
 }
 
-export function UnitOptions(lang: string, level: string) {
+export function LessonOptions(lang: string, level: string) {
 
   let n = 1
   const index = (parseInt(level) || 0) - 1
@@ -52,7 +52,7 @@ export function UnitOptions(lang: string, level: string) {
   for(let i=1; i<=n; i++) {
     options.push({
       value: i+"",
-      text: `Unit ${i}`
+      text: `Lesson ${i}`
     })
   }
   return options

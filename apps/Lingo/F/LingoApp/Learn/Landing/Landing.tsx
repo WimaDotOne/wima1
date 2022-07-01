@@ -2,7 +2,7 @@ import { SelectField2 } from "../../../../../../libs/Core/Core1/fCore1"
 import { Button1, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { StripeHeader1, StripeIntroText, Wave } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { LingoColor } from "../../../CSS/LingoColor"
-import { LanguageOptions, LevelOptions, UnitOptions } from "../../../Model/Settings"
+import { LanguageOptions, LevelOptions, LessonOptions } from "../../../Model/Settings"
 import cl from "./Landing.module.scss"
 
 interface ILandingProp {
@@ -10,32 +10,32 @@ interface ILandingProp {
   setLang: (lang:string)=>void
   level: string
   setLevel: (level:string)=>void
-  unit: string
-  setUnit: (unit:string)=>void
+  lesson: string
+  setLesson: (lesson:string)=>void
   goBook: ()=>void
 }
 export function Landing({
   lang, setLang,
   level, setLevel,
-  unit, setUnit,
+  lesson, setLesson,
   goBook
 }: ILandingProp) {
   
   const langOptions = LanguageOptions()
   const levelOptions = LevelOptions(lang)
-  const unitOptions = UnitOptions(lang, level)
+  const lessonOptions = LessonOptions(lang, level)
 
   function setLang2(newLang: string) {
     if(newLang !== lang) {
       setLevel("1")
-      setUnit("1")
+      setLesson("1")
     }
     setLang(newLang)
   }
 
   function setLevel2(newLevel: string) {
     if(newLevel !== level) {
-      setUnit("1")
+      setLesson("1")
     }
     setLevel(newLevel)
   }
@@ -56,12 +56,8 @@ export function Landing({
           setValue={setLang2}
           options={langOptions} hasImage />
       </div>
-      <div className={cl.levelDiv}>
-        <SelectField2 value={level} setValue={setLevel2} options={levelOptions} />
-      </div>
-      <div className={cl.unitDiv}>
-        <SelectField2 value={unit} setValue={setUnit} options={unitOptions} />
-      </div>
+      <SelectField2 value={level} setValue={setLevel2} options={levelOptions} />
+      <SelectField2 value={lesson} setValue={setLesson} options={lessonOptions} />
     </div>
     <div className={cl.goDiv}>
       <Button1 onClick={goBook} text="Start Learning ➽" color={LingoColor.themeBlue}/>

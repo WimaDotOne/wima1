@@ -1,22 +1,14 @@
 .selections {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 110px 110px;
+  grid-column-gap: 5px;
   justify-content: center;
 }
 
 .langDiv {
-  width: 100%;
-  max-width: 200px;
-  padding-right: 10px;
+  max-width: 150px;
 }
-.levelDiv {
-  width: 100%;
-  max-width: 120px;
-  padding-right: 10px;
-}
-.unitDiv {
-  width: 100%;
-  max-width: 100px;
-}
+
 .goDiv {
   margin-top: 20px;
   display: flex;
