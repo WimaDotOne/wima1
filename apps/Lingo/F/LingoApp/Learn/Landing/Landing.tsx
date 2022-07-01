@@ -1,30 +1,43 @@
+import { SelectField2 } from "../../../../../../libs/Core/Core1/fCore1"
 import { Button1, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { StripeHeader1, StripeIntroText, Wave } from "../../../../../../libs/Pop/Pop2/fPop2"
-import { LanguageOptions, UnitOptions } from "../../../Model/Settings"
-import { SelectField } from "../SelectField/SelectField"
+import { LingoColor } from "../../../CSS/LingoColor"
+import { LanguageOptions, LevelOptions, UnitOptions } from "../../../Model/Settings"
 import cl from "./Landing.module.scss"
 
 interface ILandingProp {
-  lang: string,
+  lang: string
   setLang: (lang:string)=>void
+  level: string
+  setLevel: (level:string)=>void
   unit: string
   setUnit: (unit:string)=>void
   goBook: ()=>void
 }
 export function Landing({
   lang, setLang,
+  level, setLevel,
   unit, setUnit,
   goBook
 }: ILandingProp) {
   
   const langOptions = LanguageOptions()
-  const unitOptions = UnitOptions(lang)
+  const levelOptions = LevelOptions(lang)
+  const unitOptions = UnitOptions(lang, level)
 
   function setLang2(newLang: string) {
     if(newLang !== lang) {
+      setLevel("1")
       setUnit("1")
     }
     setLang(newLang)
+  }
+
+  function setLevel2(newLevel: string) {
+    if(newLevel !== level) {
+      setUnit("1")
+    }
+    setLevel(newLevel)
   }
 
   return(<>
@@ -39,14 +52,19 @@ export function Landing({
 
     <div className={cl.selections}>
       <div className={cl.langDiv}>
-        <SelectField value={lang} setValue={setLang2} options={langOptions} />
+        <SelectField2 value={lang}
+          setValue={setLang2}
+          options={langOptions} hasImage />
+      </div>
+      <div className={cl.levelDiv}>
+        <SelectField2 value={level} setValue={setLevel2} options={levelOptions} />
       </div>
       <div className={cl.unitDiv}>
-        <SelectField value={unit} setValue={setUnit} options={unitOptions} />
+        <SelectField2 value={unit} setValue={setUnit} options={unitOptions} />
       </div>
     </div>
     <div className={cl.goDiv}>
-      <Button1 onClick={goBook} text="Start Learning ➽"/>
+      <Button1 onClick={goBook} text="Start Learning ➽" color={LingoColor.themeBlue}/>
     </div>
     <Div height={40} />
     <LimitWidth gray>

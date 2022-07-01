@@ -19,7 +19,7 @@ export function SpeakButton({
   useEffect(()=>{
     //Speaker.canSpeak might be false the first time it is instantiated, but we should only try finite many times.
     if(refreshCount > 100) return
-console.log(refreshCount)
+
     const speaker = speakerRef.current
     if(!speaker || !speaker.canSpeak) {
       speakerRef.current = new Speaker(window, lang)

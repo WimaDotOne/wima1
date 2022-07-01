@@ -11,7 +11,7 @@ export function ViewProfile2({
   onLeave,
   socialAccountId
 }: IViewProfile2Prop) {
-  console.log(socialAccountId)
+  
   return(<>
   {
     socialAccountId ?

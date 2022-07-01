@@ -3,9 +3,9 @@
   position: relative;
 }
 .inputDiv {
+  position: relative;
   border: 2px solid #aed1ec;
   border-radius: 5px;
-  padding: 0 10px;
   background-color: white;
 }
 .inputDiv .text {
@@ -14,6 +14,25 @@
 .inputDiv.drop {
   border-radius: 5px 5px 0 0;
   border-bottom: 2px solid #aed1ec;
+}
+.input {
+  border: none;
+  outline: none;
+  padding: 0 20px 0 40px;
+  width: 100%;
+  color: transparent;
+  background-color: transparent;
+  z-index: 2;
+  cursor: default;
+}
+.inputInnerDiv {
+  position: absolute;
+  padding: 0 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
 }
 .options {
   position: absolute;

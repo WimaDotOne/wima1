@@ -7,6 +7,7 @@ import { IsEmail } from "./Email/B/IsEmail"
 
 import { TextField1 } from "./Fields/TextField/TextField1"
 import { SelectField1 } from "./Fields/SelectField/SelectField1"
+import { SelectField2 } from "./Fields/SelectField/SelectField2"
 import { ErrorLine } from "./Fields/ErrorLine/ErrorLine"
 
 import {
@@ -46,6 +47,7 @@ export {
 
   TextField1,
   SelectField1,
+  SelectField2,
   ErrorLine,
 
   FileInput,

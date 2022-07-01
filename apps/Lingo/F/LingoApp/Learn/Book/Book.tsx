@@ -3,19 +3,23 @@ import { Post2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
 import { Button1, Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { SvgIcon } from "../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import { Pagination } from "../../../../../../libs/Pop/Pop1/fPop1"
+import { LingoColor } from "../../../CSS/LingoColor"
 import { IPage } from "../../../Model/IPage"
+import { CalcUnit } from "../../../Model/Settings"
 import { RepeatCard } from "../Card/RepeatCard/RepeatCard"
 import { Keyboard } from "../Keyboard/Keyboard"
 import cl from "./Book.module.scss"
 
 interface IBookProp {
   lang: string
-  unit: string | number
+  level: string
+  lesson: string
   goHome: ()=>void
 }
 export function Book({
   lang,
-  unit,
+  level,
+  lesson,
   goHome
 }: IBookProp) {
 
@@ -24,6 +28,8 @@ export function Book({
   const [pages, setPages] = useState<Array<IPage>>([])
   
   const shield = useShield()
+
+  const unit = CalcUnit(lang, level, lesson)
 
   async function LoadWords() {
    await Post2(shield, "/lingo/LoadWords", {
@@ -82,7 +88,7 @@ export function Book({
     <div className={cl.buttonDiv}>
       {
         page < totalPage ? 
-        <Button1 text=">" onClick={next}/>
+        <Button1 text=">" onClick={next} color={LingoColor.themeBlue}/>
         :null
       }
     </div>
