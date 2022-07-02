@@ -77,7 +77,8 @@ export function Book({
           <RepeatCard key={page+"-"+i}
             autoFocus={i===0}
             lang={lang}
-            word={word.word} 
+            word={word.word}
+            pinYin={word.pinYin}
             translate={word.translate}
             imageUrl={url}
           />)

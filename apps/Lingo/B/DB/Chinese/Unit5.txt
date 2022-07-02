@@ -1,0 +1,175 @@
+ein Mann und ein Hund||manDog1.jpg
+eine Frau und ihr Hund||womanDog1.jpg
+ein Mädchen und ein Pferd||girlHorse1.jpg
+ein Polizist und sein Pferd||policemanHorse1.jpg
+===
+eine Frau und ihr Auto||womanCar1.jpg
+eine Frau und ihre Katze||womanCat1.jpg
+ein Mann und sein Auto||manCar1.jpg
+ein Mann und seine Katze||manCat1.jpg
+===
+Sie essen ihr belegtes Brot||theyEat1Sandwich1.jpg
+Sie essen ihre belegten Brote||theyEatSandwiches1.jpg
+Sie lesen ihre Zeitung||theyRead1Newspaper1.jpg
+Sie lesen ihre Zeitungen||theyReadNewspapers1.jpg
+Sie essen ihre Äpfel||theyEatApples1.jpg
+Sie lesen ihr Buch||theyRead1Book1.jpg
+===
+Sie lesen ihre Bücher||theyReadBooks1.jpg
+Sie liest ihr Buch||womanReadBook1.jpg
+Er liest sein Buch||manReadBook1.jpg
+Sie essen ihre Äpfel||theyEatApples1.jpg
+Sie isst ihren Apfel||womanEatApple1.jpg
+Er isst seinen Apfel||manEatApple1.jpg
+===
+eine Familie||family1.jpg
+eine Familie||family2.jpg
+eine Familie||family3.jpg
+===
+ein Mann und sein Sohn||manSon1.jpg
+eine Frau und ihre Tochter||womanDaughter1.jpg
+ein Junge und sein Vater||manSon2.jpg
+ein Mädchen und ihre Mutter||womanDaughter2.jpg
+===
+die Mutter|the mother|
+die Tochter|the daughter|
+der Vater|the father|
+der Sohn|the son|
+===
+zwei Mädchen und ihre Eltern||2GirlsParents1.jpg
+ein Mädchen und ihre Eltern||girlParents1.jpg
+eine Frau und ihr Mann|a woman and her husband|
+ein Baby||baby1.jpg
+===
+eine Frau und ihre Kinder||womanChildren1.jpg
+ein Mann und seine Frau|a man and his wife|
+ein Vater und seine Tochter||manDaughter1.jpg
+Eltern und ihre Söhne||2BoysParents1.jpg
+===
+eine Mutter und ihr Baby||womanBaby1.jpg
+ein Vater und seine Kinder||manChildren1.jpg
+ein Mann und seine Frau||manWife1.jpg
+Eltern und ihre Tochter||girlParents2.jpg
+===
+Der Vater und seine Söhne spielen|The father and his sons are playing|
+Die Mutter und ihre Töchter spielen|The mother and her daughters are playing|
+Der Junge und sein Hund spielen||boyDogPlay1.jpg
+Die Fau und ihre Katze spielen||womanCatPlay1.jpg
+===
+Die Kinder kochen nicht. Ihr Vater kocht.||childrenNotFatherCook1.jpg
+Der Sohn spielt nicht. Sein Vater spielt.||boyNotFatherPlay1.jpg
+Der Vater liest nicht. Seine Tochter liest.||fatherNotDaughterRead1.jpg
+===
+Wer spielt?|Who is playing?
+Wer isst?||whoEat1.jpg
+Wer schläft?||whoSleep1.jpg
+Wer trinkt?||whoDrink1.jpg
+===
+Das ist meine Tochter||thisIsMyDaughter1.jpg
+Das ist meine Mutter||thisIsMyMother1.jpg
+Das ist mein Sohn||thisIsMySon1.jpg
+Das ist mein Fahrrad||myBike1.jpg
+Das ist mein Bett|This is my bed|
+===
+Das ist meine Familie|This is my family|
+Das ist mein Bruder||thisIsMyBrother1.jpg
+Das ist meine Mutter||thisIsMyMother2.jpg
+Das ist mein Vater||thisIsMyFather1.jpg
+Das ist meine Freundin||thisIsMyFriendGirl1.jpg
+Das ist mein Fruend||thisIsMyFriendBoy1.jpg
+===
+Die Mädchen sind keine Schwestern. Sie sind Freundinnen.||girlsFriends1.jpg
+Die Jungen sind keine Brüder. Sie sind Freunde.||boysFriends1.jpg
+Die Jungen sind Brüder|The boys are brothers|
+Die Mädchen sind Schwestern||sisters1.jpg
+===
+Das sind meine Brüder|These are my brothers|
+Das ist mein Bruder|This is my brother|
+Das ist meine Freundin||thisIsMyFriendGirl2.jpg
+Das sind meine Freundinnen||theseAreMyFriendsGirls1.jpg
+===
+Das ist meine Schwester|This is my sister|
+Das sind meine Schwestern|These are my sisters|
+Das ist meine Mutter||thisIsMyMother1.jpg
+Das sind meine Eltern||theseAreMyParents1.jpg
+===
+Das ist mein Baby||thisIsMyBaby1.jpg
+Das sind meine Kinder||theseAreMyChildren1.jpg
+Das sind meine Söhne||theseAreMySons1.jpg
+===
+Das ist unser Sohn||ourSon1.jpg
+Das ist mein Sohn||mySon1.jpg
+Das ist unsere Mutter|This is our mother|
+Das ist meine Mutter||thisIsMyMother2.jpg
+Das sind unsere Kinder||ourChildren1.jpg
+Das sind unsere Eltern||ourParents1.jpg
+===
+Sein Fahrrad ist groß||boyBigBike1.jpg
+Ihr Fahrrad ist klein||girlSmallBike1.jpg
+Ihr Fahrrad ist grün||theirGreenBike1.jpg
+Mein Fahrrad ist blau|My bike is blue
+Unser Fahrrad ist schwarz|Our bike is black
+===
+Wie haben zwei Töchter||weHave2Daughters1.jpg
+Wie haben einen Sohn und drei Töchter|We have a son and three daughters|
+Wie haben zwei Söhne||weHave2Sons1.jpg
+===
+sieben Stifte||7Pens1.jpg
+sieben Babys||7Babies1.jpg
+acht Eier||8Eggs1.jpg
+acht Stühle||8Chairs1.jpg
+neun Äpfel||9Apples1.jpg
+neun Hüte||9Hats1.jpg
+===
+zehn Teller||10Plates1.jpg
+zehn Tassen|10 cups|
+elf Schüsseln||11Bowls1.jpg
+elf Blumen||11Flowers1.jpg
+zwölf Schlüssel||12Keys1.jpg
+zwölf Bälle||12Balls1.jpg
+===
+sechs|6|
+sieben|7|
+acht|8|
+neun|9|
+zehn|10|
+elf|11|
+zwölf|12|
+null|0
+===
+Sie ist ein Jahr alt||1YearGirl1.jpg
+Sie ist zwei Jahre alt||2YearGirl1.jpg
+Sie ist drei Jahre alt||3YearGirl1.jpg
+Sie ist vier Jahre alt|She is 4-year-old
+Sie ist fünf Jahre alt||5YearGirl1.jpg
+===
+Er ist ein Jahr alt||1YearBoy1.jpg
+eins|1|
+Er ist zwei Jahre alt||2YearBoy1.jpg
+zwei|2|
+Er ist drei Jahre alt||3YearBoy1.jpg
+drei|3|
+===
+Wie alt ist er?|How old is he?|
+Er ist sieben Jahre alt||7YearBoy1.jpg
+Wie alt ist sie?|How old is she?|
+Sie ist sechs Jahre alt||6YearGirl1.jpg
+===
+Wie alt bist du?|How old are you?|
+Ich bin fünf Jahre alt||iAm5Year1.jpg
+Ich bin zehn Jahre alt||iAm10Year1.jpg
+===
+Du bist meine Freundin|You are my friend|
+Du bist meine Frau|You are my wife
+Sie sind mein Arzt|You (formal) are my doctor
+Sie sind mein Lehrer|You (formal) are my teacher
+===
+Schläfst du?|Are you sleeping?
+Nein||iRead1.jpg
+Was machst du?|What are you doing?
+Ich lese||iRead1.jpg
+===
+Essen Sie?|Are you (formal) eating?|
+Nein||noEat1.jpg
+Was machen Sie?|What are you doing?|
+Ich schreibe||iWrite1.jpg

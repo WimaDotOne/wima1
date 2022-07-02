@@ -1,0 +1,147 @@
+Das Mädchen spielt||girlPlay1.jpg
+Die Jungen spielen||boysPlay1.jpg
+Die Frauen arbeiten|The women are working|
+Der Mann arbeitet||manWork1.jpg
+===
+die Schule||school1.jpg
+das Krankenkaus||hospital1.jpg
+das Restaurant||restaurant1.jpg
+der Park||park1.jpg
+===
+Die Männer arbeiten in dem Park||menWorkPark1.jpg
+Die Frauen arbeiten in dem Restaurant||womenWorkRestaurant1.jpg
+Die Ärztin arbeitet in dem Krankenkaus||womanDoctorWorkHospital1.jpg
+Der Lehrer arbeitet an der Schule||manTeacherWorkSchool1.jpg
+===
+Der Mann ist in dem Krankenkaus||manInHospital1.jpg
+Der Mann ist im Krankenkaus||manInHospital1.jpg
+Die Frauen essen in dem Restaurant||womanEatRestaurant1.jpg
+Die Frauen essen im Restaurant||womanEatRestaurant1.jpg
+===
+Wir spielen im Park||wePlayPark1.jpg
+Wir spielen in der Schule||wePlaySchool1.jpg
+Ich arbeite im Krankenkaus||iWorkHospital1.jpg
+Ich arbeite an der Schule||iWorkSchool1.jpg
+===
+Die Familie isst drinnen|The family eat inside|
+Sie rennt draußen||sheRunOutside1.jpg
+Er rennt drinnen||heRunInside1.jpg
+Der Mann und die Frau essen draußen||manWomanEatOutside1.jpg
+===
+Diese Männer arbeiten draußen||menWorkOutside1.jpg
+Diese Frau arbeitet draußen||womanWorkOutside1.jpg
+Dieser Mann arbeitet drinnen||manWorkInside1.jpg
+Diese Frauen arbeiten drinnen||womenWorkInside1.jpg
+===
+der Morgen||morning1.jpg
+der Nachmittag|afternoon|
+der Abend||evening2.jpg
+die Nacht||night1.jpg
+===
+Es ist Morgen||morning2.jpg
+Es ist Nachmittag||afternoon1.jpg
+Es ist Abend||evening1.jpg
+Es ist Nacht||night2.jpg
+===
+Es ist Nachmittag. Die Männer essen zu Mittag||menEatLunch1.jpg
+Es ist Abend. Die Familie isst zu Abend||familyEatDinner1.jpg
+Es ist Morgen. Die Kinder frühstücken||childrenEatBreakfast1.jpg
+===
+Sie isst drinnen zu Mittag|She is eating lunch inside|
+Sie isst draußen zu Mittag||sheEatLunchOutside1.jpg
+Die familie frühstückt draußen||familyBreakfastOutside1.jpg
+Die familie frühstückt drinnen||familyBreakfastInside1.jpg
+===
+Wir frühstücken drinnen||weBreakfastInside1.jpg
+Wir frühstücken draußen||weBreakfastOutside1.jpg
+Wir essen draußen zu Mittag||weLunchOutside1.jpg
+Wir essen drinnen zu Abend||weDinnerInside1.jpg
+===
+Er arbeitet morgens||heWorkMorning1.jpg
+Er arbeitet nachts||heWorkNight1.jpg
+Sie spielen nachmittags|They play in the afternoon|
+Sie sieht abends fern||sheTvEvening1.jpg
+===
+Wo arbeiten Sie?|Where do you work?|
+Ich arbeite in einem Park||iWorkPark1.jpg
+Ich arbeite in einem Krankenkaus||iWorkHospital1.jpg
+Ich arbeite an einer Schule||iWorkSchool1.jpg
+Ich arbeite in einem Restaurant||iWorkRestaurant1.jpg
+===
+Wann arbeiten Sie?|When do you work?|
+Ich arbeite morgens||iWorkMorning1.jpg
+Ich arbeite nachmittags||iWorkAfternoon1.jpg
+Ich arbeite nachts||iWorkNight1.jpg
+===
+Er trägt Socken und Schuhe||heShoesSocks1.jpg
+Er trägt Schuhe, aber keine Socken||heShoesNoSocks1.jpg
+Ich trage einen Anzug und eine Krawatte||iSuitTie1.jpg
+Ich trage einen Anzug, aber keine Krawatte||iSuitNoTie1.jpg
+===
+Er hat ein Ei, aber er isst es nicht||heHoldEgg1.jpg
+Er hat ein Ei und er isst es||boyEatEgg1.jpg
+Das Mädchen hat ein Buch, aber sie liest es nicht||girlHoldBook1.jpg
+Das Mädchen hat ein Buch und sie liest es||girlReadBook1.jpg
+===
+Trägt du Socken und Schuhe?|Are you wearing socks and shoes?|
+Ich trage Socken, aber ich trage keine Schuhe||iWearSocks1.jpg
+Hast du Brüder und Schwestern|Do you have brothers and sisters?|
+Ja. Ich habe zwei Brüder und zwei Schwestern|Yes. I have 2 brothers and 2 sisters.|
+Haben Sie einen Mantel und einen Hut?|Do you have a coat and a hat?|
+Ich habe einen Mantel, aber keinen Hut||coat1.jpg
+===
+Wann trinken Sie Kaffee?||whenCoffee1.jpg
+Ich trinke morgens Kaffee|I drink coffee in the morning|
+Ich trinke abends Kaffee|I drink coffee in the evening|
+===
+Er liest vor dem Schlafengehen||heReadBed1.jpg
+Er trinkt Kaffee vor der Arbeit||heCofeeWork1.jpg
+Sie liest nach dem Mittagessen|She reads after lunch|
+Sie trinken Kaffee nach dem Abendessen|They drink coffee after dinner|
+===
+Wann liest du?|When do you read?|
+Ich lese vor dem Schlafengehen||iReadBed1.jpg
+Wann isst du?|When do you eat?|
+Ich esse nach der Arbeit||iEatAfterWork1.jpg
+===
+fünfzehn Krawatten|15 ties|
+vierzehn Tassen|14 cups|
+dreizehn Eier||13Eggs1.jpg
+sechzehn Gürtel|16 belts|
+===
+siebzehn Teller|17 plates|
+achtzehn Bälle|18 balls|
+neunzehn Blumen|19 flowers|
+zwagzig Bücher|20 books|
+===
+dreizehn|13|
+vierzehn|14|
+fünfzehn|15|
+sechzehn|16|
+siebzehn|17|
+achtzehn|18|
+neunzehn|19|
+zwanzig|20|
+===
+Fünfzehn kommt nach vierzehn|15 comes after 14|
+Vierzehn kommt nach dreizehn|13,14|
+Neunzehn kommt vor zwanzig|19,20|
+===
+Wie alt bist du?|How old are you?|
+Ich bin vierzehn Jahre alt||i14Year1.jpg
+Wie alt sind Sie?|How old are you?|
+Ich bin neunzehn Jahre alt||i19Year1.jpg
+===
+Guten Morgen|Good morning|
+Guten Tag|Good day|
+Guten Abend|Good evening|
+Gute Nacht||goodNight1.jpg
+===
+Guten Tag, wie geht es euch?||howAreYou1.jpg
+Uns geht es gut||weAreGood1.jpg
+===
+Was machen Sie nachmittags|What do you in the afternoon|
+Ich spiele mit meinem Sohn||iPlaySon1.jpg
+Wo schreiben Sie?|Where do you write?|
+Morgens schreibe ich im Park||iWritePark1.jpg
+Abends schreibe ich im Wohnzimmer||iWriteLivingRoom1.jpg

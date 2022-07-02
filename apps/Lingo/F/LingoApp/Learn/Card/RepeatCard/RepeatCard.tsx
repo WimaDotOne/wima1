@@ -5,9 +5,11 @@ import { VoiceField } from "../H/VoiceField/VoiceField"
 import { Illustration } from "../H/Illustration/Illustration"
 import { CheckMark } from "../H/CheckMark/CheckMark"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
+import cl from "./RepeatCard.module.scss"
 
 interface IRepeatCardProp {
   word: string
+  pinYin?: string
   translate: string
   lang: string
   imageUrl?: string
@@ -15,6 +17,7 @@ interface IRepeatCardProp {
 }
 export function RepeatCard({
   word,
+  pinYin,
   translate,
   lang,
   imageUrl,
@@ -23,21 +26,23 @@ export function RepeatCard({
 
   const [match, setMatch] = useState<boolean>(false)
 
-  useEffect(()=>{
-   
-  }, [match])
-
+  const isChinese = lang === "zh-CN"
   return(<>
     <CardDiv>
-      <WordRow word={word} speaker lang={lang}/>
+      <WordRow word={word} pinYin={pinYin} speaker lang={lang}/>
       <VoiceField lang={lang} autoFocus={autoFocus}
-        word={word} setMatch={setMatch}/>
+        word={word} pinYin={pinYin} setMatch={setMatch}/>
       <Div height={10} />
       <Illustration imageUrl={imageUrl} translate={translate} />
       {
         match ? <CheckMark />:null
       }
-      
+          {
+      isChinese ? 
+      <div className={cl.chineseWord}>
+      { word }
+      </div>:null
+    }
     </CardDiv>
   </>)
 }

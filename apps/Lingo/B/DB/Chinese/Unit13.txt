@@ -1,0 +1,164 @@
+Sie trägt eine Sonnenbrille||sheWearSunglasses1.jpg
+Die Frauen haben Regenschirme||wowenHaveUmbrellas1.jpg
+Er hat eine Eintrittskarte||heHasTicket1.jpg
+Die Männer haben eine Leiter||menHaveLadder1.jpg
+===
+der Regenschirm||umbrella1.jpg
+die Eintrittskarte||ticket1.jpg
+die Sonnenbrille||sunglasses1.jpg
+die Leiter||ladder1.jpg
+===
+Er braucht Seife||heNeedSoap1.jpg
+Sie braucht eine Leiter||sheNeedLadder1.jpg
+Er braucht ein handtuch|He needs a towel|
+Sie braucht eine Sonnenbrille||sheNeedSunglasses1.jpg
+===
+Er braucht Geld||heNeedMoney1.jpg
+Er hat Geld||heHasMoney1.jpg
+Das Geld ist auf dem Tisch||moneyOnTable1.jpg
+===
+Sie hat einen Regenschirm||womanHasUmbrella1.jpg
+Sie hat Geld||sheHasMoney1.jpg
+Er braucht einen Regenschirm||heNeedUmbrella1.jpg
+===
+Ich habe eine Sonnenbrille||iHaveSunglasses1.jpg
+Ich brauche eine Sonnenbrille||iNeedSunglasses1.jpg
+Brauchen Sie eine Eintrittskarte?||sellTicket1.jpg
+===
+Brauchst du die Schlüssel?||doYouNeedKeys1.jpg
+Ja. Ich brache die Schlüssel|Yes. I need the keys|
+Brauchst du Geld?||doYouNeedMoney1.jpg
+Ja. Ich brache Geld||yesMoney1.jpg
+===
+der Schmuck||jewelry1.jpg
+der Schmuck||jewelry2.jpg
+die Kleidung||clothes1.jpg
+die Kleidung||clothes2.jpg
+das Spielzeug||toy1.jpg
+das Spielzeug||toy2.jpg
+===
+das Obst||fruit1.jpg
+das Obst||fruit2.jpg
+das Gemüse||vegetable1.jpg
+das Gemüse||vegetable2.jpg
+das Fleisch||meat1.jpg
+das Fleisch||meat2.jpg
+===
+Er kauft Kleidung||manBuyClothes1.jpg
+Sie kauft Spielzeug||womanBuyToys1.jpg
+Sie kaufen Fleisch||theyBuyMeat1.jpg
+Sie kaufen Gemüse||theyBuyVegetables1.jpg
+===
+Das grüne Auto ist neu||newGreenCar1.jpg
+Das weiße Haus ist alt||oldWhiteHouse1.jpg
+Das rote Haus ist neu||newRedHouse1.jpg
+Das Blaue Auto ist alt||oldBlueCar1.jpg
+===
+ein neuer Fernseher||newTv1.jpg
+ein alter Fernseher||oldTv1.jpg
+ein neues Telefon||newPhone1.jpg
+ein altes Telefon||oldPhone1.jpg
+===
+Sie verkauft Blumen||womanSellFlower1.jpg
+Sie verkauft Gemüse||womanSellVegetable1.jpg
+Er verkauft Autos||manSellCar1.jpg
+Er verkauft Obst||manSellFruit1.jpg
+===
+Sie verkauft einen altern Hut|She is selling an old hat|
+Sie verkauft ein altes Auto||womanSellOldCar1.jpg
+Ich verkaufe einen neuen Regenschirm|I am selling a new umbrella|
+Ich verkaufe ein neues Auto||iSellNewCar1.jpg
+===
+Dieses Geschäft verkauft alten Schmuck|This shop sells old jewelry|
+Dieses Geschäft verkauft neuen Schmuck||shopNewJewelry1.jpg
+Dieses Geschäft verkauft alte Bücher||shopOldBook1.jpg
+Dieses Geschäft verkauft neue Bücher||shopNewBook1.jpg
+===
+der Supermarkt||supermarket1.jpg
+der Supermarkt||supermarket2.jpg
+der Baumarkt||hardwareStore1.jpg
+der Baumarkt||hardwareStore2.jpg
+das Juweliergeschäft||shopNewJewelry1.jpg
+===
+ein Supermarkt||supermarket1.jpg
+ein Baumarkt||hardwareStore1.jpg
+ein Juweliergeschäft||jewelryStore1.jpg
+===
+Er kauft in einem Juweliergeschäft ein||manBuyJewelryStore1.jpg
+Sie kauft in in einem Baumarkt ein||womanBuyHardwareStore1.jpg
+Sie kaufen in einem Supermarkt ein||theyBuySupermarket1.jpg
+===
+Ich lese ein Buch||iReadBook1.jpg
+Sie verkauft eine Torte||sheSellCake1.jpg
+Er kauft Medikamente||heBuyMedicine1.jpg
+Sie essen Schokolade||theyEatChocolate1.jpg
+===
+Sie kaufen Gemüse in einem Supermarkt||theyBuySupermarket1.jpg
+Du kaufst eine Torte in der Bäckerei|You are buying a cake in bakery|
+Sie kauft Medikamente in einer Apotheke||sheBuyDrugStore1.jpg
+Sie kauft Bücher in der Buchhandlung||sheBuyBookStore1.jpg
+===
+Er kauft ein Buck in der Buchhandlung|He is buying in the bookstore|
+Sie verkauft Medikamente in der Apotheke||sheSellDrugStore1.jpg
+Wir verkaufen Schmuck im Juweliergeschäft||weSellJewelryStore1.jpg
+Ich kaufe eine Leiter im Baumarkt||iBuyLadderHardwareStore1.jpg
+===
+der Kuchen||plainCake1.jpg
+der Kuchen||plainCake2.jpg
+der Kuchen||plainCake3.jpg
+das Brot||bread1.jpg
+die Torte||cake1.jpg
+===
+Schokolade||chocolate1.jpg
+eine Torte||cake2.jpg
+ein Medikament||aMedicine1.jpg
+eine Apotheke||drugStore1.jpg
+eine Buchhandlung||bookStore1.jpg
+eine Bäckerei||bakery1.jpg
+===
+ein kaputter Fernseher||brokenTv1.jpg
+ein kaputtes Telefon||brokenPhone1.jpg
+ein kaputtes Spielzeug||brokenToy1.jpg
+ein kaputtes Radio||brokenRadio1.jpg
+===
+Das Mändchen möchte Schokolade||girlWantChocolate1.jpg
+Der Junge möchte ein Spielzeug||boyWantToy1.jpg
+Die Frau möchte Schmuck||womanWantJewelry1.jpg
+Der Hund möchte das Fleisch||dogWantMeat1.jpg
+===
+Sie möchte einen lila Mantel|She want a purple coat|
+Sie brache einen Mantel|She needs a coat|
+Er möchte eine rote Brille||heWantRedGlasses1.jpg
+Er braucht eine Brille||heNeedGlasses1.jpg
+===
+Entschuldigen Sie bitte. Wo ist der Supermarkt?|Excuse me. Where is the supermarket?
+Der supermarket ist in der Nähe der Brücke||supermarketNearBridge1.jpg
+Entschuldigen Sie bitte. Wo ist die Bäckerei?|Excuse me. Where is the bakery?|
+Die Bäckerei ist in der Goethestraße||Goethestreet1.jpg
+===
+Ich brauche Medikamente||iNeedMedicine1.jpg
+Die Apotheke ist nahe beim Krankenkaus|The pharmacy is near the hospital|
+Ich möchte ein Buch kaufen. Wo ist die Buchhandlung|I want to buy a book. Where is the book store?|
+Die Buchhandlung ist nahe beim Park||bookStoreNearPark1.jpg
+===
+Er möchte Kuchen, aber er braucht keinen||manWantCake1.jpg
+Sie braucht eine Brille, aber sie möchte keine||womanUseMagnifyingGlass1.jpg
+Er braucht Medikamente, aber er möchte keine||boyNotWantMedicine1.jpg
+Sie möchte Schmuck, aber sie braucht keinen||womanWantJewelry2.jpg
+===
+Warum brachen Sie einen neuen Fernseher?|Why do you need a new TV?
+Weil mein alter Fernseher kaputt ist||brokenTv2.jpg
+Warum brauchen Sie einen neuen Regenschirm?|Why do you need a new umbrella?
+Weil mein alter Regenschirm kaputt ist||brokeUmbrella1.jpg
+===
+Was kaufst du ein?|What are you buy?|
+Ich kaufe Obst und Schokolade ein||iBuyFruitChocolate1.jpg
+Was kaufen Sie ein?|What are you buying?|
+Ich kaufe Fleisch und Gemüse ein||iBuyMeatVegetable1.jpg
+===
+Wo ist der Baumarkt?|Where is the hardware store?
+Der Baumarkt ist nahe bei der Buchhandlung|The hardware store is near the book store|
+Was brauchst du?|What do you need?|
+Ich brache eine neue Leiter||iNeedLadder1.jpg
+Warum brauchst du eine neue Leiter?|Why do you need a new ladder?
+Weil meine alter Leiter kaputt ist||brokenLadder1.jpg

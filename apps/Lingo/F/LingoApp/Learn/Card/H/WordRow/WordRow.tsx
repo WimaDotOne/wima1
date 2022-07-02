@@ -4,22 +4,25 @@ import cl from "./WordRow.module.scss"
 
 interface IWordRowProp {
   word: string
+  pinYin?: string
   lang?: string
   speaker?: boolean
 }
 export function WordRow({
   word,
+  pinYin,
   speaker,
   lang
 }:IWordRowProp) {
   
   const wordStyle = WordStyle(word)
   const clSpeaker = speaker ? cl.speaker : ""
+  const isChinese = lang === "zh-CN"
 
   return(<>
     <div className={ClassNames([cl.wordRow, clSpeaker])}>
       <div className={cl.word} style={wordStyle}>
-        {word}
+        {isChinese ? pinYin : word}
       </div>
       {
         speaker && lang?

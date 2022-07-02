@@ -21,6 +21,8 @@ export function Keyboard({
     case Lang.French:
       keys = ["é","ç","è","à","ù"]
       break
+    case Lang.Chinese:
+      keys = ["ā","á","ǎ","à","ē","é","ě","è","ō","ó","ǒ","ò","ī","í","ǐ","ì","ū","ú","ǔ","ù","ǖ","ǘ","ǚ","ǜ"]
     default:
   }
 

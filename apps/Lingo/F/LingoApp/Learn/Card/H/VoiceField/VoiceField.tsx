@@ -8,12 +8,14 @@ import cl from "./VoiceField.module.scss"
 
 interface IVoiceFieldProp {
   word: string
+  pinYin?: string
   lang: string
   setMatch: (match: boolean)=>void
   autoFocus?: boolean
 }
 export function VoiceField({
   word,
+  pinYin,
   lang,
   setMatch,
   autoFocus
@@ -35,7 +37,7 @@ export function VoiceField({
 
   function onInputChange(newValue: string) {
     setText(newValue)
-    if(IsMatch(word, newValue)) {
+    if(IsMatch(word, newValue, pinYin)) {
       setMatch(true)
       const input = inputRef.current
       if(input) {
@@ -48,7 +50,7 @@ export function VoiceField({
 
   function onResult(result: string) {
     setText(result)
-    if(IsMatch(word, result)) {
+    if(IsMatch(word, result, pinYin)) {
       setMatch(true)
     }
   }

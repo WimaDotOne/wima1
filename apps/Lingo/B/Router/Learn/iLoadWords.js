@@ -7,6 +7,7 @@ export async function iLoadWords(req, res) {
     const unit = req.body.unit
     const lang = req.body.lang
 
+    let isChinese = false
     let language = ""
     switch(lang) {
       case "fr-FR": 
@@ -14,6 +15,10 @@ export async function iLoadWords(req, res) {
         break
       case "de-DE":
         language="German"
+        break
+      case "zh-CN":
+        isChinese = true
+        language="Chinese"
         break
       default:
     }
@@ -26,7 +31,7 @@ export async function iLoadWords(req, res) {
       path, { encoding: "utf8" }
     )
 
-    const pages = ParseUnitText(data)
+    const pages = ParseUnitText(data, isChinese)
     return res.json({
       ok: true,
       pages
