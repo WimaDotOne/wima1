@@ -13,16 +13,20 @@ export function ParseUnitText(data, isChinese) {
       continue
     }
     const wordInfo = w.split("|")
-    const word = (wordInfo[0] || "").trim()
+    let word = (wordInfo[0] || "").trim()
     const translate = (wordInfo[1] || "").trim()
     const illustration = (wordInfo[2] || "").trim()
     
     
     if(isChinese) {
-      const pinYin = (wordInfo[3] || "").trim()
+      const word2 = word.split("^")
+      word = (word2[0] || "").trim()
+      const pinYin = (word2[1] || "").trim()
+
       page.push({
         word, translate, illustration, pinYin
       })
+
     } else {
       page.push({
         word, translate, illustration
