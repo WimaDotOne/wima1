@@ -10,122 +10,122 @@
 咖啡^kā fēi | the coffee | coffee2.jpg
 牛奶^niú nǎi | the milk | milk1.jpg
 ===
-一个女人和一个女孩 | a woman and a girl | womanGirl1.jpg
-一个三明治和牛奶 | a sandwich and milk | sandwichMilk1.jpg
-一个男孩和一个男人 | a boy and a man | manBoy1.jpg
+一个女人和一个女孩^yī gè nǚ rén hé yī gè nǚ hái || womanGirl1.jpg
+一个三明治和牛奶^yī gè sān míng zhì hé niú nǎi || sandwichMilk1.jpg
+一个男孩和一个男人^yī gè nán hái hé yī gè nán rén || manBoy1.jpg
 ===
-米饭和一个苹果 | rice and an apple | riceApple1.jpg
-一个女人和一个男人 | a woman and a man | womanMan1.jpg
-面包和水 | bread and water | breadWater1.jpg
+米饭和一个苹果^mǐ fàn hé yī gè píng guǒ || riceApple1.jpg
+一个女人和一个男人^yī gè nǚ rén hé yī gè nán rén || womanMan1.jpg
+面包和水^miàn bāo hé shuǐ || breadWater1.jpg
 ===
-那个男孩在喝牛奶|| boyDrinkMilk1.jpg
-那个女人在喝咖啡|| womanDrinkCoffee1.jpg
-那个男人和那个男孩在喝水 || manBoyDrinkWater1.jpg
-那个女孩在吃面包 || girlEatBread1.jpg
-那个男人在吃一个鸡蛋 || manEatEgg1.jpg
-那个男人和那个女人在吃米饭 || womanManEatRice1.jpg
+那个男孩在喝牛奶^nà gè nán hái zài hē niú nǎi|| boyDrinkMilk1.jpg
+那个女人在喝咖啡^nà gè nǚ rén zài hē kā fēi|| womanDrinkCoffee1.jpg
+那个男人和那个男孩在喝水^nà gè nán rén hé nà gè nán hái zài hē shuǐ || manBoyDrinkWater1.jpg
+那个女孩在吃面包^nà gè nán rén hé nà gè nán hái zài hē shuǐ || girlEatBread1.jpg
+那个男人在吃一个鸡蛋^nà gè nán rén zài chī yī gè jī dàns || manEatEgg1.jpg
+那个男人和那个女人在吃米饭^nà gè nán rén hé nà gè nǚ rén zài chī mǐ fàn || womanManEatRice1.jpg
 ===
-她在吃一个苹果 || womanEatApple1.jpg
-他们在吃鸡蛋 || childrenEatEgg1.jpg
-她们在吃三明治 || womenEatSandwich1.jpg
-他在吃米饭 || manEatRice1.jpg
+她在吃一个苹果^tā zài chī yī gè píng guǒ || womanEatApple1.jpg
+他们在吃鸡蛋^tā mén zài chī jī dàn || childrenEatEgg1.jpg
+她们在吃三明治^tā mén zài chī sān míng zhì || womenEatSandwich1.jpg
+他在吃米饭^tā zài chī mǐ fàn || manEatRice1.jpg
 ===
-狗 || dog1.jpg
-狗 || dog2.jpg
-猫 || cat1.jpg
-猫 || cat2.jpg
-马 || horse1.jpg
+狗^gǒu || dog1.jpg
+狗^gǒu || dog2.jpg
+猫^māo || cat1.jpg
+猫^māo || cat2.jpg
+马^mǎ || horse1.jpg
 ===
-轿车 || car1.jpg
-轿车 | the car|
-报纸 || newspaper1.jpg
-报纸 | the newspaper|
-自行车|| bike1.jpg
+轿车^jiào chē || car1.jpg
+轿车^jiào chē | the car|
+报纸^bào zhǐ || newspaper1.jpg
+报纸^bào zhǐ | the newspaper|
+自行车^zì xíng chē || bike1.jpg
 ===
-一只狗 | a dog |
-一只猫 | a cat |
-一匹马 | a horse |
-一辆轿车 | a car |
-一份报纸 | a newspaper |
-一辆自行车 | a bike
+一只狗^yī zhī gǒu | a dog |
+一只猫^yī zhī māo | a cat |
+一匹马^yī pǐ mǎ | a horse |
+一辆轿车^yī liàng jiào chē | a car |
+一份报纸^yī fèn bào zhǐ | a newspaper |
+一辆自行车^yī liàng zì xíng chē | a bike
 ===
-那个男孩再走 || boyWalk1.jpg
-那个女孩在走 || girlWalk1.jpg
-那个女人在开车 | The woman is driving a car |
-那个男人在开车 || manDriveCar1.jpg
+那个男孩在走^nà gè nán hái zài zǒu || boyWalk1.jpg
+那个女孩在走^nà gè nǚ hái zài zǒu || girlWalk1.jpg
+那个女人在开车^nà gè nǚ rén zài kāi chē | The woman is driving a car |
+那个男人在开车^nà gè nán rén zài kāi chē || manDriveCar1.jpg
 ===
-他们在吃苹果 || boyGirlEatApple1.jpg
-她在读一本书 || womanReadBook1.jpg
-他们在读报纸 || boyManReadNewspaper1.jpg
+他们在吃苹果^tā mén zài chī píng guǒ || boyGirlEatApple1.jpg
+她在读一本书^tā zài dú yī běn shū || womanReadBook1.jpg
+他们在读报纸^tā mén zài dú bào zhǐ || boyManReadNewspaper1.jpg
 ===
-他有一只猫 | He has a cat | manHasCat1.jpg
-她有一只狗 | She has a dog | girlHasDog1.jpg
-他们有一份报纸| They have a newspaper |
+他有一只猫^tā yǒu yī zhī māo | He has a cat | manHasCat1.jpg
+她有一只狗^tā yǒu yī zhī gǒu | She has a dog | girlHasDog1.jpg
+他们有一份报纸^tā mén yǒu yī fèn bào zhǐ| They have a newspaper |
 ===
-她有三明治 || womanHasSandwich1.jpg
-他有一辆轿车 | He has a car | manHasCar1.jpg
-他们有一匹马 | They have a horse|
+她有三明治^tā yǒu sān míng zhì || womanHasSandwich1.jpg
+他有一辆轿车^tā yǒu yī liàng jiào chē | He has a car | manHasCar1.jpg
+他们有一匹马^tā mén yǒu yī pǐ mǎ | They have a horse|
 ===
-他有书 | He has books |
-他们有笔 | They have pens |
-她有一条鱼 || girlHasFish1.jpg
+他有书^tā yǒu shū | He has books |
+他们有笔^tā mén yǒu bǐ | They have pens |
+她有一条鱼^tā yǒu yī tiáo yú || girlHasFish1.jpg
 ===
-一本书 || book1.jpg
-一支笔 || pen1.jpg
-一条鱼 || fish1.jpg
+一本书^yī běn shū || book1.jpg
+一支笔^yī zhī bǐ || pen1.jpg
+一条鱼^yī tiáo yú || fish1.jpg
 ===
-Sie schlafen | They are sleeping |
-Er schläft || boySleep1.jpg
-Sie schläft || womanSleep1.jpg
+他们在睡觉 | They are sleeping |
+他在睡觉 || boySleep1.jpg
+她在睡觉 || womanSleep1.jpg
 ===
-Das Pferd frisst || horseEat1.jpg
-Der Hund frisst | The dog is eating |
-Der Junge isst || boyEat1.jpg
-Das Mädchen isst || girlEat1.jpg
+那匹马在吃 ... || horseEat1.jpg
+那只狗在吃 ... | The dog is eating |
+那个男孩在吃 ...|| boyEat1.jpg
+那个女孩在吃 ...|| girlEat1.jpg
 ===
-Der Hund frisst || dogEat1.jpg
-Der Fisch schwimmt | The fish is swimming|
-Das Pferd rennt || horseRun1.jpg
-Die Katze schläft || catSleep1.jpg
+那只狗在吃 ...|| dogEat1.jpg
+那条鱼在游泳| The fish is swimming|
+那匹马在跑|| horseRun1.jpg
+那只猫在睡觉|| catSleep1.jpg
 ===
-Sie laufen || theyWalk1.jpg
-Sie lesen || theyRead1.jpg
-Sie schwimmen | They are swimming |
-Sie schlafen || girlsSleep1.jpg
+他们在走 || theyWalk1.jpg
+他们在读 ...|| theyRead1.jpg
+他们在游泳| They are swimming |
+他们在睡觉|| girlsSleep1.jpg
 ===
-Die Erwachsenen essen | The adults are eating|
-Die Kinder trinken || childrenDrink1.jpg
-Die Kinder schwimmen || childrenSwim1.jpg
-Die Erwachsenen rennen || adultsRun1.jpg
+大人们在吃 ...| The adults are eating|
+孩子们在喝 ...|| childrenDrink1.jpg
+孩子们在游泳|| childrenSwim1.jpg
+大人们在跑|| adultsRun1.jpg
 ===
-Die Erwachsenen lesen || adultsRead1.jpg
-Die Kinder rennen |The children are running|
-Der Erwachsene liest || adultRead1.jpg
-Das Kind rennt || childRun1.jpg
+大人们在读 ...|| adultsRead1.jpg
+孩子们在跑|The children are running|
+大人们在读 ...|| adultRead1.jpg
+那个孩子在跑|| childRun1.jpg
 ===
-Die Frau fährt ||womanDriveCar1.jpg
-Der Mann fährt ||manDriveCar2.jpg
-Das Mädchen fährt nicht | The girl is not driving|
-Der Junge fährt nicht || boySitInCar1.jpg
+那个女人在开车||womanDriveCar1.jpg
+那个男人在开车||manDriveCar2.jpg
+那个女孩不在开车| The girl is not driving|
+那个男孩不在开车|| boySitInCar1.jpg
 ===
-Die Erwachsenen kochen || menCook1.jpg
-Die Erwachsenen kochen nicht | The adults are not cooking|
-Die Kinder schreiben || childrenWrite1.jpg
-Die Kinder schreiben nicht | The children are not writing|
-Die Frau fährt || womanDriveCar2.jpg
-Die Frau fährt nicht || womanSitInCar1.jpg
+那些大人们在做饭|| menCook1.jpg
+那些大人们不在做饭| The adults are not cooking|
+那些孩子在写 ...|| childrenWrite1.jpg
+那些孩子不在写 ...| The children are not writing|
+那个女人在开车|| womanDriveCar2.jpg
+那个女人不在开车|| womanSitInCar1.jpg
 ===
-Er läuft. Er rennt nicht. || manWalk1.jpg
-Sie kochen nicht. Sie essen || theyEat1.jpg
-Er läuft nicht. Er rennt. || boyRun1.jpg
-Sie kochen. Sie essen nicht |They are cooking. They are not eating.|
+他在走。他不在跑。|| manWalk1.jpg
+他们不在做饭。他们在吃 ...|| theyEat1.jpg
+他不在走。他在跑|| boyRun1.jpg
+他们在做饭。他们不在吃 ...|They are cooking. They are not eating.|
 ===
-Der Junge hat einen Stift || boyHasAPen1.jpg
-Die Frauen haben Reis || womenHaveRice1.jpg
-Die Männer haben keinen Reis | The men do not have rice|
-Das Mädchen hat keinen Stift || girlHasNoPen1.jpg
+那个男孩有一只笔|| boyHasAPen1.jpg
+那些女人有米|| womenHaveRice1.jpg
+那些男人没有米 | The men do not have rice|
+那个女孩没有笔|| girlHasNoPen1.jpg
 ===
-Das Mädchen hat ein Fahrrad || girlHasBike1.jpg
+那个女孩有一辆自行车|| girlHasBike1.jpg
 Das Mädchen hat kein Fahrrad | The girl does not have a bike.|
 Der Junge hat Milch || boyHasMilk1.jpg
 Der Junge hat keine Milch |The boy has no milk.|

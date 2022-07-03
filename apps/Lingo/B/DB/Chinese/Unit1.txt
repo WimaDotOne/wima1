@@ -3,123 +3,123 @@
 你好^nǐ hǎo | Hello
 你好^nǐ hǎo || hello3.jpg
 =====
-那个男人^nà ge nán rén || man1.jpg
-那个女人^nà ge nǚ rén || woman1.jpg
-那个女人^nà ge nǚ rén | the woman
-那个男人^nà ge nán rén || man2.jpg
+那个男人^nà gè nán rén || man1.jpg
+那个女人^nà gè nǚ rén || woman1.jpg
+那个女人^nà gè nǚ rén | the woman
+那个男人^nà gè nán rén || man2.jpg
 ====
-那个女孩^nà ge nǚ hái|| girl1.jpg
-那个男孩^nà ge nán hái|| boy1.jpg
-那个男孩^nà ge nán hái|the boy
-那个女孩^nà ge nǚ hái|| girl2.jpg
+那个女孩^nà gè nǚ hái|| girl1.jpg
+那个男孩^nà gè nán hái|| boy1.jpg
+那个男孩^nà gè nán hái|the boy
+那个女孩^nà gè nǚ hái|| girl2.jpg
 ====
-那个女孩在吃 ...^nà ge nǚ hái zài chī ...|| girlEat1.jpg
-那个女孩在喝 ...^nà ge nǚ hái zài hē ...|| girlDrink1.jpg
-那个男孩在吃 ...^nà ge nán hái zài chī ...| The boy is eating
-那个男孩在喝 ...^nà ge nán hái zài hē ...|| boyDrink1.jpg
+那个女孩在吃 ...^nà gè nǚ hái zài chī ...|| girlEat1.jpg
+那个女孩在喝 ...^nà gè nǚ hái zài hē ...|| girlDrink1.jpg
+那个男孩在吃 ...^nà gè nán hái zài chī ...| The boy is eating
+那个男孩在喝 ...^nà gè nán hái zài hē ...|| boyDrink1.jpg
 ====
-那个女人在吃 ...^nà ge nǚ rén zài chī ...|| womanEat1.jpg
-那个女人在喝 ...^nà ge nǚ rén zài hē ...|| womanDrink1.jpg
-那个男人在喝 ...^nà ge nán rén zài hē ...| The man is drinking
-那个男人在吃 ...^nà ge nán rén zài chī ...|| manEat1.jpg
+那个女人在吃 ...^nà gè nǚ rén zài chī ...|| womanEat1.jpg
+那个女人在喝 ...^nà gè nǚ rén zài hē ...|| womanDrink1.jpg
+那个男人在喝 ...^nà gè nán rén zài hē ...| The man is drinking
+那个男人在吃 ...^nà gè nán rén zài chī ...|| manEat1.jpg
 ====
-那个女孩在吃 ...^nà ge nǚ hái zài chī ...|| girlEat2.jpg
-那个女孩在喝 ...^nà ge nǚ hái zài hē ...|| girlDrink2.jpg
-那个男人在喝 ...^nà ge nán rén zài hē ...|| manDrink1.jpg
-那个男人在吃 ...^nà ge nán rén zài chī ...|| manEat2.jpg
+那个女孩在吃 ...^nà gè nǚ hái zài chī ...|| girlEat2.jpg
+那个女孩在喝 ...^nà gè nǚ hái zài hē ...|| girlDrink2.jpg
+那个男人在喝 ...^nà gè nán rén zài hē ...|| manDrink1.jpg
+那个男人在吃 ...^nà gè nán rén zài chī ...|| manEat2.jpg
 ===
-那个男人在跑步^nà ge nán rén zài pǎo bù|| manRun1.jpg
-那个男孩在跑步^nà ge nán hái zài pǎo bù|| boyRun1.jpg
-那个女孩在跑步^nà ge nǚ hái zài pǎo bù| The girl is running |
-那个女人在跑步^nà ge nǚ rén zài pǎo bù|| womanRun1.jpg
+那个男人在跑^nà gè nán rén zài pǎo|| manRun1.jpg
+那个男孩在跑^nà gè nán hái zài pǎo|| boyRun1.jpg
+那个女孩在跑^nà gè nǚ hái zài pǎo| The girl is running |
+那个女人在跑^nà gè nǚ rén zài pǎo|| womanRun1.jpg
 ===
-那个男人在读 ...^nà ge nán rén zài dú ...|| manRead1.jpg
-那个女人在读 ...^nà ge nǚ rén zài dú ...|| womanRead1.jpg
-那个男孩在读 ...^nà ge nán hái zài dú ...| The boy is reading
-那个女孩在读 ...^nà ge nǚ hái zài dú ...|| girlRead1.jpg
+那个男人在读 ...^nà gè nán rén zài dú ...|| manRead1.jpg
+那个女人在读 ...^nà gè nǚ rén zài dú ...|| womanRead1.jpg
+那个男孩在读 ...^nà gè nán hái zài dú ...| The boy is reading
+那个女孩在读 ...^nà gè nǚ hái zài dú ...|| girlRead1.jpg
 ===
-那个女人在喝 ...^nà ge nǚ rén zài hē ...|| womanDrink2.jpg
-那个女人在读 ...^nà ge nǚ rén zài dú ... | The woman is reading | womanRead2.jpg
-那个女人在跑步^nà ge nǚ rén zài pǎo bù|| womanRun2.jpg
-那个女人在吃 ...^nà ge nǚ rén zài chī ...|| womanEat2.jpg
+那个女人在喝 ...^nà gè nǚ rén zài hē ...|| womanDrink2.jpg
+那个女人在读 ...^nà gè nǚ rén zài dú ... | The woman is reading | womanRead2.jpg
+那个女人在跑^nà gè nǚ rén zài pǎo|| womanRun2.jpg
+那个女人在吃 ...^nà gè nǚ rén zài chī ...|| womanEat2.jpg
 ===
-那个男孩在喝 ...^nà ge nán hái zài hē ...|| boyDrink2.jpg
-那个男孩在读 ...^nà ge nán hái zài dú ...|| boyRead1.jpg
-那个男孩在跑步^nà ge nán hái zài pǎo bù| The boy is running | boyRun2.jpg
-那个男孩在吃 ...^nà ge nán hái zài chī ...|| boyEat1.jpg
+那个男孩在喝 ...^nà gè nán hái zài hē ...|| boyDrink2.jpg
+那个男孩在读 ...^nà gè nán hái zài dú ...|| boyRead1.jpg
+那个男孩在跑^nà gè nán hái zài pǎo| The boy is running | boyRun2.jpg
+那个男孩在吃 ...^nà gè nán hái zài chī ...|| boyEat1.jpg
 ===
-那个女孩在喝 ...^nà ge nǚ hái zài hē ...|| girlDrink3.jpg
+那个女孩在喝 ...^nà gè nǚ hái zài hē ...|| girlDrink3.jpg
 那些女孩在喝 ...^nà xiē nǚ hái zài hē ...|| girlsDrink1.jpg
 那些男孩在吃 ...^nà xiē nán hái zài chī ...| The boys are eating |
-那个男孩在吃 ...^nà ge nán hái zài chī ...|| boyEat2.jpg
+那个男孩在吃 ...^nà gè nán hái zài chī ...|| boyEat2.jpg
 ===
 那些男人在喝 ...^nà xiē nán rén zài hē ...|| menDrink1.jpg
-那个男人在喝 ...^nà ge nán rén zài hē ...|| manDrink2.jpg
-那些女孩在跑步^nà xiē nǚ hái zài pǎo bù| The girls are running
-那个女孩在跑步^nà ge nǚ hái zài pǎo bù|| girlRun1.jpg
+那个男人在喝 ...^nà gè nán rén zài hē ...|| manDrink2.jpg
+那些女孩在跑^nà xiē nǚ hái zài pǎo| The girls are running
+那个女孩在跑^nà gè nǚ hái zài pǎo|| girlRun1.jpg
 ===
 那些女人在吃 ...^nà xiē nǚ rén zài chī ...|| womenEat1.jpg
-那个女人在吃 ...^nà ge nǚ rén zài chī ...|| womanEat3.jpg
+那个女人在吃 ...^nà gè nǚ rén zài chī ...|| womanEat3.jpg
 那些男孩在读 ...^nà xiē nán hái zài dú ...|| boysRead1.jpg
-那个男孩在读 ...^nà ge nán hái zài dú ...|| boyRead2.jpg
+那个男孩在读 ...^nà gè nán hái zài dú ...|| boyRead2.jpg
 ===
 那些女人在读 ...^nà xiē nǚ rén zài dú ...|| womenRead1.jpg
-那些男人在跑步^nà xiē nán rén zài pǎo bù|| menRun1.jpg
+那些男人在跑^nà xiē nán rén zài pǎo|| menRun1.jpg
 那些男人在读 ...^nà xiē nán rén zài dú ...|| menRead1.jpg
-那些女人在跑步^nà xiē nǚ rén zài pǎo bù|| womenRun1.jpg
+那些女人在跑^nà xiē nǚ rén zài pǎo|| womenRun1.jpg
 ===
-那个女人在读 ...^nà ge nǚ rén zài dú ...|| womanRead3.jpg
+那个女人在读 ...^nà gè nǚ rén zài dú ...|| womanRead3.jpg
 那些女孩在读 ...^nà xiē nǚ hái zài dú ...|| girlsRead1.jpg
-那个女孩在读 ...^nà ge nǚ hái zài dú ...|| girlRead2.jpg
+那个女孩在读 ...^nà gè nǚ hái zài dú ...|| girlRead2.jpg
 那些女人在读 ...^nà xiē nǚ rén zài dú ...|| womenRead2.jpg
 ===
 那些男孩在吃 ...^nà xiē nán hái zài chī ...|| boysEat1.jpg
-那些女孩在跑步^nà xiē nǚ hái zài pǎo bù|| girlsRun1.jpg
+那些女孩在跑^nà xiē nǚ hái zài pǎo|| girlsRun1.jpg
 那些女人在喝 ...^nà xiē nǚ rén zài hē ...| The women are drinking
 那些男人在读 ...^nà xiē nán rén zài dú ...|| menRead2.jpg
 ===
 她在喝 ...^tā zài hē ...|| womanDrink1.jpg
 他在吃 ...^tā zài chī ...| He is eating 
 她在读 ...^tā zài dú ...|| womanRead1.jpg
-他在跑步^tā zài pǎo bù|| manRun1.jpg
+他在跑^tā zài pǎo|| manRun1.jpg
 ===
-他们在读 ...^tā men zài dú ...|| menRead3.jpg
-他们在读 ...^tā men zài dú ...|| theyRead1.jpg
-他们在吃 ...^tā men zài chī ...| They are eating
+他们在读 ...^tā mén zài dú ...|| menRead3.jpg
+他们在读 ...^tā mén zài dú ...|| theyRead1.jpg
+他们在吃 ...^tā mén zài chī ...| They are eating
 她在喝 ...^tā zài hē ...| She is drinking
-他在跑步^tā zài pǎo bù|| manRun2.jpg
+他在跑^tā zài pǎo|| manRun2.jpg
 ===
-她在跑步^tā zài pǎo bù || womanRun3.jpg
-他们在跑步^tā men zài pǎo bù|| childrenRun1.jpg
-他在跑步^tā zài pǎo bù | He is running | manRun3.jpg
+她在跑^tā zài pǎo || womanRun3.jpg
+他们在跑^tā mén zài pǎo|| childrenRun1.jpg
+他在跑^tā zài pǎo | He is running | manRun3.jpg
 ===
 他在做饭^tā zài zuò fàn|| manCook1.jpg
-他们在做饭^tā men zài zuò fàn|| womenCook1.jpg
+他们在做饭^tā mén zài zuò fàn|| womenCook1.jpg
 她在做饭^tā zài zuò fàn|| womanCook1.jpg
 ===
 那些女人在游泳^nà xiē nǚ rén zài yóu yǒng| The women are swimming | womenSwim1.jpg
 那些男孩在游泳^nà xiē nán hái zài yóu yǒng| The boys are swimming | boysSwim1.jpg
-那个女孩在游泳^nà ge nǚ hái zài yóu yǒng| The girl is swimming | girlSwim1.jpg
-那个男人在游泳^nà ge nán rén zài yóu yǒng| The man is swimming | manSwim1.jpg
+那个女孩在游泳^nà gè nǚ hái zài yóu yǒng| The girl is swimming | girlSwim1.jpg
+那个男人在游泳^nà gè nán rén zài yóu yǒng| The man is swimming | manSwim1.jpg
 ===
-那个男人在吃...^nà ge nán rén zài chī ...|| manEat3.jpg
+那个男人在吃...^nà gè nán rén zài chī ...|| manEat3.jpg
 那些男人在吃...^nà xiē nán rén zài chī ...| The men are eating | menEat1.jpg
 那些男人在做饭^nà xiē nán rén zài zuò fàn| The men are cooking | menCook1.jpg
-那个男人在做饭^nà ge nán rén zài zuò fàn| The man is cooking | manCook2.jpg
+那个男人在做饭^nà gè nán rén zài zuò fàn| The man is cooking | manCook2.jpg
 ===
-那个女人在游泳^nà ge nǚ rén zài yóu yǒng|| womanSwim1.jpg
-那个女人在跑步^nà ge nǚ rén zài pǎo bù|| womanRun1.jpg
+那个女人在游泳^nà gè nǚ rén zài yóu yǒng|| womanSwim1.jpg
+那个女人在跑^nà gè nǚ rén zài pǎo|| womanRun1.jpg
 那些女人在游泳^nà xiē nǚ rén zài yóu yǒng|| womenSwim2.jpg
-那些女人在跑步^nà xiē nǚ rén zài pǎo bù|| womenRun2.jpg
+那些女人在跑^nà xiē nǚ rén zài pǎo|| womenRun2.jpg
 ===
-他们在写 ...^tā men zài xiě ...|| theyWrite1.jpg
+他们在写 ...^tā mén zài xiě ...|| theyWrite1.jpg
 她在写 ...^tā zài xiě ...|| womanWrite1.jpg
 他在写 ...^tā zài xiě ...|| boyWrite1.jpg
 ===
 那些女孩在写 ...^nà xiē nǚ hái zài xiě|| girlsWrite1.jpg
-那个女孩在写 ...^nà ge nǚ hái zài xiě|| girlWrite1.jpg
+那个女孩在写 ...^nà gè nǚ hái zài xiě|| girlWrite1.jpg
 那些女孩在读 ...^nà xiē nǚ hái zài dú ...|| girlsRead2.jpg
-那个女孩在读 ...^nà ge nǚ hái zài dú ...|| girlRead3.jpg
+那个女孩在读 ...^nà gè nǚ hái zài dú ...|| girlRead3.jpg
 ===
 再见^zài jiàn || goodBye1.jpg
 再见^zài jiàn || goodBye2.jpg
