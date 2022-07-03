@@ -1,78 +1,78 @@
-das belegte Brot | the sandwich | sandwich1.jpg
-das belegte Brot | the sandwich | sandwich2.jpg
-das Ei | the egg | egg1.jpg
-das Ei | the egg | egg2.jpg
-der Apfel | the apple | apple1.jpg
+三明治^sān míng zhì | the sandwich | sandwich1.jpg
+三明治^sān míng zhì | the sandwich | sandwich2.jpg
+鸡蛋^jī dàn | the egg | egg1.jpg
+鸡蛋^jī dàn | the egg | egg2.jpg
+苹果^píng guǒ | the apple | apple1.jpg
 ===
-das Brot | the bread | bread1.jpg
-das Brot | the bread | bread2.jpg
-der Kaffee | the coffee | coffee1.jpg
-der Kaffee | the coffee | coffee2.jpg
-die Milch | the milk | milk1.jpg
+面包^miàn bāo | the bread | bread1.jpg
+面包^miàn bāo | the bread | bread2.jpg
+咖啡^kā fēi | the coffee | coffee1.jpg
+咖啡^kā fēi | the coffee | coffee2.jpg
+牛奶^niú nǎi | the milk | milk1.jpg
 ===
-eine Frau und ein Mädchen | a woman and a girl | womanGirl1.jpg
-ein belegtes Brot und Milch | a sandwich and milk | sandwichMilk1.jpg
-ein Junge und ein Mann | a boy and a man | manBoy1.jpg
+一个女人和一个女孩 | a woman and a girl | womanGirl1.jpg
+一个三明治和牛奶 | a sandwich and milk | sandwichMilk1.jpg
+一个男孩和一个男人 | a boy and a man | manBoy1.jpg
 ===
-Reis und ein Apfel | rice and an apple | riceApple1.jpg
-eine Frau und ein Mann | a woman and a man | womanMan1.jpg
-Brot und Wasser | bread and water | breadWater1.jpg
+米饭和一个苹果 | rice and an apple | riceApple1.jpg
+一个女人和一个男人 | a woman and a man | womanMan1.jpg
+面包和水 | bread and water | breadWater1.jpg
 ===
-Der Junge trinkt Milch || boyDrinkMilk1.jpg
-Die Frau trinkt Kaffee || womanDrinkCoffee1.jpg
-Der Mann und der Junge trinken Wasser || manBoyDrinkWater1.jpg
-Das Mädchen isst Brot || girlEatBread1.jpg
-Der Mann isst ein Ei || manEatEgg1.jpg
-Der Mann und die Frau essen Reis || womanManEatRice1.jpg
+那个男孩在喝牛奶|| boyDrinkMilk1.jpg
+那个女人在喝咖啡|| womanDrinkCoffee1.jpg
+那个男人和那个男孩在喝水 || manBoyDrinkWater1.jpg
+那个女孩在吃面包 || girlEatBread1.jpg
+那个男人在吃一个鸡蛋 || manEatEgg1.jpg
+那个男人和那个女人在吃米饭 || womanManEatRice1.jpg
 ===
-Sie isst einen Apfel || womanEatApple1.jpg
-Sie essen Eier || childrenEatEgg1.jpg
-Sie essen belegte Brote || womenEatSandwich1.jpg
-Er isst Reis || manEatRice1.jpg
+她在吃一个苹果 || womanEatApple1.jpg
+他们在吃鸡蛋 || childrenEatEgg1.jpg
+她们在吃三明治 || womenEatSandwich1.jpg
+他在吃米饭 || manEatRice1.jpg
 ===
-der Hund || dog1.jpg
-der Hund || dog2.jpg
-die Katze || cat1.jpg
-die Katze || cat2.jpg
-das Pferd || horse1.jpg
+狗 || dog1.jpg
+狗 || dog2.jpg
+猫 || cat1.jpg
+猫 || cat2.jpg
+马 || horse1.jpg
 ===
-das Auto || car1.jpg
-das Auto | the car (neuter)|
-die Zeitung || newspaper1.jpg
-die Zeitung | the newspaper (feminine)|
-das Fahrrad || bike1.jpg
+轿车 || car1.jpg
+轿车 | the car|
+报纸 || newspaper1.jpg
+报纸 | the newspaper|
+自行车|| bike1.jpg
 ===
-ein Hund | a dog (masculine) |
-eine Katze | a cat (feminine) |
-ein Pferd | a horse (neuter) |
-ein Auto | a car (neuter) |
-eine Zeitung | a newspaper (feminine)|
-ein Fahrrad | a bike (neuter)
+一只狗 | a dog |
+一只猫 | a cat |
+一匹马 | a horse |
+一辆轿车 | a car |
+一份报纸 | a newspaper |
+一辆自行车 | a bike
 ===
-Der Junge läuft || boyWalk1.jpg
-Das Mädchen läuft || girlWalk1.jpg
-Die Frau fährt Auto | The woman is driving a car |
-Der Mann fährt Auto || manDriveCar1.jpg
+那个男孩再走 || boyWalk1.jpg
+那个女孩在走 || girlWalk1.jpg
+那个女人在开车 | The woman is driving a car |
+那个男人在开车 || manDriveCar1.jpg
 ===
-Sie essen Äpfel || boyGirlEatApple1.jpg
-Sie liest ein Buch ||womanReadBook1.jpg
-Sie lesen Zeitung || boyManReadNewspaper1.jpg
+他们在吃苹果 || boyGirlEatApple1.jpg
+她在读一本书 || womanReadBook1.jpg
+他们在读报纸 || boyManReadNewspaper1.jpg
 ===
-Er hat eine Katze | He has a cat | manHasCat1.jpg
-Sie hat einen Hund | She has a dog | girlHasDog1.jpg
-Sie haben eine Zeitung | They have a newspaper |
+他有一只猫 | He has a cat | manHasCat1.jpg
+她有一只狗 | She has a dog | girlHasDog1.jpg
+他们有一份报纸| They have a newspaper |
 ===
-Sie hat belegte Brote || womanHasSandwich1.jpg
-Er hat ein Auto | He has a car | manHasCar1.jpg
-Sie haben ein Pferd | They have a horse|
+她有三明治 || womanHasSandwich1.jpg
+他有一辆轿车 | He has a car | manHasCar1.jpg
+他们有一匹马 | They have a horse|
 ===
-Er hat Bücher | He has books |
-Sie haben Stifte | They have pens |
-Sie hat einen Fisch || girlHasFish1.jpg
+他有书 | He has books |
+他们有笔 | They have pens |
+她有一条鱼 || girlHasFish1.jpg
 ===
-ein Buch || book1.jpg
-ein Stift || pen1.jpg
-ein Fisch || fish1.jpg
+一本书 || book1.jpg
+一支笔 || pen1.jpg
+一条鱼 || fish1.jpg
 ===
 Sie schlafen | They are sleeping |
 Er schläft || boySleep1.jpg

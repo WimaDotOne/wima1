@@ -112,9 +112,9 @@
 那些女人在游泳^nà xiē nǚ rén zài yóu yǒng|| womenSwim2.jpg
 那些女人在跑步^nà xiē nǚ rén zài pǎo bù|| womenRun2.jpg
 ===
-他们在写 ...^tā men zài xiě|| theyWrite1.jpg
-她在写 ...^tā zài xiě|| womanWrite1.jpg
-他在写 ...^tā zài xiě|| boyWrite1.jpg
+他们在写 ...^tā men zài xiě ...|| theyWrite1.jpg
+她在写 ...^tā zài xiě ...|| womanWrite1.jpg
+他在写 ...^tā zài xiě ...|| boyWrite1.jpg
 ===
 那些女孩在写 ...^nà xiē nǚ hái zài xiě|| girlsWrite1.jpg
 那个女孩在写 ...^nà ge nǚ hái zài xiě|| girlWrite1.jpg

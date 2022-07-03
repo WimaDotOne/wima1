@@ -3,8 +3,8 @@ import { Lang } from "./Lang"
 
 const Settings = {
   German: [8, 5], // [8,5] means 2 levels with 8 units and 5 units
-  French: [1,2,3,4,5,6,7,8,9,10],
-  Chinese: [1]
+  French: [],
+  Chinese: [2]
 }
 
 export function CalcUnit(lang: string, level: string, lesson: string) {
