@@ -2,4 +2,3 @@ Login | login.png | Login
 Sociable | social.jpg | Social
 Movic | movic.webp | Movic
 Lingo | lingo.png | Lingo
-Settings | settings.png | Settings
