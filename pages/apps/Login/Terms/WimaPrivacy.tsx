@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { WimaPrivacy } from '../../../../apps/Settings/WimaLogin/F/Terms/WimaPrivacy'
+import { WimaPrivacy } from '../../../../apps/Wima/F/WimaLogin/Terms/WimaPrivacy'
 
 const Page: NextPage = () => {
 

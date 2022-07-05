@@ -1,7 +1,6 @@
-import Head from "next/head"
 import { useRouter } from "next/router"
-import { bConfig } from "../../../../../bConfig"
-import { Login, LoginConfig } from "../../../../../libs/Core/Core1/fCore1"
+import { bConfig } from "../../../../bConfig"
+import { Login, LoginConfig } from "../../../../libs/Core/Core1/fCore1"
 
 export function WimaLogin() {
 
@@ -9,13 +8,13 @@ export function WimaLogin() {
   const router = useRouter()
 
   function goToContact() {
-    router.push("/apps/Settings/Contact/WimaContact")
+    router.push("/apps/Login/Contact/WimaContact")
   }
   function goToPrivacy() {
-    router.push("/apps/Settings/Terms/WimaPrivacy")
+    router.push("/apps/Login/Terms/WimaPrivacy")
   }
   function goToTerms() {
-    router.push("/apps/Settings/Terms/WimaTerms")
+    router.push("/apps/Login/Terms/WimaTerms")
   }
   function goToWimaHome() {
     router.push("/")

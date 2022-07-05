@@ -3,7 +3,7 @@ import { ReactNode, useEffect, useState } from "react"
 import { useAppleWindow } from "../../../../../libs/Core/Core2/AppleWindow/fAppleWindow"
 import { AppleWindow, GroupModel, ItemModel, MenuModel 
 } from "../../../../../libs/Core/Core2/fCore2"
-import { PleaseLoginUniv } from "../../../../Settings/WimaLogin/F/PleaseLogin/PleaseLogin"
+import { PleaseLoginUniv } from "../../../../Wima/F/WimaLogin/PleaseLogin/PleaseLogin"
 import { useWimaUser } from "../../../../Wima/fWima"
 import { LingoColor } from "../../CSS/LingoColor"
 

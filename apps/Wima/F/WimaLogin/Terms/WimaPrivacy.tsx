@@ -45,7 +45,7 @@ export function WimaPrivacy({
         We receive and store any information you provide in relation to {brand} Services. Examples of such information includes, but not limited to, texts you entered and images you uploaded. You can choose not to provide certain information, but then you might not be able to take advantage of many of our {brand} Services.
       </Paragraph>
       <Paragraph>
-        We automatically collect and store certain types of information about your use of {brand} Services, including information about your interaction with content and services available through {brand} Services. Like many websites, we use "cookies". Examples of automatically collected information includes, but not limited to, timestamps of actions. 
+        We automatically collect and store certain types of information about your usage of {brand} Services, including information about your interaction with content and services available through {brand} Services. Like many websites, we use "cookies". Examples of automatically collected information includes, but not limited to, timestamps of actions. 
       </Paragraph>
       <SectionHeader text="2. Cookies" />
       <Paragraph>

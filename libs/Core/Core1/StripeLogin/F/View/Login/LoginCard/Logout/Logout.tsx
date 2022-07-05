@@ -36,7 +36,7 @@ export function Logout({
   }, [])
 
   async function logout() {
-    if(!window.confirm("Log out?")) {
+    if(!window.confirm("Usage of most wima apps is based on your logged-in account. Are you sure to log out?")) {
       return
     }
     await Post2(shield, "/login/LogOut", {}, afterLogout)

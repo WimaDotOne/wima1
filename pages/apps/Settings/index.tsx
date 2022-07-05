@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { SettingsHome } from '../../../apps/Settings/SettingsHome/fSettingsHome'
+import { SettingsHome } from '../../../apps/Settings/SettingsHome/F/SettingsHome/SettingsHome'
 
 const Settings: NextPage = () => {
 
