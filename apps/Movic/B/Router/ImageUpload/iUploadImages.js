@@ -1,5 +1,5 @@
 import { asyRemoveTempFolder, asyShrinkImageFiles, asyUploadManyPlusSmall, User } from "../../../../../libs/Core/Core1/bCore1.js"
-import ImageFile from "../../Model/ImageFile.js"
+import ImageFile from "../../Model/MovicImageFile.js"
 import MovicProject from "../../Model/MovicProject.js"
 
 export async function iUploadImages(req, res) {

@@ -1,5 +1,5 @@
 import Movic from "../../Model/Movic.js"
-import ImageFile from "../../Model/ImageFile.js"
+import ImageFile from "../../Model/MovicImageFile.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 
 export async function iChangeImageNames(req, res) {

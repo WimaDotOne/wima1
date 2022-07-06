@@ -1,0 +1,15 @@
+@use "../../../../CSS/story.module.scss";
+
+.newProject {
+  padding: 10px;
+}
+
+@media screen and (min-width: story.$phoneMaxHeight) {
+  .newProject {
+    padding: 10px 30px;
+  }
+}
+
+.fields {
+  max-width: 400px;
+}

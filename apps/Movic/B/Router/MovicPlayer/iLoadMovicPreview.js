@@ -1,4 +1,4 @@
-import ImageFile from "../../Model/ImageFile.js"
+import ImageFile from "../../Model/MovicImageFile.js"
 import Movic from "../../Model/Movic.js"
 import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
 import { ParseMovicScript } from "../H/ParseMovicScript.js"

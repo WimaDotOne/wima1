@@ -12,4 +12,4 @@ const schema = mongoose.Schema({
   timestamps: { currentTime: () => Date.now() }
 })
 
-export default mongoose.model('ImageFile', schema)
+export default mongoose.model('MovicImageFile', schema)
