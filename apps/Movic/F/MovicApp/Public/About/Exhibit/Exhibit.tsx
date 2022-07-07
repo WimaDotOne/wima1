@@ -48,9 +48,9 @@ function GetMovics() {
       imageUrl: dvdFolder+"/AdventureLand.jpg"
     },
     {
-      id: "MapoTofu",
-      title: "Mapo Tofu",
-      imageUrl: dvdFolder+"/MapoTofu.jpg"
+      id: "NeZha",
+      title: "Ne Zha",
+      imageUrl: dvdFolder+"/NeZha.jpg"
     },
   ])
 }

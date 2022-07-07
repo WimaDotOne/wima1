@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
 import { IScene } from "../../../Model/IMoment"
 import { MovicPlayer } from "../../MovicPlayer/MovicPlayer"
-import cl from "./ExhibitMovic.module.scss"
 
 interface IExhibitMovicProp {
 
