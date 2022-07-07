@@ -7,6 +7,7 @@ import { LoginRouter } from "./libs/Core/Core1/bCore1.js"
 import { SettingsHomeRouter } from "./apps/Settings/SettingsHome/B/Router/SettingsHomeRouter.js"
 import { WimaRouter } from "./apps/Wima/bWima.js"
 import { MovicRouter } from "./apps/Movic/B/Router/MovicRouter.js"
+import { BookRouter } from "./apps/Book/B/Router/BookRouter.js"
 import { SocialRouter } from "./apps/Social/B/Router/SocialRouter.js"
 import { LingoRouter } from "./apps/Lingo/B/Router/LingoRouter.js"
 
@@ -24,6 +25,7 @@ server.use(bConfig.bRoute1+"/login", LoginRouter)
 server.use(bConfig.bRoute1+"/wima", WimaRouter)
 server.use(bConfig.bRoute1+"/settingsHome", SettingsHomeRouter)
 server.use(bConfig.bRoute1+"/movic", MovicRouter)
+server.use(bConfig.bRoute1+"/book", BookRouter)
 server.use(bConfig.bRoute1+"/social", SocialRouter)
 server.use(bConfig.bRoute1+"/lingo", LingoRouter)
 

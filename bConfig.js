@@ -33,10 +33,17 @@ export const UniversityDataConfig = {
 
 export const GENERAL_INPUT_MAX = 100
 export const GENERAL_TEXTAREA_MAX = 2000
+
 // Apps
 export const MovicConfig = {
   movicMaxPerAccount: 100,
   scritptFileMaxLength: 200000
+}
+
+export const BookConfig = {
+  bookMaxPerAccount: 100,
+  chapterMaxPerBook: 30,
+  textMaxPerChapter: 50000
 }
 
 export const SocialConfig = {

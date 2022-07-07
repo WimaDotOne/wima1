@@ -1,0 +1,11 @@
+@use "../../../../CSS/book.module.scss";
+
+.home {
+  padding: 10px;
+}
+
+@media screen and (min-width: book.$phoneMaxHeight) {
+  .home {
+    padding: 10px 30px;
+  }
+}
