@@ -6,7 +6,7 @@
 ---
 [m4.jpg, m5.jpg]
 #TAIYI: So my master sent my brother and I to put a stop to the chaos.
----
+===
 [m6.jpg, m7.jpg]
 #TAIYI: I know what you are thinking. "Who's that dashing rogue on the pig?" That would be me, Taiyi Zhenren. 
 ---
@@ -49,7 +49,7 @@ TAIYI: I was just playing around?
 ===
 [m28.jpg]
 ---
-Yuanshi Tianzun conjures a furnace 
+#Yuanshi Tianzun conjures a furnace 
 [m29.jpg]
 ---
 The furnace is sent down to trap the Chaos Pearl.
@@ -86,7 +86,7 @@ TAIYI: You can count on me, master. Thank you so much!
 #Yuanshi Tianzhun vanishes in thin air after giving the instructions.
 [m50.jpg]
 YUANSHI: Once the Spirit Pearl is born. Call him Ne Zha.
----
+===
 [m51.jpg]
 ===
 #The place is Chengtang Pass
@@ -113,7 +113,7 @@ TAIYI: How about a swiggy for the piggy?
 [m63.jpg]
 LI: Dear, you should worship too.
 YIN: Why didn't I think of that. I only have been pregnant for 3 years.
----
+===
 #Taiyi falls through the roof of the temple.
 [m64.jpg]
 ---
@@ -132,13 +132,13 @@ TAIYI: ...ren.
 [m69.jpg, m70.jpg]
 ---
 [m71.jpg]
-A MAN: A third son! Congratulations!
+MAN: A third son! Congratulations!
 ---
 [m72.jpg]
-A WOMAN: I'll be a matchmaker for the little man.
+WOMAN: I'll be a matchmaker for the little man.
 ---
 [m73.jpg, m74.jpg]
-A MAN: We wrote him a song. Wanna hear it?
+MAN2: We wrote him a song. Wanna hear it?
 ---
 [m75.jpg]
 BUTLER: Thank you for your concern and well-wishes, my friends. But for now, please remain calm and quiet. Just wait for the good news and we'll let you...
@@ -163,18 +163,21 @@ BUTLER: Master Immortal, I have something for you...
 TAIYI: I can't drink now. That'd be so unprofessional.
 BUTLER: I'll just leave it here.
 TAIYI: I have important things to do. Take it away.
----
+===
 [m84.jpg]
 TAIYI: Ah, some people just don't listen.
 ---
 [m85.jpg]
 ---
-[m86.jpg, m87.jpg]
-TAIYI: Well, one sip can't hurt! Don't want it going to waste! That's nice. I mean, I'm basically almost done. So...
+[m86.jpg]
+TAIYI: Well, one sip can't hurt! Don't want it going to waste!
+---
+[m87.jpg]
+TAIYI: That's nice. I mean, I'm basically almost done. So...
 ---
 [m88.jpg]
 BUTLER: Enjoy your enchanted three-day nap!
----
+===
 #Butler tries to take away the lotus that contains the Spirit Pearl and Demon Pill.
 [m89.jpg, m90.jpg]
 ---
@@ -211,7 +214,7 @@ MIDWIFE: Milord! She won't last much longer!
 #Li pushes butler away and uses all his strength to punch Taiyi.
 [m100.jpg]
 LI: Out of the way!
----
+==
 #Taiyi  throws up and wakes up.
 [m101.jpg]
 TAIYI: Oh, you wouldn't believe the crazy dream I just had.
@@ -385,7 +388,7 @@ TAIYI: Go back where you belong!
 ---
 #Taiyi tries hard to redirect his attack in to avoid hitting Yin.
 [m168.jpg]
----
+===
 [m169.jpg]
 LI: My love!
 YIN: Please don't hurt him. Don't hurt my child!
@@ -397,9 +400,9 @@ MAN: Lord Li. For generations we have battled against demons. Do you think it wi
 MAN: ...I hope you can consider the greater good and do what's right.
 MAN2: He's over there.  
 ---
-#A man changes his sign of "YOU HAVE A SON" to "MY CONDOLENCES"
+#A man changes his sign of "YOU HAVE A SON" to "MY MANLENCES"
 [m172.jpg, m173.jpg]
----
+===
 #Ne Zha bites his mom's hand.
 [m174.jpg]
 TAIYI: You see that?
