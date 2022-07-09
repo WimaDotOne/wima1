@@ -1,5 +1,5 @@
-import { AppleIconButtons, AppleWindowPlainBottomBarDiv } from "../../../../../../../../libs/Core/Core2/fCore2"
-import { HeadLine } from "../../../../../../../../libs/Pop/Pop3/fPop3"
+import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../../libs/Core/Core2/fCore2"
+import { File, FileType, HeadLine } from "../../../../../../../../libs/Pop/Pop3/fPop3"
 import { BookColor } from "../../../../../CSS/BookColor"
 import { IProject } from "../../../../../Model/IProject"
 import cl from "./ChaptersHome.module.scss"
@@ -22,8 +22,17 @@ export function ChaptersHome({
       buttonOnClick={goToNewChapter}
       color={BookColor.themeGreen}
     />
+    <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
+      <File text="1. Hello there" iconName="textfile" type={FileType.text} 
+        onClick={()=>{}} />
+      <File text="2. Forgetting you is like forgetting myself" iconName="textfile" type={FileType.text} 
+  onClick={()=>{}} />
+        <File text="3. End" iconName="textfile" type={FileType.text} 
+  onClick={()=>{}} />
+    </AutoRepeatGrid>
   </div>
 
+  <AppleWindowBottomBarFill />
 
   <AppleWindowPlainBottomBarDiv>
     <AppleIconButtons color={BookColor.themeGreen} strokeWidth={20}

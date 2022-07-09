@@ -1,0 +1,15 @@
+@use "../../../../../CSS/book.module.scss";
+
+.new {
+  padding: 10px;
+}
+
+@media screen and (min-width: book.$phoneMaxHeight) {
+  .new {
+    padding: 10px 30px;
+  }
+}
+
+.field {
+  max-width: 400px;
+}
