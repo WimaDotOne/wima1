@@ -6,39 +6,39 @@ import cl from "./ViewPublish.module.scss"
 
 interface IViewPublishProp {
   project: IProject
-  isMovicPublic: boolean
+  isBookPublic: boolean
 }
 export function ViewPublish({
   project,
-  isMovicPublic
+  isBookPublic
 }: IViewPublishProp) {
   
-  const [movicId, setMovicId] = useState<string>("")
+  const [bookId, setBookId] = useState<string>("")
   const [loaded, setLoaded] = useState<boolean>(false)
   const shield = useShield()
 
   const wimaEnv = useWimaEnv()
 
-  async function loadMovicId() {
+  async function loadBookId() {
     if(loaded) return
     if(!project) return
-    await Get2(shield, `/movic/LoadSettingsMovicId?projectId=${project.id}`,
+    await Get2(shield, `/book/LoadSettingsBookId?projectId=${project.id}`,
       (res)=>{
         setLoaded(true)
-        setMovicId(res.movicId)
+        setBookId(res.bookId)
       }
     )
   }
 
   useEffect(()=>{
-    loadMovicId()
+    loadBookId()
   })
 
-  let text = "The movic is not published. Only you can view it."
+  let text = "The book is not published. Only you can view it."
   let href = ""
-  if(isMovicPublic) {
-    text = "The movic is public to people who have the following link. Share by sending the link to your friends."
-    href = `${wimaEnv?.domain}/apps/Movic/Play/?movicId=${movicId}`
+  if(isBookPublic) {
+    text = "The book is public to people who have the following link. Share by sending the link to your friends."
+    href = `${wimaEnv?.domain}/apps/Book/Play/?bookId=${bookId}`
   }
   
 

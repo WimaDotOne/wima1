@@ -37,7 +37,7 @@ export function ProjectHome({
     <div className={cl.home}>
       <HeadLine text={project.bookTitle} h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
-        <AppleFolder text="Images" onClick={openChapters}/>
+        <AppleFolder text="Chapters" onClick={openChapters}/>
         <File text="Preview" iconName="book" iconColor={BookColor.themeGreen}
           onClick={preview} />
         <File text="Settings" iconName="gear" type={FileType.settings}

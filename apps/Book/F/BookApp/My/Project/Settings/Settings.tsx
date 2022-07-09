@@ -29,10 +29,10 @@ export function Settings({
     <Publish project={project}/>
   </div>
   <AppleWindowBottomBarFill />
-    <AppleWindowPlainBottomBarDiv>
-      <AppleIconButtons color={BookColor.themeGreen}
-        icon1="chevron.left" onClick1={backToProjectHome}
-      />
-    </AppleWindowPlainBottomBarDiv>
+  <AppleWindowPlainBottomBarDiv>
+    <AppleIconButtons color={BookColor.themeGreen}
+      icon1="chevron.left" onClick1={backToProjectHome}
+    />
+  </AppleWindowPlainBottomBarDiv>
   </>)
 }

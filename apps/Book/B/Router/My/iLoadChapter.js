@@ -1,20 +1,19 @@
-import Movic from "../../Model/Movic.js"
-import { asyGetMovicAccount, asyGetMovicProject } from "../H/GetMovicAccount.js"
+import BookBook from "../../Model/BookBook.js"
+import { asyGetMyBookProject } from "../H/GetMyBookProject.js"
 
-export async function iLoadMovicScript(req, res) {
+export async function iLoadBookScript(req, res) {
   try{
     const projectId = (req.query.projectId || "").toString()
-    const movicAccount = await asyGetMovicAccount(req.user._id)
 
-    const project = await asyGetMovicProject(projectId, movicAccount._id)
+    const project = await asyGetMyBookProject(req, projectId)
 
-    const movic = await Movic.findById(project.movicId)
+    const book = await BookBook.findById(project.bookId)
 
-    if(!movic) {
-      return res.json({ ok: false, error: "Cannot find movic" })
+    if(!book) {
+      return res.json({ ok: false, error: "Cannot find book" })
     }
 
-    return res.json({ok: true, script: movic.script1})
+    return res.json({ok: true, script: book.script1})
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })

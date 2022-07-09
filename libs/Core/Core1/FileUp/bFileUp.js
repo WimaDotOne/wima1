@@ -9,6 +9,7 @@ import {
 } from "./B/S3.js"
 
 import { asyShrinkImageFiles } from "./B/ShrinkImageFiles.js"
+import { iImageMulter } from "./B/iImageMulter.js"
 
 export {
   asyNewTempFolder,
@@ -21,5 +22,7 @@ export {
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
 
-  asyShrinkImageFiles
+  asyShrinkImageFiles,
+
+  iImageMulter
 }

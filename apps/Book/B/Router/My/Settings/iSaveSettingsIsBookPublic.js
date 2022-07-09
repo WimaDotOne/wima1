@@ -1,19 +1,17 @@
-import { asyGetMovicAccount, asyGetMovicProject } from "../../H/GetMovicAccount.js"
+import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
-export async function iSaveSettingsIsMovicPublic(req, res) {
+export async function iSaveSettingsIsBookPublic(req, res) {
   try{
     const projectId = (req.body.projectId || "").toString()
-    const isMovicPublic = !!req.body.isMovicPublic
+    const isBookPublic = !!req.body.isBookPublic
 
-    const movicAccount = await asyGetMovicAccount(req.user._id)
+    const project = await asyGetMyBookProject(req, projectId)
 
-    const project = await asyGetMovicProject(projectId, movicAccount._id)
-
-    project.isMovicPublic = isMovicPublic
+    project.isBookPublic = isBookPublic
 
     await project.save()
 
-    return res.json({ok: true, isMovicPublic: project.isMovicPublic})
+    return res.json({ok: true, isBookPublic: project.isBookPublic})
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })

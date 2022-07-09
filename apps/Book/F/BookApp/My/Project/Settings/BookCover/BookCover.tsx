@@ -41,7 +41,7 @@ export function BookCover({
   ]
 
   async function loadBookCover(onOk: (res: any)=>void) {
-    await Get2(shield, `/movic/LoadBookCover?projectId=${project.id}`, onOk)
+    await Get2(shield, `/book/LoadBookCover?projectId=${project.id}`, onOk)
   }
 
   useEffect(()=>{
@@ -66,6 +66,6 @@ export function BookCover({
     <FileInput formTextFields={formTextFields}
       clear = { fileInputClear }
       ref={fileInputRef}
-      route="/movic/UploadBookCover" onSuccess={afterUpload}/>
+      route="/book/UploadBookCover" onSuccess={afterUpload}/>
   </>)
 }

@@ -1,34 +1,32 @@
 import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
-import Movic from "../../../Model/Movic.js"
-import { asyGetMovicAccount, asyGetMovicProject } from "../../H/GetMovicAccount.js"
+import BookBook from "../../../Model/BookBook.js"
+import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
-export async function iSaveSettingsMovicTitle(req, res) {
+export async function iSaveSettingsBookTitle(req, res) {
   try{
     const projectId = (req.body.projectId || "").toString()
     const title = (req.body.title || "").trim()
 
     if(!title) {
-      return res.json({ ok: false, error: "Movic title cannot be empty" })
+      return res.json({ ok: false, error: "Book title cannot be empty" })
       
     }
     if(title.length > GENERAL_INPUT_MAX) {
       return res.json({ ok: false, error: "Title is too long" })
     }
     
-    const movicAccount = await asyGetMovicAccount(req.user._id)
+    const project = await asyGetMyBookProject(req, projectId)
 
-    const project = await asyGetMovicProject(projectId, movicAccount._id)
+    const book = await BookBook.findById(project.bookId)
 
-    const movic = await Movic.findById(project.movicId)
-
-    if(!movic) {
-      return res.json({ ok: false, error: "Cannot find movic" })
+    if(!book) {
+      return res.json({ ok: false, error: "Cannot find book" })
     }
 
-    movic.title = title
-    await movic.save()
+    book.title = title
+    await book.save()
     
-    return res.json({ok: true, movicTitle: movic.title})
+    return res.json({ok: true, bookTitle: book.title})
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })

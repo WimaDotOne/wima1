@@ -3,7 +3,8 @@ import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
 export async function iLoadSettingsBookTitle(req, res) {
   try{
-
+    const projectId = (req.query.projectId || "").toString()
+    
     const project = await asyGetMyBookProject(req, projectId)
 
     const book = await BookBook.findById(project.bookId)

@@ -21,7 +21,9 @@ import { asyNewTempFolder, asyRemoveTempFolder,
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
 
-  asyShrinkImageFiles
+  asyShrinkImageFiles,
+
+  iImageMulter
 } from "./FileUp/bFileUp.js"
 
 import {
@@ -53,6 +55,7 @@ export {
   asyUploadManyPlusSmall,
 
   asyShrinkImageFiles,
+  iImageMulter,
 
   IsEnumExit,
 

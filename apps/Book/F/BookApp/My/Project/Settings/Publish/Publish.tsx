@@ -14,46 +14,46 @@ export function Publish({
 }: IPublishProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [isMovicPublic, setIsMovicPublic] = useState<boolean>(false)
+  const [isBookPublic, setIsBookPublic] = useState<boolean>(false)
   const [isLoaded, setIsLoaded] = useState<boolean>(false)
   
   const shield = useShield()
 
-  async function loadIsMovicPublic(onOk?:(res:any)=>void) {
+  async function loadIsBookPublic(onOk?:(res:any)=>void) {
     if(!project) return
-    await Get2(shield, `/movic/LoadSettingsIsMovicPublic?projectId=${project.id}`,
+    await Get2(shield, `/book/LoadSettingsIsBookPublic?projectId=${project.id}`,
       onOk
     )
   }
 
-  async function saveIsMovicPublic(onOk?:(res:any)=>void) {
-    await Post2(shield, "/movic/SaveSettingsIsMovicPublic",
+  async function saveIsBookPublic(onOk?:(res:any)=>void) {
+    await Post2(shield, "/book/SaveSettingsIsBookPublic",
       {
         projectId: project.id,
-        isMovicPublic
+        isBookPublic
       }, onOk
     )
   }
 
   function onCancel() {
-    loadIsMovicPublic((res)=>{
-      setIsMovicPublic(res.isMovicPublic)
+    loadIsBookPublic((res)=>{
+      setIsBookPublic(res.isBookPublic)
       setIsEdit(false)
     })
   }
 
   function onSave() {
-    saveIsMovicPublic((res)=>{
-      setIsMovicPublic(res.isMovicPublic)
+    saveIsBookPublic((res)=>{
+      setIsBookPublic(res.isBookPublic)
       setIsEdit(false)
     })
   }
 
   useEffect(()=>{
     if(isLoaded) return
-    loadIsMovicPublic((res)=>{
+    loadIsBookPublic((res)=>{
       setIsLoaded(true)
-      setIsMovicPublic(res.isMovicPublic)
+      setIsBookPublic(res.isBookPublic)
     })
   })
 
@@ -66,8 +66,8 @@ export function Publish({
     >
     {
       isEdit ? 
-      <EditPublish checked={isMovicPublic} setChecked={setIsMovicPublic}/>:
-      <ViewPublish project={project} isMovicPublic={isMovicPublic}/>
+      <EditPublish checked={isBookPublic} setChecked={setIsBookPublic}/>:
+      <ViewPublish project={project} isBookPublic={isBookPublic}/>
     }
     </ReadEdit>
   </>)
