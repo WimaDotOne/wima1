@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { IProject } from "../../../Model/IProject"
+import { Chapters } from "./Chapters/Chapters"
 import { Preview } from "./Preview/Preview"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
 import { Settings } from "./Settings/Settings"
@@ -48,8 +49,8 @@ export function Project({
   }
   
   switch(projectTurn) {
-    case ProjectTurn.BookScript: return(
-      <BookScript project={project} backToProjectHome={backToProjectHome}/>
+    case ProjectTurn.Chapters: return(
+      <Chapters project={project} backToProjectHome={backToProjectHome}/>
     )
     case ProjectTurn.Preview: return(
       <Preview project={project} backToProjectHome={backToProjectHome}/>

@@ -62,7 +62,7 @@ export function Publish({
       setIsEdit={setIsEdit}
       onCancel={onCancel}
       onSave={onSave}
-      color={BookColor.themeRed}
+      color={BookColor.themeGreen}
     >
     {
       isEdit ? 
