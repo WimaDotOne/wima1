@@ -47,7 +47,7 @@ export function About() {
         <div className={cl.title}>Ideas or examples of help people might be able to provide</div>
         <div className={cl.examples}>
           <ServiceCard2 name="Piano Lessons" 
-            shortDescription="I am a Music major. Can provide beginner lessons for $10/hour." />
+            shortDescription="I am a Music major. Can provide beginner piano lessons for $10/hour." />
           <ServiceCard2 name="Book Club" 
             shortDescription="I am available for reading a book together and meet for an afternoon discussion."/>
           <ServiceCard2 name="Math Tutoring"

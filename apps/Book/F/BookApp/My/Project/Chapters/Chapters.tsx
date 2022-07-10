@@ -5,6 +5,7 @@ import { ChaptersHome } from "./ChaptersHome/ChaptersHome"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { IChapter } from "../../../../Model/IChapter"
 import { ChapterEditor } from "./ChapterEditor/ChapterEditor"
+import { ChapterSettings } from "./ChapterSettings/ChapterSettings"
 
 interface IChaptersProp {
   project: IProject
@@ -16,7 +17,7 @@ export function Chapters({
 }: IChaptersProp) {
   const [chaptersTurn, setChaptersTurn] = useState<string>("")
   const [chaptersLoaded, setChaptersLoaded] = useState<boolean>(false)
-  const [chapters, setChapters] = useState<Array<IChapter>>([{},{}])
+  const [chapters, setChapters] = useState<Array<IChapter>>([])
   const [selectedChapterId, setSelectedChapterId] = useState<string>("")
 
   const shield = useShield()
@@ -27,6 +28,16 @@ export function Chapters({
 
   function goToNewChapter() {
     setChaptersTurn(ChaptersTurn.NewChapter)
+  }
+
+  function goToChapterEditor(chapterId: string) {
+    setSelectedChapterId(chapterId)
+    setChaptersTurn(ChaptersTurn.ChapterEditor)
+  }
+
+  function goToChapterSettings(chapterId: string) {
+    setSelectedChapterId(chapterId)
+    setChaptersTurn(ChaptersTurn.ChapterSettings)
   }
 
   async function loadChapters() {
@@ -49,10 +60,19 @@ export function Chapters({
   })
 
   switch(chaptersTurn) {
-    case ChaptersTurn.Chapter: return(
-      <ChapterEditor 
+    case ChaptersTurn.ChapterSettings: return(
+      <ChapterSettings
+        project={project}
+        reloadChapters = {reloadChapters}
         chapterId={selectedChapterId}
-      />)
+        backToChaptersHome={backToChaptersHome}
+        />)
+    case ChaptersTurn.ChapterEditor: return(
+      <ChapterEditor 
+        project={project}
+        chapterId={selectedChapterId}
+        backToChaptersHome={backToChaptersHome}
+        />)
     case ChaptersTurn.NewChapter: return (
       <NewChapter
         reloadChapters = {reloadChapters}
@@ -63,14 +83,17 @@ export function Chapters({
       <ChaptersHome
         project={project}
         chapters = { chapters }
-        setSelectedChapterId = { setSelectedChapterId }
         backToProjectHome={backToProjectHome}
-        goToNewChapter={goToNewChapter}/>)
+        goToNewChapter={goToNewChapter}
+        goToChapterEditor={goToChapterEditor}
+        goToChapterSettings={goToChapterSettings}
+      />)
   }
 }
 
 export const ChaptersTurn = {
   Home: "Home",
   NewChapter: "NewChapter",
-  Chapter: "Chapter"
+  ChapterEditor: "ChapterEditor",
+  ChapterSettings: "ChapterSettings"
 }

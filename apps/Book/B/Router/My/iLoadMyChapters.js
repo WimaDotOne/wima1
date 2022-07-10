@@ -11,7 +11,7 @@ export async function iLoadMyChapters(req, res) {
 
     const bookChapters = await BookChapter.find({
       bookId
-    })
+    }).sort("chapterNumber")
 
     const chapters = []
     for(const chapter of bookChapters) {

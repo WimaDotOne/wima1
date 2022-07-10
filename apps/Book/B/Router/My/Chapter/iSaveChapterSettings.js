@@ -1,11 +1,12 @@
 import mongoose from "mongoose"
-import { GENERAL_INPUT_MAX } from "../../../../../bConfig.js"
-import BookChapter from "../../Model/BookChapter.js"
-import { asyGetMyBookProject } from "../H/GetMyBookProject.js"
+import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
+import BookChapter from "../../../Model/BookChapter.js"
+import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
-export async function iCreateChapter(req, res) {
+export async function iSaveChapterSettings(req, res) {
   try{
     const projectId = (req.body.projectId || "").toString()
+    const chapterId = (req.body.chapterId || "").toString()
     const chapterName = (req.body.chapterName || "").trim()
     const chapterNumber = parseInt((req.body.chapterNumber || "").trim())
 
@@ -26,12 +27,18 @@ export async function iCreateChapter(req, res) {
 
     const bookId = project.bookId
 
-    const chapter = new BookChapter({
-      _id: mongoose.Types.ObjectId(),
-      bookId,
-      name: chapterName,
-      chapterNumber
-    })
+    const chapter = await BookChapter.findById(chapterId)
+
+    if(!chapter) {
+      return res.json({ ok: false, error: "Cannot find the chapter" })
+    }
+    if(!chapter.bookId || !bookId || 
+        chapter.bookId.toString() !== bookId.toString()) {
+      return res.json({ ok: false, error: "Cannot find the matching chapter" })
+    }
+
+    chapter.name = chapterName
+    chapter.chapterNumber = chapterNumber
 
     await chapter.save()
     

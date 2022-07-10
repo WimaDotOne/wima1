@@ -62,7 +62,7 @@ export function SvgIcon({
 }: ISvgIcon) {
   
   switch(name) {
-
+    case "empty": return null
     //Brand
     case "google": return <SvgGoogle width={width} fill={color} />
     case "facebook": return <SvgFacebook width={width} fill={color} />

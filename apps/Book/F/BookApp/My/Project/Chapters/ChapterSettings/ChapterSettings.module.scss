@@ -1,0 +1,19 @@
+@use "../../../../../CSS/book.module.scss";
+
+.chapterSettings {
+  padding: 10px;
+}
+
+@media screen and (min-width: book.$phoneMaxHeight) {
+  .chapterSettings {
+    padding: 10px 30px;
+  }
+}
+
+.field {
+  max-width: 400px;
+}
+
+.numField {
+  max-width: 100px;
+}

@@ -8,16 +8,18 @@ import cl from "./ChaptersHome.module.scss"
 interface IChaptersHomeProp {
   project: IProject
   chapters: Array<IChapter>
-  setSelectedChapterId: (id: string)=>void
   backToProjectHome: ()=>void
   goToNewChapter: ()=>void
+  goToChapterEditor: (chapterId: string)=>void
+  goToChapterSettings: (chapterId: string)=>void
 }
 export function ChaptersHome({
   project,
   chapters,
-  setSelectedChapterId,
   backToProjectHome,
-  goToNewChapter
+  goToNewChapter,
+  goToChapterEditor,
+  goToChapterSettings
 }: IChaptersHomeProp) {
 
   const chapters2 = []
@@ -37,10 +39,12 @@ export function ChaptersHome({
     {
       chapters2.map((chapter, i)=>
         i%2===0 ?
-        <File key={i} text={`${chapter.chapterNumber}. ${chapter?.name}`} iconName="textfile" type={FileType.text} 
-        onClick={()=>{}} />:
-        <File key={i} text={`${chapter.chapterNumber}. ${chapter?.name}`} iconName="gear" type={FileType.settings} 
-        onClick={()=>{}} />
+        <File key={i} text={`§${chapter.chapterNumber}. ${chapter?.name}`} iconName="textfile" type={FileType.text} 
+          onClick={()=>{goToChapterEditor(chapter.id)}} 
+        />:
+        <File key={i} text={`§${chapter.chapterNumber}. ${chapter?.name}`} iconName="gear" type={FileType.settings} 
+          onClick={()=>{goToChapterSettings(chapter.id)}} 
+        />
       )
     }
     </AutoRepeatGrid>
