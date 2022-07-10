@@ -17,6 +17,7 @@ export function GatherWimaEnv() {
       setLoaded(true)
       wimaEnv?.setDomain(res.domain)
       wimaEnv?.setMovicScriptFileMaxLength(res.movicScriptFileMaxLength)
+      wimaEnv?.setTextMaxPerChapter(res.textMaxPerChapter)
     })
   }
   useEffect(()=>{
