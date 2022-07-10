@@ -6,6 +6,7 @@ import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
 import { TextField1 } from "./Fields/TextField/TextField1"
+import { NumberField1 } from "./Fields/NumberField/NumberField1"
 import { SelectField1 } from "./Fields/SelectField/SelectField1"
 import { SelectField2 } from "./Fields/SelectField/SelectField2"
 import { ErrorLine } from "./Fields/ErrorLine/ErrorLine"
@@ -46,6 +47,7 @@ export {
   IsEmail,
 
   TextField1,
+  NumberField1,
   SelectField1,
   SelectField2,
   ErrorLine,

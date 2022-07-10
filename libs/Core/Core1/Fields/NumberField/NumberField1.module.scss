@@ -1,0 +1,28 @@
+@use "../CSS/color.module";
+@use "../CSS/dimension.module";
+
+.prompt {
+  color: color.$promptGray;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: dimension.$promptSize;
+  padding-left: 4px;
+}
+
+.input {
+  appearance: none;
+  outline: none;
+  border: 1px solid color.$borderGray;
+  height: dimension.$inputHeight;
+  padding: 0 8px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  font-size: dimension.$inputFontSize;
+  font-weight: normal;
+}
+
+.input:focus {
+  border-color: color.$borderBlue;
+  box-shadow: 0 0 0 3px color.$outlineBlue;
+}

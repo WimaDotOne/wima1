@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../../bConfig"
-import { TextField1 } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { NumberField1, TextField1 } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { HeadLine } from "../../../../../../../../libs/Pop/Pop3/fPop3"
 import { BookColor } from "../../../../../CSS/BookColor"
@@ -14,7 +14,7 @@ export function NewChapter({
 }: INewChapterProp) {
 
   const [bookTitle, setBookTitle] = useState<string>("")
-
+  const [chapterNumber, setChapterNumber] = useState<string>("")
   function save() {
 
   }
@@ -23,11 +23,20 @@ export function NewChapter({
     <HeadLine text="New Chapter" h={3} />
     <Div height={10} />
     <div className={cl.field}>
-      <TextField1 prompt="Book title" 
+      <TextField1 prompt="Chapter name" 
         value={bookTitle} onChange={(value)=>{
           setBookTitle(value)
         }}
         maxLength = { GENERAL_INPUT_MAX }
+      />
+    </div>
+    <Div height={15} />
+    <div className={cl.numField}>
+      <NumberField1 prompt="Chapter number"
+        value={chapterNumber} onChange={(value)=>{
+          setChapterNumber(value)
+        }}
+        maxLength = { 2 }
       />
     </div>
 
