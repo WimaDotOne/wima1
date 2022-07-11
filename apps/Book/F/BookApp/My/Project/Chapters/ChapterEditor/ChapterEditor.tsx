@@ -67,7 +67,7 @@ export function ChapterEditor({
   const textMaxLength = +(wimaEnv?.movicScriptFileMaxLength || BookConfig.textMaxPerChapter)
 
   return(<>
-  <FileNameBar fileName={`§${chapterNumber}. ${chapterName} (${project.bookTitle})`} />
+  <FileNameBar fileName={`§${chapterNumber}. ${chapterName} <${project.bookTitle}>`} />
   <TextEditor text={text} setText={setText} styleHeight="calc(100vh - 76px)"
     setHasChange={setHasChange} autoFocus wrapLine={wrapLine}
     maxLength={textMaxLength}

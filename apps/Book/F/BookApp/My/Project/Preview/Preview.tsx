@@ -1,4 +1,5 @@
 import { IProject } from "../../../../Model/IProject";
+import { BookPlayer2 } from "../../../BookPlayer/BookPlayer";
 
 interface IPreviewProp {
   project: IProject
@@ -9,6 +10,8 @@ export function Preview({
   backToProjectHome
 }: IPreviewProp) {
   return(<>
-     Preview
+     <BookPlayer2 
+       projectId={project.id}
+     />
   </>)
 }
