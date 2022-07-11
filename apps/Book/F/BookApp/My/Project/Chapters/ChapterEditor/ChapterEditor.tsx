@@ -21,6 +21,8 @@ export function ChapterEditor({
 }: IChapterEditorProp) {
 
   const [text, setText] = useState<string>("")
+  const [chapterName, setChapterName] = useState<string>("")
+  const [chapterNumber, setChapterNumber] = useState<string>("")
   const [hasChange, setHasChange] = useState<boolean>(false)
   const [wrapLine, setWrapLine] = useState<boolean>(false)
   const [loaded, setLoaded] = useState<boolean>(false)
@@ -49,6 +51,8 @@ export function ChapterEditor({
     await Get2(shield, `/book/LoadChapterText?projectId=${project.id}&chapterId=${chapterId}`, (res)=>{
       setLoaded(true)
       setText(res.text)
+      setChapterName(res.chapterName)
+      setChapterNumber(res.chapterNumber)
     })
   }
 
@@ -63,7 +67,7 @@ export function ChapterEditor({
   const textMaxLength = +(wimaEnv?.movicScriptFileMaxLength || BookConfig.textMaxPerChapter)
 
   return(<>
-  <FileNameBar fileName={project.bookTitle} />
+  <FileNameBar fileName={`§${chapterNumber}. ${chapterName} (${project.bookTitle})`} />
   <TextEditor text={text} setText={setText} styleHeight="calc(100vh - 76px)"
     setHasChange={setHasChange} autoFocus wrapLine={wrapLine}
     maxLength={textMaxLength}

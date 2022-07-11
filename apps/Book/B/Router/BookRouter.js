@@ -16,6 +16,8 @@ import { iSaveSettingsIsBookPublic } from "./My/Settings/iSaveSettingsIsBookPubl
 import { iLoadChapterSettings } from "./My/Chapter/iLoadChapterSettings.js"
 import { iDeleteChapter } from "./My/Chapter/iDeleteChapter.js"
 import { iSaveChapterSettings } from "./My/Chapter/iSaveChapterSettings.js"
+import { iLoadChapterText } from "./My/Chapter/iLoadChapterText.js"
+import { iSaveChapterText } from "./My/Chapter/iSaveChapterText.js"
 
 const BookRouter = express.Router()
 
@@ -27,9 +29,11 @@ BookRouter.get("/LoadMyChapters", iAuth, iLoadMyChapters)
 
 //Chapter
 BookRouter.get("/LoadChapterSettings", iAuth, iLoadChapterSettings)
+BookRouter.get("/LoadChapterText", iAuth, iLoadChapterText)
 BookRouter.post("/CreateChapter", iAuth, iCreateChapter)
 BookRouter.post("/SaveChapterSettings", iAuth, iSaveChapterSettings)
 BookRouter.post("/DeleteChapter", iAuth, iDeleteChapter)
+BookRouter.post("/SaveChapterText", iAuth, iSaveChapterText)
 
 
 //Upload Image
