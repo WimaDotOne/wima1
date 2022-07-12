@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: dimension.$maxPhoneHeight) {
-  .viewDiv.open {
+  .viewDiv.open.move {
     padding-left: dimension.$windowLeftBarWidth;
   }
 }

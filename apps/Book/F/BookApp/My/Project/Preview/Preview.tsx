@@ -9,9 +9,11 @@ export function Preview({
   project,
   backToProjectHome
 }: IPreviewProp) {
+
   return(<>
      <BookPlayer2 
        projectId={project.id}
+       onClose={backToProjectHome}
      />
   </>)
 }

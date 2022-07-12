@@ -15,6 +15,7 @@ interface IAppleWindowProp {
   children: ReactNode
   brand?: string
   isLoggedIn?: boolean
+  nonMovableViewDiv?: boolean
 }
 export function AppleWindow({
   isLeftBarOpen, setIsLeftBarOpen,
@@ -22,7 +23,8 @@ export function AppleWindow({
   menu,
   children,
   brand,
-  isLoggedIn
+  isLoggedIn,
+  nonMovableViewDiv
 }:IAppleWindowProp) {
 
   function goToViewAndCloseLeftBar(viewId: string) {
@@ -40,7 +42,8 @@ export function AppleWindow({
   }
 
   return(<>
-    <ViewDiv isLeftBarOpen={isLeftBarOpen}>
+    <ViewDiv isLeftBarOpen={isLeftBarOpen}
+      nonMovableViewDiv={nonMovableViewDiv}>
       {children}
     </ViewDiv>
     <LeftBarDiv open={isLeftBarOpen} brand={brand} brandColor={menu?.themeColor}>

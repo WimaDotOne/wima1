@@ -38,6 +38,7 @@ export function TocWindow({
       isLeftBarOpen={isLeftBarOpen}
       setIsLeftBarOpen={setIsLeftBarOpen}
       viewId={chapterId} goToView={goToView}
+      nonMovableViewDiv
     >
     { children }
     </AppleWindow>
