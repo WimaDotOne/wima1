@@ -1,16 +1,14 @@
 import cl from "./ChapterPaperB.module.scss"
 
 interface IChapterPaperBProp {
-  goLastPage: boolean
-  prevChapter: ()=>void
-  nextChapter: ()=>void
+  prevChapter: (cb?:(chapterText: string)=>void)=>void
+  nextChapter: (cb?:()=>void)=>void
   chapterIndex: number
   chapterText: string
   chapterName: string
 }
 
 export function ChapterPaperB({
-  goLastPage,
   prevChapter, nextChapter,
   chapterIndex,
   chapterText,

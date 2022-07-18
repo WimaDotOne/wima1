@@ -4,16 +4,14 @@ import { FormatPagesA } from "../../H/FormatPages"
 import cl from "./ChapterPaperA.module.scss"
 
 interface IChapterPaperAProp {
-  goLastPage: boolean
-  prevChapter: ()=>void
-  nextChapter: ()=>void
+  prevChapter: (cb?:(chapterText: string)=>void)=>void
+  nextChapter: (cb?:()=>void)=>void
   chapterIndex: number
   chapterText: string
   chapterName: string
 }
 
 export function ChapterPaperA({
-  goLastPage,
   prevChapter, nextChapter,
   chapterIndex,
   chapterText,
@@ -26,43 +24,53 @@ export function ChapterPaperA({
 
   const paperRef = useRef<HTMLDivElement>(null)
 
+  function GetPaperSize() {
+    const paper = paperRef.current
+    if(!paper) return [100, 100]
+    const paperWidth = paper.clientWidth
+    const paperHeight = paper.clientHeight
+    const xMax = paperWidth
+    const yMax = paperHeight
+    return [xMax, yMax]
+  }
+
+  function Format(text: string) {
+    const [xMax, yMax] = GetPaperSize()
+    const pages2 = FormatPagesA(text, Math.floor(xMax/8) , Math.floor(yMax/24))
+    return pages2
+  }
+
+  function resize() {
+    const pages2 = Format(chapterText)
+    const [xMax, yMax] = GetPaperSize()
+    const area = xMax * yMax
+    setPaperArea(area)
+    setPages(pages2)
+  
+    if(page > pages2.length) {
+      setPage(pages2.length)
+    }
+  }
+
   useLayoutEffect(()=>{
 
-    function resize() {
-      const paper = paperRef.current
-      if(!paper) return
-      const paperWidth = paper.clientWidth
-      const paperHeight = paper.clientHeight
-      const pagePaddingLeft = 20
-      const pagePaddingRight = 20
-      const pagePaddingTop = 20
-      const xMax = paperWidth - pagePaddingLeft - pagePaddingRight
-      const yMax = paperHeight - pagePaddingTop * 2
-      const area = xMax * yMax
-      const pages2 = FormatPagesA(chapterText, Math.floor(xMax/7.5) , Math.floor(yMax/24))
-      console.log(xMax/10, Math.floor(yMax/24))
-      setPaperArea(area)
-      setPages(pages2)
-      if(goLastPage) {
-        setPage(pages2.length)
-      } else {
-        setPage(1)
-      }
-    }
+    const pages2 = Format(chapterText)
+    setPages(pages2)
 
-    resize()
     let timeId = 0
     window?.addEventListener("resize", ()=>{
       clearTimeout(timeId)
       timeId = window.setTimeout(resize, 500)
     })
-  }, [chapterText, goLastPage, paperArea])
+  }, [chapterText, paperArea])
 
   function next() {
     if(page < pages.length) {
       setPage(page+1)
     } else {
-      nextChapter()
+      nextChapter(
+        ()=>{ setPage(1) }
+      )
     }
   }
 
@@ -70,7 +78,10 @@ export function ChapterPaperA({
     if(page > 1) {
       setPage(page-1)
     } else {
-      prevChapter()
+      prevChapter((text)=>{
+        const pages2 = Format(text)
+        setPage(pages2.length)
+      })
     }
   }
 

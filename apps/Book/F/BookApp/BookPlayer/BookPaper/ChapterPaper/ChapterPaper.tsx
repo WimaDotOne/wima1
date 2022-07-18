@@ -26,7 +26,6 @@ export function ChapterPaper({
   const [chapterText, setChapterText] = useState<string>("")
   const [chapterName, setChapterName] = useState<string>("")
   const [isWideScreen, setIsWideScreen] = useState<boolean>(false)
-  const [goLastPage, setGoLastPage] = useState<boolean>(false)
 
   const shield = useShield()
 
@@ -51,7 +50,7 @@ export function ChapterPaper({
 
   useEffect(()=>{
     if(textLoaded) return
-    console.log("load chapter text")
+    
     loadChapterText(chapterIndex, (res)=>{
       setTextLoaded(true)
       setChapterText(res.chapterText)
@@ -59,7 +58,7 @@ export function ChapterPaper({
     })
   })
 
-  function nextChapter() {
+  function nextChapter(cb?: ()=>void) {
     if(!chapters) return
     if(chapterIndex < chapters.length) {
       const newChapterIndex = chapterIndex+1
@@ -67,19 +66,20 @@ export function ChapterPaper({
       loadChapterText(newChapterIndex, (res)=>{
         setChapterText(res.chapterText)
         setChapterName(res.chapterName)
-        setGoLastPage(false)
+        if(cb){ cb() }
       })
     }
   }
 
-  function prevChapter() {
+  function prevChapter(cb?: (chapterText: string)=>void) {
     if(chapterIndex > 1) {
       const newChapterIndex = chapterIndex-1
       setChapterIndex(newChapterIndex)
       loadChapterText(newChapterIndex, (res)=>{
-        setChapterText(res.chapterText)
+        const text = res.chapterText || ""
+        setChapterText(text)
         setChapterName(res.chapterName)
-        setGoLastPage(true)
+        if(cb){ cb(text) }
       })
     }
   }
@@ -88,14 +88,12 @@ export function ChapterPaper({
   {
     isWideScreen ?
     <ChapterPaperB
-      goLastPage={goLastPage}
       prevChapter={prevChapter} nextChapter={nextChapter}
       chapterIndex={chapterIndex}
       chapterName={chapterName}
       chapterText={chapterText}
      />:
     <ChapterPaperA 
-      goLastPage={goLastPage}
       prevChapter={prevChapter} nextChapter={nextChapter}
       chapterIndex={chapterIndex}
       chapterName={chapterName}
