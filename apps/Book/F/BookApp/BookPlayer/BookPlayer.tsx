@@ -1,38 +1,32 @@
-import Head from "next/head";
-import { useEffect, useState } from "react";
-import { Get2, useShield } from "../../../../../libs/Core/Core1/fCore1";
-import { TocWindow } from "./TocWindow/TocWindow";
-import { IChapter } from "../../Model/IChapter";
-import { Book } from "./Book/Book";
+import Head from "next/head"
+import { useEffect, useState } from "react"
+import { Get2, useShield } from "../../../../../libs/Core/Core1/fCore1"
+import { IBook } from "../../Model/IBook"
+import { IChapter } from "../../Model/IChapter"
+import { BookPaper } from "./BookPaper/BookPaper"
+import { TocWindow } from "./TocWindow/TocWindow"
 
-interface IBookPlayer2Prop {
+interface IBookPlayerProp {
   bookId?: string
   projectId?: string
-  onClose: ()=>void
+  onCloseBook: ()=>void
 }
 
-export function BookPlayer2({
+export function BookPlayer({
   bookId,
   projectId,
-  onClose
-}: IBookPlayer2Prop) {
+  onCloseBook
+}: IBookPlayerProp) {
 
-  const [chapters, setChapters] = useState<Array<IChapter>>([{
-    id: "1", name: "Book1", chapterNumber: "1"
-  },{
-    id: "2", name: "Book2", chapterNumber: "2"
-
-  }])
-  const [chaptersLoaded, setChaptersLoaded] = useState<boolean>(true)
-  const [bookTitle, setBookTitle] = useState<string>("Hey there Diliah")
-  const [bookCoverImageUrl, setBookCoverImageUrl] = useState<string>("/favicon.ico")
-  const [author, setAuthor] = useState<string>("Ben Lawrence")
-  const [dedication, setDedication] = useState<string>("To Dear, Alice")
-
+  const [chapterIndex, setChapterIndex] = useState<number>(1)
+  const [isLeftBarOpen, setIsLeftBarOpen] = useState<boolean>(false)
+  const [chapters, setChapters] = useState<Array<IChapter>>([])
+  const [book, setBook] = useState<IBook>()
+  const [bookLoaded, setBookLoaded] = useState<boolean>(false)
   const shield = useShield()
 
-  async function loadPages() {
-    if(chaptersLoaded) return
+  async function loadBook() {
+    if(bookLoaded) return
     let url = ""
     if(projectId) {
       url = `/book/LoadBookPreview?projectId=${projectId}`
@@ -43,71 +37,33 @@ export function BookPlayer2({
     if(!url) return
     await Get2(shield, url,
       (res)=>{
-        setChaptersLoaded(true)
+        setBookLoaded(true)
         setChapters(res.chapters)
-        setBookTitle(res.bookTitle || "")
+        setBook(res.book)
       } 
     )
   }
 
   useEffect(()=>{
-    loadPages()
+    loadBook()
   })
 
   return(<>
-    <BookPlayer 
-      projectId={projectId}
-      bookTitle={bookTitle}
-      bookCoverImageUrl={bookCoverImageUrl}
-      author={author}
-      dedication={dedication}
-      chapters={chapters} onClose={onClose}/>
-  </>)
-
-}
-
-interface IBookPlayerProp {
-  projectId?: string
-  bookTitle: string
-  bookCoverImageUrl: string
-  author: string
-  dedication: string
-  chapters: Array<IChapter>
-  onClose: ()=>void
-}
-
-export function BookPlayer({
-  projectId,
-  bookTitle,
-  bookCoverImageUrl,
-  author,
-  dedication,
-  chapters,
-  onClose
-}: IBookPlayerProp) {
-
-  const [isLeftBarOpen, setIsLeftBarOpen] = useState<boolean>(false)
-  const [chapterId, setChapterId] = useState<string>("")
-
-  return(<>
-  {
-    bookTitle?
-    <Head>
-      <title>{bookTitle}</title>
-    </Head>: null
-  }
+  <Head>
+    <title>{book?.title || "Book"}</title>
+  </Head>
   <TocWindow isLeftBarOpen={isLeftBarOpen}
     setIsLeftBarOpen={setIsLeftBarOpen}
-    chapterId={chapterId}
-    setChapterId={setChapterId}
+    setChapterIndex={setChapterIndex}
     chapters={chapters}
-    onClose={onClose}>
-    <Book projectId={projectId} 
+    onClose={onCloseBook}>
+    <BookPaper 
+      projectId={projectId}
+      bookId={bookId}
+      chapterIndex={chapterIndex}
+      setChapterIndex={setChapterIndex}
       chapters={chapters}
-      bookTitle={bookTitle}
-      bookCoverImageUrl={bookCoverImageUrl}
-      author={author}
-      dedication={dedication}
+      book={book}
     />
   </TocWindow>
   </>)

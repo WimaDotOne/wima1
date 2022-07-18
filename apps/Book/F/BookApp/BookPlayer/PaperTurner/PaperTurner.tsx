@@ -1,18 +1,16 @@
-import cl from "./PageTurner.module.scss"
+import cl from "./PaperTurner.module.scss"
 
-interface IPageTurnerProp {
+interface IPaperTurnerProp {
   next: ()=>void
   prev: ()=>void
 }
-export function PageTurner({
+export function PaperTurner({
   next,
   prev
-}: IPageTurnerProp) {
+}: IPaperTurnerProp) {
 
   return(<>
-  <div className={cl.all}>
     <div className={cl.left} onClick={prev}></div>
     <div className={cl.right} onClick={next}></div>
-  </div>
   </>)
 }

@@ -1,0 +1,47 @@
+.coverImage {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.coverB {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 40px;
+  height: 100vh;
+  overflow: hidden;
+}
+.coverLeft, .coverRight {
+  width: 50%;
+  height: 100%;
+}
+.coverLeft {
+  padding: 0 10px 0 15px;
+}
+.coverRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px 0 10px;
+}
+.center {
+  max-width: 500px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.author {
+  font-size: 18px;
+  text-align: center;
+}
+
+.dedication {
+  font-size: 18px;
+  text-align: center;
+}

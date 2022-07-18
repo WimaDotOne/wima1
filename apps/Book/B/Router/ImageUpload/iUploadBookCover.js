@@ -38,7 +38,7 @@ export async function iUploadBookCover(req, res) {
     }
 
     // Shrink files
-    const imageList = await asyShrinkImageFiles(files, tempFolderPath, 600, 400, 120, 80)
+    const imageList = await asyShrinkImageFiles(files, tempFolderPath, 400, 600, 80, 120)
 
     //Upload files to Amazon
     const image = imageList[0]

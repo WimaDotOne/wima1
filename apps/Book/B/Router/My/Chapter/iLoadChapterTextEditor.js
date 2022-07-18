@@ -1,24 +1,16 @@
 import BookChapter from "../../../Model/BookChapter.js"
+import { asyGetBookChapter } from "../../H/GetBookChapter.js"
 import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
-export async function iLoadChapterText(req, res) {
+export async function iLoadChapterTextEditor(req, res) {
   try{
     const projectId = (req.query.projectId || "").toString()
     const chapterId = (req.query.chapterId || "").toString()
 
     const project = await asyGetMyBookProject(req, projectId)
 
-    const bookId = project.bookId
+    const chapter = await asyGetBookChapter(chapterId, project.bookId)
 
-    const chapter = await BookChapter.findById(chapterId)
-
-    if(!chapter) {
-      return res.json({ ok: false, error: "Cannot find the chapter" })
-    }
-    if(!chapter.bookId || !bookId || 
-        chapter.bookId.toString() !== bookId.toString()) {
-      return res.json({ ok: false, error: "Cannot find the matching chapter" })
-    }
     const text = chapter.text
     const chapterNumber = chapter.chapterNumber
     const chapterName = chapter.name

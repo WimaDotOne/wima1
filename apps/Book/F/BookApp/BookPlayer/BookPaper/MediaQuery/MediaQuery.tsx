@@ -1,20 +1,17 @@
 import { useEffect } from "react"
 
 interface IMediaQueryProp {
-  isWideScreen: boolean
   setIsWideScreen: (isWideScreen: boolean)=>void
 }
 
 export function MediaQuery({
-  isWideScreen,
   setIsWideScreen
 }: IMediaQueryProp) {
 
   useEffect(()=>{
     if(!window) return
-
+    
     function Adjust(mediaQuery: any) {
-      console.log("adjust")
       if(mediaQuery.matches) {
         setIsWideScreen(true)
       } else {

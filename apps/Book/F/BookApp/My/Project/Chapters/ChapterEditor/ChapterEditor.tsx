@@ -48,7 +48,7 @@ export function ChapterEditor({
     if(!project.id) return
     if(!chapterId) return
     if(loaded) return
-    await Get2(shield, `/book/LoadChapterText?projectId=${project.id}&chapterId=${chapterId}`, (res)=>{
+    await Get2(shield, `/book/LoadChapterTextEditor?projectId=${project.id}&chapterId=${chapterId}`, (res)=>{
       setLoaded(true)
       setText(res.text)
       setChapterName(res.chapterName)

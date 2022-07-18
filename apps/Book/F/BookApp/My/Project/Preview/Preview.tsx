@@ -1,5 +1,5 @@
 import { IProject } from "../../../../Model/IProject";
-import { BookPlayer2 } from "../../../BookPlayer/BookPlayer";
+import { BookPlayer } from "../../../BookPlayer/BookPlayer";
 
 interface IPreviewProp {
   project: IProject
@@ -11,9 +11,9 @@ export function Preview({
 }: IPreviewProp) {
 
   return(<>
-     <BookPlayer2 
+     <BookPlayer
        projectId={project.id}
-       onClose={backToProjectHome}
+       onCloseBook={backToProjectHome}
      />
   </>)
 }

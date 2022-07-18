@@ -16,8 +16,11 @@ import { iSaveSettingsIsBookPublic } from "./My/Settings/iSaveSettingsIsBookPubl
 import { iLoadChapterSettings } from "./My/Chapter/iLoadChapterSettings.js"
 import { iDeleteChapter } from "./My/Chapter/iDeleteChapter.js"
 import { iSaveChapterSettings } from "./My/Chapter/iSaveChapterSettings.js"
-import { iLoadChapterText } from "./My/Chapter/iLoadChapterText.js"
+import { iLoadChapterTextEditor } from "./My/Chapter/iLoadChapterTextEditor.js"
 import { iSaveChapterText } from "./My/Chapter/iSaveChapterText.js"
+import { iLoadBookPreview } from "./BookPlayer/iLoadBookPreview.js"
+import { iLoadChapterTextPreview } from "./BookPlayer/iLoadChapterTextPreview.js"
+import { iLoadChapterText } from "./BookPlayer/iLoadChapterText.js"
 
 const BookRouter = express.Router()
 
@@ -29,7 +32,7 @@ BookRouter.get("/LoadMyChapters", iAuth, iLoadMyChapters)
 
 //Chapter
 BookRouter.get("/LoadChapterSettings", iAuth, iLoadChapterSettings)
-BookRouter.get("/LoadChapterText", iAuth, iLoadChapterText)
+BookRouter.get("/LoadChapterTextEditor", iAuth, iLoadChapterTextEditor)
 BookRouter.post("/CreateChapter", iAuth, iCreateChapter)
 BookRouter.post("/SaveChapterSettings", iAuth, iSaveChapterSettings)
 BookRouter.post("/DeleteChapter", iAuth, iDeleteChapter)
@@ -46,6 +49,10 @@ BookRouter.get("/LoadSettingsBookId", iAuth, iLoadSettingsBookId)
 BookRouter.post("/SaveSettingsIsBookPublic", iAuth, iSaveSettingsIsBookPublic)
 BookRouter.post("/SaveSettingsBookTitle", iAuth, iSaveSettingsBookTitle)
 
+//Book Player
+BookRouter.get("/LoadBookPreview", iAuth, iLoadBookPreview)
+BookRouter.get("/LoadChapterTextPreview", iAuth, iLoadChapterTextPreview)
+BookRouter.get("/LoadChapterText", iLoadChapterText)
 
 export {
   BookRouter
