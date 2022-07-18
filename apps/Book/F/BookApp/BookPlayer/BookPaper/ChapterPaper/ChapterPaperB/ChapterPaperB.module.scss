@@ -1,0 +1,41 @@
+.topLine {
+  height: 40px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottomLine {
+  height: 40px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.paperSpace {
+  padding: 5px 10px 5px 20px;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+.paper {
+  display: flex;
+  font-size: 20px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+}
+.page {
+  flex: 1;
+  white-space: pre-wrap;
+} 

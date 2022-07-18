@@ -25,8 +25,10 @@ export function FormatPagesA(text: string, pageXMax: number, pageYMax: number) {
   let lineCount = lines.length
   
   for(let ln=0; ln<lineCount; ln++) {
+    const line = lines[ln]
+    if(!line || !line.trim()) continue
+    const words = line.trim().split(" ")
 
-    const words = lines[ln].trim().split(" ")
     const wordCount = words.length
     
     if (ln>0) {
