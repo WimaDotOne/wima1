@@ -6,6 +6,7 @@ import { IChapter } from "../../../Model/IChapter"
 interface ITocWindowProp {
   children: ReactNode
   isLeftBarOpen: boolean
+  setIsCover: (isCover: boolean)=>void
   setIsLeftBarOpen: Dispatch<SetStateAction<boolean>>
   setChapterIndex: (chapterIndex: number)=>void
   chapters: Array<IChapter>
@@ -15,6 +16,7 @@ interface ITocWindowProp {
 export function TocWindow({
   children,
   isLeftBarOpen,
+  setIsCover,
   setIsLeftBarOpen,
   setChapterIndex,
   chapters,
@@ -26,6 +28,7 @@ export function TocWindow({
   function goToView(viewId: string) {
     setViewId(viewId)
     if(+viewId > 0) {
+      setIsCover(false)
       setChapterIndex(+viewId)
     }
     

@@ -10,7 +10,9 @@ interface IBookPaperProp {
   chapterIndex: number
   setChapterIndex: (index: number)=>void
   chapters: Array<IChapter>
-  book?: IBook 
+  book?: IBook
+  isCover: boolean
+  setIsCover: (isCover: boolean)=>void
 }
 
 export function BookPaper({
@@ -18,10 +20,9 @@ export function BookPaper({
   projectId,
   chapterIndex, setChapterIndex,
   chapters,
-  book
+  book,
+  isCover, setIsCover
 }: IBookPaperProp) {
-
-  const [isCover, setIsCover] = useState<boolean>(true)
 
   book = {
     title: book?.title || "My Summer of Love",

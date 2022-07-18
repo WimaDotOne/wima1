@@ -23,6 +23,8 @@ export function BookPlayer({
   const [chapters, setChapters] = useState<Array<IChapter>>([])
   const [book, setBook] = useState<IBook>()
   const [bookLoaded, setBookLoaded] = useState<boolean>(false)
+  const [isCover, setIsCover] = useState<boolean>(true)
+
   const shield = useShield()
 
   async function loadBook() {
@@ -52,7 +54,9 @@ export function BookPlayer({
   <Head>
     <title>{book?.title || "Book"}</title>
   </Head>
-  <TocWindow isLeftBarOpen={isLeftBarOpen}
+  <TocWindow 
+    setIsCover={setIsCover}
+    isLeftBarOpen={isLeftBarOpen}
     setIsLeftBarOpen={setIsLeftBarOpen}
     setChapterIndex={setChapterIndex}
     chapters={chapters}
@@ -64,6 +68,7 @@ export function BookPlayer({
       setChapterIndex={setChapterIndex}
       chapters={chapters}
       book={book}
+      isCover={isCover} setIsCover={setIsCover}
     />
   </TocWindow>
   </>)

@@ -49,14 +49,11 @@ export function ChapterPaper({
   }
 
   useEffect(()=>{
-    if(textLoaded) return
-    
     loadChapterText(chapterIndex, (res)=>{
-      setTextLoaded(true)
       setChapterText(res.chapterText)
       setChapterName(res.chapterName)
     })
-  })
+  }, [chapterIndex])
 
   function nextChapter(cb?: ()=>void) {
     if(!chapters) return
@@ -81,6 +78,8 @@ export function ChapterPaper({
         setChapterName(res.chapterName)
         if(cb){ cb(text) }
       })
+    } else {
+      goCover()
     }
   }
 
