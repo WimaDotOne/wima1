@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { IBook } from "../../../Model/IBook"
 import { IChapter } from "../../../Model/IChapter"
 import { ChapterPaper } from "./ChapterPaper/ChapterPaper"

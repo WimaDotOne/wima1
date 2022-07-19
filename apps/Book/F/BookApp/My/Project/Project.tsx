@@ -18,7 +18,6 @@ export function Project({
   const [project, setProject] = useState<IProject>()
   const [projectTurn, setProjectTurn] = useState<string>("")
 
-
   function backToProjectsHome() {
     router.push("/apps/Book/AppTurn/Projects")
   }
@@ -28,6 +27,7 @@ export function Project({
   }
 
   useEffect(()=>{
+
     const query = router.query
     const id = query.projectId as string
     const bookTitle = query.bookTitle as string

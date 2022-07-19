@@ -25,6 +25,7 @@ export function BookWindow({
   function updateViewId() {
     //Update viewId based on path rather than calling setViewId during goToView because this also works when browser back arrow is clicked.
     const route = router.asPath
+    
     let viewIdPiece = route.split("AppTurn/")[1]
     if(viewIdPiece) {
       viewIdPiece = viewIdPiece.split("/")[0]
