@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useLayoutEffect, useRef, useState } from "react"
 import { PaperTurner } from "../../../PaperTurner/PaperTurner"
 import { FormatPagesA } from "../../H/FormatPages"
 import cl from "./ChapterPaperA.module.scss"
@@ -9,17 +9,19 @@ interface IChapterPaperAProp {
   chapterIndex: number
   chapterText: string
   chapterName: string
+  page: number,
+  setPage: (page: number)=>void
 }
 
 export function ChapterPaperA({
   prevChapter, nextChapter,
   chapterIndex,
   chapterText,
-  chapterName
+  chapterName,
+  page, setPage
 }: IChapterPaperAProp) {
 
   const [paperArea, setPaperArea] = useState<number>(0)
-  const [page, setPage] = useState<number>(1)
   const [pages, setPages] = useState<Array<string>>([])
 
   const paperRef = useRef<HTMLDivElement>(null)
@@ -46,7 +48,7 @@ export function ChapterPaperA({
     const area = xMax * yMax
     setPaperArea(area)
     setPages(pages2)
-  
+
     if(page > pages2.length) {
       setPage(pages2.length)
     }

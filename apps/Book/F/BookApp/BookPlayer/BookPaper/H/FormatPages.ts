@@ -18,7 +18,7 @@ export function FormatPagesA(text: string, pageXMax: number, pageYMax: number) {
       yMax: pageYMax
     }
   }
-
+  text = text || ""
   const lines = text.split('\n')
   const pages = []
   let pageInfo = newPage()

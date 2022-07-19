@@ -10,17 +10,19 @@ interface IChapterPaperBProp {
   chapterIndex: number
   chapterText: string
   chapterName: string
+  page: number,
+  setPage: (page: number)=>void
 }
 
 export function ChapterPaperB({
   prevChapter, nextChapter,
   chapterIndex,
   chapterText,
-  chapterName
+  chapterName,
+  page, setPage
 }: IChapterPaperBProp) {
 
   const [paperArea, setPaperArea] = useState<number>(0)
-  const [page, setPage] = useState<number>(1)
   const [pages, setPages] = useState<Array<string>>([])
 
   const paperRef = useRef<HTMLDivElement>(null)

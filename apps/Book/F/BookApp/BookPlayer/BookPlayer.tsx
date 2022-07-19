@@ -18,6 +18,7 @@ export function BookPlayer({
   onCloseBook
 }: IBookPlayerProp) {
 
+  const [page, setPage] = useState<number>(1)
   const [chapterIndex, setChapterIndex] = useState<number>(1)
   const [isLeftBarOpen, setIsLeftBarOpen] = useState<boolean>(false)
   const [chapters, setChapters] = useState<Array<IChapter>>([])
@@ -59,6 +60,7 @@ export function BookPlayer({
     isLeftBarOpen={isLeftBarOpen}
     setIsLeftBarOpen={setIsLeftBarOpen}
     setChapterIndex={setChapterIndex}
+    setPage={setPage}
     chapters={chapters}
     onClose={onCloseBook}>
     <BookPaper 
@@ -66,6 +68,7 @@ export function BookPlayer({
       bookId={bookId}
       chapterIndex={chapterIndex}
       setChapterIndex={setChapterIndex}
+      page={page} setPage={setPage}
       chapters={chapters}
       book={book}
       isCover={isCover} setIsCover={setIsCover}

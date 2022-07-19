@@ -63,7 +63,7 @@ export function BookWindow({
 
 export const AppTurn = {
   Projects: "Projects",
-  MyBook: "MyBook",
+  MyBooks: "MyBooks",
   About: "About",
   Tutorial: "Tutorial",
   WimaCircle: "WimaCircle"
@@ -71,16 +71,16 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
-    case AppTurn.MyBook: return true
+    case AppTurn.MyBooks: return true
     case AppTurn.Projects: return true
     default: return false
   }
 }
 
 function BookMenu(viewId?: string): MenuModel | undefined {
-  if(!viewId) viewId = AppTurn.MyBook
+  if(!viewId) viewId = AppTurn.MyBooks
   const myGroup = new GroupModel("My Books", false)
-  myGroup.AddItem(new ItemModel(AppTurn.MyBook, "Books", "book", true))
+  myGroup.AddItem(new ItemModel(AppTurn.MyBooks, "Books", "book", true))
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "typewriter", true))
 
   const publicGroup = new GroupModel("Book", true)

@@ -9,6 +9,7 @@ interface ITocWindowProp {
   setIsCover: (isCover: boolean)=>void
   setIsLeftBarOpen: Dispatch<SetStateAction<boolean>>
   setChapterIndex: (chapterIndex: number)=>void
+  setPage: (page: number)=>void
   chapters: Array<IChapter>
   onClose: ()=>void
 }
@@ -19,6 +20,7 @@ export function TocWindow({
   setIsCover,
   setIsLeftBarOpen,
   setChapterIndex,
+  setPage,
   chapters,
   onClose
 }: ITocWindowProp) {
@@ -30,6 +32,7 @@ export function TocWindow({
     if(+viewId > 0) {
       setIsCover(false)
       setChapterIndex(+viewId)
+      setPage(1)
     }
     
   }

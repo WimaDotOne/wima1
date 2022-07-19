@@ -9,6 +9,8 @@ interface IBookPaperProp {
   projectId?: string
   chapterIndex: number
   setChapterIndex: (index: number)=>void
+  page: number
+  setPage: (page: number)=>void
   chapters: Array<IChapter>
   book?: IBook
   isCover: boolean
@@ -19,6 +21,7 @@ export function BookPaper({
   bookId,
   projectId,
   chapterIndex, setChapterIndex,
+  page, setPage,
   chapters,
   book,
   isCover, setIsCover
@@ -39,6 +42,7 @@ export function BookPaper({
       bookId={bookId}
       projectId={projectId}
       chapterIndex={chapterIndex} setChapterIndex={setChapterIndex}
+      page={page} setPage={setPage}
       goCover={goCover} 
       chapters={chapters}/>
   }

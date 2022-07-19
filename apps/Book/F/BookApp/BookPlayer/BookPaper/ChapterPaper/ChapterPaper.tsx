@@ -10,6 +10,8 @@ interface IChapterPaperProp {
   projectId?: string
   chapterIndex: number
   setChapterIndex: (index: number)=>void
+  page: number,
+  setPage: (page: number)=>void
   goCover: ()=>void
   chapters: Array<IChapter>
 }
@@ -18,11 +20,11 @@ export function ChapterPaper({
   bookId,
   projectId,
   chapterIndex, setChapterIndex,
+  page, setPage,
   goCover,
   chapters
 }: IChapterPaperProp) {
 
-  const [textLoaded, setTextLoaded] = useState<boolean>(false)
   const [chapterText, setChapterText] = useState<string>("")
   const [chapterName, setChapterName] = useState<string>("")
   const [isWideScreen, setIsWideScreen] = useState<boolean>(false)
@@ -88,12 +90,14 @@ export function ChapterPaper({
     isWideScreen ?
     <ChapterPaperB
       prevChapter={prevChapter} nextChapter={nextChapter}
+      page={page} setPage={setPage}
       chapterIndex={chapterIndex}
       chapterName={chapterName}
       chapterText={chapterText}
      />:
     <ChapterPaperA 
       prevChapter={prevChapter} nextChapter={nextChapter}
+      page={page} setPage={setPage}
       chapterIndex={chapterIndex}
       chapterName={chapterName}
       chapterText={chapterText}

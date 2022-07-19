@@ -21,6 +21,8 @@ import { iSaveChapterText } from "./My/Chapter/iSaveChapterText.js"
 import { iLoadBookPreview } from "./BookPlayer/iLoadBookPreview.js"
 import { iLoadChapterTextPreview } from "./BookPlayer/iLoadChapterTextPreview.js"
 import { iLoadChapterText } from "./BookPlayer/iLoadChapterText.js"
+import { iLoadMyBooks } from "./My/iLoadMyBooks.js"
+import { iLoadBook } from "./BookPlayer/iLoadBook.js"
 
 const BookRouter = express.Router()
 
@@ -28,6 +30,7 @@ BookRouter.post("/CreateBookProject", iAuth, iCreateBookProject)
 BookRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)
 BookRouter.get("/LoadBookCover", iAuth, iLoadBookCover)
 BookRouter.get("/LoadMyChapters", iAuth, iLoadMyChapters)
+BookRouter.get("/LoadMyBooks", iAuth, iLoadMyBooks)
 
 
 //Chapter
@@ -51,6 +54,7 @@ BookRouter.post("/SaveSettingsBookTitle", iAuth, iSaveSettingsBookTitle)
 
 //Book Player
 BookRouter.get("/LoadBookPreview", iAuth, iLoadBookPreview)
+BookRouter.get("/LoadBook", iLoadBook)
 BookRouter.get("/LoadChapterTextPreview", iAuth, iLoadChapterTextPreview)
 BookRouter.get("/LoadChapterText", iLoadChapterText)
 

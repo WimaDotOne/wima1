@@ -12,7 +12,7 @@ export async function iLoadChapterText(req, res) {
     })
 
     if(!project) {
-      return res.json({ok: false, error: "Cannot find the project"})
+      return res.json({ok: false, error: "Cannot find the book project"})
     }
     if(!project.isBookPublic) {
       return res.json({ok: false, error: "The book is not published."})
