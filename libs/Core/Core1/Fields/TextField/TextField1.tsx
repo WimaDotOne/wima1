@@ -4,13 +4,15 @@ interface ITextField1Prop {
   prompt?: string
   value?: string
   onChange: (newValue: string)=>void
-  maxLength: number
+  maxLength: number,
+  ghost?: string
 }
 export function TextField1({
   prompt,
   value,
   onChange,
-  maxLength
+  maxLength,
+  ghost
 }:ITextField1Prop) {
   return(<>
     <div>
@@ -18,7 +20,10 @@ export function TextField1({
         prompt ?
         <div className={cl.prompt}>{prompt}</div>:null
       }
-      <input className={cl.input} value={value} onChange={(e)=>onChange(e.target.value)}
+      <input className={cl.input} 
+        placeholder={ghost}
+        value={value} 
+        onChange={(e)=>onChange(e.target.value)}
         maxLength={maxLength}/>
     </div>
   </>)

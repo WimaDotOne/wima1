@@ -17,11 +17,16 @@ export function CoverPaperB({
 
   }
 
+  let coverImgUrl = book?.coverImgUrl
+  if(book && !coverImgUrl) {
+    coverImgUrl = "/apps/WimaHome/AppIcons/book.png"
+  }
+
   return(<>
   <div className={cl.coverB}>
     <div className={cl.coverLeft}>
       <div className={cl.coverImage} 
-        style={{backgroundImage: `url(${book?.coverImgUrl})`}}/>
+        style={{backgroundImage: `url(${coverImgUrl})`}}/>
     </div>
     <div className={cl.coverRight}>
       <div className={cl.center}>

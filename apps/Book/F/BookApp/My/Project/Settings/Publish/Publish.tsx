@@ -10,7 +10,7 @@ interface IPublishProp {
   project: IProject
 }
 export function Publish({
-  project
+  project,
 }: IPublishProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)

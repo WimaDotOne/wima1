@@ -22,11 +22,14 @@ export function Settings({
   <div className={cl.settings}>
     <HeadLine text={project.bookTitle} h={3} />
     <Div height={10} />
-    <BookTitle project={project} setProjectBookTitle={setProjectBookTitle}/>
+    <BookTitle 
+      project={project}
+      setProjectBookTitle={setProjectBookTitle}
+    />
     <Div height={20} />
-    <BookCover project={project}/>
+    <BookCover project={project} />
     <Div height={20} />
-    <Publish project={project}/>
+    <Publish project={project} />
   </div>
   <AppleWindowBottomBarFill />
   <AppleWindowPlainBottomBarDiv>

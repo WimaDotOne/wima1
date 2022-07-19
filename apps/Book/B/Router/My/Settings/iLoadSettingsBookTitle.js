@@ -13,7 +13,12 @@ export async function iLoadSettingsBookTitle(req, res) {
       return res.json({ ok: false, error: "Cannot find book" })
     }
     
-    return res.json({ok: true, bookTitle: book.title})
+    return res.json({
+      ok: true, 
+      bookTitle: book.title,
+      author: book.author,
+      dedication: book.dedication
+    })
 
   } catch(err) {
     return res.json({ ok: false, error: err.message })

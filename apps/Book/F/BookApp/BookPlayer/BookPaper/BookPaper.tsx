@@ -24,12 +24,6 @@ export function BookPaper({
   isCover, setIsCover
 }: IBookPaperProp) {
 
-  book = {
-    title: book?.title || "My Summer of Love",
-    author: 'Helen Cross',
-    dedication: "To Alice & Roy",
-    coverImgUrl: book?.coverImgUrl
-  }
   function goCover() {
     setIsCover(true)
   }
