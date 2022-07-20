@@ -3,7 +3,6 @@ import { Get2, Post2, useShield } from "../../../../../../../../libs/Core/Core1/
 import { ReadEdit } from "../../../../../../../../libs/Pop/Pop1/fPop1"
 import { BookColor } from "../../../../../CSS/BookColor"
 import { IProject } from "../../../../../Model/IProject"
-import { IProjectSettings } from "../../../../../Model/IProjectSettings"
 import { EditBookTitle } from "./EditBookTitle/EditBookTitle"
 import { ViewBookTitle } from "./ViewBookTitle/ViewBookTitle"
 
