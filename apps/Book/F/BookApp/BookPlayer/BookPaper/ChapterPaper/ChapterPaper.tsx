@@ -6,6 +6,7 @@ import { ChapterPaperA } from "./ChapterPaperA/ChapterPaperA"
 import { ChapterPaperB } from "./ChapterPaperB/ChapterPaperB"
 
 interface IChapterPaperProp {
+  exhibitId?: string
   bookId?: string
   projectId?: string
   chapterIndex: number
@@ -17,6 +18,7 @@ interface IChapterPaperProp {
 }
 
 export function ChapterPaper({
+  exhibitId,
   bookId,
   projectId,
   chapterIndex, setChapterIndex,
@@ -45,6 +47,8 @@ export function ChapterPaper({
     }
     else if(bookId) {
       url = `/book/LoadChapterText?bookId=${bookId}&chapterId=${chapterId}`
+    } else if(exhibitId) {
+      url = `/book/LoadChapterTextExhibit?exhibitId=${exhibitId}&chapterId=${chapterId}`
     }
     if(!url) return
     await Get2(shield, url, onOk)

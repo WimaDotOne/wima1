@@ -4,6 +4,7 @@ import { ChapterPaper } from "./ChapterPaper/ChapterPaper"
 import { CoverPaper } from "./CoverPaper/CoverPaper"
 
 interface IBookPaperProp {
+  exhibitId?: string
   bookId?: string
   projectId?: string
   chapterIndex: number
@@ -17,6 +18,7 @@ interface IBookPaperProp {
 }
 
 export function BookPaper({
+  exhibitId,
   bookId,
   projectId,
   chapterIndex, setChapterIndex,
@@ -38,6 +40,7 @@ export function BookPaper({
     <CoverPaper goChapter={goChapter} 
       book={book}/>:
     <ChapterPaper 
+      exhibitId={exhibitId}
       bookId={bookId}
       projectId={projectId}
       chapterIndex={chapterIndex} setChapterIndex={setChapterIndex}

@@ -23,6 +23,8 @@ import { iLoadChapterTextPreview } from "./BookPlayer/iLoadChapterTextPreview.js
 import { iLoadChapterText } from "./BookPlayer/iLoadChapterText.js"
 import { iLoadMyBooks } from "./My/iLoadMyBooks.js"
 import { iLoadBook } from "./BookPlayer/iLoadBook.js"
+import { iLoadBookExhibit } from "./Exhibit/iLoadBookExhibit.js"
+import { iLoadChapterTextExhibit } from "./Exhibit/iLoadChapterTextExhibit.js"
 
 const BookRouter = express.Router()
 
@@ -32,7 +34,6 @@ BookRouter.get("/LoadBookCover", iAuth, iLoadBookCover)
 BookRouter.get("/LoadMyChapters", iAuth, iLoadMyChapters)
 BookRouter.get("/LoadMyBooks", iAuth, iLoadMyBooks)
 
-
 //Chapter
 BookRouter.get("/LoadChapterSettings", iAuth, iLoadChapterSettings)
 BookRouter.get("/LoadChapterTextEditor", iAuth, iLoadChapterTextEditor)
@@ -40,7 +41,6 @@ BookRouter.post("/CreateChapter", iAuth, iCreateChapter)
 BookRouter.post("/SaveChapterSettings", iAuth, iSaveChapterSettings)
 BookRouter.post("/DeleteChapter", iAuth, iDeleteChapter)
 BookRouter.post("/SaveChapterText", iAuth, iSaveChapterText)
-
 
 //Upload Image
 BookRouter.post("/UploadBookCover", iAuth, iNewTempFolder, iImageMulter, iUploadBookCover)
@@ -57,6 +57,11 @@ BookRouter.get("/LoadBookPreview", iAuth, iLoadBookPreview)
 BookRouter.get("/LoadBook", iLoadBook)
 BookRouter.get("/LoadChapterTextPreview", iAuth, iLoadChapterTextPreview)
 BookRouter.get("/LoadChapterText", iLoadChapterText)
+
+//Exhibit
+BookRouter.get("/LoadBookExhibit", iLoadBookExhibit)
+BookRouter.get("/LoadChapterTextExhibit", iLoadChapterTextExhibit)
+
 
 export {
   BookRouter

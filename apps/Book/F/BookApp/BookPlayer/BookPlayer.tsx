@@ -7,12 +7,14 @@ import { BookPaper } from "./BookPaper/BookPaper"
 import { TocWindow } from "./TocWindow/TocWindow"
 
 interface IBookPlayerProp {
+  exhibitId?: string
   bookId?: string
   projectId?: string
   onCloseBook: ()=>void
 }
 
 export function BookPlayer({
+  exhibitId,
   bookId,
   projectId,
   onCloseBook
@@ -36,10 +38,13 @@ export function BookPlayer({
     }
     else if(bookId) {
       url = `/book/LoadBook?bookId=${bookId}`
+    } else if(exhibitId) {
+      url = `/book/LoadBookExhibit?exhibitId=${exhibitId}`
     }
     if(!url) return
     await Get2(shield, url,
       (res)=>{
+        console.log(res.book)
         setBookLoaded(true)
         setChapters(res.chapters)
         setBook(res.book)

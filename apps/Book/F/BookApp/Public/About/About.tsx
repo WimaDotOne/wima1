@@ -1,6 +1,7 @@
 import { Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1, StripeIntroText } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { BookWindow } from "../../BookWindow/BookWindow"
+import { Exhibit } from "./Exhibit/Exhibit"
 
 export function About() {
   return(<>
@@ -19,6 +20,11 @@ export function About() {
       </LimitWidth>
       <LimitWidth maxWidth={800}>
         <Div height={10} />
+        <Div height={10} />
+      </LimitWidth>
+      <LimitWidth maxWidth={800}>
+        <Div height={10} />
+        <Exhibit />
         <Div height={50} />
       </LimitWidth>
     </BookWindow>
