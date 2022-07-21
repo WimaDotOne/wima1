@@ -33,6 +33,21 @@ function GetBooks() {
       id: "OneHundredYearsOfSolitude",
       title: "One Hundred Years of Solitude",
       coverImgUrl: bookCoverFolder+"/OneHundredYearsOfSolitude.jpg"
+    },
+    {
+      id: "HarryPorter1",
+      title: "Harry Porter and the Sorcerer's Stone",
+      coverImgUrl: bookCoverFolder+"/HarryPorter1.jpg"
+    },
+    {
+      id: "Bunnicula",
+      title: "Bunnicula",
+      coverImgUrl: bookCoverFolder+"/Bunnicula.jpg"
+    },
+    {
+      id: "TheHateUGive",
+      title: "The Hate U Give",
+      coverImgUrl: bookCoverFolder+"/TheHateUGive.jpg"
     }
   ])
 }

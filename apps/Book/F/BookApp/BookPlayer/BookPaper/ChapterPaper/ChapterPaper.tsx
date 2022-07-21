@@ -32,7 +32,7 @@ export function ChapterPaper({
   const [isWideScreen, setIsWideScreen] = useState<boolean>(false)
 
   const shield = useShield()
-
+  
   async function loadChapterText(chapterIndex: number, onOk: (res: any)=>void) {
     if(!chapters || !chapterIndex || chapterIndex < 1 || 
         chapterIndex > chapters.length) {
@@ -50,6 +50,7 @@ export function ChapterPaper({
     } else if(exhibitId) {
       url = `/book/LoadChapterTextExhibit?exhibitId=${exhibitId}&chapterId=${chapterId}`
     }
+    
     if(!url) return
     await Get2(shield, url, onOk)
   }

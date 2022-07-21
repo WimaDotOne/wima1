@@ -15,7 +15,8 @@ export function FormatPagesA(text: string, pageXMax: number, pageYMax: number) {
       y: 1,
       text: "",
       xMax: pageXMax,
-      yMax: pageYMax
+      yMax: pageYMax,
+      lineBegin: true
     }
   }
   text = text || ""
@@ -26,17 +27,22 @@ export function FormatPagesA(text: string, pageXMax: number, pageYMax: number) {
   
   for(let ln=0; ln<lineCount; ln++) {
     const line = lines[ln]
+    if(ln === 3) {
+      console.log(pageInfo)
+    }
     if(!line || !line.trim()) continue
     const words = line.trim().split(" ")
 
     const wordCount = words.length
     
     if (ln>0) {
-      if (!Write(pageInfo,'#newline')) {
+
+      if (HasRoomForNewLine(pageInfo)) {
+        Write(pageInfo,'#newline')
+      } else {
         pages.push(pageInfo.text)
         pageInfo = newPage()
       }
-      Write(pageInfo,'#newline')
     }
     
     for(let w=0; w<wordCount; w++) {
@@ -55,33 +61,26 @@ export function FormatPagesA(text: string, pageXMax: number, pageYMax: number) {
   return pages
 }
 
-
+function HasRoomForNewLine(pageInfo: IPageInfo) {
+  return pageInfo.y + 1 < pageInfo.yMax
+}
 function Write(pageInfo: IPageInfo, word: string) {
-  
   if (word === '#newline') {
-    if (pageInfo.y < pageInfo.yMax) {
-      pageInfo.text = pageInfo.text + '\n'
-      pageInfo.y = pageInfo.y + 1
-      pageInfo.x = 0
-      return true;
-    } else {
-      return false
-    }
-  }
-  if (word === '#indent') {
-    pageInfo.text = pageInfo.text + "<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>"
-    pageInfo.x = pageInfo.x + 4
+    pageInfo.text = pageInfo.text + '\n\n'
+    pageInfo.y = pageInfo.y + 2
+    pageInfo.x = 0
     return true
   }
+
   const len = WordWidth(word)
   if (pageInfo.x + 1 + len <= pageInfo.xMax) {
-    pageInfo.text = pageInfo.text + " " + word
+    pageInfo.text = pageInfo.x < 1 ? pageInfo.text + word : pageInfo.text + " " + word
     pageInfo.x = pageInfo.x + 1 + len
     
     return true
   } else {
     if (pageInfo.y < pageInfo.yMax) {
-      pageInfo.text = pageInfo.text + " " + word
+      pageInfo.text = pageInfo.x < 1 ? pageInfo.text + word : pageInfo.text + " " + word
       pageInfo.x = len
       pageInfo.y = pageInfo.y + 1
       return true
@@ -100,6 +99,7 @@ function WordWidth(word: string) {
       c==="'" ||
       c==='.' ||
       c==='l' ||
+      c==='f' ||
       c==='t' ||
       c==='i')
     {

@@ -38,7 +38,7 @@ export function ChapterPaperA({
 
   function Format(text: string) {
     const [xMax, yMax] = GetPaperSize()
-    const pages2 = FormatPagesA(text, Math.floor(xMax/8) , Math.floor(yMax/24))
+    const pages2 = FormatPagesA(text, Math.floor(xMax/10.5) , Math.floor(yMax/24))
     return pages2
   }
 

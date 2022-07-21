@@ -44,7 +44,6 @@ export function BookPlayer({
     if(!url) return
     await Get2(shield, url,
       (res)=>{
-        console.log(res.book)
         setBookLoaded(true)
         setChapters(res.chapters)
         setBook(res.book)
@@ -68,7 +67,8 @@ export function BookPlayer({
     setPage={setPage}
     chapters={chapters}
     onClose={onCloseBook}>
-    <BookPaper 
+    <BookPaper
+      exhibitId={exhibitId}
       projectId={projectId}
       bookId={bookId}
       chapterIndex={chapterIndex}
