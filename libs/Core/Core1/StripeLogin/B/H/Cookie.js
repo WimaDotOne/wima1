@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken"
-import { DevUser } from "./DevUser.js"
 const USER = "User"
 const UNIVERSITY_ACCOUNT = "UniversityAccount"
 
@@ -34,6 +33,8 @@ function SetUniversityAccountCookie(res, _id) {
 
 function GetCookie(req, cookieName) {
   const token = req.cookies[cookieName] //cookie parser
+  if(!token) throw new Error("No token" + cookieName)
+  
   const payload = jwt.verify(token, process.env.JWT_PRIVATE)
   return payload
 }
@@ -52,7 +53,7 @@ function DeleteCookie(res, cookieName) {
     maxAge: -24*60*60*1000,  //a day ago
     httpOnly: true
   }
-  res.cookie(USER, "", cookieOption)
+  res.cookie(cookieName, "", cookieOption)
 }
 
 function DeleteUserCookie(res) {
