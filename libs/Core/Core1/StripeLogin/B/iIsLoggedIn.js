@@ -26,7 +26,7 @@ async function iIsLoggedIn(req, res) {
 
     return res.json({ ok:true, isLoggedIn, isLoggedInUniv })
   } catch(err) {
-    return res.json({ ok:true })
+    return res.json({ ok:false, error: err.message })
   }
 }
 
