@@ -33,8 +33,7 @@ function SetUniversityAccountCookie(res, _id) {
 
 function GetCookie(req, cookieName) {
   const token = req.cookies[cookieName] //cookie parser
-  if(!token) throw new Error("No token" + cookieName)
-  
+
   const payload = jwt.verify(token, process.env.JWT_PRIVATE)
   return payload
 }
@@ -43,8 +42,24 @@ function GetUserCookie(req) {
   return GetCookie(req, USER)
 }
 
+function TryGetUserCookie(req) {
+  try {
+    return GetUserCookie(req)
+  } catch (err) {
+    return null
+  }
+}
+
 function GetUniversityAccountCookie(req) {
   return GetCookie(req, UNIVERSITY_ACCOUNT)
+}
+
+function TryGetUniversityAccountCookie(req) {
+  try {
+    return GetUniversityAccountCookie(req)
+  } catch (err) {
+    return null
+  }
 }
 
 function DeleteCookie(res, cookieName) {
@@ -66,10 +81,10 @@ function DeleteUniversityAccountCookie(res) {
 
 export {
   SetUserCookie,
-  GetUserCookie,
+  GetUserCookie, TryGetUserCookie,
   DeleteUserCookie,
 
   SetUniversityAccountCookie,
-  GetUniversityAccountCookie,
+  GetUniversityAccountCookie, TryGetUniversityAccountCookie,
   DeleteUniversityAccountCookie
 }

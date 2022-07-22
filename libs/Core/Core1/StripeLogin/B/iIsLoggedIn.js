@@ -1,5 +1,5 @@
 import { DevUser, DevUnivAccount } from "./H/DevUser.js"
-import { GetUserCookie, GetUniversityAccountCookie } from "./H/Cookie.js"
+import { TryGetUserCookie, TryGetUniversityAccountCookie } from "./H/Cookie.js"
 
 async function iIsLoggedIn(req, res) {
   try {
@@ -13,13 +13,13 @@ async function iIsLoggedIn(req, res) {
     if(devUser) {
       user = devUser
     } else {
-      user = GetUserCookie(req)
+      user = TryGetUserCookie(req)
     }
 
     if(devUnivAccount) {
       univAccount = devUnivAccount
     } else {
-      univAccount = GetUniversityAccountCookie(req)
+      univAccount = TryGetUniversityAccountCookie(req)
     }
     const isLoggedIn = !!user
     const isLoggedInUniv = !!univAccount

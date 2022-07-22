@@ -10,13 +10,12 @@ export function IsWimaUserLogin() {
 
   async function UpdateUserLogin() {
     await Get2(shield, "/login/IsLoggedIn", (res)=>{
-      console.log(`Load login result - ${res.isLoggedIn}`)
+
       user?.setIsLoggedIn(!!res.isLoggedIn)
       user?.setIsLoggedInUniv(!!res.isLoggedInUniv)
     })
   }
   useEffect(()=>{
-    console.log(`IsLogin Loaded = ${loaded}`)
     if(!loaded) {
       setLoaded(true)
       UpdateUserLogin()
