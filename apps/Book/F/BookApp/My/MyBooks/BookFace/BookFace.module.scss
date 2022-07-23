@@ -7,20 +7,16 @@
   flex-direction: column;
   align-items: center;
 }
+
 .coverImage {
-  height: 90px;
-  width: 60px;
+  height: 150px;
+  width: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3px;
 }
-.noImage {
-  height: 90px;
-  width: 60px;
-  background-color: #ccc;
-  border-radius: 3px;
-}
+
 .title {
   margin-top: 5px;
   text-align: center;

@@ -86,7 +86,7 @@ function BookMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Book", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to publish a book?", "graduationcap"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to make a book?", "graduationcap"))
   publicGroup.AddItem(new ItemModel(AppTurn.WimaCircle, "Exit", "wimacircle")) 
 
   const menu = new MenuModel(viewId, BookColor.themeGreen)
