@@ -1,0 +1,63 @@
+===
+Metall||metal1.jpg
+Metall||metal2.jpg
+Holz||wood1.jpg
+Holz||wood2.jpg
+Papier||paper1.jpg
+===
+Plastik||plastic1.jpg
+Plastik||plastic2.jpg
+Papier||paper2.jpg
+Holz||wood3.jpg
+===
+Der Tisch ist aus Holz||woodTable.jpg
+Der Stuhl ist aus Plastik||plasticChair.jpg
+Die Leiter ist aus Metall||metalLadder.jpg
+===
+eine Holzschüssel||woodBowl.jpg
+eine Plastikschüssel||plasticBowl.jpg
+ein Plastikteller||plasticPlate.jpg
+ein Holzteller||woodPlate.jpg
+===
+Ich habe einen Plastikbecher||iHavePlasticCup.jpg
+Ich habe einen Papierbecher||iHavePaperCup.jpg
+Ich habe einen Holztisch||iHaveWoodTable.jpg
+Ich habe einen Metalltisch||iHaveMetalTable.jpg
+Er hat einen Plastikbecher||heHasPlasticCup.jpg
+Ich habe einen Plastiktisch||iHavePlasticTable.jpg
+===
+Das ist aus Papier||paperBag.jpg
+Das ist aus Holz||woodBoat.jpg
+Das ist aus Metall ||metalPot.jpg
+Das ist aus Plastik||plasticBin.jpg
+===
+Kreditkarten sind aus Plastik||plasticCreditCards.jpg
+Münzen sind aus Metall||metalCoins.jpg
+Schecks sind aus Papier||paperChecks.jpg
+===
+Sie bezahlen mit Münzen||theyPayCoins.jpg
+Ich bezahle in bar||iPayCash.jpg
+Sie bezahlt mit einem Scheck||shePayCheck.jpg
+Er bezahlt mit einer Kreditkarte||hePayCreditCard.jpg
+===
+Möchten Sie mit einem Scheck bezahlen?|Do you want to pay with a check?|
+Nein. Ich möchte in bar bezahlen||iWantPayCash.jpg
+Möchten Sie mit einer Kreditkarte bezahlen?||creditCardQuestionMark.jpg
+Nein. Ich möchte mit einem Scheck bezahlen.||iWantPayCheck.jpg
+Möchten Sie in bar bezahlen?|Do you want to pay with cash?
+Nein. Ich möchte mit einer KreditKarte bezahlen.||iWantPayCreditCard.jpg
+===
+Wie viel kostet der Holzstuhl?||howMuchWoodChair.jpg
+Der Holzstuhl kostet sechzig Pfund||woodChair60Pound.jpg
+Wie viel kostet der Plastikstuhl?||howMuchPlasticChair.jpg
+Der Plastikstuhl kostet vier Pfund||plasticChair4Pound.jpg
+===
+Der Plastikstuhl ist preiswert||plasticChair4Pound.jpg
+Die Papierschüssel ist preiswert||paperBowl01Pound.jpg
+Die Metallschüssel ist teuer||metalBowl150Pound.jpg
+Der Holzstuhl ist teuer||woodChair180Pound.jpg
+===
+Dieser Schmuck ist teuer||jewelryExpensive.jpg
+Dieser Schmuck ist preiswert||jewelryCheap.jpg
+Dieser Fotoapparat ist teuer||cameraExpensive.jpg
+Dieser Fotoapparat ist preiwert||cameraCheap.jpg
