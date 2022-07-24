@@ -1,7 +1,7 @@
 三明治^sān míng zhì | the sandwich | sandwich1.jpg
 三明治^sān míng zhì | the sandwich | sandwich2.jpg
-鸡蛋^jī dàn | the egg | egg1.jpg
-鸡蛋^jī dàn | the egg | egg2.jpg
+蛋^dàn | the egg | egg1.jpg
+蛋^dàn | the egg | egg2.jpg
 苹果^píng guǒ | the apple | apple1.jpg
 ===
 面包^miàn bāo | the bread | bread1.jpg
@@ -22,11 +22,11 @@
 那个女人在喝咖啡^nà gè nǚ rén zài hē kā fēi|| womanDrinkCoffee1.jpg
 那个男人和那个男孩在喝水^nà gè nán rén hé nà gè nán hái zài hē shuǐ || manBoyDrinkWater1.jpg
 那个女孩在吃面包^nà gè nán rén hé nà gè nán hái zài hē shuǐ || girlEatBread1.jpg
-那个男人在吃一个鸡蛋^nà gè nán rén zài chī yī gè jī dàns || manEatEgg1.jpg
+那个男人在吃一个蛋^nà gè nán rén zài chī yī gè dàn || manEatEgg1.jpg
 那个男人和那个女人在吃米^nà gè nán rén hé nà gè nǚ rén zài chī mǐ || womanManEatRice1.jpg
 ===
 她在吃一个苹果^tā zài chī yī gè píng guǒ || womanEatApple1.jpg
-他们在吃鸡蛋^tā mén zài chī jī dàn || childrenEatEgg1.jpg
+他们在吃蛋^tā mén zài chī dàn || childrenEatEgg1.jpg
 她们在吃三明治^tā mén zài chī sān míng zhì || womenEatSandwich1.jpg
 他在吃米^tā zài chī mǐ || manEatRice1.jpg
 ===
@@ -146,7 +146,7 @@
 那是一辆自行车^nà shì yī liàng zì xíng chē|| itIsBike1.jpg
 ===
 那是什么？^nà shì shén me? || whatIsItEgg1.jpg
-那是一个鸡蛋^nà shì yī gè jī dàn || itIsEgg1.jpg
+那是一个蛋^nà shì yī gè dàn || itIsEgg1.jpg
 那是什么？^nà shì shén me? || whatIsItPen1.jpg
 那是一支笔 ^nà shì yī zhī bǐ || itIsPen1.jpg
 那是什么？^nà shì shén me? || whatIsItFish1.jpg

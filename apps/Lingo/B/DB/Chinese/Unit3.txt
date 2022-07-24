@@ -1,118 +1,118 @@
-weiß || white1.jpg
-weiß | white |
-schwarz || black1.jpg
-rot || red1.jpg
+weiß 白色的|| white1.jpg
+weiß 白色的| white |
+schwarz 黑色的|| black1.jpg
+rot 红色的|| red1.jpg
 ===
-blau || blue1.jpg
-blau || blue2.jpg
-grün || green1.jpg
-grün || green2.jpg
-gelb || yellow1.jpg
+blau 蓝色的|| blue1.jpg
+blau 蓝色的|| blue2.jpg
+grün 绿色的|| green1.jpg
+grün 绿色的|| green2.jpg
+gelb 黄色的|| yellow1.jpg
 ===
-Der Reis ist weiß || whiteRice1.jpg
-Das Auto ist grün || greenCar1.jpg
-Das Fahrrad ist grün || greenBike1.jpg
-Der Apfel ist grün || greenApple1.jpg
-Die Milch ist weiß || whiteMilk1.jpg
-Das Auto ist weiß |The car is white|
+Der Reis ist weiß 那米是白色的|| whiteRice1.jpg
+Das Auto ist grün 那辆轿车是绿色的|| greenCar1.jpg
+Das Fahrrad ist grün 那辆自行车是绿色的|| greenBike1.jpg
+Der Apfel ist grün 那个苹果是绿色的|| greenApple1.jpg
+Die Milch ist weiß 那牛奶是白色的|| whiteMilk1.jpg
+Das Auto ist weiß 那辆轿车是白色的|The car is white|
 ===
-Die Autos sind weiß || whiteCars1.jpg
-Die Äpfel sind grün || greenApples1.jpg
-Die Eier sind rot || redEggs1.jpg
-Die Fahrräder sind rot | The bikes are red|
-Die Fahrräder sind weiß || whiteBikes1.jpg
-Die Stifte sind grün || greenPens1.jpg
+Die Autos sind weiß 那些轿车是白色的|| whiteCars1.jpg
+Die Äpfel sind grün 那些苹果是绿色的|| greenApples1.jpg
+Die Eier sind rot 那些鸡蛋是红色的|| redEggs1.jpg
+Die Fahrräder sind rot 那些自行车是红色的| The bikes are red|
+Die Fahrräder sind weiß 那些自行车是白色的|| whiteBikes1.jpg
+Die Stifte sind grün 那些笔是绿色的|| greenPens1.jpg
 ===
-Das Ei ist blau || blueEgg1.jpg
-Die Eier sind blau || blueEggs1.jpg
-Das Fahrrad ist gelb || yellowBike1.jpg
-Die Fahrräder sind gelb || yellowBikes1.jpg
-Das Auto ist schwarz || blackCar1.jpg
-Die Autos sind schwarz || blackCars1.jpg
+Das Ei ist blau 那个鸡蛋是蓝色的|| blueEgg1.jpg
+Die Eier sind blau 那些鸡蛋是蓝色的|| blueEggs1.jpg
+Das Fahrrad ist gelb 那辆自行车是黄色的|| yellowBike1.jpg
+Die Fahrräder sind gelb 那些自行车是黄色的|| yellowBikes1.jpg
+Das Auto ist schwarz 那辆轿车是黑色的|| blackCar1.jpg
+Die Autos sind schwarz 那些轿车是黑色的|| blackCars1.jpg
 ===
-Der Ball ist rot || redBall1.jpg
-Die Bälle sind rot | The balls are red|
-Die Katze ist schwarz || blackCat1.jpg
-Die Katzen sind schwarz || blackCats1.jpg
+Der Ball ist rot 那个球是红色的|| redBall1.jpg
+Die Bälle sind rot 那些球是红色的| The balls are red|
+Die Katze ist schwarz 那个猫是黑色的|| blackCat1.jpg
+Die Katzen sind schwarz 那些猫是黑色的|| blackCats1.jpg
 ===
-Der Fisch ist rot || redFish1.jpg
-Die Fische sind rot || redFishs1.jpg
-Das Fahrrad ist gelb || yellowBike1.jpg
-Die Fahrräder sind gelb || yellowBikes1.jpg
+Der Fisch ist rot 那条鱼是红色的|| redFish1.jpg
+Die Fische sind rot 那些鱼是红色的|| redFishs1.jpg
+Das Fahrrad ist gelb 那辆自行车是黄色的|| yellowBike1.jpg
+Die Fahrräder sind gelb 那些自行车是黄色的|| yellowBikes1.jpg
 ===
-Sie ist rot || redFlower1.jpg
-Sie ist weiß || whiteCat1.jpg
-Es ist schwarz || blackCar1.jpg
+Sie ist rot 它是红色的|| redFlower1.jpg
+Sie ist weiß 它是白色的|| whiteCat1.jpg
+Es ist schwarz 它是黑色的|| blackCar1.jpg
 ===
-Es ist rot || redEgg1.jpg
-Sie sind weiß || whiteBears1.jpg
-Er ist gelb || yellowBall1.jpg
-Sie sind grün || greenApples1.jpg
+Es ist rot 它是红色的|| redEgg1.jpg
+Sie sind weiß 它们是白色的|| whiteBears1.jpg
+Er ist gelb 它是黄色的|| yellowBall1.jpg
+Sie sind grün 它们是绿色的|| greenApples1.jpg
 ===
-Er ist blau und grün || globe1.jpg
-Er ist schwarz und weiß || panda1.jpg
-Sie sind blau || blueBalls1.jpg
-Sie sind weiß || whiteGoose1.jpg
+Er ist blau und grün 它是蓝色的和绿色的|| globe1.jpg
+Er ist schwarz und weiß 它是黑色的和白色的|| panda1.jpg
+Sie sind blau 它们是蓝色的|| blueBalls1.jpg
+Sie sind weiß 它们是白色的|| whiteGoose1.jpg
 ===
-Der Mond ist weiß || whiteMoon1.jpg
-Der Himmel ist blau || blueSky1.jpg
-Die Sonne ist gelb || yellowSun1.jpg
-Die Blume ist rot || redFlower1.jpg
-Das Gras ist grün || greenGrass1.jpg
+Der Mond ist weiß 月亮是白色的|| whiteMoon1.jpg
+Der Himmel ist blau 天空是蓝色的|| blueSky1.jpg
+Die Sonne ist gelb 太阳是黄色的|| yellowSun1.jpg
+Die Blume ist rot 那朵花是红色的|| redFlower1.jpg
+Das Gras ist grün 那草是绿色的|| greenGrass1.jpg
 ===
-Das Ei ist klein || smallEgg1.jpg
-Die Eier sind klein | The eggs are small |
-Die Blumen sind klein|| smallFlowers1.jpg
-Die Blume ist klein || smallFlower1.jpg
+Das Ei ist klein 那个蛋是小的|| smallEgg1.jpg
+Die Eier sind klein 那些蛋是小的| The eggs are small |
+Die Blumen sind klein 那些花是小的|| smallFlowers1.jpg
+Die Blume ist klein 那朵花是小的|| smallFlower1.jpg
 ===
-Die Blumen sind groß || bigFlowers1.jpg
-Die Bücher sind groß |The books are big|
-Der Fisch ist groß || bigFish1.jpg
-Das Ei ist groß || bigEgg1.jpg
+Die Blumen sind groß 那些花是大的|| bigFlowers1.jpg
+Die Bücher sind groß 那些书是大的|The books are big|
+Der Fisch ist groß 那条鱼是大的|| bigFish1.jpg
+Das Ei ist groß 那个蛋是大的|| bigEgg1.jpg
 ===
-Er ist Lehrer || manTeacher1.jpg
-Sie sind Polizisten || policemen1.jpg
-Sie ist Ärztin || womanDoctor1.jpg
+Er ist Lehrer 他是老师|| manTeacher1.jpg
+Sie sind Polizisten 他们是警察|| policemen1.jpg
+Sie ist Ärztin 她是医生|| womanDoctor1.jpg
 ===
-Sie ist eine Schülerin||girlStudent1.jpg
-Er ist ein Schüler|He is a student|
-Sie sind Schüler||students1.jpg
+Sie ist eine Schülerin 她是学生||girlStudent1.jpg
+Er ist ein Schüler 他是学生|He is a student|
+Sie sind Schüler 他们是学生||students1.jpg
 ===
-Er ist Polizist||policeman1.jpg
-Sie ist Lehrerin||womanTeacher1.jpg
-Er ist Arzt||manDoctor1.jpg
-Sie sind Schüler |They are students|
+Er ist Polizist 他是警察||policeman1.jpg
+Sie ist Lehrerin 她是老师||womanTeacher1.jpg
+Er ist Arzt 他是医生||manDoctor1.jpg
+Sie sind Schüler 他们是学生|They are students|
 ===
-Ich bin ein Junge||iAmBoy1.jpg
-Ich bin ein Mann|I am a man|
-Ich bin eine Frau||iAmWoman1.jpg
-Ich bin ein Mädchen||iAmGirl1.jpg
+Ich bin ein Junge 我是男孩||iAmBoy1.jpg
+Ich bin ein Mann 我是男人|I am a man|
+Ich bin eine Frau 我是女人||iAmWoman1.jpg
+Ich bin ein Mädchen 我是女孩||iAmGirl1.jpg
 ===
-Ich bin Lehrerin||iAmWomanTeacher1.jpg
-Ich bin kein Lehrer | I am not a teacher|
-Ich bin Arzt ||iAmManDoctor1.jpg
-Ich bin kein Arzt|I am not a doctor|
-Ich bin ein Schüler||iAmBoyStudent1.jpg
-Ich bin kein Schüler|I am not a student|
+Ich bin Lehrerin 我是老师||iAmWomanTeacher1.jpg
+Ich bin kein Lehrer 我不是老师| I am not a teacher|
+Ich bin Arzt 我是医生||iAmManDoctor1.jpg
+Ich bin kein Arzt 我不是医生|I am not a doctor|
+Ich bin ein Schüler 我是学生||iAmBoyStudent1.jpg
+Ich bin kein Schüler 我不是学生|I am not a student|
 ===
-der rote Apfel||redApple1.jpg
-Ich habe einen roten Apfel|I have a red apple|
-die weiße Milch|| whiteMilk1.jpg
-Ich habe weiße Milch|I have white milk|
-das gelbe Ei||yellowEgg2.jpg
-Ich habe ein gelbes Ei|I have a yellow egg|
+der rote Apfel 红色的苹果||redApple1.jpg
+Ich habe einen roten Apfel 我有一个红色的苹果|I have a red apple|
+die weiße Milch 白色的牛奶|| whiteMilk1.jpg
+Ich habe weiße Milch 我有白色的牛奶|I have white milk|
+das gelbe Ei 黄色的蛋||yellowEgg2.jpg
+Ich habe ein gelbes Ei 我有一个黄色的蛋|I have a yellow egg|
 ===
-Ich habe ein gelbes Buch || iHaveYellowBook1.jpg
-Ich habe ein grünes Buch |I have a green book|
-Ich habe ein rotes Buch || iHaveRedBook1.jpg
+Ich habe ein gelbes Buch 我有一本黄色的书|| iHaveYellowBook1.jpg
+Ich habe ein grünes Buch 我有一本绿色的书|I have a green book|
+Ich habe ein rotes Buch 我有一本红色的书|| iHaveRedBook1.jpg
 ===
-Sie haben ein rotes Buch || youHaveRedBook1.jpg
-Sie haben ein grünes Buch || youHaveGreenBook1.jpg
-Sie haben ein gelbes Buch |You have a yellow book|
+Sie haben ein rotes Buch 你有一本红色的书|| youHaveRedBook1.jpg
+Sie haben ein grünes Buch 你有一本绿色的书|| youHaveGreenBook1.jpg
+Sie haben ein gelbes Buch 你有一本黄色的书|You have a yellow book|
 ===
-Sind Sie Arzt?| Are you a doctor?|
-Ja. Ich bin Arzt||iAmManDoctor1.jpg
-Nein. Ich bin kein Arzt|No. I am not a doctor|
+Sind Sie Arzt? 你是医生吗？| Are you a doctor?|
+Ja. Ich bin Arzt 是的，我是医生||iAmManDoctor1.jpg
+Nein. Ich bin kein Arzt不，我不是医生|No. I am not a doctor|
 ===
 Was trinken Sie?|What are you drinking?|
 Ich trinke Wasser||iDrinkWater1.jpg
