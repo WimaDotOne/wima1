@@ -25,6 +25,7 @@ function ReplaceChar(text: string) {
   text = text.split("!").join("")
   text = text.split("?").join("")
   text = text.split("'").join("")
+  text = text.split("⋯").join("")
 
   text = text.split(" ").join("")
   

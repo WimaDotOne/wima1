@@ -14,7 +14,7 @@
 一个三明治和牛奶^yī gè sān míng zhì hé niú nǎi || sandwichMilk1.jpg
 一个男孩和一个男人^yī gè nán hái hé yī gè nán rén || manBoy1.jpg
 ===
-米饭和一个苹果^mǐ fàn hé yī gè píng guǒ || riceApple1.jpg
+米和一个苹果^mǐ hé yī gè píng guǒ || riceApple1.jpg
 一个女人和一个男人^yī gè nǚ rén hé yī gè nán rén || womanMan1.jpg
 面包和水^miàn bāo hé shuǐ || breadWater1.jpg
 ===
@@ -23,12 +23,12 @@
 那个男人和那个男孩在喝水^nà gè nán rén hé nà gè nán hái zài hē shuǐ || manBoyDrinkWater1.jpg
 那个女孩在吃面包^nà gè nán rén hé nà gè nán hái zài hē shuǐ || girlEatBread1.jpg
 那个男人在吃一个鸡蛋^nà gè nán rén zài chī yī gè jī dàns || manEatEgg1.jpg
-那个男人和那个女人在吃米饭^nà gè nán rén hé nà gè nǚ rén zài chī mǐ fàn || womanManEatRice1.jpg
+那个男人和那个女人在吃米^nà gè nán rén hé nà gè nǚ rén zài chī mǐ || womanManEatRice1.jpg
 ===
 她在吃一个苹果^tā zài chī yī gè píng guǒ || womanEatApple1.jpg
 他们在吃鸡蛋^tā mén zài chī jī dàn || childrenEatEgg1.jpg
 她们在吃三明治^tā mén zài chī sān míng zhì || womenEatSandwich1.jpg
-他在吃米饭^tā zài chī mǐ fàn || manEatRice1.jpg
+他在吃米^tā zài chī mǐ || manEatRice1.jpg
 ===
 狗^gǒu || dog1.jpg
 狗^gǒu || dog2.jpg
@@ -74,108 +74,108 @@
 一支笔^yī zhī bǐ || pen1.jpg
 一条鱼^yī tiáo yú || fish1.jpg
 ===
-他们在睡觉 | They are sleeping |
-他在睡觉 || boySleep1.jpg
-她在睡觉 || womanSleep1.jpg
+他们在睡觉^tā mén zài shuì jiào | They are sleeping |
+他在睡觉^tā zài shuì jiào || boySleep1.jpg
+她在睡觉^tā zài shuì jiào || womanSleep1.jpg
 ===
-那匹马在吃 ... || horseEat1.jpg
-那只狗在吃 ... | The dog is eating |
-那个男孩在吃 ...|| boyEat1.jpg
-那个女孩在吃 ...|| girlEat1.jpg
+那匹马在吃 ⋯ ^nà pǐ mǎ zài chī ⋯|| horseEat1.jpg
+那只狗在吃 ⋯ ^nà zhī gǒu zài chī ⋯| The dog is eating |
+那个男孩在吃 ⋯^nà gè nán hái zài chī ⋯|| boyEat1.jpg
+那个女孩在吃 ⋯^nà gè nǚ hái zài chī ⋯|| girlEat1.jpg
 ===
-那只狗在吃 ...|| dogEat1.jpg
-那条鱼在游泳| The fish is swimming|
-那匹马在跑|| horseRun1.jpg
-那只猫在睡觉|| catSleep1.jpg
+那只狗在吃 ⋯^nà zhī gǒu zài chī ⋯|| dogEat1.jpg
+那条鱼在游泳^nà tiáo yú zài yóu yǒng| The fish is swimming|
+那匹马在跑^nà pǐ mǎ zài pǎo|| horseRun1.jpg
+那只猫在睡觉^nà zhī māo zài shuì jiào|| catSleep1.jpg
 ===
-他们在走 || theyWalk1.jpg
-他们在读 ...|| theyRead1.jpg
-他们在游泳| They are swimming |
-他们在睡觉|| girlsSleep1.jpg
+他们在走 ^tā mén zài zǒu|| theyWalk1.jpg
+他们在读 ⋯^tā mén zài dú ⋯|| theyRead1.jpg
+他们在游泳^tā mén zài yóu yǒng| They are swimming |
+他们在睡觉^tā mén zài shuì jiào|| girlsSleep1.jpg
 ===
-大人们在吃 ...| The adults are eating|
-孩子们在喝 ...|| childrenDrink1.jpg
-孩子们在游泳|| childrenSwim1.jpg
-大人们在跑|| adultsRun1.jpg
+那些大人们在吃 ⋯^nà xiē dà rén mén zài chī ⋯| The adults are eating|
+那些孩子们在喝 ⋯^nà xiē hái zǐ mén zài hē ⋯|| childrenDrink1.jpg
+那些孩子们在游泳^nà xiē hái zǐ mén zài yóu yǒng|| childrenSwim1.jpg
+那些大人们在跑^nà xiē dà rén mén zài pǎo|| adultsRun1.jpg
 ===
-大人们在读 ...|| adultsRead1.jpg
-孩子们在跑|The children are running|
-大人们在读 ...|| adultRead1.jpg
-那个孩子在跑|| childRun1.jpg
+那些大人们在读 ⋯^nà xiē dà rén mén zài dú ⋯|| adultsRead1.jpg
+那些孩子们在跑^nà xiē hái zǐ mén zài pǎo|The children are running|
+那个大人在读 ⋯^nà gè dà rén zài dú ⋯|| adultRead1.jpg
+那个孩子在跑^nà gè hái zǐ zài pǎo|| childRun1.jpg
 ===
-那个女人在开车||womanDriveCar1.jpg
-那个男人在开车||manDriveCar2.jpg
-那个女孩不在开车| The girl is not driving|
-那个男孩不在开车|| boySitInCar1.jpg
+那个女人在开车^nà gè nǚ rén zài kāi chē||womanDriveCar1.jpg
+那个男人在开车^nà gè nán rén zài kāi chē||manDriveCar2.jpg
+那个女孩不在开车^nà gè nǚ hái bù zài kāi chē| The girl is not driving|
+那个男孩不在开车^nà gè nán hái bù zài kāi chē|| boySitInCar1.jpg
 ===
-那些大人们在做饭|| menCook1.jpg
-那些大人们不在做饭| The adults are not cooking|
-那些孩子在写 ...|| childrenWrite1.jpg
-那些孩子不在写 ...| The children are not writing|
-那个女人在开车|| womanDriveCar2.jpg
-那个女人不在开车|| womanSitInCar1.jpg
+那些大人们在做饭^nà xiē dà rén mén zài zuò fàn|| menCook1.jpg
+那些大人们不在做饭^nà xiē dà rén mén bù zài zuò fàn| The adults are not cooking|
+那些孩子在写 ⋯^nà xiē hái zǐ zài xiě ⋯|| childrenWrite1.jpg
+那些孩子不在写 ⋯^nà xiē hái zǐ bù zài xiě ⋯| The children are not writing|
+那个女人在开车^nà gè nǚ rén zài kāi chē|| womanDriveCar2.jpg
+那个女人不在开车^nà gè nǚ rén bù zài kāi chē|| womanSitInCar1.jpg
 ===
-他在走。他不在跑。|| manWalk1.jpg
-他们不在做饭。他们在吃 ...|| theyEat1.jpg
-他不在走。他在跑|| boyRun1.jpg
-他们在做饭。他们不在吃 ...|They are cooking. They are not eating.|
+他在走。他不在跑^tā zài zǒu. tā bù zài pǎo|| manWalk1.jpg
+他们不在做饭。他们在吃 ⋯^tā mén bù zài zuò fàn. tā mén zài chī ⋯|| theyEat1.jpg
+他不在走。他在跑^tā bù zài zǒu. tā zài pǎo|| boyRun1.jpg
+他们在做饭。他们不在吃 ⋯^tā mén zài zuò fàn. tā mén bù zài chī ⋯|They are cooking. They are not eating.|
 ===
-那个男孩有一只笔|| boyHasAPen1.jpg
-那些女人有米|| womenHaveRice1.jpg
-那些男人没有米 | The men do not have rice|
-那个女孩没有笔|| girlHasNoPen1.jpg
+那个男孩有一只笔^nà gè nán hái yǒu yī zhī bǐ|| boyHasAPen1.jpg
+那些女人有米^nà xiē nǚ rén yǒu mǐ|| womenHaveRice1.jpg
+那些男人没有米^nà xiē nán rén méi yǒu mǐ| The men do not have rice|
+那个女孩没有笔^nà gè nǚ hái méi yǒu bǐ|| girlHasNoPen1.jpg
 ===
-那个女孩有一辆自行车|| girlHasBike1.jpg
-Das Mädchen hat kein Fahrrad | The girl does not have a bike.|
-Der Junge hat Milch || boyHasMilk1.jpg
-Der Junge hat keine Milch |The boy has no milk.|
+那个女孩有一辆自行车^nà gè nǚ hái yǒu yī liàng zì xíng chē|| girlHasBike1.jpg
+那个女孩没有自行车^nà gè nǚ hái méi yǒu zì xíng chē | The girl does not have a bike.|
+那个男孩有牛奶^nà gè nán hái yǒu niú nǎi || boyHasMilk1.jpg
+那个男孩没有牛奶^nà gè nán hái méi yǒu niú nǎi |The boy has no milk.|
 ===
-Der Hund rennt || dogRun1.jpg
-Der Hund rennt nicht || dogNotRun1.jpg
-Die Jungen haben Wasser | The boys have water|
-Die Jungen haben kein Wasser || boysHaveNoWater1.jpg
+那只狗在跑^nà zhī gǒu zài pǎo || dogRun1.jpg
+那只狗不在跑^nà zhī gǒu bù zài pǎo || dogNotRun1.jpg
+那些男孩有水^nà xiē nán hái yǒu shuǐ| The boys have water|
+那些男孩没有水^nà xiē nán hái méi yǒu shuǐ|| boysHaveNoWater1.jpg
 ===
-Was ist das? | What is it?|
-Das ist ein Apfel | It is an apple|
-Was ist das? || questionMark1.jpg
-Das ist eine Zeitung || newspaper2.jpg
+那是什么？^nà shì shén me?| What is it?|
+那是一个苹果^nà shì yī gè píng guǒ| It is an apple|
+那是什么？^nà shì shén me?|| questionMark1.jpg
+那是一份报纸^nà shì yī fèn bào zhǐ|| newspaper2.jpg
 ===
-Was ist das? || whatIsItCat1.jpg
-Das ist eine Katze || itIsCat1.jpg
-Was ist das? || whatIsItBike1.jpg
-Das ist ein Fahrrad || itIsBike1.jpg
+那是什么？^nà shì shén me? || whatIsItCat1.jpg
+那是一只猫^nà shì yī zhī māo|| itIsCat1.jpg
+那是什么？^nà shì shén me? || whatIsItBike1.jpg
+那是一辆自行车^nà shì yī liàng zì xíng chē|| itIsBike1.jpg
 ===
-Was ist das? || whatIsItEgg1.jpg
-Das ist ein Ei || itIsEgg1.jpg
-Was ist das? || whatIsItPen1.jpg
-Das ist ein Stift || itIsPen1.jpg
-Was ist das? || whatIsItFish1.jpg
-Das ist ein Fisch || itIsFish1.jpg
-Was ist das? || whatIsItRice1.jpg
-Das ist Reis | It is rice|
+那是什么？^nà shì shén me? || whatIsItEgg1.jpg
+那是一个鸡蛋^nà shì yī gè jī dàn || itIsEgg1.jpg
+那是什么？^nà shì shén me? || whatIsItPen1.jpg
+那是一支笔 ^nà shì yī zhī bǐ || itIsPen1.jpg
+那是什么？^nà shì shén me? || whatIsItFish1.jpg
+那是一条鱼^nà shì yī tiáo yú || itIsFish1.jpg
+那是什么？^nà shì shén me? || whatIsItRice1.jpg
+那是米^nà shì mǐ | It is rice|
 ===
-Schläft er? | Is he sleeping?|
-Ja. Er schläft || boySleep1.jpg
-Schläft sie? | Is she sleeping?| 
-Nein. Sie schläft nicht | No. She is not sleeping|
+他在睡觉吗？ ^tā zài shuì jiào ma?| Is he sleeping?|
+是的，他在睡觉 ^shì de, tā zài shuì jiào|| boySleep1.jpg
+她在睡觉吗？^tā zài shuì jiào ma?| Is she sleeping?| 
+不，她不在睡觉 ^bù, tā bù zài shuì jiào| No. She is not sleeping|
 ===
-Schwimmt der Hund? || isDogSwim1.jpg
-Ja || yesDogSwim1.jpg
-Schwimmt das Pferd? | Is the horse swimming?|
-Nein | No |
+那只狗在游泳吗？^nà zhī gǒu zài yóu yǒng ma? || isDogSwim1.jpg
+是的^shì de|| yesDogSwim1.jpg
+那匹马在游泳吗？^nà pǐ mǎ zài yóu yǒng ma?| Is the horse swimming?|
+不^bù| No |
 ===
-Liest sie Zeitung?|| isSheReadNewspaper1.jpg
-Nein || noSheReadNewspaper1.jpg
-Liest sie ein Buch? || isSheReadBook1.jpg
-Ja || yesSheReadBook1.jpg
+她在读报纸吗？^tā zài dú bào zhǐ ma?|| isSheReadNewspaper1.jpg
+不^bù|| noSheReadNewspaper1.jpg
+她在读书吗？^tā zài dú shū ma?|| isSheReadBook1.jpg
+是的^shì de|| yesSheReadBook1.jpg
 ===
-Isst er einen Apfel? | Is he eating an apple?|
-Nein | No |
-Isst er einen Apfel? || isHeEatApple1.jpg
-Ja || yesHeEatApple1.jpg
+他在吃苹果吗？^tā zài chī píng guǒ ma?| Is he eating an apple?|
+不 ^bù| No |
+他在吃苹果吗？^tā zài chī píng guǒ ma?|| isHeEatApple1.jpg
+是的^shì de|| yesHeEatApple1.jpg
 ===
-Auf Wiedersehen || goodBye1.jpg
-Auf Wiedersehen || goodBye2.jpg
+再见^zài jiàn|| goodBye1.jpg
+再见^zài jiàn|| goodBye2.jpg
 
 
 
