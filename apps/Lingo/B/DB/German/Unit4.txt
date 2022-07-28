@@ -39,7 +39,7 @@ Hier sind zwei Handys||2Cellphones1.jpg
 ===
 Hier ist eine Tasse||cup1.jpg
 Hier sind vier Stühle||4Chairs1.jpg
-Hier sind wei Tische||2Tables1.jpg
+Hier sind zwei Tische||2Tables1.jpg
 Hier sind drei Telefone||3Phones1.jpg
 ===
 Hier ist ein Ball||ball1.jpg
@@ -80,7 +80,7 @@ Ein Ball ist rot ||1BallIsRed1.jpg
 Wie viele Schüsseln sind gelb||howManyYellowBowls1.jpg
 Zwei Schüsseln sind gelb||2BowlsAreYellow1.jpg
 Wie viele Telefone sind schwarz?||howMany2BlackPhones1.jpg
-Ein Telefon ist schwarz||2PhonesAreBlack1.jpg
+Ein Telefon ist schwarz||2PhonesRed1Black.jpg
 ===
 Schuhe||shoes1.jpg
 Schuhe||shoes2.jpg
@@ -179,7 +179,7 @@ Wir laufen||weWalk1.jpg
 Wer rennt?|Who is running?|
 Wir rennen||weRun1.jpg
 ===
-Wie viele Bäume sind here?||howMany3Trees1.jpg
+Wie viele Bäume sind hier?||howMany3Trees1.jpg
 Hier sind drei Bäume||hereAre3Trees1.jpg
 Wie viele Bäume sind hier?||howMany4Trees1.jpg
 Hier sind vier Bäume||hereAre4Trees1.jpg
@@ -194,7 +194,7 @@ Was ist das?||whatIsItPlate1.jpg
 Das ist ein Teller||itIsPlate1.jpg
 ===
 Was ist das?||whatIsItTree1.jpg
-Das ist ein Baum||isIsTree1.jpg
+Das ist ein Baum||itIsTree1.jpg
 Ist das Gras grün?||greenGrass1.jpg
 Ja. Das Gras ist grün|Yes. The grass is green.|
 ===
