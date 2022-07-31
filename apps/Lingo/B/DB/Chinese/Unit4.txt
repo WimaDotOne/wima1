@@ -1,222 +1,222 @@
-一辆轿车||car1.jpg
-两只狗||2Dogs1.jpg
-三只猫||3Cats1.jpg
-一个蛋||egg1.jpg
-两支笔||2Pens1.jpg
-三辆自行车||3Bikes1.jpg
+一辆轿车^yī liàng jiào chē||car1.jpg
+两只狗^liǎng zhī gǒu||2Dogs1.jpg
+三只猫^sān zhī māo||3Cats1.jpg
+一个蛋^yī gè dàn||egg1.jpg
+两支笔^liǎng zhī bǐ||2Pens1.jpg
+三辆自行车^sān liàng zì xíng chē||3Bikes1.jpg
 ===
-四个男人||4Men1.jpg
-五个女孩||5Girls1.jpg
-六份报纸||6Newspapers1.jpg
-四个男孩||4Boys1.jpg
-五本书||5Books1.jpg
-六个苹果||6Apples1.jpg
+四个男人^sì gè nán rén||4Men1.jpg
+五个女孩^wǔ gè nǚ hái||5Girls1.jpg
+六份报纸^liù fèn bào zhǐ||6Newspapers1.jpg
+四个男孩^sì gè nán hái||4Boys1.jpg
+五本书^wǔ běn shū||5Books1.jpg
+六个苹果^liù gè píng guǒ||6Apples1.jpg
 ===
-一| 1 |
-二| 2 |
-三| 3 |
-四| 4 |
-五 | 5 |
-六| 6 |
+一^yī| 1 |
+二^èr| 2 |
+三^sān| 3 |
+四^sì| 4 |
+五^wǔ| 5 |
+六^liù| 6 |
 ===
-这里有一条鱼||fish1.jpg
-这里有一个蛋||egg1.jpg
-这里有一个女人|Here's a woman|
-这里有一个孩子||boy1.jpg
-这里有一本书||book1.jpg
-这里有一个手机||cellphone1.jpg
+这里有一条鱼^zhè lǐ yǒu yī tiáo yú||fish1.jpg
+这里有一个蛋^zhè lǐ yǒu yī gè dàn||egg1.jpg
+这里有一个女人^zhè lǐ yǒu yī gè nǚ rén|Here's a woman|
+这里有一个孩子^zhè lǐ yǒu yī gè hái zǐ||boy1.jpg
+这里有一本书^zhè lǐ yǒu yī běn shū||book1.jpg
+这里有一个手机^zhè lǐ yǒu yī gè shǒu jī||cellphone1.jpg
 ===
-这里有三本书||3Books1.jpg
-这里有五条鱼||5Fishs1.jpg
-这里有两个孩子||boyGirl1.jpg
-这里有六个蛋||6Eggs1.jpg
-这里有四个女人||4Women1.jpg
+这里有三本书^zhè lǐ yǒu sān běn shū||3Books1.jpg
+这里有五条鱼^zhè lǐ yǒu wǔ tiáo yú||5Fishs1.jpg
+这里有两个孩子^zhè lǐ yǒu liǎng gè hái zǐ||boyGirl1.jpg
+这里有六个蛋^zhè lǐ yǒu liù gè dàn||6Eggs1.jpg
+这里有四个女人^zhè lǐ yǒu sì gè nǚ rén||4Women1.jpg
 ===
-这里有三个球||3Balls1.jpg
-这里有一张床|| bed1.jpg
-这里有四把钥匙||4Keys1.jpg
-这里有两个手机||2Cellphones1.jpg
+这里有三个球^zhè lǐ yǒu sān gè qiú||3Balls1.jpg
+这里有一张床^zhè lǐ yǒu yī zhāng chuáng|| bed1.jpg
+这里有四把钥匙^zhè lǐ yǒu sì bǎ yào shi||4Keys1.jpg
+这里有两个手机^zhè lǐ yǒu liǎng gè shǒu jī||2Cellphones1.jpg
 ===
-这里有一个杯子||cup1.jpg
-这里有四个椅子||4Chairs1.jpg
-这里有两张桌子||2Tables1.jpg
-这里有三个电话||3Phones1.jpg
+这里有一个杯子^zhè lǐ yǒu yī gè bēi zǐ||cup1.jpg
+这里有四个椅子^zhè lǐ yǒu sì gè yǐ zǐ||4Chairs1.jpg
+这里有两张桌子^zhè lǐ yǒu liǎng zhāng zhuō zǐ||2Tables1.jpg
+这里有三个电话^zhè lǐ yǒu sān gè diàn huà||3Phones1.jpg
 ===
-这里有一个球||ball1.jpg
-这里有三个椅子||3Chairs1.jpg
-这里有两张桌子||2Tables1.jpg
-这里有一张桌子||table1.jpg
+这里有一个球^zhè lǐ yǒu yī gè qiú||ball1.jpg
+这里有三个椅子^zhè lǐ yǒu sān gè yǐ zǐ||3Chairs1.jpg
+这里有两张桌子^zhè lǐ yǒu liǎng zhāng zhuō zǐ||2Tables1.jpg
+这里有一张桌子^zhè lǐ yǒu yī zhāng zhuō zǐ||table1.jpg
 ===
-这里有多少条鱼？||howMany3Fishs1.jpg
-这里有三条鱼||hereAre3Fishs1.jpg
-这里有多少把钥匙？||howMany4Keys1.jpg
-这里有四把钥匙||hereAre4Keys1.jpg
-这里有多少个警察？|How many policemen are here?|
-这里有两个警察||2Policemen1.jpg
-这里有多少个苹果？||howMany1Apple1.jpg
-这里有一个苹果||hereIs1Apple1.jpg
+这里有多少条鱼?^zhè lǐ yǒu duō shǎo tiáo yú?||howMany3Fishs1.jpg
+这里有三条鱼^zhè lǐ yǒu sān tiáo yú||hereAre3Fishs1.jpg
+这里有多少把钥匙?^zhè lǐ yǒu duō shǎo bǎ yào shi?||howMany4Keys1.jpg
+这里有四把钥匙^zhè lǐ yǒu sì bǎ yào shi||hereAre4Keys1.jpg
+这里有多少个警察?^zhè lǐ yǒu duō shǎo gè jǐng chá?|How many policemen are here?|
+这里有两个警察^zhè lǐ yǒu liǎng gè jǐng chá||2Policemen1.jpg
+这里有多少个苹果?^zhè lǐ yǒu duō shǎo gè píng guǒ?||howMany1Apple1.jpg
+这里有一个苹果^zhè lǐ yǒu yī gè píng guǒ||hereIs1Apple1.jpg
 ===
-这里有多少个椅子？||howMany6Chairs1.jpg
-这里有六个椅子||hereAre6Chairs1.jpg
-这里有多少个电话？||howMany5Phones1.jpg
-这里有五个电话||hereAre5Phones1.jpg
-这里有多少张床？||howMany2Beds1.jpg
-这里有两张床||hereAre2Beds1.jpg
+这里有多少个椅子?^zhè lǐ yǒu duō shǎo gè yǐ zi?||howMany6Chairs1.jpg
+这里有六个椅子^zhè lǐ yǒu liù gè yǐ zi||hereAre6Chairs1.jpg
+这里有多少个电话?^zhè lǐ yǒu duō shǎo gè diàn huà?||howMany5Phones1.jpg
+这里有五个电话^zhè lǐ yǒu wǔ gè diàn huà||hereAre5Phones1.jpg
+这里有多少张床?^zhè lǐ yǒu duō shǎo zhāng chuáng?||howMany2Beds1.jpg
+这里有两张床^zhè lǐ yǒu liǎng zhāng chuáng||hereAre2Beds1.jpg
 ===
-这里有六个杯子||6Cups1.jpg
-这里有四个杯子||4Cups1.jpg
-这里有五个蛋||5Eggs1.jpg
-这里有三个蛋||3Eggs1.jpg
+这里有六个杯子^zhè lǐ yǒu liù gè bēi zi||6Cups1.jpg
+这里有四个杯子^zhè lǐ yǒu sì gè bēi zi||4Cups1.jpg
+这里有五个蛋^zhè lǐ yǒu wǔ gè dàn||5Eggs1.jpg
+这里有三个蛋^zhè lǐ yǒu sān gè dàn||3Eggs1.jpg
 ===
-两个苹果是绿色的||2ApplesAreGreen1.jpg
-四个碗是绿色的||4BowlsAreBlue1.jpg
-一朵花是红色的||1FlowerIsRed1.jpg
-三个盘子是白色的||3PlatesAreWhite1.jpg
+两个苹果是绿色的^liǎng gè píng guǒ shì lǜ sè de||2ApplesAreGreen1.jpg
+四个碗是绿色的^sì gè wǎn shì lǜ sè de||4BowlsAreBlue1.jpg
+一朵花是红色的^yī duǒ huā shì hóng sè de||1FlowerIsRed1.jpg
+三个盘子是白色的^sān gè pán zǐ shì bái sè de||3PlatesAreWhite1.jpg
 ===
-多少张桌子是白色的？||howMany2WhiteTables1.jpg
-两张桌子是白色的||2TablesAreWhite1.jpg
-多少个球是红色的？||howMany1RedBall1.jpg
-一个球是红色的||1BallIsRed1.jpg
-多少个碗是黄色的？||howManyYellowBowls1.jpg
-两个碗是黄色的||2BowlsAreYellow1.jpg
-多少个电话是黑色的||howMany2BlackPhones1.jpg
-一个电话是黑色的||2PhonesRed1Black.jpg
+多少张桌子是白色的?^duō shǎo zhāng zhuō zǐ shì bái sè de?||howMany2WhiteTables1.jpg
+两张桌子是白色的^liǎng zhāng zhuō zǐ shì bái sè de||2TablesAreWhite1.jpg
+多少个球是红色的?^duō shǎo gè qiú shì hóng sè de?||howMany1RedBall1.jpg
+一个球是红色的^yī gè qiú shì hóng sè de||1BallIsRed1.jpg
+多少个碗是黄色的?^duō shǎo gè wǎn shì huáng sè de?||howManyYellowBowls1.jpg
+两个碗是黄色的^liǎng gè wǎn shì huáng sè de||2BowlsAreYellow1.jpg
+多少个电话是黑色的^duō shǎo gè diàn huà shì hēi sè de||howMany2BlackPhones1.jpg
+一个电话是黑色的^yī gè diàn huà shì hēi sè de||2PhonesRed1Black.jpg
 ===
-鞋子||shoes1.jpg
-鞋子||shoes2.jpg
-衬衫||shirt1.jpg
-衬衫||shirt2.jpg
-裤子||pants1.jpg
+鞋子^xié zi||shoes1.jpg
+鞋子^xié zi||shoes2.jpg
+衬衫^chèn shān||shirt1.jpg
+衬衫^chèn shān||shirt2.jpg
+裤子^kù zi||pants1.jpg
 ===
-大衣||coat1.jpg
-大衣||coat2.jpg
-连衣裙||dress1.jpg
-连衣裙||dress2.jpg
-裙子||skirt1.jpg
+大衣^dà yī||coat1.jpg
+大衣^dà yī||coat2.jpg
+连衣裙^lián yī qún||dress1.jpg
+连衣裙^lián yī qún||dress2.jpg
+裙子^qún zi||skirt1.jpg
 ===
-鞋子||shoes3.jpg
-一件衬衫||shirt3.jpg
-eine Hose 一条裤子||pants2.jpg
-ein Mantel 一件大衣||coat3.jpg
-ein Kleid 一件连衣裙||dress3.jpg
-ein Rock 一条裙子||skirt2.jpg
+鞋子^xié zi||shoes3.jpg
+一件衬衫^yī jiàn chèn shān||shirt3.jpg
+一条裤子^yī tiáo kù zi||pants2.jpg
+一件大衣^yī jiàn dà yī||coat3.jpg
+一件连衣裙^yī jiàn lián yī qún||dress3.jpg
+一条裙子^yī tiáo qún zi||skirt2.jpg
 ===
-eine rote Bluse 一件红色的衬衫||redBlouse1.jpg
-ein blaues Hemd 一件蓝色的衬衫||blueShirt1.jpg
-ein gelbes T-Shirt 一件黄色的T恤衫||yellowTShirt1.jpg
-ein grünes T-Shirt 一件绿色的T恤衫||greenTShirt1.jpg
+一件红色的衬衫^yī jiàn hóng sè de chèn shān||redBlouse1.jpg
+一件蓝色的衬衫^yī jiàn lán sè de chèn shān||blueShirt1.jpg
+一件黄色的T恤衫^yī jiàn huáng sè de T xù shān||yellowTShirt1.jpg
+一件绿色的T恤衫^yī jiàn lǜ sè de T xù shān||greenTShirt1.jpg
 ===
-Wie viele Tassen haben Sie? 你们有多少个杯子？|How many cups do you have?|
-Wir haben zwei Tassen 我们有两个杯子||weHave2Cups1.jpg
-Wie viele belegte Brote haben Sie? 你们有多少个三明治？|How many sandwiches do you have?|
-Wir haben vier belegte Brote 我们有四个三明治||weHave4Sandwiches1.jpg
+你们有多少个杯子?^nǐ mén yǒu duō shǎo gè bēi zi|How many cups do you have?|
+我们有两个杯子^wǒ mén yǒu liǎng gè bēi zi||weHave2Cups1.jpg
+你们有多少个三明治?^nǐ mén yǒu duō shǎo gè sān míng zhì|How many sandwiches do you have?|
+我们有四个三明治^wǒ mén yǒu sì gè sān míng zhì||weHave4Sandwiches1.jpg
 ===
-Wie viele Schüsseln haben Sie? 你有多少个碗？|How many bowls do you have?|
-Ich habe drei Schüsseln 我有三个碗||iHave3Bowls1.jpg
-Wie viele Teller haben Sie? 你有多少个盘子？|How many plates do you have?|
-Ich habe zwei Teller 我有两个盘子||iHave2Plates1.jpg
+你有多少个碗?^nǐ yǒu duō shǎo gè wǎn|How many bowls do you have?|
+我有三个碗^wǒ yǒu sān gè wǎn||iHave3Bowls1.jpg
+你有多少个盘子?^nǐ yǒu duō shǎo gè pán zi?|How many plates do you have?|
+我有两个盘子^wǒ yǒu liǎng gè pán zi||iHave2Plates1.jpg
 ===
-Ich habe gelbe Blumen 我有黄色的花||iHaveYellowFlowers1.jpg
-Sie haben rote Blumen 你有红色的花||youHaveRedFlowers1.jpg
-Wir haben weiße Blumen 我们有白色的花||weHaveWhiteFlowers1.jpg
-Sie haben blaue Blumen 你有蓝色的花||youHaveBlueFlowers1.jpg
+我有黄色的花^wǒ yǒu huáng sè de huā||iHaveYellowFlowers1.jpg
+你有红色的花^nǐ yǒu hóng sè de huā||youHaveRedFlowers1.jpg
+我们有白色的花^wǒ mén yǒu bái sè de huā||weHaveWhiteFlowers1.jpg
+你有蓝色的花^nǐ yǒu lán sè de huā||youHaveBlueFlowers1.jpg
 ===
-Das Mädchen trägt ein T-Shirt 那个女孩穿着一件T恤衫||girlWearTShirt1.jpg
-Die Frau trägt Schuhe 那个女人穿着鞋子||womanWearShoes1.jpg
-Der Junge trägt kein T-Shirt 那个男孩没有穿着T恤衫|The boy is not wearing T-shirt|
-Der Mann trägt keine Schuhe 那个男人没有穿着鞋子||manNotWearShoes1.jpg
+那个女孩穿着一件T恤衫^nà gè nǚ hái chuān zhe yī jiàn T xù shān||girlWearTShirt1.jpg
+那个女人穿着鞋子^nà gè nǚ rén chuān zhe xié zi||womanWearShoes1.jpg
+那个男孩没有穿着T恤衫^nà gè nán hái méi yǒu chuān zhe T xù shān|The boy is not wearing T-shirt|
+那个男人没有穿着鞋子^nà gè nán rén méi yǒu chuān zhe xié zi||manNotWearShoes1.jpg
 ===
-Drei Frauen tragen Hosen. Eine Frau trägt ein Kleid 三个女人穿着裤子。一个女人穿着连衣裙||3WomenWearPants1WearDress1.jpg
-Der Junge trägt eine Hose 那个男孩穿着裤子|The boy wears pants|
-Der Männer tragen Hüte 那些男人戴着帽子||menWearHats1.jpg
-Das Mädchen trägt keine Hose. Sie trägt einen Rock. 那个女孩没有穿着裤子。她穿着一条裙子||girlWearSkirt1.jpg
+三个女人穿着裤子。一个女人穿着连衣裙^sān gè nǚ rén chuān zhe kù zi. yī gè nǚ rén chuān zhe lián yī qún||3WomenWearPants1WearDress1.jpg
+那个男孩穿着裤子^nà gè nán hái chuān zhe kù zi|The boy wears pants|
+那些男人戴着帽子^nà xiē nán rén dài zhe mào zi||menWearHats1.jpg
+那个女孩没有穿着裤子。她穿着一条裙子^nà gè nǚ hái méi yǒu chuān zhe kù zi. tā chuān zhe yī tiáo qún zi||girlWearSkirt1.jpg
 ===
-Die Frau trägt eine Hose 那个女人穿着一条裤子||womanWearPants1.jpg
-Die Frau trägt einen Hut 那个女人戴着一个帽子||womanWearHat1.jpg
-Die Frau trägt ein Kleid 那个女人穿着一件连衣裙||womanWearDress1.jpg
-Die Frau trägt einen Rock 那个女人穿着一条裙子||womanWearSkirt1.jpg
+那个女人穿着一条裤子^nà gè nǚ rén chuān zhe yī tiáo kù zi||womanWearPants1.jpg
+那个女人戴着一个帽子^nà gè nǚ rén dài zhe yī gè mào zi||womanWearHat1.jpg
+那个女人穿着一件连衣裙^nà gè nǚ rén chuān zhe yī jiàn lián yī qún||womanWearDress1.jpg
+那个女人穿着一条裙子^nà gè nǚ rén chuān zhe yī tiáo qún zi||womanWearSkirt1.jpg
 ===
-Er kauft drei T-Shirts 他在买三件T恤衫||manBuy3TShirts1.jpg
-Er kauft einen Hut 他在买一个帽子||manBuy1Hat1.jpg
-Sie kauft vier T-Shirts 她在买四件T恤衫||womanBuy4TShirts1.jpg
-Sie kauft zwei Hüte 她在买两个帽子||womanBuy2Hats1.jpg
+他在买三件T恤衫^tā zài mǎi sān jiàn T xù shān||manBuy3TShirts1.jpg
+他在买一个帽子^tā zài mǎi yī gè mào zi||manBuy1Hat1.jpg
+她在买四件T恤衫^tā zài mǎi sì jiàn T xù shān||womanBuy4TShirts1.jpg
+她在买两个帽子^tā zài mǎi liǎng gè mào zi||womanBuy2Hats1.jpg
 ===
-Der Mann trägt einen Mantel 那个男人穿着一件大衣||manWearCoat1.jpg
-Der Mann kauft einen Mantel 那个男人在买一件大衣||manBuy1Coat1.jpg
-Der Mann kauft einen Hut 那个男人在买一个帽子||manBuy1Hat1.jpg
-Der Mann trägt einen Hut 那个男人戴着一个帽子||manWearHat1.jpg
+那个男人穿着一件大衣^nà gè nán rén chuān zhe yī jiàn dà yī||manWearCoat1.jpg
+那个男人在买一件大衣^nà gè nán rén zài mǎi yī jiàn dà yī||manBuy1Coat1.jpg
+那个男人在买一个帽子^nà gè nán rén zài mǎi yī gè mào zi||manBuy1Hat1.jpg
+那个男人戴着一个帽子^nà gè nán rén dài zhe yī gè mào zi||manWearHat1.jpg
 ===
-Ich kaufe einen Rock 我在买一条裙子|I am buying a skirt|
-Ich trage einen Rock 我穿着一条裙子|I am wearing a skirt|
-Ich kaufe eine Hose 我在买一条裤子|I am buying a pair of pants|
-Ich trage eine Hose 我穿着一条裤子|I am wearing a pair of pants|
+我在买一条裙子^wǒ zài mǎi yī tiáo qún zi|I am buying a skirt|
+我穿着一条裙子^wǒ chuān zhe yī tiáo qún zi|I am wearing a skirt|
+我在买一条裤子^wǒ zài mǎi yī tiáo kù zi|I am buying a pair of pants|
+我穿着一条裤子^wǒ chuān zhe yī tiáo kù zi|I am wearing a pair of pants|
 ===
-Wer isst? 谁在吃⋯？|Who is eating?|
-Der Polizist isst 那个警察在吃⋯||policemanEat1.jpg
-Wer liest? 谁在读⋯？|Who is reading?|
-Die Schüler lesen 那些学生在读⋯？||studentsRead1.jpg
-Wer trinkt? 谁在喝⋯？|Who is drinking?|
-Die Frauen trinken 那些女人在喝⋯||womenDrink1.jpg
-Wer schreibt? 谁在写⋯？|Who is writing|
-Das Mädchen schreibt 那个女孩在写⋯||girlWrite1.jpg
+谁在吃⋯?^shuí zài chī ⋯?|Who is eating?|
+那个警察在吃⋯^nà gè jǐng chá zài chī ⋯||policemanEat1.jpg
+谁在读⋯?^shuí zài dú ⋯?|Who is reading?|
+那些学生在读⋯?^nà xiē xué shēng zài dú ⋯?||studentsRead1.jpg
+谁在喝⋯?^shuí zài hē ⋯?|Who is drinking?|
+那些女人在喝⋯^nà xiē nǚ rén zài hē ⋯||womenDrink1.jpg
+谁在写⋯?^shuí zài xiě ⋯?|Who is writing|
+那个女孩在写⋯^nà gè nǚ hái zài xiě ⋯||girlWrite1.jpg
 ===
-Wer hat den Hut? 谁有那个帽子？|Who has the hat?|
-Die Frau hat den Hut 那个女人有那个帽子||womahHasHat1.jpg
-Wer hat den Ball 谁有那个球？|Who has the ball?|
-Der Junge hat den Ball 那个男孩有那个球||boyHasBall1.jpg
-Wer hat die Bücher 谁有那些书？|Who has the books?|
-Die Mädchen haben die Bücher 那个女孩有那些书||girlsHaveBooks1.jpg
-Wer hat die Zeitung 谁有那份报纸？|Who has the newspaper?|
-Der Arzt hat die Zeitung 那个医生有那份报纸||manDoctorHasNewspaper1.jpg
+谁有那个帽子?^shuí yǒu nà gè mào zi?|Who has the hat?|
+那个女人有那个帽子^nà gè nǚ rén yǒu nà gè mào zi||womahHasHat1.jpg
+谁有那个球?^shuí yǒu nà gè qiú?|Who has the ball?|
+那个男孩有那个球^nà gè nán hái yǒu nà gè qiú||boyHasBall1.jpg
+谁有那些书?^shuí yǒu nà xiē shū?|Who has the books?|
+那个女孩有那些书^nà gè nǚ hái yǒu nà xiē shū||girlsHaveBooks1.jpg
+谁有那份报纸?^shuí yǒu nà fèn bào zhǐ?|Who has the newspaper?|
+那个医生有那份报纸^nà gè yī shēng yǒu nà fèn bào zhǐ||manDoctorHasNewspaper1.jpg
 ===
-Wer trägt Schuhe? 谁穿着鞋子？|Who wears shoes?|
-Ich trage Schuhe 我穿着鞋子||iWearShoes1.jpg
-Wer trägt Hüte 谁戴着帽子？|Who wears hats?|
-Wir tragen Hüte 我们戴着帽子||weWearHats1.jpg
+谁穿着鞋子?^shuí chuān zhe xié zi?|Who wears shoes?|
+我穿着鞋子^wǒ chuān zhe xié zi||iWearShoes1.jpg
+谁戴着帽子?^shuí dài zhe mào zi?|Who wears hats?|
+我们戴着帽子^wǒ mén dài zhe mào zi||weWearHats1.jpg
 ===
-Wer läuft? 谁在走？|Who is walking?|
-Wir laufen 我们在走||weWalk1.jpg
-Wer rennt? 谁在跑？|Who is running?|
-Wir rennen 我们在跑||weRun1.jpg
+谁在走?^shuí zài zǒu?|Who is walking?|
+我们在走^wǒ mén zài zǒu||weWalk1.jpg
+谁在跑?^shuí zài pǎo?|Who is running?|
+我们在跑^wǒ mén zài pǎo ||weRun1.jpg
 ===
-Wie viele Bäume sind here? 这里有多少棵树？||howMany3Trees1.jpg
-Hier sind drei Bäume 这里有三棵树||hereAre3Trees1.jpg
-Wie viele Bäume sind hier? 这里有多少棵树？||howMany4Trees1.jpg
-Hier sind vier Bäume 这里有三棵树||hereAre4Trees1.jpg
-Wie viele Schüsseln sind hier? 这里有多少个碗？||howManyBowls1.jpg
-Hier ist eine Schüssel 这里有一个碗||hereIs1Bowl1.jpg
-Wie viele Kinder sind hier? 这里有多少个孩子？||howMany6Kids1.jpg
-Hier sind sechs Kinder 这里有六个孩子||hereAre6Kids1.jpg
+这里有多少棵树?^zhè lǐ yǒu duō shǎo kē shù?||howMany3Trees1.jpg
+这里有三棵树^zhè lǐ yǒu sān kē shù||hereAre3Trees1.jpg
+这里有多少棵树?^zhè lǐ yǒu duō shǎo kē shù?||howMany4Trees1.jpg
+这里有四棵树^zhè lǐ yǒu sì kē shù||hereAre4Trees1.jpg
+这里有多少个碗?^zhè lǐ yǒu duō shǎo gè wǎn?||howManyBowls1.jpg
+这里有一个碗^zhè lǐ yǒu yī gè wǎn||hereIs1Bowl1.jpg
+这里有多少个孩子?^zhè lǐ yǒu duō shǎo gè hái zi?||howMany6Kids1.jpg
+这里有六个孩子^zhè lǐ yǒu liù gè hái zi||hereAre6Kids1.jpg
 ======
-Was ist das? 那是什么？||whatIsItWater1.jpg
-Das ist Wasser 那是水||itIsWater1.jpg
-Was ist das? 那是什么？||whatIsItPlate1.jpg
-Das ist ein Teller 那是一个盘子||itIsPlate1.jpg
+那是什么?^nà shì shén me?||whatIsItWater1.jpg
+那是水^nà shì shuǐ||itIsWater1.jpg
+那是什么?^nà shì shén me?||whatIsItPlate1.jpg
+那是一个盘子^nà shì yī gè pán zi||itIsPlate1.jpg
 ===
-Was ist das? 那是什么？||whatIsItTree1.jpg
-Das ist ein Baum 那是一棵树||itIsTree1.jpg
-Ist das Gras grün? 那草是绿色的吗？||greenGrass1.jpg
-Ja. Das Gras ist grün 是的。那草是绿色的|Yes. The grass is green.|
+那是什么?^nà shì shén me?||whatIsItTree1.jpg
+那是一棵树^nà shì yī kē shù||itIsTree1.jpg
+那草是绿色的吗?^nà cǎo shì lǜ sè de má?||greenGrass1.jpg
+是的。那草是绿色的^shì de. nà cǎo shì lǜ sè de|Yes. The grass is green.|
 ===
-Was ist das? 那是什么？||whatIsItBike1.jpg
-Das ist ein Fahrrad 那是一辆自行车||itIsBike1.jpg
-Wie viele Fahrräder sind hier? 这里有多少辆自行车？||howMany3Bikes1.jpg
-Hier sind drei Fahrräder 这里有三辆自行车||hereAre3Bikes1.jpg
-Wer hat ein Fahrrad? 谁有一辆自行车|Who has a bike?|
-Sie hat ein Fahrrad 她有一辆自行车|She has a bike|
-Hat sie ein Fahrrad? 她有一辆自行车吗？||hasSheBike1.jpg
-Ja 是的||yesSheHasBike1.jpg
+那是什么?^nà shì shén me?||whatIsItBike1.jpg
+那是一辆自行车^nà shì yī liàng zì xíng chē||itIsBike1.jpg
+这里有多少辆自行车?^zhè lǐ yǒu duō shǎo liàng zì xíng chē?||howMany3Bikes1.jpg
+这里有三辆自行车^zhè lǐ yǒu sān liàng zì xíng chē||hereAre3Bikes1.jpg
+谁有一辆自行车^shuí yǒu yī liàng zì xíng chē|Who has a bike?|
+她有一辆自行车^tā yǒu yī liàng zì xíng chē|She has a bike|
+她有一辆自行车吗?^tā yǒu yī liàng zì xíng chē má?||hasSheBike1.jpg
+是的^shì de||yesSheHasBike1.jpg
 ===
-Was ist das? 那是什么？||whatIsItSandwich1.jpg
-Das ist ein belegtes Brot 那是一个三明治||itIsSandwich1.jpg
-Wie viele belegte Brote sind hier? 这里有多少个三明治？||howMany2Sandwiches1.jpg
-Hier sind zwei belegte Brote 这里有两个三明治||hereAre2Sandwiches1.jpg
-Essen Sie belegte Brote? 你在吃三明治吗？|Are you eating sandwiches?|
-Ja 是的||weEatSandwiches1.jpg
+那是什么?^nà shì shén me?||whatIsItSandwich1.jpg
+那是一个三明治^nà shì yī gè sān míng zhì||itIsSandwich1.jpg
+这里有多少个三明治?^zhè lǐ yǒu duō shǎo gè sān míng zhì?||howMany2Sandwiches1.jpg
+这里有两个三明治^zhè lǐ yǒu liǎng gè sān míng zhì||hereAre2Sandwiches1.jpg
+你在吃三明治吗?^nǐ zài chī sān míng zhì má?|Are you eating sandwiches?|
+是的^shì de||weEatSandwiches1.jpg
 ===
-Lesen Sie? 你在读⋯？|Are you reading?|
-Nein.Wir schreiben 不，我在写⋯||weWrite1.jpg
-Haben Sie Fische? 你有鱼吗？|Do you have fish?|
-Ja 是的||weHaveFish1.jpg
-Ist das Pferd schwarz? 那匹马是黑色的吗？|Is the horse black?|
-Nein. Das Pferd ist nicht schwarz 不，那匹马不是黑色的||brownHorse1.jpg
+你在读⋯?^nǐ zài dú ⋯?|Are you reading?|
+不，我在写⋯^bù, wǒ zài xiě ⋯ ||weWrite1.jpg
+你有鱼吗?^nǐ yǒu yú má?|Do you have fish?|
+是的^shì de||weHaveFish1.jpg
+那匹马是黑色的吗?^nà pǐ mǎ shì hēi sè de má?|Is the horse black?|
+不，那匹马不是黑色的^bù, nà pǐ mǎ bù shì hēi sè de||brownHorse1.jpg
