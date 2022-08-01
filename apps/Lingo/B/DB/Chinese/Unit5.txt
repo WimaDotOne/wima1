@@ -1,175 +1,176 @@
-ein Mann und ein Hund||manDog1.jpg
-eine Frau und ihr Hund||womanDog1.jpg
-ein Mädchen und ein Pferd||girlHorse1.jpg
-ein Polizist und sein Pferd||policemanHorse1.jpg
+一个人和一条狗^yī gè rén hé yī tiáo gǒu||manDog1.jpg
+一个女人和她的狗^yī gè nǚ rén hé tā de gǒu||womanDog1.jpg
+一个女孩和一匹马^yī gè nǚ hái hé yī pǐ mǎ||girlHorse1.jpg
+一个警察和他的马^yī gè jǐng chá hé tā de mǎ||policemanHorse1.jpg
 ===
-eine Frau und ihr Auto||womanCar1.jpg
-eine Frau und ihre Katze||womanCat1.jpg
-ein Mann und sein Auto||manCar1.jpg
-ein Mann und seine Katze||manCat1.jpg
+一个女人和她的车^yī gè nǚ rén hé tā de chē||womanCar1.jpg
+一个女人和她的猫^yī gè nǚ rén hé tā de māo||womanCat1.jpg
+一个男人和他的车^yī gè nán rén hé tā de chē||manCar1.jpg
+一个男人和他的猫^yī gè nán rén hé tā de māo||manCat1.jpg
 ===
-Sie essen ihr belegtes Brot||theyEat1Sandwich1.jpg
-Sie essen ihre belegten Brote||theyEatSandwiches1.jpg
-Sie lesen ihre Zeitung||theyRead1Newspaper1.jpg
-Sie lesen ihre Zeitungen||theyReadNewspapers1.jpg
-Sie essen ihre Äpfel||theyEatApples1.jpg
-Sie lesen ihr Buch||theyRead1Book1.jpg
+他们在吃三明治^tā men zài chī sān míng zhì||theyEat1Sandwich1.jpg
+他们在吃三明治^tā men zài chī sān míng zhì||theyEatSandwiches1.jpg
+他们在读报纸^tā men zài dú bào zhǐ||theyRead1Newspaper1.jpg
+他们在读报纸^tā men zài dú bào zhǐ||theyReadNewspapers1.jpg
+他们在吃苹果^tā men zài chī píng guǒ||theyEatApples1.jpg
+他们在读书^tā men zài dú shū||theyRead1Book1.jpg
 ===
-Sie lesen ihre Bücher||theyReadBooks1.jpg
-Sie liest ihr Buch||womanReadBook1.jpg
-Er liest sein Buch||manReadBook1.jpg
-Sie essen ihre Äpfel||theyEatApples1.jpg
-Sie isst ihren Apfel||womanEatApple1.jpg
-Er isst seinen Apfel||manEatApple1.jpg
+他们在读书^tā men zài dú shū||theyReadBooks1.jpg
+她在读书^tā zài dú shū||womanReadBook1.jpg
+他在读书^tā zài dú shū||manReadBook1.jpg
+他们在吃苹果^tā men zài chī píng guǒ||theyEatApples1.jpg
+她在吃苹果^tā zài chī píng guǒ||womanEatApple1.jpg
+他在吃苹果^tā zài chī píng guǒ||manEatApple1.jpg
 ===
-eine Familie||family1.jpg
-eine Familie||family2.jpg
-eine Familie||family3.jpg
+一家人^yī jiā rén||family1.jpg
+一家人^yī jiā rén||family2.jpg
+一家人^yī jiā rén||family3.jpg
 ===
-ein Mann und sein Sohn||manSon1.jpg
-eine Frau und ihre Tochter||womanDaughter1.jpg
-ein Junge und sein Vater||manSon2.jpg
-ein Mädchen und ihre Mutter||womanDaughter2.jpg
+一个男人和他的儿子^yī gè nán rén hé tā de ér zi||manSon1.jpg
+一个女人和她的女儿^yī gè nǚ rén hé tā de nǚ ér||womanDaughter1.jpg
+一个男孩和他的父亲^yī gè nán hái hé tā de fù qīn||manSon2.jpg
+一个女孩和她母亲^yī gè nǚ hái hé tā mǔ qīn||womanDaughter2.jpg
 ===
-die Mutter|the mother|
-die Tochter|the daughter|
-der Vater|the father|
-der Sohn|the son|
+母亲^mǔ qīn|the mother|
+女儿^nǚ ér|the daughter|
+父亲^fù qīn|the father|
+儿子^ér zi|the son|
 ===
-zwei Mädchen und ihre Eltern||2GirlsParents1.jpg
-ein Mädchen und ihre Eltern||girlParents1.jpg
-eine Frau und ihr Mann|a woman and her husband|
-ein Baby||baby1.jpg
+两个女孩和她们的父母^liǎng gè nǚ hái hé tā men de fù mǔ||2GirlsParents1.jpg
+一个女孩和她的父母^yī gè nǚ hái hé tā de fù mǔ||girlParents1.jpg
+一个女人和她的丈夫^yī gè nǚ rén hé tā de zhàng fū|a woman and her husband|
+婴儿^yīng ér||baby1.jpg
 ===
-eine Frau und ihre Kinder||womanChildren1.jpg
-ein Mann und seine Frau|a man and his wife|
-ein Vater und seine Tochter||manDaughter1.jpg
-Eltern und ihre Söhne||2BoysParents1.jpg
+一个女人和她的孩子^yī gè nǚ rén hé tā de hái zi||womanChildren1.jpg
+一个男人和他的妻子^yī gè nán rén hé tā de qī zi|a man and his wife|
+一个父亲和他的女儿^yī gè fù qīn hé tā de nǚ ér||manDaughter1.jpg
+父母和他们的儿子们^fù mǔ hé tā men de ér zi||2BoysParents1.jpg
 ===
-eine Mutter und ihr Baby||womanBaby1.jpg
-ein Vater und seine Kinder||manChildren1.jpg
-ein Mann und seine Frau||manWife1.jpg
-Eltern und ihre Tochter||girlParents2.jpg
+一个母亲和她的婴儿^yī gè mǔ qīn hé tā de yīng ér||womanBaby1.jpg
+一个父亲和他的孩子们^yī gè fù qīn hé tā de hái zi men||manChildren1.jpg
+一个男人和他的妻子^yī gè nán rén hé tā de qī zi||manWife1.jpg
+父母和他们的女儿^fù mǔ hé tā men de nǚ ér||girlParents2.jpg
 ===
-Der Vater und seine Söhne spielen|The father and his sons are playing|
-Die Mutter und ihre Töchter spielen|The mother and her daughters are playing|
-Der Junge und sein Hund spielen||boyDogPlay1.jpg
-Die Fau und ihre Katze spielen||womanCatPlay1.jpg
+那个父亲和他的儿子们在玩^nà gè fù qīn hé tā de ér zi men zài wán|The father and his sons are playing|
+那个母亲和她的女儿们在玩^nà gè mǔ qīn hé tā de nǚ ér men zài wán|The mother and her daughters are playing|
+那个男孩和他的狗在玩^nà gè nán hái hé tā de gǒu zài wán||boyDogPlay1.jpg
+那个女人和她的猫在玩^nà gè nǚ rén hé tā de māo zài wán||womanCatPlay1.jpg
 ===
-Die Kinder kochen nicht. Ihr Vater kocht.||childrenNotFatherCook1.jpg
-Der Sohn spielt nicht. Sein Vater spielt.||boyNotFatherPlay1.jpg
-Der Vater liest nicht. Seine Tochter liest.||fatherNotDaughterRead1.jpg
+那些孩子们不在做饭。 他们的父亲在做饭^nà xiē hái zi men bù zài zuò fàn. tā men de fù qīn zài zuò fàn||childrenNotFatherCook1.jpg
+那个儿子不在玩。他的父亲在玩^nà gè er zi bù zài wán. tā de fù qīn zài wán||boyNotFatherPlay1.jpg
+那个父亲不在读⋯。他的女儿在读⋯^nà gè fù qīn bù zài dú⋯. tā de nǚ ér zài dú⋯||fatherNotDaughterRead1.jpg
 ===
-Wer spielt?|Who is playing?
-Wer isst?||whoEat1.jpg
-Wer schläft?||whoSleep1.jpg
-Wer trinkt?||whoDrink1.jpg
+谁在玩？^shuí zài wán|Who is playing?
+谁在吃?^shuí zài chī?||whoEat1.jpg
+谁在睡觉?^shuí zài shuìjiào||whoSleep1.jpg
+谁在喝酒?^shuí zài hējiǔ||whoDrink1.jpg
 ===
-Das ist meine Tochter||thisIsMyDaughter1.jpg
-Das ist meine Mutter||thisIsMyMother1.jpg
-Das ist mein Sohn||thisIsMySon1.jpg
-Das ist mein Fahrrad||myBike1.jpg
-Das ist mein Bett|This is my bed|
+这是我的女儿^zhè shì wǒ de nǚ ér||thisIsMyDaughter1.jpg
+这是我的母亲^zhè shì wǒ de mǔ qīn||thisIsMyMother1.jpg
+这是我的儿子^zhè shì wǒ de ér zi||thisIsMySon1.jpg
+这是我的自行车^zhè shì wǒ de zì xíng chē||myBike1.jpg
+这是我的床^zhè shì wǒ de chuáng|This is my bed|
 ===
-Das ist meine Familie|This is my family|
-Das ist mein Bruder||thisIsMyBrother1.jpg
-Das ist meine Mutter||thisIsMyMother2.jpg
-Das ist mein Vater||thisIsMyFather1.jpg
-Das ist meine Freundin||thisIsMyFriendGirl1.jpg
-Das ist mein Fruend||thisIsMyFriendBoy1.jpg
+这是我的家人^zhè shì wǒ de jiā rén|This is my family|
+这是我的哥哥^zhè shì wǒ de gē ge||thisIsMyBrother1.jpg
+这是我的哥哥^zhè shì wǒ de gē ge|This is my older brother
+这是我的母亲^zhè shì wǒ de mǔ qīn||thisIsMyMother2.jpg
+这是我的父亲^zhè shì wǒ de fù qīn||thisIsMyFather1.jpg
+这是我的朋友^zhè shì wǒ de péng yǒu||thisIsMyFriendGirl1.jpg
+这是我的朋友^zhè shì wǒ de péng yǒu||thisIsMyFriendBoy1.jpg
 ===
-Die Mädchen sind keine Schwestern. Sie sind Freundinnen.||girlsFriends1.jpg
-Die Jungen sind keine Brüder. Sie sind Freunde.||boysFriends1.jpg
-Die Jungen sind Brüder|The boys are brothers|
-Die Mädchen sind Schwestern||sisters1.jpg
+那些女孩们不是姐姐和妹妹。她们是朋友^nà xiē nǚ hái men bù shì jiě jie hé mèi mei. tā men shì péng yǒu||girlsFriends1.jpg
+那些男孩们不是哥哥和弟弟。他们是朋友^nà xiē nán hái men bù shì gē ge hé dì di. tā men shì péng yǒu||boysFriends1.jpg
+那些男孩们是哥哥和弟弟^nà xiē nán hái men shì gē ge hé dì di|The boys are brothers|
+那些女孩们是姐姐和妹妹^nà xiē nǚ hái men shì jiě jie hé mèi mei||sisters1.jpg
 ===
-Das sind meine Brüder|These are my brothers|
-Das ist mein Bruder|This is my brother|
-Das ist meine Freundin||thisIsMyFriendGirl2.jpg
-Das sind meine Freundinnen||theseAreMyFriendsGirls1.jpg
+这些是我的哥哥和弟弟^zhè shì wǒ de gē ge hé dì di|These are my brothers|
+这是我的弟弟^zhè shì wǒ de dì di|This is my younger brother|
+这是我的朋友^zhè shì wǒ de péng yǒu||thisIsMyFriendGirl2.jpg
+这些是我的朋友们^zhè shì wǒ de péng yǒu men||theseAreMyFriendsGirls1.jpg
 ===
-Das ist meine Schwester|This is my sister|
-Das sind meine Schwestern|These are my sisters|
-Das ist meine Mutter||thisIsMyMother1.jpg
-Das sind meine Eltern||theseAreMyParents1.jpg
+这是我妹妹^zhè shì wǒ mèi mei|This is my sister|
+这些是我的姐姐和妹妹^zhè xiē shì wǒ de jiě jiě hé mèi mei|These are my sisters|
+这是我的母亲^zhè shì wǒ de mǔ qīn||thisIsMyMother1.jpg
+这些是我的父母^zhè xiē shì wǒ de fù mǔ||theseAreMyParents1.jpg
 ===
-Das ist mein Baby||thisIsMyBaby1.jpg
-Das sind meine Kinder||theseAreMyChildren1.jpg
-Das sind meine Söhne||theseAreMySons1.jpg
+这是我的婴儿^zhè shì wǒ de yīng ér||thisIsMyBaby1.jpg
+这些是我的孩子们^zhè xiē shì wǒ de hái zi men||theseAreMyChildren1.jpg
+这些是我的儿子们^zhè xiē shì wǒ de ér zi men||theseAreMySons1.jpg
 ===
-Das ist unser Sohn||ourSon1.jpg
-Das ist mein Sohn||mySon1.jpg
-Das ist unsere Mutter|This is our mother|
-Das ist meine Mutter||thisIsMyMother2.jpg
-Das sind unsere Kinder||ourChildren1.jpg
-Das sind unsere Eltern||ourParents1.jpg
+这是我们的儿子^zhè shì wǒ men de ér zi||ourSon1.jpg
+这是我的儿子^zhè shì wǒ de ér zi||mySon1.jpg
+这是我们的母亲^zhè shì wǒ men de mǔ qīn|This is our mother|
+这是我的母亲^zhè shì wǒ de mǔ qīn||thisIsMyMother2.jpg
+这些是我们的孩子们^zhè xiē shì wǒ men de hái zi men||ourChildren1.jpg
+这些是我们的父母^zhè xiē shì wǒ men de fù mǔ||ourParents1.jpg
 ===
-Sein Fahrrad ist groß||boyBigBike1.jpg
-Ihr Fahrrad ist klein||girlSmallBike1.jpg
-Ihr Fahrrad ist grün||theirGreenBike1.jpg
-Mein Fahrrad ist blau|My bike is blue
-Unser Fahrrad ist schwarz|Our bike is black
+他的自行车是大的^tā de zì xíng chē shì dà de||boyBigBike1.jpg
+她的自行车是小的^tā de zì xíng chē shì xiǎo de||girlSmallBike1.jpg
+她们的自行车是绿色的^tā men de zì xíng chē shì lǜ sè de||theirGreenBike1.jpg
+我的自行车是蓝色的^wǒ de zì xíng chē shì lán sè de|My bike is blue
+我们的自行车是黑色的^wǒ men de zì xíng chē shì hēi sè de|Our bike is black
 ===
-Wie haben zwei Töchter||weHave2Daughters1.jpg
-Wie haben einen Sohn und drei Töchter|We have a son and three daughters|
-Wie haben zwei Söhne||weHave2Sons1.jpg
+我们有两个女儿^wǒ men yǒu liǎng gè nǚ ér||weHave2Daughters1.jpg
+我们有一个儿子和三个女儿^wǒ men yǒu yī gè er zi hé sān gè nǚ ér|We have a son and three daughters|
+我们有两个儿子^wǒ men yǒu liǎng gè er zi||weHave2Sons1.jpg
 ===
-sieben Stifte||7Pens1.jpg
-sieben Babys||7Babies1.jpg
-acht Eier||8Eggs1.jpg
-acht Stühle||8Chairs1.jpg
-neun Äpfel||9Apples1.jpg
-neun Hüte||9Hats1.jpg
+七支笔^qī zhī bǐ||7Pens1.jpg
+七个婴儿^qī gè yīng ér||7Babies1.jpg
+八个蛋^bā gè dàn||8Eggs1.jpg
+八个椅子^bā gè yǐ zi||8Chairs1.jpg
+九个苹果^jiǔ gè píng guǒ||9Apples1.jpg
+九个帽子^jiǔ gè mào zi||9Hats1.jpg
 ===
-zehn Teller||10Plates1.jpg
-zehn Tassen|10 cups|
-elf Schüsseln||11Bowls1.jpg
-elf Blumen||11Flowers1.jpg
-zwölf Schlüssel||12Keys1.jpg
-zwölf Bälle||12Balls1.jpg
+十个盘子^shí gè pán zi||10Plates1.jpg
+十个杯子^shí gè bēi zi|10 cups|
+十一个碗^shí yī gè wǎn||11Bowls1.jpg
+十一朵花^shí yī duǒ huā||11Flowers1.jpg
+十二把钥匙^shí èr bǎ yào shi||12Keys1.jpg
+十二个球^shí èr gè qiú||12Balls1.jpg
 ===
-sechs|6|
-sieben|7|
-acht|8|
-neun|9|
-zehn|10|
-elf|11|
-zwölf|12|
-null|0
+六^liù|6|
+七^qī|7|
+八^bā|8|
+九^jiǔ|9|
+十^shí|10|
+十一^shí yī|11|
+十二^shí èr|12|
+零^líng|0
 ===
-Sie ist ein Jahr alt||1YearGirl1.jpg
-Sie ist zwei Jahre alt||2YearGirl1.jpg
-Sie ist drei Jahre alt||3YearGirl1.jpg
-Sie ist vier Jahre alt|She is 4-year-old
-Sie ist fünf Jahre alt||5YearGirl1.jpg
+她一岁^tā yī suì||1YearGirl1.jpg
+她两岁^tā liǎng suì||2YearGirl1.jpg
+她三岁^tā sān suì||3YearGirl1.jpg
+她四岁^tā sì suì|She is 4-year-old
+她五岁^tā wǔ suì||5YearGirl1.jpg
 ===
-Er ist ein Jahr alt||1YearBoy1.jpg
-eins|1|
-Er ist zwei Jahre alt||2YearBoy1.jpg
-zwei|2|
-Er ist drei Jahre alt||3YearBoy1.jpg
-drei|3|
+他一岁^tā yī suì||1YearBoy1.jpg
+一^yī|1|
+他两岁^tā liǎng suì||2YearBoy1.jpg
+二^èr|2|
+他三岁^tā sān suì||3YearBoy1.jpg
+三^sān|3|
 ===
-Wie alt ist er?|How old is he?|
-Er ist sieben Jahre alt||7YearBoy1.jpg
-Wie alt ist sie?|How old is she?|
-Sie ist sechs Jahre alt||6YearGirl1.jpg
+他多大了?^tā duō dà le?|How old is he?|
+他七岁^tā qī suì||7YearBoy1.jpg
+她多大了?^tā duō dà le?|How old is she?|
+她六岁^tā liù suì||6YearGirl1.jpg
 ===
-Wie alt bist du?|How old are you?|
-Ich bin fünf Jahre alt||iAm5Year1.jpg
-Ich bin zehn Jahre alt||iAm10Year1.jpg
+你多大?^nǐ duō dà le?|How old are you?|
+我五岁^wǒ wǔ suì||iAm5Year1.jpg
+我十岁^wǒ shí suì||iAm10Year1.jpg
 ===
-Du bist meine Freundin|You are my friend|
-Du bist meine Frau|You are my wife
-Sie sind mein Arzt|You (formal) are my doctor
-Sie sind mein Lehrer|You (formal) are my teacher
+你是我的朋友^nǐ shì wǒ de péng yǒu|You are my friend|
+你是我的妻子^nǐ shì wǒ de qī zi|You are my wife
+你是我的医生^nǐ shì wǒ de yī shēng|You are my doctor
+你是我的老师^nǐ shì wǒ de lǎo shī|You are my teacher
 ===
-Schläfst du?|Are you sleeping?
-Nein||iRead1.jpg
-Was machst du?|What are you doing?
-Ich lese||iRead1.jpg
+你在睡觉吗?^nǐ zài shuì jiào ma?|Are you sleeping?
+不^bù||iRead1.jpg
+你在做什么?^nǐ zài zuò shén me?|What are you doing?
+我在读书^wǒ zài dú shū||iRead1.jpg
 ===
-Essen Sie?|Are you (formal) eating?|
-Nein||noEat1.jpg
-Was machen Sie?|What are you doing?|
-Ich schreibe||iWrite1.jpg
+你在吃⋯吗?^nǐ zài chī ⋯ ma?|Are you (formal) eating?|
+不^bù||noEat1.jpg
+你在做什么?^nǐ zài zuò shén me?|What are you doing?|
+我在写⋯^wǒ zài xiě ⋯||iWrite1.jpg
