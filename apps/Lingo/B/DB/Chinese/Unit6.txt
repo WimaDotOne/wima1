@@ -1,176 +1,176 @@
-die Wohnung||apartment1.jpg
-die Wohnung||apartment2.jpg
-das Haus||house1.jpg
-das Haus||house2.jpg
-die Tür |the door
+公寓^gōng yù||apartment1.jpg
+公寓^gōng yù||apartment2.jpg
+房子^fáng zi||house1.jpg
+房子^fáng zi||house2.jpg
+门^mén|the door
 ===
-der Computer||computer1.jpg
-der Laptop||labtop1.jpg
-die Computer||computers1.jpg
+电脑^diàn nǎo||computer1.jpg
+笔记本电脑^bǐ jì běn diàn nǎo||labtop1.jpg
+电脑^diàn nǎo||computers1.jpg
 ===
-der Fernseher||tv1.jpg
-der Fernseher||tv2.jpg
-das Radio||radio1.jpg
-das Radio||radio2.jpg
+电视^diàn shì||tv1.jpg
+电视^diàn shì||tv2.jpg
+收音机^shōu yīn jī||radio1.jpg
+收音机^shōu yīn jī||radio2.jpg
 ===
-eine Wohnung||apartment3.jpg
-eine Tür||door1.jpg
-ein Haus||house3.jpg
-ein Computer||computer2.jpg
-ein Fernseher||tv3.jpg
-ein Radio||radio3.jpg
+一个公寓^yī gè gōng yù||apartment3.jpg
+一扇门^yī shàn mén||door1.jpg
+一个房子^yī gè fáng zi||house3.jpg
+一个电脑^yī gè diàn nǎo||computer2.jpg
+一个电视^yī gè diàn shì||tv3.jpg
+一个收音机^yī gè shōu yīn jī||radio3.jpg
 ===
-Das Radio ist auf dem Stuhl||radioOnChair1.jpg
-Der Apfel ist auf dem Laptop||appleOnLaptop1.jpg
-Der Computer ist auf dem Tisch||computerOnTable1.jpg
-Die Katze ist auf dem Fernseher||catOnTv1.jpg
+那个收音机在椅子上面^nà gè shōu yīn jī zài yǐ zi shàng miàn||radioOnChair1.jpg
+那个苹果在笔记本电脑上面^nà gè píng guǒ zài bǐ jì běn diàn nǎo shàng miàn||appleOnLaptop1.jpg
+那个电脑在桌子上面^nà gè diàn nǎo zài zhuō zi shàng miàn||computerOnTable1.jpg
+那只猫在电视上面^nà zhī māo zài diàn shì shàng miàn||catOnTv1.jpg
 ===
-Die Schlüssel sind im Schuh||keysInShoe1.jpg
-Die Katze ist im Hut||catInHat1.jpg
-Der Computer ist im Auto||computerInCar1.jpg
+那把钥匙在鞋子里面^nà bǎ yào shi zài xié zi lǐ miàn||keysInShoe1.jpg
+那只猫在帽子里面^nà zhī māo zài mào zi lǐ miàn||catInHat1.jpg
+那个电脑在小轿车里面^nà gè diàn nǎo zài xiǎo jiào chē lǐ miàn||computerInCar1.jpg
 ===
-Der Mann ist im Auto|The man in the car|
-Der Mann ist auf dem Auto||manOnCar1.jpg
-Die Katze ist im Haus|The cat is in the house|
-Die Katze ist auf dem Haus||catOnHouse1.jpg
+那个男人在小轿车里面^nà gè nán rén zài xiǎo jiào chē lǐ miàn|The man in the car|
+那个男人在小轿车上面^nà gè nán rén zài xiǎo jiào chē shàng miàn||manOnCar1.jpg
+那只猫在房子里面^nà zhī māo zài fáng zi lǐ miàn|The cat is in the house|
+那只猫在房子上面^nà zhī māo zài fáng zi shàng miàn||catOnHouse1.jpg
 ===
-das Fenster||window1.jpg
-das Fenster||window2.jpg
-die Toilette||toilet1.jpg
-die Toilette||toilet2.jpg
-das Spülbecken||sink1.jpg
+窗户^chuāng hu||window1.jpg
+窗户^chuāng hu||window2.jpg
+马桶^mǎ tǒng||toilet1.jpg
+马桶^mǎ tǒng||toilet2.jpg
+水池^shuǐ chí||sink1.jpg
 ===
-das Wohnzimmer||livingRoom1.jpg
-das Wohnzimmer||livingRoom2.jpg
-die Küche||kitchen1.jpg
-die Küche||kitchen2.jpg
-das Badezimmer||bathroom1.jpg
+客厅^kè tīng||livingRoom1.jpg
+客厅^kè tīng||livingRoom2.jpg
+厨房^chú fáng||kitchen1.jpg
+厨房^chú fáng||kitchen2.jpg
+洗手间^xǐ shǒu jiān||bathroom1.jpg
 ===
-ein Wohnzimmer||livingRoom2.jpg
-ein Badezimmer||bathroom2.jpg
-eine Küche||kitchen3.jpg
-ein Fenster||window3.jpg
-eine Toilette||toilet3.jpg
-ein Spülbecken||sink2.jpg
+一个客厅^yī gè kè tīng||livingRoom2.jpg
+一个洗手间^yī gè xǐ shǒu jiān||bathroom2.jpg
+一个厨房^yī gè chú fáng||kitchen3.jpg
+一扇窗户^yī shàn chuāng hu||window3.jpg
+一个马桶^yī gè mǎ tǒng||toilet3.jpg
+一个水池^yī gè shuǐ chí||sink2.jpg
 ===
-Die Äpfel sind in der Schüssel||applesInBowl1.jpg
-Die Schüssel ist auf dem Tisch||bowlOnTable1.jpg
-Der Tisch ist in der Küche||tableInKitchen1.jpg
-Die Küche ist im Haus|The kitchen is in the house|
+那个苹果在碗里面^nà gè píng guǒ zài wǎn lǐ miàn||applesInBowl1.jpg
+那个碗在桌子上面^nà gè wǎn zài zhuō zi shàng miàn||bowlOnTable1.jpg
+那个桌子在厨房里面^nà gè zhuō zi zài chú fáng lǐ miàn||tableInKitchen1.jpg
+那个厨房在房子里面^nà gè chú fáng zài fáng zi lǐ miàn|The kitchen is in the house|
 ===
-Die Frau ist in der Wohnung||womanInApartment1.jpg
-Der Junge ist im Haus|The boy is in the house|
-Das Mädchen ist in der Wohnung|The girl is in the apartment|
-Die Familie ist im Haus|The family is the house|
+那个女人在公寓里面^nà gè nǚ rén zài gōng yù lǐ miàn||womanInApartment1.jpg
+那个男孩在房子里面^nà gè nán hái zài fáng zi lǐ miàn|The boy is in the house|
+那个女孩在公寓里面^nà gè nǚ hái zài gōng yù lǐ miàn|The girl is in the apartment|
+那家人在房子里面^nà jiā rén zài fáng zi lǐ miàn|The family is the house|
 ===
-Diese Tür ist groß||bigDoor1.jpg
-Dieses Fenster ist klein|This window is small|
-Diese Tür ist klein|This door is small|
-Dieses Fenster ist groß||bigWindow1.jpg
+这扇门是大的^zhè shàn mén shì dà de||bigDoor1.jpg
+这扇窗户是小的^zhè shàn chuāng hu shì xiǎo de|This window is small|
+这扇门是小的^zhè shàn mén shì xiǎo de|This door is small|
+这扇窗户是大的^zhè shàn chuāng hu shì dà de||bigWindow1.jpg
 ===
-Der Mann ist im Esszimmer|The man is in dining room|
-Der Laptop ist im Schlafzimmer|The laptop is in bedroom|
-Die Kaztze ist im Schlafzimmer||catInBedroom1.jpg
-Die Familie ist im Esszimmer||faimilyInDiningRoom1.jpg
+那个男人在餐厅里面^nà gè nán rén zài cān tīng lǐ miàn|The man is in dining room|
+那个笔记本电脑在卧室里面^nà gè bǐ jì běn diàn nǎo zài wò shì lǐ miàn|The laptop is in bedroom|
+那只猫在卧室里面^nà zhī māo zài wò shì lǐ miàn||catInBedroom1.jpg
+那家人在餐厅里面^nà jiā rén zài cān tīng lǐ miàn||faimilyInDiningRoom1.jpg
 ===
-Der Küche ist grün||greenKitchen1.jpg
-Das Schlafzimmer ist grün||greenBedroom1.jpg
-Das Badezimmer ist grün||greenBathroom1.jpg
-Das Wohnzimmer ist grün||greenLivingRoom1.jpg
-Das Esszimmer ist grün||greenDiningRoom1.jpg
-Das Haus ist grün||greenHouse1.jpg
+那个厨房是绿色的^nà gè chú fáng shì lǜ sè de||greenKitchen1.jpg
+那个卧室是绿色的^nà gè wò shì shì lǜ sè de||greenBedroom1.jpg
+那个洗手间是绿色的^nà gè xǐ shǒu jiān shì lǜ sè de||greenBathroom1.jpg
+那个客厅是绿色的^nà gè kè tīng shì lǜ sè de||greenLivingRoom1.jpg
+那个餐厅是绿色的^nà gè cān tīng shì lǜ sè de||greenDiningRoom1.jpg
+那个房子是绿色的^nà gè fáng zi shì lǜ sè de||greenHouse1.jpg
 ===
-Das Mädchen und ihr Großvater spielen||girlGrandpaPlay1.jpg
-Der Junge und sein Großvater sind im Badezimmer|The boy and his grandpa are in the bathroom|
-Das Mädchen und ihr Großmutter sind im Esszimmer|The girl and her grandma are in the dining room|
-Der Junge und seine Großmutter kochen||boyGrandmaCook1.jpg
+那个女孩和她的外公在玩^nà gè nǚ hái hé tā de wài gōng zài wán||girlGrandpaPlay1.jpg
+那个男孩和他的外公在浴室里^nà gè nán hái hé tā de wài gōng zài yù shì lǐ|The boy and his grandpa (mom's dad) are in the bathroom|
+那个女孩和她的外婆在餐厅里^nà gè nǚ hái hé tā de wài pó zài cān tīng lǐ|The girl and her grandma (mom's mom)are in the dining room|
+那个男孩和他的外婆在做饭^nà gè nán hái hé tā de wài pó zài zuò fàn||boyGrandmaCook1.jpg
 ===
-Der Mann küsst seine Frau||manKissWife1.jpg
-Der Vater umarmt seinen Sohn||fatherArmSon1.jpg
-Die Schwester küsst ihren Bruder|The sister kisses her brother|
-Der Mutter umarmt ihre Tochter||motherArmDaughter1.jpg
+那个男人亲吻他的妻子^nà gè nán rén qīn wěn tā de qī zi||manKissWife1.jpg
+那个父亲拥抱他的儿子^nà gè fù qīn yōng bào tā de ér zi||fatherArmSon1.jpg
+那个姐姐亲吻她的弟弟^nà gè jiě jie qīn wěn tā de dì di|The sister kisses her brother|
+那个母亲拥抱她的女儿^nà gè mǔ qīn yōng bào tā de nǚ ér||motherArmDaughter1.jpg
 ===
-Sie umarmt ihre Großvater||girlArmGrandma1.jpg
-Er küsst seinen Sohn||manKissSon1.jpg
-Wir umarmen unsere Mutter||weArmMother1.jpg
-Sie küsst ihren Mann|She kisses her husband
+她拥抱她的外婆^tā yōng bào tā de wài pó||girlArmGrandma1.jpg
+他亲吻他的儿子^tā qīn wěn tā de ér zi||manKissSon1.jpg
+我们拥抱我们的母亲^wǒ men yōng bào wǒ men de mǔ qīn||weArmMother1.jpg
+她亲吻她的丈夫^tā qīn wěn tā de zhàng fū|She kisses her husband
 ===
-Ich liebe meinen Bruder|I love my brother|
-Ich liebe meinen Großvater|I love my grandpa|
-Ich liebe meine Schwester|I love my sister|
-Ich liebe meine Mutter|I love my mother|
+我爱我的哥哥^wǒ ài wǒ de gē ge|I love my (older) brother|
+我爱我的外公^wǒ ài wǒ de wài gōng|I love my grandpa (mom's dad)
+我爱我的妹妹^wǒ ài wǒ de mèi mei|I love my (younger) sister|
+我爱我的母亲^wǒ ài wǒ de mǔ qīn|I love my mother|
 ===
-Die Frau liebt ihren Mann|The woman loves her husband|
-Das Mädchen liebt ihren Hund||girlLoveDog1.jpg
-Die Eltern lieben ihre Kinder|Parents love their children|
-Der Junge liebt seinen Großvater|The boy love his grandpa|
+那个妻子爱她的丈夫^nà gè qī zi ài tā de zhàng fū|The woman loves her husband|
+那个女孩爱她的狗^nà gè nǚ hái ài tā de gǒu||girlLoveDog1.jpg
+那些父母爱他们的孩子^nà xiē fù mǔ ài tā men de hái zi|Parents love their children|
+那个男孩爱他的外公^nà gè nán hái ài tā de wài gōng|The boy love his grandpa (mom's dad)
 ===
-Die Mädchen umarmen ihren Vater||girlsArmFather1.jpg
-Der Mann und die Frau küssen ihre Kinder||manWomanKissChildren1.jpg
-Ich liebe mein Baby||iLoveMyBaby1.jpg
+那些女孩们拥抱他们的父亲^nà xiē nǚ hái men yōng bào tā men de fù qīn||girlsArmFather1.jpg
+那个男人和那个女人亲吻他们的孩子^nà gè nán rén hé nà gè nǚ rén qīn wěn tā men de hái zi||manWomanKissChildren1.jpg
+我爱我的婴儿^wǒ ài wǒ de yīng ér||iLoveMyBaby1.jpg
 ===
-Die Katze ist unter dem Tisch||catUnderTable1.jpg
-Die Jungen sind unter dem Bett|The boys are under the bed|
-Der Hund ist unter dem Tisch||dogUnderTable1.jpg
+那只猫在桌子下面^nà zhī māo zài zhuō zi xià miàn||catUnderTable1.jpg
+那些男孩们在床下面^nà xiē nán hái men zài chuáng xià miàn|The boys are under the bed|
+那只狗在桌子下面^nà zhī gǒu zài zhuō zi xià miàn||dogUnderTable1.jpg
 ===
-Ich bin auf dem Bett||womanOnBed1.jpg
-Ich bin unter dem Bett||girlUnderBed1.jpg
-Die Katze ist auf dem Tisch||catOnTable1.jpg
+我在床上面^wǒ zài chuáng shàng miàn||womanOnBed1.jpg
+我在床下面^wǒ zài chuáng xià miàn||girlUnderBed1.jpg
+那只猫在桌子上面^nà zhī māo zài zhuō zi shàng miàn||catOnTable1.jpg
 ===
-Der Mann ist unter dem Auto||manUnderCar1.jpg
-Der Mann ist auf dem Auto||manOnCar2.jpg
-Der Mann ist im Auto|The man is in the car|
+那个男人在小轿车下面^nà gè nán rén zài xiǎo jiào chē xià miàn||manUnderCar1.jpg
+那个男人在小轿车上面^nà gè nán rén zài xiǎo jiào chē shàng miàn||manOnCar2.jpg
+那个男人在小轿车里面^nà gè nán rén zài xiǎo jiào chē lǐ miàn|The man is in the car|
 ===
-Das kind hört zu|girlListen1.jpg
-Die Jungen sehen fern||childrenWatchTV1.jpg
-Die Eltern hören zu|The parents are listening|
-Die Katze sieht dem Fisch zu||catSeeFish1.jpg
+那个孩子在听⋯^nà gè hái zi zài tīng⋯||girlListen1.jpg
+那些男孩们在看电视^nà xiē nán hái men zài kàn diàn shì||childrenWatchTV1.jpg
+那些父母在听⋯^nà xiē fù mǔ zài tīng⋯|The parents are listening|
+那只猫在看鱼^nà zhī māo zài kàn yú||catSeeFish1.jpg
 ===
-Die Eltern sehen ihren Kindern zu||parentsSeeKids1.jpg
-Der Mann hört Radio||manListenRadio1.jpg
-Der Junge und das Mädchen sehen dem Fisch zu||boyGirlSeeFish1.jpg
-Das Mädchen hört Radio||girlListenRadio1.jpg
+那些父母在看着他们的孩子们^nà xiē fù mǔ zài kàn zhe tā men de hái zi men||parentsSeeKids1.jpg
+那个男人在听收音机^nà gè nán rén zài tīng shōu yīn jī||manListenRadio1.jpg
+那个男孩和那个女孩在看鱼^nà gè nán hái hé nàgè nǚ hái zài kàn yú||boyGirlSeeFish1.jpg
+那个女孩在听收音机^nà gè nǚ hái zài tīng shōu yīn jī||girlListenRadio1.jpg
 ===
-Der Mann steht||manStand1.jpg
-Das Mädchen sitzt||girlSit1.jpg
-Der Hund liegt||dogLie1.jpg
-Der Junge sitzt||boySit1.jpg
-Die Frau steht|The woman is standing|
-Die Katze liegt||catLie1.jpg
+那个男人站着^nà gè nán rén zhàn zhe||manStand1.jpg
+那个女孩坐着^nà gè nǚ hái zuò zhe||girlSit1.jpg
+那只狗躺着^nà zhī gǒu tǎng zhe||dogLie1.jpg
+那个男孩坐着^nà gè nán hái zuò zhe||boySit1.jpg
+那个女人站着^nà gè nǚ rén zhàn zhe|The woman is standing|
+那只猫躺着^nà zhī māo tǎng zhe||catLie1.jpg
 ===
-Die Mutter sitzt in der Küche|The mother sits in the kitchen|
-Die Tochter sitzt im Wohnzimmer|The daughter sits in the living room|
-Der Sohn steht im Wohnzimmer||boyStandLivingRoom1.jpg
-Der Vater steht in der Küche||manStandKitchen1.jpg
-Der Großvater liegt im Wohnzimmer||grandpaLieLivingRoom1.jpg
-Die Großmutter liegt im Gras||grandmaLieGrass1.jpg
+那个母亲坐在厨房里面^nà gè mǔ qīn zuò zài chú fáng lǐ miàn|The mother sits in the kitchen|
+那个女儿坐在客厅里面^nà gè nǚ ér zuò zài kè tīng lǐ miàn|The daughter sits in the living room|
+那个儿子站在客厅里面^nà gè er zi zhàn zài kè tīng lǐ miàn||boyStandLivingRoom1.jpg
+那个父亲站在厨房里面^nà gè fù qīn zhàn zài chú fáng lǐ miàn||manStandKitchen1.jpg
+那个外公躺在客厅里面^nà gè wài gōng tǎng zài kè tīng lǐ miàn||grandpaLieLivingRoom1.jpg
+那个外婆躺在草上面^nà gè wài pó tǎng zài cǎo shàng miàn||grandmaLieGrass1.jpg
 ===
-Ist das Ihr Buch?|Is this your book?|
-Ja. Das ist mein Buch||myBook1.jpg
-Ist das Ihr Hut?||isItYourHat1.jpg
-Nein. Das ist nicht mein Hut.|No. It is not my hat|
+这是你的书吗?^zhè shì nǐ de shū ma|Is this your book?|
+是的, 那是我的书^shì de, Nà shì wǒ de shū||myBook1.jpg
+那是你的帽子吗?^nà shì nǐ de mào zi ma||isItYourHat1.jpg
+不, 那不是我的帽子^bù nà bù shì wǒ de mào zi|No. It is not my hat|
 ===
-Ist das deine Schwester?|Is this your (informal) sister?|
-Ja, das ist meine Schwester||mySister1.jpg
-Ist das dein Ball?|Is this your (informal) ball?
-Ja. Das ist mein Ball||myBall1.jpg
+那是你姐姐吗?^nà shì nǐ jiě jie ma?|Is this your (older) sister?|
+是的，那是我姐姐^shì de, nà shì wǒ jiě jie||mySister1.jpg
+那是你的球吗?^nà shì nǐ de qiú ma|Is this your (informal) ball?
+是的, 这是我的球^shì de, zhè shì wǒ de qiú^||myBall1.jpg
 ===
-Wo sind meine Schlüssel?|Where are my keys?|
-Ihre Schlüssel sindim Auto||keysInCar1.jpg
-Wo ist mein Mantel?|Where is my coat?
-Ihr Mantel ist auf dem Stuhl||coatOnChair1.jpg
+我的钥匙在哪里?^wǒ de yào shi zài nǎ lǐ?|Where are my keys?|
+你的钥匙在小轿车里面^nǐ de yào shi zài xiǎo jiào chē lǐ miàn||keysInCar1.jpg
+我的大衣在哪里?^wǒ de dà yī zài nǎ lǐ|Where is my coat?
+你的大衣在椅子上^nǐ de dà yī zài yǐ zi shàng||coatOnChair1.jpg
 ===
-Wo sind meine Bücher?|Where are my books?|
-Deine Bücher liegen auf dem Stuhl||booksOnChair1.jpg
-Wo ist meine Tasse?|Where is my cup?|
-Deine Tasse ist im Spülbecken||cupInSink1.jpg
+我的书在哪里?^wǒ de shū zài nǎ lǐ?|Where are my books?|
+你的书在椅子上面^nǐ de shū zài yǐ zi shàng miàn||booksOnChair1.jpg
+我的杯子在哪里?^wǒ de bēi zi zài nǎ lǐ|Where is my cup?|
+你的杯子在水池里面^nǐ de bēi zi zài shuǐ chí lǐ miàn||cupInSink1.jpg
 ===
-Is das dein Bruder?|Is this your (informal) brother?|
-Ja. Das ist mein Bruder||myBrother1.jpg
-Wo sind die Schuhe?|Where are the shoes?|
-Die Schuhe stehen unter dem Bett||shoesUnderBed1.jpg
+这是你的哥哥吗?^zhè shì nǐ dí gē ge ma?|Is this your (older) brother?|
+是的, 这是我的哥哥^shì de, zhè shì wǒ de gē ge||myBrother1.jpg
+那双鞋子在哪里?^nà shuāng xié zi zài nǎ lǐ?|Where are the shoes?|
+那双鞋子在床下面^nà shuāng xié zi zài chuáng xià miàn||shoesUnderBed1.jpg
 ===
-Wo ist meine Zeitung?|Where is my newspaper?
-Ihre Zeitung ist auf dem Tisch||newspaperOnTable1.jpg
-Wo ist die Zeitung?|Where is the newspaper?
-Die Zeitung liegt auf dem Bett||newspaperOnBed1.jpg
+我的报纸在哪里?^wǒ de bào zhǐ zài nǎ lǐ?|Where is my newspaper?
+你的报纸在桌子上面^nǐ de bào zhǐ zài zhuō zi shàng miàn||newspaperOnTable1.jpg
+那份报纸在哪里?^nà fèn bào zhǐ zài nǎ lǐ?|Where is the newspaper?
+那份报纸在床上面^nà fèn bào zhǐ zài chuáng shàng miàn||newspaperOnBed1.jpg

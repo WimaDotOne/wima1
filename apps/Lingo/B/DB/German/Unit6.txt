@@ -90,7 +90,7 @@ Der Vater umarmt seinen Sohn||fatherArmSon1.jpg
 Die Schwester küsst ihren Bruder|The sister kisses her brother|
 Der Mutter umarmt ihre Tochter||motherArmDaughter1.jpg
 ===
-Sie umarmt ihre Großvater||girlArmGrandma1.jpg
+Sie umarmt ihre Großmutter||girlArmGrandma1.jpg
 Er küsst seinen Sohn||manKissSon1.jpg
 Wir umarmen unsere Mutter||weArmMother1.jpg
 Sie küsst ihren Mann|She kisses her husband
@@ -121,7 +121,7 @@ Der Mann ist unter dem Auto||manUnderCar1.jpg
 Der Mann ist auf dem Auto||manOnCar2.jpg
 Der Mann ist im Auto|The man is in the car|
 ===
-Das kind hört zu|girlListen1.jpg
+Das kind hört zu||girlListen1.jpg
 Die Jungen sehen fern||childrenWatchTV1.jpg
 Die Eltern hören zu|The parents are listening|
 Die Katze sieht dem Fisch zu||catSeeFish1.jpg
@@ -165,7 +165,7 @@ Deine Bücher liegen auf dem Stuhl||booksOnChair1.jpg
 Wo ist meine Tasse?|Where is my cup?|
 Deine Tasse ist im Spülbecken||cupInSink1.jpg
 ===
-Is das dein Bruder?|Is this your (informal) brother?|
+Ist das dein Bruder?|Is this your (informal) brother?|
 Ja. Das ist mein Bruder||myBrother1.jpg
 Wo sind die Schuhe?|Where are the shoes?|
 Die Schuhe stehen unter dem Bett||shoesUnderBed1.jpg

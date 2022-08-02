@@ -94,7 +94,7 @@
 连衣裙^lián yī qún||dress2.jpg
 裙子^qún zi||skirt1.jpg
 ===
-鞋子^xié zi||shoes3.jpg
+一双鞋子^yī shuāng xié zi||shoes3.jpg
 一件衬衫^yī jiàn chèn shān||shirt3.jpg
 一条裤子^yī tiáo kù zi||pants2.jpg
 一件大衣^yī jiàn dà yī||coat3.jpg

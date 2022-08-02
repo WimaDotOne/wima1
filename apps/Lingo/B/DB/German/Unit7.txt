@@ -17,9 +17,9 @@ Moskau||Moscow1.jpg
 Wo wohnst du?||whichApartment1.jpg
 Ich wohne in Wohnung Nummer acht|I live in apartment 8|
 ===
-Wo wohnen Sie?|Where do you (formal) live|
+Wo wohnen Sie?|Where do you (formal) live?|
 Ich wohne in Moskau||iLiveMoscow1.jpg
-Wo wohnst du?|Where do you (informal) live|
+Wo wohnst du?|Where do you (informal) live?|
 Ich wohne in Paris||iLiveParis1.jpg
 ===
 Wo wohnt ihr?|Where do you live?|
