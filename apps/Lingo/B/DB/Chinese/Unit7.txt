@@ -47,13 +47,13 @@
 那个男人站在街道上面^nà gè nán rén zhàn zài jiē dào shàng miàn||manStandOnStreet1.jpg
 ===
 这条街道在巴黎^zhè tiáo jiē dào zài bā lí|This street is in Paris|
-这个城市在法国^zhè ge chéng shì zài fà guó||parisInFrance1.jpg
+这个城市在法国^zhè ge chéng shì zài fǎ guó||parisInFrance1.jpg
 这座桥在纽约^zhè zuò qiáo zài niǔ yuē||bridgeInNewYork1.jpg
 这个城市在美国^zhè ge chéng shì zài měi guó||newYorkInUSA1.jpg
 ===
-他们来自法国^tā men lái zì fà guó|They are from France|
-他来自法国^tā lái zì fà guó||frenchMan1.jpg
-她来自法国^tā lái zì fà guó||frenchWoman1.jpg
+他们来自法国^tā men lái zì fǎ guó|They are from France|
+他来自法国^tā lái zì fǎ guó||frenchMan1.jpg
+她来自法国^tā lái zì fǎ guó||frenchWoman1.jpg
 她来自美国^tā lái zì měi guó||americanGirl1.jpg
 他来自美国^tā lái zì měi guó||americanMan1.jpg
 他们来自美国^tā men lái zì měi guó||americanFamily1.jpg
@@ -71,56 +71,55 @@
 我来自美国^wǒ lái zì měi guó||americanGirl1.jpg
 你来自哪里?^nǐ lái zì nǎ lǐ?|Where are you from?|
 我来自埃及^wǒ lái zì āi jí|I am from Egypt|
-我们来自法国^wǒ men lái zì fà guó|We are from french|
+我们来自法国^wǒ men lái zì fǎ guó|We are from french|
 你来自哪里?^nǐ lái zì nǎ lǐ?|Where are you from?|
 我们来自中国^wǒ men lái zì zhōng guó||weComeFromChina.jpg
 ===
-Der Junge steht nahe am Haus^||BoyStandNearHouse1.jpg
-Der Hund sitzt nahe am Haus^||dogSitNearHouse1.jpg
-Das Mädchen steht weit weg vom Haus^||girlStandFarHouse1.jpg
-Das Pferd steht weit weg vom Haus|The horse stands far away from the House|
+那个男孩站得离房子近^nà gè nán hái zhàn dé lí fáng zi jìn||BoyStandNearHouse1.jpg
+那只狗坐得离房子近^nà zhī gǒu zuò dé lí fáng zi jìn||dogSitNearHouse1.jpg
+那个女孩站得离房子远^nà gè nǚ hái zhàn dé lí fáng zǐ yuǎn||girlStandFarHouse1.jpg
+那匹马站得离房子远^nà pǐ mǎ zhàn dé lí fáng zǐ yuǎn|The horse stands far away from the House|
 ===
-Der Stuhl steht nahe an der Tür^||chairNearDoor1.jpg
-Der Stuhl steht weit weg von der Tür^||chairFarDoor1.jpg
-Mein Haus steht nahe an der Straße|My house is close to the street|
-Mein Haus steht weit weg von der Straße|My house is far away from the street|
+那个椅子离门近^nà gè yǐ zi lí mén jìn||chairNearDoor1.jpg
+那个椅子离门远^nà gè yǐ zi lí mén yuǎn||chairFarDoor1.jpg
+我的房子离街道近^wǒ de fáng zi lí jiē dào jìn|My house is close to the street|
+我的房子离街道远^wǒ de fáng zi lí jiē dào yuǎn|My house is far away from the street|
 ===
-Ich stehe nahe am Baum^||iStandNearTree1.jpg
-Ich stehe weit weg vom Baum^||iStandFarTree1.jpg
-Ich stehe nahe an der Brücke|I stand near the bridge|
-Ich stehe weit weg von der Brücke|I stand far away from the bridge|
+我站得离树近^wǒ zhàn dé lí shù jìn||iStandNearTree1.jpg
+我站得离树远^wǒ zhàn dé lí shù yuǎn||iStandFarTree1.jpg
+我站得离桥近^wǒ zhàn dé lí qiáo jìn|I stand near the bridge|
+我站得离桥远^wǒ zhàn dé lí qiáo yuǎn|I stand far away from the bridge|
 ===
-Brasilen^||brazil1.jpg
-Japan^||japan1.jpg
-Italien^||italy1.jpg
+巴西^bā xī||brazil1.jpg
+日本^rì běn||japan1.jpg
+意大利^yì dà lì||italy1.jpg
 ===
-Dieses Land heißt Italien^||italy2.jpg
-Dieses Land heißt Russland|This country is called Russia|
-Dieses Land heißt Japan^||japan2.jpg
-Dieses Land heißt Ägypten^||egypt2.jpg
+这个国家叫意大利^zhè ge guó jiā jiào yì dà lì||italy2.jpg
+这个国家叫俄罗斯^zhè ge guó jiā jiào è luó sī|This country is called Russia|
+这个国家叫日本^zhè ge guó jiā jiào rì běn||japan2.jpg
+这个国家叫埃及^zhè ge guó jiā jiào āi jí||egypt2.jpg
 ===
-Italien liegt in der Nähe von Frankreich^||italyCloseFrance1.jpg
-Japan liegt in der Nähe von China^||japanCloseChina1.jpg
-Japan liegt weit weg von Brasilen^||japanFarBrazil1.jpg
-Italien liegt weit weg von Brasilen|Italy is far away from Brazil|
+意大利离法国近^yì dà lì lí fǎ guó jìn||italyCloseFrance1.jpg
+日本离中国近^rì běn lí zhōng guó jìn||japanCloseChina1.jpg
+日本离巴西远^rì běn lí bā xī yuǎn||japanFarBrazil1.jpg
+意大利离巴西远^yì dà lì lí bā xī yuǎn|Italy is far away from Brazil|
 ===
-Ich bin Ärztin^||iAmWomanDoctor1.jpg
-Ich heiße Natalie Wächter|I am Natalie Wächter|
-Ich bin Polizist^||iAmManPoliceman1.jpg
-Ich heiße Jonas Baumann|I am Jonas Baumann|
-Ich bin Lehrerin^||iAmWomanTeacher1.jpg
-Ich heiße Susi Richter|I am Susi Richter|
-Ich komme aus Russland^||perelman1.jpg
-Ich heiße Grigori Perelman|I am Grigori Perelman|
+我是医生^wǒ shì yī shēng||iAmWomanDoctor1.jpg
+我叫Natalie Wächter^wǒ jiào Natalie Wächter|I am Natalie Wächter|
+我是警察^wǒ shì jǐng chá||iAmManPoliceman1.jpg
+我叫Jonas Baumann^wǒ jiào Jonas Baumann|I am Jonas Baumann|
+我是老师^wǒ shì lǎo shī||iAmWomanTeacher1.jpg
+我叫Susi Richter^wǒ jiào Susi Richter|I am Susi Richter|
+我来自俄罗斯^wǒ lái zì è luó sī||perelman1.jpg
+我叫格里高利·佩雷尔曼^wǒ jiào gé lǐ gāo lì pèi léi ěr màn|I am Grigori Perelman (There are Chinese words for foreign names, but it's too much to ask for beginners)|
 ===
-Hallo. Wie heißt du?|Hello. What's your name?|
-Ich heiße Sabine^||girlIAm1.jpg
-Nett, dich kennenzulernen|Nice to meet you|
-Hallo. Wie heißen Sie?|Hello. What's your (formal) name?|
-Ich bin Herr Weber^||manIAm1.jpg
-Nett, Sie kennenzulernen^||niceMeetYou1.jpg
+你好. 你叫什么名字?^nǐ hǎo. nǐ jiào shén me míng zì?|Hello. What's your name?|
+我叫Sabine^wǒ jiào Sabine||girlIAm1.jpg
+很高兴见到你^hěn gāo xìng jiàn dào nǐ|Nice to meet you|
+你好. 你叫什么名字?^nǐ hǎo. nǐ jiào shén me míng zì?|Hello. What's your (formal) name?|
+我叫Herr Weber^wǒ jiào Herr Weber||manIAm1.jpg
+很高兴见到你^hěn gāo xìng jiàn dào nǐ||niceMeetYou1.jpg
 ===
-Tschüss| Bye (informal)|
-Tschüss^||bye1.jpg
-Auf Wiedersehen| Bye (formal)|
-===
+拜拜^bái bái| Bye (informal)|
+拜拜^bái bái||bye1.jpg
+再见^zài jiàn| Bye (formal)|
