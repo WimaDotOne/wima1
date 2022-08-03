@@ -1,38 +1,38 @@
-der Pullover||pullover1.jpg
-die Jeans||jeans1.jpg
-der Gürtel||belt1.jpg
+毛衣^máo yī||pullover1.jpg
+牛仔裤^niú zǎi kù||jeans1.jpg
+皮带^pí dài||belt1.jpg
 ===
-der Anzug||suit1.jpg
-der Anzug||suit2.jpg
-die Socken||socks1.jpg
-die Krawatte||tie1.jpg
+西装^xī zhuāng||suit1.jpg
+西装^xī zhuāng||suit2.jpg
+袜子^wà zi||socks1.jpg
+领带^lǐng dài||tie1.jpg
 ===
-ein Pullover||pullover1.jpg
-eine Krawatte||tie2.jpg
-ein Anzug||suit1.jpg
-die Socken||socks2.jpg
-ein Gürtel||belt2.jpg
-eine Jeans|a pair of jeans|
+一件毛衣^yī jiàn máo yī||pullover1.jpg
+一条领带^yī tiáo lǐng dài||tie2.jpg
+一套西装^yī tào xī zhuāng||suit1.jpg
+一双袜子^yī shuāng wà zi||socks2.jpg
+一条皮带^yī tiáo pí dài||belt2.jpg
+一条牛仔裤^yī tiáo niú zǎi kù|a pair of jeans|
 ===
-Seine Socken sind lila||hisSocksPurple1.jpg
-Ihre Socken sind grau||herSocksGray1.jpg
-Ihr Pullover ist lila||herPulloverPurple1.jpg
-Sein Pullover ist grau|His weater is gray|
+他的袜子是紫色的^tā de wà zi shì zǐ sè de||hisSocksPurple1.jpg
+她的袜子是灰色的^tā de wà zi shì huī sè de||herSocksGray1.jpg
+她的毛衣是紫色的^tā de máo yī shì zǐ sè de||herPulloverPurple1.jpg
+他的毛衣是灰色的^tā de máo yī shì huī sè de|His weater is gray|
 ===
-Der große Mann trägt eine Krawatte|The tall man wears a tie|
-Der große Frau trägt jeans|The tall woman wear jeans|
-Die kleine Frau trägt en T-Shirt|The short woman wears a t-shirt|
-Der kleine Mann trägt einen Pullover|The short man wears a sweater|
+那个高的男人打着领带^nà gè gāo de nán rén dǎ zhe lǐng dài|The tall man wears a tie|
+那个高的女人穿着牛仔裤^nà gè gāo de nǚ rén chuān zhe niú zǎi kù|The tall woman wear jeans|
+那个矮的女人穿着T恤衫^nà gè ǎi de nǚ rén chuān zhe T xù shān|The short woman wears a t-shirt|
+那个矮的男人穿着毛衣^nà gè ǎi de nán rén chuān zhe máo yī|The short man wears a sweater|
 ===
-Der große Mann trägt einen schwarzen Anzug||bigManBlackSuit1.jpg
-Die große Frau trägt einen grauen Anzug|The tall woman wears a gray suit|
-Der kleine Mann trägt einen schwarzen Anzug||shortManBlackSuit1.jpg
-Die kleine Frau trägt einen grauen Anzug|The short woman wears gray suit|
+那个高的男人穿着黑色的西装^nà gè gāo de nán rén chuān zhe hēi sè de xī zhuāng||bigManBlackSuit1.jpg
+那个高的女人穿着灰色的西装^nà gè gāo de nǚ rén chuān zhe huī sè de xī zhuāng|The tall woman wears a gray suit|
+那个矮的男人穿着黑色的西装^nà gè ǎi de nán rén chuān zhe hēi sè de xī zhuāng||shortManBlackSuit1.jpg
+那个矮的女人穿着灰色的西装^nà gè ǎi de nǚ rén chuān zhe huī sè de xī zhuāng|The short woman wears gray suit|
 ===
-Mein Kleid ist rosa||myDressPink1.jpg
-Meine Schuhe sind braun||myShoesBrown1.jpg
-Mein Gürtel ist rosa||myBeltPink1.jpg
-Meine Krawatte ist braun||myTieBrown1.jpg
+我的裙子是粉红色的^wǒ de qún zi shì fěn hóng sè de||myDressPink1.jpg
+我的鞋子是褐色的^wǒ de xié zi shì hè sè de||myShoesBrown1.jpg
+我的皮带是粉红色的^wǒ de pí dài shì fěn hóng sè de||myBeltPink1.jpg
+我的领带是褐色的^wǒ de lǐng dài shì hè sè de||myTieBrown1.jpg
 ===
 Ihr Kleid ist orange||herDressOrange1.jpg
 Ihr Mantel ist blau|Her coat is blue|
