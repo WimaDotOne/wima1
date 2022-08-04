@@ -34,103 +34,102 @@
 我的皮带是粉红色的^wǒ de pí dài shì fěn hóng sè de||myBeltPink1.jpg
 我的领带是褐色的^wǒ de lǐng dài shì hè sè de||myTieBrown1.jpg
 ===
-Ihr Kleid ist orange||herDressOrange1.jpg
-Ihr Mantel ist blau|Her coat is blue|
-Ihr T-Shirt ist orange||herTShirtOrange1.jpg
-Ihre Hose ist blau|Her pants are blue|
+她的裙子是橙色的^tā de qún zi shì chéng sè de||herDressOrange1.jpg
+她的大衣是蓝色的^tā de dà yī shì lán sè de|Her coat is blue|
+她的T恤衫是橙色的^tā de tī xù shān shì chéng sè de||herTShirtOrange1.jpg
+她的裤子是蓝色的^tā de kù zi shì lán sè de|Her pants are blue|
 ===
-grau||gray1.jpg
-lila||purple1.jpg
-rosa||pink1.jpg
-brau||brown1.jpg
-orange||orange1.jpg
-blau||blue1.jpg
-gelb||yellow1.jpg
-grün||green1.jpg
+灰色的^huī sè de||gray1.jpg
+紫色的^zǐ sè de||purple1.jpg
+粉红色的^fěn hóng sè de||pink1.jpg
+褐色的^hè sè de||brown1.jpg
+橙色的^chéng sè de||orange1.jpg
+蓝色的^lán sè de||blue1.jpg
+黄色的^huáng sè de||yellow1.jpg
+绿色的^lǜ sè de||green1.jpg
 ===
-Er hat braune Haare||boyBrownHair1.jpg
-Ich habe braune Haare||girlBrownHair1.jpg
-Wir haben blonde Haare|We have blond hair|
-Sie haben blonde Harre|They have blond hair|
+他的头发是褐色的^tā de tóu fà shì hè sè de||boyBrownHair1.jpg
+我的头发是褐色的^wǒ de tóu fà shì hè sè de||girlBrownHair1.jpg
+我们的头发是金色的^wǒ men de tóu fà shì jīn sè de|We have blond hair|
+他们的头发是金色的^tā men de tóu fà shì jīn sè de|They have blond hair|
 ===
-Sie haben rote Haare|You have red hair|
-Ich habe rote Haare||girlRedHair1.jpg
-Wir haben graue Haare||weGrayHair1.jpg
-Er hat graue Haare|He has gray hair|
+你的头发是红色的^nǐ de tóu fà shì hóng sè de|You have red hair|
+我的头发是红色的^wǒ de tóu fà shì hóng sè de||girlRedHair1.jpg
+我们的头发是灰色的^wǒ men de tóu fà shì huī sè de||weGrayHair1.jpg
+他的头发是灰色的^tā de tóu fà shì huī sè de|He has gray hair|
 ===
-Ich bin groß||iTall1.jpg
-Ich bin klein||iShort1.jpg
+我是高的^wǒ shì gāo de||iTall1.jpg
+我是矮的^wǒ shì ǎi de||iShort1.jpg
 ===
-Welche Farbe hat sein Pullover?|What color is his sweater?|
-Sein Pullover ist blau||bluePullover1.jpg
-Welche Farbe hat Ihr Anzug?|What color is your suit?|
-Mein Anzug ist grau||graySuit1.jpg
-Welche Farbe haben seine Haare|What color is his hair?|
-Seine Haare sind braun||hisHairBrown1.jpg
+他的毛衣是什么颜色的?^tā de máo yī shì shén me yán sè de?|What color is his sweater?|
+他的毛衣是蓝色的^tā de máo yī shì lán sè de||bluePullover1.jpg
+你的西装是什么颜色的?^nǐ de xī zhuāng shì shén me yán sè de?|What color is your suit?|
+我的西装是灰色的^wǒ de xī zhuāng shì huī sè de||graySuit1.jpg
+他的头发是什么颜色的^tā de tóu fà shì shén me yán sè de?|What color is his hair?|
+他的头发是褐色的^tā de tóu fà shì hè sè de||hisHairBrown1.jpg
 ===
-Welche Farbe haben ihre Haare?||whoColorHerHairBlone1.jpg
-Ihre Haare sind blond||herHairBlond1.jpg
-Welche Farbe haben ihre Haare?|What color are their hair?
-Ihre Haare sind schwarz||theirHairBlack1.jpg
-Welche Farbe haben deine Haare|What color is your hair?|
-Meine Haare sind rot.||myHairRed1.jpg
+她的头发是什么颜色的?^tā de tóu fà shì shén me yán sè de?||whoColorHerHairBlone1.jpg
+她的头发是金色的^tā de tóu fà shì jīn sè de||herHairBlond1.jpg
+她们的头发是什么颜色的?^tā men de tóu fà shì shén me yán sè de?|What color are their hair?
+她们的头发是黑色的^tā men de tóu fà shì hēi sè de||theirHairBlack1.jpg
+你的头发是什么颜色的?^nǐ de tóu fà shì shén me yán sè de?|What color is your hair?|
+我的头发是红色的^wǒ de tóu fà shì hóng sè de||myHairRed1.jpg
 ===
-Der Frau ist warm||womanHot1.jpg
-Dem Jungen ist warm||boyHot1.jpg
-Dem Mädchen ist kalt||girlCold1.jpg
-Dem Mann ist kalt||manCold1.jpg
+那个女人热^nà gè nǚ rén rè||womanHot1.jpg
+那个男孩热^nà gè nán hái rè||boyHot1.jpg
+那个女孩冷^nà gè nǚ hái lěng||girlCold1.jpg
+那个男人冷^nà gè nán rén lěng||manCold1.jpg
 ===
-Der Junge hat Durst|The boy is thirsty|
-Der Mann hat Hunger||hungryMan1.jpg
-Das Mädchen hat Durst||thirstyGirl1.jpg
-Die Frau hat Hunger||hungryWoman1.jpg
+那个男孩渴^nà gè nán hái kě|The boy is thirsty|
+那个男人饿^nà gè nán rén è||hungryMan1.jpg
+那个女孩渴^nà gè nǚ hái kě||thirstyGirl1.jpg
+那个女人饿^nà gè nǚ rén è||hungryWoman1.jpg
 ===
-Der Frau ist kalt||womanCold1.jpg
-Der Mann hat Durst||thirstyMan1.jpg
-Dem Mann ist warm||manHot1.jpg
+那个女人冷^nà gè nǚ rén lěng||womanCold1.jpg
+那个男人渴^nà gè nán rén kě||thirstyMan1.jpg
+那个男人热^nà gè nán rén rè||manHot1.jpg
 ===
-Ich habe Hunger||iHungry1.jpg
-Ich habe Durst|I am thirsty|
-Mir ist warm|I am hot|
-Mir ist kalt||iCold1.jpg
+我饿^wǒ è||iHungry1.jpg
+我渴^wǒ kě|I am thirsty|
+我热^wǒ rè|I am hot|
+我冷^wǒ lěng||iCold1.jpg
 ===
-Hast du Durst?|Are you thirsty?|
-Ja. Ich habe Durst||thirstyMan2.jpg
-Ist Ihnen kalt?|Are you cold?|
-Nein. Uns ist nicht kalt|We are not cold|
-Haben Sie Hunger?|Are you hungry?|
-Nein. Ich habe keinen Hunger||boyNotHungry1.jpg
-Ist euch warm?|Are you hot?|
-Ja. Uns ist warm||weHot1.jpg
+你渴吗?^nǐ kě ma?|Are you thirsty?|
+是的。我渴^shì de. wǒ kě||thirstyMan2.jpg
+你们冷吗?^nǐ men lěng ma?|Are you cold?|
+不,我们不冷^bù, wǒ men bù lěng|We are not cold|
+你饿吗?^nǐ è ma?|Are you hungry?|
+不,我不饿^bù, wǒ bù è||boyNotHungry1.jpg
+你们热吗?^nǐ men rè ma?|Are you hot?|
+是的。我们热^shì de. wǒ men rè||weHot1.jpg
 ===
-Ist dir kalt?|Are you cold?|
-Ja. Mir ist kalt||womanCold1.jpg
-Haben Sie Durst|Are you thirsty?|
-Nein. Wir haben keinen Durst|No. We are not thirsty|
-Ist dir warm?|Are you hot?|
-Nein. Mir ist nicht warm|No. I am not hot.|
-Habt ihr Hunger?|Are you hungry?|
-Ja. Wir haben Hunger||weHungry1.jpg
+你冷吗?^nǐ lěng ma?|Are you cold?|
+是的, 我冷^shì de. wǒ lěng||womanCold1.jpg
+你渴吗?^nǐ kě ma?|Are you thirsty?|
+不, 我们不渴^bù, wǒ men bù kě|No. We are not thirsty|
+你热吗?^nǐ rè ma?|Are you hot?|
+不, 我不热^bù, wǒ bù rè|No. I am not hot.|
+你们饿吗?^nǐ men è ma?|Are you hungry?|
+是的, 我们饿^shì de, wǒ men è||weHungry1.jpg
 ===
-Der Junge ist müde||boyTired1.jpg
-Die Frau ist müde||womanTired1.jpg
-Das Mädchen ist krank||girlSick1.jpg
-Der Mann ist krank||manSick1.jpg
+那个男孩累^nà gè nán hái lèi||boyTired1.jpg
+那个女人累^nà gè nǚ rén lèi||womanTired1.jpg
+那个女孩生病了^nà gè nǚ hái shēng bìng le||girlSick1.jpg
+那个男人生病了^nà gè nán rén shēng bìng le||manSick1.jpg
 ===
-Ich bin krank|I am sick|
-Ich bin müde||iTired1.jpg
-Mir ist kalt||iCold1.jpg
-Ich habe Hunger||iHungry1.jpg
+我生病了^wǒ shēng bìng le|I am sick|
+我累^wǒ lèi||iTired1.jpg
+我冷^wǒ lěng||iCold1.jpg
+我饿^wǒ è||iHungry1.jpg
 ===
-Bist du krank?|Are you sick?|
-Nein. Mir geht es gut|No. I am good.|
-Bist du müde?|Are you tired?|
-Nein. Mir geht es gut||iGood1.jpg
+你生病了吗?^nǐ shēng bìng le ma?|Are you sick?|
+不, 我很好^bù, wǒ hěn hǎo|No. I am good.|
+你累了吗?^nǐ lèi le ma?|Are you tired?|
+不, 我很好^bù wǒ hěn hǎo||iGood1.jpg
 ===
-Wie geht es Ihnen?|How are you?|
-Ich bin krank||iSick1.jpg
-Wie geht es Ihnen?||howAreYou1.jpg
-Mir geht es gut||iGood1.jpg
-Wie geht es dir?|How are you?|
-Mir geht es gut||iGood2.jpg
-===
+你好吗?^nǐ hǎo ma?|How are you?|
+我生病了^wǒ shēng bìng le||iSick1.jpg
+你好吗?^nǐ hǎo ma?||howAreYou1.jpg
+我很好^wǒ hěn hǎo||iGood1.jpg
+你好吗?^nǐ hǎo ma?|How are you?|
+我很好^wǒ hěn hǎo||iGood2.jpg
