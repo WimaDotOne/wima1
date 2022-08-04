@@ -1,147 +1,144 @@
-Das Mädchen spielt||girlPlay1.jpg
-Die Jungen spielen||boysPlay1.jpg
-Die Frauen arbeiten|The women are working|
-Der Mann arbeitet||manWork1.jpg
+那个女孩在玩^nà gè nǚ hái zài wán||girlPlay1.jpg
+那些男孩们在玩^nà xiē nán hái men zài wán||boysPlay1.jpg
+那些女人们在工作^nà xiē nǚ rén men zài gōng zuò|The women are working|
+那个男人在工作^nà gè nán rén zài gōng zuò||manWork1.jpg
 ===
-die Schule||school1.jpg
-das Krankenkaus||hospital1.jpg
-das Restaurant||restaurant1.jpg
-der Park||park1.jpg
+学校^xué xiào||school1.jpg
+医院^yī yuàn||hospital1.jpg
+餐厅^cān tīng||restaurant1.jpg
+公园^gōng yuán||park1.jpg
 ===
-Die Männer arbeiten in dem Park||menWorkPark1.jpg
-Die Frauen arbeiten in dem Restaurant||womenWorkRestaurant1.jpg
-Die Ärztin arbeitet in dem Krankenkaus||womanDoctorWorkHospital1.jpg
-Der Lehrer arbeitet an der Schule||manTeacherWorkSchool1.jpg
+那些男人们在公园工作^nà xiē nán rén men zài gōng yuán gōng zuò||menWorkPark1.jpg
+那些女人们在餐厅工作^nà xiē nǚ rén men zài cān tīng gōng zuò||womenWorkRestaurant1.jpg
+那个医生在医院工作^nà gè yī shēng zài yī yuàn gōng zuò||womanDoctorWorkHospital1.jpg
+那个老师在学校工作^nà gè lǎo shī zài xué xiào gōng zuò||manTeacherWorkSchool1.jpg
 ===
-Der Mann ist in dem Krankenkaus||manInHospital1.jpg
-Der Mann ist im Krankenkaus||manInHospital1.jpg
-Die Frauen essen in dem Restaurant||womanEatRestaurant1.jpg
-Die Frauen essen im Restaurant||womanEatRestaurant1.jpg
+那个男人在医院^nà gè nán rén zài yī yuàn||manInHospital1.jpg
+那些女人们在餐厅吃饭^nà xiē nǚ rén men zài cān tīng chī fàn||womanEatRestaurant1.jpg
 ===
-Wir spielen im Park||wePlayPark1.jpg
-Wir spielen in der Schule||wePlaySchool1.jpg
-Ich arbeite im Krankenkaus||iWorkHospital1.jpg
-Ich arbeite an der Schule||iWorkSchool1.jpg
+我们在公园玩^wǒ men zài gōng yuán wán||wePlayPark1.jpg
+我们在学校玩^wǒ men zài xué xiào wán||wePlaySchool1.jpg
+我在医院工作^wǒ zài yī yuàn gōng zuò||iWorkHospital1.jpg
+我在学校工作^wǒ zài xué xiào gōng zuò||iWorkSchool1.jpg
 ===
-Die Familie isst drinnen|The family eat inside|
-Sie rennt draußen||sheRunOutside1.jpg
-Er rennt drinnen||heRunInside1.jpg
-Der Mann und die Frau essen draußen||manWomanEatOutside1.jpg
+那家人在室内吃饭^nà jiā rén zài shì nèi chī fàn|The family eat inside|
+她在世外跑步^tā zài shì wài pǎo bù||sheRunOutside1.jpg
+他在室内跑步^tā zài shì nèi pǎo bù||heRunInside1.jpg
+那个男人和那个女人在室外吃饭^nà gè nán rén hé nà gè nǚ rén zài shì wài chī fàn||manWomanEatOutside1.jpg
 ===
-Diese Männer arbeiten draußen||menWorkOutside1.jpg
-Diese Frau arbeitet draußen||womanWorkOutside1.jpg
-Dieser Mann arbeitet drinnen||manWorkInside1.jpg
-Diese Frauen arbeiten drinnen||womenWorkInside1.jpg
+这些男人们在室外工作^zhè xiē nán rén men zài shì wài gōng zuò||menWorkOutside1.jpg
+这个女人在室外工作^zhè ge nǚ rén zài shì wài gōng zuò||womanWorkOutside1.jpg
+这个女人在室内工作^zhè ge nǚ rén zài shì nèi gōng zuò||manWorkInside1.jpg
+这些女人们在室内工作^zhè xiē nǚ rén men zài shì nèi gōng zuò||womenWorkInside1.jpg
 ===
-der Morgen||morning1.jpg
-der Nachmittag|afternoon|
-der Abend||evening2.jpg
-die Nacht||night1.jpg
+早上^zǎo shàng||morning1.jpg
+下午^xià wǔ|afternoon|
+晚上^wǎn shàng||evening2.jpg
+夜晚^yè wǎn||night1.jpg
 ===
-Es ist Morgen||morning2.jpg
-Es ist Nachmittag||afternoon1.jpg
-Es ist Abend||evening1.jpg
-Es ist Nacht||night2.jpg
+现在是早上^xiàn zài shì zǎo shàng||morning2.jpg
+现在是下午^xiàn zài shì xià wǔ||afternoon1.jpg
+现在是晚上^xiàn zài shì wǎn shàng||evening1.jpg
+现在是夜晚^xiàn zài shì yè wǎn||night2.jpg
 ===
-Es ist Nachmittag. Die Männer essen zu Mittag||menEatLunch1.jpg
-Es ist Abend. Die Familie isst zu Abend||familyEatDinner1.jpg
-Es ist Morgen. Die Kinder frühstücken||childrenEatBreakfast1.jpg
+现在是下午. 那些男人们在吃午饭^xiàn zài shì xià wǔ. nà xiē nán rén men zài chī wǔ fàn||menEatLunch1.jpg
+现在是晚上. 那家人在吃晚饭^xiàn zài shì wǎn shàng. nà jiā rén zài chī wǎn fàn||familyEatDinner1.jpg
+现在是早上. 那些孩子们在吃早饭^xiàn zài shì zǎo shàng. nà xiē hái zi men zài chī zǎo fàn||childrenEatBreakfast1.jpg
 ===
-Sie isst drinnen zu Mittag|She is eating lunch inside|
-Sie isst draußen zu Mittag||sheEatLunchOutside1.jpg
-Die familie frühstückt draußen||familyBreakfastOutside1.jpg
-Die familie frühstückt drinnen||familyBreakfastInside1.jpg
+她在室内吃午饭^tā zài shì nèi chī wǔ fàn|She is eating lunch inside|
+她在室外吃午饭^tā zài shì wài chī wǔ fàn||sheEatLunchOutside1.jpg
+那家人在室外吃早饭^nà jiā rén zài shì wài chī zǎo fàn||familyBreakfastOutside1.jpg
+那家人在室内吃早饭^nà jiā rén zài shì nèi chī zǎo fàn||familyBreakfastInside1.jpg
 ===
-Wir frühstücken drinnen||weBreakfastInside1.jpg
-Wir frühstücken draußen||weBreakfastOutside1.jpg
-Wir essen draußen zu Mittag||weLunchOutside1.jpg
-Wir essen drinnen zu Abend||weDinnerInside1.jpg
+我们在室内吃早饭^wǒ men zài shì nèi chī zǎo fàn||weBreakfastInside1.jpg
+我们在室外吃早饭^wǒ men zài shì wài chī zǎo fàn||weBreakfastOutside1.jpg
+我们在室外吃午饭^wǒ men zài shì wài chī wǔ fàn||weLunchOutside1.jpg
+我们在室内吃晚饭^wǒ men zài shì nèi chī wǎn fàn||weDinnerInside1.jpg
 ===
-Er arbeitet morgens||heWorkMorning1.jpg
-Er arbeitet nachts||heWorkNight1.jpg
-Sie spielen nachmittags|They play in the afternoon|
-Sie sieht abends fern||sheTvEvening1.jpg
+他早上在工作^tā zǎo shàng zài gōng zuò||heWorkMorning1.jpg
+他晚上在工作^tā wǎn shàng zài gōng zuò||heWorkNight1.jpg
+他们下午在玩^tā men xià wǔ zài wán|They play in the afternoon|
+她晚上在看电视^tā wǎn shàng zài kàn diàn shì||sheTvEvening1.jpg
 ===
-Wo arbeiten Sie?|Where do you work?|
-Ich arbeite in einem Park||iWorkPark1.jpg
-Ich arbeite in einem Krankenkaus||iWorkHospital1.jpg
-Ich arbeite an einer Schule||iWorkSchool1.jpg
-Ich arbeite in einem Restaurant||iWorkRestaurant1.jpg
+你在哪里工作?^nǐ zài nǎlǐ gōng zuò?|Where do you work?|
+我在一个公园工作^wǒ zài yīgè gōng yuán gōng zuò||iWorkPark1.jpg
+我在一个医院工作^wǒ zài yīgè yī yuàn gōng zuò||iWorkHospital1.jpg
+我在一个学校工作^wǒ zài yīgè xué xiào gōng zuò||iWorkSchool1.jpg
+我在一个餐厅工作^wǒ zài yīgè cān tīng gōng zuò||iWorkRestaurant1.jpg
 ===
-Wann arbeiten Sie?|When do you work?|
-Ich arbeite morgens||iWorkMorning1.jpg
-Ich arbeite nachmittags||iWorkAfternoon1.jpg
-Ich arbeite nachts||iWorkNight1.jpg
+你什么时候工作?^nǐ shén me shí hòu gōng zuò?|When do you work?|
+我早上工作^wǒ zǎo shàng gōng zuò||iWorkMorning1.jpg
+我下午工作^wǒ xià wǔ gōng zuò||iWorkAfternoon1.jpg
+我晚上工作^wǒ wǎn shàng gōng zuò||iWorkNight1.jpg
 ===
-Er trägt Socken und Schuhe||heShoesSocks1.jpg
-Er trägt Schuhe, aber keine Socken||heShoesNoSocks1.jpg
-Ich trage einen Anzug und eine Krawatte||iSuitTie1.jpg
-Ich trage einen Anzug, aber keine Krawatte||iSuitNoTie1.jpg
+他穿着袜子和鞋子^tā chuān zhe wà zi hé xié zi||heShoesSocks1.jpg
+他穿着鞋子，但没有穿袜子^tā chuān zhe xié zi, dàn méi yǒu chuān wà zi||heShoesNoSocks1.jpg
+我穿着西装，打着领带^wǒ chuān zhe xī zhuāng, dǎ zhe lǐng dài||iSuitTie1.jpg
+我穿着西装，但没有打领带^wǒ chuān zhe xī zhuāng, dàn méi yǒu dǎ lǐng dài||iSuitNoTie1.jpg
 ===
-Er hat ein Ei, aber er isst es nicht||heHoldEgg1.jpg
-Er hat ein Ei und er isst es||boyEatEgg1.jpg
-Das Mädchen hat ein Buch, aber sie liest es nicht||girlHoldBook1.jpg
-Das Mädchen hat ein Buch und sie liest es||girlReadBook1.jpg
+他有一个鸡蛋，但他不在吃它^tā yǒu yī gè jī dàn, dàn tā bùzài chī tā||heHoldEgg1.jpg
+他有一个鸡蛋，他在吃它^tā yǒu yī gè jī dàn, tā zài chī tā||boyEatEgg1.jpg
+那个女孩有一本书，但她不在读它^nà gè nǚ hái yǒu yī běn shū, dàn tā bù zài dú tā||girlHoldBook1.jpg
+那个女孩有一本书，她在读它^nà gè nǚ hái yǒu yī běn shū, tā zài dú tā||girlReadBook1.jpg
 ===
-Trägt du Socken und Schuhe?|Are you wearing socks and shoes?|
-Ich trage Socken, aber ich trage keine Schuhe||iWearSocks1.jpg
-Hast du Brüder und Schwestern|Do you have brothers and sisters?|
-Ja. Ich habe zwei Brüder und zwei Schwestern|Yes. I have 2 brothers and 2 sisters.|
-Haben Sie einen Mantel und einen Hut?|Do you have a coat and a hat?|
-Ich habe einen Mantel, aber keinen Hut||coat1.jpg
+你穿着袜子和鞋子吗?^nǐ chuān zhe wà zi hé xié zi ma?|Are you wearing socks and shoes?|
+我穿着袜子，但我没有穿鞋子^wǒ chuān zhe wà zi, dàn wǒ méi yǒu chuān xié zi||iWearSocks1.jpg
+你有没有哥哥弟弟姐姐妹妹?^nǐ yǒu méi yǒu gē ge dìdi jiě jie mèi mei?|Do you have brothers and sisters?|
+是的。我有两个哥哥和两个姐姐^shì de. wǒ yǒu liǎng gè gē ge hé liǎng gè jiě jie|Yes. I have 2 (older) brothers and 2 (older) sisters.|
+你有大衣和帽子吗?^nǐ yǒu dà yī hé mào zi ma?|Do you have a coat and a hat?|
+我有一件大衣，但没有帽子^wǒ yǒu yī jiàn dà yī, dàn méi yǒu mào zi||coat1.jpg
 ===
-Wann trinken Sie Kaffee?||whenCoffee1.jpg
-Ich trinke morgens Kaffee|I drink coffee in the morning|
-Ich trinke abends Kaffee|I drink coffee in the evening|
+你什么时候喝咖啡?^nǐ shén me shí hòu hē kā fēi?||whenCoffee1.jpg
+我早上喝咖啡^wǒ zǎo shàng hē kā fēi|I drink coffee in the morning|
+我晚上喝咖啡^wǒ wǎn shàng hē kā fēi|I drink coffee in the evening|
 ===
-Er liest vor dem Schlafengehen||heReadBed1.jpg
-Er trinkt Kaffee vor der Arbeit||heCofeeWork1.jpg
-Sie liest nach dem Mittagessen|She reads after lunch|
-Sie trinken Kaffee nach dem Abendessen|They drink coffee after dinner|
+他睡前读书^tā shuì qián dú shū||heReadBed1.jpg
+他工作前喝咖啡^tā gōng zuò qián hē kā fēi||heCofeeWork1.jpg
+她午饭后读书^tā wǔ fàn hòu dú shū|She reads after lunch|
+他们晚饭后喝咖啡^tā men wǎn fàn hòu hē kā fēi|They drink coffee after dinner|
 ===
-Wann liest du?|When do you read?|
-Ich lese vor dem Schlafengehen||iReadBed1.jpg
-Wann isst du?|When do you eat?|
-Ich esse nach der Arbeit||iEatAfterWork1.jpg
+你什么时候读书?^nǐ shén me shí hòu dú shū?|When do you read?|
+我睡前读书^wǒ shuì qián dú shū||iReadBed1.jpg
+你什么时候吃饭?^nǐ shén me shí hòu chī fàn?|When do you eat?|
+我工作后吃饭^wǒ gōng zuò hòu chī fàn||iEatAfterWork1.jpg
 ===
-fünfzehn Krawatten|15 ties|
-vierzehn Tassen|14 cups|
-dreizehn Eier||13Eggs1.jpg
-sechzehn Gürtel|16 belts|
+十三个鸡蛋^shí sān gè jī dàn||13Eggs1.jpg
+十四个杯子^shí sì gè bēi zi|14 cups|
+十五条领带^shí wǔ tiáo lǐng dài|15 ties|
+十六条皮带^shí liù tiáo pí dài|16 belts|
 ===
-siebzehn Teller|17 plates|
-achtzehn Bälle|18 balls|
-neunzehn Blumen|19 flowers|
-zwagzig Bücher|20 books|
+十七个盘子^shí qī gè pán zi|17 plates|
+十八个球^shí bā gè qiú|18 balls|
+十九朵花^shí jiǔ duǒ huā|19 flowers|
+二十本书^èr shí běn shū|20 books|
 ===
-dreizehn|13|
-vierzehn|14|
-fünfzehn|15|
-sechzehn|16|
-siebzehn|17|
-achtzehn|18|
-neunzehn|19|
-zwanzig|20|
+十三^shí sān|13|
+十四^shí sì|14|
+十五^shí wǔ|15|
+十六^shí liù|16|
+十七^shí qī|17|
+十八^shí bā|18|
+十九^shí jiǔ|19|
+二十^èr shí|20|
 ===
-Fünfzehn kommt nach vierzehn|15 comes after 14|
-Vierzehn kommt nach dreizehn|13,14|
-Neunzehn kommt vor zwanzig|19,20|
+十四后面是十五^shí sì hòu miàn shì shí wǔ|15 comes after 14|
+十三后面是十四^shí sān hòu miàn shì shí sì|13,14|
+十九前面是二十^shí jiǔ qián miàn shì èr shí|19,20|
 ===
-Wie alt bist du?|How old are you?|
-Ich bin vierzehn Jahre alt||i14Year1.jpg
-Wie alt sind Sie?|How old are you?|
-Ich bin neunzehn Jahre alt||i19Year1.jpg
+你多大?^nǐ duō dà?|How old are you?|
+我十四岁^wǒ shí sì suì||i14Year1.jpg
+你多大?^nǐ duō dà?|How old are you?|
+我十九岁^wǒ shí jiǔ suì||i19Year1.jpg
 ===
-Guten Morgen|Good morning|
-Guten Tag|Good day|
-Guten Abend|Good evening|
-Gute Nacht||goodNight1.jpg
+早上好^zǎo shàng hǎo|Good morning|
+晚上好^wǎn shàng hǎo|Good evening|
+晚安^wǎn ān||goodNight1.jpg
 ===
-Guten Tag, wie geht es euch?||howAreYou1.jpg
-Uns geht es gut||weAreGood1.jpg
+你们好吗?^nǐ men hǎo ma?||howAreYou1.jpg
+我们很好^wǒ men hěn hǎo||weAreGood1.jpg
 ===
-Was machen Sie nachmittags|What do you in the afternoon|
-Ich spiele mit meinem Sohn||iPlaySon1.jpg
-Wo schreiben Sie?|Where do you write?|
-Morgens schreibe ich im Park||iWritePark1.jpg
-Abends schreibe ich im Wohnzimmer||iWriteLivingRoom1.jpg
+你下午做什么?^nǐ xià wǔ zuò shén me?|What do you in the afternoon|
+我和我儿子玩^wǒ hé wǒ ér zi wán||iPlaySon1.jpg
+你在哪里写⋯?^nǐ zài nǎ lǐ xiě⋯?|Where do you write?|
+我早上在公园写⋯^wǒ zǎo shàng zài gōng yuán xiě⋯||iWritePark1.jpg
+我晚上在客厅写⋯^wǒ wǎn shàng zài kè tīng xiě⋯||iWriteLivingRoom1.jpg

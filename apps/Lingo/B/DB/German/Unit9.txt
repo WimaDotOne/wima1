@@ -104,9 +104,9 @@ Ich lese vor dem Schlafengehen||iReadBed1.jpg
 Wann isst du?|When do you eat?|
 Ich esse nach der Arbeit||iEatAfterWork1.jpg
 ===
-fünfzehn Krawatten|15 ties|
-vierzehn Tassen|14 cups|
 dreizehn Eier||13Eggs1.jpg
+vierzehn Tassen|14 cups|
+fünfzehn Krawatten|15 ties|
 sechzehn Gürtel|16 belts|
 ===
 siebzehn Teller|17 plates|

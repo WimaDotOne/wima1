@@ -1,115 +1,115 @@
-zwei Tage|2 days|
-Diese Katze ist zwanzig Tage alt||20DayCat1.jpg
-Diese Baby ist einen Tag alt||1DayBaby1.jpg
-sieben Tage|7 days|
+两天^liǎng tiān|2 days|
+这只猫二十天大^zhè zhǐ māo èr shí tiān dà||20DayCat1.jpg
+这个婴儿一天大^zhè ge yīng ér yī tiān dà||1DayBaby1.jpg
+七天^qī tiān|7 days|
 ===
-Eine Woche hat sieben Tage||week1.jpg
-Ein Monat hat vier Wochen|A week has 4 weeks|
-Ein Jahr hat zwölf Monate||12Months1.jpg
+一个星期有七天^yī gè xīng qī yǒu qī tiān||week1.jpg
+一个月有四个星期^yī gè yuè yǒu sì gè xīng qī|A week has 4 weeks|
+一年有十二个月^yī nián yǒu shí èr gè yuè||12Months1.jpg
 ===
-der Tag|the day|
-die Woche|the week|
-der Monat|the month|
-das Jahr|the year|
+天^tiān|the day|
+星期^xīng qī|the week|
+月^yuè|the month|
+年^nián|the year|
 ===
-Er ist achtzehn Tage alt||he18Day1.jpg
-Er ist achtzehn Wochen alt||he18Week1.jpg
-Er ist achtzehn Monate alt||he18Month1.jpg
-Er ist achtzehn Jahr alt||he18Year1.jpg
+他十八天大^tā shí bā tiān dà||he18Day1.jpg
+他十八个星期大^tā shí bā gè xīng qī dà||he18Week1.jpg
+他十八个月大^tā shí bā gè yuè dà||he18Month1.jpg
+他十八岁^tā shí bā suì||he18Year1.jpg
 ===
-Dieser Tag ist ein Freitag||friday1.jpg
-Dieser Tag ist ein Samstag||weekend1.jpg
-Dieser Tag ist ein Sonntag||weekend1.jpg
+今天是星期五^jīn tiān shì xīng qī wǔ||friday1.jpg
+今天是星期六^jīn tiān shì xīng qī liù||weekend1.jpg
+今天是星期天^jīn tiān shì xīng qī tiān||weekend1.jpg
 ===
-Heute ist Samstag. Ich renne.|Today is Saturday. I am running|
-Heute ist Freitag. Ich arbeite||fridayIWork1.jpg
-Heute ist Sonntag. Ich sehe fern||iTv1.jpg
+今天是星期六. 我在跑步^jīn tiān shì xīng qī liù. wǒ zài pǎo bù|Today is Saturday. I am running|
+今天是星期五. 我在工作^jīn tiān shì xīng qī wǔ. wǒ zài gōng zuò||fridayIWork1.jpg
+今天是星期天. 我在看电视^jīn tiān shì xīng qī tiān. wǒ zài kàn diàn shì||iTv1.jpg
 ===
-Heute ist Sonntag. Sie laufen im Park||theyWalkPark1.jpg
-Heute ist Montag. Wir essen zu Mittag||weLunch1.jpg
-Heute ist Dienstag. Ich kaufe Fische||iBuyFish1.jpg
+今天是星期天. 他们在公园跑步^jīn tiān shì xīng qī tiān. tā men zài gōng yuán pǎo bù||theyWalkPark1.jpg
+今天是星期一. 我们在吃午饭^jīn tiān shì xīng qī yī. wǒ men zài chī wǔ fàn||weLunch1.jpg
+今天是星期二. 我在买鱼^jīn tiān shì xīng qī èr. wǒ zài mǎi yú||iBuyFish1.jpg
 ===
-Montag|Monday|
-Dienstag|Tuesday|
-Mittwoch|Wednesday|
-Donnerstag|Thursday|
-Freitag|Friday|
-Samstag|Saturday|
-Sonntag|Sunday|
+星期一^xīng qī yī|Monday|
+星期二^xīng qī èr|Tuesday|
+星期三^xīng qī sān|Wednesday|
+星期四^xīng qī sì|Thursday|
+星期五^xīng qī wǔ|Friday|
+星期六^xīng qī liù|Saturday|
+星期天^xīng qī tiān|Sunday|
 ===
-Wir spielen ein Spiel||wePlayGame1.jpg
-Ich spiele ein Spiel||iPlayGame1.jpg
-Die Mädchen spielen ein Spiel||girlsPlayGame1.jpg
-Die Jungen spielen ein Spiel||boysPlayGame1.jpg
+我们在玩游戏^wǒ men zài wán yóu xì||wePlayGame1.jpg
+我在玩游戏^wǒ zài wán yóu xì||iPlayGame1.jpg
+那些女孩们在玩游戏^nà xiē nǚ hái men zài wán yóu xì||girlsPlayGame1.jpg
+那些男孩们在玩游戏^nà xiē nán hái men zài wán yóu xì||boysPlayGame1.jpg
 ===
-Das Mädchen isst mit ihren Freundinnen||girlsFriend1.jpg
-Der Junge schwimmt mit seinen Freunden||boysSwim1.jpg
-Sie spielen ein Spiel mit ihren Kindern||familyGame1.jpg
-Das Mädchen liest mit ihrem Großvater|The girl read with her grandpa|
+那个女孩和她的朋友一起吃饭^nà gè nǚ hái hé tā de péng yǒu yī qǐ chī fàn||girlsFriend1.jpg
+那个男孩和他的朋友一起游泳^nà gè nán hái hé tā de péng yǒu yī qǐ yóu yǒng||boysSwim1.jpg
+他们和他们的孩子们一起玩游戏^tā men hé tā men de hái zi men yī qǐ wán yóu xì||familyGame1.jpg
+那个女孩和她的外公一起读书^nà gè nǚ hái hé tā de wài gōng yī qǐ dú shū|The girl read with her grandpa (mom's dad)|
 ===
-Mit wem isst du zu Mittag?|Who are eating lunch with?|
-Ich esse mit meiner Schwester zu Mittag||sistersLunch1.jpg
-Mit wem essen Sie zu Abend?|Who are you eating dinner with?|
-Ich esse mit meinem Mann zu Abend||manWomanDinner1.jpg
+你和谁一起吃午饭?^nǐ hé shuí yī qǐ chī wǔ fàn?|Who are eating lunch with?|
+我和我的妹妹一起吃午饭^wǒ hé wǒ de mèimei yī qǐ chī wǔ fàn||sistersLunch1.jpg
+你和谁一起吃晚饭?^nǐ hé shuí yī qǐ chī wǎn fàn?|Who are you eating dinner with?|
+我和我的丈夫一起吃晚饭^wǒ hé wǒ de zhàngfū yī qǐ chī wǎn fàn||manWomanDinner1.jpg
 ===
-Der Junge besucht seine Großmutter in ihrem Haus|The boy visted his grandma in her house|
-Das Mädchen besucht ihre Freundin||girlVisitGirl1.jpg
-Der Mann besucht Moskau||manVisitMoscow1.jpg
-Die Frau besucht Paris||womanVisitParis1.jpg
+那个男孩去看他的外婆^nà gè nán hái qù kàn tā de wài pó|The boy visted his grandma (mom's dad) in her house|
+那个女孩去看她的朋友^nà gè nǚ hái qù kàn tā de péng yǒu||girlVisitGirl1.jpg
+那个男人去莫斯科旅游^nà gè nán rén qù mò sī kē lǚ yóu||manVisitMoscow1.jpg
+那个女人去巴黎旅游^nà gè nǚ rén qù bā lí lǚ yóu||womanVisitParis1.jpg
 ===
-Was machst du?|What are you doing?|
-Ich besuche meine Großmutter im Krankenkaus||iVisitGrandmaHospital1.jpg
-Das ist unser Haus||ourHouse1.jpg
-Das sind unsere Gäste||ourGuests1.jpg
+你在做什么?^nǐ zài zuò shén me?|What are you doing?|
+我去看我的外婆^wǒ qù kàn wǒ de wài pó||iVisitGrandmaHospital1.jpg
+这是我们的房子^zhè shì wǒ men de fáng zi||ourHouse1.jpg
+这些是我们的客人^zhè xiē shì wǒ men de kè rén||ourGuests1.jpg
 ===
-Der Junge besucht seinen Großvater||boyVisitGrandpa1.jpg
-Der Mann und seine Frau besuchen Peking||manWomanVisitBeijing1.jpg
-Die Familie besucht Rom||familyVisitRome1.jpg
-Ich besuche meine Freundinnen||iVisitGirlFriends1.jpg
+那个男孩去看他的外公^nà gè nán hái qù kàn tā de wài gōng||boyVisitGrandpa1.jpg
+那个男人和他的妻子去北京旅游^nà gè nán rén hé tā de qīzi qù běijīng lǚ yóu||manWomanVisitBeijing1.jpg
+那家人去罗马旅游^nà jiārén qù luó mǎ lǚ yóu||familyVisitRome1.jpg
+我去看我的朋友们^wǒ qù kàn wǒ de péng yǒu men||iVisitGirlFriends1.jpg
 ===
-Er ist ein Gast||heIsGuest1.jpg
-Sie sind Gäste||guests1.jpg
-Ich bin kein Gast. Ich arbeite.||waitress1.jpg
+他是客人^tā shì kè rén||heIsGuest1.jpg
+他们是客人^tā men shì kè rén||guests1.jpg
+我不是客人. 我在工作^wǒ bù shì kè rén. wǒ zài gōng zuò||waitress1.jpg
 ===
-Unsere Gäste sind hier|Our guests are here|
-Unsere Gäste sitzen im Wohnzimmer|Our guests sit in living room|
-Wir essen mit unseren Gästen zu Abend||weFriendsDinner1.jpg
-Wir spielen ein spiel mit unseren Gästen||weFriendsPlayGame1.jpg
+我们的客人在这里^wǒ men de kè rén zài zhè lǐ|Our guests are here|
+我们的客人坐在客厅^wǒ men de kè rén zuò zài kè tīng|Our guests sit in living room|
+我们和客人一起吃晚饭^wǒ men hé kè rén yī qǐ chī wǎn fàn||weFriendsDinner1.jpg
+我们和客人一起玩游戏^wǒ men hé kè rén yī qǐ wán yóu xì||weFriendsPlayGame1.jpg
 ===
-Willkommen in Deutschland!|Welcome to Germany|
-Willkommen in unserem Hotel!||welcomeHotel1.jpg
-Willkommen in unserem Haus!||welcomeHouse1.jpg
-Willkommen in unserem Restaurant!||welcomeRestaurant1.jpg
-Herzlich willkommen in unserem Haus|Welcom to our house|
-Vielen Dank|Thank you|
+欢迎来中国^huān yíng lái zhōng guó|Welcome to Germany|
+欢迎光临^huān yíng guāng lín||welcomeHotel1.jpg
+欢迎来我们家^huān yíng lái wǒ men jiā||welcomeHouse1.jpg
+欢迎光临^huān yíng guāng lín||welcomeRestaurant1.jpg
+欢迎来我们家^huān yíng lái wǒ men jiā|Welcom to our house|
+非常感谢^fēi cháng gǎn xiè|Thank you very much|
 ===
-Sie probieren das Brot||theyTasteBread1.jpg
-Die Frau probiert den Reis||womanTasteRice1.jpg
-Die Frau riecht am Kaffee||womanSmellCoffee1.jpg
-Der Mann riecht an der Blume||manSmellFlower1.jpg
+他们在尝面包^tā men zài cháng miàn bāo||theyTasteBread1.jpg
+那个女人在尝米饭^nà gè nǚ rén zài cháng mǐ fàn||womanTasteRice1.jpg
+那个女人在闻咖啡^nà gè nǚ rén zài wén kā fēi||womanSmellCoffee1.jpg
+那个男人在闻花^nà gè nán rén zài wén huā||manSmellFlower1.jpg
 ===
-Die Blumen riechen gut||flowersSmellGood1.jpg
-Die Socken riechen schlecht|The socks smell bad|
-Das Brot schmeckt gut||breadTasteGood1.jpg
-Die Milch schmeckt schlecht||milkTasteBad1.jpg
+那束花很好闻^nà shù huā hěn hǎo wén||flowersSmellGood1.jpg
+那双袜子很难闻^nà shuāng wàzi hěn nán wén|The socks smell bad|
+那个面包很好吃^nà gè miàn bāo hěn hào chī||breadTasteGood1.jpg
+那个牛奶很难喝^nà gè niú nǎi hěn nán hē||milkTasteBad1.jpg
 ===
-Das riecht schlecht||itSmellBad1.jpg
-Das riecht gut||itSmellGood1.jpg
-Das schmeckt gut||itTasteGood1.jpg
-Das schmeckt schlecht||itTasteBad1.jpg
+它很难闻^tā hěn nán wén||itSmellBad1.jpg
+它很好闻^tā hěn hǎo wén||itSmellGood1.jpg
+它很好吃^tā hěn hào chī||itTasteGood1.jpg
+它很难吃^tā hěn nán chī||itTasteBad1.jpg
 ===
-vier Finger|4 fingers|
-zehn Zehen|10 toes|
-drei Hände|3 hands|
-ein Fuß||foot1.jpg
-eine Hand||hand1.jpg
+四个手指^sì gè shǒu zhǐ|4 fingers|
+十个脚趾^shí gè jiǎo zhǐ|10 toes|
+三只手^sān zhī shǒu|3 hands|
+一只脚^yī zhǐ jiǎo||foot1.jpg
+一只手^yī zhī shǒu||hand1.jpg
 ===
-ein Park im Frühling||parkSpring1.jpg
-eine Stadt im Sommer|a city in summer
-ein Baum im Herbst||treeAutumn1.jpg
-ein Haus im Winter||houseWinter1.jpg
+一个春天的公园^yī gè chūn tiān de gōng yuán||parkSpring1.jpg
+一个夏天的城市^yī gè xià tiān de chéng shì|a city in summer
+一棵秋天的树^yī kē qiū tiān de shù||treeAutumn1.jpg
+一个冬天的房子^yī gè dōng tiān de fáng zi||houseWinter1.jpg
 ===
-der Frühling||spring1.jpg
-der Sommer||summer1.jpg
-der Herbst||autumn1.jpg
-der Winter||winter1.jpg
+春天^chūn tiān||spring1.jpg
+夏天^xià tiān||summer1.jpg
+秋天^qiū tiān||autumn1.jpg
+冬天^dōng tiān||winter1.jpg
