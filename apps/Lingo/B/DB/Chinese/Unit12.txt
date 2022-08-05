@@ -1,7 +1,7 @@
-Der Junge wacht auf||boyWakeUp1.jpg
-Der Mann weckt seinen Freund auf|The man wakes up his friend|
-Der Mann weckt seine Frau auf||manWakeWife1.jpg
-Das Mädchen wacht auf||girlWakeUp1.jpg
+那个男孩醒了^nàgè nánhái xǐngle||boyWakeUp1.jpg
+那个男人叫醒他的朋友^nàgè nánrén jiào xǐng tā de péngyǒu|The man wakes up his friend|
+那个男人叫醒他的妻子^nàgè nánrén jiào xǐng tā de qīzi||manWakeWife1.jpg
+那个女孩醒了^nàgè nǚhái xǐngle||girlWakeUp1.jpg
 ===
 Der Junge wacht auf||boyWakeUp2.jpg
 Das Mädchen wacht auf||girlWakeUp2.jpg

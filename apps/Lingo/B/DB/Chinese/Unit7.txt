@@ -117,7 +117,7 @@
 我叫Sabine^wǒ jiào Sabine||girlIAm1.jpg
 很高兴见到你^hěn gāo xìng jiàn dào nǐ|Nice to meet you|
 你好. 你叫什么名字?^nǐ hǎo. nǐ jiào shén me míng zì?|Hello. What's your (formal) name?|
-我叫Herr Weber^wǒ jiào Herr Weber||manIAm1.jpg
+我叫Weber^wǒ jiào Weber||manIAm1.jpg
 很高兴见到你^hěn gāo xìng jiàn dào nǐ||niceMeetYou1.jpg
 ===
 拜拜^bái bái| Bye (informal)|

@@ -1,121 +1,120 @@
-Er spricht||manSpeak1.jpg
-Sie spricht|She is speaking|
+他说^tā shuō||manSpeak1.jpg
+她说^tā shuō|She is speaking|
 ===
-Das Mädchen schreibt Deutsch||girlWriteGerman1.jpg
-Die Frau liest Englisch||womanReadEnglish1.jpg
-Der Junge schreibt Arabisch||boyWriteArabic1.jpg
-Der Mann liest Chinesisch||manReadChinese1.jpg
+那个女孩在写德文^nà gè nǚ hái zài xiě dé wén||girlWriteGerman1.jpg
+那个女人在读英文^nà gè nǚ rén zài dú yīng wén||womanReadEnglish1.jpg
+那个男孩在写阿拉伯文^nà gè nán hái zài xiě ā lā bó wén||boyWriteArabic1.jpg
+那个男人在读中文^nà gè nán rén zài dú zhōng wén||manReadChinese1.jpg
 ===
-Er schreibt Arabisch||heWriteArabic1.jpg
-Sie schreibt Chinesisch||sheWriteChinese1.jpg
-Er spricht Arabisch||heSpeakArabic1.jpg
+他在写阿拉伯文^tā zài xiě ā lā bó wén||heWriteArabic1.jpg
+她在写中文^tā zài xiě zhōng wén||sheWriteChinese1.jpg
+他说阿拉伯语^tā shuō ā lā bó yǔ||heSpeakArabic1.jpg
 ===
-Die Frau spricht Deutsch||womanSpeakGerman1.jpg
-Der Mann spricht Englisch||manSpeakEnglish1.jpg
-Das Mädchen spricht Englisch||girlSpeakEnglish1.jpg
+那个女人说德语^nà gè nǚ rén shuō dé yǔ||womanSpeakGerman1.jpg
+那个男人说英语^nà gè nán rén shuō yīng yǔ||manSpeakEnglish1.jpg
+那个女孩说英语^nà gè nǚ hái shuō yīng yǔ||girlSpeakEnglish1.jpg
 ===
-Dieses Mädchen ist aus Japan||girlFromJapan1.jpg
-Dieser Junge ist aus Deutschland||boyFromGermany1.jpg
-Diese Frau ist aus Russland||womanFromRussia1.jpg
-Dieser Mann ist aus Australien||manFromAustralia1.jpg
+这个女孩来自日本^zhè ge nǚ hái lái zì rì běn||girlFromJapan1.jpg
+这个男孩来自德国^zhè ge nán hái lái zì dé guó||boyFromGermany1.jpg
+这个女人来自俄罗斯^zhè ge nǚ rén lái zì è luó sī||womanFromRussia1.jpg
+这个男人来自澳大利亚^zhè ge nán rén lái zì ào dà lì yà||manFromAustralia1.jpg
 ===
-Männer und Frauen sind Menschen||human1.jpg
-Hunde und Pferde sind Tiere||dogsHorses1.jpg
+男人和女人是人^nán rén hé nǚ rén shì rén||human1.jpg
+狗和马是动物^gǒu hé mǎ shì dòng wù||dogsHorses1.jpg
 ===
-Das ist ein Tier||animal1.jpg
-Das ist ein Mensch||aHuman1.jpg
-Das sind Tiere||animals1.jpg
-Das sind Menschen|They are humans|
+这是一个动物^zhè shì yī gè dòng wù||animal1.jpg
+这是一个人^zhè shì yī gè rén||aHuman1.jpg
+这些是动物^zhè xiē shì dòng wù||animals1.jpg
+这些是人^zhè xiē shì rén|They are humans|
 ===
-In Ägypten spricht man Arabish||egyptArabic1.jpg
-In China spricht man Chinesisch||chinaChinese1.jpg
-In Deutschland spricht man Deutsch||germanyGerman1.jpg
-In Australien spricht man Englisch||australiaEnglish1.jpg
+埃及人说阿拉伯语^āi jí rén shuō ā lā bó yǔ||egyptArabic1.jpg
+中国人说中文^zhōng guó rén shuō zhōng wén||chinaChinese1.jpg
+德国人说德语^dé guó rén shuō dé yǔ||germanyGerman1.jpg
+澳大利亚人说英语^ào dà lì yà rén shuō yīng yǔ||australiaEnglish1.jpg
 ===
-Dieser Mensch ist aus China. Sie spricht Chinesisch||chineseWoman1.jpg
-Dieses Tier ist aus China. Es spricht kein Chinesisch||panda1.jpg
-Dieser Mensch ist aus Australien. Er spricht Englisch||manFromAustralia1.jpg
-Dieses Tier ist aus Australien. Es spricht kein Englisch||kangaroo1.jpg
+这个人来自中国。她会说中文^zhè ge rén lái zì zhōng guó. tā huì shuō zhōng wén||chineseWoman1.jpg
+这个动物来自中国。它不说中文^zhè ge dòng wù lái zì zhōng guó. tā bù shuō zhōng wén||panda1.jpg
+这个人来自澳大利亚。他说英语^zhè ge rén lái zì ào dà lì yà. tā shuō yīng yǔ||manFromAustralia1.jpg
+这个动物来自澳大利亚。它不说英语^zhè ge dòng wù lái zì ào dà lì yà. tā bù shuō yīng yǔ||kangaroo1.jpg
 ====
-Ich spreche Chinesisch||chineseWoman2.jpg
-Ich spreche Arabisch||arabicMan1.jpg
-Ich spreche Englisch||americanMan1.jpg
-Ich spreche Deutsch||germanWoman1.jpg
+我说中文^wǒ shuō zhōng wén||chineseWoman2.jpg
+我说阿拉伯语^wǒ shuō ā lā bó yǔ||arabicMan1.jpg
+我说英语^wǒ shuō yīng yǔ||americanMan1.jpg
+我说德语^wǒ shuō dé yǔ||germanWoman1.jpg
 ===
-Sprechen Sie Arabisch?|Do you speak Arabic?|
-Ja. Ich spreche Arabisch||arabicMan1.jpg
-Spichst du Chinesisch?|Do you speak Chinese?|
-Nein. Ich spreche kein Chinesisch.||arabicMan1.jpg
+你说阿拉伯语吗?^nǐ shuō ā lā bó yǔ ma?|Do you speak Arabic?|
+是的, 我说阿拉伯语^shì de, wǒ shuō ā lā bó yǔ||arabicMan1.jpg
+你说中文吗?^nǐ shuō zhōng wén ma?|Do you speak Chinese?|
+不, 我不说中文^bù, wǒ bù shuō zhōng wén||arabicMan1.jpg
 ===
-Entschuldigen Sie, sprechen Sie Chinesisch?|Excuse me, do you speak Chinese?|
-Ja. Ich spreche Chinesisch||chineseWoman3.jpg
-Entschuldigen Sie|Excuse me|
-Sprechen Sie Englisch?||rushHour1.jpg
-Ja. Ich spreche Englisch||rushHour2.jpg
+你说中文吗?^nǐ shuō zhōng wén ma?|Do you speak Chinese?|
+是的, 我说中文^shì de, wǒ shuō zhōng wén||chineseWoman3.jpg
+你说英语吗?^nǐ shuō yīng yǔ ma?||rushHour1.jpg
+是的，我说英语^shì de, wǒ shuō yīng yǔ||rushHour2.jpg
 ===
-zehn Gürtel|10 belts|
-zwanzig Tassen |20 cups|
-dreißig Bälle|30 balls|
-vierzig Teller|40 cups|
-fünfzig Kravatten|50 ties|
-sechzig Hüte|60 hats|
+十条皮带^shí tiáo pí dài|10 belts|
+二十个杯子^èr shí gè bēizi|20 cups|
+三十个球^sān shí gè qiú|30 balls|
+四十个盘子^sì shí gè pán zi|40 cups|
+五十条领带^wǔ shí tiáo lǐngdài|50 ties|
+六十个帽子^liù shí gè màozi|60 hats|
 ===
-zehn|10
-zwanzig|20
-dreißig|30
-vierzig|40
-fünfzig|50
-sechzig|60
+十^shí|10
+二十^èr shí|20
+三十^sān shí|30
+四十^sì shí|40
+五十^wǔ shí|50
+六十^liù shí|60
 ===
-einundzwanzig|21|
-zweiundzwanzig|22|
-dreiundzwanzig|23|
-vierundzwanzig|24|
-fünfundzwanzig|25|
+二十一^èr shí yī|21|
+二十二^èr shí èr|22|
+二十三^èr shí sān|23|
+二十四^èr shí sì|24|
+二十五^èr shí wǔ|25|
 ===
-vierunddreißig|34
-fünfunddreißig|35
-sechsunddreißig|36
-siebenunddreißig|37
-achtunddreißig|38
-neununddreißig|39
+三十四^sān shí sì|34
+三十五^sān shí wǔ|35
+三十六^sān shí liù|36
+三十七^sān shí qī|37
+三十八^sān shí bā|38
+三十九^sān shí jiǔ|39
 ===
-vierundvierzig|44
-fünfundvierzig|45
-sechsundvierzig|46
-siebenundvierzig|47
-achtundvierzig|48
-neunundvierzig|49
+四十四^sì shí sì|44
+四十五^sì shí wǔ|45
+四十六^sì shí liù|46
+四十七^sì shí qī|47
+四十八^sì shí bā|48
+四十九^sì shí jiǔ|49
 ===
-Wie alt sind Sie?|How old are you?|
-Wie alt ist er?|How old is he?|
-Wie alt bist du?|How old are you?|
-Ich bin fünfunddreißig Jahre alt|I'm 35|
+他们多大了?^tā men duō dà le?|How old are you?|
+他多大了?^tā duō dà le?|How old is he?|
+你多大了?^nǐ duō dà le?|How old are you?|
+我三十五岁^wǒ sān shí wǔ suì|I'm 35|
 ===
-Wie viele Teller haben wir?||howManyPlates1.jpg
-Wir haben vierundzwanzig| We have 24|
-Wie viele Schüsseln haben wir?||howManyBows1.jpg
-Wir haben fünfundvierzig| We have 45|
-Wie viele Gäste haben wir?||howManyGuest1.jpg
+我们有多少个盘子?^wǒ men yǒu duō shǎo gè pán zi?||howManyPlates1.jpg
+我们有二十四个^wǒ men yǒu èr shí sì gè| We have 24|
+我们有多少个碗?^wǒ men yǒu duō shǎo gè wǎn?||howManyBows1.jpg
+我们有四十五个^wǒ men yǒu sì shí wǔ gè| We have 45|
+我们有多少个客人?^wǒ men yǒu duō shǎo gè kè rén?||howManyGuest1.jpg
 ===
-Unterrichten Sie Deutsch?|Do you teach German?|
-Ich unterrichte Englisch||iTeachEnglish1.jpg
-Er unterrichtet Arabisch||heTeachArabic1.jpg
-Sie unterrichtet Chinesisch||sheTeachChinese1.jpg
+你教德语吗?^nǐ jiào dé yǔ ma?|Do you teach German?|
+我教英语^wǒ jiào yīng yǔ||iTeachEnglish1.jpg
+他教阿拉伯语^tā jiào ā lā bó yǔ||heTeachArabic1.jpg
+她教中文^tā jiào zhōng wén||sheTeachChinese1.jpg
 ===
-Er unterrichtet die Mädchen in Deutsch||heTeachGirlsGerman1.jpg
-Sie unterrichtet die Jungen in Englisch||sheTeachBoysEnglish1.jpg
-Sie unterrichtet die Mädchen in Chinesisch|She teaches the girls Chinese|
+他在教那些女孩们德语^tā zài jiào nà xiē nǚ hái men dé yǔ||heTeachGirlsGerman1.jpg
+她在教那些男孩们英语^tā zài jiào nà xiē nán hái men yīng yǔ||sheTeachBoysEnglish1.jpg
+她在教那些女孩们中文^tā zài jiào nà xiē nǚ hái men zhōng wén|She teaches the girls Chinese|
 ===
-Wir lernen Deutsch||weLearnGerman1.jpg
-Sie lernen Englisch||sheLearnEnglish1.jpg
-Ich lerne Chinesisch||iLearnChinese1.jpg
-Er lernt Arabisch|He is learning Arabic|
+我们在学习德语^wǒ men zài xué xí dé yǔ||weLearnGerman1.jpg
+她在学习英语^tā zài xué xí yīng yǔ||sheLearnEnglish1.jpg
+我在学习中文^wǒ zài xué xí zhōng wén||iLearnChinese1.jpg
+他在学习阿拉伯语^tā zài xué xí ā lā bó yǔ|He is learning Arabic|
 ===
-Ihr lernt Englisch|You are learning English|
-Sie unterrichten Arabisch|You are teaching Arabic|
-Wir lernen Arabisch|We are learning Arabic|
+你在学习英语^nǐ zài xué xí yīng yǔ|You are learning English|
+你在教阿拉伯语^nǐ zài jiào ā lā bó yǔ|You are teaching Arabic|
+我们在学习阿拉伯语^wǒ men zài xué xí ā lā bó yǔ|We are learning Arabic|
 ===
-Wer ist dein Lehrer?|Who is your teacher?|
-Frau Li ist meine Lehrerin||pointChineseWomanTeacher1.jpg
-Herr Haddad ist mein Lehrer||pointArabicManTeacher1.jpg
+谁是你的老师?^shuí shì nǐ de lǎo shī?|Who is your teacher?|
+李女士是我的老师^lǐ nǚ shì shì wǒ de lǎo shī||pointChineseWomanTeacher1.jpg
+Haddad先生是我的老师^Haddad xiān shēng shì wǒ de lǎo shī||pointArabicManTeacher1.jpg
