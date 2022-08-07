@@ -63,7 +63,7 @@ Papa ist in der Küche, weil er kocht||manInKitchen1.jpg
 Warum wäschst Mama den Hund?|Why does mama wash the dog?|
 Mama wäschst den Hund, weil er schmutzig ist||womanWashDog1.jpg
 Warum trinkst du Wasser?|Why do you drink water?|
-Ich trinke Wazzer, weil ich Durst habe||iDrinkWater1.jpg
+Ich trinke Wasser, weil ich Durst habe||iDrinkWater1.jpg
 ===
 Warum bist du im Badezimmer?|Why are you bathroom?|
 Ich bin im Badezimmer, weil ich mir die Hände wasche||iWashHandBathroom1.jpg

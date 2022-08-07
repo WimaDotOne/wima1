@@ -3,140 +3,139 @@
 那个男人叫醒他的妻子^nàgè nánrén jiào xǐng tā de qīzi||manWakeWife1.jpg
 那个女孩醒了^nàgè nǚhái xǐngle||girlWakeUp1.jpg
 ===
-Der Junge wacht auf||boyWakeUp2.jpg
-Das Mädchen wacht auf||girlWakeUp2.jpg
-Der Mann wacht auf||manWakeUp1.jpg
-Die Frau wacht auf||womanWakeUp1.jpg
+那个男孩醒了^nàgè nánhái xǐngle||boyWakeUp2.jpg
+那个女孩醒了^nàgè nǚhái xǐngle||girlWakeUp2.jpg
+那个男人醒了^nàgè nánrén xǐngle||manWakeUp1.jpg
+那个女人醒了^nàgè nǚrén xǐngle||womanWakeUp1.jpg
 ===
-Der Mann weckt den Jungen auf||manWakeBoy1.jpg
-Die Frau weckt das Mädchen auf||womanWakeGirl1.jpg
+那个男人叫醒那个男孩^nàgè nánrén jiào xǐng nàgè nánhái||manWakeBoy1.jpg
+那个女人叫醒那个女孩^nàgè nǚrén jiào xǐng nàgè nǚhái||womanWakeGirl1.jpg
 ===
-Ich wasche das Hemd|I wash my shirt|
-Er wäscht die Hose|He washes the pants|
-Er wäscht das Auto||heWashCar1.jpg
-Sie wäscht den Pullover|She washes the sweater|
+我在洗衬衫^wǒ zài xǐ chènshān|I wash my shirt|
+他在洗裤子^tā zài xǐ kùzi|He washes the pants|
+他在洗小轿车^tā zài xǐ xiǎo jiàochē||heWashCar1.jpg
+她在洗毛衣^tā zài xǐ máoyī|She washes the sweater|
 ===
-Ich wasche meine Socken|I wash my socks|
-Sie waschen ihr Auto||theyWashCar1.jpg
-Sie wäscht ihren Rock|She washes her skirt|
-Er wäscht sein T-Shirt|He washes his t-shirt|
+我在洗我的袜子^wǒ zài xǐ wǒ de wàzi|I wash my socks|
+他们在洗他们的小轿车^tāmen zài xǐ tāmen de xiǎo jiàochē||theyWashCar1.jpg
+她在洗她的裙子^tā zài xǐ tā de qúnzi|She washes her skirt|
+他在洗他的T恤衫^tā zài xǐ tā de tī xùshān|He washes his t-shirt|
 ===
-Das Mädchen wäscht sich das Gesicht||girlWashFace1.jpg
-Die Frau wäscht sich das Gesicht||womanWashFace1.jpg
-Ihre Gesichter sind lila und orange||facesPurpleOrange1.jpg
+那个女孩在洗脸^nàgè nǚhái zài xǐliǎn||girlWashFace1.jpg
+那个女人在洗脸^nàgè nǚrén zài xǐliǎn||womanWashFace1.jpg
+他们的脸是紫色的和橙色的^tāmen de liǎn shì zǐsè de hé chéngsè de||facesPurpleOrange1.jpg
 ===
-Die Frau wäscht sich die Haare||womanWashHair1.jpg
-Ich wasche mir die Hände||iWashHands1.jpg
-Der Mann wäscht sich das Gesicht||manWashFace1.jpg
+女人在洗头发^nǚrén zài xǐ tóu fǎ||womanWashHair1.jpg
+我在洗手^wǒ zài xǐshǒu||iWashHands1.jpg
+那个男人在洗脸^nàgè nánrén zài xǐliǎn||manWashFace1.jpg
 ===
-Der Ball ist auf seinem Finger||ballOnFinger1.jpg
-Der Ball ist auf seinem Gesicht||ballOnFace1.jpg
-Der Ball ist auf seinem Fuß||ballOnFoot1.jpg
+那个球在他的手指上^nàgè qiú zài tā de shǒuzhǐ shàng||ballOnFinger1.jpg
+那个球在他的脸上^nàgè qiú zài tā de liǎn shàng||ballOnFace1.jpg
+那个球在他的脚上^nàgè qiú zài tā de jiǎo shàng||ballOnFoot1.jpg
 ===
-Die Katze ist trocken|The cat is dry|
-Die Hemden sind trocken||shirtsDry1.jpg
-Die Straße ist nass||streetWet1.jpg
-Die Hunde sind nass||dogsWet1.jpg
+那只猫是干的^nà zhǐ māo shì gàn de|The cat is dry|
+那些衬衫是干的^nàxiē chènshān shì gàn de||shirtsDry1.jpg
+那个街道是湿的^nàgè jiēdào shì shī de||streetWet1.jpg
+那些狗是湿的^nàxiē gǒu shì shī de||dogsWet1.jpg
 ===
-Ihre Haare sind nass||herHairWet1.jpg
-Die Pferde sind nass||horsesWet1.jpg
-Ihre Haare sind trocken||herHairDry1.jpg
-Die Pferde sind trocken||horsesDry1.jpg
+她的的头发是湿的^tā de de tóufǎ shì shī de||herHairWet1.jpg
+那匹马是湿的^nà pǐ mǎ shì shī de||horsesWet1.jpg
+她的头发是干的^tā de tóufǎ shì gàn de||herHairDry1.jpg
+那匹马是干的^nà pǐ mǎ shì gàn de||horsesDry1.jpg
 ===
-Das Hemd ist sauber||shirtClean1.jpg
-Die Socken sind schmutzig|The socks are dirty|
-Ihr Gesicht ist schmutzig||herFaceDirty1.jpg
-Sein Gesicht ist sauber||hisFaceClean1.jpg
+那件衬衫是干净的^nà jiàn chènshān shì gānjìng de||shirtClean1.jpg
+那些袜子是脏的^nàxiē wàzi shì zàng de|The socks are dirty|
+她的脸是脏的^tā de liǎn shì zàng de||herFaceDirty1.jpg
+他的脸是干净的^tā de liǎn shì gānjìng de||hisFaceClean1.jpg
 ===
-Wo ist Mama?|Where is mama?|
-Sie ist im Badezimmer||womanInBathroom1.jpg
-Wo ist Papa?|Where is papa?|
-Er ist in der Küche||manInKitchen1.jpg
+妈妈在哪里？^māma zài nǎlǐ?|Where is mama?|
+她在浴室^tā zài yùshì||womanInBathroom1.jpg
+爸爸在哪里？^bàba zài nǎlǐ?|Where is papa?|
+他在厨房^tā zài chúfáng||manInKitchen1.jpg
 ===
-Warum wäschst du dir die Hände?|Why do you wash your hands?|
-Ich wasche mir die Hände, weil sie schmutzig sind|I wash my hands because they are dirty|
-Warum trägst du einen Pullover?|Why do you wear a sweater?|
-Ich trage einen Pullover, weil mir kalt ist.||iSweaterCold1.jpg
+你为什么洗手？^nǐ wèishéme xǐshǒu?|Why do you wash your hands?|
+我洗手是因为它们是脏的^wǒ xǐshǒu shì yīnwèi tāmen shì zàng de|I wash my hands because they are dirty|
+你为什么穿毛衣？^nǐ wèishéme chuān máoyī?|Why do you wear a sweater?|
+我穿毛衣因为我冷^wǒ chuān máoyī yīnwèi wǒ lěng||iSweaterCold1.jpg
 ===
-Warum ist Papa in der Küche?|Why is papa in the kitchen?|
-Papa ist in der Küche, weil er kocht||manInKitchen1.jpg
-Warum wäschst Mama den Hund?|Why does mama wash the dog?|
-Mama wäschst den Hund, weil er schmutzig ist||womanWashDog1.jpg
-Warum trinkst du Wasser?|Why do you drink water?|
-Ich trinke Wazzer, weil ich Durst habe||iDrinkWater1.jpg
+爸爸为什么在厨房里面？^bàba wèishéme zài chúfáng lǐmiàn?|Why is papa in the kitchen?|
+爸爸在厨房里面是因为他在做饭^bàba zài chúfáng lǐmiàn shì yīnwèi tā zài zuò fàn||manInKitchen1.jpg
+妈妈为什么洗那只狗？^māma wèishéme xǐ nà zhǐ gǒu?|Why does mama wash the dog?|
+妈妈洗那只狗是因为它是脏的^māma xǐ nà zhǐ gǒu shì yīnwèi tā shì zàng de||womanWashDog1.jpg
+你为什么喝水？^nǐ wèi shé yāo hè shuǐ?|Why do you drink water?|
+我喝水是因为我渴^wǒ hē shuǐ shì yīnwèi wǒ kě||iDrinkWater1.jpg
 ===
-Warum bist du im Badezimmer?|Why are you bathroom?|
-Ich bin im Badezimmer, weil ich mir die Hände wasche||iWashHandBathroom1.jpg
-Warum wäschst du dir die Hände?|Why do you wash your hand?|
-Ich wasche mir die Hände, weil sie schmutzig sind.|I wash my hands because they are dirty|
+你为什么在洗手间？^nǐ wèishéme zài xǐshǒujiān?|Why are you bathroom?|
+我在洗手间是因为我在洗手^wǒ zài xǐshǒujiān shì yīnwèi wǒ zài xǐshǒu||iWashHandBathroom1.jpg
+你为什么洗手？^nǐ wèishéme xǐshǒu?|Why do you wash your hand?|
+我洗手是因为它们是脏的^wǒ xǐshǒu shì yīnwèi tāmen shì zàng de|I wash my hands because they are dirty|
 ===
-die Zahnbürste||toothbrush1.jpg
-die Zahnbürste||toothbrush2.jpg
-die Zahnpasta||toothpaste1.jpg
-die Zahnpasta||toothpaste2.jpg
-die Zähne||teeth1.jpg
+牙刷^yáshuā||toothbrush1.jpg
+牙刷^yáshuā||toothbrush2.jpg
+牙膏^yágāo||toothpaste1.jpg
+牙膏^yágāo||toothpaste2.jpg
+牙齿^yáchǐ||teeth1.jpg
 ===
-die Bürste||hairbrush1.jpg
-die Bürste||hairbrush2.jpg
-die Seife||soap1.jpg
-das Handtuch|hand towel|
-das Handtuch||handTowel1.jpg
+梳子^shūzi||hairbrush1.jpg
+梳子^shūzi||hairbrush2.jpg
+肥皂^féizào||soap1.jpg
+毛巾^máojīn|hand towel|
+毛巾^máojīn||handTowel1.jpg
 ===
-Der Mann putzt sich die Zähne||manBrushTeeth1.jpg
-Die Frau bürstet sich die Haare||womanBrushHair1.jpg
-Die Jungen putzen sich die Zähne||boysBrushTeeth1.jpg
-Die Mädchen bürsten sich die Haare||girlsBrushHair1.jpg
+那个男人在刷牙^nàgè nánrén zài shuāyá||manBrushTeeth1.jpg
+那个女人在梳头发^nàgè nǚrén zài shū tóufǎ||womanBrushHair1.jpg
+那些男孩们在刷牙^nàxiē nánháimen zài shuāyá||boysBrushTeeth1.jpg
+那些女孩们在梳头发^nàxiē nǚháimen zài shū tóufǎ||girlsBrushHair1.jpg
 ===
-Ich putze mir die Zähne||iBrushTeeth1.jpg
-Sie bürstet sich die Haare||sheBrushHair1.jpg
-Sie waschen sich die Hände||theyWashHands1.jpg
-Er putzt sich die Zähne||heBrushTeeth1.jpg
+我在刷牙^wǒ zài shuāyá||iBrushTeeth1.jpg
+她在梳头发^tā zài shū tóufǎ||sheBrushHair1.jpg
+他们在洗手^tāmen zài xǐshǒu||theyWashHands1.jpg
+他在刷牙^tā zài shuāyá||heBrushTeeth1.jpg
 ===
-Sie bürstet das Pferd mit einer Bürste||sheBrushHorse1.jpg
-Sie waschen sich die Hände mit Seife||theyWashHandSoap1.jpg
-Ich putze mir die Zähne mit einer Zahnbürste||iBrushTeeth2.jpg
+他们用肥皂洗手^tāmen yòng féizào xǐshǒu||theyWashHandSoap1.jpg
+我用牙刷刷牙^wǒ yòng yáshuā shuāyá||iBrushTeeth2.jpg
 ===
-Die mutter weckt ihre Tochter auf||womanWakeDaughter1.jpg
-Der Vater wäscht sich das Gesicht||manWashFace2.jpg
-Die Tochter bürstet sich die Haare||girlBrushHair1.jpg
-Ihr Bruder putzt sich die Zähne||boyBrushTeeth1.jpg
+那个母亲叫醒女儿^nàgè mǔqīn jiào xǐng nǚ'ér||womanWakeDaughter1.jpg
+那个父亲在洗脸^nàgè fùqīn zài xǐliǎn||manWashFace2.jpg
+那个女儿在梳头^nàgè nǚ'ér zài shūtóu||girlBrushHair1.jpg
+她的哥哥在刷牙^tā de gēge zài shuāyá||boyBrushTeeth1.jpg
 ===
-Ich trinke Kaffee nach dem Abendessen|I drink coffee after dinner|
-Ich wasche mir die Hände vor dem Mittagessen|I wash hand before lunch|
-Ich putze mir die Zähne nach dem Frühstück|I brush teeth after breakfast|
+我晚饭后喝咖啡^wǒ wǎnfàn hòu hē kāfēi|I drink coffee after dinner|
+我午饭前洗手^wǒ wǔfàn qián xǐshǒu|I wash hand before lunch|
+我早饭后刷牙^wǒ zǎofàn hòu shuāyá|I brush teeth after breakfast|
 ===
-das Kissen||pillow1.jpg
-das Kissen||pillow2.jpg
-das Betttuch||bedsheet1.jpg
-das Betttuch||bedsheet2.jpg
-die Decke||blanket1.jpg
-die Decke||blanket2.jpg
+枕头^zhěntou||pillow1.jpg
+枕头^zhěntou||pillow2.jpg
+被单^bèidān||bedsheet1.jpg
+被单^bèidān||bedsheet2.jpg
+毛毯^bèidān||blanket1.jpg
+毛毯^bèidān||blanket2.jpg
 ===
-Das Betttuch ist auf dem Bett||bedsheetOnBed1.jpg
-Das Handtuch ist im Badezimmer||handTowelInBathroom1.jpg
-Die Katze liegt auf dem Kissen||catOnPillow1.jpg
-Ich bin unter der Decke||iUnderBlanket1.jpg
+那张床单在床上面^nà zhāng chuángdān zài chuángshàngmiàn||bedsheetOnBed1.jpg
+那个毛巾在洗手间里面^nàgè máojīn zài xǐshǒujiān lǐmiàn||handTowelInBathroom1.jpg
+那只猫躺在枕头上面^nà zhǐ māo tǎng zài zhěntou shàng miàn||catOnPillow1.jpg
+我在被子下面^wǒ zài bèizi xiàmiàn||iUnderBlanket1.jpg
 ===
-Das rosa Handtuch ist sauber||pinkHandTowelDry1.jpg
-Das rosa Kissen ist sauber||pinkPillowDry1.jpg
-Die rosa Decke ist sauber||pinkBlanketDry1.jpg
-Das rosa Betttuch ist sauber||pinkBedsheetDry1.jpg
+粉红色的毛巾是干净的^fěnhóng sè de máojīn shì gānjìng de||pinkHandTowelDry1.jpg
+粉红色的枕头是干净的^fěnhóng sè de zhěntou shì gānjìng de||pinkPillowDry1.jpg
+粉红色的毛毯是干净的^fěnhóng sè de máotǎn shì gānjìng de||pinkBlanketDry1.jpg
+粉红色的床单是干净的^fěnhóng sè de chuángdān shì gānjìng de||pinkBedsheetDry1.jpg
 ===
-Warum riecht der Hund schlecht?||dogWetDirty1.jpg
-Weil er schmutzig und nass isst||dogWetDirty1.jpg
-Warum riechen die Bettücher gut?||bedsheets1.jpg
-Weil sie sauber sind||bedsheets1.jpg
+那只狗为什么很难闻？^nà zhǐ gǒu wèishéme hěn nán wén?||dogWetDirty1.jpg
+因为它是脏的和湿的^yīnwèi tā shì zàng de hé shī de||dogWetDirty1.jpg
+那些床单为什么很好闻？^nàxiē chuángdān wèishéme hěn hǎo wén?||bedsheets1.jpg
+因为它们是干净的^yīnwèi tāmen shì gānjìng de||bedsheets1.jpg
 ===
-Warum sind die Leute im Esszimmer|Why are people in dinning room?|
-Weil sie zu Abend essen||peopleEatDinning1.jpg
-Warum sind die Leute in der Küche|Why are people in the kitchen?|
-Weil sie Teller waschen||theyWashPlates1.jpg
-Warum sind die Leute im Wohnzimmer?|Why are people in the living room?|
-Weil sie fernsehen||theyWatchTv1.jpg
+人们为什么在餐厅里面？^rénmen wèishéme zài cāntīng lǐmiàn?|Why are people in dinning room?|
+因为他们在吃晚饭^yīnwèi tāmen zài chī wǎnfàn||peopleEatDinning1.jpg
+人们为什么在厨房里面^rénmen wèishéme zài chúfáng lǐmiàn|Why are people in the kitchen?|
+因为他们在洗盘子^yīnwèi tāmen zài xǐ pánzi||theyWashPlates1.jpg
+人们为什么在客厅？^rénmen wèishéme zài kètīng?|Why are people in the living room?|
+因为他们在看电视^yīnwèi tāmen zài kàn diànshì||theyWatchTv1.jpg
 ===
-Was kaufst du?|What are you buying?|
-Ich kaufe Blumen||buyFlowers1.jpg
-Warum kaufst du Blumen?|Why are buying flowers?|
-Ich kaufe Blumen, weil ich heute Nachmittag meine Großmutter besuche||visitGrandma1.jpg
-Wo wohnt deine Großmutter?|Where does your grandma live?|
-Sie wohnt in New York||newYork1.jpg
+你在买什么？^nǐ zài mǎi shénme?|What are you buying?|
+我在买花^wǒ zài mǎi huā||buyFlowers1.jpg
+你为什么买花？^nǐ wèishéme mǎi huā?|Why are buying flowers?|
+我买花是因为我今天下午要去看我的外婆^wǒ mǎi huā shì yīnwèi wǒ jīntiān xiàwǔ yào qù kàn wǒ de wàipó||visitGrandma1.jpg
+你的外婆住在哪里？^nǐ de wàipó zhù zài nǎlǐ?|Where does your grandma live?|
+她住在纽约^tā zhù zài niǔyuē||newYork1.jpg
