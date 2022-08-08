@@ -4,7 +4,7 @@ import { Lang } from "./Lang"
 const Settings = {
   German: [8, 6], // [8,5] means 2 levels with 8 units and 5 units
   French: [],
-  Chinese: [8, 4]
+  Chinese: [8, 5]
 }
 
 export function CalcUnit(lang: string, level: string, lesson: string) {
@@ -76,7 +76,7 @@ export function LevelOptions(lang: string) {
   for(let i=1; i<=n; i++) {
     options.push({
       value: i+"",
-      text: `Level ${i}`
+      text: `Unit ${i}`
     })
   }
   return options

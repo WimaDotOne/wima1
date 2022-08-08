@@ -1,164 +1,164 @@
-Sie trägt eine Sonnenbrille||sheWearSunglasses1.jpg
-Die Frauen haben Regenschirme||wowenHaveUmbrellas1.jpg
-Er hat eine Eintrittskarte||heHasTicket1.jpg
-Die Männer haben eine Leiter||menHaveLadder1.jpg
+她戴着一副墨镜^tā dài zhe yī fù mò jìng||sheWearSunglasses1.jpg
+那些女人们有雨伞^nà xiē nǚ rén men yǒu yǔ sǎn||wowenHaveUmbrellas1.jpg
+他有一张门票^tā yǒu yī zhāng mén piào||heHasTicket1.jpg
+那些男人们有一个梯子^nà xiē nán rén men yǒu yī gè tī zi||menHaveLadder1.jpg
 ===
-der Regenschirm||umbrella1.jpg
-die Eintrittskarte||ticket1.jpg
-die Sonnenbrille||sunglasses1.jpg
-die Leiter||ladder1.jpg
+雨伞^yǔ sǎn||umbrella1.jpg
+门票^mén piào||ticket1.jpg
+墨镜^mò jìng||sunglasses1.jpg
+梯子^tī zi||ladder1.jpg
 ===
-Er braucht Seife||heNeedSoap1.jpg
-Sie braucht eine Leiter||sheNeedLadder1.jpg
-Er braucht ein handtuch|He needs a towel|
-Sie braucht eine Sonnenbrille||sheNeedSunglasses1.jpg
+他需要一个肥皂^tā xū yào yī gè féi zào||heNeedSoap1.jpg
+她需要一个梯子^tā xū yào yī gè tī zi||sheNeedLadder1.jpg
+他需要一条毛巾^tā xū yào yī tiáo máo jīn|He needs a towel|
+她需要一副墨镜^tā xū yào yī fù mò jìng||sheNeedSunglasses1.jpg
 ===
-Er braucht Geld||heNeedMoney1.jpg
-Er hat Geld||heHasMoney1.jpg
-Das Geld ist auf dem Tisch||moneyOnTable1.jpg
+他需要钱^tā xū yào qián||heNeedMoney1.jpg
+他有钱^tā yǒu qián||heHasMoney1.jpg
+钱在桌子上面^qián zài zhuō zi shàng miàn||moneyOnTable1.jpg
 ===
-Sie hat einen Regenschirm||womanHasUmbrella1.jpg
-Sie hat Geld||sheHasMoney1.jpg
-Er braucht einen Regenschirm||heNeedUmbrella1.jpg
+她有一把雨伞^tā yǒu yī bǎ yǔ sǎn||womanHasUmbrella1.jpg
+她有钱^tā yǒu qián||sheHasMoney1.jpg
+他需要一把雨伞^tā xū yào yī bǎ yǔ sǎn||heNeedUmbrella1.jpg
 ===
-Ich habe eine Sonnenbrille||iHaveSunglasses1.jpg
-Ich brauche eine Sonnenbrille||iNeedSunglasses1.jpg
-Brauchen Sie eine Eintrittskarte?||sellTicket1.jpg
+我有一副墨镜^wǒ yǒu yī fù mò jìng||iHaveSunglasses1.jpg
+我需要一副墨镜^wǒ xū yào yī fù mò jìng||iNeedSunglasses1.jpg
+你需要一张门票吗?^nǐ xū yào yī zhāng mén piào ma?||sellTicket1.jpg
 ===
-Brauchst du die Schlüssel?||doYouNeedKeys1.jpg
-Ja. Ich brache die Schlüssel|Yes. I need the keys|
-Brauchst du Geld?||doYouNeedMoney1.jpg
-Ja. Ich brache Geld||yesMoney1.jpg
+你需要钥匙吗?^nǐ xū yào yào shi ma?||doYouNeedKeys1.jpg
+是的, 我需要钥匙^shì de, wǒ xū yào yào shi|Yes. I need the keys|
+你需要钱吗?^nǐ xū yào qián ma?||doYouNeedMoney1.jpg
+是的, 我需要钱^shì de, wǒ xū yào qián||yesMoney1.jpg
 ===
-der Schmuck||jewelry1.jpg
-der Schmuck||jewelry2.jpg
-die Kleidung||clothes1.jpg
-die Kleidung||clothes2.jpg
-das Spielzeug||toy1.jpg
-das Spielzeug||toy2.jpg
+首饰^shǒu shì||jewelry1.jpg
+首饰^shǒu shì||jewelry2.jpg
+衣服^yī fú||clothes1.jpg
+衣服^yī fú||clothes2.jpg
+玩具^wán jù||toy1.jpg
+玩具^wán jù||toy2.jpg
 ===
-das Obst||fruit1.jpg
-das Obst||fruit2.jpg
-das Gemüse||vegetable1.jpg
-das Gemüse||vegetable2.jpg
-das Fleisch||meat1.jpg
-das Fleisch||meat2.jpg
+水果^shuǐ guǒ||fruit1.jpg
+水果^shuǐ guǒ||fruit2.jpg
+蔬菜^shū cài||vegetable1.jpg
+蔬菜^shū cài||vegetable2.jpg
+肉^ròu||meat1.jpg
+肉^ròu||meat2.jpg
 ===
-Er kauft Kleidung||manBuyClothes1.jpg
-Sie kauft Spielzeug||womanBuyToys1.jpg
-Sie kaufen Fleisch||theyBuyMeat1.jpg
-Sie kaufen Gemüse||theyBuyVegetables1.jpg
+他在买衣服^tā zài mǎi yī fú||manBuyClothes1.jpg
+她在买玩具^tā zài mǎi wán jù||womanBuyToys1.jpg
+他们在买肉^tā men zài mǎi ròu||theyBuyMeat1.jpg
+她们在买蔬菜^tā men zài mǎi shū cài||theyBuyVegetables1.jpg
 ===
-Das grüne Auto ist neu||newGreenCar1.jpg
-Das weiße Haus ist alt||oldWhiteHouse1.jpg
-Das rote Haus ist neu||newRedHouse1.jpg
-Das Blaue Auto ist alt||oldBlueCar1.jpg
+绿色的汽车是新的^lǜ sè de qìchē shì xīn de||newGreenCar1.jpg
+白色的房子是旧的^bái sè de fángzi shì jiù de||oldWhiteHouse1.jpg
+红色的房子是新的^hóng sè de fángzi shì xīn de||newRedHouse1.jpg
+蓝色的小轿车是旧的^lán sè de xiǎo jiào chē shì jiù de||oldBlueCar1.jpg
 ===
-ein neuer Fernseher||newTv1.jpg
-ein alter Fernseher||oldTv1.jpg
-ein neues Telefon||newPhone1.jpg
-ein altes Telefon||oldPhone1.jpg
+一个新的电视^yī gè xīn de diàn shì||newTv1.jpg
+一个旧的电视^yī gè jiù de diàn shì||oldTv1.jpg
+一个新的电话^yī gè xīn de diàn huà||newPhone1.jpg
+一个旧的电话^yī gè jiù de diàn huà||oldPhone1.jpg
 ===
-Sie verkauft Blumen||womanSellFlower1.jpg
-Sie verkauft Gemüse||womanSellVegetable1.jpg
-Er verkauft Autos||manSellCar1.jpg
-Er verkauft Obst||manSellFruit1.jpg
+她在卖花^tā zài mài huā||womanSellFlower1.jpg
+她在卖蔬菜^tā zài mài shū cài||womanSellVegetable1.jpg
+他在卖小轿车^tā zài mài xiǎo jiào chē||manSellCar1.jpg
+他在卖水果^tā zài mài shuǐ guǒ||manSellFruit1.jpg
 ===
-Sie verkauft einen altern Hut|She is selling an old hat|
-Sie verkauft ein altes Auto||womanSellOldCar1.jpg
-Ich verkaufe einen neuen Regenschirm|I am selling a new umbrella|
-Ich verkaufe ein neues Auto||iSellNewCar1.jpg
+她在卖一个旧的帽子^tā zài mài yī gè jiù de mào zi|She is selling an old hat|
+她在卖一辆旧的小轿车^tā zài mài yī liàng jiù de xiǎo jiào chē||womanSellOldCar1.jpg
+我在卖一把新的雨伞^wǒ zài mài yī bǎ xīn de yǔ sǎn|I am selling a new umbrella|
+我在卖一个新的小轿车^wǒ zài mài yī gè xīn de xiǎo jiào chē||iSellNewCar1.jpg
 ===
-Dieses Geschäft verkauft alten Schmuck|This shop sells old jewelry|
-Dieses Geschäft verkauft neuen Schmuck||shopNewJewelry1.jpg
-Dieses Geschäft verkauft alte Bücher||shopOldBook1.jpg
-Dieses Geschäft verkauft neue Bücher||shopNewBook1.jpg
+这家店卖旧的首饰^zhè jiā diàn mài jiù de shǒu shì|This shop sells old jewelry|
+这家店卖新的首饰^zhè jiā diàn mài xīn de shǒu shì||shopNewJewelry1.jpg
+这家店卖旧的书^zhè jiā diàn mài jiù de shū||shopOldBook1.jpg
+这家店卖新的书^zhè jiā diàn mài xīn de shū||shopNewBook1.jpg
 ===
-der Supermarkt||supermarket1.jpg
-der Supermarkt||supermarket2.jpg
-der Baumarkt||hardwareStore1.jpg
-der Baumarkt||hardwareStore2.jpg
-das Juweliergeschäft||shopNewJewelry1.jpg
+超市^chāo shì||supermarket1.jpg
+超市^chāo shì||supermarket2.jpg
+五金店^wǔ jīn diàn||hardwareStore1.jpg
+五金店^wǔ jīn diàn||hardwareStore2.jpg
+珠宝店^zhū bǎo diàn||shopNewJewelry1.jpg
 ===
-ein Supermarkt||supermarket1.jpg
-ein Baumarkt||hardwareStore1.jpg
-ein Juweliergeschäft||jewelryStore1.jpg
+一家超市^yī jiā chāo shì||supermarket1.jpg
+一家五金店^yī jiā wǔ jīn diàn||hardwareStore1.jpg
+一家珠宝店^yī jiā zhū bǎo diàn||jewelryStore1.jpg
 ===
-Er kauft in einem Juweliergeschäft ein||manBuyJewelryStore1.jpg
-Sie kauft in in einem Baumarkt ein||womanBuyHardwareStore1.jpg
-Sie kaufen in einem Supermarkt ein||theyBuySupermarket1.jpg
+他在珠宝店买东西^tā zài zhū bǎo diàn mǎi dōng xī||manBuyJewelryStore1.jpg
+她在五金店买东西^tā zài wǔ jīn diàn mǎi dōng xī||womanBuyHardwareStore1.jpg
+他们在超市买东西^tā men zài chāo shì mǎi dōng xī||theyBuySupermarket1.jpg
 ===
-Ich lese ein Buch||iReadBook1.jpg
-Sie verkauft eine Torte||sheSellCake1.jpg
-Er kauft Medikamente||heBuyMedicine1.jpg
-Sie essen Schokolade||theyEatChocolate1.jpg
+我在读一本书^wǒ zài dú yī běn shū||iReadBook1.jpg
+她在卖一个蛋糕^tā zài mài yī gè dàn gāo||sheSellCake1.jpg
+他在买药^tā zài mǎi yào||heBuyMedicine1.jpg
+他们在吃巧克力^tā men zài chī qiǎo kè lì||theyEatChocolate1.jpg
 ===
-Sie kaufen Gemüse in einem Supermarkt||theyBuySupermarket1.jpg
-Du kaufst eine Torte in der Bäckerei|You are buying a cake in bakery|
-Sie kauft Medikamente in einer Apotheke||sheBuyDrugStore1.jpg
-Sie kauft Bücher in der Buchhandlung||sheBuyBookStore1.jpg
+他们在超市买蔬菜^tā men zài chāo shì mǎi shū cài||theyBuySupermarket1.jpg
+你在面包店买蛋糕^nǐ zài miàn bāo diàn mǎi dàn gāo|You are buying a cake in bakery|
+她在药店买药^tā zài yào diàn mǎi yào||sheBuyDrugStore1.jpg
+她在书店买书^tā zài shū diàn mǎi shū||sheBuyBookStore1.jpg
 ===
-Er kauft ein Buck in der Buchhandlung|He is buying in the bookstore|
-Sie verkauft Medikamente in der Apotheke||sheSellDrugStore1.jpg
-Wir verkaufen Schmuck im Juweliergeschäft||weSellJewelryStore1.jpg
-Ich kaufe eine Leiter im Baumarkt||iBuyLadderHardwareStore1.jpg
+他在书店买一本书^tā zài shū diàn mǎi yī běn shū|He is buying a book in the bookstore|
+她在药店卖药^tā zài yào diàn mài yào||sheSellDrugStore1.jpg
+我们在珠宝店卖首饰^wǒ men zài zhū bǎo diàn mài shǒu shì||weSellJewelryStore1.jpg
+我在五金店买一个梯子^wǒ zài wǔ jīn diàn mǎi yī gè tī zi||iBuyLadderHardwareStore1.jpg
 ===
-der Kuchen||plainCake1.jpg
-der Kuchen||plainCake2.jpg
-der Kuchen||plainCake3.jpg
-das Brot||bread1.jpg
-die Torte||cake1.jpg
+蛋糕^dàn gāo||plainCake1.jpg
+蛋糕^dàn gāo||plainCake2.jpg
+蛋糕^dàn gāo||plainCake3.jpg
+面包^miàn bāo||bread1.jpg
+蛋糕^dàn gāo||cake1.jpg
 ===
-Schokolade||chocolate1.jpg
-eine Torte||cake2.jpg
-ein Medikament||aMedicine1.jpg
-eine Apotheke||drugStore1.jpg
-eine Buchhandlung||bookStore1.jpg
-eine Bäckerei||bakery1.jpg
+巧克力^qiǎo kè lì||chocolate1.jpg
+一个蛋糕^yī gè dàn gāo||cake2.jpg
+药^yào||aMedicine1.jpg
+一家药店^yī jiā yào diàn||drugStore1.jpg
+一家书店^yī jiā shū diàn||bookStore1.jpg
+一家面包店^yī jiā miàn bāo diàn||bakery1.jpg
 ===
-ein kaputter Fernseher||brokenTv1.jpg
-ein kaputtes Telefon||brokenPhone1.jpg
-ein kaputtes Spielzeug||brokenToy1.jpg
-ein kaputtes Radio||brokenRadio1.jpg
+一个坏的电视^yī gè huài de diàn shì||brokenTv1.jpg
+一个坏的电话^yī gè huài de diàn huà||brokenPhone1.jpg
+一个坏的玩具^yī gè huài de wán jù||brokenToy1.jpg
+一个坏的收音机^yī gè huài de shōu yīn jī||brokenRadio1.jpg
 ===
-Das Mändchen möchte Schokolade||girlWantChocolate1.jpg
-Der Junge möchte ein Spielzeug||boyWantToy1.jpg
-Die Frau möchte Schmuck||womanWantJewelry1.jpg
-Der Hund möchte das Fleisch||dogWantMeat1.jpg
+那个女孩想要巧克力^nà gè nǚ hái xiǎng yào qiǎo kè lì||girlWantChocolate1.jpg
+那个男孩想要一个玩具^nà gè nán hái xiǎng yào yī gè wán jù||boyWantToy1.jpg
+那个女人想要一件首饰^nà gè nǚ rén xiǎng yào yī jiàn shǒu shì||womanWantJewelry1.jpg
+那只狗想要肉^nà zhǐ gǒu xiǎng yào ròu||dogWantMeat1.jpg
 ===
-Sie möchte einen lila Mantel|She want a purple coat|
-Sie brache einen Mantel|She needs a coat|
-Er möchte eine rote Brille||heWantRedGlasses1.jpg
-Er braucht eine Brille||heNeedGlasses1.jpg
+她想要一件紫色的大衣^tā xiǎng yào yī jiàn zǐ sè de dà yī|She want a purple coat|
+她需要一件大衣^tā xū yào yī jiàn dà yī|She needs a coat|
+他想要一副红色的眼镜^tā xiǎng yào yī fù hóng sè de yǎn jìng||heWantRedGlasses1.jpg
+他需要一副眼镜^tā xū yào yī fù yǎn jìng||heNeedGlasses1.jpg
 ===
-Entschuldigen Sie bitte. Wo ist der Supermarkt?|Excuse me. Where is the supermarket?
-Der supermarket ist in der Nähe der Brücke||supermarketNearBridge1.jpg
-Entschuldigen Sie bitte. Wo ist die Bäckerei?|Excuse me. Where is the bakery?|
-Die Bäckerei ist in der Goethestraße||Goethestreet1.jpg
+那个超市在哪里?^nà gè chāo shì zài nǎ lǐ?|Where is the supermarket?
+那个超市在那个桥附近^nà gè chāo shì zài nà gè qiáo fù jìn||supermarketNearBridge1.jpg
+那个面包店在哪里?^nà gè miàn bāo diàn zài nǎ lǐ?|Where is the bakery?|
+那个面包店在三号路^nà gè miàn bāo diàn zài sān hào lù||Goethestreet1.jpg
 ===
-Ich brauche Medikamente||iNeedMedicine1.jpg
-Die Apotheke ist nahe beim Krankenkaus|The pharmacy is near the hospital|
-Ich möchte ein Buch kaufen. Wo ist die Buchhandlung|I want to buy a book. Where is the book store?|
-Die Buchhandlung ist nahe beim Park||bookStoreNearPark1.jpg
+我需要药^wǒ xū yào yào||iNeedMedicine1.jpg
+药店在医院附近^yào diàn zài yī yuàn fù jìn|The pharmacy is near the hospital|
+我想要买一本书, 书店在哪里?^wǒ xiǎng yāo mǎi yī běn shū. shū diàn zài nǎ lǐ?|I want to buy a book. Where is the book store?|
+那个书店在公园附近^nà gè shū diàn zài gōng yuán fù jìn||bookStoreNearPark1.jpg
 ===
-Er möchte Kuchen, aber er braucht keinen||manWantCake1.jpg
-Sie braucht eine Brille, aber sie möchte keine||womanUseMagnifyingGlass1.jpg
-Er braucht Medikamente, aber er möchte keine||boyNotWantMedicine1.jpg
-Sie möchte Schmuck, aber sie braucht keinen||womanWantJewelry2.jpg
+他想要蛋糕，但他不需要蛋糕^tā xiǎng yào dàn gāo, dàn tā bù xū yào dàn gāo||manWantCake1.jpg
+她需要眼镜，但她不想要眼镜^tā xū yào yǎn jìng, dàn tā bù xiǎng yào yǎn jìng||womanUseMagnifyingGlass1.jpg
+他需要药，但他不想要药^tā xū yào yào, dàn tā bù xiǎng yào yào||boyNotWantMedicine1.jpg
+她想要首饰，但她不需要首饰^tā xiǎng yào shǒu shì, dàn tā bù xū yào shǒu shì||womanWantJewelry2.jpg
 ===
-Warum brachen Sie einen neuen Fernseher?|Why do you need a new TV?
-Weil mein alter Fernseher kaputt ist||brokenTv2.jpg
-Warum brauchen Sie einen neuen Regenschirm?|Why do you need a new umbrella?
-Weil mein alter Regenschirm kaputt ist||brokeUmbrella1.jpg
+你为什么需要一个新的电视?^nǐ wèi shé me xū yào yī gè xīn de diàn shì?|Why do you need a new TV?
+因为我的旧的电视是坏的^yīn wèi wǒ de jiù de diàn shì shì huài de||brokenTv2.jpg
+你为什么需要一把新的雨伞?^nǐ wèi shé me xū yào yī bǎ xīn de yǔ sǎn?|Why do you need a new umbrella?
+因为我的旧的雨伞是坏的^yīn wèi wǒ de jiù de yǔ sǎn shì huài de||brokeUmbrella1.jpg
 ===
-Was kaufst du ein?|What are you buy?|
-Ich kaufe Obst und Schokolade ein||iBuyFruitChocolate1.jpg
-Was kaufen Sie ein?|What are you buying?|
-Ich kaufe Fleisch und Gemüse ein||iBuyMeatVegetable1.jpg
+你在买什么?^nǐ zài mǎi shén me?|What are you buying?|
+我在买水果和巧克力^wǒ zài mǎi shuǐ guǒ hé qiǎo kè lì||iBuyFruitChocolate1.jpg
+你买什么?^nǐ mǎi shén me?|What are you buying?|
+我在买肉和蔬菜^wǒ zài mǎi ròu hé shū cài||iBuyMeatVegetable1.jpg
 ===
-Wo ist der Baumarkt?|Where is the hardware store?
-Der Baumarkt ist nahe bei der Buchhandlung|The hardware store is near the book store|
-Was brauchst du?|What do you need?|
-Ich brache eine neue Leiter||iNeedLadder1.jpg
-Warum brauchst du eine neue Leiter?|Why do you need a new ladder?
-Weil meine alter Leiter kaputt ist||brokenLadder1.jpg
+五金店在哪里?^wǔ jīn diàn zài nǎ lǐ?|Where is the hardware store?
+五金店在书店附近^wǔ jīn diàn zài shū diàn fù jìn|The hardware store is near the book store|
+你需要什么?^nǐ xū yào shén me?|What do you need?|
+我需要一个新的梯子^wǒ xū yào yī gè xīn de tī zi||iNeedLadder1.jpg
+你为什么需要新的梯子?^nǐ wèi shé me xū yào xīn de tī zi?|Why do you need a new ladder?
+因为我的旧的梯子是坏的^yīn wèi wǒ de jiù de tī zi shì huài de||brokenLadder1.jpg

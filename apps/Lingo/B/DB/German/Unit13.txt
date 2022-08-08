@@ -98,7 +98,7 @@ Du kaufst eine Torte in der Bäckerei|You are buying a cake in bakery|
 Sie kauft Medikamente in einer Apotheke||sheBuyDrugStore1.jpg
 Sie kauft Bücher in der Buchhandlung||sheBuyBookStore1.jpg
 ===
-Er kauft ein Buck in der Buchhandlung|He is buying in the bookstore|
+Er kauft ein Buck in der Buchhandlung|He is buying a book in the bookstore|
 Sie verkauft Medikamente in der Apotheke||sheSellDrugStore1.jpg
 Wir verkaufen Schmuck im Juweliergeschäft||weSellJewelryStore1.jpg
 Ich kaufe eine Leiter im Baumarkt||iBuyLadderHardwareStore1.jpg
@@ -151,7 +151,7 @@ Weil mein alter Fernseher kaputt ist||brokenTv2.jpg
 Warum brauchen Sie einen neuen Regenschirm?|Why do you need a new umbrella?
 Weil mein alter Regenschirm kaputt ist||brokeUmbrella1.jpg
 ===
-Was kaufst du ein?|What are you buy?|
+Was kaufst du ein?|What are you buying?|
 Ich kaufe Obst und Schokolade ein||iBuyFruitChocolate1.jpg
 Was kaufen Sie ein?|What are you buying?|
 Ich kaufe Fleisch und Gemüse ein||iBuyMeatVegetable1.jpg
