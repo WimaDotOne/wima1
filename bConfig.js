@@ -2,7 +2,7 @@
 export const bConfig = {
   bRoute1: "/b",
   googleClientId: "147358888044-77a0k6bjhe7b7jee9opjkeseaf9lqir0.apps.googleusercontent.com", //Wima One
-  facebookAppId: "817314545562572", //Bok Choy Login QA
+  facebookAppId: "3384783141810440", //Wima Login
   facebookAppVersion: "v13.0",
   dailyPasscodeSendMax: 1000,
   sendGridSenderEmail: "fan@wima.one",
