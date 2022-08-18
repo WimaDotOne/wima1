@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Div, HLine, LimitWidth } from "../../../../../libs/Core/Core2/fCore2"
 import { LogoBar, Paragraph, SectionHeader, TermHeader } from "../../../../../libs/Core/Core1/fCore1"
 import { useRouter } from "next/router"
+import { Link } from "../../../../../libs/Core/Core1/StripeLogin/F/H/Link/Link"
 
 interface IWimaPrivacyProp {
 }
@@ -15,6 +16,10 @@ export function WimaPrivacy({
   const router = useRouter()
   function onClickLogo() {
     router.push("/")
+  }
+
+  function onClickDeleteLink() {
+    router.push("/apps/Login/Terms/WimaDelete")
   }
 
   return(<>
@@ -47,6 +52,8 @@ export function WimaPrivacy({
       <Paragraph>
         We automatically collect and store certain types of information about your usage of {brand} Services, including information about your interaction with content and services available through {brand} Services. Like many websites, we use "cookies". Examples of automatically collected information includes, but not limited to, timestamps of actions. 
       </Paragraph>
+      <Div height={10} />
+      <Link text="Request User Data Deletion" onClick={onClickDeleteLink}/>
       <SectionHeader text="2. Cookies" />
       <Paragraph>
         We use cookies to provide you with essential features and services. Mainly we use cookies to decide if you are logged in {brand}. You can manage browser cookies through your browser settings.
