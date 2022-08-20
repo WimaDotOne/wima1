@@ -52,5 +52,10 @@ function GetMovics() {
       title: "Ne Zha",
       imageUrl: dvdFolder+"/NeZha.jpg"
     },
+    {
+      id: "LastChristmas",
+      title: "Last Christmas",
+      imageUrl: dvdFolder+"/LastChristmas.jpg"
+    }
   ])
 }
