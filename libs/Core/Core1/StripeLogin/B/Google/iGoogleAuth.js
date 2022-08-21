@@ -1,9 +1,8 @@
 import { OAuth2Client } from "google-auth-library"
-import { bConfig } from "../../../../../../bConfig.js"
 
 async function iGoogleAuth(req, res, next) {
   try {
-    const clientId = bConfig.googleClientId
+    const clientId = process.env.GOOGLE_CLIENT_ID
     if(!clientId) {
       return res.json({ok: false, error: "Google login is not supported"})
     }

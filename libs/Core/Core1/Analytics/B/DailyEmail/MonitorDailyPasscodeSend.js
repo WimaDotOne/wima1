@@ -16,10 +16,10 @@ async function MonitorDailyPasscodeSend() {
   }, {upsert: true, new: true})
   
   if(counter && counter.numPasscodeSend > bConfig.dailyPasscodeSendMax) {
-    const contactMe = process.env.CONTACT_ME
-    if (contactMe) {
+    const monitorEmail = (process.env.A_MONITOR_EMAIL || "").trim()
+    if (monitorEmail) {
       const sg = new SendGrid()
-      sg.SendEmail(contactMe, 
+      sg.SendEmail(monitorEmail, 
         "Email login is frozen",
         `Daily passcode send > ${bConfig.dailyPasscodeSendMax}`)
     }
