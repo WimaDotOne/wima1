@@ -228,27 +228,49 @@ KATE: Santa, can you get down here, please? Please? Thank you.
 CUSTOMER: Santa? Are you there?
 ===
 [m054.jpg
+SISTER: Mum needs you to ring her. Every time she contacts you and gets no response, she contacts me. Yesterday, 17 times. Just do it.
+KATE: Oh, don't just stand there issuing commands. I am an adult.
+SISTER: You're the furthest thing from an adult that I know.
 ---
 [m055.jpg
+KATE: I need time to myself.
+SISTER: I'm asking you to do a single thing, Katarina.
+KATE: It's "Kate"
+SISTER: Whatever. Just ring her. Contact her.
+KATE: Give me one good reason.
 ---
 [m056.jpg
+SISTER: You've missed five doctor's appointments. You've got one tomorrow, which you know. You have to be there. She's also planning a dinner to celebrate my promotion. And you not ringing her is seriously affecting my life.
 ---
 [m057.jpg
+KATE: Will you be inviting Alba to the dinner?
+SISTER: Just ring your mother.
+KATE: Christ.
 ===
 [m058.jpg
+#Later in the day
+Kate: Jenna, it's me. Listen, darling, I'm sorry to leave this message. I just really need a bed for the night. Even possibly a few nights. You're my bestie. Please. I know. Just...
 ---
 [m059.jpg
+SANTA: Hey, Elf! This is my elf. Sant has elves, you know. Little helpers.
 ---
 [m060.jpg
+SANTA: I have nicknamed her "Lazy the Elf" because she appears never to work.
 ---
 [m061.jpg
+KATE: That's me.
+SANTA: She could also be called "Crushing Disappointment the Elf."
 ---
 [m062.jpg
+KATE: I'm just...
+SANTA: "Waste of Payroll the Elf", "Bleeding Me Dry the Elf", "Why on Earth Is She Even Here the Elf".
 ===
 [m063.jpg
+#Kate starts to dust windows
 ---
 [m064.jpg
 ---
+#Through the window, Kate sees a man looking up.
 [m065.jpg
 ---
 [m066.jpg
@@ -258,88 +280,169 @@ CUSTOMER: Santa? Are you there?
 [m068.jpg
 ---
 [m069.jpg
+#Kate is curious.
 ---
 [m070.jpg
 ===
 [m071.jpg
 ---
 [m072.jpg
+#Kate sneaks on the man
 ---
 [m073.jpg
+#Tom is startled when Kate speaks
+KATE: What?
 ---
 [m074.jpg
+TOM: Jesus. Where did you come from?
 ---
 [m074a.jpg
+KATE: What are you looking at?
 ---
 [m075.jpg
+TOM: Look. There. You see it?
 ---
 [m076.jpg
+KATE: Ah.
+TOM: Just above the lip of the roof there.
 ---
 [m077.jpg
+TOM: It's quite unusual to see a bird like that town.
+KATE: Blimey.
 ---
 [m078.jpg
+KATE: Oh, damn it!
 ---
 [m079.jpg
 ---
 [m080.jpg
+TOM: Here. I think it just pooped in your eye.
+KATE: Yeah, I think so.
 ===
 [m081.jpg
+SANTA: Where have you been?
+KATE: Oh. A shitting bird just shat in my eye.
 ---
 [m082.jpg
+SANTA: Is there a bird in here?
+KATE: No. Some bloke was outside the shop playing silly buggers.
+SANTA: Maybe you can focus your attention on the silly buggers inside the shop.
 ---
 [m083.jpg
+#Kate's phone rings and she hurries to anwer it.
+KATE: Oh! My phone. Sorry. Sorry. I'm sorry, Santa.
+KATE: Yeah! Jenna? Yes! Thank you so much. Thank you so much. It'll be with you around 8:00. Okay.
+SANTA: Get off the phone, Elf!
+KATE: Okay, I got to go. Bye.
+KATE: I'm just gonna get the shit out my eye.
+SANTA: Time to sparkle!
 ===
 [m084.jpg
+#Later
 ---
 [m085.jpg
+KATE: There you are, sir. Enjoy your festive hybrid Hanukkah bush.
+CUSTOMER: Merry Christmas to you. Thank you.
+KATE: Thank you. Take care.
 ---
 [m086.jpg
+#Kate's phone rings
+SANTA: Your mother again?
+KATE: I curse the day I was born.
+SANTA: Me too.
+KATE: Ha. Funny.
 ---
 [m087.jpg
+KATE: I installed everything on her phone, from Snapchat to Instagram. It means I can disappoint her in more ways than ever.
+SANTA: Mothers are hell.
+KATE: Oh, yeah.
 ===
 [m088.jpg
+#A cute guy enters the shop
 ---
 [m089.jpg
+KATE: Mm. Hello.
 ---
 [m090.jpg
+SANTA: Leave him to me.
+KATE: Oh?
+SANTA: You'll just flirt with him, and he'll forget to buy anything.
 ---
 [m091.jpg
+CUSTOMER: Hi.
+SANTA: How can I help you?
 ---
 [m092.jpg
+KATE: Wouldn't mind finding him in my stocking.
 ===
 [m093.jpg
+TOM: Hi
+KATE: Ah! Hi. Hi.
 ---
 [m094.jpg
+TOM: I came in to check on your eye.
 ---
 [m095.jpg
+KATE: It's fine.
 ---
 [m096.jpg
+TOM: It's good luck, you know.
+KATE: What is?
+TOM: Getting pooed on by a bird.
+KATE: Bollocks is it.
+TOM: No, seriously.
 ---
 [m097.jpg
+TOM: So I thought I'd see if you fancied a little stroll with me.
 ---
 [m098.jpg
+KATE: Oh, that's my luck, going for a stroll with you?
+TOM: Might be.
+KATE: Look, did you find me on Swiper?
+TOM: Swiper?
+KATE: Yeah. The modern dating application you might have heard of.
+TOM: Oh. So not.
 ---
 [m099.jpg
+KATE: To be honest, you're not really my type.
+TOM: To be honest, you're not really mine.
+KATE: Well, maybe we should just leave it then.
 ---
 [m100.jpg
+TOM: I do like a challenge though.
 ---
 [m101.jpg
+KATE: You considered BASE jumping? Japanese blowfish?
+TOM: No, I have. But right now I'm considering a stroll with you.
+KATE: Consider away, because it's a no.
 ---
 [m102.jpg
+TOM: Is there anything I could improve upon to, say, persuade you?
 ---
 [m103.jpg
+KATE: No.
 ---
 [m104.jpg
+TOM: Any reason in particular?
+KATE: Because you're weird, this is weird, and I don't know you.
 ---
 [m105.jpg
+KATE: So, please, could you just leave, okay? Shoo. Just go. Just go.
+TOM: Hold on. This is weird?
+KATE: Yeah
 ---
 [m106.jpg
+TOM: Weirder than Grabber or Swiper or whatever it's called?
+KATE: Yeah
 ---
 [m107.jpg
+#Kate pushes the door open showing Tom out.
 ---
 [m109.jpg
+TOM: Weirder than total strangers deciding on one Photoshopped image whether or not to engage in immediate foreplay?
 ---
 [m110.jpg
+KATE: I'm busy. You're weird. Good-bye.
 ---
 [m111.jpg
 ---
