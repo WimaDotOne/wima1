@@ -10,7 +10,7 @@ export function WimaContact() {
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
     </Head>
     
-    <Contact email="wimadotone@gmail.com"/>
+    <Contact />
 
   </>)
 }
