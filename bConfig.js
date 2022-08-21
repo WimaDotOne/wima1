@@ -1,7 +1,7 @@
 // Libs
 export const bConfig = {
   bRoute1: "/b",
-  googleClientId: "147358888044-77a0k6bjhe7b7jee9opjkeseaf9lqir0.apps.googleusercontent.com", //Wima One
+  googleClientId: "877773601178-1ec5r64b6p46s6cqg52kpbc8snool9la.apps.googleusercontent.com", //Wima Live Google Login
   facebookAppId: "3384783141810440", //Wima Login
   facebookAppVersion: "v13.0",
   dailyPasscodeSendMax: 1000,
