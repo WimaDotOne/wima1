@@ -1,106 +1,231 @@
 [m001.jpg
+#Organ music playing. Kate is singing
+♪ Let me tell you a secret
+♪ Put it in your heart and keep it
+♪ Something that I want you to know
+♪ Do something for me
 ---
 [m002.jpg
+♪ Listen to my simple story
+♪ And maybe we'll have something to show
+♪ You tell me you're cold on the inside
+♪ How can the outside world
+♪ Be a place that your heart can embrace?
 ---
 [m003.jpg
+♪ Be good to yourself
+♪ 'Cause nobody else
+♪ Has the power to make you happy
+♪ How can I help you?
+♪ Please let me try to
 ---
 [m004.jpg
+#Kate's parents and her sister are among the audience.
+♪ I can heal the pain
+♪ That you're feeling inside
+♪ Whenever you want me
+♪ Know that I will be waiting for the day
+♪ That you say you'll be mine
 ===
 [m005.jpg
 ---
 [m006.jpg
+#"Heal the Pain" by George Michael playing.
 ---
 [m007.jpg
 ---
 [m008.jpg
+
 ---
 [m009.jpg
+MAN: You look like you need another.
+---
+[m010.jpg
+KATE: What are you, psychic?
+MAN: Look deep into my eyes.
 ---
 [m011.jpg
+MAN: Yeah. You're feeling very thirsty.
+KATE: Oh, you are very good.
+MAN: And... Oh, yeah, this is your favorite song.
 ---
 [m012.jpg
+KATE: That was so psychic.
+MAN: No, that was you playing it four times in a row.
+KATE: Well, love me, love George Michael. We're kindred spirits
 ---
 [m013.jpg
+MAN: How so?
+KATE: We're both singers. Uh, we're both famously misunderstood and underappreciated in our time. All that's gonna change, 'cause tomorrow I've got a big audition for the West End.
 ---
 [m014.jpg
+MAN: And you, uh, came into town for it?
+KATE: No, I, uh, moved out on my flatmate today.
+MAN: So, what, you're gonna move back home?
+KATE: Oh, kill me now.
+MAN: Uh-oh. Family issues.
+KATE: Yeah. Let me count the ways. Uh, anger, shame, resentment, embarrassment. And that's just my mum. Do you want to hear about my sister?
+MAN: No.
 ---
 [m015.jpg
+MAN: Okay, so what's your plan?
+KATE: I'll figure it out, you know. It'll be fine. Something will turn up.
+MAN: Or someone.
 ====
 [m016.jpg
+MAN: Morning, gorgeous.
+KATE: This bed, it's like sleeping on a pile of kittens. If that thought's comfortable and not completely horrifying.
 ---
 [m017.jpg
+MAN: I'm gonna dash down the street. I need some ginger root, fresh beets, for my famous breakfast power juice.
+KATE: Cool.
 ---
 [m018.jpg
+MAN: And a cappuccino while you wait.
+KATE: Wow.
+MAN: And lashing of hot water if you fancy a shower.
+KATE: Bliss.
+MAN: I'll be right back.
 ===
 [m019.jpg
+KATE: Ah...
 ---
 [m020.jpg
+#There's a door opening sound. A woman comes in the apartment.
+WOMAN: Surprise! Guess who got back from the conference a day early.
 ---
 [m021.jpg
+WOMAN: God, I've missed you. 
 ---
 [m022.jpg
+#Both screaming
+WOMAN: God, who are you?
 ---
 [m023.jpg
+KATE: I'm the... plumber.
+WOMAN: The plumber?
 ---
 [m024.jpg
+KATE: Look, this isn't what it looks like. I needed a bed for the night, and he...
+WOMAN: Ed.
+KATE: Ed was just so understanding. I have gobs of issues, all right? Accommodation, because I've run out of options because I've really messed up for a number of reasons.
 ---
 [m025.jpg
+KATE: And he...
+WOMAN: Ed.
+KATE: Ed just seemed to get that.
+WOMAN: Did you shag him?
 ---
 [m026.jpg
 ===
 [m027.jpg
+#The woman throws Kate out of the apartment.
 ---
 [m028.jpg
+KATE: Look, you took my bag...
 ---
 [m029.jpg
+KATE: Ow!
 ---
 [m030.jpg
+KATE: Why is my life so shit?
 ===
 [m031.jpg
+#Music playing
+♪ Last Christmas, I gave you my heart
 ---
 [m032.jpg
+♪ But the very next day
+♪ You gave it away
 ---
 [m033.jpg
+♪ This year, to save me from tears
+♪ I'll give it to someone special
 ---
 [m034.jpg
+♪ Last Christmas, I gave you my heart
 ---
 [m035.jpg
+♪ But the very next day
+♪ You gave it away
 ---
 [m036.jpg
+♪ This year, to save me from tears
+♪ I'll give it to someone special
 ---
 [m037.jpg
+♪ Once bitten, and twice shy
+♪ I keep my distance, but you still catch my eye
 ---
 [m038.jpg
+♪ Tell me, baby, do you recognize me?
+♪ Well, it's been a year
+♪ It doesn't surprise me
 ---
 [m039.jpg
+♪ Happy Christmas
+♪ I wrapped it up and sent it
 ===
 [m040.jpg
 ---
 [m041.jpg
+SANTA: Hey, you're early.
 ---
 [m042.jpg
 ---
 [m043.jpg
+SANTA: You are never early. What are you up to?
+KATE: Accommodation issues.
+SANTA: Mm. So the usual. What did you do this time? Fry someone's fish?
 ---
 [m044.jpg
+KATE: No. No, that was last week.
 ---
 [m045.jpg
+SANTA: You are going to run out of friends with sofas. You have been sick. You need to take care of yourself better.
+KATE: Santa, I didn't know you cared.
+SANTA: I don't care. I just don't want you to drop dead in front of the customers. I don't have enough tinsel to cover your corpse. Get to work, Elf.
 ===
+[m046a.jpg
+CUSTOMER: I don't know. You're gonna have to help me decide. They are both so darling.
+KATE: I tell you what. Let's pretend Mary had twins, and you can get both.
+---
+[m046b.jpg
+CUSTOMER: You must just love your job
+KATE: Love it.
+---
 [m046.jpg
+CUSTOMER: It's like being in a dream.
+KATE: All the joys and the love of Christmas every single day of the year.
 ---
-[m047.jpg
+[m046c.jpg
+KATE: Now, which baby is it going to be?
+CUSTOMER: He's gorgeous, but this one... He looks like he's having a lot of fun.
+KATE: Oh, yeah, and a lot more to come.
 ---
-[m048.jpg
+[m047.jpg,m048.jpg
+CUSTOMER: But this one? Look at him. He's more like my idea of...
+KATE: Jesus Christ
+CUSTOMER: You think so too?
 ---
 [m049.jpg
+KATE: Excuse me for just one moment.
+KATE: Santa!
 ---
 [m050.jpg
+SISTER: I need a word.
+KATE: I'm at work. You could've called.
+SISTER: You're not anwering your phone. Remember? I've come from work. I need to get back, so get out here.
 ---
 [m051.jpg
+KATE: That's my analyst. So sorry.
 ---
+#Kate asks the store owner to come down to help.
 [m052.jpg
+KATE: Santa, can you get down here, please? Please? Thank you.
 ---
 [m053.jpg
+CUSTOMER: Santa? Are you there?
 ===
 [m054.jpg
 ---
