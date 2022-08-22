@@ -16,7 +16,7 @@ export async function asyGetUnivAccountInfo(req, skipSocialAccountId) {
 
   if(!skipSocialAccountId) {
     if(!socialAccount || !socialAccount._id) {
-      throw new Error("Cannot find Social account")
+      throw new Error("Cannot find your Sociable account. Have you created a Profile in the My Business section?")
     }
   }
 
