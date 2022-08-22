@@ -3,7 +3,6 @@ import { GENERAL_INPUT_MAX } from "../../../../../../../../bConfig"
 import { ErrorLine, Post2, SelectField1, TextField1, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1 } from "../../../../../../../../libs/Pop/Pop2/fPop2"
-import cl from "./CreateProfile.module.scss"
 import { UniversityAffiliationSelectOptions } from "../../../../../../Enum/UniversityAffiliationEnum"
 import { PopUp } from "../../../../../../../../libs/Pop/Pop1/PopUp/PopUp"
 import { SocialColor } from "../../../../../CSS/SocialColor"
@@ -11,10 +10,12 @@ import { SocialColor } from "../../../../../CSS/SocialColor"
 interface ICreateProfile {
   show: boolean,
   setShow: (show: boolean)=>void
+  setHasProfile: (hasProfile: boolean)=>void
 }
 export function CreateProfile({
   show,
-  setShow
+  setShow,
+  setHasProfile
 }: ICreateProfile) {
 
   const [givenName, setGivenName] = useState<string>("")
@@ -67,6 +68,7 @@ export function CreateProfile({
       major
     }, (res)=>{
       setShow(false)
+      setHasProfile(true)
     })
 
   }

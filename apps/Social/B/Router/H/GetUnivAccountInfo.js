@@ -1,6 +1,6 @@
 import { UniversityAccount } from "../../../../../libs/Core/Core1/bCore1.js"
 
-export async function asyGetUnivAccountInfo(req) {
+export async function asyGetUnivAccountInfo(req, skipSocialAccountId) {
 
   const univAccountId = req.univAccount?._id
   if(!univAccountId) {
@@ -14,8 +14,10 @@ export async function asyGetUnivAccountInfo(req) {
 
   const socialAccount = univAccount.socialAccountId
 
-  if(!socialAccount || !socialAccount._id) {
-    throw new Error("Cannot find Social account")
+  if(!skipSocialAccountId) {
+    if(!socialAccount || !socialAccount._id) {
+      throw new Error("Cannot find Social account")
+    }
   }
 
   const domain = univAccount.domain
@@ -35,6 +37,6 @@ export async function asyGetUnivAccountInfo(req) {
     domain,
     email,
     givenName,
-    socialAccountId: socialAccount._id
+    socialAccountId: !skipSocialAccountId ? socialAccount._id : undefined
   }
 }

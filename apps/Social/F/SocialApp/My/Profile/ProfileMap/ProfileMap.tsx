@@ -110,6 +110,7 @@ export function ProfileMap({
     </div>
   </SocialWindow>
 
-  <CreateProfile show={showPopUp} setShow={setShowShowPopUp} />
+  <CreateProfile show={showPopUp} setShow={setShowShowPopUp} 
+    setHasProfile={setHasProfile}/>
   </>)
 }

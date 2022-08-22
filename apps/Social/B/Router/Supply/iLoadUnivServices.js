@@ -6,7 +6,7 @@ import { PageBreak } from "../H/PageBreak.js"
 export async function iLoadUnivServices(req, res) {
   try{
 
-    const univAccountInfo = await asyGetUnivAccountInfo(req)
+    const univAccountInfo = await asyGetUnivAccountInfo(req, true)
     const domain = univAccountInfo.domain
 
     const services = await SocialService.find({

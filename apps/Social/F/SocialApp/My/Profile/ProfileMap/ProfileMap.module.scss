@@ -35,10 +35,10 @@
   background-color: #122a;
 }
 
-@supports (backdrop-filter: blur(2px)) {
+@supports (backdrop-filter: blur(1px)) {
   .cover {
     background-color: #1224;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
   }
 }
 
