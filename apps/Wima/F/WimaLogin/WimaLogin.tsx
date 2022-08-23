@@ -41,11 +41,13 @@ export function WimaLogin() {
 
   if(facebookAppId) {
     config.facebookAppId = facebookAppId
+    config.useFacebook = true
   } else {
     config.useFacebook = false
   }
   if(googleClientId) {
     config.googleClientId = googleClientId
+    config.useGoogle = true
   } else {
     config.useGoogle = false
   }
@@ -61,11 +63,7 @@ export function WimaLogin() {
 
 function GetLoginConfig() {
   const config = new LoginConfig()
-  config.useFacebook = true
-  config.facebookAppId = bConfig.facebookAppId
   config.facebookAppVersion = bConfig.facebookAppVersion
-  config.useGoogle = true
-  config.googleClientId = bConfig.googleClientId
   config.useEmail = true
   return config
 }
