@@ -40,7 +40,7 @@ export function SocialWindow({
   const socialMenu = SocialMenu(win?.viewId)
 
   return(<>
-    <AppleWindow menu={socialMenu} brand="Social"
+    <AppleWindow menu={socialMenu} brand="Sociable"
       isLeftBarOpen={win?.isOpen}
       setIsLeftBarOpen={win?.setIsOpen}
       viewId={win?.viewId} goToView={goToView}

@@ -14,16 +14,25 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Help &amp; Make Friends" 
-          text1="What do you need? Let people in your university know what you need so they can figure out what services might be useful to provide. Think things one person can help you with."
-          text2="What is your superpower? Let people in your university know what kind of help you can provide to your fellow students. Feel free to volunteer, barter, or charge people a friendly price."
+        <StripeIntroText title="Help & Socialize" 
+          text1="Socialize by offering help. Let people in the university know your superpower that might help others. Feel free to volunteer, barter, or charge your fellow students a friendly fee."
+          text2="Making friends by asking for help. Write down and post the help you need or understand so that your fellow students know what helping-people business they can start."
         />
         <Div height={50} />
       </LimitWidth>
       <DemoImage url="/apps/Social/TutorialImage/College.png" 
         height={400} noShadow/>
-      <Div height={20} />
-      <LimitWidth maxWidth={800} gray>
+
+      <LimitWidth gray maxWidth={800}>
+        <Div height={40} />
+        <StripeIntroText title="Idea behind Sociable" 
+          text1="UW-Madison has a great student organization called GUTS (we're not associated with GUTS), which matches students with volunteering tutors. My favorite program is Conversational English. An international student is matched a with a native speaker to meet 2 hours a week to just hang out. It's a great way to build friendships from different cultures."
+          text2="There are plenty of international students who could use a Conversational English partner, but there is a shortage of volunteering tutors. Sociable puts this online and allow tutors to charge a fee to encourage participation. At last, why stops at tutoring? Any type of face-to-face communication where one helps another has the potential to start a friendship."
+        />
+        <Div height={50} />
+      </LimitWidth>
+
+      <LimitWidth maxWidth={800}>
         <Div height={40} />
         <div className={cl.title}>Ideas or examples of help people might need</div>
         <div className={cl.examples}>
@@ -42,7 +51,7 @@ export function About() {
         </div>
         <Div height={40} />
       </LimitWidth>
-      <LimitWidth maxWidth={800}>
+      <LimitWidth maxWidth={800} gray>
         <Div height={40} />
         <div className={cl.title}>Ideas or examples of help people might be able to provide</div>
         <div className={cl.examples}>
@@ -51,9 +60,9 @@ export function About() {
           <ServiceCard2 name="Book Club" 
             shortDescription="I am available for reading a book together and meet for an afternoon discussion."/>
           <ServiceCard2 name="Math Tutoring"
-            shortDescription="I am a math graduate student. Can help with Math 114 to Math 234 for $10/hour. Math 521,522,531 for free." />
+            shortDescription="I am a math graduate student. Can help with Math 114 to Math 234 for $10/hour. Math 521, 522, 541 for free." />
           <ServiceCard2 name="Senior Advice"
-            shortDescription="I am a senior, Psychology major. Can hang out an hour answering random questions about college life." />
+            shortDescription="I am a senior, Psychology major. Can hang out an hour answering any questions about college life." />
           <ServiceCard2 name="Moving"
             shortDescription="Can help moving for $10/hour." />
           <ServiceCard2 name="Rocket Science" 
