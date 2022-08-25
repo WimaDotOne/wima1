@@ -1,32 +1,32 @@
-¡Hola! || hello1.jpg
-¡Hola! || hello2.jpg
+¡Hola! | Hello | hello1.jpg
+¡Hola! | Hello | hello2.jpg
 ¡Hola! | Hello |
-¡Hola! || hello3.jpg
+¡Hola! | Hello | hello3.jpg
 =====
-der Mann | the man | man1.jpg
-die Frau | the woman | woman1.jpg
-die Frau | the woman |
-der Mann | the man | man2.jpg
+un hombre | a man | man1.jpg
+una mujer | a woman | woman1.jpg
+una mujer | a woman |
+un hombre | a man | man2.jpg
 ====
-das Mädchen | the girl | girl1.jpg
-der Junge | the boy | boy1.jpg
-der Junge | the boy |
-das Mädchen | the girl | girl2.jpg
+una niña | a girl | girl1.jpg
+un niño | a boy | boy1.jpg
+un niño | a boy |
+una niña | a girl | girl2.jpg
 ====
-Das Mädchen isst | The girl is eating | girlEat1.jpg
-Das Mädchen trinkt | The girl is drinking | girlDrink1.jpg
-Der Junge isst | The boy is eating |
-Der Junge trinkt | The boy is drinking | boyDrink1.jpg
+La niña come | The girl is eating | girlEat1.jpg
+La niña bebe | The girl is drinking | girlDrink1.jpg
+El niño come | The boy is eating |
+El niño bebe | The boy is drinking | boyDrink1.jpg
 ====
-Die Frau isst | The woman is eating | womanEat1.jpg
-Die Frau trinkt | The woman is drinking | womanDrink1.jpg
-Der Mann trinkt | The man is drinking | 
-Der Mann isst | The boy is eating | manEat1.jpg
+La mujer come | The woman is eating | womanEat1.jpg
+La mujer bebe | The woman is drinking | womanDrink1.jpg
+El hombre bebe | The man is drinking | 
+El hombre come | The man is eating | manEat1.jpg
 ====
-Das Mädchen isst | The girl is eating | girlEat2.jpg
-Das Mädchen trinkt | The girl is drinking | girlDrink2.jpg
-Der Mann trinkt | The man is drinking | manDrink1.jpg
-Der Mann isst | The boy is eating | manEat2.jpg
+La niña come | The girl is eating | girlEat2.jpg
+La niña bebe | The girl is drinking | girlDrink2.jpg
+El hombre bebe | The man is drinking | manDrink1.jpg
+El hombre come | The man is eating | manEat2.jpg
 ===
 Der Mann rennt | The man is running | manRun1.jpg
 Der Junge rennt | The boy is running | boyRun1.jpg

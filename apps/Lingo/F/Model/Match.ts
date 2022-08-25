@@ -33,7 +33,9 @@ function ReplaceChar(text: string) {
   text = text.split("。").join("")
 
   text = text.split(" ").join("")
-  
+   
+  text = text.split("ñ").join("n")
+
   text = text.split("ä").join("a")
   text = text.split("ö").join("o")
   text = text.split("ü").join("u")
