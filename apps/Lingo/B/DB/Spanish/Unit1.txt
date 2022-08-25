@@ -89,38 +89,38 @@ Ellas comen | They (women) are eating |
 Ella bebe | She is drinking |
 Él corre | He is running | manRun2.jpg
 ===
-Sie rennt | She is running | womanRun3.jpg
-Sie rennen | They are running | childrenRun1.jpg
+Ella corre | She is running | womanRun3.jpg
+Ellas corren | They are running | womenRun.jpg
 Él corre | He is running | manRun3.jpg
 ===
-Er kocht | He is cooking | manCook1.jpg
-Sie kochen | They are cooking | womenCook1.jpg
-Sie kocht | She is cooking | womanCook1.jpg
+Él cocina | He is cooking | manCook1.jpg
+Ellos cocinan | They are cooking | menCook1.jpg
+Ella cocina | She is cooking | womanCook1.jpg
 ===
-Die Frauen schwimmen | The women are swimming | womenSwim1.jpg
-Die Jungen schwimmen | The boys are swimming | boysSwim1.jpg
-Das Mädchen schwimmt | The girl is swimming | girlSwim1.jpg
-Der Mann schwimmt | The man is swimming | manSwim1.jpg
+Las mujeres nadan | The women are swimming | womenSwim1.jpg
+Los niños nadan | The boys are swimming | boysSwim1.jpg
+La niña nada | The girl is swimming | girlSwim1.jpg
+El hombre nada | The man is swimming | manSwim1.jpg
 ===
-Der Mann isst | The man is eating | manEat3.jpg
-Die Männer essen | The men are eating | menEat1.jpg
-Die Männer kochen | The men are cooking | menCook1.jpg
-Der Mann kocht | The man is cooking | manCook2.jpg
+El hombre come | The man is eating | manEat3.jpg
+Los hombres comen| The men are eating | menEat1.jpg
+Los hombres cocinan | The men are cooking | menCook1.jpg
+El hombre cocina | The man is cooking | manCook2.jpg
 ===
-Die Frau schwimmt | The woman is swimming | womanSwim1.jpg
-Die Frau rennt | The woman is running | womanRun1.jpg
-Die Frauen schwimmen | The women are swimming | womenSwim2.jpg
-Die Frauen rennen | The women are running | womenRun2.jpg
+La mujer nada | The woman is swimming | womanSwim1.jpg
+La mujer corre | The woman is running | womanRun1.jpg
+Las mujeres nadan | The women are swimming | womenSwim2.jpg
+Las mujeres corren | The women are running | womenRun2.jpg
 ===
-Sie schreiben | They are writing | theyWrite1.jpg
-Sie schreibt | She is writing | womanWrite1.jpg
-Er Schriebt | He is writing | boyWrite1.jpg
+Ellos escriben | They are writing | theyWrite1.jpg
+Ella escribe | She is writing | womanWrite1.jpg
+Él escribe | He is writing | boyWrite1.jpg
 ===
-Die Mädchen schreiben | The girls are writing | girlsWrite1.jpg
-Das Mädchen schreibt | The girl is writing | girlWrite1.jpg
-Das Mädchen lesen | The girls are reading | girlsRead2.jpg
-Das Mädchen liest | The girl is reading | girlRead3.jpg
+Las niñas escriben | The girls are writing | girlsWrite1.jpg
+La niña escribe | The girl is writing | girlWrite1.jpg
+Las niñas leen | The girls are reading | girlsRead2.jpg
+La niña lee | The girl is reading | girlRead3.jpg
 ===
-Auf Wiedersehen | Good bye | goodBye1.jpg
-Auf Wiedersehen | Good bye | goodBye2.jpg
-Auf Wiedersehen | Good bye |
+¡Adiós! | Good bye | goodBye1.jpg
+¡Adiós! | Good bye | goodBye2.jpg
+¡Adiós! | Good bye |
