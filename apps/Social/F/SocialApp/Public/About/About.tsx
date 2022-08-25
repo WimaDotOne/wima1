@@ -15,8 +15,8 @@ export function About() {
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
         <StripeIntroText title="Help & Socialize" 
-          text1="Socialize by offering help. Let people in the university know your superpower that might help others. Feel free to volunteer, barter, or charge your fellow students a friendly fee."
-          text2="Making friends by asking for help. Write down and post the help you need or understand so that your fellow students know what helping-people business they can start."
+          text1="Socialize by offering help. Let people in your university know your superpower. Feel free to volunteer, barter, or charge your fellow students a friendly fee."
+          text2="Ask for help. Write down the help you need. It lets your fellow students know what helping-people business they can start."
         />
         <Div height={50} />
       </LimitWidth>
@@ -25,9 +25,9 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Idea behind Sociable" 
-          text1="UW-Madison has a great student organization called GUTS (we're not associated with GUTS), which matches students with volunteering tutors. My favorite program is Conversational English. An international student is matched a with a native speaker to meet 2 hours a week to just hang out. It's a great way to build friendships from different cultures."
-          text2="There are plenty of international students who could use a Conversational English partner, but there is a shortage of volunteering tutors. Sociable puts this online and allow tutors to charge a fee to encourage participation. At last, why stops at tutoring? Any type of face-to-face communication where one helps another has the potential to start a friendship."
+        <StripeIntroText title="Conversational English" 
+          text1="UW-Madison has a great student organization called GUTS. It matches students with volunteering tutors. One amazing program is Conversational English. An international student is matched a with a native speaker to meet 2 hours a week and just hang out. It's a great way to build friendship."
+          text2="Sociable allows tutors to charge a fee since Conversational English tutors are among the endangered species. Socable is not only for tutoring. Any kind of helping-people business is encouraged."
         />
         <Div height={50} />
       </LimitWidth>
@@ -37,7 +37,7 @@ export function About() {
         <div className={cl.title}>Ideas or examples of help people might need</div>
         <div className={cl.examples}>
           <NeedCard2 name="Book Club" 
-            shortDescription="I'm reading A Tree Grows in Brooklyn. Does someone who read the book want to meet up for an evening to discuss it?" />
+            shortDescription="I'm reading Ariadne by Jennifer Saint. Does anyone want to read it at the same time and meet up discussing it?" />
           <NeedCard2 name="Conversational English Tutoring" 
             shortDescription="Meet & chat for 2 hours a week with a native English speaker."/>
           <NeedCard2 name="Chinese Tutoring"

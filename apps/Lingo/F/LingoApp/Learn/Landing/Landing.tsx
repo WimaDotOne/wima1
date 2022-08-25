@@ -67,7 +67,7 @@ export function Landing({
       <Div height={30} />
       <StripeIntroText title="Browser support"
         text1="Please use Chrome or Edge in a desktop to get the full speaking and reading functionality."
-        text2="If the browser does not support voice recognition, you can still type in the phrase as a spelling practice. Our voice recognition often can not even recognize native speakers anyway." />
+        text2="If the browser does not support speech or voice recognition, you can still type in the phrase as a spelling practice. Our voice recognition may not even recognize native speakers anyway." />
       <Div height={30} />
     </LimitWidth>
     <Div height={20} />
