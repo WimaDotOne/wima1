@@ -20,6 +20,8 @@ export async function iLoadWords(req, res) {
         isChinese = true
         language="Chinese"
         break
+      case "es-MX":
+        language="Spanish"
       default:
     }
 

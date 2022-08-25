@@ -4,6 +4,7 @@ import { Lang } from "./Lang"
 const Settings = {
   German: [8, 6], // [8,5] means 2 levels with 8 units and 5 units
   French: [],
+  Spanish: [],
   Chinese: [8, 5]
 }
 
@@ -42,6 +43,9 @@ export function LessonOptions(lang: string, level: string) {
     case Lang.French:
       n = Settings.French[index]
       break
+    case Lang.Spanish:
+      n = Settings.Spanish[index]
+      break
     case Lang.Chinese:
       n = Settings.Chinese[index]
       break
@@ -64,10 +68,12 @@ export function LevelOptions(lang: string) {
     case Lang.German:
       n = Settings.German.length || 1
       break
-    case Lang.French: n = 1; 
+    case Lang.French:
       n = Settings.French.length || 1
       break
-    case Lang.Chinese: n = 1; 
+    case Lang.Spanish:
+      n = Settings.Spanish.length || 1
+    case Lang.Chinese:
       n = Settings.Chinese.length || 1
       break
     default: n = 1
@@ -89,6 +95,7 @@ export function LanguageOptions() {
   return [
     { value: "de-DE", text: "German", imgUrl: folder+"germany.svg" },
     { value: "fr-FR", text: "French", imgUrl: folder+"france.svg" },
+    { value: "es-MX", text: "Spanish", imgUrl: folder+"mexico.png" },
     { value: "zh-CN", text: "Chinese", imgUrl: folder+"china.svg" }
   ]
 }

@@ -3,7 +3,7 @@ const Lang = {
   Chinese: "zh-CN",
   German: "de-DE",
   French: "fr-FR",
-  Ukrainian: "uk-UA"
+  Spanish: "es-MX"
 }
 export { Lang }
 
@@ -13,6 +13,7 @@ export function LangName(lang: string) {
     case Lang.Chinese: return "Chinese"
     case Lang.German: return "German"
     case Lang.French: return "French"
+    case Lang.Spanish: return "Spanish"
     default: return ""
   }
 }
