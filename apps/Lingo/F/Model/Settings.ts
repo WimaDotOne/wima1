@@ -73,11 +73,13 @@ export function LevelOptions(lang: string) {
       break
     case Lang.Spanish:
       n = Settings.Spanish.length || 1
+      break
     case Lang.Chinese:
       n = Settings.Chinese.length || 1
       break
     default: n = 1
   }
+
   const options: Array<ISelectOption> = []
   for(let i=1; i<=n; i++) {
     options.push({
