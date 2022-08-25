@@ -28,70 +28,70 @@ La niña bebe | The girl is drinking | girlDrink2.jpg
 El hombre bebe | The man is drinking | manDrink1.jpg
 El hombre come | The man is eating | manEat2.jpg
 ===
-Der Mann rennt | The man is running | manRun1.jpg
-Der Junge rennt | The boy is running | boyRun1.jpg
-Das Mädchen rennt | The girl is running |
-Die Frau rennt | The woman is running | womanRun1.jpg
+El hombre corre | The man is running | manRun1.jpg
+El niño corre | The boy is running | boyRun1.jpg
+La niña corre | The girl is running |
+La mujer corre | The woman is running | womanRun1.jpg
 ===
-Der Mann liest | The man is reading | manRead1.jpg
-Die Frau liest | The woman is reading | womanRead1.jpg
-Der Junge liest | The boy is reading |
-Das Mädchen liest | The girl is reading | girlRead1.jpg
+El hombre lee | The man is reading | manRead1.jpg
+La mujer lee | The woman is reading | womanRead1.jpg
+El niño lee | The boy is reading |
+La niña lee | The girl is reading | girlRead1.jpg
 ===
-Die Frau trinkt | The woman is drinking | womanDrink2.jpg
-Die Frau liest | The woman is reading | womanRead2.jpg
-Die Frau rennt | The woman is running | womanRun2.jpg
-Die Frau isst | The woman is eating | womanEat2.jpg
+La mujer bebe | The woman is drinking | womanDrink2.jpg
+La mujer lee | The woman is reading | womanRead2.jpg
+La mujer corre | The woman is running | womanRun2.jpg
+La mujer come | The woman is eating | womanEat2.jpg
 ===
-Der Junge trinkt | The boy is drinking | boyDrink2.jpg
-Der Junge liest | The boy is reading | boyRead1.jpg
-Der Junge rennt | The boy is running | boyRun2.jpg
-Der Junge isst | The boy is eating | boyEat1.jpg
+El niño bebe | The boy is drinking | boyDrink2.jpg
+El niño lee | The boy is reading | boyRead1.jpg
+El niño corre | The boy is running | boyRun2.jpg
+El niño come | The boy is eating | boyEat1.jpg
 ===
-Das Mädchen trinkt | The girl is drinking | girlDrink3.jpg
-Die Mädchen trinken | The girls are drinking | girlsDrink1.jpg
-Die Jungen essen | The boys are eating |
-Der Junge isst | The boy is eating | boyEat2.jpg
+La niña bebe | The girl is drinking | girlDrink3.jpg
+Las niñas beben | The girls are drinking | girlsDrink1.jpg
+Los niños comen | The boys are eating |
+El niño come | The boy is eating | boyEat2.jpg
 ===
-Die Männer trinken | The men are drinking | menDrink1.jpg
-Der Mann trinkt | The man is drinking | manDrink2.jpg
-Die Mädchen rennen | The girls are running |
-Das Mädchen rennt | The girl is running | girlRun1.jpg
+Los hombres beben | The men are drinking | menDrink1.jpg
+El hombre bebe | The man is drinking | manDrink2.jpg
+Las niñas corren | The girls are running |
+La niña corre | The girl is running | girlRun1.jpg
 ===
-Die Frauen essen | The women are eating | womenEat1.jpg
-Die Frau isst | The woman is eating | womanEat3.jpg
-Die Jungen lesen | The boys are reading | boysRead1.jpg
-Der Junge liest | The boy is reading | boyRead2.jpg
+Las mujeres comen | The women are eating | womenEat1.jpg
+La mujer come | The woman is eating | womanEat3.jpg
+Los niños leen | The boys are reading | boysRead1.jpg
+El niño lee | The boy is reading | boyRead2.jpg
 ===
-Die Frauen lesen | The women are reading | womenRead1.jpg
-Die Männer rennen | The men are running | menRun1.jpg
-Die Männer lesen | The men are reading | menRead1.jpg
-Die Frauen rennen | The women are running | womenRun1.jpg
+Las mujeres leen | The women are reading | womenRead1.jpg
+Los hombres corren | The men are running | menRun1.jpg
+Los hombres leen | The men are reading | menRead1.jpg
+Las mujeres corren | The women are running | womenRun1.jpg
 ===
-Die Frau liest | The woman is reading | womanRead3.jpg
-Die Mädchen lesen | The girls are reading | girlsRead1.jpg
-Das Mädchen liest | The girl is reading | girlRead2.jpg
-Die Frauen lesen | The women are reading | womenRead2.jpg
+La mujer lee | The woman is reading | womanRead3.jpg
+Las niñas leen | The girls are reading | girlsRead1.jpg
+La niña lee | The girl is reading | girlRead2.jpg
+Las mujeres leen | The women are reading | womenRead2.jpg
 ===
-Die Jungen essen | The boys are eating | boysEat1.jpg
-Die Mädchen rennen | The girls are running | girlsRun1.jpg
-Die Frauen trinken | The women are drinking |
-Die Männer lesen | The men are reading | menRead2.jpg
+Los niño comen | The boys are eating | boysEat1.jpg
+Las niñas corren | The girls are running | girlsRun1.jpg
+Las mujeres beben | The women are drinking |
+Los hombres leen | The men are reading | menRead2.jpg
 ===
-Sie trinkt | She is drinking | womanDrink1.jpg
-Er isst | He is eating |
-Sie liest | She is reading | womanRead1.jpg
-Er rennt | He is running | manRun1.jpg
+Ella bebe | She is drinking | womanDrink1.jpg
+Él come | He is eating |
+Ella lee | She is reading | womanRead1.jpg
+Él corre | He is running | manRun1.jpg
 ===
-Sie lesen | They are reading | menRead3.jpg
-Sie lesen | They are reading | theyRead1.jpg
-Sie essen | They are eating |
-Sie trinkt | She is drinking |
-Er rennt | He is running | manRun2.jpg
+Ellos leen | They are reading | menRead3.jpg
+Ellos leen | They are reading | theyRead1.jpg
+Ellas comen | They (women) are eating |
+Ella bebe | She is drinking |
+Él corre | He is running | manRun2.jpg
 ===
 Sie rennt | She is running | womanRun3.jpg
 Sie rennen | They are running | childrenRun1.jpg
-Er rennt | He is running | manRun3.jpg
+Él corre | He is running | manRun3.jpg
 ===
 Er kocht | He is cooking | manCook1.jpg
 Sie kochen | They are cooking | womenCook1.jpg
