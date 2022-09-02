@@ -14,7 +14,7 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Help & Socialize" 
+        <StripeIntroText title="Help each other outside or within your comfort zone" 
           text1="Socialize by offering help. Let people in your university know your superpower. Feel free to volunteer, barter, or charge your fellow students a friendly fee."
           text2="Ask for help. Write down the help you need. It lets your fellow students know what helping-people business they can start."
         />
@@ -25,9 +25,9 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Conversational English" 
-          text1="UW-Madison has a great student organization called GUTS. It matches students with volunteering tutors. One amazing program is Conversational English. An international student is matched a with a native speaker to meet 2 hours a week and just hang out. It's a great way to build friendship."
-          text2="Sociable allows tutors to charge a fee since Conversational English tutors are among the endangered species. Socable is not only for tutoring. Any kind of helping-people business is encouraged."
+        <StripeIntroText title="Inspiration" 
+          text1="UW-Madison has a great student organization called GUTS. It matches students with volunteering tutors. One amazing program is Conversational English. A native English speaker volunteers to meet up with an international student 2 hours a week and just hang out."
+          text2="Conversational English can be a great way to build friendship. The idea of Sociable is inspired by this."
         />
         <Div height={50} />
       </LimitWidth>

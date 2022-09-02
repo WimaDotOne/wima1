@@ -101,7 +101,7 @@ function SocialMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Social", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
-  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How to be Sociable?", "graduationcap"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Tutorial, "How Sociable works", "graduationcap"))
   publicGroup.AddItem(new ItemModel(AppTurn.UniversityLogin, "University Login", "university"))
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 

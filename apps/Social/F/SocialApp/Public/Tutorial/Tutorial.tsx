@@ -6,7 +6,7 @@ export function Tutorial() {
   return(<>
     <SocialWindow>
       <LimitWidth maxWidth={1000}>
-        <AppleNewsHeader1 text1="Tutorial" text2="How to be Sociable?" />
+        <AppleNewsHeader1 text1="Tutorial" text2="How does Sociable work?" />
         <TutorialCore />
         <Div height={150} />
         <AppleWindowBottomBarFill />
@@ -17,29 +17,63 @@ export function Tutorial() {
 
 function TutorialCore() {
   return(<>
-  <StripeSectionHeader text="Sociable use cases by Examples"/>
-  <StripeSubSectionHeader text="Ex 1. Conversational English" />
+  <StripeSectionHeader text="Getting Started"/>
   <StripeParagraph>
-  Fan is an international graduate student at University of Wisconsin at Madison. Rivers, a native English speaker, is an undergraduate student at UW.
+    Step 1. Login in with your university email.
   </StripeParagraph>
   <StripeSubParagraph>
-    Fan creates a profile, adds a need of a Conversational English tutor. He describes that he would like to chat with an English native speaker for 2 hours a week. In return he offers to buy a Starbucks drink or a meal like Chipotle for each meeting.
+    All people you interact with in Sociable should have an email account of your university.
+  </StripeSubParagraph>
+  <StripeParagraph>
+    Step 2. Create a profile.
+  </StripeParagraph>
+  <StripeSubParagraph>
+    People in your university can see your profile when you post a need or service.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    Rivers sees Fan's post and creates a profile, adding a service of Conversational English Tutoring. She describes that she could meet and chat with a non-native speaker for 2 hours a week for 10 weeks during a semester. She would charge $7.5/hour.
+    One does not need a profile to view services, but a profile is required for posting or replying.
+  </StripeSubParagraph>
+  <StripeParagraph>
+    Step 3. Post services that you want to provide.
+  </StripeParagraph>
+  <StripeSubParagraph>
+    Posted "needs" can only be viewed, but cannot be replied. Only posted "services" and "goods" can be replied.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    Fan replies to Rivers' post, hence they get each other's wisc mail for future communications. They meet for 30 minutes to interview each other before agreeing on the tutoring. Rivers occasionally corrects Fan's grammar and pronunciation, but mostly, they are just hanging out and chatting.
+    If you want to charge for your service, simply type the information in the "Price" field. Payment is done in person. Sociable does not handle payment.
+  </StripeSubParagraph>
+  <StripeSubParagraph>
+    If you see blank page of services or needs, that's because no one has posted anything yet.
+  </StripeSubParagraph>
+  <StripeParagraph>
+    Step 4. Reply a service.
+  </StripeParagraph>
+  <StripeSubParagraph>
+    When someone replies a service, both parties will receive emails including the information of the other's email address. The following communications to figure out details (e.g. how to meet up) should be done through emails outside Sociable.
+  </StripeSubParagraph>
+  <StripeSectionHeader text="Sociable use cases by Examples"/>
+  <StripeSubSectionHeader text="Example 1. Conversational English" />
+  <StripeParagraph>
+  Fan is an international graduate student at University of Wisconsin at Madison. Kate, a native English speaker, is an undergraduate student at UW.
+  </StripeParagraph>
+  <StripeSubParagraph>
+    Fan creates a profile, adds a need of a Conversational English tutor. He describes that he would like to chat with an English native speaker for 2 hours a week. In return he offers to buy a coffee or meal for each meeting.
+  </StripeSubParagraph>
+  <StripeSubParagraph>
+    Kate sees Fan's post and creates a profile, adding a service of Conversational English Tutoring. She describes that she could meet and chat with a non-native speaker for 2 hours a week for 10 weeks during a semester. She would charge $7.5/hour.
+  </StripeSubParagraph>
+  <StripeSubParagraph>
+    Fan replies to Kate' post, hence they get each other's wisc mail for future communications. They meet for 30 minutes to interview each other before agreeing on the tutoring. Kate occasionally corrects Fan's grammar and pronunciation, but mostly, they are just hanging out and chatting.
   </StripeSubParagraph>
   <DemoImage url="/apps/Social/TutorialImage/Meet.png" 
     height={350} vPadding={10} noShadow/>
   <StripeSubParagraph>
-    Rivers already spends 4 hours a week tutoring 2 people in Conversational English in a one-to-one format, and still receives replies to her post. So she goes back to her profile and removes her Conversational English service post.
+    Kate already spends 4 hours a week tutoring 2 people in Conversational English in a one-to-one format, and still receives replies to her post. So she goes back to her profile and removes her Conversational English service post.
   </StripeSubParagraph>
   <StripeSubParagraph>
-    Next semester, Rivers agrees to continue to tutor Fan for FREE. In return Fan spends half the meeting time helping Rivers with Calculus.
+    Next semester, Kate agrees to continue to tutor Fan for FREE. In return Fan helps Kate with a Calculus class.
   </StripeSubParagraph>
-  <StripeSubSectionHeader text="Ex 2. Trainer" />
+  <StripeSubSectionHeader text="Example 2. Trainer" />
   <StripeParagraph>
     Hermione majors in Physical Education. Margaret, a Biochemical Engineering major, jogs regularly. James, a Music major, wants to jog at least once a week but lacks motivation. Pomona is a botany professor who wants to exercise more as well.
   </StripeParagraph>
