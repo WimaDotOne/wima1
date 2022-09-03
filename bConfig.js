@@ -46,7 +46,6 @@ export const BookConfig = {
 
 export const SocialConfig = {
   needMaxPerAccount: 10,
-  serviceMaxPerAccount: 10,
   needLoadMax: 10000,
   needPageSize: 300
 }

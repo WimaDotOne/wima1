@@ -37,8 +37,8 @@ export async function iCreateService(req, res) {
     const count = await SocialService.count({
       socialAccountId
     })
-    const maxCount = SocialConfig.serviceMaxPerAccount
-    if(count > maxCount) {
+    const maxCount = SocialConfig.needMaxPerAccount
+    if(count >= maxCount) {
       return res.json({ ok: false, error: `One can create at most ${maxCount} goods or services` })
     }
 
