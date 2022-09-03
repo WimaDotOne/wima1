@@ -48,7 +48,7 @@ export function ServiceList({
   })
 
   const title = isGoods ? "Goods" : "Services"
-
+  const noServiceMessage = isGoods ? "No goods at the moment" : "No services at the moment"
   return(<>
   <SocialWindow>
     <LimitWidth maxWidth={1200}>
@@ -61,20 +61,26 @@ export function ServiceList({
 
     <LimitWidth maxWidth={1200}>
       <Div height={10} />
-      <div className={cl.list}>
       {
-        servicePage.map((service, i)=>
-        <ServiceCard2 name={service.name} key={i}
-          shortDescription={service.shortDescription}
-          price={service.price}
-          onClick={()=>{
-            setSelectedService(service)
-            goDetail()
-          }}
-        />
-        )
+        !pages || !servicePage || pages.length < 1 || servicePage.length < 1 ?
+        <div className={cl.noService}>
+          {noServiceMessage}
+        </div>:
+        <div className={cl.list}>
+        {
+          servicePage.map((service, i)=>
+          <ServiceCard2 name={service.name} key={i}
+            shortDescription={service.shortDescription}
+            price={service.price}
+            onClick={()=>{
+              setSelectedService(service)
+              goDetail()
+            }}
+          />
+          )
+        }
+        </div>
       }
-      </div>
       <Div height={10} />
     </LimitWidth>
   </SocialWindow>

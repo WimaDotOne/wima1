@@ -55,19 +55,25 @@ export function NeedList({
 
     <LimitWidth maxWidth={1200}>
       <Div height={10} />
-      <div className={cl.list}>
       {
-        needsPage.map((need, i)=>
-        <NeedCard2 name={need.name} key={i}
-          shortDescription={need.shortDescription}
-          onClick={()=>{
-            setSelectedNeed(need)
-            goDetail()
-          }}
-        />
-        )
+        !pages || !needsPage || pages.length < 1 || needsPage.length < 1?
+        <div className={cl.noNeed}>
+          No needs posted at the moment.
+        </div>:
+        <div className={cl.list}>
+        {
+          needsPage.map((need, i)=>
+          <NeedCard2 name={need.name} key={i}
+            shortDescription={need.shortDescription}
+            onClick={()=>{
+              setSelectedNeed(need)
+              goDetail()
+            }}
+          />
+          )
+        }
+        </div>
       }
-      </div>
       <Div height={10} />
     </LimitWidth>
   </SocialWindow>
