@@ -1,0 +1,126 @@
+Bonjour | Hello | hello1.jpg
+Bonjour | Hello | hello2.jpg
+Bonjour | Hello |
+Bonjour | Hello | hello3.jpg
+=====
+un homme | a man | man1.jpg
+une femme | a woman | woman1.jpg
+une femme | a woman |
+un homme | a man | man2.jpg
+====
+une fille | a girl | girl1.jpg
+un garçon | a boy | boy1.jpg
+un garçon | a boy |
+une fille | a girl | girl2.jpg
+====
+La fille mange | The girl is eating | girlEat1.jpg
+La fille boit | The girl is drinking | girlDrink1.jpg
+Le garçon mange | The boy is eating |
+Le garçon boit | The boy is drinking | boyDrink1.jpg
+====
+La femme mange | The woman is eating | womanEat1.jpg
+La femme boit | The woman is drinking | womanDrink1.jpg
+L'homme boit | The man is drinking | 
+L'homme mange | The man is eating | manEat1.jpg
+====
+La fille mange | The girl is eating | girlEat2.jpg
+La fille boit | The girl is drinking | girlDrink2.jpg
+L'homme boit | The man is drinking | manDrink1.jpg
+L'homme mange | The man is eating | manEat2.jpg
+===
+L'homme court | The man is running | manRun1.jpg
+Le garçon court | The boy is running | boyRun1.jpg
+La fille court | The girl is running |
+La femme court | The woman is running | womanRun1.jpg
+===
+L'homme lit | The man is reading | manRead1.jpg
+La femme lit | The woman is reading | womanRead1.jpg
+Le garçon lit | The boy is reading |
+La fille lit | The girl is reading | girlRead1.jpg
+===
+La femme boit | The woman is drinking | womanDrink2.jpg
+La femme lit | The woman is reading | womanRead2.jpg
+La femme court | The woman is running | womanRun2.jpg
+La femme mange | The woman is eating | womanEat2.jpg
+===
+Le garçon boit | The boy is drinking | boyDrink2.jpg
+Le garçon lit | The boy is reading | boyRead1.jpg
+Le garçon court | The boy is running | boyRun2.jpg
+Le garçon mange | The boy is eating | boyEat1.jpg
+===
+La fille boit | The girl is drinking | girlDrink3.jpg
+Les filles boivent | The girls are drinking | girlsDrink1.jpg
+Les garçons mangent | The boys are eating |
+Le garçon mange | The boy is eating | boyEat2.jpg
+===
+Les hommes boivent | The men are drinking | menDrink1.jpg
+L'homme boit | The man is drinking | manDrink2.jpg
+Les filles courent | The girls are running |
+La fille court | The girl is running | girlRun1.jpg
+===
+Les femmes mangent | The women are eating | womenEat1.jpg
+La femme mange | The woman is eating | womanEat3.jpg
+Les garçons lisent | The boys are reading | boysRead1.jpg
+Le garçon lit | The boy is reading | boyRead2.jpg
+===
+Les femme lisent | The women are reading | womenRead1.jpg
+Les hommes courent | The men are running | menRun1.jpg
+Les hommes lisent | The men are reading | menRead1.jpg
+Les femmes courent | The women are running | womenRun1.jpg
+===
+La femme lit | The woman is reading | womanRead3.jpg
+Les filles lisent | The girls are reading | girlsRead1.jpg
+La fille lit | The girl is reading | girlRead2.jpg
+Les femmes lisent | The women are reading | womenRead2.jpg
+===
+Les garçons mangent | The boys are eating | boysEat1.jpg
+Les filles courent | The girls are running | girlsRun1.jpg
+Les femmes boivent | The women are drinking |
+Les hommes lisent | The men are reading | menRead2.jpg
+===
+Elle boit | She is drinking | womanDrink1.jpg
+Il mange | He is eating |
+Elle lit | She is reading | womanRead1.jpg
+Il court | He is running | manRun1.jpg
+===
+Ils lisent | They are reading | menRead3.jpg
+Ils lisent | They are reading | theyRead1.jpg
+Elles mangent | They are eating |
+Elle boit | She is drinking |
+Il court | He is running | manRun2.jpg
+===
+Elle court | She is running | womanRun3.jpg
+Elles courent | They are running | girlsRun1.jpg
+Il court | He is running | manRun3.jpg
+===
+Il cuisine | He is cooking | manCook1.jpg
+Elles cuisinent | They are cooking | womenCook1.jpg
+Elle cuisine | She is cooking | womanCook1.jpg
+===
+Les femmes nagent | The women are swimming | womenSwim1.jpg
+Les garçons nagent | The boys are swimming | boysSwim1.jpg
+La fille nage | The girl is swimming | girlSwim1.jpg
+L'homme nage | The man is swimming | manSwim1.jpg
+===
+L'homme mange | The man is eating | manEat3.jpg
+Les hommes mangent | The men are eating | menEat1.jpg
+Les hommes cuisinent | The men are cooking | menCook1.jpg
+L'homme cuisine | The man is cooking | manCook2.jpg
+===
+La femme nage | The woman is swimming | womanSwim1.jpg
+La femme court | The woman is running | womanRun1.jpg
+Les femmes nagent | The women are swimming | womenSwim2.jpg
+Les femmes courent | The women are running | womenRun2.jpg
+===
+Ils écrivent | They are writing | theyWrite1.jpg
+Elle écrit | She is writing | womanWrite1.jpg
+Il écrit | He is writing | boyWrite1.jpg
+===
+Les filles écrivent | The girls are writing | girlsWrite1.jpg
+La fille écrit | The girl is writing | girlWrite1.jpg
+Les filles lisent | The girls are reading | girlsRead2.jpg
+La fille lit | The girl is reading | girlRead3.jpg
+===
+Au revoir | Good bye | goodBye1.jpg
+Au revoir | Good bye | goodBye2.jpg
+Au revoir | Good bye |

@@ -26,7 +26,7 @@ Der Mann isst | The man is eating | manEat1.jpg
 Das Mädchen isst | The girl is eating | girlEat2.jpg
 Das Mädchen trinkt | The girl is drinking | girlDrink2.jpg
 Der Mann trinkt | The man is drinking | manDrink1.jpg
-Der Mann isst | The boy is eating | manEat2.jpg
+Der Mann isst | The man is eating | manEat2.jpg
 ===
 Der Mann rennt | The man is running | manRun1.jpg
 Der Junge rennt | The boy is running | boyRun1.jpg
