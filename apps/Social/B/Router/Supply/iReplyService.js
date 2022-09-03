@@ -26,7 +26,7 @@ export async function iReplyService(req, res) {
       .findById(service2.socialAccountId).populate("socialProfileId")
 
     if(!socialAccount2) {
-      return res.json({ok: false, error: "Cannot find the Social Account for the recipient."})
+      return res.json({ok: false, error: "Cannot find the Sociable Account for the recipient."})
     }
 
     const univAccount2 = await UniversityAccount.findOne({
@@ -67,7 +67,7 @@ export async function iReplyService(req, res) {
 
     sg.SendEmail(
       [email1, email2], 
-      "Social Notification",
+      "Sociable Notification",
       ReplyEmailHtml(givenName1, givenName2, email1,email2, message, receipt)
     )
 
@@ -84,7 +84,7 @@ function ReplyEmailHtml(givenName1, givenName2, email1, email2, message, receipt
 <div style="padding: 10px;">
 ${givenName1} and ${givenName2}
 <br/><br/>
-${givenName1} replied ${givenName2}'s Social post from www.wima.one. Your emails are ${email1} and ${email2}. Please use email for future communication.
+${givenName1} replied ${givenName2}'s Sociable post from www.wima.one. Your emails are ${email1} and ${email2}. Please use email for future communication.
 <br/><br/>
 <div style="background:#96dcf7; padding: 1px 5px; color: white;">
 Message from ${givenName1}

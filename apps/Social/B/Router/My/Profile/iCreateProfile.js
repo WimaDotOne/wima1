@@ -57,11 +57,11 @@ export async function iCreateProfile(req, res) {
     }
 
     if(!socialAccount) {
-      return res.json({ ok: false, error: "Cannot find Social account" })
+      return res.json({ ok: false, error: "Cannot find Sociable account" })
     }
 
     if(socialAccount.socialProfileId) {
-      return res.json({ ok: false, error: "The Social account already has a profile created." })
+      return res.json({ ok: false, error: "The Sociable account already has a profile created." })
     }
 
 

@@ -38,7 +38,7 @@ export async function iSaveService(req, res) {
     if(
       !socialAccountId || !service.socialAccountId ||
       service.socialAccountId.toString() !== socialAccountId.toString()) {
-      return res.json({ ok: false, error: "Service and Social Account do not match" })
+      return res.json({ ok: false, error: "Service and Sociable Account do not match" })
     }
 
     service.name = name

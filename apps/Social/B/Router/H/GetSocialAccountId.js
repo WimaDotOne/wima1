@@ -14,7 +14,7 @@ export async function asyGetSocialAccountId(univAccountId) {
   const socialAccount = univAccount.socialAccountId
 
   if(!socialAccount || !socialAccount._id) {
-    throw new Error("Cannot find Social account")
+    throw new Error("Cannot find Sociable account")
   }
 
   return socialAccount._id

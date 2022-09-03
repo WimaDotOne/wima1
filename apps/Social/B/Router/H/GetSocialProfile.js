@@ -15,17 +15,17 @@ export async function asyGetSocialProfile(univAccountId) {
   const socialAccount = univAccount.socialAccountId
 
   if(!socialAccount || !socialAccount._id) {
-    throw new Error("Cannot find Social account")
+    throw new Error("Cannot find Sociable account")
   }
 
   if(!socialAccount.socialProfileId) {
-    throw new Error("Social account does not have a profile")
+    throw new Error("Sociable account does not have a profile")
   }
 
   const profile = await SocialProfile.findById(socialAccount.socialProfileId)
 
   if(!profile) {
-    throw new Error("Cannot find Social profile")
+    throw new Error("Cannot find Sociable profile")
   }
   return profile
 }

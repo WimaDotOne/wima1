@@ -17,7 +17,7 @@ export async function iDeleteService(req, res) {
     if(
       !socialAccountId || !service.socialAccountId ||
       service.socialAccountId.toString() !== socialAccountId.toString()) {
-      return res.json({ ok: false, error: "Service and Social Account do not match" })
+      return res.json({ ok: false, error: "Service and Sociable Account do not match" })
     }
 
     await service.delete()
