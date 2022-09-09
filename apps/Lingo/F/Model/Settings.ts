@@ -97,7 +97,7 @@ export function LanguageOptions() {
   return [
     { value: "de-DE", text: "German", imgUrl: folder+"germany.svg" },
     { value: "fr-FR", text: "French", imgUrl: folder+"france.svg" },
-    { value: "es-MX", text: "Spanish", imgUrl: folder+"mexico.png" },
+    { value: "es-ES", text: "Spanish", imgUrl: folder+"spain.jpg" },
     { value: "zh-CN", text: "Chinese", imgUrl: folder+"china.svg" }
   ]
 }

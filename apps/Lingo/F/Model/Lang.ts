@@ -3,7 +3,7 @@ const Lang = {
   Chinese: "zh-CN",
   German: "de-DE",
   French: "fr-FR",
-  Spanish: "es-MX"
+  Spanish: "es-ES"
 }
 export { Lang }
 

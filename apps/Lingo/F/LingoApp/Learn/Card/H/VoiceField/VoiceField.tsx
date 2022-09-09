@@ -37,6 +37,7 @@ export function VoiceField({
 
   function onInputChange(newValue: string) {
     setText(newValue)
+
     if(IsMatch(word, newValue, pinYin)) {
       setMatch(true)
       const input = inputRef.current
@@ -44,6 +45,7 @@ export function VoiceField({
         input.blur()
       }
     } else {
+
       setMatch(false)
     }
   }

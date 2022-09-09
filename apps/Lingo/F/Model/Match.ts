@@ -8,13 +8,15 @@ export function IsMatch(word: string, text: string, pinYin?: string) {
   if(!text) return false
 
   word = ReplaceChar(word)
+
   if(pinYin) {
     pinYin = ReplaceChar(pinYin)
   }
   text = ReplaceChar(text)
 
   if(word === text) return true
-  if(pinYin === text) return true
+  if(pinYin && (pinYin === text)) return true
+
   return false
 }
 
@@ -24,6 +26,7 @@ function ReplaceChar(text: string) {
   text = text.split(",").join("")
   text = text.split("!").join("")
   text = text.split("¡").join("")
+  text = text.split("¿").join("")
   
   text = text.split("?").join("")
   text = text.split("'").join("")
