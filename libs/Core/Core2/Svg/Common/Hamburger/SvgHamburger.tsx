@@ -7,6 +7,7 @@ export function SvgHamburger({
   strokeWidth
 }: ISvg) {
 
+  strokeWidth = strokeWidth || 24
   return(<>
     <Svg viewBox="0 0 240 240" width={width} stroke={stroke} strokeWidth={strokeWidth}>
       <g strokeLinecap="round" strokeLinejoin="miter" strokeMiterlimit="1.92" fill="none">

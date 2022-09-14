@@ -52,6 +52,7 @@ import { SvgClock } from "./Office/Clock/SvgClock"
 import { SvgLanguage } from "./School/Language/SvgLanguage"
 import { SvgBook } from "./School/Book/SvgBook"
 import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
+import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
 
 export function SvgIcon({
   name,
@@ -95,6 +96,7 @@ export function SvgIcon({
     case "fatarrow.left.fill": return <SvgFatArrow left width={width}  fill={color} stroke={color} strokeWidth={strokeWidth} />
     case "fatarrow.right.fill": return <SvgFatArrow right width={width}  fill={color} stroke={color} strokeWidth={strokeWidth} />
 
+    case "collapse.left": return <SvgCollapseLeft width={width} stroke={color} strokeWidth={strokeWidth} />
 
     case "exclamation.circle": return <SvgExclamationCircle width={width} stroke={color} strokeWidth={strokeWidth}/>
     case "exclamation.triangle.fill": return <SvgExclamationTriangleFill width={width} fill={color} />

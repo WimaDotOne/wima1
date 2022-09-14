@@ -9,13 +9,15 @@ interface IIconButtonProp {
   disabled?: boolean
   backgroundColor?: string
   color?: string
+  strokeWidth?: number
 }
 export function IconButton({
   svgName,
   onClick,
   disabled,
   backgroundColor,
-  color
+  color,
+  strokeWidth
 }: IIconButtonProp) {
 
   const clEnabled = disabled ?  "" : cl.enabled
@@ -28,7 +30,7 @@ export function IconButton({
     <div className={ClassNames([cl.wrap, clEnabled])} 
       style={buttonStyle}
       onClick={onClick}>
-      <SvgIcon name={svgName} width={16} color={svgColor} strokeWidth={24}/>
+      <SvgIcon name={svgName} width={16} color={svgColor} strokeWidth={strokeWidth}/>
     </div>
   </>)
 }

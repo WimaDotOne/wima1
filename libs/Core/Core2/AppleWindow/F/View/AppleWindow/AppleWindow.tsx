@@ -49,6 +49,9 @@ export function AppleWindow({
     <LeftBarDiv open={isLeftBarOpen} brand={brand} brandColor={menu?.themeColor}>
       <Menu isLoggedIn={isLoggedIn} menu={menu} selectedItemId={viewId} onSelectItem={goToViewAndCloseLeftBar}/>
     </LeftBarDiv>
-    <Hamburger setOpen={setIsLeftBarOpen} />
+    <Hamburger setOpen={setIsLeftBarOpen} 
+      isOpen={isLeftBarOpen}
+      nonMovableViewDiv={nonMovableViewDiv}
+    />
   </>)
 }

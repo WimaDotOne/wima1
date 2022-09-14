@@ -5,7 +5,6 @@ import { MenuModel } from "./F/Model/Menu";
 import { BottomBarDiv } from "./F/View/BottomBarDiv/BottomBarDiv"
 import { PlainBottomBarDiv } from "./F/View/BottomBarDiv/PlainBottomBarDiv"
 import { BottomBarFill } from "./F/View/BottomBarDiv/BottomBarFill"
-import { Landing } from "./F/View/Landing/Landing"
 import { AppleWindow } from "./F/View/AppleWindow/AppleWindow"
 import { useAppleWindow, AppleWindowContext } from "./F/View/AppleWindow/AppleWindowContext"
 import { IconButton as AppleIconButton} from "./F/View/IconButton/IconButton"
@@ -18,7 +17,6 @@ export {
   BottomBarDiv,
   PlainBottomBarDiv,
   BottomBarFill,
-  Landing,
   AppleWindow,
   useAppleWindow,
   AppleWindowContext,
