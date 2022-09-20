@@ -1,0 +1,183 @@
+un bocadillo | a sandwich | bocadillo.jpg
+un bocadillo | a sandwich | bocadillo2.jpg
+un huevo | an egg | egg1.jpg
+un huevo | an egg | egg2.jpg
+una manzana | an apple | apple1.jpg
+===
+un bocadillo | a sandwich | bocadillo2.jpg
+un sándwich | a sandwich | sandwich1.jpg
+La mujer come un bocadillo || womanEatBocadillo.jpg
+El hombre come un sándwich || manEatSandwich.jpg
+===
+pan | bread | bread1.jpg
+pan | bread | bread2.jpg
+café | coffee | coffee1.jpg
+café| coffee | coffee2.jpg
+leche | milk | milk1.jpg
+===
+eine Frau und ein Mädchen | a woman and a girl | womanGirl1.jpg
+ein belegtes Brot und Milch | a sandwich and milk | sandwichMilk1.jpg
+ein Junge und ein Mann | a boy and a man | manBoy1.jpg
+===
+Reis und ein Apfel | rice and an apple | riceApple1.jpg
+eine Frau und ein Mann | a woman and a man | womanMan1.jpg
+Brot und Wasser | bread and water | breadWater1.jpg
+===
+Der Junge trinkt Milch || boyDrinkMilk1.jpg
+Die Frau trinkt Kaffee || womanDrinkCoffee1.jpg
+Der Mann und der Junge trinken Wasser || manBoyDrinkWater1.jpg
+Das Mädchen isst Brot || girlEatBread1.jpg
+Der Mann isst ein Ei || manEatEgg1.jpg
+Der Mann und die Frau essen Reis || womanManEatRice1.jpg
+===
+Sie isst einen Apfel || womanEatApple1.jpg
+Sie essen Eier || childrenEatEgg1.jpg
+Sie essen belegte Brote || womenEatSandwich1.jpg
+Er isst Reis || manEatRice1.jpg
+===
+der Hund || dog1.jpg
+der Hund || dog2.jpg
+die Katze || cat1.jpg
+die Katze || cat2.jpg
+das Pferd || horse1.jpg
+===
+das Auto || car1.jpg
+das Auto | the car (neuter)|
+die Zeitung || newspaper1.jpg
+die Zeitung | the newspaper (feminine)|
+das Fahrrad || bike1.jpg
+===
+ein Hund | a dog (masculine) |
+eine Katze | a cat (feminine) |
+ein Pferd | a horse (neuter) |
+ein Auto | a car (neuter) |
+eine Zeitung | a newspaper (feminine)|
+ein Fahrrad | a bike (neuter)
+===
+Der Junge läuft || boyWalk1.jpg
+Das Mädchen läuft || girlWalk1.jpg
+Die Frau fährt Auto | The woman is driving a car |
+Der Mann fährt Auto || manDriveCar1.jpg
+===
+Sie essen Äpfel || boyGirlEatApple1.jpg
+Sie liest ein Buch ||womanReadBook1.jpg
+Sie lesen Zeitung || boyManReadNewspaper1.jpg
+===
+Er hat eine Katze | He has a cat | manHasCat1.jpg
+Sie hat einen Hund | She has a dog | girlHasDog1.jpg
+Sie haben eine Zeitung | They have a newspaper |
+===
+Sie hat belegte Brote || womanHasSandwich1.jpg
+Er hat ein Auto | He has a car | manHasCar1.jpg
+Sie haben ein Pferd | They have a horse|
+===
+Er hat Bücher | He has books |
+Sie haben Stifte | They have pens |
+Sie hat einen Fisch || girlHasFish1.jpg
+===
+ein Buch || book1.jpg
+ein Stift || pen1.jpg
+ein Fisch || fish1.jpg
+===
+Sie schlafen | They are sleeping |
+Er schläft || boySleep1.jpg
+Sie schläft || womanSleep1.jpg
+===
+Das Pferd frisst || horseEat1.jpg
+Der Hund frisst | The dog is eating |
+Der Junge isst || boyEat1.jpg
+Das Mädchen isst || girlEat1.jpg
+===
+Der Hund frisst || dogEat1.jpg
+Der Fisch schwimmt | The fish is swimming|
+Das Pferd rennt || horseRun1.jpg
+Die Katze schläft || catSleep1.jpg
+===
+Sie laufen || theyWalk1.jpg
+Sie lesen || theyRead1.jpg
+Sie schwimmen | They are swimming |
+Sie schlafen || girlsSleep1.jpg
+===
+Die Erwachsenen essen | The adults are eating|
+Die Kinder trinken || childrenDrink1.jpg
+Die Kinder schwimmen || childrenSwim1.jpg
+Die Erwachsenen rennen || adultsRun1.jpg
+===
+Die Erwachsenen lesen || adultsRead1.jpg
+Die Kinder rennen |The children are running|
+Der Erwachsene liest || adultRead1.jpg
+Das Kind rennt || childRun1.jpg
+===
+Die Frau fährt ||womanDriveCar1.jpg
+Der Mann fährt ||manDriveCar2.jpg
+Das Mädchen fährt nicht | The girl is not driving|
+Der Junge fährt nicht || boySitInCar1.jpg
+===
+Die Erwachsenen kochen || menCook1.jpg
+Die Erwachsenen kochen nicht | The adults are not cooking|
+Die Kinder schreiben || childrenWrite1.jpg
+Die Kinder schreiben nicht | The children are not writing|
+Die Frau fährt || womanDriveCar2.jpg
+Die Frau fährt nicht || womanSitInCar1.jpg
+===
+Er läuft. Er rennt nicht. || manWalk1.jpg
+Sie kochen nicht. Sie essen || theyEat1.jpg
+Er läuft nicht. Er rennt. || boyRun1.jpg
+Sie kochen. Sie essen nicht |They are cooking. They are not eating.|
+===
+Der Junge hat einen Stift || boyHasAPen1.jpg
+Die Frauen haben Reis || womenHaveRice1.jpg
+Die Männer haben keinen Reis | The men do not have rice|
+Das Mädchen hat keinen Stift || girlHasNoPen1.jpg
+===
+Das Mädchen hat ein Fahrrad || girlHasBike1.jpg
+Das Mädchen hat kein Fahrrad | The girl does not have a bike.|
+Der Junge hat Milch || boyHasMilk1.jpg
+Der Junge hat keine Milch |The boy has no milk.|
+===
+Der Hund rennt || dogRun1.jpg
+Der Hund rennt nicht || dogNotRun1.jpg
+Die Jungen haben Wasser | The boys have water|
+Die Jungen haben kein Wasser || boysHaveNoWater1.jpg
+===
+Was ist das? | What is it?|
+Das ist ein Apfel | It is an apple|
+Was ist das? || questionMark1.jpg
+Das ist eine Zeitung || newspaper2.jpg
+===
+Was ist das? || whatIsItCat1.jpg
+Das ist eine Katze || itIsCat1.jpg
+Was ist das? || whatIsItBike1.jpg
+Das ist ein Fahrrad || itIsBike1.jpg
+===
+Was ist das? || whatIsItEgg1.jpg
+Das ist ein Ei || itIsEgg1.jpg
+Was ist das? || whatIsItPen1.jpg
+Das ist ein Stift || itIsPen1.jpg
+Was ist das? || whatIsItFish1.jpg
+Das ist ein Fisch || itIsFish1.jpg
+Was ist das? || whatIsItRice1.jpg
+Das ist Reis | It is rice|
+===
+Schläft er? | Is he sleeping?|
+Ja. Er schläft || boySleep1.jpg
+Schläft sie? | Is she sleeping?| 
+Nein. Sie schläft nicht | No. She is not sleeping|
+===
+Schwimmt der Hund? || isDogSwim1.jpg
+Ja || yesDogSwim1.jpg
+Schwimmt das Pferd? | Is the horse swimming?|
+Nein | No |
+===
+Liest sie Zeitung?|| isSheReadNewspaper1.jpg
+Nein || noSheReadNewspaper1.jpg
+Liest sie ein Buch? || isSheReadBook1.jpg
+Ja || yesSheReadBook1.jpg
+===
+Isst er einen Apfel? | Is he eating an apple?|
+Nein | No |
+Isst er einen Apfel? || isHeEatApple1.jpg
+Ja || yesHeEatApple1.jpg
+===
+Auf Wiedersehen || goodBye1.jpg
+Auf Wiedersehen || goodBye2.jpg
