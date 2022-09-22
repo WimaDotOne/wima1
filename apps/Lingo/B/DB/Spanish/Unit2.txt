@@ -7,7 +7,7 @@ una manzana | an apple | apple1.jpg
 un bocadillo | a sandwich | bocadillo2.jpg
 un sándwich | a sandwich | sandwich1.jpg
 La mujer come un bocadillo || womanEatBocadillo.jpg
-El hombre come un sándwich || manEatSandwich.jpg
+Él hombre come un sándwich || manEatSandwich.jpg
 ===
 pan | bread | bread1.jpg
 pan | bread | bread2.jpg
@@ -23,12 +23,12 @@ arroz y una manzana | rice and an apple | riceApple1.jpg
 un hombre y una mujer | a woman and a man | womanMan1.jpg
 pan y agua | bread and water | breadWater1.jpg
 ===
-El niño bebe leche || boyDrinkMilk1.jpg
+Él niño bebe leche || boyDrinkMilk1.jpg
 La mujer bebe café || womanDrinkCoffee1.jpg
-El niño y el hombre beben agua || manBoyDrinkWater1.jpg
+Él niño y el hombre beben agua || manBoyDrinkWater1.jpg
 La niña come pan || girlEatBread1.jpg
-El hombre come un huevo || manEatEgg1.jpg
-El hombre y la mujer comen arroz || womanManEatRice1.jpg
+Él hombre come un huevo || manEatEgg1.jpg
+Él hombre y la mujer comen arroz || womanManEatRice1.jpg
 ===
 Ella come una manzana || womanEatApple1.jpg
 Ellos comen huevos || childrenEatEgg1.jpg
@@ -54,10 +54,10 @@ un coche | a car (masculine) |
 un periódico | a newspaper (masculine)|
 una bicicleta | a bike (feminine)
 ===
-El niño anda || boyWalk1.jpg
+Él niño anda || boyWalk1.jpg
 La niña anda || girlWalk1.jpg
 La mujer conduce un coche | The woman is driving a car |
-El hombre conduce un coche || manDriveCar1.jpg
+Él hombre conduce un coche || manDriveCar1.jpg
 ===
 Ellos comen manzanas || boyGirlEatApple1.jpg
 Ella lee un libro ||womanReadBook1.jpg
@@ -83,101 +83,101 @@ Ellos duermen | They are sleeping |
 Él duerme || boySleep1.jpg
 Ella duerme || womanSleep1.jpg
 ===
-El caballo come || horseEat1.jpg
-El perro come | The dog is eating |
-El niño come || boyEat1.jpg
+Él caballo come || horseEat1.jpg
+Él perro come | The dog is eating |
+Él niño come || boyEat1.jpg
 La niña come || girlEat1.jpg
 ===
-El perro come || dogEat1.jpg
-El pez nada | The fish is swimming|
-El caballo corre || horseRun1.jpg
-El gato duerme || catSleep1.jpg
+Él perro come || dogEat1.jpg
+Él pez nada | The fish is swimming|
+Él caballo corre || horseRun1.jpg
+Él gato duerme || catSleep1.jpg
 ===
 Ellos andan || theyWalk1.jpg
 Ellos leen || theyRead1.jpg
 Ellos nadan | They are swimming |
 Ellas duermen || girlsSleep1.jpg
 ===
-Die Erwachsenen essen | The adults are eating|
-Die Kinder trinken || childrenDrink1.jpg
-Die Kinder schwimmen || childrenSwim1.jpg
-Die Erwachsenen rennen || adultsRun1.jpg
+Los adultos comen | The adults are eating|
+Los niños beben || childrenDrink1.jpg
+Los niños nadan || childrenSwim1.jpg
+Los adultos corren || adultsRun1.jpg
 ===
-Die Erwachsenen lesen || adultsRead1.jpg
-Die Kinder rennen |The children are running|
-Der Erwachsene liest || adultRead1.jpg
-Das Kind rennt || childRun1.jpg
+Los adultos leen || adultsRead1.jpg
+Los niños corren |The children are running|
+Él adulto lee || adultRead1.jpg
+La niña corre || childRun1.jpg
 ===
-Die Frau fährt ||womanDriveCar1.jpg
-Der Mann fährt ||manDriveCar2.jpg
-Das Mädchen fährt nicht | The girl is not driving|
-Der Junge fährt nicht || boySitInCar1.jpg
+La mujer conduce||womanDriveCar1.jpg
+Él hombre conduce ||manDriveCar2.jpg
+La niña non conduce | The girl is not driving|
+Él niño no conduce || boySitInCar1.jpg
 ===
-Die Erwachsenen kochen || menCook1.jpg
-Die Erwachsenen kochen nicht | The adults are not cooking|
-Die Kinder schreiben || childrenWrite1.jpg
-Die Kinder schreiben nicht | The children are not writing|
-Die Frau fährt || womanDriveCar2.jpg
-Die Frau fährt nicht || womanSitInCar1.jpg
+Los adultos cocinan || menCook1.jpg
+Los adultos no cocinan | The adults are not cooking|
+Los niños escriben || childrenWrite1.jpg
+Los niños no escriben | The children are not writing|
+La mujer conduce || womanDriveCar2.jpg
+La mujer no conduce || womanSitInCar1.jpg
 ===
-Er läuft. Er rennt nicht. || manWalk1.jpg
-Sie kochen nicht. Sie essen || theyEat1.jpg
-Er läuft nicht. Er rennt. || boyRun1.jpg
-Sie kochen. Sie essen nicht |They are cooking. They are not eating.|
+Él anda. No corre || manWalk1.jpg
+Ellos no cocinan. Comen || theyEat1.jpg
+Él no anda. Corre || boyRun1.jpg
+Ellos no comen. Cocinan |They are cooking. They are not eating.|
 ===
-Der Junge hat einen Stift || boyHasAPen1.jpg
-Die Frauen haben Reis || womenHaveRice1.jpg
-Die Männer haben keinen Reis | The men do not have rice|
-Das Mädchen hat keinen Stift || girlHasNoPen1.jpg
+Él niño tiene un bolígrafo || boyHasAPen1.jpg
+Las mujeres tienen arroz || womenHaveRice1.jpg
+Las mujeres no tienen arroz | The women do not have rice|
+La niña no tiene un bolígrafo || girlHasNoPen1.jpg
 ===
-Das Mädchen hat ein Fahrrad || girlHasBike1.jpg
-Das Mädchen hat kein Fahrrad | The girl does not have a bike.|
-Der Junge hat Milch || boyHasMilk1.jpg
-Der Junge hat keine Milch |The boy has no milk.|
+La niña tiene bicicleta || girlHasBike1.jpg
+Las niñas no tienen bicicletas | The girls do not have a bike.|
+Él niño tiene leche || boyHasMilk1.jpg
+Él niño no tiene leche |The boy has no milk.|
 ===
-Der Hund rennt || dogRun1.jpg
-Der Hund rennt nicht || dogNotRun1.jpg
-Die Jungen haben Wasser | The boys have water|
-Die Jungen haben kein Wasser || boysHaveNoWater1.jpg
+Él perro corre || dogRun1.jpg
+Él perro no corre || dogNotRun1.jpg
+Los niños tienen agua | The boys have water|
+Los niños no tienen agua || boysHaveNoWater1.jpg
 ===
-Was ist das? | What is it?|
-Das ist ein Apfel | It is an apple|
-Was ist das? || questionMark1.jpg
-Das ist eine Zeitung || newspaper2.jpg
+¿Qué es esto? | What is it?|
+Es una manzana | It is an apple|
+¿Qué es esto? || questionMark1.jpg
+Es un periódico || newspaper2.jpg
 ===
-Was ist das? || whatIsItCat1.jpg
-Das ist eine Katze || itIsCat1.jpg
-Was ist das? || whatIsItBike1.jpg
-Das ist ein Fahrrad || itIsBike1.jpg
+¿Qué es esto? || whatIsItCat1.jpg
+Es un gato || itIsCat1.jpg
+¿Qué es esto? || whatIsItBike1.jpg
+Es una bicicleta || itIsBike1.jpg
 ===
-Was ist das? || whatIsItEgg1.jpg
-Das ist ein Ei || itIsEgg1.jpg
-Was ist das? || whatIsItPen1.jpg
-Das ist ein Stift || itIsPen1.jpg
-Was ist das? || whatIsItFish1.jpg
-Das ist ein Fisch || itIsFish1.jpg
-Was ist das? || whatIsItRice1.jpg
-Das ist Reis | It is rice|
+¿Qué es esto? || whatIsItEgg1.jpg
+Es un huevo || itIsEgg1.jpg
+¿Qué es esto? || whatIsItPen1.jpg
+Es un bolígrafo || itIsPen1.jpg
+¿Qué es esto? || whatIsItFish1.jpg
+Es un pez || itIsFish1.jpg
+¿Qué es esto? || whatIsItRice1.jpg
+Es arroz | It is rice|
 ===
-Schläft er? | Is he sleeping?|
-Ja. Er schläft || boySleep1.jpg
-Schläft sie? | Is she sleeping?| 
-Nein. Sie schläft nicht | No. She is not sleeping|
+¿Él duerme? | Is he sleeping?|
+Sí, duerme || boySleep1.jpg
+¿Ella duerme? | Is she sleeping?| 
+No, no duerme | No. She is not sleeping|
 ===
-Schwimmt der Hund? || isDogSwim1.jpg
-Ja || yesDogSwim1.jpg
-Schwimmt das Pferd? | Is the horse swimming?|
-Nein | No |
+¿Él perro nada? || isDogSwim1.jpg
+Sí || yesDogSwim1.jpg
+¿Él caballo nada? | Is the horse swimming?|
+No | No |
 ===
-Liest sie Zeitung?|| isSheReadNewspaper1.jpg
-Nein || noSheReadNewspaper1.jpg
-Liest sie ein Buch? || isSheReadBook1.jpg
-Ja || yesSheReadBook1.jpg
+¿Ella lee un periódico?|| isSheReadNewspaper1.jpg
+No || noSheReadNewspaper1.jpg
+¿Ella lee un libro? || isSheReadBook1.jpg
+Sí || yesSheReadBook1.jpg
 ===
-Isst er einen Apfel? | Is he eating an apple?|
-Nein | No |
-Isst er einen Apfel? || isHeEatApple1.jpg
-Ja || yesHeEatApple1.jpg
+¿Él come una manzana? | Is he eating an apple?|
+No | No |
+¿Él come una manzana? || isHeEatApple1.jpg
+Sí || yesHeEatApple1.jpg
 ===
-Auf Wiedersehen || goodBye1.jpg
-Auf Wiedersehen || goodBye2.jpg
+Adiós || goodBye1.jpg
+Adiós || goodBye2.jpg
