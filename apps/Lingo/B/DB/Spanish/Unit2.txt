@@ -15,88 +15,88 @@ café | coffee | coffee1.jpg
 café| coffee | coffee2.jpg
 leche | milk | milk1.jpg
 ===
-eine Frau und ein Mädchen | a woman and a girl | womanGirl1.jpg
-ein belegtes Brot und Milch | a sandwich and milk | sandwichMilk1.jpg
-ein Junge und ein Mann | a boy and a man | manBoy1.jpg
+una niña y una mujer | a woman and a girl | womanGirl1.jpg
+un sándwich y leche | a sandwich and milk | sandwichMilk1.jpg
+un niño y un hombre | a boy and a man | manBoy1.jpg
 ===
-Reis und ein Apfel | rice and an apple | riceApple1.jpg
-eine Frau und ein Mann | a woman and a man | womanMan1.jpg
-Brot und Wasser | bread and water | breadWater1.jpg
+arroz y una manzana | rice and an apple | riceApple1.jpg
+un hombre y una mujer | a woman and a man | womanMan1.jpg
+pan y agua | bread and water | breadWater1.jpg
 ===
-Der Junge trinkt Milch || boyDrinkMilk1.jpg
-Die Frau trinkt Kaffee || womanDrinkCoffee1.jpg
-Der Mann und der Junge trinken Wasser || manBoyDrinkWater1.jpg
-Das Mädchen isst Brot || girlEatBread1.jpg
-Der Mann isst ein Ei || manEatEgg1.jpg
-Der Mann und die Frau essen Reis || womanManEatRice1.jpg
+El niño bebe leche || boyDrinkMilk1.jpg
+La mujer bebe café || womanDrinkCoffee1.jpg
+El niño y el hombre beben agua || manBoyDrinkWater1.jpg
+La niña come pan || girlEatBread1.jpg
+El hombre come un huevo || manEatEgg1.jpg
+El hombre y la mujer comen arroz || womanManEatRice1.jpg
 ===
-Sie isst einen Apfel || womanEatApple1.jpg
-Sie essen Eier || childrenEatEgg1.jpg
-Sie essen belegte Brote || womenEatSandwich1.jpg
-Er isst Reis || manEatRice1.jpg
+Ella come una manzana || womanEatApple1.jpg
+Ellos comen huevos || childrenEatEgg1.jpg
+Ellas comen bocadillos || womenEatSandwich1.jpg
+Él come arroz || manEatRice1.jpg
 ===
-der Hund || dog1.jpg
-der Hund || dog2.jpg
-die Katze || cat1.jpg
-die Katze || cat2.jpg
-das Pferd || horse1.jpg
+un perro || dog1.jpg
+un perro || dog2.jpg
+un gato || cat1.jpg
+un gato || cat2.jpg
+un caballo || horse1.jpg
 ===
-das Auto || car1.jpg
-das Auto | the car (neuter)|
-die Zeitung || newspaper1.jpg
-die Zeitung | the newspaper (feminine)|
-das Fahrrad || bike1.jpg
+un coche || car1.jpg
+un coche || car2.jpg
+un periódico || newspaper1.jpg
+un periódico || newspaper2.jpg
+una bicicleta || bike1.jpg
 ===
-ein Hund | a dog (masculine) |
-eine Katze | a cat (feminine) |
-ein Pferd | a horse (neuter) |
-ein Auto | a car (neuter) |
-eine Zeitung | a newspaper (feminine)|
-ein Fahrrad | a bike (neuter)
+un perro | a dog (masculine) |
+un gato | a cat (masculine) |
+un caballo | a horse (masculine) |
+un coche | a car (masculine) |
+un periódico | a newspaper (masculine)|
+una bicicleta | a bike (feminine)
 ===
-Der Junge läuft || boyWalk1.jpg
-Das Mädchen läuft || girlWalk1.jpg
-Die Frau fährt Auto | The woman is driving a car |
-Der Mann fährt Auto || manDriveCar1.jpg
+El niño anda || boyWalk1.jpg
+La niña anda || girlWalk1.jpg
+La mujer conduce un coche | The woman is driving a car |
+El hombre conduce un coche || manDriveCar1.jpg
 ===
-Sie essen Äpfel || boyGirlEatApple1.jpg
-Sie liest ein Buch ||womanReadBook1.jpg
-Sie lesen Zeitung || boyManReadNewspaper1.jpg
+Ellos comen manzanas || boyGirlEatApple1.jpg
+Ella lee un libro ||womanReadBook1.jpg
+Ellos leen el periódico || boyManReadNewspaper1.jpg
 ===
-Er hat eine Katze | He has a cat | manHasCat1.jpg
-Sie hat einen Hund | She has a dog | girlHasDog1.jpg
-Sie haben eine Zeitung | They have a newspaper |
+Él tiene un gato | He has a cat | manHasCat1.jpg
+Ella tiene un perro | She has a dog | girlHasDog1.jpg
+Ellos tienen un periódico | They have a newspaper |
 ===
-Sie hat belegte Brote || womanHasSandwich1.jpg
-Er hat ein Auto | He has a car | manHasCar1.jpg
-Sie haben ein Pferd | They have a horse|
+Ella tiene bocadillos || womanHasBocadillos.jpg
+Él tiene un couche | He has a car | manHasCar1.jpg
+Ellas tienen un caballo | They have a horse|
 ===
-Er hat Bücher | He has books |
-Sie haben Stifte | They have pens |
-Sie hat einen Fisch || girlHasFish1.jpg
+Él tiene libros | He has books |
+Ellos tienen bolígrafos | They have ballpens |
+Ella tiene un pez || girlHasFish1.jpg
 ===
-ein Buch || book1.jpg
-ein Stift || pen1.jpg
-ein Fisch || fish1.jpg
+un libro || book1.jpg
+un bolígrafo || pen1.jpg
+un pez || fish1.jpg
 ===
-Sie schlafen | They are sleeping |
-Er schläft || boySleep1.jpg
-Sie schläft || womanSleep1.jpg
+Ellos duermen | They are sleeping |
+Él duerme || boySleep1.jpg
+Ella duerme || womanSleep1.jpg
 ===
-Das Pferd frisst || horseEat1.jpg
-Der Hund frisst | The dog is eating |
-Der Junge isst || boyEat1.jpg
-Das Mädchen isst || girlEat1.jpg
+El caballo come || horseEat1.jpg
+El perro come | The dog is eating |
+El niño come || boyEat1.jpg
+La niña come || girlEat1.jpg
 ===
-Der Hund frisst || dogEat1.jpg
-Der Fisch schwimmt | The fish is swimming|
-Das Pferd rennt || horseRun1.jpg
-Die Katze schläft || catSleep1.jpg
+El perro come || dogEat1.jpg
+El pez nada | The fish is swimming|
+El caballo corre || horseRun1.jpg
+El gato duerme || catSleep1.jpg
 ===
-Sie laufen || theyWalk1.jpg
-Sie lesen || theyRead1.jpg
-Sie schwimmen | They are swimming |
-Sie schlafen || girlsSleep1.jpg
+Ellos andan || theyWalk1.jpg
+Ellos leen || theyRead1.jpg
+Ellos nadan | They are swimming |
+Ellas duermen || girlsSleep1.jpg
 ===
 Die Erwachsenen essen | The adults are eating|
 Die Kinder trinken || childrenDrink1.jpg
