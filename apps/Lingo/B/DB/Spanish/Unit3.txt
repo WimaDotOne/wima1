@@ -1,0 +1,163 @@
+blanco || white1.jpg
+blanco | white |
+negro || black1.jpg
+rojo || red1.jpg
+===
+azul || blue1.jpg
+azul || blue2.jpg
+verde || green1.jpg
+verde || green2.jpg
+amarillo || yellow1.jpg
+===
+El arroz es blanco || whiteRice1.jpg
+El coche es verde || greenCar1.jpg
+La bicicleta es verde || greenBike1.jpg
+La manzana es verde || greenApple1.jpg
+La leche es blanca || whiteMilk1.jpg
+El coche es blanco |The car is white|
+===
+Los coches son blancos || whiteCars1.jpg
+Las manzanas son verdes || greenApples1.jpg
+Los huevos son rojos || redEggs1.jpg
+Las bicicletas son rojos | The bikes are red|
+Las bicicletas son blancas || whiteBikes1.jpg
+Los bolígrafos son verdes || greenPens1.jpg
+===
+El huevo es azul || blueEgg1.jpg
+Los huevos son azules || blueEggs1.jpg
+La bicicleta es amarilla || yellowBike1.jpg
+Las bicicletas son amarillas || yellowBikes1.jpg
+El coche es negro || blackCar1.jpg
+Los coches son negros || blackCars1.jpg
+===
+La pelota es roja || redBall1.jpg
+Las pelots son rojas | The balls are red|
+El gato es negro || blackCat1.jpg
+Los gatos son negros || blackCats1.jpg
+===
+El pez es rojo || redFish1.jpg
+Los peces son rojos || redFishs1.jpg
+La bicicleta es amarilla || yellowBike1.jpg
+Las bicicletas son amarillas || yellowBikes1.jpg
+===
+Es roja || redFlower1.jpg
+Es blanco || whiteCat1.jpg
+Es negro || blackCar1.jpg
+===
+Es rojo || redEgg1.jpg
+Son blancos || whiteBears1.jpg
+Es amarillo || yellowBall1.jpg
+Son verdes || greenApples1.jpg
+===
+Er ist azul und verde || globe1.jpg
+Er ist negro und blanco || panda1.jpg
+Sie sind azul || blueBalls1.jpg
+Sie sind blanco || whiteGoose1.jpg
+===
+Der Mond ist blanco || whiteMoon1.jpg
+Der Himmel ist azul || blueSky1.jpg
+Die Sonne ist amarillo || yellowSun1.jpg
+Die Blume ist rojo || redFlower1.jpg
+Das Gras ist verde || greenGrass1.jpg
+===
+Das Ei ist klein || smallEgg1.jpg
+Die Eier sind klein | The eggs are small |
+Die Blumen sind klein|| smallFlowers1.jpg
+Die Blume ist klein || smallFlower1.jpg
+===
+Die Blumen sind groß || bigFlowers1.jpg
+Die Bücher sind groß |The books are big|
+Der Fisch ist groß || bigFish1.jpg
+Das Ei ist groß || bigEgg1.jpg
+===
+Er ist Lehrer || manTeacher1.jpg
+Sie sind Polizisten || policemen1.jpg
+Sie ist Ärztin || womanDoctor1.jpg
+===
+Sie ist eine Schülerin||girlStudent1.jpg
+Er ist ein Schüler|He is a student|
+Sie sind Schüler||students1.jpg
+===
+Er ist Polizist||policeman1.jpg
+Sie ist Lehrerin||womanTeacher1.jpg
+Er ist Arzt||manDoctor1.jpg
+Sie sind Schüler |They are students|
+===
+Ich bin ein Junge||iAmBoy1.jpg
+Ich bin ein Mann|I am a man|
+Ich bin eine Frau||iAmWoman1.jpg
+Ich bin ein Mädchen||iAmGirl1.jpg
+===
+Ich bin Lehrerin||iAmWomanTeacher1.jpg
+Ich bin kein Lehrer | I am not a teacher|
+Ich bin Arzt ||iAmManDoctor1.jpg
+Ich bin kein Arzt|I am not a doctor|
+Ich bin ein Schüler||iAmBoyStudent1.jpg
+Ich bin kein Schüler|I am not a student|
+===
+der rojoe Apfel||redApple1.jpg
+Ich habe einen rojoen Apfel|I have a red apple|
+die blancoe Milch|| whiteMilk1.jpg
+Ich habe blancoe Milch|I have white milk|
+das amarilloe Ei||yellowEgg2.jpg
+Ich habe ein amarilloes Ei|I have a yellow egg|
+===
+Ich habe ein amarilloes Buch || iHaveYellowBook1.jpg
+Ich habe ein verdees Buch |I have a green book|
+Ich habe ein rojoes Buch || iHaveRedBook1.jpg
+===
+Sie haben ein rojoes Buch || youHaveRedBook1.jpg
+Sie haben ein verdees Buch || youHaveGreenBook1.jpg
+Sie haben ein amarilloes Buch |You have a yellow book|
+===
+Sind Sie Arzt?| Are you a doctor?|
+Ja. Ich bin Arzt||iAmManDoctor1.jpg
+Nein. Ich bin kein Arzt|No. I am not a doctor|
+===
+Was trinken Sie?|What are you drinking?|
+Ich trinke Wasser||iDrinkWater1.jpg
+Was essen Sie|What are you eating?|
+Ich esse Reis||iEatRice1.jpg
+===
+Was haben Sie? | What do you have?|
+Ich habe ein belegtes Brojo||iHaveSandwich1.jpg
+Ich habe einen Stift||iHavePen1.jpg
+===
+Ich bin Lehrerin||iAmWomanTeacher2.jpg
+Wir sind Lehrer | We are teachers|
+Ich bin ein Mädchen||iAmGirl2.jpg
+Wir sind Mädchen||weAreGirls1.jpg
+===
+Wir sind Junge||weAreBoys1.jpg
+Wir sind Polizisten|We are policemen|
+Wir sind Ärzte||weAreDoctors1.jpg
+===
+Ich habe ein rojoes Fahrrad||iHaveRedBike1.jpg
+Wir haben verdee Fahrräder|We have green bikes|
+Ich habe rojoe Äpfel||iHaveRedApples1.jpg
+Wir haben verdee Äpfel||weHaveGreenApples1.jpg
+===
+Ich habe rojoe Blumen||iHaveRedFlowers1.jpg
+Sie haben rojoe Blumen||youHaveRedFlowers1.jpg
+Er hat rojoe Blumen||heHasRedFlowers1.jpg
+Sie hat rojoe Blumen||sheHasRedFlowers1.jpg
+Wir haben rojoe Blumen||weHaveRedFlowers1.jpg
+Sie haben rojoe Blumen||theyHaveRedFlowers1.jpg
+===
+Was macht der Mann?||doWhatManCook1.jpg
+Der Mann kocht||manCook1.jpg
+Was macht die Frau||doWhatWomanRead1.jpg
+Die Frau liest||womanRead1.jpg
+Was macht der Junge||doWhatBoyRun1.jpg
+Der Junge rennt||boyRun1.jpg
+===
+Was macht der Arzt||manDoctorWrite1.jpg
+Der Arzt schreibt|The doctor is writing|
+Was macht der Polizist||manPolicemanDrive1.jpg
+Der Polizist fährt|The policeman is driving|
+Was macht das Mädchen?||girlWalk1.jpg
+Das Mädchen läuft|The girl is walking|
+===
+Was machen Sie?|What are you doing?|
+Ich schreibe||iWrite1.jpg
+Ich fahre Auto||iDrive1.jpg
