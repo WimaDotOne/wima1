@@ -49,39 +49,44 @@ Son blancos || whiteBears1.jpg
 Es amarillo || yellowBall1.jpg
 Son verdes || greenApples1.jpg
 ===
-Er ist azul und verde || globe1.jpg
-Er ist negro und blanco || panda1.jpg
-Sie sind azul || blueBalls1.jpg
-Sie sind blanco || whiteGoose1.jpg
+Es azul y verde || globe1.jpg
+Es blanco y negro || panda1.jpg
+Son azules || blueBalls1.jpg
+Son blancos || whiteGoose1.jpg
 ===
-Der Mond ist blanco || whiteMoon1.jpg
-Der Himmel ist azul || blueSky1.jpg
-Die Sonne ist amarillo || yellowSun1.jpg
-Die Blume ist rojo || redFlower1.jpg
-Das Gras ist verde || greenGrass1.jpg
+La luna es blanca || whiteMoon1.jpg
+El cielo es azul || blueSky1.jpg
+El sol es amarillo || yellowSun1.jpg
+La flor es roja || redFlower1.jpg
+La hierba es verde || greenGrass1.jpg
 ===
-Das Ei ist klein || smallEgg1.jpg
-Die Eier sind klein | The eggs are small |
-Die Blumen sind klein|| smallFlowers1.jpg
-Die Blume ist klein || smallFlower1.jpg
+El huevo es pequeño || smallEgg1.jpg
+Los huevos son pequeños | The eggs are small |
+Las flores son pequeñas|| smallFlowers1.jpg
+La flor es pequeña || smallFlower1.jpg
 ===
-Die Blumen sind groß || bigFlowers1.jpg
-Die Bücher sind groß |The books are big|
-Der Fisch ist groß || bigFish1.jpg
-Das Ei ist groß || bigEgg1.jpg
+Las flores son grandes || bigFlowers1.jpg
+Los libros son grandes |The books are big|
+El pez es grande || bigFish1.jpg
+El huevo es grande || bigEgg1.jpg
 ===
-Er ist Lehrer || manTeacher1.jpg
-Sie sind Polizisten || policemen1.jpg
-Sie ist Ärztin || womanDoctor1.jpg
+Él es profesor || manTeacher1.jpg
+Ellos son policías || policemen1.jpg
+Ella es médica || womanDoctor1.jpg
 ===
-Sie ist eine Schülerin||girlStudent1.jpg
-Er ist ein Schüler|He is a student|
-Sie sind Schüler||students1.jpg
+La maestra lee || womanGradeTeacherRead.jpg
+El maestro escribe || manGradeTeacherWrite.jpg
+El profesor lee || manTeacherRead.jpg
+La profesora escribe || womanTeacherWrite.jpg
+===
+Ella es estudiante||girlStudent1.jpg
+Él es estudiante|He is a student|
+Ellos son estudiantes||students1.jpg
 ===
 Er ist Polizist||policeman1.jpg
 Sie ist Lehrerin||womanTeacher1.jpg
 Er ist Arzt||manDoctor1.jpg
-Sie sind Schüler |They are students|
+Sie sind estudiante |They are students|
 ===
 Ich bin ein Junge||iAmBoy1.jpg
 Ich bin ein Mann|I am a man|
@@ -92,8 +97,8 @@ Ich bin Lehrerin||iAmWomanTeacher1.jpg
 Ich bin kein Lehrer | I am not a teacher|
 Ich bin Arzt ||iAmManDoctor1.jpg
 Ich bin kein Arzt|I am not a doctor|
-Ich bin ein Schüler||iAmBoyStudent1.jpg
-Ich bin kein Schüler|I am not a student|
+Ich bin ein estudiante||iAmBoyStudent1.jpg
+Ich bin kein estudiante|I am not a student|
 ===
 der rojoe Apfel||redApple1.jpg
 Ich habe einen rojoen Apfel|I have a red apple|
