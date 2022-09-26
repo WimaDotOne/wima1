@@ -7,7 +7,7 @@ una manzana | an apple | apple1.jpg
 un bocadillo | a sandwich | bocadillo2.jpg
 un sándwich | a sandwich | sandwich1.jpg
 La mujer come un bocadillo || womanEatBocadillo.jpg
-Él hombre come un sándwich || manEatSandwich.jpg
+El hombre come un sándwich || manEatSandwich.jpg
 ===
 pan | bread | bread1.jpg
 pan | bread | bread2.jpg
@@ -23,12 +23,12 @@ arroz y una manzana | rice and an apple | riceApple1.jpg
 un hombre y una mujer | a woman and a man | womanMan1.jpg
 pan y agua | bread and water | breadWater1.jpg
 ===
-Él niño bebe leche || boyDrinkMilk1.jpg
+El niño bebe leche || boyDrinkMilk1.jpg
 La mujer bebe café || womanDrinkCoffee1.jpg
-Él niño y el hombre beben agua || manBoyDrinkWater1.jpg
+El niño y el hombre beben agua || manBoyDrinkWater1.jpg
 La niña come pan || girlEatBread1.jpg
-Él hombre come un huevo || manEatEgg1.jpg
-Él hombre y la mujer comen arroz || womanManEatRice1.jpg
+El hombre come un huevo || manEatEgg1.jpg
+El hombre y la mujer comen arroz || womanManEatRice1.jpg
 ===
 Ella come una manzana || womanEatApple1.jpg
 Ellos comen huevos || childrenEatEgg1.jpg
@@ -54,10 +54,10 @@ un coche | a car (masculine) |
 un periódico | a newspaper (masculine)|
 una bicicleta | a bike (feminine)
 ===
-Él niño anda || boyWalk1.jpg
+El niño anda || boyWalk1.jpg
 La niña anda || girlWalk1.jpg
 La mujer conduce un coche | The woman is driving a car |
-Él hombre conduce un coche || manDriveCar1.jpg
+El hombre conduce un coche || manDriveCar1.jpg
 ===
 Ellos comen manzanas || boyGirlEatApple1.jpg
 Ella lee un libro ||womanReadBook1.jpg
@@ -85,7 +85,7 @@ Ella duerme || womanSleep1.jpg
 ===
 Él caballo come || horseEat1.jpg
 Él perro come | The dog is eating |
-Él niño come || boyEat1.jpg
+El niño come || boyEat1.jpg
 La niña come || girlEat1.jpg
 ===
 Él perro come || dogEat1.jpg
@@ -109,9 +109,9 @@ Los niños corren |The children are running|
 La niña corre || childRun1.jpg
 ===
 La mujer conduce||womanDriveCar1.jpg
-Él hombre conduce ||manDriveCar2.jpg
+El hombre conduce ||manDriveCar2.jpg
 La niña non conduce | The girl is not driving|
-Él niño no conduce || boySitInCar1.jpg
+El niño no conduce || boySitInCar1.jpg
 ===
 Los adultos cocinan || menCook1.jpg
 Los adultos no cocinan | The adults are not cooking|
@@ -125,15 +125,15 @@ Ellos no cocinan. Comen || theyEat1.jpg
 Él no anda. Corre || boyRun1.jpg
 Ellos no comen. Cocinan |They are cooking. They are not eating.|
 ===
-Él niño tiene un bolígrafo || boyHasAPen1.jpg
+El niño tiene un bolígrafo || boyHasAPen1.jpg
 Las mujeres tienen arroz || womenHaveRice1.jpg
 Las mujeres no tienen arroz | The women do not have rice|
 La niña no tiene un bolígrafo || girlHasNoPen1.jpg
 ===
 La niña tiene bicicleta || girlHasBike1.jpg
 Las niñas no tienen bicicletas | The girls do not have a bike.|
-Él niño tiene leche || boyHasMilk1.jpg
-Él niño no tiene leche |The boy has no milk.|
+El niño tiene leche || boyHasMilk1.jpg
+El niño no tiene leche |The boy has no milk.|
 ===
 Él perro corre || dogRun1.jpg
 Él perro no corre || dogNotRun1.jpg

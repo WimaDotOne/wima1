@@ -116,7 +116,7 @@ Nein. Ich bin kein Arzt|No. I am not a doctor|
 ===
 Was trinken Sie?|What are you drinking?|
 Ich trinke Wasser||iDrinkWater1.jpg
-Was essen Sie|What are you eating?|
+Was essen Sie?|What are you eating?|
 Ich esse Reis||iEatRice1.jpg
 ===
 Was haben Sie? | What do you have?|

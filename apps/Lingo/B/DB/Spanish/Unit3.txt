@@ -83,86 +83,95 @@ Ella es estudiante||girlStudent1.jpg
 Él es estudiante|He is a student|
 Ellos son estudiantes||students1.jpg
 ===
-Er ist Polizist||policeman1.jpg
-Sie ist Lehrerin||womanTeacher1.jpg
-Er ist Arzt||manDoctor1.jpg
-Sie sind estudiante |They are students|
+Él es policía||policeman1.jpg
+Ella es profesora||womanTeacher1.jpg
+Él es médico||manDoctor1.jpg
+Ellos son estudiantes |They are students|
 ===
-Ich bin ein Junge||iAmBoy1.jpg
-Ich bin ein Mann|I am a man|
-Ich bin eine Frau||iAmWoman1.jpg
-Ich bin ein Mädchen||iAmGirl1.jpg
+Yo soy un niño||iAmBoy1.jpg
+Yo soy un hombre|I am a man|
+Yo soy una mujer||iAmWoman1.jpg
+Yo soy una niña||iAmGirl1.jpg
 ===
-Ich bin Lehrerin||iAmWomanTeacher1.jpg
-Ich bin kein Lehrer | I am not a teacher|
-Ich bin Arzt ||iAmManDoctor1.jpg
-Ich bin kein Arzt|I am not a doctor|
-Ich bin ein estudiante||iAmBoyStudent1.jpg
-Ich bin kein estudiante|I am not a student|
+Yo soy profesora||iAmWomanTeacher1.jpg
+Yo no soy profesor | I am not a teacher|
+Yo soy médico ||iAmManDoctor1.jpg
+Yo no soy médico|I am not a doctor|
+Yo soy estudiante||iAmBoyStudent1.jpg
+Yo no soy estudiante|I am not a student|
 ===
-der rojoe Apfel||redApple1.jpg
-Ich habe einen rojoen Apfel|I have a red apple|
-die blancoe Milch|| whiteMilk1.jpg
-Ich habe blancoe Milch|I have white milk|
-das amarilloe Ei||yellowEgg2.jpg
-Ich habe ein amarilloes Ei|I have a yellow egg|
+Yo tengo un libro amarillo || iHaveYellowBook1.jpg
+Yo tengo un libro verde |I have a green book|
+Yo tengo un libro rojo || iHaveRedBook1.jpg
 ===
-Ich habe ein amarilloes Buch || iHaveYellowBook1.jpg
-Ich habe ein verdees Buch |I have a green book|
-Ich habe ein rojoes Buch || iHaveRedBook1.jpg
+Usted tiene un libro rojo || youHaveRedBook1.jpg
+Usted tiene un libro verde|| youHaveGreenBook1.jpg
+Usted tiene un libro amarillo |You have a yellow book|
 ===
-Sie haben ein rojoes Buch || youHaveRedBook1.jpg
-Sie haben ein verdees Buch || youHaveGreenBook1.jpg
-Sie haben ein amarilloes Buch |You have a yellow book|
+¿Es usted médico?| Are you a doctor?|
+Sí, yo soy médico||iAmManDoctor1.jpg
+No, yo no soy médico|No. I am not a doctor|
 ===
-Sind Sie Arzt?| Are you a doctor?|
-Ja. Ich bin Arzt||iAmManDoctor1.jpg
-Nein. Ich bin kein Arzt|No. I am not a doctor|
+¿Qué bebe usted?|What are you drinking?|
+Yo bebo agua||iDrinkWater1.jpg
+¿Qué come usted?|What are you eating?|
+Yo como arroz||iEatRice1.jpg
 ===
-Was trinken Sie?|What are you drinking?|
-Ich trinke Wasser||iDrinkWater1.jpg
-Was essen Sie|What are you eating?|
-Ich esse Reis||iEatRice1.jpg
+¿Qué tiene usted? | What do you have?|
+Yo tengo un bocadillo||iHaveBocadillo.jpg
+Yo tengo un bolígrafo||iHavePen1.jpg
 ===
-Was haben Sie? | What do you have?|
-Ich habe ein belegtes Brojo||iHaveSandwich1.jpg
-Ich habe einen Stift||iHavePen1.jpg
+Yo soy maestra||iAmWomanTeacher2.jpg
+Nosotros somos maestros | We are teachers|
+Yo soy una niña||iAmGirl2.jpg
+Nosotras somos unas niñas||weAreGirls1.jpg
 ===
-Ich bin Lehrerin||iAmWomanTeacher2.jpg
-Wir sind Lehrer | We are teachers|
-Ich bin ein Mädchen||iAmGirl2.jpg
-Wir sind Mädchen||weAreGirls1.jpg
+Nosotros somos unos niños||weAreBoys1.jpg
+Nosotros somos policías|We are policemen|
+Nosotros somos médicos||weAreDoctors1.jpg
 ===
-Wir sind Junge||weAreBoys1.jpg
-Wir sind Polizisten|We are policemen|
-Wir sind Ärzte||weAreDoctors1.jpg
+Yo tengo una bicicleta roja||iHaveRedBike1.jpg
+Nosotras tenemos unas bicicletas verdes|We (females) have green bikes|
+Yo tengo unas manzanas rojas||iHaveRedApples1.jpg
+Nosotros tenemos unas manzanas verdes||weHaveGreenApples1.jpg
 ===
-Ich habe ein rojoes Fahrrad||iHaveRedBike1.jpg
-Wir haben verdee Fahrräder|We have green bikes|
-Ich habe rojoe Äpfel||iHaveRedApples1.jpg
-Wir haben verdee Äpfel||weHaveGreenApples1.jpg
+Yo tengo unas flores rojas||iHaveRedFlowers1.jpg
+Usted tiene unas flores rojas||youHaveRedFlowers1.jpg
+Él tiene unas flores rojas||heHasRedFlowers1.jpg
+Ella tiene unas flores rojas||sheHasRedFlowers1.jpg
+Nosotros tenemos unas flores rojas||weHaveRedFlowers1.jpg
+Ellos tienen unas flores rojas||theyHaveRedFlowers1.jpg
 ===
-Ich habe rojoe Blumen||iHaveRedFlowers1.jpg
-Sie haben rojoe Blumen||youHaveRedFlowers1.jpg
-Er hat rojoe Blumen||heHasRedFlowers1.jpg
-Sie hat rojoe Blumen||sheHasRedFlowers1.jpg
-Wir haben rojoe Blumen||weHaveRedFlowers1.jpg
-Sie haben rojoe Blumen||theyHaveRedFlowers1.jpg
+¿Qué hace el hombre?||doWhatManCook1.jpg
+El hombre cocina||manCook1.jpg
+¿Qué hace la mujer?||doWhatWomanRead1.jpg
+La mujer lee||womanRead1.jpg
+¿Qué hace el niño?||doWhatBoyRun1.jpg
+El niño corre||boyRun1.jpg
 ===
-Was macht der Mann?||doWhatManCook1.jpg
-Der Mann kocht||manCook1.jpg
-Was macht die Frau||doWhatWomanRead1.jpg
-Die Frau liest||womanRead1.jpg
-Was macht der Junge||doWhatBoyRun1.jpg
-Der Junge rennt||boyRun1.jpg
+¿Qué hace el médico?||manDoctorWrite1.jpg
+El médico escribe|The doctor writes|
+¿Qué hace el policía||manPolicemanDrive1.jpg
+El policía conduce|The policeman drives|
+¿Qué hace la niña?||girlWalk1.jpg
+La niña anda|The girl walks|
 ===
-Was macht der Arzt||manDoctorWrite1.jpg
-Der Arzt schreibt|The doctor is writing|
-Was macht der Polizist||manPolicemanDrive1.jpg
-Der Polizist fährt|The policeman is driving|
-Was macht das Mädchen?||girlWalk1.jpg
-Das Mädchen läuft|The girl is walking|
+Caballos corren||horsesRun.jpg
+El caballo blanco no está corriendo||whiteHorseStand.jpg
+Gatos duermen||catsSleep.jpg
+El gato negro no está durmiendo | The black cat is not sleeping
+Perros corren || dogsRun.jpg
+El perro negro no está corriendo || blackDogStand.jpg
 ===
-Was machen Sie?|What are you doing?|
-Ich schreibe||iWrite1.jpg
-Ich fahre Auto||iDrive1.jpg
+¿Qué está haciendo la mujer? || doWhatWomanWalk.jpg
+La mujer está andando || womanWalk.jpg
+¿Qué está haciendo la niña? || doWhatGirlWalk.jpg
+La niña está andando || girlWalk.jpg
+¿Qué está haciendo el hombre? || doWhatManEat.jpg
+El hombre está comiendo || manEat.jpg
+¿Qué está haciendo el niño? || doWhatBoyEat.jpg
+EL niño está comiendo || boyEat.jpg
+===
+¿Qué hace usted?|What are you doing?|
+Yo estoy escribiendo||iWrite1.jpg
+Yo estoy conduciendo||iDrive1.jpg
