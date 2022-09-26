@@ -20,7 +20,7 @@ export function Learn() {
 function LearnCore() {
   const [learnTurn, setLearnTurn] = useState<string>(LearnTurn.Landing)
 
-  const [lang, setLang] = useState<string>(Lang.German)
+  const [lang, setLang] = useState<string>(Lang.Spanish)
   const [level, setLevel] = useState<string>("1")
   const [lesson, setLesson] = useState<string>("1")
 

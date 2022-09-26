@@ -1,5 +1,5 @@
 两天^liǎng tiān|2 days|
-这只猫二十天大^zhè zhǐ māo èr shí tiān dà||20DayCat1.jpg
+这只猫二十天大^zhè zhī māo èr shí tiān dà||20DayCat1.jpg
 这个婴儿一天大^zhè ge yīng ér yī tiān dà||1DayBaby1.jpg
 七天^qī tiān|7 days|
 ===
@@ -7,10 +7,10 @@
 一个月有四个星期^yī gè yuè yǒu sì gè xīng qī|A week has 4 weeks|
 一年有十二个月^yī nián yǒu shí èr gè yuè||12Months1.jpg
 ===
-天^tiān|the day|
-星期^xīng qī|the week|
-月^yuè|the month|
-年^nián|the year|
+天^tiān|day|
+星期^xīng qī|week|
+月^yuè|month|
+年^nián|year|
 ===
 他十八天大^tā shí bā tiān dà||he18Day1.jpg
 他十八个星期大^tā shí bā gè xīng qī dà||he18Week1.jpg
