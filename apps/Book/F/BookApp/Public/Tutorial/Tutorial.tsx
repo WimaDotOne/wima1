@@ -34,7 +34,7 @@ function TutorialCore() {
 
   <StripeSectionHeader text="Tips to write a chapter"/>
   <StripeSubParagraph>
-    A chapter can only have at most around 5000 characters.
+    A chapter can only have at most around 5000 words.
   </StripeSubParagraph>
   <StripeSubParagraph>
     Our chapter text file is not really best for editing texts. It's better you write your book in a text file or first put into a text file and then copy and past it into our chapter text file.
