@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { About } from '../../../apps/Social/F/SocialApp/Public/About/About'
 import { AppTurn } from '../../../apps/Social/F/SocialApp/SocialWindow/SocialWindow'
+import { Landing } from '../../../apps/Tip/F/TipApp/Landing/Landing'
 import { IsWimaUserLogin } from '../../../apps/Wima/fWima'
 import { useAppleWindow } from '../../../libs/Core/Core2/AppleWindow/fAppleWindow'
 
@@ -13,12 +13,12 @@ export default function SocialPage() {
   })
   return (<>
     <Head>
-      <title>Sociable</title>
-      <meta name="description" content="Sociable" />
+      <title>Tip</title>
+      <meta name="description" content="Tip" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <IsWimaUserLogin />
-    <About />
+    <Landing />
   </>)
 }
 

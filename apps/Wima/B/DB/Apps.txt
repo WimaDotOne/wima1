@@ -1,4 +1,5 @@
 Login | login.png | Login
+Tip | tip.png | Tip
 Sociable | social.jpg | Social
 Movic | movic.webp | Movic
 Lingo | lingo.png | Lingo
