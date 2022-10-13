@@ -76,6 +76,7 @@ function TipMenu(viewId?: string): MenuModel | undefined {
 
   const publicGroup = new GroupModel("Tip", true)
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 
   const menu = new MenuModel(viewId, TipColor.themeDarkBlue)
   menu.AddGroup(publicGroup)

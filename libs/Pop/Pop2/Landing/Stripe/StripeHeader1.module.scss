@@ -22,11 +22,21 @@
     font-size: 60px;
     line-height: 64px;
   }
+
+  .text1.h2 {
+    font-size: 50px;
+    line-height: 52px;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .text1 {
     font-size: 70px;
     line-height: 74px;
+  }
+
+  .text1.h2 {
+    font-size: 50px;
+    line-height: 52px;
   }
 }

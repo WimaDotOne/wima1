@@ -6,6 +6,7 @@ interface ILimitWidth {
   children: ReactNode
   gray?: boolean
   yellow?: boolean
+  beige?: boolean
   maxWidth?: number
 }
 
@@ -13,6 +14,7 @@ export function LimitWidth({
   children, 
   gray,
   yellow,
+  beige,
   maxWidth
 }: ILimitWidth) {
 
@@ -22,8 +24,11 @@ export function LimitWidth({
   }
   const clGray = gray ? cl.gray : ""
   const clYellow = yellow ? cl.yellow: ""
+  const clBeige = beige ? cl.beige: ""
   return(<>
-    <div className={ClassNames([cl.limitWidth, clGray, clYellow])}>
+    <div className={
+      ClassNames([cl.limitWidth, 
+        clGray, clYellow, clBeige])}>
       <div className={cl.limitWidthInner} style={style}>
         {children}
       </div>
