@@ -2,8 +2,8 @@ import { ClassNames } from "../../../../Core/Core1/fCore1"
 import cl from "./StripeHeader1.module.scss"
 
 interface IStripeHeader1Prop {
-  text1: string,
-  text2: string,
+  text1: string
+  text2: string
   h2?: boolean
 }
 export function StripeHeader1({

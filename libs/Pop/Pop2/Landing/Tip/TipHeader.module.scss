@@ -1,0 +1,43 @@
+.header {
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-column-gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.imageDiv {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 500px) {
+  .imageDiv {
+    visibility: hidden;
+    width: 1px;
+  }
+  .header {
+    grid-template-columns: 0 auto;
+    grid-column-gap: 0;
+  }
+}
+
+.text1 {
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #0a2540;
+  max-width: 600px;
+}
+
+.text2 {
+  font-size: 18px;
+  margin: 32px 0;
+  color: #425466;
+  max-width: 600px;
+  padding: 0 5px;
+}

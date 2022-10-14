@@ -5,13 +5,15 @@ import { StripeParagraph, StripeSubParagraph } from "./Landing/Stripe/StripePara
 import { StripeSectionHeader, StripeSubSectionHeader } from "./Landing/Stripe/StripeSectionHeader"
 import { DemoImage } from "./Landing/DemoImage/DemoImage"
 import { Wave } from "./Fancy/Wave/Wave"
-
+import { TipHeader } from "./Landing/Tip/TipHeader"
 export {
   AppleNewsHeader1,
   StripeHeader1,
   StripeIntroText,
   StripeParagraph, StripeSubParagraph,
   StripeSectionHeader, StripeSubSectionHeader,
+
+  TipHeader,
 
   DemoImage,
   
