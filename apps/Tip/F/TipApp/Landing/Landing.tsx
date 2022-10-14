@@ -12,6 +12,7 @@ export function Landing() {
       <TipHeader text1="Tip or write a thank you note"
         text2="Practice being generous & kind. Giving can be more fun than receiving, sometimes."
         imageUrl="/apps/Tip/Illustration/tip.png" />
+      <Div height={20} />
     </LimitWidth>
   </TipWindow>
   </>)
