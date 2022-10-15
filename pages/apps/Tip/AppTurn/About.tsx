@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Landing } from "../../../../apps/Tip/F/TipApp/Landing/Landing";
+import { Landing } from "../../../../apps/Tip/F/TipApp/Public/Landing/Landing";
 
 export default function AboutPage() {
   return(<>

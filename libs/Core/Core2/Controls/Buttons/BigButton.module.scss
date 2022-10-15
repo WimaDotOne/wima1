@@ -1,0 +1,16 @@
+
+.button {
+  appearance: none;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  user-select: default;
+  cursor: pointer;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 3px #aed1ec;
+}
