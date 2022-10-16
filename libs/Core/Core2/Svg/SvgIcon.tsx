@@ -46,6 +46,7 @@ import { SvgUniversity } from "./School/University/SvgUniversity"
 import { SvgProfile } from "./Social/Profile/SvgProfile"
 import { SvgDashboard } from "./Common/Dashboard/SvgDashboard"
 import { SvgGoods } from "./Social/Goods/SvgGoods"
+import { SvgHeart } from "./Social/Heart/SvgHeart"
 import { SvgService } from "./Social/Service/SvgService"
 import { SvgHelp } from "./Social/Help/SvgHelp"
 import { SvgClock } from "./Office/Clock/SvgClock"
@@ -153,6 +154,7 @@ export function SvgIcon({
     case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />
     case "service": return <SvgService width={width} fill={color} />
     case "help": return <SvgHelp width={width} fill={color} />
+    case "heart": return <SvgHeart width={width} stroke={color} strokeWidth={strokeWidth} />
 
     default: return null
   }
