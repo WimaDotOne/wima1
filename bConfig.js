@@ -44,6 +44,10 @@ export const BookConfig = {
   textMaxPerChapter: 50000
 }
 
+export const TipConfig = {
+  jobMaxPerAccount: 10
+}
+
 export const SocialConfig = {
   needMaxPerAccount: 10,
   needLoadMax: 10000,

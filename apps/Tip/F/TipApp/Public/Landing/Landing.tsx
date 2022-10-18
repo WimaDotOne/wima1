@@ -1,6 +1,5 @@
 
-import { BigIconButton } from "../../../../../../libs/Core/Core1/StripeLogin/F/View/Login/LoginCard/ChooseLoginMethod/BigIconButton/BigIconButton"
-import { BigButton, Button1, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
+import { BigButton, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { TipHeader } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { TipWindow } from "../../TipWindow/TipWindow"
 import cl from "./Landing.module.scss"

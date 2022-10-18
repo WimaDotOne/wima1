@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { TipWindow } from "../../../../apps/Tip/F/TipApp/TipWindow/TipWindow";
+import { Jobs } from "../../../../apps/Tip/F/TipApp/Attendant/Jobs/Jobs";
+import { IsWimaUserLogin } from "../../../../apps/Wima/fWima";
 
 export default function BaristaSignupPage() {
   return(<>
@@ -8,5 +9,7 @@ export default function BaristaSignupPage() {
       <meta name="description" content="Tip" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <IsWimaUserLogin />
+    <Jobs />
   </>)
 }

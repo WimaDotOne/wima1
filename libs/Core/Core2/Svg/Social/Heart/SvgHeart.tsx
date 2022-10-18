@@ -9,6 +9,7 @@ export function SvgHeart({
 
   stroke =  stroke || "black"
   strokeWidth = strokeWidth || 40
+
   return(<>
     <Svg viewBox="-30 -30 558 558" width={width} strokeWidth={strokeWidth} stroke={stroke}>
 		<path d="M364.755,70.016c-4.916-0.619-9.892-0.937-14.803-0.937c-42.954,0-76.164,22.968-98.319,45.318

@@ -61,7 +61,7 @@ export function TipWindow({
 }
 
 export const AppTurn = {
-  AttendantAccount: "AttendantAccount",
+  Jobs: "Jobs",
   GiveTips: "GiveTips",
   About: "About",
   Exit: "Exit"
@@ -69,7 +69,7 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
-    case AppTurn.AttendantAccount: return true
+    case AppTurn.Jobs: return true
     default: return false
   }
 }
@@ -78,9 +78,9 @@ function TipMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
 
   const attendantGroup = new GroupModel("Attendant", false)
-  attendantGroup.AddItem(new ItemModel(AppTurn.AttendantAccount, "My account", ""))
+  attendantGroup.AddItem(new ItemModel(AppTurn.Jobs, "Jobs", "profile"))
 
-  const publicGroup = new GroupModel("Tip", true)
+  const publicGroup = new GroupModel("Tip", false)
   publicGroup.AddItem(new ItemModel(AppTurn.GiveTips, "Tip", "heart"))
   publicGroup.AddItem(new ItemModel(AppTurn.About, "About", "smile"))
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
