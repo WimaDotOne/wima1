@@ -6,6 +6,7 @@ import TipJob from "../../Model/TipJob.js"
 
 export async function iCreateMyJob(req, res) {
   try{
+    
     const businessName = (req.body.businessName || "").trim()
 
     if(businessName.length > GENERAL_INPUT_MAX) {
@@ -46,6 +47,7 @@ export async function iCreateMyJob(req, res) {
     
     const job = new TipJob({
       _id: mongoose.Types.ObjectId(),
+      tipAccountId: tipAccount._id,
       business: businessName
     })
     

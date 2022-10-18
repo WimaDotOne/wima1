@@ -18,7 +18,7 @@ export function NewJob({
   const shield = useShield()
 
   async function CreateNewJob() {
-    await Post2(shield, "/job/CreateMyJob", {
+    await Post2(shield, "/tip/CreateMyJob", {
       businessName
     }, (res)=>{
       backToJobsHome()
