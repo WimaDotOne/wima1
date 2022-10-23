@@ -1,11 +1,11 @@
 @use "../../../../CSS/tip.module.scss";
 
-.board {
+.home {
   padding: 10px;
 }
 
 @media screen and (min-width: tip.$phoneMaxHeight) {
-  .board {
+  .home {
     padding: 10px 30px;
   }
 }

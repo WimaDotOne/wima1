@@ -42,7 +42,7 @@ export function JobsHome({
   })
 
   function openJob(jobId: string, businessName: string) {
-    router.push(`/apps/Tip/AppTurn/Job?jobId=${jobId}&business=${businessName}`)
+    router.push(`/apps/Tip/AppTurn/Job?jobId=${jobId}&businessName=${encodeURIComponent(businessName)}`)
   }
   return(<><TipWindow>
 

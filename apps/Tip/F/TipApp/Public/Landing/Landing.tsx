@@ -1,4 +1,5 @@
 
+import { useRouter } from "next/router"
 import { BigButton, Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { TipHeader } from "../../../../../../libs/Pop/Pop2/fPop2"
 import { TipWindow } from "../../TipWindow/TipWindow"
@@ -6,7 +7,13 @@ import cl from "./Landing.module.scss"
 
 export function Landing() {
 
-  function onClickIAcceptTip() {
+  const router = useRouter()
+
+  function onClickAcceptTips() {
+    router.push("/apps/Tip/AppTurn/Jobs")
+  }
+
+  function onClickGiveTips() {
 
   }
   return(<>
@@ -21,8 +28,8 @@ export function Landing() {
 
     <LimitWidth>
       <div className={cl.giveAcceptTips}>
-        <BigButton text="Give tips" onClick={onClickIAcceptTip} color=""/>
-        <BigButton text="Accept tips" onClick={onClickIAcceptTip} color="salmon"/>
+        <BigButton text="Give tips" onClick={onClickGiveTips} color=""/>
+        <BigButton text="Accept tips" onClick={onClickAcceptTips} color="salmon"/>
       </div>
     </LimitWidth>
   </TipWindow>
