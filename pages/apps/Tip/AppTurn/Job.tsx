@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Job } from '../../../../apps/Tip/F/TipApp/Attendant/Job/Job'
+import { GatherWimaEnv } from '../../../../apps/Wima/F/WimaEnv/GatherWimaEnv'
 
 export default function JobPage() {
   return (<>
@@ -10,5 +11,6 @@ export default function JobPage() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Job />
+    <GatherWimaEnv />
   </>)
 }

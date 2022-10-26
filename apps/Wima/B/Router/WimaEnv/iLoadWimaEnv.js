@@ -8,6 +8,7 @@ export async function iLoadWimaEnv(req, res) {
       textMaxPerChapter: process.env.BOOK_TEXT_MAX_PER_CHAPTER,
       facebookAppId: process.env.FACEBOOK_APP_ID,
       googleClientId: process.env.GOOGLE_CLIENT_ID,
+      googlePlacesApiId: process.env.GOOGLE_PLACES_API_ID,
       contactMe: process.env.CONTACT_ME
     })
   } catch(err) {

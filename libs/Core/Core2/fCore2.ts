@@ -23,6 +23,9 @@ import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
 import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 import { TextEditor } from "./TextEditor/TextEditor"
+
+import { PlaceAutoComplete } from "./GoogleMap/fGoogleMap"
+
 export {
   GroupModel,
   ItemModel,
@@ -44,5 +47,7 @@ export {
   LimitWidth,
   AutoRepeatGrid,
 
-  TextEditor
+  TextEditor,
+
+  PlaceAutoComplete
 }

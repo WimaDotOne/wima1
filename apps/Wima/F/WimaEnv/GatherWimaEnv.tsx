@@ -18,6 +18,8 @@ export function GatherWimaEnv() {
       wimaEnv?.setDomain(res.domain)
       wimaEnv?.setMovicScriptFileMaxLength(res.movicScriptFileMaxLength)
       wimaEnv?.setTextMaxPerChapter(res.textMaxPerChapter)
+      wimaEnv?.setGooglePlacesApiId(res.googlePlacesApiId)
+
     })
   }
   useEffect(()=>{
