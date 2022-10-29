@@ -8,7 +8,8 @@ import cl from "./GoogleLogin.module.scss"
 
 declare global {
   interface Window {
-      google:any;
+    google: any
+    googlePlace: any
   }
 }
 
