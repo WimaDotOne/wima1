@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { Post2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
+import { Get2, Post2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Button1, Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { TipColor } from "../../../CSS/TipColor"
@@ -27,25 +27,24 @@ export function Job({
     router.push("/apps/Tip/AppTurn/Jobs")
   }
 
-  useEffect(()=>{
-
-    const query = router.query
-    const id = query.jobId as string
-    const jobName = query.jobName as string
-
-    if(!job || !job.id) {
-      //check job to avoid infinitely setting
-      //check job.id to avoid setting a job with undefined id.
-      setJob({
-        id, 
-        jobName
-      })
-    }
-  })
-
   function reloadJob() {
     setJobLoaded(false)
   }
+
+  async function loadJob() {
+    const query = router.query
+    const jobId = query.jobId as string
+    if(jobLoaded) return
+    
+    await Get2(shield, `/tip/LoadMyJob?jobId=${jobId}`, (res)=>{
+      setJobLoaded(true)
+      setJob(res.job)
+    })
+  }
+
+  useEffect(()=>{
+    loadJob()
+  })
 
   async function deleteJob() {
     if(!job) return
