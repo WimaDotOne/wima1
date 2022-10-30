@@ -13,20 +13,20 @@ export function NewJob({
   backToJobsHome
 }:INewJobProp) {
 
-  const [businessName, setBusinessName] = useState<string>("")
+  const [jobName, setJobName] = useState<string>("")
 
   const shield = useShield()
 
   async function CreateNewJob() {
     await Post2(shield, "/tip/CreateMyJob", {
-      businessName
+      jobName
     }, (res)=>{
       backToJobsHome()
     })
   }
 
   function IsNewJobInfoValid() {
-    if(!businessName) return false
+    if(!jobName) return false
     return true
   }
   
@@ -35,10 +35,10 @@ export function NewJob({
       <HeadLine text="Start a new job"/>
       <Div height={30} />
       <div className={cl.fields}>
-        <TextField1 value={businessName} 
+        <TextField1 value={jobName} 
           maxLength={GENERAL_INPUT_MAX}
-          prompt="Business name"
-          onChange={(newValue)=>{setBusinessName(newValue)}} />
+          prompt="Job name"
+          onChange={(newValue)=>{setJobName(newValue)}} />
       </div>
     </div>
     <AppleWindowBottomBarFill />

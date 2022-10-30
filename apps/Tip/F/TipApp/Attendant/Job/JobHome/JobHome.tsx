@@ -27,10 +27,10 @@ export function JobHome({
   function onPlaceChanged(place: IPlace) {
     setPlace(place)
   }
-
+ 
   return(<>
     <div className={cl.home}>
-      <HeadLine text={job.businessName} h={3}/>
+      <HeadLine text={job.jobName} h={3}/>
     </div>
     <Div height={10} />
     <PlaceAutoComplete1 onPlaceChanged={onPlaceChanged}

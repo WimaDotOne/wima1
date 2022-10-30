@@ -21,7 +21,7 @@ export async function iLoadMyJobs(req, res) {
     for(const job of tipJobs) {
       jobs.push({
         id: job._id.toString(),
-        business: job.business
+        jobName: job.jobName
       })
     }
 

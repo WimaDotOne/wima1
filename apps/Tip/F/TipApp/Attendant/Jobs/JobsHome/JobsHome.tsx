@@ -7,13 +7,9 @@ import { HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { AppleWindowBottomBar } from "../../../../../../H/AppleWindowBottomBar"
 import { useWimaUser } from "../../../../../../Wima/fWima"
 import { TipColor } from "../../../../CSS/TipColor"
+import { IJob } from "../../../../Model/IJob"
 import { TipWindow } from "../../../TipWindow/TipWindow"
 import cl from "./JobsHome.module.scss"
-
-interface IJob {
-  id: string
-  business: string
-}
 
 interface IJobsHomeProp {
   goToNewJob: ()=>void
@@ -41,8 +37,8 @@ export function JobsHome({
     LoadMyJobs()
   })
 
-  function openJob(jobId: string, businessName: string) {
-    router.push(`/apps/Tip/AppTurn/Job?jobId=${jobId}&businessName=${encodeURIComponent(businessName)}`)
+  function openJob(jobId: string, jobName: string) {
+    router.push(`/apps/Tip/AppTurn/Job?jobId=${jobId}&jobName=${encodeURIComponent(jobName)}`)
   }
   return(<><TipWindow>
 
@@ -54,8 +50,8 @@ export function JobsHome({
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
     {
       jobs.map((job, i)=>
-      <AppleFolder key={job.id} text={job.business} onClick={
-        ()=>{openJob(job.id, job.business)}
+      <AppleFolder key={job.id} text={job.jobName} onClick={
+        ()=>{openJob(job.id, job.jobName)}
         
       }/>)
     }

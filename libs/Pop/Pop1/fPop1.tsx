@@ -1,6 +1,7 @@
 import { Table } from "./Table/Table"
 import { Pagination, PaginationType } from "./Pagination/Pagination"
 import { ReadEdit } from "./ReadEdit/ReadEdit"
+import { ReadEditHeader } from "./ReadEdit/ReadEditHeader"
 import { FieldsWrap, FieldWrap } from "./ReadEdit/FieldsWrap"
 
 export {
@@ -8,7 +9,7 @@ export {
 
   Pagination, PaginationType,
 
-  ReadEdit,
+  ReadEdit, ReadEditHeader,
   FieldsWrap,
   FieldWrap
 }

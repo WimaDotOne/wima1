@@ -1,4 +1,3 @@
-import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
 import BookChapter from "../../../Model/BookChapter.js"
 import { asyGetMyBookProject } from "../../H/GetMyBookProject.js"
 
