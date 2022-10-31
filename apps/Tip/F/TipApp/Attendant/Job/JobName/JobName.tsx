@@ -16,20 +16,22 @@ export function JobName({
 }: IJobNameProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [name, setName] = useState<string>(job.jobName)
+  const [jobName, setJobName] = useState<string>(job.jobName)
   const shield = useShield()
 
   async function saveJobName(onOk?:(res:any)=>void) {
-    await Post2(shield, "/tip/SaveSettingsJobName",
+    await Post2(shield, "/tip/SaveJobName",
       {
         jobId: job.id,
-        jobName: name
+        jobName: jobName
       }, onOk
     )
   }
 
   function onCancel() {
     reloadJob()
+    setJobName(job.jobName)
+    setIsEdit(false)
   }
 
   async function onSave() {
@@ -48,8 +50,8 @@ export function JobName({
     >
     {
       isEdit ? 
-      <EditJobName />:
-      <ViewJobName />
+      <EditJobName jobName={jobName} setJobName={setJobName}/>:
+      <ViewJobName jobName={job.jobName}/>
     }
     </ReadEdit>
   </>)

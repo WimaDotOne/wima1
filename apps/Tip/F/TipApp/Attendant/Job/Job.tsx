@@ -20,6 +20,7 @@ export function Job({
   const [job, setJob] = useState<IJob>()
   const [jobTurn, setJobTurn] = useState<string>("")
   const [jobLoaded, setJobLoaded] = useState<boolean>(false)
+  const [refresh, setRefresh] = useState<number>(0)
 
   const shield = useShield()
 
@@ -28,7 +29,9 @@ export function Job({
   }
 
   function reloadJob() {
+    console.log("reloadJob jobLoaded="+jobLoaded)
     setJobLoaded(false)
+    setRefresh((refresh+1)%100)
   }
 
   async function loadJob() {
