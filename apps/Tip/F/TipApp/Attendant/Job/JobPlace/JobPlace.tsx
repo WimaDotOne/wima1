@@ -31,6 +31,7 @@ export function JobPlace({
 
   return(<>
     <ReadEdit title="Establishment name + Street" isEdit={isEdit}
+      description="Customers find you by searching the place you work at."
       setIsEdit={setIsEdit}
       onCancel={onCancel}
       color={TipColor.themeDarkBlue}

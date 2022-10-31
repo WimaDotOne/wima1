@@ -43,7 +43,7 @@ export function JobName({
 
   return(<>
     <ReadEdit title="Job name" isEdit={isEdit}
-      description="Job name is only for you to see."
+      description="Job name is only seen by you."
       setIsEdit={setIsEdit}
       onCancel={onCancel}
       onSave={onSave}
