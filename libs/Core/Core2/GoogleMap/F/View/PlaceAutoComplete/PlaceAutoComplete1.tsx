@@ -19,7 +19,6 @@ export function PlaceAutoComplete1({
   const placeholder = ghost || "Enter a place"
 
   function onPlaceChanged2(autocomplete: any) {
-    console.log("haha place changed")
     const place = autocomplete.getPlace()
     onPlaceChanged(place)
   }

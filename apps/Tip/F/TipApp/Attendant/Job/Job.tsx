@@ -2,12 +2,14 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Get2, Post2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Button1, Div } from "../../../../../../libs/Core/Core2/fCore2"
+import { GoogleMapScript1 } from "../../../../../../libs/Core/Core2/GoogleMap/fGoogleMap"
 import { HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { TipColor } from "../../../CSS/TipColor"
 import { IJob } from "../../../Model/IJob"
 import { AboutMe } from "./AboutMe/AboutMe"
 import cl from "./Job.module.scss"
 import { JobName } from "./JobName/JobName"
+import { JobPlace } from "./JobPlace/JobPlace"
 import { Publish } from "./Publish/Publish"
 
 interface IJobProp {
@@ -17,13 +19,14 @@ export function Job({
 
 }: IJobProp) {
 
-  const router = useRouter()
+  const [scriptLoaded, setScriptLoaded] = useState<boolean>(false)
 
   const [job, setJob] = useState<IJob>()
   const [jobLoaded, setJobLoaded] = useState<boolean>(false)
   const [refresh, setRefresh] = useState<number>(0)
 
   const shield = useShield()
+  const router = useRouter()
 
   function backToJobsHome() {
     router.push("/apps/Tip/AppTurn/Jobs")
@@ -63,18 +66,23 @@ export function Job({
   }
   
   return(<>
-    <div className={cl.settings}>
-      <HeadLine text={job.jobName} h={3} />
-      <Div height={10} />
-      <JobName job={job} reloadJob={reloadJob}/>
-      <Div height={20} />
-      <AboutMe job={job} reloadJob={reloadJob}/>
-      <Div height={20} />
-      <Publish job={job} reloadJob={reloadJob}/>
-      <Div height={50} />
-      <Button1 text="Detete Job" color={TipColor.$errorRed}
-        onClick={deleteJob} />
-    </div>
+  <div className={cl.settings}>
+    <HeadLine text={job.jobName} h={3} />
+    <Div height={10} />
+    <JobName job={job} reloadJob={reloadJob}/>
+    <Div height={20} />
+    <JobPlace job={job} reloadJob={reloadJob}/>
+    <Div height={20} />
+    <AboutMe job={job} reloadJob={reloadJob}/>
+    <Div height={20} />
+    <Publish job={job} reloadJob={reloadJob}/>
+    <Div height={50} />
+    <Button1 text="Detete Job" color={TipColor.$errorRed}
+      onClick={deleteJob} />
+  </div>
+
+  <GoogleMapScript1 scriptLoaded={scriptLoaded}
+      setScriptLoaded={setScriptLoaded}/>
   <AppleWindowBottomBarFill />
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={TipColor.themeDarkBlue}

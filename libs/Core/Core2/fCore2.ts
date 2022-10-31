@@ -24,7 +24,7 @@ import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 import { TextEditor } from "./TextEditor/TextEditor"
 
-import { PlaceAutoComplete } from "./GoogleMap/fGoogleMap"
+import { PlaceAutoComplete1 } from "./GoogleMap/fGoogleMap"
 
 export {
   GroupModel,
@@ -49,5 +49,5 @@ export {
 
   TextEditor,
 
-  PlaceAutoComplete
+  PlaceAutoComplete1
 }

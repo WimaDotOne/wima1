@@ -9,7 +9,7 @@ interface IReadEditProp {
   isEdit: boolean
   setIsEdit: (isEdit: boolean)=>void
   onCancel: ()=>void
-  onSave: ()=>void
+  onSave?: ()=>void
   children: ReactNode
   color?: string
 }
@@ -37,11 +37,15 @@ export function ReadEdit({
               backgroundColor={lightGray}
               onClick={onCancel}
             /> &nbsp;&nbsp;
-            <AppleIconButton svgName="floppydisk" 
-              color={color} 
-              backgroundColor={lightGray}
-              onClick={onSave}
-            />
+            {
+              onSave ?
+              <AppleIconButton svgName="floppydisk" 
+                color={color} 
+                backgroundColor={lightGray}
+                onClick={onSave}
+              />:null
+            }
+
           </div>
           :
           <div className={cl.pencilDiv} onClick={()=>{setIsEdit(true)}}>
@@ -63,9 +67,13 @@ export function ReadEdit({
         <div>
           <Button1 text="Cancel" onClick={onCancel} color={color}/>
         </div>
-        <div className={cl.saveBtnDiv}>
-          <Button1 text="Save" onClick={onSave} color={color}/>
-        </div>
+        {
+          onSave ?
+          <div className={cl.saveBtnDiv}>
+            <Button1 text="Save" onClick={onSave} color={color}/>
+          </div>:null
+        }
+
       </div>: null
     }
     </div>
