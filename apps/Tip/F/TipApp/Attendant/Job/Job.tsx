@@ -7,6 +7,7 @@ import { TipColor } from "../../../CSS/TipColor"
 import { IJob } from "../../../Model/IJob"
 import cl from "./Job.module.scss"
 import { JobName } from "./JobName/JobName"
+import { Publish } from "./Publish/Publish"
 
 interface IJobProp {
 
@@ -18,7 +19,6 @@ export function Job({
   const router = useRouter()
 
   const [job, setJob] = useState<IJob>()
-  const [jobTurn, setJobTurn] = useState<string>("")
   const [jobLoaded, setJobLoaded] = useState<boolean>(false)
   const [refresh, setRefresh] = useState<number>(0)
 
@@ -29,7 +29,6 @@ export function Job({
   }
 
   function reloadJob() {
-    console.log("reloadJob jobLoaded="+jobLoaded)
     setJobLoaded(false)
     setRefresh((refresh+1)%100)
   }
@@ -66,7 +65,8 @@ export function Job({
       <HeadLine text={job.jobName} h={3} />
       <Div height={10} />
       <JobName job={job} reloadJob={reloadJob}/>
-
+      <Div height={20} />
+      <Publish job={job} reloadJob={reloadJob}/>
       <Div height={50} />
       <Button1 text="Detete Job" color={TipColor.$errorRed}
         onClick={deleteJob} />
