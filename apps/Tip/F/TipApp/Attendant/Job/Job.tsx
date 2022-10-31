@@ -10,6 +10,7 @@ import { AboutMe } from "./AboutMe/AboutMe"
 import cl from "./Job.module.scss"
 import { JobName } from "./JobName/JobName"
 import { JobPlace } from "./JobPlace/JobPlace"
+import { Photo } from "./Photo/Photo"
 import { Publish } from "./Publish/Publish"
 
 interface IJobProp {
@@ -55,6 +56,10 @@ export function Job({
 
   async function deleteJob() {
     if(!job) return
+    const answer = window.prompt(`Please type "delete" below to continue`)
+    if((answer || "").trim().toLowerCase() !== "delete") {
+      return
+    }
     if(!window.confirm(`Are you sure to delete job ${job.jobName}?`)) return
     await Post2(shield, "/tip/DeleteMyJob", {
       jobId: job.id
@@ -72,6 +77,8 @@ export function Job({
     <JobName job={job} reloadJob={reloadJob}/>
     <Div height={20} />
     <JobPlace job={job} reloadJob={reloadJob}/>
+    <Div height={20} />
+    <Photo job={job} />
     <Div height={20} />
     <AboutMe job={job} reloadJob={reloadJob}/>
     <Div height={20} />

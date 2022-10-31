@@ -8,7 +8,12 @@ const schema = mongoose.Schema({
   placeName: { type: String  },
   placeId: { type: String, index: true },
   firstName: { type: String },
-  photoUrl: { type: String },
+  selfPhoto: {
+    s3Key: { type: String },
+    s3KeySmall: { type: String },
+    url: { type: String },
+    urlSmall: { type: String }
+  },
   selfDescription: { type: String }
 }, {
   timestamps: { currentTime: () => Date.now() }

@@ -8,6 +8,9 @@ import { iSaveJobName } from "./Attendant/iSaveJobName.js"
 import { iSaveIsJobPublic } from "./Attendant/iSaveIsJobPublic.js"
 import { iSaveAboutMe } from "./Attendant/iSaveAboutMe.js"
 import { iSavePlace } from "./Attendant/iSavePlace.js"
+import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
+import { iImageMulter } from "../../../../libs/Core/Core1/bCore1.js"
+import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
 
 const TipRouter = express.Router()
 
@@ -22,6 +25,9 @@ TipRouter.post("/SaveIsJobPublic", iAuth, iSaveIsJobPublic)
 TipRouter.post("/SaveAboutMe", iAuth, iSaveAboutMe)
 TipRouter.post("/SavePlace", iAuth, iSavePlace)
 
+
+//Upload Image
+TipRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, iUploadAttendantPhoto)
 
 export {
   TipRouter

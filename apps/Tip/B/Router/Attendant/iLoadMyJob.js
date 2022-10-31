@@ -13,7 +13,9 @@ export async function iLoadMyJob(req, res) {
       isJobPublic: job.isJobPublic,
       placeName: job.placeName,
       firstName: job.firstName,
-      photoUrl: job.photoUrl,
+      selfPhoto: {
+        urlSmall: job.selfPhoto?.urlSmall || ""
+      },
       selfDescription: job.selfDescription
     }
 

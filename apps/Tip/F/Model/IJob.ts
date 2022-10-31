@@ -1,3 +1,10 @@
+export interface IPhoto {
+  s3Key?: string
+  s3KeySmall?: string
+  url?: string
+  urlSmall?: string
+}
+
 export interface IJob {
   id: string
   jobName: string
@@ -5,6 +12,6 @@ export interface IJob {
   placeName?: string
   placeId?: string
   firstName?: string
-  photoUrl?: string
+  selfPhoto?: IPhoto
   selfDescription?: string
 }
