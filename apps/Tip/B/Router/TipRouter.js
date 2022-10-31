@@ -6,6 +6,7 @@ import { iLoadMyJob } from "./Attendant/iLoadMyJob.js"
 import { iDeleteMyJob } from "./Attendant/iDeleteMyJob.js"
 import { iSaveJobName } from "./Attendant/iSaveJobName.js"
 import { iSaveIsJobPublic } from "./Attendant/iSaveIsJobPublic.js"
+import { iSaveAboutMe } from "./Attendant/iSaveAboutMe.js"
 
 const TipRouter = express.Router()
 
@@ -17,6 +18,8 @@ TipRouter.post("/CreateMyJob", iAuth, iCreateMyJob)
 TipRouter.post("/DeleteMyJob", iAuth, iDeleteMyJob)
 TipRouter.post("/SaveJobName", iAuth, iSaveJobName)
 TipRouter.post("/SaveIsJobPublic", iAuth, iSaveIsJobPublic)
+TipRouter.post("/SaveAboutMe", iAuth, iSaveAboutMe)
+
 
 export {
   TipRouter

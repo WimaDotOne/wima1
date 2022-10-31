@@ -5,6 +5,7 @@ import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDi
 import { HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { TipColor } from "../../../CSS/TipColor"
 import { IJob } from "../../../Model/IJob"
+import { AboutMe } from "./AboutMe/AboutMe"
 import cl from "./Job.module.scss"
 import { JobName } from "./JobName/JobName"
 import { Publish } from "./Publish/Publish"
@@ -37,6 +38,7 @@ export function Job({
     const query = router.query
     const jobId = query.jobId as string
     if(jobLoaded) return
+    if(!jobId) return
     
     await Get2(shield, `/tip/LoadMyJob?jobId=${jobId}`, (res)=>{
       setJobLoaded(true)
@@ -65,6 +67,8 @@ export function Job({
       <HeadLine text={job.jobName} h={3} />
       <Div height={10} />
       <JobName job={job} reloadJob={reloadJob}/>
+      <Div height={20} />
+      <AboutMe job={job} reloadJob={reloadJob}/>
       <Div height={20} />
       <Publish job={job} reloadJob={reloadJob}/>
       <Div height={50} />
