@@ -11,7 +11,7 @@ interface IPhotoProp {
 export function Photo({
   job
 }: IPhotoProp) {
-console.log(job)
+
   const [imageUrl, setImageUrl] = useState<string>(job.selfPhoto?.urlSmall || "")
 
   const fileInputRef = useRef<HTMLInputElement>(null)
