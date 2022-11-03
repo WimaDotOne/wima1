@@ -1,22 +1,26 @@
 import { useEffect, useRef } from "react"
 import cl from "./PlaceAutoComplete1.module.scss"
 import { IPlace } from "../../Model/IPlace"
+import { ClassNames } from "../../../../../Core1/fCore1"
 
 interface IPlaceAutoComplete1 {
   ghost?: string
   onPlaceChanged: (place: IPlace) => void
   hasAutoComplete: boolean
   setHasAutoComplete: (hasAutoComplete: boolean) => void
+  cute?: boolean
 }
 export function PlaceAutoComplete1({
   ghost,
   onPlaceChanged,
   hasAutoComplete,
-  setHasAutoComplete
+  setHasAutoComplete,
+  cute
 }: IPlaceAutoComplete1) {
 
   const inputRef = useRef<HTMLInputElement>(null)
   const placeholder = ghost || "Enter a place"
+  const clCute = cute ? cl.cute : ""
 
   function onPlaceChanged2(autocomplete: any) {
     const place = autocomplete.getPlace()
@@ -50,7 +54,7 @@ export function PlaceAutoComplete1({
  
   return(<>
     <div className={cl.inputWrap}>
-      <input className={cl.input} ref={inputRef} placeholder={placeholder} />
+      <input className={ClassNames([cl.input, clCute])} ref={inputRef} placeholder={placeholder} />
     </div>
   </>)
 }

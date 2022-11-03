@@ -16,6 +16,12 @@
   font-weight: normal;
 }
 
+.input.cute {
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
 .input:focus {
   border-color: googlemap.$borderBlue;
   box-shadow: 0 0 0 3px googlemap.$outlineBlue;
