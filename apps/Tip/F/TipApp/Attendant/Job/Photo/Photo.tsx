@@ -45,7 +45,7 @@ export function Photo({
     />
     <div className={cl.imageSpace}>
       <div className={cl.image} 
-        style={{backgroundImage:`url(${imageUrl || "/apps/Tip/Illustration/profile.png"})`}}>
+        style={{backgroundImage:`url(${imageUrl || "/apps/Tip/Illustration/tip.png"})`}}>
       </div>
     </div>
     <FileInput formTextFields={formTextFields}

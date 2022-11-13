@@ -11,6 +11,7 @@ import { iSavePlace } from "./Attendant/iSavePlace.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iImageMulter } from "../../../../libs/Core/Core1/bCore1.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
+import { iLoadEstablishmentJobs } from "./GiveTips/iLoadEstablishmentJobs.js"
 
 const TipRouter = express.Router()
 
@@ -28,6 +29,10 @@ TipRouter.post("/SavePlace", iAuth, iSavePlace)
 
 //Upload Image
 TipRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, iUploadAttendantPhoto)
+
+// Give Tips
+TipRouter.get("/LoadEstablishmentJobs", iLoadEstablishmentJobs)
+
 
 export {
   TipRouter
