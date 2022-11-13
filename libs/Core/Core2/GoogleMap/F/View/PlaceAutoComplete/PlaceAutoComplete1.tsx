@@ -33,7 +33,7 @@ export function PlaceAutoComplete1({
     if(!window.googlePlace) return
     if(!inputRef.current) return
     if(hasAutoComplete) return
-    
+
     const google = window.googlePlace
 
     const autocomplete = new google.maps.places.Autocomplete(

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useState } from "react"
 import { AppleIconButtons, AppleWindowPlainBottomBarDiv, Div, PlaceAutoComplete } from "../../../../../../../libs/Core/Core2/fCore2"
 import { IPlace } from "../../../../../../../libs/Core/Core2/GoogleMap/F/Model/IPlace"
 import { GoogleMapScript1, PlaceAutoComplete1 } from "../../../../../../../libs/Core/Core2/GoogleMap/fGoogleMap"

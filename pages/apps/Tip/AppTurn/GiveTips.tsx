@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { GiveTips } from "../../../../apps/Tip/F/TipApp/Public/GiveTips/GiveTips";
+import { GatherWimaEnv } from "../../../../apps/Wima/F/WimaEnv/GatherWimaEnv";
 
 export default function GiveTipsPage() {
   return(<>
@@ -10,5 +11,6 @@ export default function GiveTipsPage() {
     </Head>
 
     <GiveTips />
+    <GatherWimaEnv />
   </>)
 }

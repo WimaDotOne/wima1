@@ -1,5 +1,9 @@
-.attendant {
+.attendantWrap {
   padding: 15px;
+}
+
+.attendant {
+  cursor: pointer;
 }
 
 .photo {
@@ -12,7 +16,7 @@
 }
 
 .firstName {
-  margin-top: 5px;;
+  margin-top: 5px;
   font-size: 16px;
   text-align: center;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoogleMapScript1 } from "../../../../../../libs/Core/Core2/GoogleMap/fGoogleMap";
+import { IJob } from "../../../Model/IJob";
 import { TipWindow } from "../../TipWindow/TipWindow";
 import { Establishment } from "./Establishment/Establishment";
 import { TipAttendant } from "./TipAttendant/TipAttendant";
@@ -31,12 +32,38 @@ function GiveTipsCore({
 }: IGiveTipsCoreProp) {
   
   const [turn, setTurn] = useState<string>("")
+  const [jobs, setJobs] = useState<Array<IJob>>([])
+  const [job, setJob] = useState<IJob>()
+  const [placeId, setPlaceId] = useState<string>("")
+  const [placeName, setPlaceName] = useState<string>("")
+
+  function goTipAttendant(job: IJob) {
+    setJob(job)
+    setTurn(GiveTipsTurn.TipAttendant)
+  }
+
+  function goEstablishment() {
+    setTurn(GiveTipsTurn.Establishment)
+  }
+
+  function updatePlace(placeId: string, placeName: string) {
+    setPlaceId(placeId)
+    setPlaceName(placeName)
+  }
+
   switch(turn) {
     case GiveTipsTurn.TipAttendant: return(
-      <TipAttendant />
+      <TipAttendant job={job} goEstablishment={goEstablishment}/>
     )
     default: return(
-      <Establishment />
+      <Establishment 
+        jobs={jobs}
+        setJobs={setJobs}
+        goTipAttendant={goTipAttendant}
+        updatePlace={updatePlace}
+        placeId={placeId}
+        placeName={placeName}
+      />
     )
   }
 }

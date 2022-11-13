@@ -19,9 +19,10 @@ export function GoogleMapScript1({
   useEffect(()=>{
     
     if(scriptLoaded) return
+    if(!googlePlacesApiId) {
+    }
     if(!googlePlacesApiId) return
     if(!window) return
-  
     const loader = new Loader({
       apiKey: googlePlacesApiId,
       libraries: ["places"]

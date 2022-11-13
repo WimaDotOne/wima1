@@ -2,13 +2,13 @@ import TipJob from "../../Model/TipJob.js"
 
 export async function iLoadEstablishmentJobs(req, res) {
   try{
-    
     const placeId = (req.query.placeId || "").trim()
 
     if(!placeId) {
       return res.json({ok: false, error: "Place Id is missing"})
     }
 
+    console.log(placeId)
     const jobs = await TipJob.find({
       placeId,
       isJobPublic: true
