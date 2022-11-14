@@ -14,8 +14,9 @@ export function Landing() {
   }
 
   function onClickGiveTips() {
-
+    router.push("/apps/Tip/AppTurn/GiveTips")
   }
+  
   return(<>
   <TipWindow>
     <LimitWidth beige>

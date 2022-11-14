@@ -2,6 +2,7 @@ import { AppleIconButtons, AppleWindowBottomBarFill } from "../../../../../../..
 import { AppleWindowBottomBar } from "../../../../../../H/AppleWindowBottomBar"
 import { TipColor } from "../../../../CSS/TipColor"
 import { IJob } from "../../../../Model/IJob"
+import cl from "./TipAttendant.module.scss"
 
 interface ITipAttendantProp {
   job?: IJob
@@ -14,12 +15,23 @@ export function TipAttendant({
 }: ITipAttendantProp) {
   
   return(<>
-  <div>
-    Tip Attendant
-    {job?.firstName}
-    <br />
-    {job?.jobName}
+  <div className={cl.paint}>
   </div>
+  <div className={cl.banner}>
+    <div className={cl.photo}
+      style={{backgroundImage: `url(${job?.selfPhoto?.url})`}}/>
+    <div className={cl.firstName}>{job?.firstName}</div>
+    <div className={cl.selfDescriptionWrap}>
+    {
+      (job?.selfDescription || "").trim() ?
+      <div className={cl.selfDescription}>
+      {job?.selfDescription}
+      </div>:null
+    }
+    </div>
+  </div>
+
+
   <AppleWindowBottomBarFill />
   <AppleWindowBottomBar>
     <AppleIconButtons color={TipColor.themeDarkBlue} strokeWidth={20}
