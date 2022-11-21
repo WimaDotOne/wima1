@@ -61,6 +61,7 @@ export function TipWindow({
 }
 
 export const AppTurn = {
+  PaymentSetup: "PaymentSetup",
   Jobs: "Jobs",
   GiveTips: "GiveTips",
   About: "About",
@@ -78,7 +79,8 @@ function TipMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.About
 
   const attendantGroup = new GroupModel("Attendant", false)
-  attendantGroup.AddItem(new ItemModel(AppTurn.Jobs, "Jobs", "profile"))
+  attendantGroup.AddItem(new ItemModel(AppTurn.PaymentSetup, "Payment Setup", "dollar"))
+  attendantGroup.AddItem(new ItemModel(AppTurn.Jobs, "Job Info", "profile"))
 
   const publicGroup = new GroupModel("Tip", false)
   publicGroup.AddItem(new ItemModel(AppTurn.GiveTips, "Tip", "heart"))

@@ -54,6 +54,7 @@ import { SvgLanguage } from "./School/Language/SvgLanguage"
 import { SvgBook } from "./School/Book/SvgBook"
 import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
 import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
+import { SvgDollar } from "./Finance/Dollar/SvgDollar"
 
 export function SvgIcon({
   name,
@@ -156,6 +157,8 @@ export function SvgIcon({
     case "help": return <SvgHelp width={width} fill={color} />
     case "heart": return <SvgHeart width={width} stroke={color} strokeWidth={strokeWidth} />
 
+    //Finance
+    case "dollar": return <SvgDollar width={width} fill={color} />
     default: return null
   }
 }
