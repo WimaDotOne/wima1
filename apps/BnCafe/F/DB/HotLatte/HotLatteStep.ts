@@ -53,7 +53,7 @@ export function SteamLatteStep(size: string) {
 
 export function SteamWholeMilkStep(size: string) {
   return {
-    image: RecipeImage.MilkPitcher,
+    image: RecipeImage.WholeMilkPitcher,
     words: `Pour whole milk in pitcher to ${size} line. Steam it on Latte.`
   }
 }

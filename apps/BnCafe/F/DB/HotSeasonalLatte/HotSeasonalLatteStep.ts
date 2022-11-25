@@ -3,7 +3,7 @@ import { RecipeImage } from "../RecipeImage"
 
 export function SteamAlmondMilkStep(size: string) {
   return {
-    image: RecipeImage.MilkPitcher,
+    image: RecipeImage.AlmondMilkPitcher,
     words: `Pour almond milk in pitcher to ${size} line. Steam it on Latte.`
   }
 }

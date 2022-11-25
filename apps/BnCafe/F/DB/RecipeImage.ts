@@ -6,6 +6,8 @@ export const RecipeImage = {
   WhippedCreamDispenser: "whippedCreamDispenser.jpg",
   StirSpoon: "stirSpoon.jpg",
   MilkPitcher: "milkPitcher.jpg",
+  WholeMilkPitcher: "wholeMilkPitcher.jpg",
+  AlmondMilkPitcher: "almondMilkPitcher.jpg",
   Pumpkin: "pumpkin.jpg",
   Peppermint: "peppermint.jpg",
   ToastedWhiteChocolateMocha: "toastedWhiteChocolateMocha.jpg",
@@ -17,5 +19,8 @@ export const RecipeImage = {
   CaramelBruleeTopping: "caramelBruleeTopping.jpg",
   RedGreenTopping: "redGreenTopping.jpg",
   Ice: "ice.jpg",
-  IcedCup: "icedCup.jpg"
+  IcedCup: "icedCup.jpg",
+  Shaker: "shaker.jpg",
+  ColdWater: "coldWater.jpg",
+  Lemonade: "lemonade.jpg"
 }

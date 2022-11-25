@@ -61,4 +61,11 @@ export function AddIceStep() {
   }
 }
 
+export function AddIce2Step(size: string) {
+  return {
+    image: RecipeImage.Ice,
+    words: `Add ice to ${size} ice line`
+  }
+}
+
 
