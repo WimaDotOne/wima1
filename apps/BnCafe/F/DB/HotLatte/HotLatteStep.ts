@@ -10,67 +10,67 @@ export function HotSyrupCount(size: string) {
 
 export function StirStep() {
   return {
-    image: "longSpoon.jpg",
+    image: "stirSpoon.jpg",
     words: "Stir to dissolve the syrup"
   }
 }
 
 export function WhippedCreamStep() {
   return {
-    image: "whippedCream.jpg",
+    image: "whippedCreamDispenser.jpg",
     words: "Add whipped cream."
   }
 }
 
 export function MochaStep(size: string) {
   return {
-    image: "mocha.png",
+    image: "mochaPump.jpg",
     words: `Add ${HotSyrupCount(size)} pumps of mocha into cup`
   }
 }
 
 export function WhiteChocolateMochaStep(size: string) {
   return {
-    image: "whiteChocolateMocha.png",
+    image: "whiteChocolateMocha.jpg",
     words: `Add ${HotSyrupCount(size)} pumps of white chocolatre mocha into cup`
   }
 }
 
 export function SteamLatteStep(size: string) {
   return {
-    image: "pitcher.png",
+    image: "milkPitcher.jpg",
     words: `Pour 2% milk in pitcher to ${size} line. Steam it on Latte.`
   }
 }
 
 export function SteamWholeMilkStep(size: string) {
   return {
-    image: "pitcher.png",
+    image: "milkPitcher.jpg",
     words: `Pour whole milk in pitcher to ${size} line. Steam it on Latte.`
   }
 }
 
 export function SteamCappuccinoStep(size: string) {
   return {
-    image: "pitcher.png",
+    image: "milkPitcher.jpg",
     words: `Pour 2% milk in pitcher to ${size} line. Steam it on Cappuccino.`
   }
 }
 
 export function ExpressoInCupStep(size: string) {
 
-  const shots = size === Size.Tall ? "1 expresso shot" : "2 expresso shots"
+  const shots = size === Size.Tall ? "1 espresso shot" : "2 espresso shots"
   return {
-    image: "expresso.png",
+    image: "espressoShot.jpg",
     words: `Add ${shots} into cup`
   }
 }
 
 export function ExpressoInPitcherStep(size: string) {
 
-  const shots = size === Size.Tall ? "1 expresso shot" : "2 expresso shots"
+  const shots = size === Size.Tall ? "1 espresso shot" : "2 espresso shots"
   return {
-    image: "expresso.png",
+    image: "espressoShot.jpg",
     words: `Add ${shots} into shot pitcher`
   }
 }
@@ -84,7 +84,7 @@ export function RistrettoInCupStep(size: string) {
     case Size.Venti: shots = "4 ristretto shots"; break;
   }
   return {
-    image: "expresso.png",
+    image: "espressoShot.jpg",
     words: `Add ${shots} into cup`
   }
 }

@@ -1,4 +1,5 @@
 import { HotSyrupCount } from "../HotLatte/HotLatteStep"
+import { RecipeImage } from "../RecipeImage"
 
 export function SteamAlmondMilkStep(size: string) {
   return {
@@ -16,70 +17,70 @@ export function PourAlmondMilkStep() {
 
 export function PumpkinStep(size: string) {
   return {
-    image: "pumpkin.jpg",
+    image: RecipeImage.Pumpkin,
     words: `Add ${HotSyrupCount(size)} pumps of pumpkin syrup into cup`
   }
 }
 
 export function PeppermintStep(size: string) {
   return {
-    image: "peppermint.jpg",
+    image: RecipeImage.Peppermint,
     words: `Add ${HotSyrupCount(size)} pumps of peppermint syrup into cup`
   }
 }
 
 export function ToastedWhiteChocolateMochaStep(size: string) {
   return {
-    image: "toastedWhiteChocolateMocha.jpg",
+    image: RecipeImage.ToastedWhiteChocolateMocha,
     words: `Add ${HotSyrupCount(size)} pumps of toasted white chocolate mocha into cup`
   }
 }
 
 export function CaramelBruleeStep(size: string) {
   return {
-    image: "caramelBrulee.jpg",
+    image: RecipeImage.CaramelBrulee,
     words: `Add ${HotSyrupCount(size)} pumps of caramel brulee syrup into cup`
   }
 }
 
 export function SugarCookieStep(size: string) {
   return {
-    image: "sugarCookie.jpg",
+    image: RecipeImage.SugarCookie,
     words: `Add ${HotSyrupCount(size)} pumps of sugar cookie syrup into cup`
   }
 }
 
 export function PumpkinSpicePowderStep() {
   return {
-    image: "pumpkinSpicePowder.jpg",
+    image: RecipeImage.PumpkinSpicePowder,
     words: "Add pumpkin spice powder"
   }
 }
 
 export function TwcmToppingStep() {
   return {
-    image: "twcmTopping.jpg",
+    image: RecipeImage.TwcmTopping,
     words: "Add toasted white chocolate mocha topping"
   }
 }
 
 export function ChocolateCurlToppingStep() {
   return {
-    image: "chocolateCurlTopping.jpg",
+    image: RecipeImage.ChocolateCurlTopping,
     words: "Add chocolate curl topping"
   }
 }
 
 export function CaramelBruleeToppingStep() {
   return {
-    image: "caramelBruleeTopping.jpg",
+    image: RecipeImage.CaramelBruleeTopping,
     words: "Add caramel brulee topping"
   }
 }
 
 export function RedGreenToppingStep() {
   return {
-    image: "redGreenTopping.jpg",
+    image: RecipeImage.RedGreenTopping,
     words: "Add red green topping"
   }
 }

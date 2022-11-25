@@ -1,5 +1,3 @@
-import { useRouter } from "next/router"
-import { useState } from "react"
 import { BN_HotLattes } from "../../../DB/HotLatte/HotLattes"
 import { BN_HotSeasonalLattes } from "../../../DB/HotSeasonalLatte/HotSeasonalLatte"
 import { IDrink } from "../../../Model/Drink"
@@ -14,12 +12,9 @@ export function CafeMenu({
   goRecipe
 } : ICafeMenuProp) {
 
-  const router = useRouter()
-
   function onSelectDrink(drink: IDrink, size: string) {
     goRecipe(drink, size)
   }
-
 
   return(<>
   <div className={cl.menus}>
