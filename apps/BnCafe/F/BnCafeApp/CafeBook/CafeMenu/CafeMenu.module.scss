@@ -1,0 +1,24 @@
+.logoSpace {
+  padding: 20px 0 5px;
+}
+.logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+.instruction {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+}
+.menus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menuSpace {
+  padding: 10px;
+}

@@ -1,0 +1,48 @@
+.table {
+  th {
+    padding: 2px;
+    text-align: center;
+    color: beige;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  td {
+    padding: 2px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+  padding: 10px;
+  font-family: fantasy;
+  border-radius: 5px;
+}
+
+.categoryName {
+  width: 240px;
+  text-align: left !important;
+  font-size: 18px !important;
+}
+
+.size {
+  width: 70px;
+}
+
+.price {
+  padding-top: 4px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.price:hover {
+  cursor: pointer;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  color: wheat;
+}
+
+
+.drinkName {
+  text-align: left !important;
+  line-height: 16px;
+}
