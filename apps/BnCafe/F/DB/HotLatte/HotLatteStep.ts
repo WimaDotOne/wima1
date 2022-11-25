@@ -1,0 +1,104 @@
+import { Size } from "../../Model/Size";
+
+export function HotSyrupCount(size: string) {
+  switch(size) {
+    case Size.Tall: return 3
+    case Size.Grande: return 4
+    case Size.Venti: return 5
+  }
+}
+
+export function StirStep() {
+  return {
+    image: "longSpoon.jpg",
+    words: "Stir to dissolve the syrup"
+  }
+}
+
+export function WhippedCreamStep() {
+  return {
+    image: "whippedCream.jpg",
+    words: "Add whipped cream."
+  }
+}
+
+export function MochaStep(size: string) {
+  return {
+    image: "mocha.png",
+    words: `Add ${HotSyrupCount(size)} pumps of mocha into cup`
+  }
+}
+
+export function WhiteChocolateMochaStep(size: string) {
+  return {
+    image: "whiteChocolateMocha.png",
+    words: `Add ${HotSyrupCount(size)} pumps of white chocolatre mocha into cup`
+  }
+}
+
+export function SteamLatteStep(size: string) {
+  return {
+    image: "pitcher.png",
+    words: `Pour 2% milk in pitcher to ${size} line. Steam it on Latte.`
+  }
+}
+
+export function SteamWholeMilkStep(size: string) {
+  return {
+    image: "pitcher.png",
+    words: `Pour whole milk in pitcher to ${size} line. Steam it on Latte.`
+  }
+}
+
+export function SteamCappuccinoStep(size: string) {
+  return {
+    image: "pitcher.png",
+    words: `Pour 2% milk in pitcher to ${size} line. Steam it on Cappuccino.`
+  }
+}
+
+export function ExpressoInCupStep(size: string) {
+
+  const shots = size === Size.Tall ? "1 expresso shot" : "2 expresso shots"
+  return {
+    image: "expresso.png",
+    words: `Add ${shots} into cup`
+  }
+}
+
+export function ExpressoInPitcherStep(size: string) {
+
+  const shots = size === Size.Tall ? "1 expresso shot" : "2 expresso shots"
+  return {
+    image: "expresso.png",
+    words: `Add ${shots} into shot pitcher`
+  }
+}
+
+export function RistrettoInCupStep(size: string) {
+
+  let shots = ""
+  switch (size) {
+    case Size.Tall: shots = "2 ristretto shots"; break;
+    case Size.Grande: shots = "3 ristretto shots"; break;
+    case Size.Venti: shots = "4 ristretto shots"; break;
+  }
+  return {
+    image: "expresso.png",
+    words: `Add ${shots} into cup`
+  }
+}
+
+export function PourLatteStep() {
+  return {
+    image: "",
+    words: "Free pour steamed milk into cup"
+  }
+}
+
+export function PourCappuccinoStep() {
+  return {
+    image: "",
+    words: "Free pour some steamed milk into the cup and then use a spoon to scoop foam to fill the cup"
+  }
+}
