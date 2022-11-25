@@ -1,5 +1,5 @@
 import { ExpressoInCupStep, MochaStep, PourLatteStep, SteamLatteStep, StirStep, WhippedCreamStep } from "../HotLatte/HotLatteStep";
-import { CaramelBruleeStep, CaramelBruleeToppingStep, ChocolateCurlToppingStep, PeppermintStep, PourAlmondMilkStep, PumpkinSpicePowderStep, PumpkinStep, RedGreenToppingStep, SteamAlmondMilkStep, SugarCookieStep, TwcmToppingStep } from "./HotSeasonalLatteStep";
+import { CaramelBruleeStep, CaramelBruleeToppingStep, ChocolateCurlToppingStep, PeppermintStep, PourAlmondMilkStep, PumpkinSpicePowderStep, PumpkinStep, RedGreenToppingStep, SteamAlmondMilkStep, SugarCookieStep, ToastedWhiteChocolateMochaStep, TwcmToppingStep } from "./HotSeasonalLatteStep";
 
 export const BN_HotSeasonalLattes = [
   {
@@ -26,7 +26,7 @@ export const BN_HotSeasonalLattes = [
     id: "TWCM",
     name: "Toasted White Chocolate Mocha",
     code: "TWCM",
-    steps: [ SteamLatteStep, MochaStep, PeppermintStep, ExpressoInCupStep, StirStep, 
+    steps: [ SteamLatteStep, ToastedWhiteChocolateMochaStep, ExpressoInCupStep, StirStep, 
             PourLatteStep, WhippedCreamStep, TwcmToppingStep],
     price1: 0,
     price2: 0,

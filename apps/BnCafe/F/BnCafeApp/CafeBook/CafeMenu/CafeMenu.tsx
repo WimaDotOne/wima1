@@ -26,7 +26,6 @@ export function CafeMenu({
       <MenuCard categoryName="Hot Seasonal Latte"
        drinks={BN_HotSeasonalLattes} onSelect={onSelectDrink}/>
     </div>
-
   </div>
 
   </>)

@@ -33,10 +33,12 @@
 .price {
   padding-top: 4px;
   border-radius: 5px;
+  border: 1px solid transparent;
 }
 .price:hover {
   cursor: pointer;
-  background-color: #666;
+  border: 1px solid wheat;
+  border-radius: 5px;
   color: wheat;
 }
 
