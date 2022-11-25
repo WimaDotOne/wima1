@@ -8,18 +8,21 @@ interface IMenuCardProp {
   drinks: Array<IDrink>
   hasTrenta?: boolean
   onSelect: (drink: IDrink, size: string)=>void
+  backgroundColor?: string
 }
 
 export function MenuCard({
   categoryName,
   drinks,
   hasTrenta,
-  onSelect
+  onSelect,
+  backgroundColor
 }: IMenuCardProp) {
 
   drinks = drinks || []
+  backgroundColor = backgroundColor || "#333"
   return(<>
-    <table className={cl.table}>
+    <table className={cl.table} style={{backgroundColor}}>
       <thead>
       <tr>
         <th className={cl.categoryName}>{categoryName}</th>

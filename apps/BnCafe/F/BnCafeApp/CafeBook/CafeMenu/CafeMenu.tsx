@@ -1,5 +1,6 @@
 import { BN_HotLattes } from "../../../DB/HotLatte/HotLattes"
 import { BN_HotSeasonalLattes } from "../../../DB/HotSeasonalLatte/HotSeasonalLatte"
+import { BN_IcedLattes } from "../../../DB/IcedLatte/IcedLattes"
 import { IDrink } from "../../../Model/Drink"
 import cl from "./CafeMenu.module.scss"
 import { MenuCard } from "./MenuCard/MenuCard"
@@ -20,12 +21,20 @@ export function CafeMenu({
   <div className={cl.menus}>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Latte"
-       drinks={BN_HotLattes} onSelect={onSelectDrink}/>
+        backgroundColor="#333"
+        drinks={BN_HotLattes} onSelect={onSelectDrink}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Seasonal Latte"
-       drinks={BN_HotSeasonalLattes} onSelect={onSelectDrink}/>
+        backgroundColor="#930C24"
+        drinks={BN_HotSeasonalLattes} onSelect={onSelectDrink}/>
     </div>
+    <div className={cl.menuSpace}>
+      <MenuCard categoryName="Iced Latte"
+        backgroundColor="#267ca3"
+        drinks={BN_IcedLattes} onSelect={onSelectDrink}/>
+    </div>
+    
   </div>
 
   </>)

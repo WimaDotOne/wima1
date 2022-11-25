@@ -15,5 +15,7 @@ export const RecipeImage = {
   TwcmTopping: "twcmTopping.jpg",
   ChocolateCurlTopping: "chocolateCurlTopping.jpg",
   CaramelBruleeTopping: "caramelBruleeTopping.jpg",
-  RedGreenTopping: "redGreenTopping.jpg"
+  RedGreenTopping: "redGreenTopping.jpg",
+  Ice: "ice.jpg",
+  IcedCup: "icedCup.jpg"
 }

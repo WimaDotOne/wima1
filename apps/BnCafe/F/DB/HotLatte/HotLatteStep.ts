@@ -16,6 +16,13 @@ export function StirStep() {
   }
 }
 
+export function Stir2Step() {
+  return {
+    image: RecipeImage.StirSpoon,
+    words: "Stir to mix milk with espresso."
+  }
+}
+
 export function WhippedCreamStep() {
   return {
     image: RecipeImage.WhippedCreamDispenser,
