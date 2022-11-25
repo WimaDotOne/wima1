@@ -22,5 +22,15 @@ export const RecipeImage = {
   IcedCup: "icedCup.jpg",
   Shaker: "shaker.jpg",
   ColdWater: "coldWater.jpg",
-  Lemonade: "lemonade.jpg"
+  Lemonade: "lemonade.jpg",
+  CoconutMilk: "coconutMilk.jpg",
+  BlackIcedTea: "blackIcedTea.jpg",
+  GreenIcedTea: "greenIcedTea.jpg",
+  PassionIcedTea: "passionIcedTea.jpg",
+  StrawberryAcai: "strawberryAcai.jpg",
+  MangoDragonfruit: "mangoDragonfruit.jpg",
+  PineapplePassionfruit: "pineapplePassionfruit.jpg",
+  DriedStrawberry: "driedStrawberry.jpg",
+  DriedDragonfruit: "driedDragonfruit.jpg",
+  DriedPineapple: "driedPineapple.jpg"
 }
