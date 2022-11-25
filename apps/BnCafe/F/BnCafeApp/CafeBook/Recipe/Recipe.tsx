@@ -1,7 +1,6 @@
-import { useRouter } from "next/router"
+import { useEffect } from "react"
 import { IconButtons } from "../../../../../../libs/Core/Core2/AppleWindow/F/View/IconButtons/IconButtons"
-import { AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv } from "../../../../../../libs/Core/Core2/fCore2"
-import { AppleWindowBottomBar } from "../../../../../H/AppleWindowBottomBar"
+import { AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Button1, Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { IDrink } from "../../../Model/Drink"
 import cl from "./Recipe.module.scss"
 import { StepCard } from "./StepCard/StepCard"
@@ -18,8 +17,14 @@ export function Recipe({
   goMenu
 }: IRecipeProp) {
 
+  useEffect(()=>{
+    if(window) {
+      window.scrollTo(0, 0)
+    }
+  })
+
   if(!drink) {
-    return(<></>)
+    return null
   }
 
   const steps = drink.steps
@@ -30,12 +35,17 @@ export function Recipe({
   <div className={cl.steps}>
   {
     steps.map((step, i)=>
-    <div className={cl.stepCardSpace}>
+    <div key={i} className={cl.stepCardSpace}>
       <StepCard step={step} size={size}/>
     </div>
     )
   }
   </div>
+  <Div height={20} />
+  <div className={cl.buttonSpace}>
+    <Button1  text="Back to menu" onClick={goMenu} />
+  </div>
+  <Div height={50} />
 
   <AppleWindowBottomBarFill />
   <AppleWindowPlainBottomBarDiv>
