@@ -1,3 +1,5 @@
+import { Image } from "../../../../../../libs/Core/Core1/Fields/SelectField/SelectField2"
+import { Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { BN_HotLattes } from "../../../DB/HotLatte/HotLattes"
 import { BN_HotSeasonalLattes } from "../../../DB/HotSeasonalLatte/HotSeasonalLattes"
 import { BN_IcedLattes } from "../../../DB/IcedLatte/IcedLattes"
@@ -20,6 +22,10 @@ export function CafeMenu({
   }
 
   return(<>
+  <div className={cl.logoSpace}>
+    <div className={cl.logo} style={{backgroundImage: `url(/apps/BnCafe/Logo/bnCafeLogo.png)`}}/>
+  </div>
+  <div className={cl.instruction}>Click on price to see the recipe</div>
   <div className={cl.menus}>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Latte"
@@ -47,6 +53,6 @@ export function CafeMenu({
         drinks={BN_Refreshers} onSelect={onSelectDrink}/>
     </div>
   </div>
-
+  <Div height={100} />
   </>)
 }
