@@ -1,6 +1,6 @@
-import { Image } from "../../../../../../libs/Core/Core1/Fields/SelectField/SelectField2"
 import { Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { BN_Fraps } from "../../../DB/Frap/Fraps"
+import { BN_HotCoffees } from "../../../DB/HotCoffee/HotCoffees"
 import { BN_HotLattes } from "../../../DB/HotLatte/HotLattes"
 import { BN_HotSeasonalLattes } from "../../../DB/HotSeasonalLatte/HotSeasonalLattes"
 import { BN_IcedCoffees } from "../../../DB/IcedCoffee/IcedCoffees"
@@ -30,6 +30,16 @@ export function CafeMenu({
   <div className={cl.instruction}>Click on price to see the recipe</div>
   <div className={cl.menus}>
     <div className={cl.menuSpace}>
+      <MenuCard categoryName="Hot Coffee"
+        backgroundColor="#333"
+        drinks={BN_HotCoffees} onSelect={onSelectDrink}/>
+    </div>
+    <div className={cl.menuSpace}>
+      <MenuCard categoryName="Iced Coffee"
+        backgroundColor="#333c" hasTrenta
+        drinks={BN_IcedCoffees} onSelect={onSelectDrink}/>
+    </div>
+    <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Latte"
         backgroundColor="#f6cd8b" darkText
         drinks={BN_HotLattes} onSelect={onSelectDrink}/>
@@ -48,11 +58,6 @@ export function CafeMenu({
       <MenuCard categoryName="Iced Tea"
         backgroundColor="#49592a" hasTrenta
         drinks={BN_IcedTeas} onSelect={onSelectDrink}/>
-    </div>
-    <div className={cl.menuSpace}>
-      <MenuCard categoryName="Iced Coffee"
-        backgroundColor="#333"
-        drinks={BN_IcedCoffees} onSelect={onSelectDrink}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Refresher" darkText

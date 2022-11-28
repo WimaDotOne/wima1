@@ -1,6 +1,7 @@
 
 export const RecipeImage = {
   EspressoShot: "espressoShot.jpg",
+  ShotPitcher: "shotPitcher.jpg",
   WhiteChocolateMocha: "whiteChocolateMocha.jpg",
   MochaPump: "mochaPump.jpg",
   WhippedCreamDispenser: "whippedCreamDispenser.jpg",
@@ -52,6 +53,10 @@ export const RecipeImage = {
   VanillaSweetCream: "vanillaSweetCream.jpg",
   VanillaSyrup: "vanillaSyrup.jpg",
   IrishCreamSyrup: "IrishCreamSyrup.jpg",
+  BrownSugarSyrup: "brownSugarSyrup.jpg",
+  CinnamonShaker: "cinnamonShaker.jpg",
   ICCB: "ICCB.jpg",
-  VSCCB: "VSCCB.jpg"
+  VSCCB: "VSCCB.jpg",
+  BOSE: "BOSE.jpg",
+  HotWater: "hotWater.jpg"
 }

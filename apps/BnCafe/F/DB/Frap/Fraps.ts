@@ -1,5 +1,5 @@
 import { WhippedCreamStep } from "../HotLatte/HotLatteStep";
-import { AddIce3Step } from "../IcedLatte/IcedLatteStep";
+import { AddIceBlenderStep } from "../IcedLatte/IcedLatteStep";
 import { 
   AddWholeMilkBottomLineStep, 
   BlendOn1Step, 
@@ -23,7 +23,7 @@ export const BN_Fraps = [
     name: "Vanilla Bean Frappuccino",
     code: "VBF",
     steps: [AddWholeMilkBottomLineStep, PourIntoBlenderStep,
-      VanillaBeanStep, CreamBaseStep, AddIce3Step, BlendOn1Step,
+      VanillaBeanStep, CreamBaseStep, AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep],
     price1: 0,
     price2: 0,
@@ -34,7 +34,7 @@ export const BN_Fraps = [
     name: "Caramel Frappuccino",
     code: "CrF",
     steps: [FrapRoastStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
-      CaramelSyrupIntoBlender, CoffeeBaseStep, AddIce3Step, BlendOn1Step,
+      CaramelSyrupIntoBlender, CoffeeBaseStep, AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep, CaramelDrizzleStep],
     price1: 0,
     price2: 0,
@@ -46,7 +46,7 @@ export const BN_Fraps = [
     code: "DCCF",
     steps: [AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       MochaIntoBlenderStep, ChocolateChipIntoBlenderStep, CreamBaseStep, 
-      AddIce3Step, BlendOn1Step,
+      AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep],
     price1: 0,
     price2: 0,
@@ -58,7 +58,7 @@ export const BN_Fraps = [
     code: "JCF",
     steps: [FrapRoastStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       MochaIntoBlenderStep, ChocolateChipIntoBlenderStep, CoffeeBaseStep, 
-      AddIce3Step, BlendOn1Step,
+      AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep],
     price1: 0,
     price2: 0,
@@ -70,7 +70,7 @@ export const BN_Fraps = [
     code: "StCF",
     steps: [StrawberryPureeStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       ClassicSyrupIntoBlender, CreamBaseStep, 
-      AddIce3Step, BlendOn1Step, StrawberryPureeStep,
+      AddIceBlenderStep, BlendOn1Step, StrawberryPureeStep,
       PourOutOfBlender, WhippedCreamStep],
     price1: 0,
     price2: 0,

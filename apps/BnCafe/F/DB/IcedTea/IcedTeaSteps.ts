@@ -39,7 +39,7 @@ export function AddWaterStep(size: string) {
 export function AddLemonadeStep(size: string) {
   return {
     image: RecipeImage.Lemonade,
-    words: `Add lemonade to ${size} water line`
+    words: `If "lemonade", add lemonade instead of water to ${size} water line`
   }
 }
 
