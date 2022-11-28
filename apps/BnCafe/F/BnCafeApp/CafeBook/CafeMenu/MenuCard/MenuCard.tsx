@@ -9,6 +9,7 @@ interface IMenuCardProp {
   hasTrenta?: boolean
   onSelect: (drink: IDrink, size: string)=>void
   backgroundColor?: string
+  darkText?: boolean
 }
 
 export function MenuCard({
@@ -16,15 +17,17 @@ export function MenuCard({
   drinks,
   hasTrenta,
   onSelect,
-  backgroundColor
+  backgroundColor,
+  darkText
 }: IMenuCardProp) {
 
   drinks = drinks || []
   backgroundColor = backgroundColor || "#333"
+  const clDarkText = darkText ? cl.darkText : ""
   return(<>
     <table className={cl.table} style={{backgroundColor}}>
       <thead>
-      <tr>
+      <tr className={clDarkText}>
         <th className={cl.categoryName}>{categoryName}</th>
         <th className={cl.size}>Tall</th>
         <th className={cl.size}>Grande</th>
@@ -37,7 +40,7 @@ export function MenuCard({
       <tbody>
       {
         drinks.map((drink, i)=>
-        <tr key={drink.code+i}>
+        <tr key={drink.code+i} className={clDarkText}>
           <td className={cl.drinkName}>{drink.name}</td>
           <td>
             <div className={cl.price} onClick={()=>onSelect(drink, Size.Tall)}>

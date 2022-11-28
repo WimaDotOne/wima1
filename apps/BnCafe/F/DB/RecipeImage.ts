@@ -32,5 +32,18 @@ export const RecipeImage = {
   PineapplePassionfruit: "pineapplePassionfruit.jpg",
   DriedStrawberry: "driedStrawberry.jpg",
   DriedDragonfruit: "driedDragonfruit.jpg",
-  DriedPineapple: "driedPineapple.jpg"
+  DriedPineapple: "driedPineapple.jpg",
+  WholeMilk: "wholeMilk.jpg",
+  Blender: "blender.jpg",
+  VanillaBeanPowder: "vanillaBeanPowder.jpg",
+  CreamBase: "creamBase.jpg",
+  CoffeeBase: "coffeeBase.jpg",
+  BlendOn1: "blendOn1.jpg",
+  Frap: "frap.jpg",
+  FrapRoast: "frapRoast.jpg",
+  ChocolateChips: "chocolateChips.jpg",
+  CaramelSyrup: "caramelSyrup.jpg",
+  ClassicSyrup: "classicSyrup.jpg",
+  CaramelDrizzle: "caramelDrizzle.jpg",
+  StrawberryPuree: "strawberryPuree.jpg"
 }

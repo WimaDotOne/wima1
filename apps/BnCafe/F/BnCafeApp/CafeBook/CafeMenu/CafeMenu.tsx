@@ -1,5 +1,6 @@
 import { Image } from "../../../../../../libs/Core/Core1/Fields/SelectField/SelectField2"
 import { Div } from "../../../../../../libs/Core/Core2/fCore2"
+import { BN_Fraps } from "../../../DB/Frap/Fraps"
 import { BN_HotLattes } from "../../../DB/HotLatte/HotLattes"
 import { BN_HotSeasonalLattes } from "../../../DB/HotSeasonalLatte/HotSeasonalLattes"
 import { BN_IcedLattes } from "../../../DB/IcedLatte/IcedLattes"
@@ -48,9 +49,14 @@ export function CafeMenu({
         drinks={BN_IcedTeas} onSelect={onSelectDrink}/>
     </div>
     <div className={cl.menuSpace}>
-      <MenuCard categoryName="Refresher"
-        backgroundColor="#6c359499" hasTrenta
+      <MenuCard categoryName="Refresher" darkText
+        backgroundColor="#fcc500" hasTrenta
         drinks={BN_Refreshers} onSelect={onSelectDrink}/>
+    </div>
+    <div className={cl.menuSpace}>
+      <MenuCard categoryName="Frappuccino"
+        backgroundColor="#6c359499"
+        drinks={BN_Fraps} onSelect={onSelectDrink}/>
     </div>
   </div>
   <Div height={100} />

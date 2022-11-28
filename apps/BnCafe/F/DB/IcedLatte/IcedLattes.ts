@@ -16,7 +16,7 @@ export const BN_IcedLattes = [
     name: "Mocha",
     code: "M",
     steps: [IcedMochaStep, IcedEspressoInCupStep, StirStep, 
-            PourColdMilkTopLineStep, WhippedCreamStep],
+            PourColdMilkTopLineStep, AddIceStep, WhippedCreamStep],
     price1: 0,
     price2: 0,
     price3: 0
@@ -26,7 +26,7 @@ export const BN_IcedLattes = [
     name: "White Chocolate Mocha",
     code: "WCM",
     steps: [IcedWhiteChocolateMochaStep, IcedEspressoInCupStep, StirStep, 
-            PourColdMilkTopLineStep, WhippedCreamStep],
+            PourColdMilkTopLineStep, AddIceStep, WhippedCreamStep],
     price1: 0,
     price2: 0,
     price3: 0

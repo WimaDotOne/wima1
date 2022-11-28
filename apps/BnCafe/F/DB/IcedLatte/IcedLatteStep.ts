@@ -68,4 +68,11 @@ export function AddIce2Step(size: string) {
   }
 }
 
+export function AddIce3Step(size: string) {
+  return {
+    image: RecipeImage.Ice,
+    words: `Add a cup of ice into blender using ${size} ice cup`
+  }
+}
+
 
