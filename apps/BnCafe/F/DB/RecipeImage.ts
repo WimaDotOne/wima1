@@ -45,5 +45,13 @@ export const RecipeImage = {
   CaramelSyrup: "caramelSyrup.jpg",
   ClassicSyrup: "classicSyrup.jpg",
   CaramelDrizzle: "caramelDrizzle.jpg",
-  StrawberryPuree: "strawberryPuree.jpg"
+  StrawberryPuree: "strawberryPuree.jpg",
+  IcedCoffee: "icedCoffee.jpg",
+  ColdBrew: "coldBrew.jpg",
+  FoamBlender: "foamBlender.jpg",
+  VanillaSweetCream: "vanillaSweetCream.jpg",
+  VanillaSyrup: "vanillaSyrup.jpg",
+  IrishCreamSyrup: "IrishCreamSyrup.jpg",
+  ICCB: "ICCB.jpg",
+  VSCCB: "VSCCB.jpg"
 }
