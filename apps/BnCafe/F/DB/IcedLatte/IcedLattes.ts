@@ -1,6 +1,18 @@
 import { ExpressoInPitcher2Step, Stir2Step, StirStep, WhippedCreamStep } from "../HotLatte/HotLatteStep";
 import { UseShakerStep } from "../IcedTea/IcedTeaSteps";
-import { AddIceShaker2Step, AddIceStep, BrowSugarSyrupStep, CinnamonPowderStep, FinishBOSE, IcedEspressoInCupStep, IcedMochaStep, IcedWhiteChocolateMochaStep, PourColdMilkMiddleLineStep, PourColdMilkTopLineStep, PourExpressoShakeStep, ShakeCinnamonPowderStep } from "./IcedLatteStep";
+import { 
+  AddIceShaker2Step, 
+  AddIceStep, 
+  BrowSugarSyrupStep, 
+  CinnamonPowderStep, 
+  FinishBOSE, 
+  IcedEspressoInCupStep, 
+  IcedMochaStep, 
+  IcedWhiteChocolateMochaStep, 
+  PourColdMilkMiddleLineStep, 
+  PourColdMilkTopLineStep, 
+  PourExpressoShakeStep 
+} from "./IcedLatteStep";
 
 export const BN_IcedLattes = [
   {
