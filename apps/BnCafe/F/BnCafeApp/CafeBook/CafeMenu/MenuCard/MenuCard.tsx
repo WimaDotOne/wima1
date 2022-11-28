@@ -1,3 +1,4 @@
+import { ClassNames } from "../../../../../../../libs/Core/Core1/fCore1"
 import { IDrink } from "../../../../Model/Drink"
 import { Size } from "../../../../Model/Size"
 import { Cent2Dollar } from "../../../H/PriceUtil"
@@ -43,24 +44,24 @@ export function MenuCard({
         <tr key={drink.code+i} className={clDarkText}>
           <td className={cl.drinkName}>{drink.name}</td>
           <td>
-            <div className={cl.price} onClick={()=>onSelect(drink, Size.Tall)}>
+            <div className={ClassNames([cl.price, clDarkText])} onClick={()=>onSelect(drink, Size.Tall)}>
                 {Cent2Dollar(drink.price1)}
             </div>
           </td>
           <td>
-            <div className={cl.price} onClick={()=>onSelect(drink, Size.Grande)}>
+            <div className={ClassNames([cl.price, clDarkText])} onClick={()=>onSelect(drink, Size.Grande)}>
               {Cent2Dollar(drink.price2)}
             </div>
           </td>
           <td>
-            <div className={cl.price} onClick={()=>onSelect(drink, Size.Venti)}>
+            <div className={ClassNames([cl.price, clDarkText])} onClick={()=>onSelect(drink, Size.Venti)}>
               {Cent2Dollar(drink.price3)}
             </div>
           </td>
           {
             hasTrenta ? 
             <td>
-            <div className={cl.price} onClick={()=>onSelect(drink, Size.Trenta)}>
+            <div className={ClassNames([cl.price, clDarkText])} onClick={()=>onSelect(drink, Size.Trenta)}>
               {Cent2Dollar(drink.price4)}
             </div>
           </td> : null

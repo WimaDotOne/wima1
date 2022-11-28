@@ -61,7 +61,7 @@ export function CafeMenu({
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Refresher" darkText
-        backgroundColor="#fcc500" hasTrenta
+        backgroundColor="#fcc555" hasTrenta
         drinks={BN_Refreshers} onSelect={onSelectDrink}/>
     </div>
     <div className={cl.menuSpace}>
