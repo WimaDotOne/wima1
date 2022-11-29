@@ -1,4 +1,4 @@
-import { HotSyrupCount } from "../HotLatte/HotLatteStep"
+import { Three45 } from "../HotLatte/HotLatteStep"
 import { RecipeImage } from "../RecipeImage"
 
 export function SteamAlmondMilkStep(size: string) {
@@ -18,35 +18,35 @@ export function PourAlmondMilkStep() {
 export function PumpkinStep(size: string) {
   return {
     image: RecipeImage.Pumpkin,
-    words: `Add ${HotSyrupCount(size)} pumps of pumpkin syrup into cup`
+    words: `Add ${Three45(size)} pumps of pumpkin syrup into cup`
   }
 }
 
 export function PeppermintStep(size: string) {
   return {
     image: RecipeImage.Peppermint,
-    words: `Add ${HotSyrupCount(size)} pumps of peppermint syrup into cup`
+    words: `Add ${Three45(size)} pumps of peppermint syrup into cup`
   }
 }
 
 export function ToastedWhiteChocolateMochaStep(size: string) {
   return {
     image: RecipeImage.ToastedWhiteChocolateMocha,
-    words: `Add ${HotSyrupCount(size)} pumps of toasted white chocolate mocha into cup`
+    words: `Add ${Three45(size)} pumps of toasted white chocolate mocha into cup`
   }
 }
 
 export function CaramelBruleeStep(size: string) {
   return {
     image: RecipeImage.CaramelBrulee,
-    words: `Add ${HotSyrupCount(size)} pumps of caramel brulee syrup into cup`
+    words: `Add ${Three45(size)} pumps of caramel brulee syrup into cup`
   }
 }
 
 export function SugarCookieStep(size: string) {
   return {
     image: RecipeImage.SugarCookie,
-    words: `Add ${HotSyrupCount(size)} pumps of sugar cookie syrup into cup`
+    words: `Add ${Three45(size)} pumps of sugar cookie syrup into cup`
   }
 }
 

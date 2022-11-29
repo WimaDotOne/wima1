@@ -61,11 +61,65 @@ export function AddIceStep() {
   }
 }
 
-export function AddIce2Step(size: string) {
+export function AddIceBlenderStep(size: string) {
   return {
     image: RecipeImage.Ice,
-    words: `Add ice to ${size} ice line`
+    words: `Add a cup of ice into blender using ${size} ice cup`
   }
 }
 
+export function AddIceLeaveRoomStep() {
+  return {
+    image: RecipeImage.Ice,
+    words: "Add ice and leave room"
+  }
+}
 
+export function AddIceShakerStep(size: string) {
+  return {
+    image: RecipeImage.Ice,
+    words: `Add ice to ${size} ice line on the shaker`
+  }
+}
+
+export function AddIceShaker2Step(size: string) {
+  return {
+    image: RecipeImage.Ice,
+    words: `Add a cup of ice into shaker using ${size} ice cup`
+  }
+}
+
+export function BrowSugarSyrupStep() {
+  return {
+    image: RecipeImage.BrownSugarSyrup,
+    words: "Add 2 pumps of brown sugar syrup into shaker"
+  }
+}
+
+export function CinnamonPowderStep() {
+  return {
+    image: RecipeImage.CinnamonShaker,
+    words: "Shake some cinnamon powder into the shaker"
+  }
+}
+
+export function PourExpressoShakeStep() {
+  return {
+    image: "",
+    words: "Pour espresso into the shaker and shake it shake it"
+  }
+}
+
+export function PourShakerIntoCup() {
+  return {
+    image: "",
+    words: "Pour content in shaker into the cup"
+  }
+}
+
+export function FinishBOSE() {
+  return {
+    image: RecipeImage.BOSE,
+    words: "Add oat milk into cup"
+  }
+}
