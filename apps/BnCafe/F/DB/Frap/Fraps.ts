@@ -1,3 +1,4 @@
+import { IDrink } from "../../Model/Drink";
 import { WhippedCreamStep } from "../HotLatte/HotLatteStep";
 import { AddIceBlenderStep } from "../IcedLatte/IcedLatteStep";
 import { 
@@ -17,11 +18,13 @@ import {
   VanillaBeanStep 
 } from "./FrapStep";
 
-export const BN_Fraps = [
+export const BN_Fraps: Array<IDrink> = [
   {
     id: "VBF",
     name: "Vanilla Bean Frappuccino",
     code: "VBF",
+    whole: true,
+    whippedCream: true,
     steps: [AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       VanillaBeanStep, CreamBaseStep, AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep],
@@ -33,6 +36,8 @@ export const BN_Fraps = [
     id: "CrF",
     name: "Caramel Frappuccino",
     code: "CrF",
+    whole: true,
+    whippedCream: true,
     steps: [FrapRoastStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       CaramelSyrupIntoBlender, CoffeeBaseStep, AddIceBlenderStep, BlendOn1Step,
       PourOutOfBlender, WhippedCreamStep, CaramelDrizzleStep],
@@ -44,6 +49,8 @@ export const BN_Fraps = [
     id: "DCCF",
     name: "Double Chocolate Chip Frappuccino",
     code: "DCCF",
+    whole: true,
+    whippedCream: true,
     steps: [AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       MochaIntoBlenderStep, ChocolateChipIntoBlenderStep, CreamBaseStep, 
       AddIceBlenderStep, BlendOn1Step,
@@ -56,6 +63,8 @@ export const BN_Fraps = [
     id: "JCF",
     name: "Java Chip Frappuccino",
     code: "JCF",
+    whole: true,
+    whippedCream: true,
     steps: [FrapRoastStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       MochaIntoBlenderStep, ChocolateChipIntoBlenderStep, CoffeeBaseStep, 
       AddIceBlenderStep, BlendOn1Step,
@@ -68,6 +77,8 @@ export const BN_Fraps = [
     id: "StCF",
     name: "Strawberry Cream Frappuccino",
     code: "StCF",
+    whole: true,
+    whippedCream: true,
     steps: [StrawberryPureeStep, AddWholeMilkBottomLineStep, PourIntoBlenderStep,
       ClassicSyrupIntoBlender, CreamBaseStep, 
       AddIceBlenderStep, BlendOn1Step, StrawberryPureeStep,

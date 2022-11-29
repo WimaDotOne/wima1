@@ -5,6 +5,7 @@ export const BN_HotCoffees = [
     id: "A",
     name: "Americano",
     code: "A",
+    canDecaf: true,
     steps: [AmericanoShotsInCupStep, HotWaterStep],
     price1: 0,
     price2: 0,

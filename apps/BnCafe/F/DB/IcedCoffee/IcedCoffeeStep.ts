@@ -13,21 +13,21 @@ function One234Pumps(size: string) {
 export function IcedCoffeeToTopLineStep() {
   return {
     image: RecipeImage.IcedCoffee,
-    words: "Pour iced coffee into the cup upto top line"
+    words: "Pour iced coffee into the cup till top line"
   }
 }
 
 export function ColdBrewToBottomLineStep() {
   return {
     image: RecipeImage.ColdBrew,
-    words: "Pour cold brew into the cup upto bottom line"
+    words: "Pour cold brew into the cup till bottom line"
   }
 }
 
 export function AddWaterToTopLineStep() {
   return {
     image: RecipeImage.ColdWater,
-    words: "Fill cup with water to top line"
+    words: "Add water into the cup till top line"
   }
 }
 
@@ -40,7 +40,7 @@ export function UseFoamBlender() {
 
 export function VanillaSweetCreamIntoBlender() {
   return {
-    image: RecipeImage.VanillaSweetCream,
+    image: RecipeImage.VscPitcher,
     words: "Pour at least 100ml vanilla sweet cream into blender to submerge the blade"
   }
 }

@@ -13,15 +13,21 @@ import { MenuCard } from "./MenuCard/MenuCard"
 
 interface ICafeMenuProp {
   goRecipe: (drink: IDrink, size: string) =>void
+  goMarkCup: (drink: IDrink) =>void
 }
 
 export function CafeMenu({
-  goRecipe
+  goRecipe,
+  goMarkCup
 } : ICafeMenuProp) {
 
-  function onSelectDrink(drink: IDrink, size: string) {
+  function onClickPrice(drink: IDrink, size: string) {
     goRecipe(drink, size)
   }
+  function onClickDrinkName(drink: IDrink) {
+    goMarkCup(drink)
+  }
+
 
   return(<>
   <div className={cl.logoSpace}>
@@ -32,42 +38,50 @@ export function CafeMenu({
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Coffee"
         backgroundColor="#333"
-        drinks={BN_HotCoffees} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_HotCoffees} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Iced Coffee"
         backgroundColor="#333c" hasTrenta
-        drinks={BN_IcedCoffees} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_IcedCoffees} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Latte"
         backgroundColor="#f6cd8b" darkText
-        drinks={BN_HotLattes} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_HotLattes} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Seasonal Latte"
         backgroundColor="#930C24"
-        drinks={BN_HotSeasonalLattes} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_HotSeasonalLattes} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Iced Latte"
         backgroundColor="#267ca3"
-        drinks={BN_IcedLattes} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_IcedLattes} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Iced Tea"
         backgroundColor="#49592a" hasTrenta
-        drinks={BN_IcedTeas} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_IcedTeas} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Refresher" darkText
         backgroundColor="#fcc555" hasTrenta
-        drinks={BN_Refreshers} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_Refreshers} onClickPrice={onClickPrice}/>
     </div>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Frappuccino"
         backgroundColor="#6c359499"
-        drinks={BN_Fraps} onSelect={onSelectDrink}/>
+        onClickDrinkName={onClickDrinkName}
+        drinks={BN_Fraps} onClickPrice={onClickPrice}/>
     </div>
   </div>
   <Div height={100} />

@@ -52,8 +52,22 @@
   color: wheat;
 }
 
-
 .drinkName {
-  text-align: left !important;
+  text-align: left;
   line-height: 16px;
+}
+.drinkNameInner {
+  display: inline-block;
+  padding: 5px 5px 0;
+  border: 1px solid transparent;
+}
+.drinkNameInner:hover {
+  cursor: pointer;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  color: wheat;
+}
+.drinkNameInner.darkText:hover {
+  border: 1px solid darkblue;
+  color: darkblue
 }
