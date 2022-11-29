@@ -80,7 +80,7 @@ export function Register({
         onChange={(checked: boolean)=>{setDecaf(checked)}}
       />
     </Panel>
-    <Div height={10} />
+    <Div height={15} />
     </>: null
   }
   <Panel>
@@ -101,6 +101,7 @@ export function Register({
       onChange={(checked: boolean)=>{setSugarFreeVanilla(checked)}}
     />
   </Panel>
+  <Div height={15} />
 
   <Panel>
     <DrinkOption prompt="2%"
@@ -153,6 +154,7 @@ export function Register({
       }}
     />
   </Panel>
+  <Div height={15} />
 
   <Panel>
     <DrinkOption prompt="Whipped Cream"

@@ -26,7 +26,9 @@ export function Cup({
 }: ICupProp) {
   return(<>
   
-    <div className={cl.cupInner}>
+    <div className={cl.cupInner} 
+      style={{backgroundImage: "url(/apps/BnCafe/Background/rainbow.jpg)"}}
+    >
       <Box title="Decaf" value={decaf ? "X": ""}/>
       <Div height={15} />
       <Box title="Shots" value={shots} />
