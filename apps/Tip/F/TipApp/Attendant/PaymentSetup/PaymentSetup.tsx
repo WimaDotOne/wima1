@@ -9,6 +9,6 @@ export function PaymentSetup({
 
 
   return(<>
-  <PaymentSetupHome />
+    <PaymentSetupHome />
   </>)
 }

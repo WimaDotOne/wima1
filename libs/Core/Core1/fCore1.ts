@@ -11,6 +11,8 @@ import { SelectField1 } from "./Fields/SelectField/SelectField1"
 import { SelectField2 } from "./Fields/SelectField/SelectField2"
 import { ErrorLine } from "./Fields/ErrorLine/ErrorLine"
 
+import { StripeButton } from "./StripePay/fStripePay"
+
 import {
   UnivLogin,
   Login,
