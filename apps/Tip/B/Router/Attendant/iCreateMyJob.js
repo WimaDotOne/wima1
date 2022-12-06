@@ -3,6 +3,7 @@ import { GENERAL_INPUT_MAX, TipConfig } from "../../../../../bConfig.js"
 import { User } from "../../../../../libs/Core/Core1/bCore1.js"
 import TipAccount from "../../Model/TipAccount.js"
 import TipJob from "../../Model/TipJob.js"
+import { asyGetTipAccount } from "../H/GetTipAccount.js"
 
 export async function iCreateMyJob(req, res) {
   try{
@@ -13,28 +14,8 @@ export async function iCreateMyJob(req, res) {
       return res.json({ ok: false, error: "Business title is too long" })
     }
 
-    const user = await User.findById(req.user._id)
-
-    if(!user) {
-      return res.json({ ok: false, error: "Cannot find user" })
-    }
-
-    let tipAccount = null
-    if(!user.tipAccountId) {
-      tipAccount = new TipAccount({
-        _id: mongoose.Types.ObjectId()
-      })
-
-      await tipAccount.save()
-      user.tipAccountId = tipAccount._id
-      user.save()
-    } else {
-      tipAccount = await TipAccount.findById(user.tipAccountId)
-    }
-
-    if(!tipAccount) {
-      return res.json({ ok: false, error: "Cannot find Tip account" })
-    }
+    const tipAccount = await asyGetTipAccount(req)
+    
 
     //A Tip account can only have 10 jobs
     const jobCount = await TipJob.count({

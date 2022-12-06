@@ -12,7 +12,7 @@ import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iImageMulter } from "../../../../libs/Core/Core1/bCore1.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
 import { iLoadEstablishmentJobs } from "./GiveTips/iLoadEstablishmentJobs.js"
-import { iCreateConnectAccount } from "./Payment/iCreateConnectAccount.js"
+import { iConnectStripe } from "./Payment/iConnectStripe.js"
 
 const TipRouter = express.Router()
 
@@ -32,7 +32,7 @@ TipRouter.post("/SavePlace", iAuth, iSavePlace)
 TipRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, iUploadAttendantPhoto)
 
 //Payment
-TipRouter.post("/CreateConnectAccount", iAuth, iCreateConnectAccount)
+TipRouter.post("/ConnectStripe", iAuth, iConnectStripe)
 
 // Give Tips
 TipRouter.get("/LoadEstablishmentJobs", iLoadEstablishmentJobs)

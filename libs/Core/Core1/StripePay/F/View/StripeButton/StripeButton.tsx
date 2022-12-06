@@ -10,7 +10,7 @@ export function StripeButton({
   onClick
 }: IStripeButtonProp) {
   return(<>
-  <div className={cl.button}>
+  <div className={cl.button} onClick={onClick}>
     {text || ""}
   </div>
   </>)
