@@ -12,7 +12,9 @@ const schema = mongoose.Schema({
   movicAccountId: {type: mongoose.Schema.Types.ObjectId, 
     index: true, sparse: true, unique: true, ref: "MovicAccount"},
   bookAccountId: {type: mongoose.Schema.Types.ObjectId, 
-    index: true, sparse: true, unique: true, ref: "BookAccount"}
+    index: true, sparse: true, unique: true, ref: "BookAccount"},
+  quizAccountId: {type: mongoose.Schema.Types.ObjectId, 
+    index: true, sparse: true, unique: true, ref: "QuizAccount"},
 }, {
   timestamps: { currentTime: () => Date.now() }
 })

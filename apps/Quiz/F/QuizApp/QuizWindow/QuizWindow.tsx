@@ -79,7 +79,7 @@ function IsViewRequreLogin(viewId?: string) {
 
 function QuizMenu(viewId?: string): MenuModel | undefined {
   if(!viewId) viewId = AppTurn.MyQuizzes
-  const myGroup = new GroupModel("My Quizzes", false)
+  const myGroup = new GroupModel("My", false)
   myGroup.AddItem(new ItemModel(AppTurn.MyQuizzes, "Quizzes", "film", true))
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard", true))
 
