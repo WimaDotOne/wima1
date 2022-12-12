@@ -13,20 +13,20 @@ export function NewProject({
   backToProjectsHome
 }:INewProjectProp) {
 
-  const [quizBookName, setQuizBookName] = useState<string>("")
+  const [quizBookTitle, setQuizBookName] = useState<string>("")
 
   const shield = useShield()
 
   async function CreateNewProject() {
-    await Post2(shield, "/quiz/CreateMovicProject", {
-      quizBookName
+    await Post2(shield, "/quiz/CreateQuizProject", {
+      quizBookTitle
     }, (res)=>{
       backToProjectsHome()
     })
   }
 
   function IsNewProjectInfoValid() {
-    if(!quizBookName) return false
+    if(!quizBookTitle) return false
     return true
   }
   
@@ -35,7 +35,7 @@ export function NewProject({
       <HeadLine text="Create a new quiz book"/>
       <Div height={30} />
       <div className={cl.fields}>
-        <TextField1 value={quizBookName} 
+        <TextField1 value={quizBookTitle} 
           maxLength={GENERAL_INPUT_MAX}
           prompt="Quiz book title"
           onChange={(newValue)=>{setQuizBookName(newValue)}} />

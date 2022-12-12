@@ -10,7 +10,6 @@ const schema = mongoose.Schema({
     url: { type: String },
     urlSmall: { type: String }
   }
-
 }, {
   timestamps: { currentTime: () => Date.now() }
 })
