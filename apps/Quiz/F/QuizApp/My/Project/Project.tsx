@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { IProject } from "../../../Model/IProject"
 import { ProjectHome } from "./ProjectHome/ProjectHome"
+import { QuizBookSettings } from "./QuizBookSettings/QuizBookSettings"
 
 interface IProjectProp {
 
@@ -46,6 +47,13 @@ export function Project({
   }
   
   switch(projectTurn) {
+    case ProjectTurn.QuizBookSettings: return(
+      <QuizBookSettings 
+        project={project}
+        setProjectQuizBookTitle={setProjectQuizTitle}
+        backToProjectHome={backToProjectHome}
+      />
+    )
     default: return (
       <ProjectHome 
         project={project}
@@ -58,4 +66,5 @@ export function Project({
 
 export const ProjectTurn = {
   Home: "Home",
+  QuizBookSettings: "QuizBookSettings"
 }

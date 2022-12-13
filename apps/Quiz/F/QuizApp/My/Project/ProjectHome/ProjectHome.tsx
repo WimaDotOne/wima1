@@ -1,8 +1,9 @@
 import { useEffect } from "react"
 import { AppleIconButtons, AppleWindowPlainBottomBarDiv, AutoRepeatGrid } from "../../../../../../../libs/Core/Core2/fCore2"
-import { AppleFolder, HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
+import { AppleFolder, File, FileType, HeadLine } from "../../../../../../../libs/Pop/Pop3/fPop3"
 import { QuizColor } from "../../../../CSS/QuizColor"
 import { IProject } from "../../../../Model/IProject"
+import { ProjectTurn } from "../Project"
 import cl from "./ProjectHome.module.scss"
 
 interface IProjectHomeProp {
@@ -16,6 +17,14 @@ export function ProjectHome({
   setProjectTurn
 }: IProjectHomeProp) {
 
+  function openChaptersFolder() {
+
+  }
+
+  function openSettings() {
+    setProjectTurn(ProjectTurn.QuizBookSettings)
+  }
+
   useEffect(()=>{
     window.scrollTo(0,0)
   })
@@ -24,7 +33,9 @@ export function ProjectHome({
     <div className={cl.home}>
       <HeadLine text={project.quizBookTitle} h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
-      
+        <AppleFolder text="Chapters" onClick={openChaptersFolder}/>
+        <File text="Settings" iconName="gear" type={FileType.settings}
+          onClick={openSettings} />
       </AutoRepeatGrid>
     </div>
     <AppleWindowPlainBottomBarDiv>
