@@ -18,7 +18,7 @@ export function ProjectHome({
 }: IProjectHomeProp) {
 
   function openChaptersFolder() {
-
+    setProjectTurn(ProjectTurn.QuizBookChapters)
   }
 
   function openSettings() {
@@ -31,7 +31,7 @@ export function ProjectHome({
 
   return(<>
     <div className={cl.home}>
-      <HeadLine text={project.quizBookTitle} h={3}/>
+      <HeadLine text={project.quizBookTitle} />
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Chapters" onClick={openChaptersFolder}/>
         <File text="Settings" iconName="gear" type={FileType.settings}

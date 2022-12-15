@@ -51,5 +51,6 @@ export const SocialConfig = {
 }
 
 export const QuizConfig = {
-  quizBookMaxPerAccount: 100
+  quizBookMaxPerAccount: 100,
+  quizChapterMaxPerQuizBook: 20
 }

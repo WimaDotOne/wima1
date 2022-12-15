@@ -13,7 +13,7 @@ export function NewProject({
   backToProjectsHome
 }:INewProjectProp) {
 
-  const [quizBookTitle, setQuizBookName] = useState<string>("")
+  const [quizBookTitle, setQuizBookTitle] = useState<string>("")
 
   const shield = useShield()
 
@@ -38,7 +38,7 @@ export function NewProject({
         <TextField1 value={quizBookTitle} 
           maxLength={GENERAL_INPUT_MAX}
           prompt="Quiz book title"
-          onChange={(newValue)=>{setQuizBookName(newValue)}} />
+          onChange={(newValue)=>{setQuizBookTitle(newValue)}} />
       </div>
     </div>
     <AppleWindowBottomBarFill />
