@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { useEffect, useState } from "react"
+import { Get2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, AutoRepeatGrid, Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder, HeadLine } from "../../../../../../../../libs/Pop/Pop3/fPop3"
 import { QuizColor } from "../../../../../CSS/QuizColor"
@@ -28,6 +28,20 @@ export function QuizBookChaptersHome({
     setSelectedChapter(chapter)
   }
 
+  async function loadChapters() {
+    if(loaded) return
+    await Get2(shield, `/quiz/LoadMyQuizBookChapters?projectId=${project.id}`,
+     (res) => {
+      setLoaded(true)
+      setChapters(res.chapters)
+     }
+    )
+  }
+
+  useEffect(()=>{
+    loadChapters()
+  })
+
   return(<>
   <div className={cl.chapters}>
     <HeadLine text={project.quizBookTitle} buttonText="New Chapter" 
@@ -37,7 +51,7 @@ export function QuizBookChaptersHome({
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
     {
       chapters.map((chapter, i)=>
-      <AppleFolder key={chapter.id} text={chapter.chapterTitle} onClick={
+      <AppleFolder key={chapter._id} text={chapter.title} onClick={
         ()=>{openChapter(chapter)}
       }/>)
     }
