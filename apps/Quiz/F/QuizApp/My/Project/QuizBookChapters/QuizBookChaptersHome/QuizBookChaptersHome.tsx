@@ -10,22 +10,23 @@ import cl from "./QuizBookChaptersHome.module.scss"
 interface IQuizBookChaptersHomeProp {
   project: IProject
   goToNewChapter: ()=>void
+  goToSelectedChapter: (chapter: IQuizChapter)=>void
   backToProjectHome: ()=>void
 }
 
 export function QuizBookChaptersHome({
   project,
   goToNewChapter,
+  goToSelectedChapter,
   backToProjectHome
 }: IQuizBookChaptersHomeProp) {
 
   const [loaded, setLoaded] = useState<boolean>(false)
   const [chapters, setChapters] = useState<Array<IQuizChapter>>([])
-  const [selectedChapter, setSelectedChapter] = useState<IQuizChapter>()
   const shield = useShield()
 
   function openChapter(chapter: IQuizChapter) {
-    setSelectedChapter(chapter)
+    goToSelectedChapter(chapter)
   }
 
   async function loadChapters() {

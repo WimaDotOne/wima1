@@ -1,11 +1,11 @@
-@use "../../../../../CSS/quiz.module.scss";
+@use "../../../../../../CSS/quiz.module.scss";
 
-.chapterHome {
+.quizzes {
   padding: 10px;
 }
 
 @media screen and (min-width: quiz.$phoneMaxHeight) {
-  .chapterHome {
+  .quizzes {
     padding: 10px 30px;
   }
 }

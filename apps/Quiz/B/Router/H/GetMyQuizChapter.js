@@ -1,10 +1,11 @@
 import { User } from "../../../../../libs/Core/Core1/bCore1.js"
+import QuizChapter from "../../Model/QuizChapter.js"
 import QuizProject from "../../Model/QuizProject.js"
 
-export async function asyGetMyQuizProject(req, projectId) {
+export async function asyGetMyQuizChapter(req, chapterId) {
 
-  if(!projectId) {
-    throw new Error("Project id is empty")
+  if(!chapterId) {
+    throw new Error("Chapter id is empty")
   }
 
   const user = await User.findById(req.user._id)
@@ -17,14 +18,22 @@ export async function asyGetMyQuizProject(req, projectId) {
     throw new Error("Cannot find quiz account.")
   }
 
-  const project = await QuizProject.findById(projectId)
+  const chapter = await QuizChapter.findById(chapterId)
+
+  if(!chapter) {
+    throw new Error("Cannot find quiz chapter")
+  }
+
+  const project = await QuizProject.findOne({
+    quizBookId: chapter.quizBookId
+  })
+
   if(!project) {
     throw new Error("Cannot find quiz project")
   }
 
-
   if(project.quizAccountId.toString() !== user.quizAccountId.toString()) {
-    throw new Error("Project does not match quiz account")
+    throw new Error("Chapter does not match quiz account")
   }
-  return project
+  return chapter
 }

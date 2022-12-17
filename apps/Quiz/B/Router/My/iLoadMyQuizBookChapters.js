@@ -18,7 +18,7 @@ export async function iLoadMyQuizBookChapters(req, res) {
     const chapters = await QuizChapter.find({
       quizBookId: quizBook._id
     })
-console.log(chapters)
+
     return res.json({ok: true, chapters})
 
   } catch(err) {

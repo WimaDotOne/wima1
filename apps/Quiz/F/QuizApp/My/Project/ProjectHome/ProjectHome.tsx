@@ -11,6 +11,7 @@ interface IProjectHomeProp {
   backToProjectsHome: ()=>void
   setProjectTurn: (projectTurn: string)=>void
 }
+
 export function ProjectHome({
   project,
   backToProjectsHome,

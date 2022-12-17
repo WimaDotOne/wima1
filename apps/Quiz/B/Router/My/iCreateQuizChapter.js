@@ -1,6 +1,5 @@
 import mongoose from "mongoose"
 import { GENERAL_INPUT_MAX, QuizConfig } from "../../../../../bConfig.js"
-import { User } from "../../../../../libs/Core/Core1/bCore1.js"
 import QuizBook from "../../Model/QuizBook.js"
 import QuizChapter from "../../Model/QuizChapter.js"
 import { asyGetMyQuizProject } from "../../Router/H/GetMyQuizProject.js"
