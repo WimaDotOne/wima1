@@ -30,6 +30,7 @@ export function QuizBookChaptersHome({
   }
 
   async function loadChapters() {
+    
     if(loaded) return
     await Get2(shield, `/quiz/LoadMyQuizBookChapters?projectId=${project.id}`,
      (res) => {

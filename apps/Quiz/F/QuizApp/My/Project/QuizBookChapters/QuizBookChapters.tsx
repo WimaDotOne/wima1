@@ -31,6 +31,11 @@ export function QuizBookChapters({
     setChaptersTurn(QuizBookChaptersTurn.NewChapter)
   }
 
+  function setChapterTitle(title: string) {
+    if(!selectedChapter) return
+    setSelectedChapter({...selectedChapter, title})
+  }
+
   switch(chaptersTurn) {
     case QuizBookChaptersTurn.NewChapter: return(
       <QuizBookNewChapter 
@@ -40,6 +45,7 @@ export function QuizBookChapters({
     )
     case QuizBookChaptersTurn.SelectedChapter: return(
       <QuizBookChapter chapter={selectedChapter}
+        setChapterTitle={setChapterTitle}
         backToChaptersHome={backToChaptersHome}/>
     )
     default: return(

@@ -6,11 +6,13 @@ import { QuizBookChapterSettings } from "./QuizBookChapterSettings/QuizBookChapt
 
 interface IQuizBookChapterProp {
   chapter?: IQuizChapter
+  setChapterTitle: (title:  string)=>void
   backToChaptersHome: ()=>void
 }
 
 export function QuizBookChapter({
   chapter,
+  setChapterTitle,
   backToChaptersHome
 }: IQuizBookChapterProp) {
 
@@ -29,11 +31,17 @@ export function QuizBookChapter({
         backToChapterHome={backToChapterHome}/>
     )
     case QuizBookChapterTurn.ChapterSettings: return(
-      <QuizBookChapterSettings />
+      <QuizBookChapterSettings 
+        chapter={chapter}
+        setChapterTitle={setChapterTitle}
+        backToChapterHome={backToChapterHome}
+      />
     )
     default: return(
       <QuizBookChapterHome chapter={chapter}
-        backToChaptersHome={backToChaptersHome}/>
+        backToChaptersHome={backToChaptersHome}
+        setQuizBookChapterTurn={setQuizBookChapterTurn}
+      />
     )
   }
 }

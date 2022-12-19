@@ -11,6 +11,10 @@ import { iCreateQuizChapter } from "./My/iCreateQuizChapter.js"
 import { iLoadMyQuizBookChapters } from "./My/iLoadMyQuizBookChapters.js"
 import { iLoadMyChapterQuizzes } from "./My/iLoadMyChapterQuizzes.js"
 import { iCreateQuizQuiz } from "./My/iCreateQuizQuiz.js"
+import { iLoadSettingsMyQuizChapterTitle } from "./My/QuizChapterSettings/iLoadSettingsMyQuizChapterTitle.js"
+import { iLoadSettingsIsQuizChapterPublic } from "./My/QuizChapterSettings/iLoadSettingsIsQuizChapterPublic.js"
+import { iSaveSettingsIsQuizChapterPublic } from "./My/QuizChapterSettings/iSaveSettingsIsQuizChapterPublic.js"
+import { iSaveSettingsMyQuizChapterTitle } from "./My/QuizChapterSettings/iSaveSettingsMyQuizChapterTitle.js"
 
 const QuizRouter = express.Router()
 
@@ -20,6 +24,12 @@ QuizRouter.get("/LoadSettingsMyQuizBookId", iAuth, iLoadSettingsMyQuizBookId)
 QuizRouter.get("/LoadSettingsIsQuizBookPublic", iAuth, iLoadSettingsIsQuizBookPublic)
 QuizRouter.post("/SaveSettingsMyQuizBookTitle", iAuth, iSaveSettingsMyQuizBookTitle)
 QuizRouter.post("/SaveSettingsIsQuizBookPublic", iAuth, iSaveSettingsIsQuizBookPublic)
+
+//My Quiz Chapter Settings
+QuizRouter.get("/LoadSettingsMyQuizChapterTitle", iAuth, iLoadSettingsMyQuizChapterTitle)
+QuizRouter.get("/LoadSettingsIsQuizChapterPublic", iAuth, iLoadSettingsIsQuizChapterPublic)
+QuizRouter.post("/SaveSettingsMyQuizChapterTitle", iAuth, iSaveSettingsMyQuizChapterTitle)
+QuizRouter.post("/SaveSettingsIsQuizChapterPublic", iAuth, iSaveSettingsIsQuizChapterPublic)
 
 //My Projects
 QuizRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)
