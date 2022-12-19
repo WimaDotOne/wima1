@@ -2,8 +2,8 @@ import { useState } from "react"
 import { IQuizChapter } from "../../../../../Model/IQuizChapter"
 import { MyQuizzesHome } from "./MyQuizzesHome/MyQuizzesHome"
 import { NewQuiz } from "./NewQuiz/NewQuiz"
-import { QuizBookChapter } from "../QuizBookChapter"
 import { IQuizQuiz } from "../../../../../Model/IQuizQuiz"
+import { MyQuiz } from "../MyQuiz/MyQuiz"
 
 interface IMyQuizzesProp {
   chapter: IQuizChapter
@@ -39,7 +39,7 @@ export function MyQuizzes({
       />
     )
     case QuizzesTurn.SelectedQuiz: return(
-      <QuizBookChapter chapter={selectedQuiz}
+      <MyQuiz quiz={selectedQuiz}
         backToQuizzesHome={backToQuizzesHome}/>
     )
     default: return(

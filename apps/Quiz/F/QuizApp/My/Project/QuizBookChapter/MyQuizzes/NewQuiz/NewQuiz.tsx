@@ -18,20 +18,22 @@ export function NewQuiz({
 }:INewQuizProp) {
 
   const [quizTitle, setQuizTitle] = useState<string>("")
+  const [youTubeLink, setYouTubeLink] = useState<string>("")
 
   const shield = useShield()
 
   async function CreateNewQuiz() {
     await Post2(shield, "/quiz/CreateQuizQuiz", {
       quizTitle,
-      chapterId: chapter._id
+      chapterId: chapter._id,
+      youTubeLink
     }, (res)=>{
       backToQuizzesHome()
     })
   }
 
   function IsNewQuizInfoValid() {
-    if(!quizTitle) return false
+    if(!quizTitle || !quizTitle.trim()) return false
     return true
   }
   
@@ -44,6 +46,11 @@ export function NewQuiz({
           maxLength={GENERAL_INPUT_MAX}
           prompt="Quiz title"
           onChange={(newValue)=>{setQuizTitle(newValue)}} />
+        <Div height={20} />
+        <TextField1 value={youTubeLink} 
+          maxLength={GENERAL_INPUT_MAX * 2}
+          prompt="YouTube link"
+          onChange={(newValue)=>{setYouTubeLink(newValue)}} />
       </div>
     </div>
     <AppleWindowBottomBarFill />

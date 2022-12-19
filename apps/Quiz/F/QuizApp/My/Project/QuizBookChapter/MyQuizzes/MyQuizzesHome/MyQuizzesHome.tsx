@@ -5,12 +5,13 @@ import { AppleIconButtons, AppleWindowBottomBarFill,
 import { AppleFolder, HeadLine } from "../../../../../../../../../libs/Pop/Pop3/fPop3"
 import { QuizColor } from "../../../../../../CSS/QuizColor"
 import { IQuizChapter } from "../../../../../../Model/IQuizChapter"
+import { IQuizQuiz } from "../../../../../../Model/IQuizQuiz"
 import cl from "./MyQuizzesHome.module.scss"
 
 interface IMyQuizzesHomeProp {
   chapter: IQuizChapter
   goToNewQuiz: ()=>void
-  goToSelectedQuiz: (chapter: IQuizChapter)=>void
+  goToSelectedQuiz: (chapter: IQuizQuiz)=>void
   backToChapterHome: ()=>void
 }
 
@@ -22,16 +23,16 @@ export function MyQuizzesHome({
 }: IMyQuizzesHomeProp) {
 
   const [loaded, setLoaded] = useState<boolean>(false)
-  const [quizzes, setQuizzes] = useState<Array<IQuizChapter>>([])
+  const [quizzes, setQuizzes] = useState<Array<IQuizQuiz>>([])
   const shield = useShield()
 
-  function openQuiz(quiz: IQuizChapter) {
+  function openQuiz(quiz: IQuizQuiz) {
     goToSelectedQuiz(quiz)
   }
 
   async function loadQuizzes() {
     if(loaded) return
-    await Get2(shield, `/quiz/LoadMyQuizzes?chapterId=${chapter._id}`,
+    await Get2(shield, `/quiz/LoadMyChapterQuizzes?chapterId=${chapter._id}`,
      (res) => {
       setLoaded(true)
       setQuizzes(res.quizzes)

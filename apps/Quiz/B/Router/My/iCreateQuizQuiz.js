@@ -2,11 +2,13 @@ import mongoose from "mongoose"
 import { GENERAL_INPUT_MAX, QuizConfig } from "../../../../../bConfig.js"
 import QuizQuiz from "../../Model/QuizQuiz.js"
 import { asyGetMyQuizChapter } from "../H/GetMyQuizChapter.js"
+import { GetYouTubeId } from "../H/ParseYouTube.js"
 
 export async function iCreateQuizQuiz(req, res) {
   try{
     const quizTitle = (req.body.quizTitle || "").trim()
     const chapterId = (req.body.chapterId || "").toString()
+    const youTubeLink = (req.body.youTubeLink || "").trim()
     
     if(!quizTitle) {
       return res.json({ ok: false, error: "Quiz title is required" })
@@ -27,10 +29,13 @@ export async function iCreateQuizQuiz(req, res) {
       return res.json({ ok: false, error: "Quiz creation reach limit" })
     }
     
+    const youTubeId = GetYouTubeId(youTubeLink)
+
     const quiz = new QuizQuiz({
       _id: mongoose.Types.ObjectId(),
       quizChapterId: chapter._id,
-      title: quizTitle
+      title: quizTitle,
+      youTubeId
     })
     
     await quiz.save()
