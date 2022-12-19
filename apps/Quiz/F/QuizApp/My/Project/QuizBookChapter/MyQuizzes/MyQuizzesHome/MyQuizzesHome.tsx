@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../../../libs/Core/Core1/fCore1"
 import { AppleIconButtons, AppleWindowBottomBarFill, 
   AppleWindowPlainBottomBarDiv, AutoRepeatGrid, Div } from "../../../../../../../../../libs/Core/Core2/fCore2"
-import { AppleFolder, HeadLine } from "../../../../../../../../../libs/Pop/Pop3/fPop3"
+import { AppleFolder, File, HeadLine } from "../../../../../../../../../libs/Pop/Pop3/fPop3"
 import { QuizColor } from "../../../../../../CSS/QuizColor"
 import { IQuizChapter } from "../../../../../../Model/IQuizChapter"
 import { IQuizQuiz } from "../../../../../../Model/IQuizQuiz"
@@ -53,7 +53,7 @@ export function MyQuizzesHome({
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
     {
       quizzes.map((quiz, i)=>
-      <AppleFolder key={quiz._id} text={quiz.title} onClick={
+      <File key={quiz._id} iconName="penfile" text={quiz.title} onClick={
         ()=>{openQuiz(quiz)}
       }/>)
     }

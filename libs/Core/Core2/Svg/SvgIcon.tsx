@@ -53,6 +53,7 @@ import { SvgLanguage } from "./School/Language/SvgLanguage"
 import { SvgBook } from "./School/Book/SvgBook"
 import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
 import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
+import { SvgPenFile } from "./Office/File/PenFile"
 
 export function SvgIcon({
   name,
@@ -134,6 +135,7 @@ export function SvgIcon({
     //Office
     case "previewfile": return <SvgPreviewFile width={width} fill={color} fill2={color2}/>
     case "textfile": return <SvgTextFile width={width} fill={color} fill2={color2}/>
+    case "penfile": return <SvgPenFile width={width} fill={color} fill2={color2}/>
     case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
