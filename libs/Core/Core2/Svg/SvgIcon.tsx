@@ -54,6 +54,7 @@ import { SvgBook } from "./School/Book/SvgBook"
 import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
 import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
 import { SvgPenFile } from "./Office/File/PenFile"
+import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
 
 export function SvgIcon({
   name,
@@ -72,6 +73,7 @@ export function SvgIcon({
     case "applenews": return <SvgAppleNews width={width} fill={color}/>
     case "wimacircle": return <SvgWimaCirlce width={width} fill={color}/>
     case "wimacircle1": return <SvgWimaCirlce1 width={width}/>
+    case "youtube": return <SvgYouTube width={width} />
 
     //Common
     case "chevron.up": return <SvgChevron up width={width} fill={color}/>

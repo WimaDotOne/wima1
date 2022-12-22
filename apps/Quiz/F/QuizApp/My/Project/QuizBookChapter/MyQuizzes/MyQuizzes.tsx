@@ -31,6 +31,16 @@ export function MyQuizzes({
     setQuizzesTurn(QuizzesTurn.NewQuiz)
   }
 
+  function setQuizTitle(title: string) {
+    if(!selectedQuiz) return
+    setSelectedQuiz({...selectedQuiz, title})
+  }
+
+  function setQuizYouTubeId(youTubeId: string) {
+    if(!selectedQuiz) return
+    setSelectedQuiz({...selectedQuiz, youTubeId})
+  }
+
   switch(quizzesTurn) {
     case QuizzesTurn.NewQuiz: return(
       <NewQuiz 
@@ -40,6 +50,8 @@ export function MyQuizzes({
     )
     case QuizzesTurn.SelectedQuiz: return(
       <MyQuiz quiz={selectedQuiz}
+        setQuizTitle={setQuizTitle}
+        setQuizYouTubeId={setQuizYouTubeId}
         backToQuizzesHome={backToQuizzesHome}/>
     )
     default: return(
