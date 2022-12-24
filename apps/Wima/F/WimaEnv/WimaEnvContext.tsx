@@ -7,6 +7,8 @@ interface IEnvContext {
   setMovicScriptFileMaxLength: (len: number)=>void
   textMaxPerChapter?: number
   setTextMaxPerChapter: (len: number)=>void
+  quizQuestionsMaxLength?: number
+  setQuizQuestionsMaxLength: (len: number)=>void
 }
 
 const EnvContext = React.createContext<IEnvContext | null>(null)
@@ -27,11 +29,13 @@ export function WimaEnvContext({
   const [domain, setDomain] = useState<string>("")
   const [movicScriptFileMaxLength, setMovicScriptFileMaxLength] = useState<number>(0)
   const [textMaxPerChapter, setTextMaxPerChapter] = useState<number>(0)
-  
+  const [quizQuestionsMaxLength, setQuizQuestionsMaxLength] = useState<number>(0)
+
   const context: IEnvContext = {
     domain, setDomain,
     movicScriptFileMaxLength, setMovicScriptFileMaxLength,
-    textMaxPerChapter, setTextMaxPerChapter
+    textMaxPerChapter, setTextMaxPerChapter,
+    quizQuestionsMaxLength, setQuizQuestionsMaxLength
   } 
 
   return(<>

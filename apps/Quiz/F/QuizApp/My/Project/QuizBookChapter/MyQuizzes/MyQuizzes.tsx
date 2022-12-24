@@ -50,6 +50,7 @@ export function MyQuizzes({
     )
     case QuizzesTurn.SelectedQuiz: return(
       <MyQuiz quiz={selectedQuiz}
+        chapter={chapter}
         setQuizTitle={setQuizTitle}
         setQuizYouTubeId={setQuizYouTubeId}
         backToQuizzesHome={backToQuizzesHome}/>

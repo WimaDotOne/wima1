@@ -19,6 +19,8 @@ import { iLoadSettingsMyQuizTitle } from "./My/QuizQuizSettings/iLoadSettingsMyQ
 import { iSaveSettingsMyQuizTitle } from "./My/QuizQuizSettings/iSaveSettingsMyQuizTitle.js"
 import { iLoadSettingsMyQuizYouTubeId } from "./My/QuizQuizSettings/iLoadSettingsMyQuizYouTubeId.js"
 import { iSaveSettingsMyQuizYouTubeId } from "./My/QuizQuizSettings/iSaveSettingsMyQuizYouTubeId.js"
+import { iSaveQuizQuestionsText } from "./My/iSaveQuizQuestionsText.js"
+import { iLoadQuizQuestionsTextEditor } from "./My/iLoadQuizQuestionsTextEditor.js"
 
 const QuizRouter = express.Router()
 
@@ -45,10 +47,13 @@ QuizRouter.post("/SaveSettingsMyQuizYouTubeId", iAuth, iSaveSettingsMyQuizYouTub
 QuizRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)
 QuizRouter.get("/LoadMyQuizBookChapters", iAuth, iLoadMyQuizBookChapters)
 QuizRouter.get("/LoadMyChapterQuizzes", iAuth, iLoadMyChapterQuizzes)
+QuizRouter.get("/LoadQuizQuestionsTextEditor", iAuth, iLoadQuizQuestionsTextEditor)
 
 QuizRouter.post("/CreateQuizProject", iAuth, iCreateQuizProject)
 QuizRouter.post("/CreateQuizChapter", iAuth, iCreateQuizChapter)
 QuizRouter.post("/CreateQuizQuiz", iAuth, iCreateQuizQuiz)
+QuizRouter.post("/SaveQuizQuestionsText", iAuth, iSaveQuizQuestionsText)
+
 
 export {
   QuizRouter

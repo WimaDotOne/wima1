@@ -19,7 +19,7 @@ export function MyQuizHome({
 }: IMyQuizHomeProp) {
 
   function openQuestionTxt() {
-    setMyQuizTurn(MyQuizTurn.QuestionTxt)
+    setMyQuizTurn(MyQuizTurn.QuestionsText)
   }
 
   function openMyQuizSettings() {

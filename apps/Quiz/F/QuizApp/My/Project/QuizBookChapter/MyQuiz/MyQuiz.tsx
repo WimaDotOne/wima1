@@ -1,11 +1,14 @@
 import { useState } from "react"
+import { IQuizChapter } from "../../../../../Model/IQuizChapter"
 import { IQuizQuiz } from "../../../../../Model/IQuizQuiz"
 import { MyQuizHome } from "./MyQuizHome/MyQuizHome"
 import { MyQuizSettings } from "./MyQuizSettings/MyQuizSettings"
 import { MyQuizYouTube } from "./MyQuizYouTube/MyQuizYouTube"
+import { QuestionsEditor } from "./QuestionsEditor/QuestionsEditor"
 
 interface IMyQuizProp {
   quiz?: IQuizQuiz
+  chapter: IQuizChapter
   setQuizTitle: (title: string)=>void
   setQuizYouTubeId: (youTubeId: string)=>void
   backToQuizzesHome: ()=>void
@@ -13,6 +16,7 @@ interface IMyQuizProp {
 
 export function MyQuiz({
   quiz,
+  chapter,
   setQuizTitle,
   setQuizYouTubeId,
   backToQuizzesHome
@@ -24,9 +28,14 @@ export function MyQuiz({
     setMyQuizTurn(MyQuizTurn.Home)
   }
 
-  if(!quiz) return null
+  if(!quiz || !chapter) return null
 
   switch(myQuizTurn) {
+    case MyQuizTurn.QuestionsText: return(
+      <QuestionsEditor quiz={quiz} 
+        chapterId={chapter._id}
+        backToQuizHome={backToQuizHome}/>
+    )
     case MyQuizTurn.YouTube: return(
       <MyQuizYouTube quiz={quiz}
         setQuizYouTubeId={setQuizYouTubeId}
@@ -50,7 +59,7 @@ export function MyQuiz({
 
 export const MyQuizTurn = {
   Home: "Home",
-  QuestionTxt: "QuestionTxt",
+  QuestionsText: "QuestionsText",
   YouTube: "YouTube",
   Settings: "Settings"
 }
