@@ -30,6 +30,10 @@ export function MyQuizHome({
     setMyQuizTurn(MyQuizTurn.YouTube)
   }
 
+  function openPreview() {
+
+  }
+
   return(<>
     <div className={cl.myQuizHome}>
       <HeadLine text={quiz.title} h={3}/>
@@ -38,6 +42,8 @@ export function MyQuizHome({
           onClick={openQuestionTxt} />
         <File text="YouTube video" iconName="youtube" type={FileType.youtube}
           onClick={openMyQuizYouTube}/>
+        <File text="Preview" iconName="penfile" type={FileType.preview}
+          onClick={openPreview}/>
         <File text="Settings" iconName="gear" type={FileType.settings}
           onClick={openMyQuizSettings} />
       </AutoRepeatGrid>

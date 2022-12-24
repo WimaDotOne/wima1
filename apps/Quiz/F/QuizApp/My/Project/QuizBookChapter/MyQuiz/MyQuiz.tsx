@@ -61,5 +61,6 @@ export const MyQuizTurn = {
   Home: "Home",
   QuestionsText: "QuestionsText",
   YouTube: "YouTube",
+  Preview: "Preview",
   Settings: "Settings"
 }
