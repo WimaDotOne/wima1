@@ -2,6 +2,7 @@ import { useState } from "react"
 import { IQuizChapter } from "../../../../../Model/IQuizChapter"
 import { IQuizQuiz } from "../../../../../Model/IQuizQuiz"
 import { MyQuizHome } from "./MyQuizHome/MyQuizHome"
+import { MyQuizPreview } from "./MyQuizPreview/MyQuizPreview"
 import { MyQuizSettings } from "./MyQuizSettings/MyQuizSettings"
 import { MyQuizYouTube } from "./MyQuizYouTube/MyQuizYouTube"
 import { QuestionsEditor } from "./QuestionsEditor/QuestionsEditor"
@@ -31,10 +32,16 @@ export function MyQuiz({
   if(!quiz || !chapter) return null
 
   switch(myQuizTurn) {
+    case MyQuizTurn.Preview: return(
+      <MyQuizPreview quizId={quiz._id} 
+        backToQuizHome={backToQuizHome}
+      />
+    )
     case MyQuizTurn.QuestionsText: return(
       <QuestionsEditor quiz={quiz} 
         chapterId={chapter._id}
-        backToQuizHome={backToQuizHome}/>
+        backToQuizHome={backToQuizHome}
+      />
     )
     case MyQuizTurn.YouTube: return(
       <MyQuizYouTube quiz={quiz}

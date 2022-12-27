@@ -21,6 +21,7 @@ import { iLoadSettingsMyQuizYouTubeId } from "./My/QuizQuizSettings/iLoadSetting
 import { iSaveSettingsMyQuizYouTubeId } from "./My/QuizQuizSettings/iSaveSettingsMyQuizYouTubeId.js"
 import { iSaveQuizQuestionsText } from "./My/iSaveQuizQuestionsText.js"
 import { iLoadQuizQuestionsTextEditor } from "./My/iLoadQuizQuestionsTextEditor.js"
+import { iLoadSingleQuiz } from "./QuizPlayer/iLoadSingleQuiz.js"
 
 const QuizRouter = express.Router()
 
@@ -53,6 +54,9 @@ QuizRouter.post("/CreateQuizProject", iAuth, iCreateQuizProject)
 QuizRouter.post("/CreateQuizChapter", iAuth, iCreateQuizChapter)
 QuizRouter.post("/CreateQuizQuiz", iAuth, iCreateQuizQuiz)
 QuizRouter.post("/SaveQuizQuestionsText", iAuth, iSaveQuizQuestionsText)
+
+//Quiz Player
+QuizRouter.get("/LoadSingleQuiz", iAuth, iLoadSingleQuiz)
 
 
 export {

@@ -31,7 +31,7 @@ export function MyQuizHome({
   }
 
   function openPreview() {
-
+    setMyQuizTurn(MyQuizTurn.Preview)
   }
 
   return(<>
