@@ -27,6 +27,7 @@ export function ParseQuizQuestionsText(text: string) {
       }
       lineType = LineType.Question
       questionAdded = false
+      optionCount = 0
       continue
     }
 

@@ -55,6 +55,7 @@ import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
 import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
 import { SvgPenFile } from "./Office/File/PenFile"
 import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
+import { SvgXMark } from "./School/XMark/SvgXMark"
 
 export function SvgIcon({
   name,
@@ -151,7 +152,9 @@ export function SvgIcon({
     case "language": return <SvgLanguage width={width} fill={color} />
     case "book": return <SvgBook width={width} fill={color} />
     case "typewriter": return <SvgTypewriter width={width} fill={color} />
-
+    case "checkmark": return <SvgCheckMark width={width} fill={color} />
+    case "xmark": return <SvgXMark width={width} fill={color} />
+    
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
     case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />
