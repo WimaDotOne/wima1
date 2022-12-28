@@ -19,13 +19,15 @@ export function QuizSheet({
   return(<>
   <LimitWidth maxWidth={700}>
     <RandomColorCard>
-      <iframe width="400" height="300"
+      <iframe className={cl.youTubeFrame} width="400" height="300"
         src={`https://www.youtube.com/embed/${quiz.youTubeId}`}/>
     </RandomColorCard>
     {
       questions.map((question: IQuizQuestion, i)=>
       <div key={i}>
-        <QuestionCard question={question}/>
+        <RandomColorCard>
+          <QuestionCard question={question}/>
+        </RandomColorCard>
       </div>
       )
     }

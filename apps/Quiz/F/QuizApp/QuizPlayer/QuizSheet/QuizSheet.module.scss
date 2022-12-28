@@ -1,0 +1,13 @@
+.youTubeFrame {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .youTubeFrame {
+    width: 320px;
+    height: 240px;
+  }
+}

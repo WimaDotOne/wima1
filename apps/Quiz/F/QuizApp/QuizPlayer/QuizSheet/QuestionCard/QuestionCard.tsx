@@ -23,14 +23,17 @@ export function QuestionCard({
 
   return(<>
   <div>
-    <div>{question.question}</div>
+    <div className={cl.question}>{question.question}</div>
     <div>
     {
       question.options.map((option, i)=>
-      <div className={cl.option} key={i}>
+      <div className={cl.optionRow} key={i}>
         <CheckField1 checked={i+1 === checkedIndex} onChange={(checked)=>{
           onCheckChange(checked, i+1)
-        }}/> {option}
+        }}/> 
+        <div className={cl.option}>
+        {option}
+        </div>
       </div>
       )
     }
