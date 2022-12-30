@@ -8,7 +8,7 @@ import cl from "./QuizSheet.module.scss"
 import { RandomColorCard } from "./RandomColorCard/RandomColorCard"
 
 interface IQuizSheetProp {
-  quiz: IQuizQuiz
+  quiz?: IQuizQuiz
 }
 
 export function QuizSheet({
@@ -17,7 +17,7 @@ export function QuizSheet({
 
   const questions: Array<IQuizQuestion> = ParseQuizQuestionsText(quiz.questionsText)
   const [showMark, setShowMark] = useState<boolean>(false)
-  console.log(questions)
+  
 
   function gradeQuiz() {
     setShowMark(true)
@@ -26,6 +26,8 @@ export function QuizSheet({
   function hideMarks() {
     setShowMark(false)
   }
+
+  if(!quiz) return null
   
   return(<>
   <LimitWidth maxWidth={700}>

@@ -44,7 +44,7 @@ export function MyQuizHome({
           onClick={openMyQuizYouTube}/>
         <File text="Preview" iconName="penfile" type={FileType.preview}
           onClick={openPreview}/>
-        <File text="Settings" iconName="gear" type={FileType.settings}
+        <File text="Quiz Settings" iconName="gear" type={FileType.settings}
           onClick={openMyQuizSettings} />
       </AutoRepeatGrid>
     </div>

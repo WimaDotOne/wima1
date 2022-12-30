@@ -22,6 +22,7 @@ import { iSaveSettingsMyQuizYouTubeId } from "./My/QuizQuizSettings/iSaveSetting
 import { iSaveQuizQuestionsText } from "./My/iSaveQuizQuestionsText.js"
 import { iLoadQuizQuestionsTextEditor } from "./My/iLoadQuizQuestionsTextEditor.js"
 import { iLoadSingleQuiz } from "./QuizPlayer/iLoadSingleQuiz.js"
+import { iLoadPublishedChapterQuizzes } from "./QuizPlayer/iLoadPublishedChapterQuizzes.js"
 
 const QuizRouter = express.Router()
 
@@ -57,7 +58,7 @@ QuizRouter.post("/SaveQuizQuestionsText", iAuth, iSaveQuizQuestionsText)
 
 //Quiz Player
 QuizRouter.get("/LoadSingleQuiz", iAuth, iLoadSingleQuiz)
-
+QuizRouter.get("/LoadPublishedChapterQuizzes", iAuth, iLoadPublishedChapterQuizzes)
 
 export {
   QuizRouter

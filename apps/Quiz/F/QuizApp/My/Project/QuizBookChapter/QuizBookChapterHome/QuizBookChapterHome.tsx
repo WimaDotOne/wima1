@@ -30,7 +30,7 @@ export function QuizBookChapterHome({
       <HeadLine text={chapter.title} h={3}/>
       <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
         <AppleFolder text="Quizzes" onClick={openQuizzesFolder}/>
-        <File text="Settings" iconName="gear" type={FileType.settings}
+        <File text="Chapter Settings" iconName="gear" type={FileType.settings}
           onClick={openChapterSettings} />
       </AutoRepeatGrid>
     </div>

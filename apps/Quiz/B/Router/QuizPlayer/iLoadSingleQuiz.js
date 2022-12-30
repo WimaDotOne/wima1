@@ -1,5 +1,6 @@
 import QuizQuiz from "../../Model/QuizQuiz.js"
 
+//No check if the chapter of the quiz is published
 export async function iLoadSingleQuiz(req, res) {
   try{
 
