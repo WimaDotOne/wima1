@@ -9,16 +9,17 @@ import { RandomColorCard } from "./RandomColorCard/RandomColorCard"
 
 interface IQuizSheetProp {
   quiz?: IQuizQuiz
+  onBack?: ()=>void
 }
 
 export function QuizSheet({
-  quiz
+  quiz,
+  onBack
 }: IQuizSheetProp) {
 
-  const questions: Array<IQuizQuestion> = ParseQuizQuestionsText(quiz.questionsText)
+  const questions: Array<IQuizQuestion> = ParseQuizQuestionsText(quiz?.questionsText)
   const [showMark, setShowMark] = useState<boolean>(false)
   
-
   function gradeQuiz() {
     setShowMark(true)
   }
@@ -52,6 +53,13 @@ export function QuizSheet({
       <Div width={10} />
       <Button1 text="Grade Quiz" onClick={gradeQuiz} color={"#0a95ff"}/>
     </div>
+    {
+      onBack ?
+      <div className={cl.backButtonSpace}>
+        <Button1 text="Back" onClick={onBack} color={"#aaa"} />
+      </div>: null
+    }
+ 
   </LimitWidth>
   </>)
 }

@@ -1,6 +1,6 @@
 import { IQuizQuestion } from "../../Model/IQuizQuestion"
 
-export function ParseQuizQuestionsText(text: string) {
+export function ParseQuizQuestionsText(text?: string) {
   if(!text) return []
 
   const lines = text.split("\n")

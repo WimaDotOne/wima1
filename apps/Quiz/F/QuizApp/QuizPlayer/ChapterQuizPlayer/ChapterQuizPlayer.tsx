@@ -41,13 +41,17 @@ export function ChapterQuizPlayer({
     setChapterQuizPlayerTurn(ChapterQuizPlayerTurn.QuizSheet)
   }
 
+  function backToChapterCard() {
+    setChapterQuizPlayerTurn(ChapterQuizPlayerTurn.ChapterCard)
+  }
+
   useEffect(()=>{
     loadChapterQuizzes()
   })
 
   switch(chapterQuizPlayerTurn) {
     case ChapterQuizPlayerTurn.QuizSheet: return(
-      <QuizSheet quiz={selectedQuiz} />
+      <QuizSheet quiz={selectedQuiz} onBack={backToChapterCard}/>
     )
     default: return(<>
       <div className={cl.chapterQuizPlayer}>
