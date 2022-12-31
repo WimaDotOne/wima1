@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { ClassNames } from "../../../../../../libs/Core/Core1/fCore1"
+import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv } from "../../../../../../libs/Core/Core2/fCore2"
+import { QuizColor } from "../../../CSS/QuizColor"
 import { IQuizQuiz } from "../../../Model/IQuizQuiz"
 import cl from "./ChapterCard.module.scss"
 
@@ -7,14 +9,15 @@ interface IChapterCardProp {
   chapterName: string
   quizzes: Array<IQuizQuiz>
   onClickQuiz: (quiz: IQuizQuiz) => void
+  onBack: ()=>void
 }
 
 export function ChapterCard({
   chapterName,
   quizzes,
-  onClickQuiz
+  onClickQuiz,
+  onBack
 }: IChapterCardProp) {
-
 
   const [randomNum, setRandomNum] = useState<number>(0)
 
@@ -44,7 +47,7 @@ export function ChapterCard({
     {
       quizzes.map((quiz, i)=> {
 
-        const clNotLastRow = i < quizzes.length ? cl.notLastRow : ""
+        const clNotLastRow = i < quizzes.length - 1 ? cl.notLastRow : ""
 
         return(
         <div key={i} className={ClassNames([cl.quizRow, clNotLastRow])}>
@@ -62,6 +65,16 @@ export function ChapterCard({
       )
     }
   </div>
+  {
+    onBack ? <>
+    <AppleWindowBottomBarFill />
+    <AppleWindowPlainBottomBarDiv>
+      <AppleIconButtons color={QuizColor.themeRed}
+        icon1="chevron.left" onClick1={onBack}
+      />
+    </AppleWindowPlainBottomBarDiv>
+    </>: null
+  }
   </>)
 }
 

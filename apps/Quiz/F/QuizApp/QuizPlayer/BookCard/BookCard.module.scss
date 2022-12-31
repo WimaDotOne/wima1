@@ -1,0 +1,43 @@
+.bookCard {
+  padding: 20px;
+}
+
+.bookName {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.chapters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chapter {
+  width: 150px;
+  min-height: 150px;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.chapterSpace {
+  padding: 5px;
+}
+
+.chapterNum {
+  font-size: 24px;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.chapterTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}

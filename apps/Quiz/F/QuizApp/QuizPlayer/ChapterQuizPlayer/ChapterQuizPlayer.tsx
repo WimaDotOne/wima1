@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Get2, useShield } from '../../../../../../libs/Core/Core1/fCore1'
 import { IQuizQuiz } from '../../../Model/IQuizQuiz'
-import { ISection } from '../../../Model/ISection'
 import { ChapterCard } from '../ChapterCard/ChapterCard'
 import { QuizSheet } from '../QuizSheet/QuizSheet'
 import cl from './ChapterQuizPlayer.module.scss'
 
 interface IChapterQuizPlayerProp {
-  chapterId: string
+  chapterId?: string
   onBack: ()=>void
 }
 
@@ -56,7 +55,9 @@ export function ChapterQuizPlayer({
     default: return(<>
       <div className={cl.chapterQuizPlayer}>
         <ChapterCard chapterName={chapterName}
-          quizzes={quizzes} onClickQuiz={goToQuiz}/>
+          quizzes={quizzes} onClickQuiz={goToQuiz}
+          onBack={onBack}
+        />
       </div>
       </>)
   }

@@ -38,7 +38,7 @@ export function ViewPublish({
   let href = ""
   if(isQuizBookPublic) {
     text = "The quiz book is public to people who have the following link. Share by sending the link to your friends."
-    href = `${wimaEnv?.domain}/apps/Quiz/Play/?quizBookId=${quizBookId}`
+    href = `${wimaEnv?.domain}/apps/Quiz/BookPlay/?bookId=${quizBookId}`
   }
   
 
