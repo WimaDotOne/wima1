@@ -63,7 +63,7 @@ export function QuizWindow({
 
 export const AppTurn = {
   Projects: "Projects",
-  MyQuizzes: "MyQuizzes",
+  MyQuizBooks: "MyQuizBooks",
   About: "About",
   Tutorial: "Tutorial",
   WimaCircle: "WimaCircle"
@@ -71,16 +71,16 @@ export const AppTurn = {
 
 function IsViewRequreLogin(viewId?: string) {
   switch (viewId) {
-    case AppTurn.MyQuizzes: return true
+    case AppTurn.MyQuizBooks: return true
     case AppTurn.Projects: return true
     default: return false
   }
 }
 
 function QuizMenu(viewId?: string): MenuModel | undefined {
-  if(!viewId) viewId = AppTurn.MyQuizzes
+  if(!viewId) viewId = AppTurn.MyQuizBooks
   const myGroup = new GroupModel("My", false)
-  myGroup.AddItem(new ItemModel(AppTurn.MyQuizzes, "Quiz Books", "book", true))
+  myGroup.AddItem(new ItemModel(AppTurn.MyQuizBooks, "Quiz Books", "book", true))
   myGroup.AddItem(new ItemModel(AppTurn.Projects, "Projects", "clapperboard", true))
 
   const publicGroup = new GroupModel("Quiz", true)

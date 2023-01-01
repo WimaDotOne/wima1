@@ -1,0 +1,42 @@
+.playBar {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+.playButtonDiv {
+  width: 20%;
+  max-width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.playDiv {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  border: 0.5px solid #ddd;
+  max-width: 400px;
+  border-radius: 3px;
+}
+.playImageDiv {
+  min-height: 35px;
+  width: 35px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+.playImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.playNameDiv {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}

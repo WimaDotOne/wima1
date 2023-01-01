@@ -24,6 +24,7 @@ import { iLoadQuizQuestionsTextEditor } from "./My/iLoadQuizQuestionsTextEditor.
 import { iLoadSingleQuiz } from "./QuizPlayer/iLoadSingleQuiz.js"
 import { iLoadPublishedChapterQuizzes } from "./QuizPlayer/iLoadPublishedChapterQuizzes.js"
 import { iLoadPublishedBookChapters } from "./QuizPlayer/iLoadPublishedBookChapters.js"
+import { iLoadMyPublishedQuizBooks } from "./My/iLoadMyPublishedQuizBooks.js"
 
 const QuizRouter = express.Router()
 
@@ -51,6 +52,7 @@ QuizRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)
 QuizRouter.get("/LoadMyQuizBookChapters", iAuth, iLoadMyQuizBookChapters)
 QuizRouter.get("/LoadMyChapterQuizzes", iAuth, iLoadMyChapterQuizzes)
 QuizRouter.get("/LoadQuizQuestionsTextEditor", iAuth, iLoadQuizQuestionsTextEditor)
+QuizRouter.get("/LoadMyPublishedQuizBooks", iAuth, iLoadMyPublishedQuizBooks)
 
 QuizRouter.post("/CreateQuizProject", iAuth, iCreateQuizProject)
 QuizRouter.post("/CreateQuizChapter", iAuth, iCreateQuizChapter)
