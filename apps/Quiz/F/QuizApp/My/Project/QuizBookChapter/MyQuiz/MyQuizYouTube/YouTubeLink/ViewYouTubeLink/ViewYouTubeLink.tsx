@@ -9,6 +9,7 @@ export function ViewYouTubeLink({
   return(<>
     <div className={cl.youTubeId}>
       <iframe width="240" height="180"
+        className={cl.youTubeFrame}
         src={`https://www.youtube.com/embed/${youTubeId}`}>
       </iframe>
     </div>

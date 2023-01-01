@@ -26,6 +26,11 @@ export function YouTubeLink({
   }
 
   async function saveYouTubeId(onOk?:(res:any)=>void) {
+    if(!youTubeLink || !youTubeLink.trim()) {
+      if(!window.confirm("You are setting the youtube link to empty. Continue?")) {
+        return
+      }
+    }
     await Post2(shield, "/quiz/SaveSettingsMyQuizYouTubeId",
       {
         quizId: quiz._id,

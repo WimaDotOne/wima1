@@ -35,10 +35,12 @@ export function QuizSheet({
     <RandomColorCard>
       {quiz.title}
     </RandomColorCard>
-    <RandomColorCard>
-      <iframe className={cl.youTubeFrame} width="400" height="300"
-        src={`https://www.youtube.com/embed/${quiz.youTubeId}`}/>
-    </RandomColorCard>
+    <div className={cl.youTubeSpace}>
+      <div className={cl.youTubeSpaceInner}>
+        <iframe className={cl.youTubeFrame} width="400" height="300"
+          src={`https://www.youtube.com/embed/${quiz.youTubeId}`}/>
+      </div>
+    </div>
     {
       questions.map((question: IQuizQuestion, i)=>
       <div key={i}>
