@@ -6,17 +6,34 @@ import { IQuizChapter } from "../../../../../Model/IQuizChapter"
 import { QuizChapterTitle } from "./QuizChapterTitle/QuizChapterTitle"
 import { Publish } from "./Publish/Publish"
 import cl from "./QuizBookChapterSettings.module.scss"
+import { Post2, useShield } from "../../../../../../../../libs/Core/Core1/fCore1"
 
 interface IQuizBookChapterSettingsProp {
   chapter: IQuizChapter
   setChapterTitle: (title: string)=>void
   backToChapterHome: ()=>void
+  backToChaptersHome: ()=>void
 }
 export function QuizBookChapterSettings({
   chapter,
   setChapterTitle,
-  backToChapterHome
+  backToChapterHome,
+  backToChaptersHome
 }: IQuizBookChapterSettingsProp) {
+
+  const shield = useShield()
+
+  async function deleteChapter() {
+    if(!window.confirm("Are you sure to delete the chapter?")) {
+      return
+    }
+
+    await Post2(shield, "/quiz/DeleteMyChapter", {
+      chapterId: chapter._id
+    }, (res)=>{
+      backToChaptersHome()
+    })
+  }
 
   return(<>
   <div className={cl.settings}>
@@ -31,6 +48,7 @@ export function QuizBookChapterSettings({
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={QuizColor.themeRed}
         icon1="chevron.left" onClick1={backToChapterHome}
+        icon5="trashbin" onClick5={deleteChapter}
       />
     </AppleWindowPlainBottomBarDiv>
   </>)

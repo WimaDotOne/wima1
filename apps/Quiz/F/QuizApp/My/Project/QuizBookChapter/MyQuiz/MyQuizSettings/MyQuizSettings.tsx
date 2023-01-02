@@ -5,17 +5,33 @@ import { QuizColor } from "../../../../../../CSS/QuizColor"
 import { IQuizQuiz } from "../../../../../../Model/IQuizQuiz"
 import { QuizTitle } from "./QuizTitle/QuizTitle"
 import cl from "./MyQuizSettings.module.scss"
+import { Post2, useShield } from "../../../../../../../../../libs/Core/Core1/fCore1"
 
 interface IMyQuizSettingsProp {
   quiz: IQuizQuiz
   setQuizTitle: (title: string)=>void
   backToQuizHome: ()=>void
+  backToQuizzesHome: ()=>void
 }
 export function MyQuizSettings({
   quiz,
   setQuizTitle,
-  backToQuizHome
+  backToQuizHome,
+  backToQuizzesHome
 }: IMyQuizSettingsProp) {
+
+  const shield = useShield()
+
+  async function deleteQuiz() {
+    if(!window.confirm("Are you sure to delete the quiz?")) {
+      return
+    }
+    await Post2(shield, "/quiz/DeleteMyQuiz", {
+      quizId: quiz._id }, (res)=>{
+        backToQuizzesHome()
+      }
+    )
+  }
 
   return(<>
   <div className={cl.settings}>
@@ -28,6 +44,7 @@ export function MyQuizSettings({
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={QuizColor.themeRed}
         icon1="chevron.left" onClick1={backToQuizHome}
+        icon5="trashbin" onClick5={deleteQuiz}
       />
     </AppleWindowPlainBottomBarDiv>
   </>)

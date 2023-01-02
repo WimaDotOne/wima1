@@ -35,6 +35,7 @@ export function QuizBookChapter({
         chapter={chapter}
         setChapterTitle={setChapterTitle}
         backToChapterHome={backToChapterHome}
+        backToChaptersHome={backToChaptersHome}
       />
     )
     default: return(

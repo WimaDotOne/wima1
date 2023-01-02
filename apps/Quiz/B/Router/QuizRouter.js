@@ -25,6 +25,8 @@ import { iLoadSingleQuiz } from "./QuizPlayer/iLoadSingleQuiz.js"
 import { iLoadPublishedChapterQuizzes } from "./QuizPlayer/iLoadPublishedChapterQuizzes.js"
 import { iLoadPublishedBookChapters } from "./QuizPlayer/iLoadPublishedBookChapters.js"
 import { iLoadMyPublishedQuizBooks } from "./My/iLoadMyPublishedQuizBooks.js"
+import { iDeleteMyQuiz } from "./My/QuizQuizSettings/iDeleteMyQuiz.js"
+import { iDeleteMyChapter } from "./My/QuizChapterSettings/iDeleteMyChapter.js"
 
 const QuizRouter = express.Router()
 
@@ -40,12 +42,14 @@ QuizRouter.get("/LoadSettingsMyQuizChapterTitle", iAuth, iLoadSettingsMyQuizChap
 QuizRouter.get("/LoadSettingsIsQuizChapterPublic", iAuth, iLoadSettingsIsQuizChapterPublic)
 QuizRouter.post("/SaveSettingsMyQuizChapterTitle", iAuth, iSaveSettingsMyQuizChapterTitle)
 QuizRouter.post("/SaveSettingsIsQuizChapterPublic", iAuth, iSaveSettingsIsQuizChapterPublic)
+QuizRouter.post("/DeleteMyChapter", iAuth, iDeleteMyChapter)
 
 //My Quiz Quiz Settings
 QuizRouter.get("/LoadSettingsMyQuizTitle", iAuth, iLoadSettingsMyQuizTitle)
 QuizRouter.get("/LoadSettingsMyQuizYouTubeId", iAuth, iLoadSettingsMyQuizYouTubeId)
 QuizRouter.post("/SaveSettingsMyQuizTitle", iAuth, iSaveSettingsMyQuizTitle)
 QuizRouter.post("/SaveSettingsMyQuizYouTubeId", iAuth, iSaveSettingsMyQuizYouTubeId)
+QuizRouter.post("/DeleteMyQuiz", iAuth, iDeleteMyQuiz)
 
 //My Projects
 QuizRouter.get("/LoadMyProjects", iAuth, iLoadMyProjects)

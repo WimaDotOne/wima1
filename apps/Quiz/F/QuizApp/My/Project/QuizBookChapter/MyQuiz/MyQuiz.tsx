@@ -53,6 +53,7 @@ export function MyQuiz({
       <MyQuizSettings quiz={quiz}
         setQuizTitle={setQuizTitle}
         backToQuizHome={backToQuizHome}
+        backToQuizzesHome={backToQuizzesHome}
       />
     )
     default: return(
