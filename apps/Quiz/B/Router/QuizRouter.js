@@ -27,6 +27,7 @@ import { iLoadPublishedBookChapters } from "./QuizPlayer/iLoadPublishedBookChapt
 import { iLoadMyPublishedQuizBooks } from "./My/iLoadMyPublishedQuizBooks.js"
 import { iDeleteMyQuiz } from "./My/QuizQuizSettings/iDeleteMyQuiz.js"
 import { iDeleteMyChapter } from "./My/QuizChapterSettings/iDeleteMyChapter.js"
+import { iDeleteMyProject } from "./My/QuizBookSettings/iDeleteMyProject.js"
 
 const QuizRouter = express.Router()
 
@@ -36,6 +37,7 @@ QuizRouter.get("/LoadSettingsMyQuizBookId", iAuth, iLoadSettingsMyQuizBookId)
 QuizRouter.get("/LoadSettingsIsQuizBookPublic", iAuth, iLoadSettingsIsQuizBookPublic)
 QuizRouter.post("/SaveSettingsMyQuizBookTitle", iAuth, iSaveSettingsMyQuizBookTitle)
 QuizRouter.post("/SaveSettingsIsQuizBookPublic", iAuth, iSaveSettingsIsQuizBookPublic)
+QuizRouter.post("/DeleteMyProject", iAuth, iDeleteMyProject)
 
 //My Quiz Chapter Settings
 QuizRouter.get("/LoadSettingsMyQuizChapterTitle", iAuth, iLoadSettingsMyQuizChapterTitle)

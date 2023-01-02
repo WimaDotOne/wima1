@@ -53,6 +53,7 @@ export function Project({
         project={project}
         setProjectQuizBookTitle={setProjectQuizTitle}
         backToProjectHome={backToProjectHome}
+        backToProjectsHome={backToProjectsHome}
       />
     )
     case ProjectTurn.QuizBookChapters: return(

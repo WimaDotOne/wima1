@@ -5,17 +5,34 @@ import { IProject } from "../../../../Model/IProject"
 import { QuizBookTitle } from "./QuizBookTitle/QuizBookTitle"
 import { Publish } from "./Publish/Publish"
 import cl from "./QuizBookSettings.module.scss"
+import { Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 
 interface IQuizBookSettingsProp {
   project: IProject
   setProjectQuizBookTitle: (quizBookTitle: string)=>void
   backToProjectHome: ()=>void
+  backToProjectsHome: ()=>void
 }
+
 export function QuizBookSettings({
   project,
   setProjectQuizBookTitle,
-  backToProjectHome
+  backToProjectHome,
+  backToProjectsHome
 }: IQuizBookSettingsProp) {
+
+  const shield = useShield()
+
+  async function deleteProject() {
+    if(!window.confirm("Are you sure to delete the project?")) {
+      return
+    }
+    await Post2(shield, "/quiz/DeleteMyProject", {
+      projectId: project.id
+    }, (res)=>{
+      backToProjectsHome()
+    })
+  }
 
   return(<>
   <div className={cl.settings}>
@@ -30,6 +47,7 @@ export function QuizBookSettings({
     <AppleWindowPlainBottomBarDiv>
       <AppleIconButtons color={QuizColor.themeRed}
         icon1="chevron.left" onClick1={backToProjectHome}
+        icon5="trashbin" onClick5={deleteProject}
       />
     </AppleWindowPlainBottomBarDiv>
   </>)
