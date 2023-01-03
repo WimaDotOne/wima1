@@ -79,7 +79,7 @@ export function About() {
 
       <LimitWidth gray maxWidth={800}>
         <Div height={40} />
-        <StripeIntroText title="Designed for YouTube tutorial videos" 
+        <StripeIntroText title="Designed for language tutorial YouTube videos" 
           text1="Paste in a link of YouTube video. Add multiple choice questions and options. Share the link with your students."
           text2=""
         />
