@@ -53,3 +53,10 @@ export const SocialConfig = {
   needLoadMax: 10000,
   needPageSize: 300
 }
+
+export const QuizConfig = {
+  quizBookMaxPerAccount: 100,
+  quizChapterMaxPerQuizBook: 20,
+  quizMaxPerQuizChapter: 100,
+  quizQuestionsMaxLength: 100000
+}

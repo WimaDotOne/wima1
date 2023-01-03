@@ -11,7 +11,7 @@ import { BookRouter } from "./apps/Book/B/Router/BookRouter.js"
 import { SocialRouter } from "./apps/Social/B/Router/SocialRouter.js"
 import { LingoRouter } from "./apps/Lingo/B/Router/LingoRouter.js"
 import { TipRouter } from "./apps/Tip/B/Router/TipRouter.js"
-
+import { QuizRouter } from "./apps/Quiz/B/Router/QuizRouter.js"
 
 dotenv.config()
 ConnectDb(process.env.MONGO_DB)
@@ -30,6 +30,8 @@ server.use(bConfig.bRoute1+"/book", BookRouter)
 server.use(bConfig.bRoute1+"/social", SocialRouter)
 server.use(bConfig.bRoute1+"/lingo", LingoRouter)
 server.use(bConfig.bRoute1+"/tip", TipRouter)
+server.use(bConfig.bRoute1+"/quiz", QuizRouter)
+
 
 server.use(express.static(FilePath(import.meta.url, "./out")))
 

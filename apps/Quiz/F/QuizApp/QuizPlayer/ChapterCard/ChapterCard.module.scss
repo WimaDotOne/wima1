@@ -1,0 +1,40 @@
+.chapterCard {
+  padding: 30px;
+}
+
+.chapterName {
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.quizRow {
+  display: flex;
+  padding: 10px 0;
+}
+
+.notLastRow {
+  border-bottom: 2px dotted #ccc;
+}
+
+.quizNum {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.quizTitle {
+  font-size: 18px;
+  color: #464646;
+}
+
+.quizTitle:hover {
+  cursor: pointer;
+}
+
+.color1 { color: #ff6651; }
+.color2 { color: #8cae6f; }
+.color3 { color: #4774c8; }
+.color4 { color: #53baf3; }
+.color5 { color: #feb908; }
+.color6 { color: #705df2; }

@@ -1,0 +1,27 @@
+
+.question {
+  padding: 0 5px 10px 0;
+  font-size: 20px;
+}
+
+.optionRow {
+  display: flex;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.option {
+  padding-top: 4px;
+}
+
+.questionCard {
+  position: relative;
+}
+
+.markSpace {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -45,6 +45,7 @@ export function Table({
     const mediaQuery = window.matchMedia(`(max-width: ${table?.narrowScreenWidth}px)`)
     AdjustTable(mediaQuery)
     mediaQuery.addEventListener("change" , (e)=>{
+      
       if(e.target) {
         AdjustTable(e.target)
       }

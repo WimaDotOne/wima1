@@ -1,0 +1,11 @@
+@use "../../../../CSS/quiz.module.scss";
+
+.home {
+  padding: 10px;
+}
+
+@media screen and (min-width: quiz.$phoneMaxHeight) {
+  .home {
+    padding: 10px 30px;
+  }
+}

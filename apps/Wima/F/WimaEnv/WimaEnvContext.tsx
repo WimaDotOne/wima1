@@ -9,6 +9,8 @@ interface IEnvContext {
   setTextMaxPerChapter: (len: number)=>void
   googlePlacesApiId?: string,
   setGooglePlacesApiId: (id: string)=>void
+  quizQuestionsMaxLength?: number
+  setQuizQuestionsMaxLength: (len: number)=>void
 }
 
 const EnvContext = React.createContext<IEnvContext | null>(null)
@@ -30,12 +32,14 @@ export function WimaEnvContext({
   const [movicScriptFileMaxLength, setMovicScriptFileMaxLength] = useState<number>(0)
   const [textMaxPerChapter, setTextMaxPerChapter] = useState<number>(0)
   const [googlePlacesApiId, setGooglePlacesApiId] = useState<string>("")
+  const [quizQuestionsMaxLength, setQuizQuestionsMaxLength] = useState<number>(0)
 
   const context: IEnvContext = {
     domain, setDomain,
     movicScriptFileMaxLength, setMovicScriptFileMaxLength,
     textMaxPerChapter, setTextMaxPerChapter,
-    googlePlacesApiId, setGooglePlacesApiId
+    googlePlacesApiId, setGooglePlacesApiId,
+    quizQuestionsMaxLength, setQuizQuestionsMaxLength
   } 
 
   return(<>

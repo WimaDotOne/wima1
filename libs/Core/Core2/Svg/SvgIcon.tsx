@@ -55,6 +55,9 @@ import { SvgBook } from "./School/Book/SvgBook"
 import { SvgTypewriter } from "./School/Typewriter/SvgTypewriter"
 import { SvgCollapseLeft } from "./Common/Arrow/SvgCollapseLeft"
 import { SvgDollar } from "./Finance/Dollar/SvgDollar"
+import { SvgPenFile } from "./Office/File/PenFile"
+import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
+import { SvgXMark } from "./School/XMark/SvgXMark"
 
 export function SvgIcon({
   name,
@@ -73,6 +76,7 @@ export function SvgIcon({
     case "applenews": return <SvgAppleNews width={width} fill={color}/>
     case "wimacircle": return <SvgWimaCirlce width={width} fill={color}/>
     case "wimacircle1": return <SvgWimaCirlce1 width={width}/>
+    case "youtube": return <SvgYouTube width={width} />
 
     //Common
     case "chevron.up": return <SvgChevron up width={width} fill={color}/>
@@ -136,6 +140,7 @@ export function SvgIcon({
     //Office
     case "previewfile": return <SvgPreviewFile width={width} fill={color} fill2={color2}/>
     case "textfile": return <SvgTextFile width={width} fill={color} fill2={color2}/>
+    case "penfile": return <SvgPenFile width={width} fill={color} fill2={color2}/>
     case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
@@ -149,7 +154,9 @@ export function SvgIcon({
     case "language": return <SvgLanguage width={width} fill={color} />
     case "book": return <SvgBook width={width} fill={color} />
     case "typewriter": return <SvgTypewriter width={width} fill={color} />
-
+    case "checkmark": return <SvgCheckMark width={width} fill={color} />
+    case "xmark": return <SvgXMark width={width} fill={color} />
+    
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
     case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />

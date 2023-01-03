@@ -19,7 +19,7 @@ export function GatherWimaEnv() {
       wimaEnv?.setMovicScriptFileMaxLength(res.movicScriptFileMaxLength)
       wimaEnv?.setTextMaxPerChapter(res.textMaxPerChapter)
       wimaEnv?.setGooglePlacesApiId(res.googlePlacesApiId)
-
+      wimaEnv?.setQuizQuestionsMaxLength(res.quizQuestionsMaxLength)
     })
   }
   useEffect(()=>{

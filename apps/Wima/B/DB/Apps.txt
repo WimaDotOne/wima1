@@ -5,3 +5,4 @@ Movic | movic.webp | Movic
 Lingo | lingo.png | Lingo
 Book | book.png | Book
 B&N Recipes| bncafe.png | BnCafe
+Quiz | quiz.jpg | Quiz
