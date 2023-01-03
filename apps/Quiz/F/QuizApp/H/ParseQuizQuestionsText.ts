@@ -21,7 +21,7 @@ export function ParseQuizQuestionsText(text?: string) {
     //allow space at the beginning of lines
     const line = line2.trim() 
 
-    let opt1Flag = true
+    let opt1Flag = true // this is "option line one" flag
     if(IsStartWidth(line, "===")) {
       
       question = {
@@ -63,7 +63,7 @@ export function ParseQuizQuestionsText(text?: string) {
         break
       case LineType.Option:
         if(!opt1Flag) {
-          question.options[optionCount] += " " + line
+          question.options[optionCount-1] += " " + line
         }
         break
       default:

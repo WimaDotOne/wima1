@@ -78,7 +78,7 @@ function TutorialCore() {
   </StripeParagraph>
   <StripeSubSectionHeader text="Tips" />
   <StripeSubParagraph>
-    Write your script first in a text editor of your choosing, and copy and past it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
+    Write your script first in a text editor of your choosing, and copy and paste it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
   </StripeSubParagraph>
   <StripeSubParagraph>
     A line not beginning with above mentioned special characters corresponds to a line of movie dialog. At the beginning of such a line, type in the name of character in uppercase followed by a colon to indicate who's talking.

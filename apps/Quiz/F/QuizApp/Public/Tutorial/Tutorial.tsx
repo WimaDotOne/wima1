@@ -28,66 +28,56 @@ function TutorialCore() {
   </StripeParagraph>
   <StripeSubSectionHeader text="Quiz Book & Quiz Chapter" />
   <StripeParagraph>
-  Quiz books and quiz chapters this website group or organize quizzes. A quiz book can have many quiz chapters. A quiz chapter can have many quizzes. A quiz can only be created under a chapter. A chapter can only be created under a book.
+  Quiz books and quiz chapters are how we group quizzes. A quiz book can have many quiz chapters. A quiz chapter can have many quizzes. A quiz must be created under a chapter. A chapter must be created under a book.
   </StripeParagraph>
 
   <StripeSectionHeader text="Make a quiz"/>
   <StripeSubSectionHeader text="1. Create a project" />
-  <StripeParagraph>Select menu option named "Projects" and click on "New Project". A project is represented as a folder.</StripeParagraph>
-  <StripeSubSectionHeader text="2. Upload images" />
+  <StripeParagraph>Once logged in, select menu option named "Projects" and click on "New Project" button to create a new project. A project, once created, is represented as a folder.</StripeParagraph>
+  <StripeSubSectionHeader text="2. Create a chapter" />
   <StripeParagraph>
-    After going into a project folder. Open the folder named "Images". This is where you add the images for one movic. The images will be referred by their names in the movic script.
+    Open a Project folder. Then click on the folder named "Chapters". Inside the "Chapters" folder click on "New Chapter" button. A chapter, once created, is represented by a folder.
   </StripeParagraph>
-
-  <StripeSubSectionHeader text="3. Write a movic script" />
+  <StripeSubSectionHeader text="3. Create a quiz" />
   <StripeParagraph>
-  After going into a project folder. Open the file named "Movic Script". All the script of a movic is written here.  A script is simply a plain text document. A line in this text document can be
+    Open a Chapter folder. Then click on the folder named "Quizzes". Inside the "Quizzes" folder click on "New Quiz" button. A quiz, once created, is represented by a folder.
   </StripeParagraph>
-  <StripeSubParagraph>a narrative</StripeSubParagraph>
-  <StripeSubParagraph>a line of a dialog</StripeSubParagraph>
-  <StripeSubParagraph>a scene divider</StripeSubParagraph>
-  <StripeSubParagraph>a moment divider</StripeSubParagraph>
-  <StripeSubParagraph>an image name</StripeSubParagraph>
+  <StripeParagraph>
+  Open a Quiz folder. Click on YouTube video icon if you want to update the YouTube link for your Quiz.
+  </StripeParagraph>
+  <StripeParagraph>
+  Click on "Questions" file icon to write the multiple choice questions for your quiz. The questions are written in plain text format. The following are some rules to follow to format your questions.
+  </StripeParagraph>
+  <StripeSubParagraph>A question can only be multiple choice with only one correct answer</StripeSubParagraph>
+  <StripeSubParagraph>Questions must be separated by three or more equal signs === in its own line</StripeSubParagraph>
+  <StripeSubParagraph>If a line starts with a dash - it is read as an option</StripeSubParagraph>
+  <StripeSubParagraph>If a line starts with a dash - followed by a greater than sign &gt; then the option is the correct answer</StripeSubParagraph>
 
-  <DemoImage url="/apps/Movic/DemoImage/ScriptDemo.jpg" height={300} />
+  <DemoImage url="/apps/Quiz/DemoImage/QuizQuestionsDemo.png" height={300} />
+  <StripeSubSectionHeader text="4. Share quizzes" />
+  <StripeParagraph>
+    In Chapter folder, click on "Chapter Settings", change the chapter status to be "Published", then you will see a link to your chapter of quizzes.
+  </StripeParagraph>
+  <StripeParagraph>
+    In Project folder, click on "Book Settings", change the book status to be "Published", then you will see a link to your book of quizzes. Only published chapters within a book can be seen by others.
+  </StripeParagraph>
   
-  <StripeSectionHeader text="Movic Script Cheatsheet" />
+  <StripeSectionHeader text="Questions Format Cheatsheet" />
   <StripeSectionHeader text="===" />
   <StripeParagraph>
-  Three equal signs in its own line means starting a new scene
+  Three equal signs in its own line means starting a new question
   </StripeParagraph>
-  <StripeSectionHeader text="---" />
+  <StripeSectionHeader text="-" />
   <StripeParagraph>
-  Three minus signs in its own line means starting a new moment
+  A minus signs at the beginning of a line means starting a new option
   </StripeParagraph>
-  <StripeSectionHeader text="#" />
+  <StripeSectionHeader text="->" />
   <StripeParagraph>
-  A hashtag at the beginning of line means means this line is a narrative instead of a line of dialog.
-  </StripeParagraph>
-  <StripeSectionHeader text="[" />
-  <StripeParagraph>
-  A left braket at the beginning of line means this line is for images. You can optionally add a right braket at the end. For example a line of text that reads [m001.jpg or [m001.jpg], means an image named m001.jpg from Images folder will be shown for the corresponding moment.
+  A minus sign followed by a greater than sign at the beginning of a line means starting a new option which is also the correct answer.
   </StripeParagraph>
   <StripeSubSectionHeader text="Tips" />
   <StripeSubParagraph>
-    Write your script first in a text editor of your choosing, and copy and past it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    A line not beginning with above mentioned special characters corresponds to a line of movie dialog. At the beginning of such a line, type in the name of character in uppercase followed by a colon to indicate who's talking.
-  </StripeSubParagraph>
-
-  <StripeSectionHeader text="Upload Images Tips"/>
-  <StripeSubParagraph>
-    Name your images m001.jpg, m002.jpg, m003.jpg, etc. This is because images are ordered alphabetically. Naming images with numbers is the best way to keep the image order the same as the order they appear in a movie.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    You can rename your images. The new image name does not have to have the file extension
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    One can only upload limited number of images at a time depending on the image size. Upload 50 images at a time would be way too many.
-  </StripeSubParagraph>
-  <StripeSubParagraph>
-    Adding or deleting images might take a few seconds to complete. Be patient and let the program run to finish before leaving the page.
+    Write your script first in a text editor of your choosing, and copy and paste it into our website when finished. Writing script directly in our website might not be very convenient since our editor is not really a text editor.
   </StripeSubParagraph>
   </>)
 
