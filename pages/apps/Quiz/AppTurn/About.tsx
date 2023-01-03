@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { About } from "../../../../apps/Movic/F/MovicApp/Public/About/About";
+import Head from "next/head"
+import { About } from "../../../../apps/Quiz/F/QuizApp/Public/About/About"
 
 export default function AboutPage() {
   return(<>

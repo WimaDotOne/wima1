@@ -46,7 +46,7 @@ export function QuestionsEditor({
     if(!quiz._id) return
     if(!chapterId) return
     if(loaded) return
-    console.log("database load")
+    
     await Get2(shield, `/quiz/LoadQuizQuestionsTextEditor?quizId=${quiz._id}&chapterId=${chapterId}`, (res)=>{
       setLoaded(true)
       setText(res.questionsText)

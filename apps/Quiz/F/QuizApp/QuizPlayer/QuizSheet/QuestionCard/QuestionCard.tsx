@@ -24,7 +24,7 @@ export function QuestionCard({
     }
   }
 
-  const isCorrect = checkedIndex === question.answer
+  const isCorrect = checkedIndex > 0 && checkedIndex === question.answer
   const markName = isCorrect ? "checkmark" : "xmark"
   const markColor = isCorrect ? "#3bb143" : "red"
 

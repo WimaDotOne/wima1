@@ -15,8 +15,12 @@ export function ParseQuizQuestionsText(text?: string) {
   let lineType = LineType.Question
   let questionAdded = false
   
-  for(const line of lines) {
-    if(!line || !line.trim()) continue
+  for(const line2 of lines) {
+    if(!line2 || !line2.trim()) continue
+
+    //allow space at the beginning of lines
+    const line = line2.trim() 
+
     let opt1Flag = true
     if(IsStartWidth(line, "===")) {
       
