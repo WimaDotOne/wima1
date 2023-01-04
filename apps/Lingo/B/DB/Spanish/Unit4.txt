@@ -1,0 +1,222 @@
+un coche||car1.jpg
+dos perros||2Dogs1.jpg
+tres gatos||3Cats1.jpg
+un huevo||egg1.jpg
+dos bolígrafos||2Pens1.jpg
+tres bicicletas||3Bikes1.jpg
+===
+cuatro hombres||4Men1.jpg
+cinco niñas||5Girls1.jpg
+seis periódicos||6Newspapers1.jpg
+cuatro niños||4Boys1.jpg
+cinco libros||5Books1.jpg
+seis manzanas||6Apples1.jpg
+===
+uno | 1 |
+dos | 2 |
+tres | 3 |
+cuatro | 4 |
+cinco | 5 |
+seis| 6 |
+===
+Hay un pez||fish1.jpg
+Hay un huevo||egg1.jpg
+Hay una mujer|Here's a woman|
+Hay un niño||boy1.jpg
+Hay un libro||book1.jpg
+Hay un móvil||cellphone1.jpg
+===
+Hay tres libros||3Books1.jpg
+Hay cinco peces||5Fishs1.jpg
+Hay dos niños||boyGirl1.jpg
+Hay seis huevos||6Eggs1.jpg
+Hay cuatro mujeres||4Women1.jpg
+===
+Hay tres pelotas||3Balls1.jpg
+Hay una cama|| bed1.jpg
+Hay cuatro llaves||4Keys1.jpg
+Hay dos móviles||2Cellphones1.jpg
+===
+Hay una taza||cup1.jpg
+Hay cuatro sillas||4Chairs1.jpg
+Hay dos mesas||2Tables1.jpg
+Hay tres teléfonos||3Phones1.jpg
+===
+Hay una pelota||ball1.jpg
+Hay tres sillas||3Chairs1.jpg
+Hay dos mesas||2Tables1.jpg
+Hay una mesa||table1.jpg
+===
+¿Cuántos peces hay?||howMany3Fishs1.jpg
+Hay tres peces||hereAre3Fishs1.jpg
+¿Cuántos llaves hay?||howMany4Keys1.jpg
+Hay cuatro llaves||hereAre4Keys1.jpg
+¿Cuántos policías hay?|How many policemen are here?|
+Hay dos policías||2Policemen1.jpg
+¿Cuántos manzanas hay?||howMany1Apple1.jpg
+Hay una manzana||hereIs1Apple1.jpg
+===
+¿Cuántas sillas hay?||howMany6Chairs1.jpg
+Hay seis sillas||hereAre6Chairs1.jpg
+¿Cuántos teléfonos hay?||howMany5Phones1.jpg
+Hay cinco teléfonos||hereAre5Phones1.jpg
+¿Cuántas camas hay?||howMany2Beds1.jpg
+Hay dos camas||hereAre2Beds1.jpg
+===
+Hay seis tazas||6Cups1.jpg
+Hay cuatro tazas||4Cups1.jpg
+Hay cinco huevos||5Eggs1.jpg
+Hay tres huevos||3Eggs1.jpg
+===
+Dos manzanas son verdes||2ApplesAreGreen1.jpg
+Cuatro cuencos son azules||4BowlsAreBlue1.jpg
+Una flor es roja ||1FlowerIsRed1.jpg
+Tres platos son blancos||3PlatesAreWhite1.jpg
+===
+¿Cuántas mesas son blancas?||howMany2WhiteTables1.jpg
+Dos mesas son blancas||2TablesAreWhite1.jpg
+¿Cuántas pelotas son rojas?||howMany1RedBall1.jpg
+Una pelota es roja ||1BallIsRed1.jpg
+¿Cuántos cuencos son amarillos?||howManyYellowBowls1.jpg
+Dos cuencos son amarillos||2BowlsAreYellow1.jpg
+¿Cuántos teléfonos son negros?||howMany2BlackPhones1.jpg
+Un teléfono es negro||2PhonesRed1Black.jpg
+===
+zapatos||shoes1.jpg
+zapatos||shoes2.jpg
+una camisa||shirt1.jpg
+una camisa||shirt2.jpg
+pantalones||pants1.jpg
+===
+un abrigo||coat1.jpg
+un abrigo||coat2.jpg
+un vestido||dress1.jpg
+un vestido||dress2.jpg
+una falda||skirt1.jpg
+===
+zapatos||shoes3.jpg
+una camisa||shirt3.jpg
+pantalones||pants2.jpg
+un abrigo||coat3.jpg
+un vestido||dress3.jpg
+una falda||skirt2.jpg
+===
+una camisa roja||redBlouse1.jpg
+una camisa azul||blueShirt1.jpg
+una camiseta amarilla||yellowTShirt1.jpg
+una camiseta verde||greenTShirt1.jpg
+===
+¿Cuántas tazas tienen ustedes?|How many cups do you have?|
+Nosotros tenemos dos tazas||weHave2Cups1.jpg
+¿Cuántos bocadillos tienen ustedes?|How many sandwiches do you have?|
+Nosotros tenemos cuatro bocadillos ||weHave4Sandwiches1.jpg
+===
+¿Cuántos cuencos tienen ustedes?|How many bowls do you have?|
+Nosotras tenemos tres cuencos||weWomenHave3Bowls.jpg
+¿Cuántos platos tienen ustedes?|How many plates do you have?|
+Nosotras tenemos tres platos||weWomenHave2Plates.jpg
+===
+Ich habe gelbe Blumen||iHaveYellowFlowers1.jpg
+Sie haben rote Blumen||youHaveRedFlowers1.jpg
+Wir haben weiße Blumen||weHaveWhiteFlowers1.jpg
+Sie haben blaue Blumen||youHaveBlueFlowers1.jpg
+===
+Das Mädchen trägt ein T-Shirt||girlWearTShirt1.jpg
+Die Frau trägt Schuhe||womanWearShoes1.jpg
+Der Junge trägt kein T-Shirt|The boy is not wearing T-shirt|
+Der Mann trägt keine Schuhe||manNotWearShoes1.jpg
+===
+Drei Frauen tragen Hosen. Eine Frau trägt ein Kleid||3WomenWearPants1WearDress1.jpg
+Der Junge trägt eine Hose|The boy wears pants|
+Der Männer tragen Hüte||menWearHats1.jpg
+Das Mädchen trägt keine Hose. Sie trägt einen Rock.||girlWearSkirt1.jpg
+===
+Die Frau trägt eine Hose||womanWearPants1.jpg
+Die Frau trägt einen Hut||womanWearHat1.jpg
+Die Frau trägt ein Kleid||womanWearDress1.jpg
+Die Frau trägt einen Rock||womanWearSkirt1.jpg
+===
+Er kauft drei T-Shirts||manBuy3TShirts1.jpg
+Er kauft einen Hut||manBuy1Hat1.jpg
+Sie kauft vier T-Shirts||womanBuy4TShirts1.jpg
+Sie kauft zwei Hüte||womanBuy2Hats1.jpg
+===
+Der Mann trägt einen Mantel||manWearCoat1.jpg
+Der Mann kauft einen Mantel||manBuy1Coat1.jpg
+Der Mann Kauft einen Hut||manBuy1Hat1.jpg
+Der Mann trägt einen Hut||manWearHat1.jpg
+===
+Ich kaufe einen Rock|I am buying a skirt|
+Ich trage einen Rock|I am wearing a skirt|
+Ich kaufe eine Hose|I am buying a pair of pants|
+Ich trage eine Hose|I am wearing a pair of pants|
+===
+Wer isst?|Who is eating?|
+Der Polizist isst||policemanEat1.jpg
+Wer liest?|Who is reading?|
+Die Schüler lesen||studentsRead1.jpg
+Wer trinkt?|Who is drinking?|
+Die Frauen trinken||womenDrink1.jpg
+Wer schreibt?|Who is writing|
+Das Mädchen schreibt||girlWrite1.jpg
+===
+Wer hat den Hut?|Who has the hat?|
+Die Frau hat den Hut||womahHasHat1.jpg
+Wer hat den Ball|Who has the ball?|
+Der Junge hat den Ball||boyHasBall1.jpg
+Wer hat die Bücher|Who has the books?|
+Die Mädchen haben die Bücher||girlsHaveBooks1.jpg
+Wer hat die Zeitung|Who has the newspaper?|
+Der Arzt hat die Zeitung||manDoctorHasNewspaper1.jpg
+===
+Wer trägt Schuhe?|Who wears shoes?|
+Ich trage Schuhe||iWearShoes1.jpg
+Wer trägt Hüte|Who wears hats?|
+Wir tragen Hüte||weWearHats1.jpg
+===
+Wer läuft?|Who is walking?|
+Wir laufen||weWalk1.jpg
+Wer rennt?|Who is running?|
+Wir rennen||weRun1.jpg
+===
+Wie viele Bäume sind hier?||howMany3Trees1.jpg
+Hay drei Bäume||hereAre3Trees1.jpg
+Wie viele Bäume sind hier?||howMany4Trees1.jpg
+Hay vier Bäume||hereAre4Trees1.jpg
+Wie viele Schüsseln sind hier?||howManyBowls1.jpg
+Hay eine Schüssel||hereIs1Bowl1.jpg
+Wie viele Kinder sind hier?||howMany6Kids1.jpg
+Hay sechs Kinder||hereAre6Kids1.jpg
+======
+Was ist das?||whatIsItWater1.jpg
+Das ist Wasser||itIsWater1.jpg
+Was ist das?||whatIsItPlate1.jpg
+Das ist ein Teller||itIsPlate1.jpg
+===
+Was ist das?||whatIsItTree1.jpg
+Das ist ein Baum||itIsTree1.jpg
+Ist das Gras grün?||greenGrass1.jpg
+Ja. Das Gras ist grün|Yes. The grass is green.|
+===
+Was ist das?||whatIsItBike1.jpg
+Das ist ein Fahrrad||itIsBike1.jpg
+Wie viele Fahrräder sind hier?||howMany3Bikes1.jpg
+Hay drei Fahrräder||hereAre3Bikes1.jpg
+Wer hat ein Fahrrad?|Who has a bike?|
+Sie hat ein Fahrrad|She has a bike|
+Hat sie ein Fahrrad?||hasSheBike1.jpg
+Ja||yesSheHasBike1.jpg
+===
+Was ist das?||whatIsItSandwich1.jpg
+Das ist ein belegtes Brot||itIsSandwich1.jpg
+Wie viele belegte Brote sind hier?||howMany2Sandwiches1.jpg
+Hay zwei belegte Brote||hereAre2Sandwiches1.jpg
+Essen Sie belegte Brote?|Are you eating sandwiches?|
+Ja||weEatSandwiches1.jpg
+===
+Lesen Sie?|Are you reading?|
+Nein.Wir schreiben||weWrite1.jpg
+Haben Sie Fische?|Do you have fish?|
+Ja||weHaveFish1.jpg
+Ist das Pferd schwarz?|Is the horse black?|
+Nein. Das Pferd ist nicht schwarz||brownHorse1.jpg
