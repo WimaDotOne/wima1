@@ -68,7 +68,7 @@ Ella tiene un perro | She has a dog | girlHasDog1.jpg
 Ellos tienen un periódico | They have a newspaper |
 ===
 Ella tiene bocadillos || womanHasBocadillos.jpg
-Él tiene un couche | He has a car | manHasCar1.jpg
+Él tiene un coche | He has a car | manHasCar1.jpg
 Ellas tienen un caballo | They have a horse|
 ===
 Él tiene libros | He has books |
