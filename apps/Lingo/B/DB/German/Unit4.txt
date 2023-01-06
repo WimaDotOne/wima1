@@ -75,9 +75,9 @@ Drei Teller sind weiß||3PlatesAreWhite1.jpg
 ===
 Wie viele Tische sind weiß?||howMany2WhiteTables1.jpg
 Zwei Tische sind weiß||2TablesAreWhite1.jpg
-Wie viele Bälle sind rot||howMany1RedBall1.jpg
+Wie viele Bälle sind rot?||howMany1RedBall1.jpg
 Ein Ball ist rot ||1BallIsRed1.jpg
-Wie viele Schüsseln sind gelb||howManyYellowBowls1.jpg
+Wie viele Schüsseln sind gelb?||howManyYellowBowls1.jpg
 Zwei Schüsseln sind gelb||2BowlsAreYellow1.jpg
 Wie viele Telefone sind schwarz?||howMany2BlackPhones1.jpg
 Ein Telefon ist schwarz||2PhonesRed1Black.jpg
