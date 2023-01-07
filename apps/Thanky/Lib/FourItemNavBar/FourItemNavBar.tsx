@@ -1,33 +1,16 @@
 import { useRouter } from "next/router"
 import { ClassNames } from "../../../../libs/Core/Core1/fCore1"
 import cl from "./FourItemNavBar.module.scss"
+import { INavModel } from "./INavModel"
 
 interface IFourItemNavBarProp {
-  homeIconUrl: string
-  text1: string
-  text2: string
-  text3: string
-  text4: string
-  homeRoute: string
-  route1: string
-  route2: string
-  route3: string
-  route4: string
+  navModel: INavModel
   selected1?: boolean
   selected2?: boolean
 }
 
 export function FourItemNavBar({
-  homeIconUrl,
-  text1,
-  text2,
-  text3,
-  text4,
-  homeRoute,
-  route1,
-  route2,
-  route3,
-  route4,
+  navModel,
   selected1,
   selected2
 }: IFourItemNavBarProp) {
@@ -45,24 +28,25 @@ export function FourItemNavBar({
     <div className={cl.bar}>
       <div className={cl.homeIconSpace}>
         <div className={cl.homeIcon} 
-          style={{backgroundImage: `url(${homeIconUrl})`}}>
+          onClick={()=>{routeTo(navModel.homeRoute)}}
+          style={{backgroundImage: `url(${navModel.homeIconUrl})`}}>
         </div>
       </div>
       <div className={cl.leftTwoItems}>
         <div className={ClassNames([cl.item, clSelected1])}
-          onClick={()=>{routeTo(route1)}}
-        >{text1}</div>
+          onClick={()=>{routeTo(navModel.route1)}}
+        >{navModel.text1}</div>
         <div className={ClassNames([cl.item, clSelected2])}
-          onClick={()=>{routeTo(route2)}}
-        >{text2}</div>
+          onClick={()=>{routeTo(navModel.route2)}}
+        >{navModel.text2}</div>
       </div>
       <div className={cl.rightTwoItems}>
         <div className={cl.item}
-          onClick={()=>{routeTo(route3)}}
-        >{text3}</div>
+          onClick={()=>{routeTo(navModel.route3)}}
+        >{navModel.text3}</div>
         <div className={ClassNames([cl.item, cl.item4])}
-          onClick={()=>{routeTo(route4)}}
-        >{text4}</div>
+          onClick={()=>{routeTo(navModel.route4)}}
+        >{navModel.text4}</div>
       </div>
     </div>
   </>)
