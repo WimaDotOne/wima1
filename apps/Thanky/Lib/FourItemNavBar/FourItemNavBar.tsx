@@ -17,7 +17,8 @@ export function FourItemNavBar({
 
   const router = useRouter()
 
-  function routeTo(route: string) {
+  function routeTo(route?: string) {
+    if(!route) return
     router.push(route)
   }
 
@@ -33,20 +34,32 @@ export function FourItemNavBar({
         </div>
       </div>
       <div className={cl.leftTwoItems}>
+      {
+        navModel.text1 ?
         <div className={ClassNames([cl.item, clSelected1])}
           onClick={()=>{routeTo(navModel.route1)}}
-        >{navModel.text1}</div>
+        >{navModel.text1}</div> : null
+      }
+      {
+        navModel.text2 ?
         <div className={ClassNames([cl.item, clSelected2])}
           onClick={()=>{routeTo(navModel.route2)}}
-        >{navModel.text2}</div>
+        >{navModel.text2}</div> : null
+      }
       </div>
       <div className={cl.rightTwoItems}>
+      {
+        navModel.text3 ?
         <div className={cl.item}
           onClick={()=>{routeTo(navModel.route3)}}
-        >{navModel.text3}</div>
+        >{navModel.text3}</div> :  null
+      }
+      {
+        navModel.text4 ?
         <div className={ClassNames([cl.item, cl.item4])}
           onClick={()=>{routeTo(navModel.route4)}}
-        >{navModel.text4}</div>
+        >{navModel.text4}</div> : null
+      }
       </div>
     </div>
   </>)

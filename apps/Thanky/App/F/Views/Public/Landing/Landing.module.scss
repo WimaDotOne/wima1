@@ -1,6 +1,12 @@
 @use "../../../CSS/thanky.module.scss";
 
-.background {
+.landing {
   background-color: thanky.$themePink;
   padding: 24px;
+}
+
+@media screen and (max-width: thanky.$narrowScreen){
+  .landing {
+    padding: 24px 2px;
+  }
 }

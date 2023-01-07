@@ -10,7 +10,9 @@ export function GiveTips({
 
 }: IGiveTipsProp) {
   return(<>
-  <FourItemNavBar navModel={LandingNavModel} selected2 />
+  <div className={cl.giveTips}>
+    <FourItemNavBar navModel={LandingNavModel} selected2 />
+  </div>
   Give tips
   </>)
 }

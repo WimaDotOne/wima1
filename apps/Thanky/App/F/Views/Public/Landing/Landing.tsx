@@ -9,7 +9,7 @@ export function Landing({
 
 }: ILandingProp) {
   return(<>
-    <div className={cl.background}>
+    <div className={cl.landing}>
       <FourItemNavBar navModel={LandingNavModel} />
     </div>
   </>)
@@ -19,11 +19,9 @@ export const LandingNavModel = {
   homeIconUrl: '/apps/WimaHome/AppIcons/thanky.png',
   text1: "FAQ",
   text2: "Give tips",
-  text3: "Login",
-  text4: "Sign up",
+  text4: "Login",
   homeRoute: "/apps/Thanky",
   route1: "/apps/Thanky/FAQ",
   route2: "/apps/Thanky/GiveTips",
-  route3: "/apps/Thanky/Login",
-  route4: "/apps/Thanky/SignUp"
+  route4: "/apps/Thanky/Login"
 }

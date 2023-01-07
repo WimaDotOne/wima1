@@ -1,0 +1,12 @@
+@use "../../../CSS/thanky.module.scss";
+
+.faq {
+  background-color: thanky.$themePink;
+  padding: 24px;
+}
+
+@media screen and (max-width: thanky.$narrowScreen){
+  .faq {
+    padding: 24px 2px;
+  }
+}

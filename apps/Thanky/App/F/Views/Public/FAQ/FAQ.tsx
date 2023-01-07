@@ -10,7 +10,9 @@ export function FAQ({
 
 }: IFAQProp) {
   return(<>
-  <FourItemNavBar navModel={LandingNavModel} selected1/>
+  <div className={cl.faq}>
+    <FourItemNavBar navModel={LandingNavModel} selected1/>
+  </div>
   FAQ
   </>)
 } 
