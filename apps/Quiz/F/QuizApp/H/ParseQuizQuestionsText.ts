@@ -39,9 +39,9 @@ export function ParseQuizQuestionsText(text?: string) {
       lineType = LineType.Option
       optionCount += 1
       
-      let opt1 = (line.split("-")[1] || "").trim()
+      let opt1 = (line.substring(1) || "").trim()
       if(IsStartWidth(opt1, ">")) {
-        opt1 = (opt1.split(">")[1] || "").trim()
+        opt1 = (opt1.substring(1) || "").trim()
         if(question.answer < 1) {
           question.answer = optionCount
         }
