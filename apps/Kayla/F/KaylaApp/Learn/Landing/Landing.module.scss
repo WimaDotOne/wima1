@@ -1,0 +1,18 @@
+@use "../../../CSS/kayla.module.scss";
+
+.landing {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.year {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: kayla.$themeDarkBlue;
+  cursor: pointer;
+}

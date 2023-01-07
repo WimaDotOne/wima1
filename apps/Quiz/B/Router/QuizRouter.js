@@ -65,10 +65,10 @@ QuizRouter.post("/CreateQuizChapter", iAuth, iCreateQuizChapter)
 QuizRouter.post("/CreateQuizQuiz", iAuth, iCreateQuizQuiz)
 QuizRouter.post("/SaveQuizQuestionsText", iAuth, iSaveQuizQuestionsText)
 
-//Quiz Player
-QuizRouter.get("/LoadSingleQuiz", iAuth, iLoadSingleQuiz)
-QuizRouter.get("/LoadPublishedChapterQuizzes", iAuth, iLoadPublishedChapterQuizzes)
-QuizRouter.get("/LoadPublishedBookChapters", iAuth, iLoadPublishedBookChapters)
+//Quiz Player (no auth)
+QuizRouter.get("/LoadSingleQuiz", iLoadSingleQuiz)
+QuizRouter.get("/LoadPublishedChapterQuizzes", iLoadPublishedChapterQuizzes)
+QuizRouter.get("/LoadPublishedBookChapters", iLoadPublishedBookChapters)
 
 export {
   QuizRouter
