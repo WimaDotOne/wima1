@@ -1,7 +1,7 @@
 @use "../../../CSS/thanky.module.scss";
 
 .faq {
-  background-color: thanky.$themePink;
+  background-color: thanky.$themeGray;
   padding: 24px;
 }
 
@@ -9,4 +9,9 @@
   .faq {
     padding: 24px 2px;
   }
+}
+
+.buttonsSpace {
+  display: flex;
+  justify-content: center;
 }
