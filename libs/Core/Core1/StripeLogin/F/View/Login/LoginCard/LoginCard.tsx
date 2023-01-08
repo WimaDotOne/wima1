@@ -9,9 +9,11 @@ import { Logout } from "./Logout/Logout";
 
 interface ILoginCardProp {
   config: LoginConfig
+  afterLogin?: ()=>void
 }
 export function LoginCard({
-  config
+  config,
+  afterLogin
 }: ILoginCardProp) {
   
   const [loginCardTurn, setLoginCardTurn] = useState<LoginCardTurn | null>(null)
@@ -21,8 +23,12 @@ export function LoginCard({
     setLoginCardTurn(LoginCardTurn.ChooseLoginMethod)
   }
 
-  function afterLogin() {
-    setLoginCardTurn(LoginCardTurn.Logout)
+  function afterLogin2() {
+    if(afterLogin) {
+      afterLogin()
+    } else {
+      setLoginCardTurn(LoginCardTurn.Logout)
+    }
   }
 
   function afterLogout() {
@@ -32,7 +38,7 @@ export function LoginCard({
   async function IsLoggedIn() {
     await Get2(shield, "/login/IsLoggedIn", (res)=>{
       if(res.isLoggedIn) {
-        setLoginCardTurn(LoginCardTurn.Logout)
+        afterLogin2()
       } else {
         setLoginCardTurn(LoginCardTurn.ChooseLoginMethod)
       }
@@ -46,17 +52,17 @@ export function LoginCard({
   switch(loginCardTurn) {
     case LoginCardTurn.GoogleLogin: return(
       <GoogleLogin config={config}
-        afterLogin={afterLogin}
+        afterLogin={afterLogin2}
         goToChooseLoginMethod={goToChooseLoginMethod}/>
     )
     case LoginCardTurn.FacebookLogin: return(
       <FacebookLogin config={config}
-        afterLogin={afterLogin}
+        afterLogin={afterLogin2}
         goToChooseLoginMethod={goToChooseLoginMethod}/>
     )
     case LoginCardTurn.EmailLogin: return(
-      <EmailLogin 
-        afterLogin={afterLogin}
+      <EmailLogin
+        afterLogin={afterLogin2}
         goToChooseLoginMethod={goToChooseLoginMethod}/>
     )
     case LoginCardTurn.Logout: return(

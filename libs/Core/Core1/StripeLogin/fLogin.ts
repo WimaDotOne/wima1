@@ -1,4 +1,5 @@
 import { Login } from "./F/View/Login/Login";
+import { Login2 } from "./F/View/Login/Login2";
 import { LoginConfig } from "./F/Model/LoginConfig";
 import { Contact } from "./F/View/Contact/Contact";
 import { LogoBar } from "./F/View/Terms/LogoBar/LogoBar";
@@ -9,6 +10,7 @@ import { UnivLogin } from "./F/View/UnivLogin/UnivLogin";
 
 export {
   Login,
+  Login2,
   LoginConfig,
   Contact,
   LogoBar,

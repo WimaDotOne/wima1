@@ -14,9 +14,22 @@
   max-width: 380px;
 }
 
-.brandDiv {
+.brandRow {
   padding-left: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.brandIcon {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .brand {

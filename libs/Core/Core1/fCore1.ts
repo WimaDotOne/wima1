@@ -16,6 +16,7 @@ import { StripeButton } from "./StripePay/fStripePay"
 import {
   UnivLogin,
   Login,
+  Login2,
   LoginConfig,
   Contact,
   LogoBar,
@@ -33,6 +34,7 @@ import { ForceHttps } from "./Util/F/Url/ForceHttps"
 export {
   UnivLogin,
   Login,
+  Login2,
   LoginConfig,
   Contact,
   LogoBar,

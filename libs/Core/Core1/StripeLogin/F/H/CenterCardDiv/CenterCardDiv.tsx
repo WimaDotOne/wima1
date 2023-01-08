@@ -2,8 +2,9 @@ import { ReactNode } from "react"
 import cl from "./CenterCardDiv.module.scss"
 
 interface ICenterDivProp {
-  brand: string
+  brand?: string
   children: ReactNode
+  brandIconUrl?: string
   onBrand?: ()=>void
   onContact?: ()=>void
   onPrivacy?: ()=>void
@@ -12,6 +13,7 @@ interface ICenterDivProp {
 export function CenterDiv({
   brand,
   children,
+  brandIconUrl,
   onBrand,
   onContact,
   onPrivacy,
@@ -21,8 +23,16 @@ export function CenterDiv({
   return(<>
     <div className={cl.div0}>
       <div className={cl.centerDiv}>
-        <div className={cl.brandDiv}>
-          <span className={cl.brand} onClick={onBrand}>{brand}</span>
+        <div className={cl.brandRow}>
+          {
+            brandIconUrl ?
+            <div className={cl.brandIcon}
+              onClick={onBrand}
+              style={{backgroundImage: `url(${brandIconUrl})`}}/> : null
+          }
+          <div className={cl.brandDiv}>
+            <span className={cl.brand} onClick={onBrand}>{brand}</span>
+          </div>
         </div>
         <div className={cl.card}>
         { children }
