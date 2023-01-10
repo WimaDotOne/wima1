@@ -6,16 +6,19 @@ interface IBigButtonProp {
   text: string
   onClick: ()=>void
   color?: string
+  bigger?: boolean
 }
 export function BigButton({
   text,
   onClick,
-  color
+  color,
+  bigger
 }: IBigButtonProp) {
 
   const btnRef = useRef<HTMLButtonElement>(null)
 
   const backgroundColor = color || "#007bff"
+  const clBigger = bigger ? cl.bigger : ""
 
   const btnStyle = {
     color: "white",
@@ -38,7 +41,7 @@ export function BigButton({
 
 
   return(<>
-    <button ref={btnRef} className={ClassNames([cl.button])} 
+    <button ref={btnRef} className={ClassNames([cl.button, clBigger])} 
       style={btnStyle}
       onClick={onClick}>
       {text}

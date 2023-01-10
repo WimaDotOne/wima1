@@ -9,18 +9,26 @@ interface IPlaceAutoComplete1 {
   hasAutoComplete: boolean
   setHasAutoComplete: (hasAutoComplete: boolean) => void
   cute?: boolean
+  cuter?: boolean
 }
 export function PlaceAutoComplete1({
   ghost,
   onPlaceChanged,
   hasAutoComplete,
   setHasAutoComplete,
-  cute
+  cute,
+  cuter
 }: IPlaceAutoComplete1) {
 
   const inputRef = useRef<HTMLInputElement>(null)
   const placeholder = ghost || "Enter a place"
+
+  if(cuter) {
+    cute = false
+  }
+
   const clCute = cute ? cl.cute : ""
+  const clCuter = cuter ? cl.cuter : ""
 
   function onPlaceChanged2(autocomplete: any) {
     const place = autocomplete.getPlace()
@@ -54,7 +62,7 @@ export function PlaceAutoComplete1({
  
   return(<>
     <div className={cl.inputWrap}>
-      <input className={ClassNames([cl.input, clCute])} ref={inputRef} placeholder={placeholder} />
+      <input className={ClassNames([cl.input, clCute, clCuter])} ref={inputRef} placeholder={placeholder} />
     </div>
   </>)
 }
