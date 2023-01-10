@@ -32,10 +32,10 @@ export function Landing({
   }
 
   async function loadEstablishmentJobs(placeId: string) {
-    await Get2(shield, `/tip/LoadEstablishmentJobs?placeId=${placeId}`,
-    (res)=>{
-      console.log(res.jobs)
-    })
+    // await Get2(shield, `/tip/LoadEstablishmentJobs?placeId=${placeId}`,
+    // (res)=>{
+    //   console.log(res.jobs)
+    // })
   }
 
   function onClickAcceptTips() {
