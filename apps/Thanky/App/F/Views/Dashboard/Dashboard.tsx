@@ -1,4 +1,6 @@
-import { CoffeeTopBar } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/H/CoffeeTopBar/CoffeeTopBar"
+import { ICoffeeMenu } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/Model/ICoffeeMenu"
+import { CoffeeWindow } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/View/CoffeeWindow/CoffeeWindow"
+import { ThankyWindow } from "../ThankyWindow/ThankyWindow"
 import cl from "./Dashboard.module.scss"
 
 interface IDashboardProp {
@@ -8,11 +10,11 @@ interface IDashboardProp {
 export function Dashboard({
 
 }: IDashboardProp) {
+
+
   return(<>
-  <CoffeeTopBar homeIconUrl="/apps/WimaHome/AppIcons/thanky.png"
-    onClickHamburger={()=>{}}
-    photoUrl="/apps/WimaHome/AppIcons/bncafe.png"
-  />
+  <ThankyWindow>
+  
+  </ThankyWindow>
   </>)
 }
-

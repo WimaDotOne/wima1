@@ -16,7 +16,6 @@ export function CoffeeTopBar({
   photoUrl
 }: ICoffeeTopBarProp) {
 
-
   const clClickHomeIcon = onClickHomeIcon ? cl.clickHomeIcon : ""
 
   return(<>
@@ -31,5 +30,6 @@ export function CoffeeTopBar({
       <PhotoHamburger onClick={onClickHamburger} photoUrl={photoUrl}/>
     </div>
   </div>
+  <div className={cl.topBarSpaceFill} />
   </>)
 }
