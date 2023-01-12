@@ -1,0 +1,25 @@
+.topBar {
+  display: grid;
+  grid-template-columns: 50px auto 75px;
+  column-gap: 10px;
+  align-items: center;
+  padding: 0 15px;
+  height: 70px;
+}
+
+.homeIcon {
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homeIcon.clickHomeIcon {
+  cursor: pointer;
+}
+
+.photoHamburgerSpace {
+  display: flex;
+  justify-content: flex-end;
+}
