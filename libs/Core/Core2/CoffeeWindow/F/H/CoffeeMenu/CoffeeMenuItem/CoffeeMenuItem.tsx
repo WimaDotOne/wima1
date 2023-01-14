@@ -29,7 +29,6 @@ export function CoffeeMenuItem({
       item.onClick()
       return
     }
-    return
     if(item.route) {
       router.push(item.route)
       return
