@@ -7,19 +7,21 @@ interface ICoffeeTopBarProp {
   onClickHomeIcon?: ()=>void
   onClickHamburger: ()=>void
   photoUrl?: string
+  backgroundColor?: string
 }
 
 export function CoffeeTopBar({
   homeIconUrl,
   onClickHomeIcon,
   onClickHamburger,
-  photoUrl
+  photoUrl,
+  backgroundColor
 }: ICoffeeTopBarProp) {
 
   const clClickHomeIcon = onClickHomeIcon ? cl.clickHomeIcon : ""
 
   return(<>
-  <div className={cl.topBar}>
+  <div className={cl.topBar} style={{backgroundColor}}>
     <div className={ClassNames([cl.homeIcon, clClickHomeIcon])}
       style={{backgroundImage: `url(${homeIconUrl})`}}
       onClick={onClickHomeIcon}/>

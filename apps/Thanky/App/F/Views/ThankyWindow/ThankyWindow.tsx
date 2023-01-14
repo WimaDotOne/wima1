@@ -38,7 +38,25 @@ function GetMenu(): ICoffeeMenu {
             selectionId: CoffeeMenuTurn.Home,
             route: "/apps/Thanky/ThankyWindow",
             text: "Home",
-            iconName: "home"
+            iconName: "home2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.Home,
+            route: "/apps/Thanky/ThankyWindow",
+            text: "Home",
+            iconName: "home2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.Home,
+            route: "/apps/Thanky/ThankyWindow",
+            text: "Home",
+            iconName: "home2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.Home,
+            route: "/apps/Thanky/ThankyWindow",
+            text: "Home",
+            iconName: "home2"
           }
         ]
       },
@@ -49,8 +67,39 @@ function GetMenu(): ICoffeeMenu {
             selectionId: CoffeeMenuTurn.MyProfile,
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
-            iconName: "profile"
+            iconName: "profile2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.MyProfile,
+            route: "/apps/Thanky/MyProfile",
+            text: "My Profile",
+            iconName: "profile2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.MyProfile,
+            route: "/apps/Thanky/MyProfile",
+            text: "My Profile",
+            iconName: "profile2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.MyProfile,
+            route: "/apps/Thanky/MyProfile",
+            text: "My Profile",
+            iconName: "profile2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.MyProfile,
+            route: "/apps/Thanky/MyProfile",
+            text: "My Profile",
+            iconName: "profile2"
+          },
+          {
+            selectionId: CoffeeMenuTurn.MyProfile,
+            route: "/apps/Thanky/MyProfile",
+            text: "My Profile",
+            iconName: "profile2"
           }
+
         ]
       }
     ]

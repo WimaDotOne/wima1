@@ -14,7 +14,7 @@ interface ICoffeeWindowProp {
 
 export function CoffeeWindow({
   homeIconUrl,
-  photoUrl,
+  photoUrl, 
   onClickHomeIcon,
   children,
   menu
@@ -33,12 +33,16 @@ export function CoffeeWindow({
       onClickHomeIcon={onClickHomeIcon}
     />
     <div className={cl.leftBar}>
-      <CoffeeMenu menu={menu}
-        selectedItemId={selectedItemId}/>
+    <CoffeeMenu menu={menu}
+      selectedItemId={selectedItemId}/>
     </div>
-    {
-      children
-    }
+    <div className={cl.windowViewSpace}>
+      <div className={cl.windowView}>
+      {
+        children
+      }
+      </div>
+    </div>
   </div>
   </>)
 }

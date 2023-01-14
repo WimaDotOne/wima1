@@ -58,6 +58,8 @@ import { SvgDollar } from "./Finance/Dollar/SvgDollar"
 import { SvgPenFile } from "./Office/File/PenFile"
 import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
 import { SvgXMark } from "./School/XMark/SvgXMark"
+import { SvgHome2 } from "./Common/Home/SvgHome2"
+import { SvgProfile2 } from "./Social/Profile/SvgProfile2"
 
 export function SvgIcon({
   name,
@@ -112,6 +114,7 @@ export function SvgIcon({
     case "email": return <SvgEmail width={width} fill={color}/>
     case "dashboard": return <SvgDashboard width={width} fill={color}/>
     case "home": return <SvgHome width={width} fill={color} />
+    case "home2": return <SvgHome2 width={width} stroke={color} strokeWidth={strokeWidth} />
     case "door.batwing": return <SvgDoorBatwing width={width} />
     case "audio": return <SvgAudio width={width} fill={color} />
     case "mic": return <SvgMic width={width} fill={color} />
@@ -159,6 +162,7 @@ export function SvgIcon({
     
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
+    case "profile2": return <SvgProfile2 width={width} stroke={color} strokeWidth={strokeWidth} />
     case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />
     case "service": return <SvgService width={width} fill={color} />
     case "help": return <SvgHelp width={width} fill={color} />

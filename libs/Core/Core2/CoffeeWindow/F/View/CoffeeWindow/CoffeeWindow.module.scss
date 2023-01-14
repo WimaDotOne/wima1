@@ -1,0 +1,31 @@
+@use "../../CSS/coffee.module.scss";
+
+
+.leftBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: coffee.$coffeeWindowLeftBarWidth;
+  height: calc(100vh - coffee.$coffeeWindowTopBarHeight);
+  overflow-y: auto;
+}
+
+.windowViewSpace {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  min-height: calc(100vh - coffee.$coffeeWindowTopBarHeight);
+}
+
+.windowView {
+  padding-left: coffee.$coffeeWindowLeftBarWidth;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .leftBar {
+    left: calc(50vw - 600px);
+  }
+}

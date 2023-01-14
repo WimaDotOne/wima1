@@ -39,7 +39,7 @@ export function CoffeeMenuItem({
     {
       item.iconName ? 
       <SvgIcon name={item.iconName} 
-        width={20} 
+        width={16} 
         color={textColor}
       />:null
     }
