@@ -5,11 +5,13 @@ import cl from "./CoffeeMenuGroup.module.scss"
 interface ICoffeeMenuGroupProp {
   group: ICoffeeMenuGroup
   selectedItemId: string
+  setSelectedItemId: (id: string)=>void
 }
 
 export function CoffeeMenuGroup({
   group,
-  selectedItemId
+  selectedItemId,
+  setSelectedItemId
 }: ICoffeeMenuGroupProp) {
 
   const items = group.items || []
@@ -24,6 +26,7 @@ export function CoffeeMenuGroup({
     items.map((item, i)=>
     <CoffeeMenuItem key={i+item.selectionId} 
       selectedItemId={selectedItemId}
+      setSelectedItemId={setSelectedItemId}
       item={item}/>
     )
   }

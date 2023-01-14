@@ -6,13 +6,15 @@ import cl from "./CoffeeMenuItem.module.scss"
 
 interface ICoffeeMenuItemProp {
   item: ICoffeeMenuItem
-  selectedItemId?: string
+  selectedItemId: string
+  setSelectedItemId: (id: string)=>void
   color?: string
 }
 
 export function CoffeeMenuItem({
   item,
   selectedItemId,
+  setSelectedItemId,
   color
 } :ICoffeeMenuItemProp) {
 
@@ -20,10 +22,14 @@ export function CoffeeMenuItem({
   const textColor = color || "#222"
 
   function onClick() {
+    if(item.selectionId) {
+      setSelectedItemId(item.selectionId)
+    }
     if(item.onClick) {
       item.onClick()
       return
     }
+    return
     if(item.route) {
       router.push(item.route)
       return
@@ -34,7 +40,8 @@ export function CoffeeMenuItem({
     ? cl.selected : ""
 
   return(<>
-  <div className={ClassNames([cl.menuItem, clSelected])}>
+  <div className={ClassNames([cl.menuItem, clSelected])}
+    onClick={onClick}>
     <div className={cl.iconSpace}>
     {
       item.iconName ? 

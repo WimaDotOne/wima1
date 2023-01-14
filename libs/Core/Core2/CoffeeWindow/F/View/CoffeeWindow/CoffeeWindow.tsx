@@ -34,7 +34,9 @@ export function CoffeeWindow({
     />
     <div className={cl.leftBar}>
     <CoffeeMenu menu={menu}
-      selectedItemId={selectedItemId}/>
+      selectedItemId={selectedItemId}
+      setSelectedItemId={setSelectedItemId}
+    />
     </div>
     <div className={cl.windowViewSpace}>
       <div className={cl.windowView}>

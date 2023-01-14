@@ -41,19 +41,19 @@ function GetMenu(): ICoffeeMenu {
             iconName: "home2"
           },
           {
-            selectionId: CoffeeMenuTurn.Home,
+            selectionId: "2",
             route: "/apps/Thanky/ThankyWindow",
             text: "Home",
             iconName: "home2"
           },
           {
-            selectionId: CoffeeMenuTurn.Home,
+            selectionId: "3",
             route: "/apps/Thanky/ThankyWindow",
             text: "Home",
             iconName: "home2"
           },
           {
-            selectionId: CoffeeMenuTurn.Home,
+            selectionId: "4",
             route: "/apps/Thanky/ThankyWindow",
             text: "Home",
             iconName: "home2"
@@ -70,31 +70,31 @@ function GetMenu(): ICoffeeMenu {
             iconName: "profile2"
           },
           {
-            selectionId: CoffeeMenuTurn.MyProfile,
+            selectionId: "a",
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
             iconName: "profile2"
           },
           {
-            selectionId: CoffeeMenuTurn.MyProfile,
+            selectionId: "b",
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
             iconName: "profile2"
           },
           {
-            selectionId: CoffeeMenuTurn.MyProfile,
+            selectionId: "c",
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
             iconName: "profile2"
           },
           {
-            selectionId: CoffeeMenuTurn.MyProfile,
+            selectionId: "d",
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
             iconName: "profile2"
           },
           {
-            selectionId: CoffeeMenuTurn.MyProfile,
+            selectionId: "e",
             route: "/apps/Thanky/MyProfile",
             text: "My Profile",
             iconName: "profile2"
