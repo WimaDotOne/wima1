@@ -8,7 +8,6 @@ export async function iLoadEstablishmentJobs(req, res) {
       return res.json({ok: false, error: "Place Id is missing"})
     }
 
-    console.log(placeId)
     const jobs = await TipJob.find({
       placeId,
       isJobPublic: true
