@@ -56,14 +56,15 @@ export function CoffeeWindow({
     </div>
     <div onClick={closePhoneModeLeftBar}
       className={ClassNames([cl.film, clPhoneModeShowLeftBar])}>
-
     </div>
     <div className={cl.windowViewSpace}>
       <div className={cl.windowView}>
         <div className={cl.windowViewInner}>
-        {
-          children
-        }
+          <div className={cl.windowViewInner2}>
+          {
+            children
+          }
+          </div>
         </div>
       </div>
     </div>
