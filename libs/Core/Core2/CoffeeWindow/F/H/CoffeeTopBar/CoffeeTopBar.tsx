@@ -28,9 +28,12 @@ export function CoffeeTopBar({
     <div>
 
     </div>
-    <div className={cl.photoHamburgerSpace}>
-      <PhotoHamburger onClick={onClickHamburger} photoUrl={photoUrl}/>
+    <div>
+      <div className={cl.photoHamburgerSpace}>
+        <PhotoHamburger onClick={onClickHamburger} photoUrl={photoUrl}/>
+      </div>
     </div>
+
   </div>
   <div className={cl.topBarSpaceFill} />
   </>)

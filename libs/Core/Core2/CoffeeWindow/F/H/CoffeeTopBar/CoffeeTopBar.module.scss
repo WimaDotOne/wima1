@@ -35,3 +35,9 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media screen and (min-width: coffee.$phoneScreenModeWidth) {
+  .photoHamburgerSpace {
+    display: none;
+  }
+}
