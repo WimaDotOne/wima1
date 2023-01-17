@@ -27,10 +27,6 @@
   display: block;
 }
 
-.windowView {
-  padding-left: 0;
-}
-
 .film {
   display: none;
 }
@@ -71,10 +67,6 @@
 }
 
 .windowViewInner {
-  padding: 0;
-}
-
-.windowViewInner2 {
   background-color: white;
 }
 
@@ -93,14 +85,14 @@
     background-color: coffee.$coffeeWindowGray;
   }
 
+  .windowViewSpace {
+    padding-right: 15px;
+  }
+
   .windowView {
     padding-left: coffee.$coffeeWindowLeftBarWidth;
   }
   .windowViewInner {
-    padding: 10;
-  }
-  .windowViewInner2 {
-    padding: 10px;
     box-shadow: 0 1px 8px rgba(0,0,0,0.1 );
     border-radius: 5px;
   }
