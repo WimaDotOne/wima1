@@ -12,6 +12,7 @@ interface ICoffeeWindowProp {
   onClickHomeIcon?: ()=>void
   children: ReactNode
   menu: ICoffeeMenu
+  selectItemId: string
 }
 
 export function CoffeeWindow({
@@ -19,10 +20,11 @@ export function CoffeeWindow({
   photoUrl, 
   onClickHomeIcon,
   children,
-  menu
+  menu,
+  selectItemId
 }: ICoffeeWindowProp) {
 
-  const [selectedItemId, setSelectedItemId] = useState<string>("")
+  const [selectedItemId, setSelectedItemId] = useState<string>(selectItemId)
   const [phoneModeShowLeftBar, setPhoneModeShowLeftBar] = useState<boolean>(false)
   
   function openPhoneModeLeftBar() {

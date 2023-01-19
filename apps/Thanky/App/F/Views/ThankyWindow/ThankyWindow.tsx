@@ -1,13 +1,16 @@
 import { ReactNode } from "react"
 import { ICoffeeMenu } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/Model/ICoffeeMenu"
 import { CoffeeWindow } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/View/CoffeeWindow/CoffeeWindow"
+import cl from "./ThankyWindow.module.scss"
 
 interface IThankyWindowProp {
   children: ReactNode
+  selectItemId: string
 }
 
 export function ThankyWindow({
-  children
+  children,
+  selectItemId
 }: IThankyWindowProp) {
 
   const menu = GetMenu()
@@ -16,15 +19,17 @@ export function ThankyWindow({
   <CoffeeWindow homeIconUrl="/apps/WimaHome/AppIcons/thanky.png"
     photoUrl="/favicon.ico"
     menu={menu}
+    selectItemId={selectItemId}
   >
-  { children}
+    <div className={cl.padding}>
+    { children }
+    </div>
   </CoffeeWindow>
   </>)
 }
 
-const CoffeeMenuTurn = {
-  Home: "Home",
-  MyProfile: "MyProfile"
+export const ThankyMenuTurn = {
+  Home: "Home"
 }
 
 function GetMenu(): ICoffeeMenu {
@@ -35,71 +40,11 @@ function GetMenu(): ICoffeeMenu {
         title: "",
         items: [
           {
-            selectionId: CoffeeMenuTurn.Home,
-            route: "/apps/Thanky/ThankyWindow",
-            text: "Home",
-            iconName: "home2"
-          },
-          {
-            selectionId: "2",
-            route: "/apps/Thanky/ThankyWindow",
-            text: "Home",
-            iconName: "home2"
-          },
-          {
-            selectionId: "3",
-            route: "/apps/Thanky/ThankyWindow",
-            text: "Home",
-            iconName: "home2"
-          },
-          {
-            selectionId: "4",
-            route: "/apps/Thanky/ThankyWindow",
+            selectionId: ThankyMenuTurn.Home,
+            route: "/apps/Thanky/Dashboard",
             text: "Home",
             iconName: "home2"
           }
-        ]
-      },
-      {
-        title: "Settings",
-        items: [
-          {
-            selectionId: CoffeeMenuTurn.MyProfile,
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          },
-          {
-            selectionId: "a",
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          },
-          {
-            selectionId: "b",
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          },
-          {
-            selectionId: "c",
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          },
-          {
-            selectionId: "d",
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          },
-          {
-            selectionId: "e",
-            route: "/apps/Thanky/MyProfile",
-            text: "My Profile",
-            iconName: "profile2"
-          }
-
         ]
       }
     ]
