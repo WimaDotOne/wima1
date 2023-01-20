@@ -21,9 +21,7 @@ export function ThankyWindow({
     menu={menu}
     selectItemId={selectItemId}
   >
-    <div className={cl.padding}>
     { children }
-    </div>
   </CoffeeWindow>
   </>)
 }

@@ -61,11 +61,9 @@ export function CoffeeWindow({
     </div>
     <div className={cl.windowViewSpace}>
       <div className={cl.windowView}>
-        <div className={cl.windowViewInner}>
-        {
-          children
-        }
-        </div>
+      {
+        children
+      }
       </div>
     </div>
   </div>

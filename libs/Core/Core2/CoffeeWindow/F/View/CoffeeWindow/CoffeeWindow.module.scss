@@ -42,6 +42,15 @@
   background-color: #0006;
 }
 
+//view card
+.viewCardSpace {
+  padding: 0;
+}
+
+.viewCard {
+  padding: 10px 15px;
+}
+
 /* Both Phone & Computer Screen */
 .leftBar {
   position: fixed;
@@ -66,8 +75,9 @@
   min-height: 100%;
 }
 
-.windowViewInner {
+.viewCard {
   background-color: white;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 5%);
 }
 
 /* Computer Screen */
@@ -85,17 +95,10 @@
     background-color: coffee.$coffeeWindowGray;
   }
 
-  .windowViewSpace {
-    padding-right: 15px;
-  }
-
   .windowView {
     padding-left: coffee.$coffeeWindowLeftBarWidth;
   }
-  .windowViewInner {
-    box-shadow: 0 1px 8px rgba(0,0,0,0.1 );
-    border-radius: 5px;
-  }
+
   .xRow {
     display: none;
   }
@@ -104,5 +107,19 @@
   }
   .film.phoneModeShowLeftBar {
     display: none;
+  }
+
+  .viewCardSpace {
+    padding: 10px;
+  }
+
+  .viewCard {
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  .shiftUp {
+    position: relative;
+    top: -10px;
   }
 }

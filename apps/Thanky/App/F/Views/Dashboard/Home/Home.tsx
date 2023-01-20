@@ -1,3 +1,4 @@
+import { CoffeeWindowViewCard } from "../../../../../../../libs/Core/Core2/CoffeeWindow/fCoffeeWindow"
 import { ThankyMenuTurn, ThankyWindow } from "../../ThankyWindow/ThankyWindow"
 import cl from "./Home.module.scss"
 
@@ -10,7 +11,9 @@ export function Home({
 }: IHomeProp) {
   return(<>
   <ThankyWindow selectItemId={ThankyMenuTurn.Home}>
-    
+    <CoffeeWindowViewCard shiftUp>
+xxxx
+    </CoffeeWindowViewCard>
   </ThankyWindow>
   </>)
 }
