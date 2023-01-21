@@ -1,0 +1,65 @@
+
+.jobCard {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topHalf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lavender;
+  width: 150%;
+  border-radius: 0 0 70% 70%;
+}
+
+.hole {
+  background-color: #f9f9f9;
+  width: 70px;
+  height: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+}
+
+.firstName {
+  font-size: 14px;
+  font-weight: 600;
+  width: 250px;
+  color: white;
+}
+
+.jobTitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.jobTitle.gray {
+  color: #ccc;
+}
+
+.location {
+  font-size: 12px;
+}
+
+.location.gray {
+  color: #ccc;
+}

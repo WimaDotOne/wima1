@@ -1,0 +1,14 @@
+.cardTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.jobCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.jobCardSpace {
+  padding: 15px;
+} 
