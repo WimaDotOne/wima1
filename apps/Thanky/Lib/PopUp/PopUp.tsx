@@ -34,6 +34,10 @@ export function PopUp({
   }
 
   const clYellow = yellow ? cl.yellow : ""
+
+  if(!pop) {
+    return null
+  }
   
   return(<>
   <div className={cl.shieldFilm} onClick={cancelPop}>

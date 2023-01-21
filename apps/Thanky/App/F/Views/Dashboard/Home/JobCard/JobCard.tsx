@@ -1,5 +1,6 @@
 import { ClassNames } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
+import { SvgIcon } from "../../../../../../../../libs/Core/Core2/Svg/SvgIcon"
 import cl from "./JobCard.module.scss"
 
 interface IJobCardProp {
@@ -29,7 +30,7 @@ export function JobCard({
   const clLocationGray = location ? cl.gray : ""
 
   return(<>
-  <div className={cl.jobCard} onClick={onClick}>
+  <div className={cl.jobCard}>
     <div className={cl.topHalf}>
       <Div height={15} />
       <div className={cl.hole} />
@@ -50,6 +51,10 @@ export function JobCard({
     <Div height={30} />
     <div className={ClassNames([cl.location, clLocationGray])}>
       {location}
+    </div>
+    <div className={cl.pencilBtn} onClick={onClick}
+      title="Edit job">
+      <SvgIcon name="pencil" width={30} color="#0275d8"/>
     </div>
   </div>
   </>)

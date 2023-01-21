@@ -1,8 +1,7 @@
 import { useState } from "react"
-import { TextField2 } from "../../../../../../../libs/Core/Core1/Fields/TextField/TextField2"
 import { CoffeeWindowViewCard } from "../../../../../../../libs/Core/Core2/CoffeeWindow/fCoffeeWindow"
-import { PopUp } from "../../../../../Lib/PopUp/PopUp"
 import { ThankyMenuTurn, ThankyWindow } from "../../ThankyWindow/ThankyWindow"
+import { EditJobPopUp } from "../EditJobPopUp/EditJobPopUp"
 import cl from "./Home.module.scss"
 import { JobCard } from "./JobCard/JobCard"
 
@@ -16,8 +15,8 @@ export function Home({
 
   const [jobPop, setJobPop] = useState<boolean>(false)
 
-  function onClickJobCard() {
-
+  function editJob() {
+    setJobPop(true)
   }
 
   return(<>
@@ -26,19 +25,16 @@ export function Home({
     <div className={cl.cardTitle}>Jobs</div>
     <div className={cl.jobCards}>
       <div className={cl.jobCardSpace}>
-        <JobCard num={1} onClick={onClickJobCard}/>
+        <JobCard num={1} onClick={editJob}/>
       </div>
       <div className={cl.jobCardSpace}>
-        <JobCard num={2} onClick={onClickJobCard}/>
+        <JobCard num={2} onClick={editJob}/>
       </div>
     </div>
     </CoffeeWindowViewCard>
 
   </ThankyWindow>
-  <PopUp pop={jobPop} setPop={setJobPop}
-    title="Job"
-  >
-    
-  </PopUp>
+
+  <EditJobPopUp pop={jobPop} setPop={setJobPop} />
   </>)
 }

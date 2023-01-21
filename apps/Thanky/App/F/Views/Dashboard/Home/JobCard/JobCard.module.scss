@@ -1,5 +1,6 @@
 
 .jobCard {
+  position: relative;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -7,7 +8,6 @@
   min-height: 300px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  cursor: pointer;
   overflow: hidden;
   text-align: center;
 }
@@ -62,4 +62,36 @@
 
 .location.gray {
   color: #ccc;
+}
+
+.jobCard:hover .pencilBtn {
+  opacity: 1;
+}
+
+.jobCard .pencilBtn {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pencilBtn:hover {
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+.pencilBtn {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px dashed #0275d8;
+  box-shadow: 0 0 0 3px white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: 1s;
 }
