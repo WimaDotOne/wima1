@@ -1,33 +1,28 @@
 import { ClassNames } from "../../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import { SvgIcon } from "../../../../../../../../libs/Core/Core2/Svg/SvgIcon"
+import { IThankyJob } from "../../../../Model/IThankyJob"
 import cl from "./JobCard.module.scss"
 
 interface IJobCardProp {
-  photoUrl?: string
-  firstName?: string
-  jobTitle?: string
-  location?: string
+  job?: IThankyJob
   num?: number
   onClick: ()=>void
 }
 
 export function JobCard({
-  photoUrl,
-  firstName,
-  jobTitle,
-  location,
+  job,
   num,
   onClick
 }: IJobCardProp) {
 
-  photoUrl = photoUrl || "/apps/Thanky/Icons/profile.svg"
-  firstName = firstName || "First Name"
-  jobTitle = jobTitle || `Job ${num || ""}`
-  location = location || "Location"
+  const photoUrl = job?.photo?.urlSmall || "/apps/Thanky/Icons/profile.svg"
+  const firstName = job?.firstName || "First Name"
+  const jobName = job?.jobName || `Job ${num || ""}`
+  const placeName = job?.placeName || "Location"
 
-  const clJobTitleGray = jobTitle ? cl.gray : ""
-  const clLocationGray = location ? cl.gray : ""
+  const clJobNameGray = job?.jobName ? "" : cl.gray
+  const clPlaceNameGray = job?.placeName ? "" : cl.gray
 
   return(<>
   <div className={cl.jobCard}>
@@ -45,12 +40,12 @@ export function JobCard({
       <Div height={15} />
     </div>
     <Div height={20} />
-    <div className={ClassNames([cl.jobTitle, clJobTitleGray])}>
-      {jobTitle}
+    <div className={ClassNames([cl.jobName, clJobNameGray])}>
+      {jobName}
     </div>
     <Div height={30} />
-    <div className={ClassNames([cl.location, clLocationGray])}>
-      {location}
+    <div className={ClassNames([cl.placeName, clPlaceNameGray])}>
+      {placeName}
     </div>
     <div className={cl.pencilBtn} onClick={onClick}
       title="Edit job">

@@ -12,6 +12,7 @@ import { SocialRouter } from "./apps/Social/B/Router/SocialRouter.js"
 import { LingoRouter } from "./apps/Lingo/B/Router/LingoRouter.js"
 import { TipRouter } from "./apps/Tip/B/Router/TipRouter.js"
 import { QuizRouter } from "./apps/Quiz/B/Router/QuizRouter.js"
+import { ThankyRouter } from "./apps/Thanky/App/B/Router/ThankyRouter.js"
 
 dotenv.config()
 ConnectDb(process.env.MONGO_DB)
@@ -31,7 +32,7 @@ server.use(bConfig.bRoute1+"/social", SocialRouter)
 server.use(bConfig.bRoute1+"/lingo", LingoRouter)
 server.use(bConfig.bRoute1+"/tip", TipRouter)
 server.use(bConfig.bRoute1+"/quiz", QuizRouter)
-
+server.use(bConfig.bRoute1+"/thanky", ThankyRouter)
 
 server.use(express.static(FilePath(import.meta.url, "./out")))
 

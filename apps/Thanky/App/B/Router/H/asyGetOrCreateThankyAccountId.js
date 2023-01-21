@@ -21,6 +21,9 @@ export async function asyGetOrCreateThankyAccountId(req) {
       _id: mongoose.Types.ObjectId()
     })
 
+    await thankyAccount.save()
+    
+    user.thankyAccountId = thankyAccount._id
     await user.save()
   }
 

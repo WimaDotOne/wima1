@@ -14,7 +14,7 @@ const schema = mongoose.Schema({
     }
   },
   firstName: { type: String },
-  selfPhoto: {
+  photo: {
     s3Key: { type: String },
     s3KeySmall: { type: String },
     url: { type: String },
