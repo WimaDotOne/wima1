@@ -10,9 +10,17 @@ export function EditJobPopUp({
   pop,
   setPop
 }: IEditJobPopUpProp) {
+
+  function saveJob() {
+
+  }
+
   return(<>
   <PopUp pop={pop} setPop={setPop}
+    onSave={saveJob}
     title="Edit job"
+    saveTextColor="#222"
+    saveButtonColor="#FD0"
   >
 
   </PopUp>
