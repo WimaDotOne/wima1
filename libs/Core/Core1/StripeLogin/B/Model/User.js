@@ -17,6 +17,8 @@ const schema = mongoose.Schema({
       index: true, sparse: true, unique: true, ref: "TipAccount"},
   quizAccountId: {type: mongoose.Schema.Types.ObjectId, 
     index: true, sparse: true, unique: true, ref: "QuizAccount"},
+  thankyAccountId: {type: mongoose.Schema.Types.ObjectId, 
+      index: true, sparse: true, unique: true, ref: "ThankyAccount"},
 }, {
   timestamps: { currentTime: () => Date.now() }
 })
