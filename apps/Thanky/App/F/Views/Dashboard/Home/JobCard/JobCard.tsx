@@ -21,6 +21,7 @@ export function JobCard({
   const jobName = job?.jobName || `Job ${num || ""}`
   const placeName = job?.placeName || "Location"
 
+  const clFirstNameGray = job?.firstName ? "" : cl.gray
   const clJobNameGray = job?.jobName ? "" : cl.gray
   const clPlaceNameGray = job?.placeName ? "" : cl.gray
 
@@ -34,7 +35,7 @@ export function JobCard({
         style={{backgroundImage: `url(${photoUrl})`}}
       />
       <Div height={5} />
-      <div className={cl.firstName}>
+      <div className={ClassNames([cl.firstName, clFirstNameGray])}>
         {firstName}
       </div>
       <Div height={15} />

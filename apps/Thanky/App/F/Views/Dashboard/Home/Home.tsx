@@ -18,9 +18,16 @@ export function Home({
   const [jobPop, setJobPop] = useState<boolean>(false)
   const [job1, setJob1] = useState<IThankyJob>()
   const [job2, setJob2] = useState<IThankyJob>()
+  const [editedJob, setEditedJob] = useState<IThankyJob>()
+  const [refreshCount, setRefreshCount] = useState<number>(0)
+  const [num, setNum] = useState<number>(1)
+
   const shield = useShield()
 
-  function editJob() {
+  function editJob(num: number, job?: IThankyJob) {
+    if(!job) return
+    setNum(num)
+    setEditedJob(job)
     setJobPop(true)
   }
 
@@ -31,9 +38,13 @@ export function Home({
     })
   }
 
+  function reload() {
+    setRefreshCount((refreshCount + 1) % 100)
+  }
+
   useEffect(()=>{
     loadHome()
-  }, [])
+  }, [refreshCount])
 
   return(<>
   <ThankyWindow selectItemId={ThankyMenuTurn.Home}>
@@ -41,16 +52,24 @@ export function Home({
     <div className={cl.cardTitle}>Jobs</div>
     <div className={cl.jobCards}>
       <div className={cl.jobCardSpace}>
-        <JobCard job={job1} num={1} onClick={editJob}/>
+        <JobCard job={job1} num={1} onClick={()=>{
+          editJob(1, job1)
+        }}/>
       </div>
       <div className={cl.jobCardSpace}>
-        <JobCard job={job2} num={2} onClick={editJob}/>
+        <JobCard job={job2} num={2} onClick={()=>{
+          editJob(2, job2)
+        }}/>
       </div>
     </div>
     </CoffeeWindowViewCard>
-
   </ThankyWindow>
 
-  <EditJobPopUp pop={jobPop} setPop={setJobPop} />
+  <EditJobPopUp pop={jobPop} setPop={setJobPop}
+    num = { num }
+    reload={reload}
+    job = {editedJob}
+    setJob = {setEditedJob}
+  />
   </>)
 }

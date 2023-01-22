@@ -4,7 +4,7 @@ interface IS3Image {
 }
 
 export interface IThankyJob {
-  _id: string
+  _id?: string
   jobName?: string
   placeName?: string
   placeId?: string
