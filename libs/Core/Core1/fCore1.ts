@@ -26,6 +26,7 @@ import {
 } from "../Core1/StripeLogin/fLogin"
 
 import { FileInput } from "./FileUp/fFileUp"
+import { PhotoInput } from "./FileUp/fFileUp"
 import { IFormTextField } from "./FileUp/fFileUp"
 import { EnumText } from "./Util/F/ClassName/Enum/Enum"
 import { TextDate1 } from "./Util/F/Time/Date"
@@ -58,6 +59,7 @@ export {
   ErrorLine,
 
   FileInput,
+  PhotoInput,
 
   EnumText,
   TextDate1,

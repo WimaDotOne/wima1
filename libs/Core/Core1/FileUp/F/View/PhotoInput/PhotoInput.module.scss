@@ -1,0 +1,31 @@
+.photoInput {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cameraFilm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0006;
+  z-index: 2;
+}
+
+.camera {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

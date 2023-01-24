@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../bConfig"
-import { Post2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
+import { Post2, PhotoInput, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { TextField2 } from "../../../../../../../libs/Core/Core1/Fields/TextField/TextField2"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { PopUp } from "../../../../../Lib/PopUp/PopUp"
@@ -35,6 +35,10 @@ export function EditJobPopUp({
     setJob({...job, jobName})
   }
 
+  function setJobPhoto(urlSmall: string) {
+    setJob({...job, photo: {urlSmall}})
+  }
+
   async function saveJob() {
     await Post2(shield, "/thanky/SaveJob", {
       num,
@@ -46,6 +50,11 @@ export function EditJobPopUp({
     })
   }
 
+  function onPhotoSuccess(res: any) {
+    setJobPhoto(res.photoUrl)
+    reload()
+  }
+
   return(<>
   <PopUp pop={pop} setPop={setPop}
     onSave={saveJob}
@@ -53,6 +62,14 @@ export function EditJobPopUp({
     saveTextColor="#222"
     saveButtonColor="#FD0"
   >
+    <div className={cl.profilePhotoSpace}>
+      <PhotoInput 
+        photoUrl={job?.photo?.urlSmall}
+        route="/thanky/UploadAttendantPhoto"
+        formTextFields={[{key: "jobNum", value: num+""}]}
+        onSuccess={onPhotoSuccess}
+      />
+    </div>
     <TextField2 
       prompt="First name"
       value={job?.firstName} 
