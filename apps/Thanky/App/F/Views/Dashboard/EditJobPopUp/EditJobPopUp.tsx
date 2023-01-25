@@ -2,7 +2,8 @@ import { useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../../../../bConfig"
 import { Post2, PhotoInput, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { TextField2 } from "../../../../../../../libs/Core/Core1/Fields/TextField/TextField2"
-import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
+import { Div, PlaceAutoComplete2 } from "../../../../../../../libs/Core/Core2/fCore2"
+import { IPlace } from "../../../../../../../libs/Core/Core2/GoogleMap/F/Model/IPlace"
 import { PopUp } from "../../../../../Lib/PopUp/PopUp"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import cl from "./EditJobPopUp.module.scss"
@@ -27,6 +28,14 @@ export function EditJobPopUp({
 
   const shield = useShield()
 
+  function onPlaceChanged(place: IPlace) {
+    if(!place || !place.place_id) {
+      return
+    }
+    setPlaceId(place.place_id)
+    setPlaceName(place.name)
+  }
+
   function setFirstName(firstName: string) {
     setJob({...job, firstName})
   }
@@ -37,6 +46,14 @@ export function EditJobPopUp({
 
   function setJobPhoto(urlSmall: string) {
     setJob({...job, photo: {urlSmall}})
+  }
+
+  function setPlaceId(placeId: string) {
+    setJob({...job, placeId})
+  }
+
+  function setPlaceName(placeName: string) {
+    setJob({...job, placeName})
   }
 
   async function saveJob() {
@@ -53,6 +70,11 @@ export function EditJobPopUp({
   function onPhotoSuccess(res: any) {
     setJobPhoto(res.photoUrl)
     reload()
+  }
+
+  function leaveLocationBlank() {
+    setPlaceId("")
+    setPlaceName("")
   }
 
   return(<>
@@ -82,6 +104,14 @@ export function EditJobPopUp({
       value={job?.jobName}
       onChange={(value)=>{setJobName(value)}} 
       maxLength={GENERAL_INPUT_MAX}
+    />
+    <Div height={30} />
+    <PlaceAutoComplete2
+      prompt="Job location"
+      onLeaveBlank={leaveLocationBlank}
+      placeName={job?.placeName}
+      ghost="Enter location & select an establishment"
+      onPlaceChanged={onPlaceChanged}
     />
   </PopUp>
   </>)

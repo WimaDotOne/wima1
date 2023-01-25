@@ -2,6 +2,7 @@ import { Loader } from "@googlemaps/js-api-loader"
 import { useEffect } from "react"
 import { useWimaEnv } from "../../../../../../../apps/Wima/fWima"
 
+//Need to <GatherWimaEnv /> to be placed before
 interface IGoogleMapScript1 {
   scriptLoaded: boolean,
   setScriptLoaded: (scriptLoaded: boolean) => void
@@ -19,8 +20,6 @@ export function GoogleMapScript1({
   useEffect(()=>{
     
     if(scriptLoaded) return
-    if(!googlePlacesApiId) {
-    }
     if(!googlePlacesApiId) return
     if(!window) return
     const loader = new Loader({

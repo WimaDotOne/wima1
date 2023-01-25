@@ -25,7 +25,11 @@ import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 import { TextEditor } from "./TextEditor/TextEditor"
 
-import { PlaceAutoComplete1 } from "./GoogleMap/fGoogleMap"
+import { 
+  GoogleMapScript1,
+  PlaceAutoComplete1,
+  PlaceAutoComplete2
+} from "./GoogleMap/fGoogleMap"
 import { CoffeeWindow } from "./CoffeeWindow/fCoffeeWindow"
 
 export {
@@ -54,5 +58,7 @@ export {
 
   TextEditor,
 
-  PlaceAutoComplete1
+  GoogleMapScript1,
+  PlaceAutoComplete1,
+  PlaceAutoComplete2
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { CoffeeWindowViewCard } from "../../../../../../../libs/Core/Core2/CoffeeWindow/fCoffeeWindow"
+import { GoogleMapScript1 } from "../../../../../../../libs/Core/Core2/fCore2"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import { ThankyMenuTurn, ThankyWindow } from "../../ThankyWindow/ThankyWindow"
 import { EditJobPopUp } from "../EditJobPopUp/EditJobPopUp"
@@ -15,6 +16,7 @@ export function Home({
 
 }: IHomeProp) {
 
+  const [scriptLoaded, setScriptLoaded] = useState<boolean>(false)
   const [jobPop, setJobPop] = useState<boolean>(false)
   const [job1, setJob1] = useState<IThankyJob>()
   const [job2, setJob2] = useState<IThankyJob>()
@@ -47,6 +49,8 @@ export function Home({
   }, [refreshCount])
 
   return(<>
+  <GoogleMapScript1 scriptLoaded={scriptLoaded}
+    setScriptLoaded={setScriptLoaded}/>
   <ThankyWindow selectItemId={ThankyMenuTurn.Home}>
     <CoffeeWindowViewCard shiftUp>
     <div className={cl.cardTitle}>Jobs</div>

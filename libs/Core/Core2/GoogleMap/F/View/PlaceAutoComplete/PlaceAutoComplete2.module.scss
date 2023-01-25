@@ -1,0 +1,51 @@
+@use "../../CSS/googlemap.module.scss";
+
+.promptRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.prompt {
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 4px;
+}
+.blankBtn {
+  background-color: #f7f7f7;
+  color: #007bff;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.blankBtn:hover {
+  text-decoration: underline;
+}
+
+.placeName {
+  font-size: 14px;
+  color: #444;
+  padding-left: 4px;
+  margin-bottom: 10px;
+}
+
+.input {
+  appearance: none;
+  outline: none;
+  border: 0.5px solid #ccc;
+  height: 50px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #f4f4f4;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 0.5px #222;
+  background-color: white;
+}
