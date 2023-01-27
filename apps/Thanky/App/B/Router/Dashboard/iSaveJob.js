@@ -8,6 +8,12 @@ export async function iSaveJob(req, res) {
     const firstName = (req.body.firstName || "").trim()
     const jobName = (req.body.jobName || "").trim()
     const num = +(req.body.num || 0)
+    const placeId = req.body.placeId || ""
+    let placeName = req.body.placeName || ""
+
+    if(!placeId) {
+      placeName = ""
+    }
 
     if(firstName.length > GENERAL_INPUT_MAX) {
       return res.json({ ok: false, error: "First name is too long"})
@@ -17,6 +23,13 @@ export async function iSaveJob(req, res) {
       return res.json({ ok: false, error: "Job name is too long"})
     }
 
+    if(placeId.length > GENERAL_INPUT_MAX * 2) {
+      return res.json({ ok: false, error: "Place id is too long"})
+    }
+    if(placeName.length > GENERAL_INPUT_MAX * 2) {
+      return res.json({ ok: false, error: "Place name is too long"})
+    }
+
     const [job1Id, job2Id] = await asyGetOrCreateThankyJobIds(req)
     
     const jobId = num === 2 ? job2Id : job1Id
@@ -24,6 +37,8 @@ export async function iSaveJob(req, res) {
     
     job.firstName = firstName
     job.jobName = jobName
+    job.placeId = placeId
+    job.placeName = placeName
 
     await job.save()
 

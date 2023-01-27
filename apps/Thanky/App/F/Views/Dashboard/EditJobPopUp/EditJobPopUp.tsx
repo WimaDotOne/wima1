@@ -32,8 +32,7 @@ export function EditJobPopUp({
     if(!place || !place.place_id) {
       return
     }
-    setPlaceId(place.place_id)
-    setPlaceName(place.name)
+    setPlace(place.place_id, place.name)
   }
 
   function setFirstName(firstName: string) {
@@ -48,19 +47,19 @@ export function EditJobPopUp({
     setJob({...job, photo: {urlSmall}})
   }
 
-  function setPlaceId(placeId: string) {
-    setJob({...job, placeId})
-  }
-
-  function setPlaceName(placeName: string) {
-    setJob({...job, placeName})
+  function setPlace(placeId: string, placeName: string) {
+    //setJob placeId, placeName seperately would leave one blank
+    setJob({...job, placeId, placeName})
   }
 
   async function saveJob() {
+
     await Post2(shield, "/thanky/SaveJob", {
       num,
       firstName: job?.firstName || "",
-      jobName: job?.jobName || ""
+      jobName: job?.jobName || "",
+      placeId: job?.placeId || "",
+      placeName: job?.placeName || ""
     }, (res)=>{
       reload()
       setPop(false)
@@ -73,8 +72,7 @@ export function EditJobPopUp({
   }
 
   function leaveLocationBlank() {
-    setPlaceId("")
-    setPlaceName("")
+    setPlace("", "")
   }
 
   return(<>

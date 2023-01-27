@@ -61,8 +61,8 @@ export function PlaceAutoComplete2({
           leave blank
         </div>:null
       }
-    </div>
-    <div className={cl.placeName}>@ {placeName}</div>
+      </div>
+    <div className={cl.placeName}>@ {placeName} {}</div>
     <input className={cl.input} 
       ref={inputRef} 
       placeholder={placeholder} 
