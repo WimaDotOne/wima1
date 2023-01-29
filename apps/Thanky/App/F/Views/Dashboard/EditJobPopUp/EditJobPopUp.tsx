@@ -61,7 +61,8 @@ export function EditJobPopUp({
       firstName: job?.firstName || "",
       jobName: job?.jobName || "",
       placeId: job?.placeId || "",
-      placeName: job?.placeName || ""
+      placeName: job?.placeName || "",
+      aboutMe: job?.aboutMe || ""
     }, (res)=>{
       reload()
       setPop(false)

@@ -1,4 +1,4 @@
-import { GENERAL_INPUT_MAX } from "../../../../../../bConfig.js"
+import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX } from "../../../../../../bConfig.js"
 import ThankyJob from "../../Model/ThankyJob.js"
 import { asyGetOrCreateThankyJobIds } from "../H/asyGetOrCreateThankyJobIds.js"
 
@@ -10,6 +10,7 @@ export async function iSaveJob(req, res) {
     const num = +(req.body.num || 0)
     const placeId = req.body.placeId || ""
     let placeName = req.body.placeName || ""
+    const aboutMe = req.body.aboutMe || ""
 
     if(!placeId) {
       placeName = ""
@@ -30,6 +31,10 @@ export async function iSaveJob(req, res) {
       return res.json({ ok: false, error: "Place name is too long"})
     }
 
+    if(aboutMe.length > GENERAL_TEXTAREA_MAX) {
+      return res.json({ ok: false, error: "About me is too long"})
+    }
+
     const [job1Id, job2Id] = await asyGetOrCreateThankyJobIds(req)
     
     const jobId = num === 2 ? job2Id : job1Id
@@ -39,6 +44,7 @@ export async function iSaveJob(req, res) {
     job.jobName = jobName
     job.placeId = placeId
     job.placeName = placeName
+    job.aboutMe = aboutMe
 
     await job.save()
 
