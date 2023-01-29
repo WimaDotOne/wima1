@@ -9,22 +9,21 @@
   padding-left: 4px;
 }
 
-.input {
+.textarea {
   appearance: none;
   outline: none;
   border: 0.5px solid #ccc;
-  height: 50px;
-  padding: 0 16px;
+  padding: 10px 16px;
   box-sizing: border-box;
   width: 100%;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: dimension.$inputFontSize;
   font-weight: normal;
+  resize: vertical;
   background-color: #f4f4f4;
 }
 
-.input:focus {
-  border-color: color.$borderBlue;
-  box-shadow: 0 0 0 0.5px #222;
+.textarea:focus {
+  border: 0.5px solid #999;
   background-color: white;
 }

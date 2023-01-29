@@ -1,7 +1,5 @@
-import { useState } from "react"
-import { GENERAL_INPUT_MAX } from "../../../../../../../bConfig"
-import { Post2, PhotoInput, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
-import { TextField2 } from "../../../../../../../libs/Core/Core1/Fields/TextField/TextField2"
+import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX } from "../../../../../../../bConfig"
+import { Post2, PhotoInput, useShield, TextField2, TextArea2 } from "../../../../../../../libs/Core/Core1/fCore1"
 import { Div, PlaceAutoComplete2 } from "../../../../../../../libs/Core/Core2/fCore2"
 import { IPlace } from "../../../../../../../libs/Core/Core2/GoogleMap/F/Model/IPlace"
 import { PopUp } from "../../../../../Lib/PopUp/PopUp"
@@ -50,6 +48,10 @@ export function EditJobPopUp({
   function setPlace(placeId: string, placeName: string) {
     //setJob placeId, placeName seperately would leave one blank
     setJob({...job, placeId, placeName})
+  }
+
+  function setAboutMe(aboutMe: string) {
+    setJob({...job, aboutMe})
   }
 
   async function saveJob() {
@@ -110,6 +112,14 @@ export function EditJobPopUp({
       placeName={job?.placeName}
       ghost="Enter location & select an establishment"
       onPlaceChanged={onPlaceChanged}
+    />
+    <Div height={30} />
+    <TextArea2 
+      prompt="About me"
+      value={job?.aboutMe}
+      onChange={(value)=>setAboutMe(value)}
+      rows={5}
+      maxLength={GENERAL_TEXTAREA_MAX}
     />
   </PopUp>
   </>)

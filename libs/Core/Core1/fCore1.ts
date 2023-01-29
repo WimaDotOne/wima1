@@ -6,6 +6,9 @@ import { Alert, AlertSysError } from "./Fetch/F/Alert"
 import { IsEmail } from "./Email/B/IsEmail"
 
 import { TextField1 } from "./Fields/TextField/TextField1"
+import { TextField2 } from "./Fields/TextField/TextField2"
+import { TextArea1 } from "./Fields/TextArea/TextArea1"
+import { TextArea2 } from "./Fields/TextArea/TextArea2"
 import { NumberField1 } from "./Fields/NumberField/NumberField1"
 import { SelectField1 } from "./Fields/SelectField/SelectField1"
 import { SelectField2 } from "./Fields/SelectField/SelectField2"
@@ -52,7 +55,8 @@ export {
   
   IsEmail,
 
-  TextField1,
+  TextField1, TextField2,
+  TextArea1, TextArea2,
   NumberField1,
   SelectField1,
   SelectField2,
