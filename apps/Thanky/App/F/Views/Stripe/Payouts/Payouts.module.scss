@@ -1,0 +1,32 @@
+.pageTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 10px 10px;
+}
+
+.instructionFrame {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruction {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.instructionTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 20px;
+}
+
+.instuctionText {
+  font-size: 14px;
+  line-height: 26px;
+}

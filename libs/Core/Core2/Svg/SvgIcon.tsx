@@ -61,6 +61,7 @@ import { SvgXMark } from "./School/XMark/SvgXMark"
 import { SvgHome2 } from "./Common/Home/SvgHome2"
 import { SvgProfile2 } from "./Social/Profile/SvgProfile2"
 import { SvgDollarSquare } from "./Finance/Dollar/SvgDollarSquare"
+import { SvgLightening } from "./Finance/Lightening/SvgLightening"
 
 export function SvgIcon({
   name,
@@ -172,6 +173,10 @@ export function SvgIcon({
     //Finance
     case "dollar": return <SvgDollar width={width} fill={color} />
     case "dollar.square": return <SvgDollarSquare width={width} stroke={color} strokeWidth={strokeWidth}/>
+    case "lightening": return <SvgLightening width={width} fill={color} />
+
+
+
     default: return null
   }
 }

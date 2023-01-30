@@ -24,6 +24,7 @@ import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
 import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 import { TextEditor } from "./TextEditor/TextEditor"
+import { SvgIcon } from "./Svg/SvgIcon"
 
 import { 
   GoogleMapScript1,
@@ -60,5 +61,7 @@ export {
 
   GoogleMapScript1,
   PlaceAutoComplete1,
-  PlaceAutoComplete2
+  PlaceAutoComplete2,
+
+  SvgIcon
 }
