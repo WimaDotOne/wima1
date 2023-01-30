@@ -60,6 +60,7 @@ import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
 import { SvgXMark } from "./School/XMark/SvgXMark"
 import { SvgHome2 } from "./Common/Home/SvgHome2"
 import { SvgProfile2 } from "./Social/Profile/SvgProfile2"
+import { SvgDollarSquare } from "./Finance/Dollar/SvgDollarSquare"
 
 export function SvgIcon({
   name,
@@ -170,6 +171,7 @@ export function SvgIcon({
 
     //Finance
     case "dollar": return <SvgDollar width={width} fill={color} />
+    case "dollar.square": return <SvgDollarSquare width={width} stroke={color} strokeWidth={strokeWidth}/>
     default: return null
   }
 }

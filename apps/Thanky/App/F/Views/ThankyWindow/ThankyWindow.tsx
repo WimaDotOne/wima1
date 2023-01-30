@@ -53,7 +53,7 @@ function GetMenu(): ICoffeeMenu {
             selectionId: ThankyMenuTurn.Payouts,
             route: "/apps/Thanky/Payouts",
             text: "Payouts",
-            iconName: "dollar"
+            iconName: "dollar.square"
           }
         ]
       }
