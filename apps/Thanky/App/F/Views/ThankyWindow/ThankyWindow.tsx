@@ -27,7 +27,8 @@ export function ThankyWindow({
 }
 
 export const ThankyMenuTurn = {
-  Home: "Home"
+  Home: "Home",
+  Payouts: "Payouts"
 }
 
 function GetMenu(): ICoffeeMenu {
@@ -42,6 +43,17 @@ function GetMenu(): ICoffeeMenu {
             route: "/apps/Thanky/Dashboard",
             text: "Home",
             iconName: "home2"
+          }
+        ]
+      },
+      {
+        title: "SETTINGS",
+        items: [
+          {
+            selectionId: ThankyMenuTurn.Payouts,
+            route: "/apps/Thanky/Payouts",
+            text: "Payouts",
+            iconName: "dollar"
           }
         ]
       }
