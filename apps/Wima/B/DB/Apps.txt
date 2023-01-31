@@ -1,5 +1,5 @@
 Login | login.png | Login
-Tip | tip.png | Tip
+Thanky | thanky.png | Thanky
 Sociable | social.jpg | Social
 Movic | movic.webp | Movic
 Lingo | lingo.png | Lingo
@@ -7,4 +7,3 @@ Book | book.png | Book
 B&N Recipes| bncafe.png | BnCafe
 Quiz | quiz.jpg | Quiz
 English | KaylaEnglish.png | Kayla
-Thanky | thanky.png | Thanky

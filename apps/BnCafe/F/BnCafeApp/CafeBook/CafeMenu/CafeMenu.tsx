@@ -34,6 +34,9 @@ export function CafeMenu({
     <div className={cl.logo} style={{backgroundImage: `url(/apps/BnCafe/Logo/bnCafeLogo.png)`}}/>
   </div>
   <div className={cl.instruction}>Click on price to see the recipe</div>
+  <Div height={5} />
+  <div className={cl.instruction}>Click on drink name to see how to mark cups</div>
+  <Div height={5} />
   <div className={cl.menus}>
     <div className={cl.menuSpace}>
       <MenuCard categoryName="Hot Coffee"
