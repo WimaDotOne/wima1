@@ -67,7 +67,9 @@ export {
 
   EnumText,
   TextDate1,
-  ForceHttps
+  ForceHttps,
+
+  StripeButton
 }
 
 export type { 

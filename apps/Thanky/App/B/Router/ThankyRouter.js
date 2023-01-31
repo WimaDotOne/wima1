@@ -5,6 +5,7 @@ import { iLoadHome } from "./Dashboard/iLoadHome.js"
 import { iSaveJob } from "./Dashboard/iSaveJob.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
+import { iGetOrCreateConnectedAccount } from "./Payout/iGetOrCreateConnectedAccount.js"
 
 const ThankyRouter = express.Router()
 
@@ -14,6 +15,9 @@ ThankyRouter.post("/SaveJob", iAuth, iSaveJob)
 
 //image upload
 ThankyRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, iUploadAttendantPhoto)
+
+//Stripe
+ThankyRouter.post("/GetOrCreateConnectedAccount", iAuth, iGetOrCreateConnectedAccount)
 
 
 export {

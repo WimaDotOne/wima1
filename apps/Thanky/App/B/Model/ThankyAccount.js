@@ -2,7 +2,8 @@ import mongoose from "mongoose"
 
 const schema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-
+  stripeConnectedAccountId: { type: String, index: true},
+  
   job1Id: { type: mongoose.Schema.Types.ObjectId, ref: "ThankyJob"},
   job2Id: { type: mongoose.Schema.Types.ObjectId, ref: "ThankyJob"}
 }, {
