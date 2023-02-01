@@ -5,6 +5,50 @@
   margin: 5px 10px 10px;
 }
 
+.explainSpace {
+  padding: 20px;
+}
+
+.stripe {
+   color: #635bff;
+   font-weight: bold;
+}
+
+.explainHeader {
+  text-align: center;
+}
+
+.explainWord {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+  margin-right: 10px;
+}
+
+.stripeWord {
+  font-size: 30px;
+  color: #635bff;
+  font-weight: bold;
+}
+
+.explainOneliner {
+  color: #333;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.explainRow {
+  display: flex;
+}
+
+.explain1, .explain2 {
+  padding: 10px;
+  background-color: #635bff99;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 .instructionFrame {
   border: 1px solid #ddd;
   border-radius: 5px;
