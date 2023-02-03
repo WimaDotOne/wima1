@@ -1,4 +1,4 @@
 export const ThankyColor ={
-  themePink: "#ffeff1",
+  themeBlue: "#1DA1F2",
   errorRed: "#e54661"
 }

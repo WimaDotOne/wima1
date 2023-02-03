@@ -1,12 +1,40 @@
 @use "../../../CSS/thanky.module.scss";
 
 .giveTips {
-  background-color: thanky.$themePink;
+  background-color: thanky.$themeGray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 24px;
+  height: 100vh;
 }
 
 @media screen and (max-width: thanky.$narrowScreen){
   .giveTips {
     padding: 24px 2px;
+  }
+}
+
+.placeSearchRow {
+  display: flex;
+  justify-content: center;
+}
+.placeSearch {
+  width: 100%;
+  max-width: 800px;
+}
+
+.searchPlaceTitle {
+  font-family: 'Reenie Beanie';
+  color: darkblue;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 5px 0;
+}
+
+@media screen and (min-width: thanky.$narrowScreen) {
+  .searchPlaceTitle {
+    font-size: 40px;
+    padding: 30px 10px 0;
   }
 }

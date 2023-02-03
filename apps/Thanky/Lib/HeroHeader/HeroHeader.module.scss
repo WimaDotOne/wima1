@@ -10,15 +10,34 @@
 }
 
 h1.bigWords {
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 30px 0;
 }
 h2.bigWords {
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 20px 0;
 }
 
 .smallWords {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 700px) {
+
+  h1.bigWords {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  h2.bigWords {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  
+  .smallWords {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }

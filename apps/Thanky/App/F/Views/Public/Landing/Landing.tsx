@@ -7,6 +7,7 @@ import { GoogleMapScript1 } from "../../../../../../../libs/Core/Core2/GoogleMap
 import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
 import { HeroHeader } from "../../../../../Lib/HeroHeader/HeroHeader"
 import { TwoStickyNotes } from "../../../../../Lib/TwoStickyNotes/TwoStickyNotes"
+import { ThankyPlaceSearch } from "../../H/ThankyPlaceSearch/ThankyPlaceSearch"
 import cl from "./Landing.module.scss"
 
 interface ILandingProp {
@@ -23,20 +24,6 @@ export function Landing({
 
   const shield = useShield()
   const router = useRouter()
-
-  function onPlaceChanged(place: IPlace) {
-    if(!place || !place.place_id) {
-      return
-    }
-    loadEstablishmentJobs(place.place_id)
-  }
-
-  async function loadEstablishmentJobs(placeId: string) {
-    // await Get2(shield, `/tip/LoadEstablishmentJobs?placeId=${placeId}`,
-    // (res)=>{
-    //   console.log(res.jobs)
-    // })
-  }
 
   function onClickAcceptTips() {
     router.push("/apps/Tip/AppTurn/Jobs")
@@ -56,10 +43,8 @@ export function Landing({
       />
       <div className={cl.placeSearchRow}>
         <div className={cl.placeSearch}>
-          <PlaceAutoComplete1
-            cuter
-            ghost="Enter / select an establishment"
-            onPlaceChanged={onPlaceChanged}
+          <ThankyPlaceSearch cuter 
+            ghost="Type then select a place"
             hasAutoComplete={hasAutoComplete}
             setHasAutoComplete={setHasAutoComplete}
           />
@@ -82,7 +67,7 @@ export function Landing({
       </div>
     </LimitWidth>
     <Div height={100} />
-    { 
+    {
       //below could add some example picture and text once dashboard is built,
       //again just like buy me a coffee landing
     }

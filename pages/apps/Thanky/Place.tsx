@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { GiveTips } from '../../../apps/Thanky/App/F/Views/Public/GiveTips/GiveTips'
+import { Place } from '../../../apps/Thanky/App/F/Views/Public/Place/Place'
 
-export default function GiveTipsPage() {
+export default function PlacePage() {
 
   return (<>
     <Head>
@@ -9,7 +9,7 @@ export default function GiveTipsPage() {
       <meta name="description" content="Thanky" />
       <link rel="icon" href="/apps/WimaHome/AppIcons/thanky.png" />
     </Head>
-    <GiveTips />
+    <Place />
   </>)
 }
 

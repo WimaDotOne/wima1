@@ -48,7 +48,7 @@ export function Payouts({
       <div className={cl.explainLiners}>
         <div className={cl.explainLiners}>
           <div className={cl.explainOneliner2}>
-            To create a stripe account, you will need to answer questions like Email, Phone, Legal name, DOB, SSN etc.
+            To create a stripe account, you will need to answer questions like Email, Phone, Legal name, DOB, SSN, Bank account etc.
           </div>
         </div>
       </div>

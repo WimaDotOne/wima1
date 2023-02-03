@@ -4,6 +4,8 @@ interface IHearHeaderProp {
   bigWords: string
   smallWords?: string
   h2?: boolean
+  textColor?: string
+  handWrite?: boolean
 }
 
 export function HeroHeader({
@@ -11,6 +13,7 @@ export function HeroHeader({
   smallWords,
   h2
 }: IHearHeaderProp) {
+
   return(<>
   <div className={cl.hero}>
     <div className={cl.heroInner}>
