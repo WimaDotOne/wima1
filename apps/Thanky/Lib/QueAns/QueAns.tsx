@@ -1,11 +1,29 @@
 import cl from "./QueAns.module.scss"
 
-interface IQueAnsProp {
-
+export interface IQuestionAnswer {
+  Question: String,
+  Answer: String
 }
 
-export function QueAns({}: IQueAnsProp) {
+
+interface IQueAnsProp {
+  questionAnswers: Array<IQuestionAnswer>
+}
+
+export function QueAns({
+  questionAnswers
+}: IQueAnsProp) {
+
+  questionAnswers = questionAnswers || []
   return(<>
-  Q & As
+  <div className={cl.queAnsSpace}>
+  {
+    questionAnswers.map((questionAnswer, i)=>
+    <div className={cl.queAnsRow} key={i}>
+      <div className={cl.question}>{questionAnswer.Question}</div>
+      <div className={cl.answer}>{questionAnswer.Answer}</div>
+    </div>)
+  }
+  </div>
   </>)
 }

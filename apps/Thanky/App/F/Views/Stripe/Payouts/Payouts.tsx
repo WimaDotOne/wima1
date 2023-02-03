@@ -33,32 +33,36 @@ export function Payouts({
     <div className={cl.explainSpace}>
       <div className={cl.explainHeader}>
         <span className={cl.explainWord}>explain</span> <span className={cl.stripeWord}>Stripe</span></div>
-      <div className={cl.explainOneliner}>
-        Stripe is the name of a company that handles online payment.
+      <div className={cl.explainLiners}>
+        <div className={cl.explainOneliner1}>
+          <span className={cl.stripe}>
+            Stripe
+          </span> is a company that provides the financial infrastructure for the internet. 
+        </div>
       </div>
       <Div height={40} />
       <TwoStickyNotes title1="" 
         text1="In order to receive tips online, you need to create a Stripe account." 
         text2="Stripe treats payment receiver as a business that provides a service for a fee."
       />
+      <div className={cl.explainLiners}>
+        <div className={cl.explainLiners}>
+          <div className={cl.explainOneliner2}>
+            To create a stripe account, you will need to answer questions like Email, Phone, Legal name, DOB, SSN etc.
+          </div>
+        </div>
+      </div>
     </div>
-    <QueAns />
-
     <CoffeeWindowViewCard>
-      <div>Explain Stripe</div>
-      <ul>
-        <li>Country</li>
-        <li>Type of business</li>
-        <li>Email</li>
-        <li>Phone number</li>
-        <li>Legal name</li>
-        <li>Date of birth</li>
-        <li>Home address</li>
-        <li>Last 4 digits of Social Security Number</li>
-        <li>Industry</li>
-        <li>Website</li>
-        <li>Bank account or Debit card</li>
-      </ul>
+      <div className={cl.explainOneliner3}>
+         Stripe also asks some more business oriented questions. The following are some pointers of how to answer them.
+      </div>
+      <QueAns questionAnswers={[
+        {Question: "Country:", Answer: "United States"},
+        {Question: "Type of Business:", Answer: "Individual"},
+        {Question: "Industry:", Answer: "Select one that best describes your job or one of your two jobs."},
+        {Question: "Website:", Answer: `https://www.wima.one/apps/Thanky`},
+      ]}/>
     </CoffeeWindowViewCard>
     <CoffeeWindowViewCard>
       <div className={cl.instructionFrame}>
