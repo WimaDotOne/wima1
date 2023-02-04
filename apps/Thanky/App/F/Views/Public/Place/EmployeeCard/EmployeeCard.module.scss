@@ -1,0 +1,48 @@
+
+.employeeCard {
+  width: 180px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.employeeCard:hover {
+  box-shadow: 0 0 0 2px #97bad8;
+}
+
+.employeePhoto {
+  width: 180px;
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstName {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .employeeCard {
+    width: 130px;
+    border-radius: 10px;
+  }
+
+  .employeePhoto {
+    width: 130px;
+    height: 130px;
+  }
+
+}
