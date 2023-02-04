@@ -21,7 +21,7 @@ export function Place({
 
   async function loadPlaceJobs(placeId?: string) {
     if(!placeId) return
-    Get2(shield, `/thanky/LoadPlaceJobs?placeId=${placeId}`, (res)=>{
+    await Get2(shield, `/thanky/LoadPlaceJobs?placeId=${placeId}`, (res)=>{
       setJobs(res.jobs)
     })
   }

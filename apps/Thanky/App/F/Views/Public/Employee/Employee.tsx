@@ -15,21 +15,26 @@ export function Employee({
   const [job, setJob] = useState<IThankyJob>()
   const router = useRouter()
   const shield = useShield()
-
-  const jobId = (router.query.jobId || "") as string
-
-  async function loadJob() {
+ 
+  async function loadJob(jobId?: string) {
     if(!jobId) return
-    
+    await Get2(shield, `/thanky/LoadJob?jobId=${jobId}`, (res)=>{
+      setJob(res.job)
+    })
   }
 
   useEffect(()=>{
-    loadJob()
-  })
+    if(!router.isReady) return
+
+    const jobId = (router.query.jobId || "") as string
+
+    loadJob(jobId)
+
+  }, [router.isReady])
 
   return(<>
   <div>
-  {jobId}
+  {job?.placeName}
   </div>
   </>)
 }
