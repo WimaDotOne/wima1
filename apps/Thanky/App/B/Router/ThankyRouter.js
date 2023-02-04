@@ -6,6 +6,7 @@ import { iSaveJob } from "./Dashboard/iSaveJob.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
 import { iGetOrCreateConnectedAccount } from "./Payout/iGetOrCreateConnectedAccount.js"
+import { iLoadRecentPlaces } from "./Public/iLoadRecentPlaces.js"
 
 const ThankyRouter = express.Router()
 
@@ -18,6 +19,9 @@ ThankyRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, 
 
 //Stripe
 ThankyRouter.post("/GetOrCreateConnectedAccount", iAuth, iGetOrCreateConnectedAccount)
+
+//Public
+ThankyRouter.get("/LoadRecentPlaces", iLoadRecentPlaces)
 
 
 export {

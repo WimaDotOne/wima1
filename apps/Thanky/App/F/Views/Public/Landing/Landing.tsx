@@ -26,16 +26,16 @@ export function Landing({
   const router = useRouter()
 
   function onClickAcceptTips() {
-    router.push("/apps/Tip/AppTurn/Jobs")
+    router.push("/apps/Thanky/Login")
   }
 
   function onClickGiveTips() {
-    router.push("/apps/Tip/AppTurn/GiveTips")
+    router.push("/apps/Thanky/GiveTips")
   }
 
   return(<>
     <GoogleMapScript1 scriptLoaded={scriptLoaded}
-    setScriptLoaded={setScriptLoaded}/>
+      setScriptLoaded={setScriptLoaded}/>
     <div className={cl.landing}>
       <FourItemNavBar navModel={LandingNavModel} />
       <HeroHeader bigWords="A tip is worth a thousand thankies"

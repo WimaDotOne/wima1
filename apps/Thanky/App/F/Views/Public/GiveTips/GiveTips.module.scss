@@ -3,10 +3,10 @@
 .giveTips {
   background-color: thanky.$themeGray;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   padding: 24px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: thanky.$narrowScreen){
@@ -30,6 +30,31 @@
   text-align: center;
   font-size: 30px;
   padding: 20px 5px 0;
+}
+
+.placeListWords {
+  color: black;
+  font-family: 'Reenie Beanie';
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding: 0 10%;
+}
+.placeList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.placeLink {
+  font-family: 'Reenie Beanie';
+  font-size: 25px;
+  color: darkblue;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.placeLink:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: thanky.$narrowScreen) {
