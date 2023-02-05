@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import cl from "./Employee.module.scss"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
+import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
+import { PlaceNavModel } from "../Place/Place"
 
 interface IEmployeeProp {
 
@@ -33,8 +35,17 @@ export function Employee({
   }, [router.isReady])
 
   return(<>
-  <div>
-  {job?.placeName}
+  <div className={cl.grayBack}>
+    <FourItemNavBar navModel={PlaceNavModel} />
+    <div className={cl.employeeInfo}>
+      <div className={cl.photoSpace}>
+        <div className={cl.photo}
+          style={{backgroundImage: `url(${job?.photo?.url})`}}/>
+      </div>
+      <div className={cl.firstName}>{job?.firstName}</div>
+      <div className={cl.jobName}>{job?.jobName}</div>
+      <div className={cl.placeName}>{job?.placeName}</div>
+    </div>
   </div>
   </>)
 }

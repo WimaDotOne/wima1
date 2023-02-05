@@ -1,0 +1,11 @@
+@use "../../../CSS/thanky.module.scss";
+
+.grayBack {
+  background-color: thanky.$themeGray;
+}
+
+.employeeInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

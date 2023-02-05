@@ -5,6 +5,7 @@ import cl from "./Place.module.scss"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import { EmployeeCard } from "./EmployeeCard/EmployeeCard"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
+import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
 
 interface IPlaceProp {
 
@@ -43,6 +44,7 @@ export function Place({
 
   return(<>
   <div className={cl.placeName}>
+    <FourItemNavBar navModel={PlaceNavModel} />
     <HeroHeader bigWords={placeName} h2 />
   </div>
   {
@@ -64,4 +66,11 @@ export function Place({
 
   }
   </>)
+}
+
+export const PlaceNavModel = {
+  homeIconUrl: '/apps/WimaHome/AppIcons/thanky.png',
+  text4: "Login",
+  homeRoute: "/apps/Thanky",
+  route4: "/apps/Thanky/Login"
 }
