@@ -37,14 +37,20 @@ export function Employee({
   return(<>
   <div className={cl.grayBack}>
     <FourItemNavBar navModel={PlaceNavModel} />
-    <div className={cl.employeeInfo}>
+    <div className={cl.info}>
       <div className={cl.photoSpace}>
         <div className={cl.photo}
-          style={{backgroundImage: `url(${job?.photo?.url})`}}/>
+            style={{backgroundImage: `url(${job?.photo?.url})`}}/>
       </div>
-      <div className={cl.firstName}>{job?.firstName}</div>
-      <div className={cl.jobName}>{job?.jobName}</div>
-      <div className={cl.placeName}>{job?.placeName}</div>
+      <div className={cl.firstName}>
+        {job?.firstName}
+      </div>
+      <div className={cl.jobName}>
+        {job?.jobName}
+      </div>
+      <div className={cl.placeName}>
+        {job?.placeName}
+      </div>
     </div>
   </div>
   </>)

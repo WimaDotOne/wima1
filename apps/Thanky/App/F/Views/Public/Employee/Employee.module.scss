@@ -4,8 +4,42 @@
   background-color: thanky.$themeGray;
 }
 
-.employeeInfo {
+.info {
+  padding: 35px 10px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #333;
+}
+
+.photoSpace {
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstName {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.jobName {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.placeName {
+  font-size: 14px;
+  color: gray;
 }
