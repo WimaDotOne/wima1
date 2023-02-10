@@ -60,3 +60,10 @@ export const QuizConfig = {
   quizMaxPerQuizChapter: 100,
   quizQuestionsMaxLength: 100000
 }
+
+export const ThankyConfig = {
+  tipCents: [0, 200, 500, 1000, 2000],
+  stripeChargeRate: 2.9,
+  stripeChargeCents: 30,
+  thankyChargeCents: [0, 14, 55, 41, 26]  //aims to take 50 cents or 100 cents from a tip
+}

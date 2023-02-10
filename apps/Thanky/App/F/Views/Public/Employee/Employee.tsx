@@ -5,6 +5,7 @@ import { IThankyJob } from "../../../Model/IThankyJob"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
 import { PlaceNavModel } from "../Place/Place"
+import { TipBoard } from "../../H/TipBoard/TipBoard"
 
 interface IEmployeeProp {
 
@@ -52,6 +53,11 @@ export function Employee({
         {job?.placeName}
       </div>
     </div>
+  </div>
+  <div>
+  <div className={cl.tipBoardSpace}>
+    <TipBoard job={job}/>
+  </div>
   </div>
   </>)
 }
