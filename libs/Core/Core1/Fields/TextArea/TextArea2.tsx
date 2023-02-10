@@ -6,13 +6,15 @@ interface ITextArea2Prop {
   onChange: (newValue: string)=>void
   maxLength: number,
   rows?: number
+  ghost?: string
 }
 export function TextArea2({
   prompt,
   value,
   onChange,
   maxLength,
-  rows
+  rows,
+  ghost
 }: ITextArea2Prop) {
 
   rows = rows || 3
@@ -23,7 +25,9 @@ export function TextArea2({
       prompt ?
       <div className={cl.prompt}>{prompt}</div>:null
     }
-    <textarea className={cl.textarea} value={value} onChange={(e)=>onChange(e.target.value)}
+    <textarea 
+      placeholder={ghost}
+      className={cl.textarea} value={value} onChange={(e)=>onChange(e.target.value)}
       maxLength={maxLength} rows={rows}/>
   </div>
   </>)

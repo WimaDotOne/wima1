@@ -2,7 +2,12 @@ import { useState } from "react"
 import { CheckField1 } from "../../../../../../../libs/Core/Core1/Fields/CheckField/CheckField1"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import cl from "./TipBoard.module.scss"
-import { ThankyConfig } from "../../../../../../../bConfig"
+import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX, ThankyConfig } from "../../../../../../../bConfig"
+import { TextArea2, TextField2 } from "../../../../../../../libs/Core/Core1/fCore1"
+import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
+import { BigRoundButton } from "../../../../../../../libs/Core/Core2/fCore2"
+import { bool } from "aws-sdk/clients/signer"
+import { PayPopUp } from "../PayPopUp/PayPopUp"
 
 interface ITipBoardProp {
   job?: IThankyJob
@@ -13,9 +18,26 @@ export function TipBoard({
 }: ITipBoardProp) {
 
   const [dollarIndex, setDollarIndex] = useState<number>(1)
+  const [customerName, setCustomerName] = useState<string>("")
+  const [customerComment, setCustomerComment] = useState<string>("")
+  const [showPayPopUp, setShowPayPopUp] = useState<boolean>(false)
 
   function selectDollar(index: number) {
-    setDollarIndex(index)
+    if(index !== dollarIndex) {
+      setDollarIndex(index)
+    }
+  }
+
+  function onChangeCustomerName(value: string) {
+    setCustomerName(value)
+  }
+
+  function onChangeCustomerComment(value: string) {
+    setCustomerComment(value)
+  }
+
+  function onClickTip() {
+    setShowPayPopUp(true)
   }
 
   if(!job) return null
@@ -39,6 +61,31 @@ export function TipBoard({
         onChange={()=>{selectDollar(4)}}
       />
     </div>
+
+    <Div height={15} />
+    <TextField2 
+      ghost="Name (optional)"
+      value={customerName} 
+      onChange={onChangeCustomerName}
+      maxLength={GENERAL_INPUT_MAX}
+    />
+    <Div height={15} />
+    <TextArea2
+      rows={5}
+      ghost="Say something nice… (optional)"
+      value={customerComment}
+      onChange={onChangeCustomerComment}
+      maxLength={GENERAL_TEXTAREA_MAX}
+    />
+    <Div height={20} />
+    <BigRoundButton text="Tip" onClick={onClickTip}/>
+    <Div height={20} />
   </div>
+  {
+    showPayPopUp ?
+    <PayPopUp show={showPayPopUp}
+      setShow={setShowPayPopUp}
+    /> : null
+  }
   </>)
 }
