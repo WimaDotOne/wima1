@@ -6,6 +6,7 @@ import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
 import { PlaceNavModel } from "../Place/Place"
 import { TipBoard } from "../../H/TipBoard/TipBoard"
+import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 
 interface IEmployeeProp {
 
@@ -53,11 +54,17 @@ export function Employee({
         {job?.placeName}
       </div>
     </div>
+    <div className={cl.aboutMeSpace}>
+      <div className={cl.aboutMe}>
+      {job?.aboutMe}
+      </div>
+    </div>
+    <Div height={30} />
   </div>
-  <div>
+  
+  <Div height={20} />
   <div className={cl.tipBoardSpace}>
     <TipBoard job={job}/>
-  </div>
   </div>
   </>)
 }

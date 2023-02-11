@@ -12,7 +12,6 @@ export function PayPopUp({
   setShow
 }: IPayPopUpProp) {
 
-
   return(<>
   <PopUp show={show} setShow={setShow}>
 
