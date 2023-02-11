@@ -3,11 +3,9 @@ import { CheckField1 } from "../../../../../../../libs/Core/Core1/Fields/CheckFi
 import { IThankyJob } from "../../../Model/IThankyJob"
 import cl from "./TipBoard.module.scss"
 import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX, ThankyConfig } from "../../../../../../../bConfig"
-import { TextArea2, TextField2 } from "../../../../../../../libs/Core/Core1/fCore1"
+import { Post2, TextArea2, TextField2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { BigRoundButton } from "../../../../../../../libs/Core/Core2/fCore2"
-import { bool } from "aws-sdk/clients/signer"
-import { PayPopUp } from "../PayPopUp/PayPopUp"
 
 interface ITipBoardProp {
   job?: IThankyJob
@@ -20,8 +18,8 @@ export function TipBoard({
   const [dollarIndex, setDollarIndex] = useState<number>(1)
   const [customerName, setCustomerName] = useState<string>("")
   const [customerComment, setCustomerComment] = useState<string>("")
-  const [showPayPopUp, setShowPayPopUp] = useState<boolean>(false)
-
+  const shield = useShield()
+  
   function selectDollar(index: number) {
     if(index !== dollarIndex) {
       setDollarIndex(index)
@@ -36,8 +34,16 @@ export function TipBoard({
     setCustomerComment(value)
   }
 
-  function onClickTip() {
-    setShowPayPopUp(true)
+  async function onClickTip() {
+    await Post2(shield, "/thanky/CreateCheckoutSession",
+      {
+        jobId: job?._id,
+        dollarIndex
+      },
+      (res)=>{
+        console.log(res.session)
+      }
+    )
   }
 
   if(!job) return null
@@ -81,11 +87,5 @@ export function TipBoard({
     <BigRoundButton text="Tip" onClick={onClickTip}/>
     <Div height={20} />
   </div>
-  {
-    showPayPopUp ?
-    <PayPopUp show={showPayPopUp}
-      setShow={setShowPayPopUp}
-    /> : null
-  }
   </>)
 }

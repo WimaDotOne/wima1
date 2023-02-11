@@ -5,6 +5,7 @@ import { iLoadHome } from "./Dashboard/iLoadHome.js"
 import { iSaveJob } from "./Dashboard/iSaveJob.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
+import { iCreateCheckoutSession } from "./Payout/iCreateCheckoutSession.js"
 import { iGetOrCreateConnectedAccount } from "./Payout/iGetOrCreateConnectedAccount.js"
 import { iLoadJob } from "./Public/iLoadJob.js"
 import { iLoadPlaceJobs } from "./Public/iLoadPlaceJobs.js"
@@ -21,6 +22,8 @@ ThankyRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, 
 
 //Stripe
 ThankyRouter.post("/GetOrCreateConnectedAccount", iAuth, iGetOrCreateConnectedAccount)
+//Public Stripe
+ThankyRouter.post("/CreateCheckoutSession", iCreateCheckoutSession)
 
 //Public
 ThankyRouter.get("/LoadRecentPlaces", iLoadRecentPlaces)

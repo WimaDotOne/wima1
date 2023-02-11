@@ -66,8 +66,8 @@ export async function iCreateCheckoutSession(req, res) {
       cancel_url: `${process.env.DOMAIN}/apps/Thanky/Employee?jobId=${encodeURIComponent(jobId)}`
     })
 
-
-    return res.json({ok: true})
+    console.log(session)
+    return res.json({ok: true, session})
 
   } catch(err) {
     return res.json({ok:false, error: err.message })
