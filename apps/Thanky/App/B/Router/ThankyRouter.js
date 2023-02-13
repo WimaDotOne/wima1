@@ -6,7 +6,9 @@ import { iSaveJob } from "./Dashboard/iSaveJob.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
 import { iCreateCheckoutSession } from "./Payout/iCreateCheckoutSession.js"
+import { iDeleteConnectedAccount } from "./Payout/iDeleteConnectedAccount.js"
 import { iGetOrCreateConnectedAccount } from "./Payout/iGetOrCreateConnectedAccount.js"
+import { iLoadConnectedAccountStatus } from "./Payout/iLoadConnectedAccountStatus.js"
 import { iLoadJob } from "./Public/iLoadJob.js"
 import { iLoadPlaceJobs } from "./Public/iLoadPlaceJobs.js"
 import { iLoadRecentPlaces } from "./Public/iLoadRecentPlaces.js"
@@ -22,6 +24,8 @@ ThankyRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, 
 
 //Stripe
 ThankyRouter.post("/GetOrCreateConnectedAccount", iAuth, iGetOrCreateConnectedAccount)
+ThankyRouter.get("/LoadConnectedAccountStatus", iAuth, iLoadConnectedAccountStatus)
+ThankyRouter.post("/DeleteConnectedAccount", iAuth, iDeleteConnectedAccount)
 //Public Stripe
 ThankyRouter.post("/CreateCheckoutSession", iCreateCheckoutSession)
 

@@ -1,0 +1,46 @@
+.pageTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 10px 10px;
+}
+
+.instructionFrame {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px 50px;
+}
+
+.stripe {
+  color: #635bff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.info .connected  {
+  color: #34a853;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.disconnectSpace {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.gear {
+  margin-left: 10px;
+}

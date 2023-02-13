@@ -62,6 +62,7 @@ import { SvgHome2 } from "./Common/Home/SvgHome2"
 import { SvgProfile2 } from "./Social/Profile/SvgProfile2"
 import { SvgDollarSquare } from "./Finance/Dollar/SvgDollarSquare"
 import { SvgLightening } from "./Finance/Lightening/SvgLightening"
+import { SvgGearNonFill } from "./Common/Gear/GearNonFill"
 
 export function SvgIcon({
   name,
@@ -147,6 +148,7 @@ export function SvgIcon({
     case "textfile": return <SvgTextFile width={width} fill={color} fill2={color2}/>
     case "penfile": return <SvgPenFile width={width} fill={color} fill2={color2}/>
     case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
+    case "gear.nonfill": return <SvgGearNonFill width={width} fill={color}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
     case "pin": return <SvgPin width={width} fill={color} />
