@@ -11,6 +11,7 @@ export function Payouts({
 
 }: IPayoutsProp) {
 
+  const [hasSetupStarted, setHasSetupStarted] = useState<boolean>(false)
   const [hasSetup, setHasSetup] = useState<boolean>(false)
   const [email, setEmail] = useState<string>("")
 
@@ -19,6 +20,7 @@ export function Payouts({
   async function loadStripeStatus() {
     await Get2(shield, "/thanky/LoadConnectedAccountStatus",
       (res)=>{
+        setHasSetupStarted(res.setupStarted)
         setHasSetup(res.setup)
       }
     )
@@ -36,7 +38,7 @@ export function Payouts({
   {
     hasSetup ? 
     <PayoutHasSetup falsifySetUp={falsifySetUp}/> :
-    <PayoutSetup />
+    <PayoutSetup hasSetupStarted={hasSetupStarted}/>
   }
   
   </>)

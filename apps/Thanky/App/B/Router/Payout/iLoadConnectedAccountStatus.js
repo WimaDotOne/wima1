@@ -14,7 +14,7 @@ export async function iLoadConnectedAccountStatus(req, res) {
     }
 
     if(!thankyAccount.stripeConnectedAccountId) {
-      return res.json({ok:true, setup: false, message: "Not connected to Stripe"})
+      return res.json({ok:true, message: "Not connected to Stripe"})
     }
     
     //Get connected account
@@ -26,11 +26,11 @@ export async function iLoadConnectedAccountStatus(req, res) {
     }
 
     if(!connectedAccount.details_submitted) {
-      return res.json({ok:true, setup: false, message: "details_submitted false"})
+      return res.json({ok:true, setupStarted: true, message: "details_submitted false"})
     }
 
     if(!connectedAccount.charges_enabled) {
-      return res.json({ok:true, setup: false, message: "charges_enabled false"})
+      return res.json({ok:true, setupStarted: true, message: "charges_enabled false"})
     }
 
     return res.json({ok: true, setup: true, email: connectedAccount.email})

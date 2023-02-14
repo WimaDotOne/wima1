@@ -9,11 +9,11 @@ import { TwoStickyNotes } from "../../../../../../Lib/TwoStickyNotes/TwoStickyNo
 import { QueAns } from "../../../../../../Lib/QueAns/QueAns"
 
 interface IPayoutSetupProp {
-
+  hasSetupStarted?: boolean
 }
 
 export function PayoutSetup({
-  
+  hasSetupStarted
 }: IPayoutSetupProp) {
 
   const shield = useShield()
@@ -27,12 +27,15 @@ export function PayoutSetup({
     )
   }
 
+  const titleText = hasSetupStarted ? "Finish Setting up Payout" : "Set up Payout"
   return(<>
   <ThankyWindow selectItemId={ThankyMenuTurn.Payouts}>
     <div className={cl.pageTitle}>Payouts</div>
     <div className={cl.explainSpace}>
       <div className={cl.explainHeader}>
-        <span className={cl.explainWord}>explain</span> <span className={cl.stripeWord}>Stripe</span></div>
+        <span className={cl.explainWord}>explain</span> 
+        <span className={cl.stripeWord}>Stripe</span>
+      </div>
       <div className={cl.explainLiners}>
         <div className={cl.explainOneliner1}>
           <span className={cl.stripe}>
@@ -55,7 +58,7 @@ export function PayoutSetup({
     </div>
     <CoffeeWindowViewCard>
       <div className={cl.explainOneliner3}>
-         Stripe also asks some more business oriented questions. The following are some pointers of how to answer them.
+         Stripe asks some more business oriented questions. The following are some pointers of how to answer them.
       </div>
       <QueAns questionAnswers={[
         {Question: "Country:", Answer: "United States"},
@@ -69,7 +72,7 @@ export function PayoutSetup({
         <SvgIcon name="lightening" width={32} color="#333"/>
         <div className={cl.instruction}>
           <div className={cl.instructionTitle}>
-            Set up Instant Payouts
+            {titleText}
           </div>
           <div className={cl.instuctionText}>
             Get paid to your local bank account automatically. No minimum threshold. If you don't have a Stripe account, you'll be asked to create one for free.
