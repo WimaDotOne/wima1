@@ -1,3 +1,4 @@
+import { useRouter } from "next/router"
 import { ReactNode } from "react"
 import { ICoffeeMenu } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/Model/ICoffeeMenu"
 import { CoffeeWindow } from "../../../../../../libs/Core/Core2/CoffeeWindow/F/View/CoffeeWindow/CoffeeWindow"
@@ -13,11 +14,17 @@ export function ThankyWindow({
   selectItemId
 }: IThankyWindowProp) {
 
+  const router = useRouter()
   const menu = GetMenu()
+
+  function goLanding() {
+    router.push("/apps/Thanky")
+  }
 
   return(<>
   <CoffeeWindow homeIconUrl="/apps/WimaHome/AppIcons/thanky.png"
     photoUrl="/favicon.ico"
+    onClickHomeIcon={goLanding}
     menu={menu}
     selectItemId={selectItemId}
   >

@@ -61,6 +61,20 @@
   background-color: #fcfcfc;
 }
 
+.notSetup {
+  text-align: center;
+  font-weight: 600;
+  color: #aaa;
+  font-size: 20px;
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .tipBoardSpace {
   display: flex;
   padding: 20px 10px 30px;

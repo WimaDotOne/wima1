@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ThankyConfig } from "../../../../../../../bConfig";
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1";
 import { PayoutHasSetup } from "./PayoutHasSetup/PayoutHasSetup";
 import { PayoutSetup } from "./PayoutSetup/PayoutSetup";
@@ -11,35 +12,33 @@ export function Payouts({
 
 }: IPayoutsProp) {
 
-  const [hasSetupStarted, setHasSetupStarted] = useState<boolean>(false)
-  const [hasSetup, setHasSetup] = useState<boolean>(false)
-  const [email, setEmail] = useState<string>("")
+  const [status, setStatus] = useState<number>(0)
 
   const shield = useShield()
 
   async function loadStripeStatus() {
     await Get2(shield, "/thanky/LoadConnectedAccountStatus",
       (res)=>{
-        setHasSetupStarted(res.setupStarted)
-        setHasSetup(res.setup)
+        setStatus(+res.status)
       }
     )
   }
 
   function falsifySetUp() {
-    setHasSetup(false)
+    setStatus(ThankyConfig.connectedAccountStatus.setupStarted)
   }
 
   useEffect(()=>{
     loadStripeStatus()
   }, [])
 
-  return(<>
-  {
-    hasSetup ? 
-    <PayoutHasSetup falsifySetUp={falsifySetUp}/> :
-    <PayoutSetup hasSetupStarted={hasSetupStarted}/>
+  if(status === ThankyConfig.connectedAccountStatus.setupFinished) {
+    return (<PayoutHasSetup falsifySetUp={falsifySetUp}/>)
   }
-  
-  </>)
+
+  return(
+    <PayoutSetup hasSetupStarted={
+      status === ThankyConfig.connectedAccountStatus.setupStarted
+    }/>
+  )
 }

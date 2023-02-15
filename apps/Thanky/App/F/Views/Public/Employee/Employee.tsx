@@ -7,6 +7,7 @@ import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar
 import { PlaceNavModel } from "../Place/Place"
 import { TipBoard } from "../../H/TipBoard/TipBoard"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
+import { ThankyConfig } from "../../../../../../../bConfig"
 
 interface IEmployeeProp {
 
@@ -17,6 +18,8 @@ export function Employee({
 } : IEmployeeProp) {
 
   const [job, setJob] = useState<IThankyJob>()
+  const [connectedAccountStatus, setConnectedAccountStatus] = useState<number>(0)
+  
   const router = useRouter()
   const shield = useShield()
  
@@ -24,6 +27,7 @@ export function Employee({
     if(!jobId) return
     await Get2(shield, `/thanky/LoadJob?jobId=${jobId}`, (res)=>{
       setJob(res.job)
+      setConnectedAccountStatus(res.connectedAccountStatus)
     })
   }
 
@@ -63,8 +67,15 @@ export function Employee({
   </div>
   
   <Div height={20} />
-  <div className={cl.tipBoardSpace}>
-    <TipBoard job={job}/>
-  </div>
+  {
+    connectedAccountStatus === ThankyConfig.connectedAccountStatus.setupFinished ?
+    <div className={cl.tipBoardSpace}>
+      <TipBoard job={job}/>
+    </div>:
+    <div className={cl.notSetup}>
+    {job?.firstName} has not set up payment to receive tip yet.
+    </div>
+  }
+  <Div height={100} />
   </>)
 }
