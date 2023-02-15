@@ -8,6 +8,10 @@ export async function iCreateCheckoutSession(req, res) {
     
     const jobId = req.body.jobId || ""
     const dollarIndex = +(req.body.dollarIndex || 0)
+    const customerName = (req.body.customerName || "").trim()
+    const customerComment = (req.body.customerComment || "")
+
+    
 
     let priceId = ""
     let appFee = 100

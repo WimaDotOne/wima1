@@ -38,7 +38,9 @@ export function TipBoard({
     await Post2(shield, "/thanky/CreateCheckoutSession",
       {
         jobId: job?._id,
-        dollarIndex
+        dollarIndex,
+        customerName,
+        customerComment
       },
       (res)=>{
         console.log(res.session)
