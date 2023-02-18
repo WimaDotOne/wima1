@@ -6,6 +6,7 @@ import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX, ThankyConfig } from "../../../
 import { Post2, TextArea2, TextField2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { BigRoundButton } from "../../../../../../../libs/Core/Core2/fCore2"
+import { useRouter } from "next/router"
 
 interface ITipBoardProp {
   job?: IThankyJob
@@ -19,6 +20,7 @@ export function TipBoard({
   const [customerName, setCustomerName] = useState<string>("")
   const [customerComment, setCustomerComment] = useState<string>("")
   const shield = useShield()
+  const router = useRouter()
   
   function selectDollar(index: number) {
     if(index !== tipIndex) {
@@ -43,7 +45,12 @@ export function TipBoard({
         customerComment
       },
       (res)=>{
-        console.log(res.session)
+        const session = res.session
+        const url = session?.url
+        
+        if(url) {
+          router.push(url)
+        }
       }
     )
   }
