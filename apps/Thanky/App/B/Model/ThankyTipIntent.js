@@ -5,10 +5,10 @@ const schema = mongoose.Schema({
   jobId: { type: mongoose.Schema.Types.ObjectId, required: true, index: true, ref: "ThankyJob" },
   customerName: { type: String },
   customerComment: { type: String },
-  createdUTC: { type: Number },
-  paymentSubmitted: { type: Boolean, index: true, default: false}
+  tipIndex: { type: Number}, 
+  createdUTC: { type: Number }
 }, {
   timestamps: { currentTime: () => Date.now() }
 })
 
-export default mongoose.model('ThankyTip', schema)
+export default mongoose.model('ThankyTipIntent', schema)

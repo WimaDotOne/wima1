@@ -1,3 +1,4 @@
+
 // Libs
 export const bConfig = {
   bRoute1: "/b",
@@ -66,5 +67,29 @@ export const ThankyConfig = {
     setupNotStarted: 1,
     setupStarted: 2,
     setupFinished: 3
+  },
+  tip1: {
+    index: 1,
+    price: 200, // when change must also change priceId in Stripe
+    priceId: "price_1MaQNdLL7rsy5kikBT5jilGE",
+    appFee: 50
+  },
+  tip2: {
+    index: 2,
+    price: 500,
+    priceId: "price_1MaQPVLL7rsy5kikHPQ5a2C2",
+    appFee: 100
+  },
+  tip3: {
+    index: 3,
+    price: 1000,
+    priceId: "price_1MaQPyLL7rsy5kikFtJfgMNg",
+    appFee: 100
+  },
+  tip4: {
+    index: 4,
+    price: 1500,
+    priceId: "price_1MaQQYLL7rsy5kikD9qR8uzu",
+    appFee: 100
   }
 }

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { CheckField1 } from "../../../../../../../libs/Core/Core1/Fields/CheckField/CheckField1"
 import { IThankyJob } from "../../../Model/IThankyJob"
 import cl from "./TipBoard.module.scss"
-import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX } from "../../../../../../../bConfig"
+import { GENERAL_INPUT_MAX, GENERAL_TEXTAREA_MAX, ThankyConfig } from "../../../../../../../bConfig"
 import { Post2, TextArea2, TextField2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { BigRoundButton } from "../../../../../../../libs/Core/Core2/fCore2"
@@ -15,14 +15,14 @@ export function TipBoard({
   job
 }: ITipBoardProp) {
 
-  const [dollarIndex, setDollarIndex] = useState<number>(1)
+  const [tipIndex, setTipIndex] = useState<number>(ThankyConfig.tip1.index)
   const [customerName, setCustomerName] = useState<string>("")
   const [customerComment, setCustomerComment] = useState<string>("")
   const shield = useShield()
   
   function selectDollar(index: number) {
-    if(index !== dollarIndex) {
-      setDollarIndex(index)
+    if(index !== tipIndex) {
+      setTipIndex(index)
     }
   }
 
@@ -38,7 +38,7 @@ export function TipBoard({
     await Post2(shield, "/thanky/CreateCheckoutSession",
       {
         jobId: job?._id,
-        dollarIndex,
+        tipIndex,
         customerName,
         customerComment
       },
@@ -56,16 +56,20 @@ export function TipBoard({
       Tip <span className={cl.employeeName}>{job?.firstName}</span>
     </div>
     <div className={cl.dollarAmount}>
-      <CheckField1 big prompt="$2" checked={dollarIndex===1}
+      <CheckField1 big prompt={DollarText(ThankyConfig.tip1)} 
+        checked={tipIndex===ThankyConfig.tip1.index}
         onChange={()=>{selectDollar(1)}}
       />
-      <CheckField1 big prompt="$5" checked={dollarIndex===2}
+      <CheckField1 big prompt={DollarText(ThankyConfig.tip2)}  
+        checked={tipIndex===ThankyConfig.tip2.index}
         onChange={()=>{selectDollar(2)}}
       />
-      <CheckField1 big prompt="$10" checked={dollarIndex===3}
+      <CheckField1 big prompt={DollarText(ThankyConfig.tip3)}  
+        checked={tipIndex===ThankyConfig.tip3.index}
         onChange={()=>{selectDollar(3)}}
       />
-      <CheckField1 big prompt="$15" checked={dollarIndex===4}
+      <CheckField1 big prompt={DollarText(ThankyConfig.tip4)}  
+        checked={tipIndex===ThankyConfig.tip4.index}
         onChange={()=>{selectDollar(4)}}
       />
     </div>
@@ -90,4 +94,11 @@ export function TipBoard({
     <Div height={20} />
   </div>
   </>)
+}
+
+function DollarText(tip: {price: number}) {
+  const cents = tip.price
+  if(!cents) return ""
+  const dollar = cents/100
+  return "$"+dollar
 }
