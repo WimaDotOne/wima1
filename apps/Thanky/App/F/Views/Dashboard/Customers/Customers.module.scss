@@ -1,0 +1,62 @@
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.messages {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noMessage {
+  font-size: 18px;
+  font-weight: 500;
+  color: #888;
+  text-align: center;
+  padding: 20px 5px;
+  animation: fadeIn 4s;
+}
+
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.cardHeader {
+  display: grid;
+  grid-template-columns: 35px auto 100px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.customerName {
+  font-weight: 500;
+  color: #333;
+}
+
+.date {
+  font-size: 12px;
+  color: #888;
+}
+
+.customerComment {
+  padding: 0 0 0 35px;
+  color: #666;
+  white-space: pre-wrap;
+}

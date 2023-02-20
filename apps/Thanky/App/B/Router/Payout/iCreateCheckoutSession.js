@@ -10,7 +10,7 @@ export async function iCreateCheckoutSession(req, res) {
     const jobId = req.body.jobId || ""
     const tipIndex = +(req.body.tipIndex || 0)
     const customerName = (req.body.customerName || "").trim()
-    const customerComment = (req.body.customerComment || "")
+    const customerComment = (req.body.customerComment || "").trim()
 
     let priceId = ""
     let appFee = 0
@@ -79,7 +79,7 @@ export async function iCreateCheckoutSession(req, res) {
       createdUTC: nowUTC
     })
 
-    //await thankyTipIntent.save()
+    await thankyTipIntent.save()
 
     return res.json({ok: true, session})
 

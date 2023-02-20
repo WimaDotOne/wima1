@@ -32,7 +32,7 @@ import { FileInput } from "./FileUp/fFileUp"
 import { PhotoInput } from "./FileUp/fFileUp"
 import { IFormTextField } from "./FileUp/fFileUp"
 import { EnumText } from "./Util/F/ClassName/Enum/Enum"
-import { TextDate1 } from "./Util/F/Time/Date"
+import { TextDate1, TextDate2 } from "./Util/F/Time/Date"
 import { ForceHttps } from "./Util/F/Url/ForceHttps"
 
 export {
