@@ -72,6 +72,7 @@ export async function iCreateCheckoutSession(req, res) {
     const nowUTC = Date.now()
     const thankyTipIntent = new ThankyTipIntent ({
       _id: mongoose.Types.ObjectId(),
+      stripeCheckoutSessionId: session.id || "",
       jobId: job._id,
       tipIndex,
       customerName,

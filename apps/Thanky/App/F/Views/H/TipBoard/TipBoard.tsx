@@ -45,7 +45,7 @@ export function TipBoard({
       (res)=>{
         const session = res.session
         const url = session?.url
-        
+        console.log(session)
         if(url) {
           window.open(url)
         }

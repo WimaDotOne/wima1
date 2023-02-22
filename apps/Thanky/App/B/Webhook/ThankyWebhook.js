@@ -1,10 +1,10 @@
 import express from "express"
-import { whCheckoutWebhook } from "./Payout/whCheckoutWebhook.js"
+import { whOnCheckoutCompleted } from "./Payout/whOnCheckoutCompleted.js"
 
 const ThankyWebhook = express.Router()
 
 //Dashboard
-ThankyWebhook.post("/CheckoutWebhook", whCheckoutWebhook)
+ThankyWebhook.post("/CheckoutCompleted", whOnCheckoutCompleted)
 
 export {
   ThankyWebhook
