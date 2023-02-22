@@ -12,11 +12,18 @@ import { SocialRouter } from "./apps/Social/B/Router/SocialRouter.js"
 import { LingoRouter } from "./apps/Lingo/B/Router/LingoRouter.js"
 import { QuizRouter } from "./apps/Quiz/B/Router/QuizRouter.js"
 import { ThankyRouter } from "./apps/Thanky/App/B/Router/ThankyRouter.js"
+import { ThankyWebhook } from "./apps/Thanky/App/B/Webhook/ThankyWebhook.js"
 
 dotenv.config()
 ConnectDb(process.env.MONGO_DB)
 
 const server = express()
+
+
+//stripe webhook (put before express.json())
+server.use("/webhook/thanky", express.raw({type: 'application/json'}), ThankyWebhook)
+
+
 server.use(express.json())
 server.use(cookieParser())
 
