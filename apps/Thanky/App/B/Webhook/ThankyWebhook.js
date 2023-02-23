@@ -1,14 +1,10 @@
 import express from "express"
-import { whOnCheckoutCompleted } from "./Payout/whOnCheckoutCompleted.js"
-import { whOnPaymentFailed } from "./Payout/whOnPaymentFailed.js"
-import { whOnPaymentSucceeded } from "./Payout/whOnPaymentSucceeded.js"
+import { whCheckoutEvent } from "./Payout/whCheckoutEvent.js"
 
 const ThankyWebhook = express.Router()
 
 //Dashboard
-ThankyWebhook.post("/CheckoutCompleted", whOnCheckoutCompleted)
-ThankyWebhook.post("/PaymentSucceeded", whOnPaymentSucceeded)
-ThankyWebhook.post("/PaymentFailed", whOnPaymentFailed)
+ThankyWebhook.post("/CheckoutEvent", whCheckoutEvent)
 
 export {
   ThankyWebhook

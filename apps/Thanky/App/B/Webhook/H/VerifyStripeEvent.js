@@ -1,13 +1,12 @@
 import Stripe from "stripe"
 
-export function VerifyStripeEvent(req, res) {
+export function VerifyStripeEvent(req, res, endpointSecret) {
 
   let event = req.body
-  
-  const stripe = new Stripe(process.env.THANKY_STRIPE_SECRET_KEY)
-  const endpointSecret = process.env.THANKY_WEBHOOK_SECRET_KEY
 
   if(endpointSecret) {
+    const stripe = new Stripe(process.env.THANKY_STRIPE_SECRET_KEY)
+
     // Only verify the event if you have an endpoint secret defined.
     // Get the signature sent by Stripe
     const signature = req.headers['stripe-signature']
