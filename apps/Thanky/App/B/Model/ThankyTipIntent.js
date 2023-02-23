@@ -11,11 +11,12 @@ const schema = mongoose.Schema({
       }
     }
   },
-  stripeCheckoutCompleted: { type: Boolean, index: true, default: false},
-  stripePaymentSucceeded: { type: Boolean, index: true, default: false},
+  stripeCheckoutCompleted: { type: Boolean, index: true },
+  stripePaymentSucceeded: { type: Boolean, index: true },
+  stripePaymentFailed: { type: Boolean, index: true },
   customerName: { type: String },
   customerComment: { type: String },
-  tipIndex: { type: Number}, 
+  tipIndex: { type: Number }, 
   createdUTC: { type: Number }
 }, {
   timestamps: { currentTime: () => Date.now() }
