@@ -66,7 +66,7 @@ export function Customers({
   <ThankyWindow selectItemId={ThankyMenuTurn.Customers}>
     <CoffeeWindowViewCard shiftUp>
     <div className={cl.title}>
-      Messages from customers intending to tip
+      Most recent messages from customers intending to tip
     </div>
     <Div height={25} />
     <div className={cl.buttons}>
