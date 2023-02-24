@@ -9,6 +9,7 @@ import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadAttendantPhoto } from "./ImageUpload/iUploadAttendantPhoto.js"
 import { iCreateCheckoutSession } from "./Payout/iCreateCheckoutSession.js"
 import { iDeleteConnectedAccount } from "./Payout/iDeleteConnectedAccount.js"
+import { iGetExpressDashboardLoginLink } from "./Payout/iGetExpressDashboardLoginLink.js"
 import { iGetOrCreateConnectedAccount } from "./Payout/iGetOrCreateConnectedAccount.js"
 import { iLoadConnectedAccountStatus } from "./Payout/iLoadConnectedAccountStatus.js"
 import { iLoadJob } from "./Public/iLoadJob.js"
@@ -30,6 +31,8 @@ ThankyRouter.post("/UploadAttendantPhoto", iAuth, iNewTempFolder, iImageMulter, 
 ThankyRouter.post("/GetOrCreateConnectedAccount", iAuth, iGetOrCreateConnectedAccount)
 ThankyRouter.get("/LoadConnectedAccountStatus", iAuth, iLoadConnectedAccountStatus)
 ThankyRouter.post("/DeleteConnectedAccount", iAuth, iDeleteConnectedAccount)
+ThankyRouter.get("/GetExpressDashboardLoginLink", iAuth, iGetExpressDashboardLoginLink)
+
 //Public Stripe
 ThankyRouter.post("/CreateCheckoutSession", iCreateCheckoutSession)
 
