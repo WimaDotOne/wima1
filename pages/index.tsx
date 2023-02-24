@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (<>
     <Head>
       <title>Wima</title>
-      <meta name="description" content="Wima web apps in one place: Sociable, Lingo, Movic, Book, BN Cafe Recipe" />
+      <meta name="description" content="Wima web apps in one place: Thanky, Sociable, Lingo, Movic, Book, BN Cafe Recipe" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
     

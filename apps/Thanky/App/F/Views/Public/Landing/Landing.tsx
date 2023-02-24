@@ -38,8 +38,8 @@ export function Landing({
       setScriptLoaded={setScriptLoaded}/>
     <div className={cl.landing}>
       <FourItemNavBar navModel={LandingNavModel} />
-      <HeroHeader bigWords="A tip is worth a thousand thankies"
-        smallWords="Tip online when there is no tip jar."
+      <HeroHeader bigWords="A tip is one of the best thankies"
+        smallWords="Let's try accepting or giving tips online for a change"
       />
       <div className={cl.placeSearchRow}>
         <div className={cl.placeSearch}>
@@ -55,9 +55,9 @@ export function Landing({
 
     <LimitWidth maxWidth={800}>
       <TwoStickyNotes title1="To employees:"
-        text1="Find your establisment, add a photo, tell your customers."
+        text1="Help Thanky help you. Let your customers know you accept tips @ Thanky"
         title2="To customers:"
-        text2="Didn't see a tip jar? Ask your servers if they accept tips online @ Thanky."
+        text2="More than likely you will not find the employees here. Well, tip them in person."
       />
     </LimitWidth>
     <LimitWidth>
