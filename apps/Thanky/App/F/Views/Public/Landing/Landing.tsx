@@ -1,8 +1,7 @@
 import { useRouter } from "next/router"
 import { useState } from "react"
 import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
-import { BigButton, Div, LimitWidth, PlaceAutoComplete1 } from "../../../../../../../libs/Core/Core2/fCore2"
-import { IPlace } from "../../../../../../../libs/Core/Core2/GoogleMap/F/Model/IPlace"
+import { BigButton, BigRoundButton, Div, LimitWidth, PlaceAutoComplete1 } from "../../../../../../../libs/Core/Core2/fCore2"
 import { GoogleMapScript1 } from "../../../../../../../libs/Core/Core2/GoogleMap/fGoogleMap"
 import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
 import { HeroHeader } from "../../../../../Lib/HeroHeader/HeroHeader"
@@ -39,7 +38,7 @@ export function Landing({
     <div className={cl.landing}>
       <FourItemNavBar navModel={LandingNavModel} />
       <HeroHeader bigWords="A tip is one of the best thankies"
-        smallWords="Let's try accepting or giving tips online for a change"
+        smallWords="Let's give accepting and giving tips online a try"
       />
       <div className={cl.placeSearchRow}>
         <div className={cl.placeSearch}>
@@ -66,11 +65,58 @@ export function Landing({
         <BigButton bigger text="Accept tips" onClick={onClickAcceptTips} color="salmon"/>
       </div>
     </LimitWidth>
-    <Div height={100} />
-    {
-      //below could add some example picture and text once dashboard is built,
-      //again just like buy me a coffee landing
-    }
+    <Div height={50} />
+    <LimitWidth beige>
+      <Div height={50} />
+      <div className={cl.bigTitle}>the gratitude journal</div>
+      <Div height={50} />
+      <div className={cl.smallTitle}>Gratitude</div>
+      <Div height={40} />
+      <div className={cl.words}>
+        See the world through the lens of gratitude. It imbues your life with optism, resilience, and help you make healthier choices.
+      </div>
+      <Div height={50} />
+      <div className={cl.imageSpace}>
+        <div className={cl.image} style={{backgroundImage: 'url(/apps/Thanky/Background/hopefulEarth.jpg)'}} />
+      </div>
+
+      <Div height={100} />
+      <div className={cl.smallTitle}>Wisdom</div>
+      <Div height={20} />
+      <div className={cl.words}>
+        When we learn to accentuate thankfulness, calm, and compassion, we move through life with greater skill.
+      </div>
+      <Div height={50} />
+      <div className={cl.imageSpace}>
+        <div className={cl.image} style={{backgroundImage: 'url(/apps/Thanky/Background/helpEachOther.jpg)'}} />
+      </div>
+
+      <Div height={100} />
+      <div className={cl.smallTitle}>Love</div>
+      <Div height={20} />
+      <div className={cl.words}>
+        Contentment in a relationship comes from looking for what you're grateful for in your mate, not the ways you think they fall short.
+      </div>
+      <Div height={50} />
+      <div className={cl.imageSpace}>
+        <div className={cl.image} style={{backgroundImage: 'url(/apps/Thanky/Background/loveBirds.jpg)'}} />
+      </div>
+      <Div height={100} />
+    </LimitWidth>
+    <LimitWidth>
+      <Div height={50} />
+      <div className={cl.iamWaitor}>
+        I am a waitress, barista, cashier, sales clerk, bar tender, receptionist, hotel housekeeper, …
+      </div>
+      <Div height={50} />
+      <div className={cl.lastButtonSpace}>
+        <BigRoundButton text="Start a Thanky account"
+          textColor="#333"
+          buttonColor="#ffdd04"
+          onClick={onClickAcceptTips}/>
+      </div>
+      <Div height={200} />
+    </LimitWidth>
   </>)
 }
 

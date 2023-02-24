@@ -34,3 +34,56 @@
     grid-column-gap: 10px;
   }
 }
+
+.smallTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bigTitle {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .bigTitle {
+    font-size: 30px;
+  }
+}
+
+.words {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  color: #333;
+}
+
+.imageSpace {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 200px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 0 10px white;;
+}
+
+.iamWaitor {
+  font-size: 26px;
+  color: #555;
+}
+
+.lastButtonSpace {
+  display: flex;
+  justify-content: center;
+}
