@@ -84,7 +84,7 @@ export function Landing({
       <div className={cl.smallTitle}>Identify your fear</div>
       <Div height={20} />
       <div className={cl.words}>
-        I am afraid of asking people for recommendation letters from the bottom of my heart.
+        I would be truly terrified if I have to ask people for recommendation letters.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
