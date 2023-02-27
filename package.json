@@ -6,6 +6,9 @@
   "cacheDirectories": [
     ".next/cache"
   ],
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "nodemon Server.js",
     "next": "next dev",
