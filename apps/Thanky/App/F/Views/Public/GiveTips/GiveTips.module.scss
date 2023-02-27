@@ -2,11 +2,6 @@
 
 .giveTips {
   background-color: thanky.$themeGray;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
-  padding: 24px;
-  min-height: 100vh;
 }
 
 @media screen and (max-width: thanky.$narrowScreen){
@@ -25,25 +20,32 @@
 }
 
 .searchPlaceTitle {
-  font-family: 'Reenie Beanie';
-  color: darkblue;
+  color: #333;
   text-align: center;
   font-size: 30px;
-  padding: 20px 5px 0;
+  padding: 20px 5px 10px;
+  font-weight: 600;
 }
 
 .placeListWords {
   color: black;
-  font-family: 'Reenie Beanie';
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
   padding: 0 10%;
+  text-align: center;
 }
 .placeList {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  min-height: 200px;
+  padding: 50px 20px;
+  box-shadow: 0 3px 12px #3339;
 }
+
 .placeLink {
   font-family: 'Reenie Beanie';
   font-size: 25px;
@@ -60,6 +62,6 @@
 @media screen and (min-width: thanky.$narrowScreen) {
   .searchPlaceTitle {
     font-size: 40px;
-    padding: 30px 10px 0;
+    padding: 30px 10px 10px;
   }
 }

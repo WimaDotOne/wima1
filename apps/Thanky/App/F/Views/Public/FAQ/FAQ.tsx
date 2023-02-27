@@ -51,7 +51,7 @@ export function FAQ({
     <Afaq question="Is there a fee to use Thanky?"
       answerParagrahs={[
         "We do not charge a monthly fee. All features are free for everyone.",
-        "When a customer tips a server using credit card, a transaction fee of 2.9% and 50 cents will be taken away from the tip."
+        "When a customer tips a server, a fee of 50¢ or $1 will be taken away from the tip, part of which is for credit card transaction fee."
       ]}
     />
   </LimitWidth>

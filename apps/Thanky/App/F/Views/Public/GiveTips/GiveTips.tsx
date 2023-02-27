@@ -5,8 +5,6 @@ import { Get2, useShield } from "../../../../../../../libs/Core/Core1/fCore1"
 import { Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { IPlace } from "../../../../../../../libs/Core/Core2/GoogleMap/F/Model/IPlace"
 import { FourItemNavBar } from "../../../../../Lib/FourItemNavBar/FourItemNavBar"
-import { HeroHeader } from "../../../../../Lib/HeroHeader/HeroHeader"
-import { ThankyColor } from "../../../CSS/ThankyColor"
 import { ThankyPlaceSearch } from "../../H/ThankyPlaceSearch/ThankyPlaceSearch"
 import { LandingNavModel } from "../Landing/Landing"
 import cl from "./GiveTips.module.scss"
@@ -43,18 +41,13 @@ export function GiveTips({
   let placeListWords = "Current there is no business with active attendants yet."
 
   if(places && places.length > 0) {
-    if(places.length < 100) {
-      placeListWords = "Currently only the following businesses have active attendants."
-    } else {
-      placeListWords = ""
-    }
+    placeListWords = "List of newly joined places"
   }
 
   return(<>
   <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" 
       rel="stylesheet" />
-  <div className={cl.giveTips} 
-    style={{backgroundImage: "url(/apps/Thanky/Background/yellowPage.jpg)"}}>
+  <div className={cl.giveTips} >
     <FourItemNavBar navModel={LandingNavModel} selected2 />
     <div className={cl.searchPlaceTitle}>
       Search for business locations
@@ -70,15 +63,18 @@ export function GiveTips({
     </div>
     <Div height={30} />
     <div className={cl.placeListWords}>{placeListWords}</div>
-    <div className={cl.placeList}>
-    {
-      places.map((place, i)=>
-      <span key={i} className={cl.placeLink}
-        onClick={()=>{goPlace(place)}}>
-        {place.name}
-      </span>
-      )
-    }
+    <div className={cl.placeList}
+      style={{backgroundImage: "url(/apps/Thanky/Background/yellowPage.jpg)"}}>
+      <div className={cl.placeListInner}>
+      {
+        places.map((place, i)=>
+        <span key={i} className={cl.placeLink}
+          onClick={()=>{goPlace(place)}}>
+          {place.name}
+        </span>
+        )
+      }
+      </div>
     </div>
     <Div height={100} />
   </div>
