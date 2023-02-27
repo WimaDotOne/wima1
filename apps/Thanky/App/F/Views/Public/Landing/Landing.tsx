@@ -37,8 +37,8 @@ export function Landing({
       setScriptLoaded={setScriptLoaded}/>
     <div className={cl.landing}>
       <FourItemNavBar navModel={LandingNavModel} />
-      <HeroHeader bigWords="A tip is one of the best thankies"
-        smallWords="Let's give accepting and giving tips online a try"
+      <HeroHeader bigWords="Thanky for your tips $"
+        smallWords="Accepting and giving tips online"
       />
       <div className={cl.placeSearchRow}>
         <div className={cl.placeSearch}>
@@ -56,7 +56,7 @@ export function Landing({
       <TwoStickyNotes title1="To employees:"
         text1="Help Thanky help you. Let your customers know you accept tips @ Thanky"
         title2="To customers:"
-        text2="More than likely you will not find the employees here. Well, tip them in person."
+        text2="Cannot find your favorite baristas here? Well, keep tipping them in person."
       />
     </LimitWidth>
     <LimitWidth>
@@ -68,12 +68,12 @@ export function Landing({
     <Div height={50} />
     <LimitWidth beige>
       <Div height={50} />
-      <div className={cl.bigTitle}>the gratitude journal</div>
+      <div className={cl.bigTitle}>random life tips</div>
       <Div height={50} />
-      <div className={cl.smallTitle}>Gratitude</div>
+      <div className={cl.smallTitle}>Steve Jobs Says</div>
       <Div height={40} />
       <div className={cl.words}>
-        See the world through the lens of gratitude. It imbues your life with optism, resilience, and help you make healthier choices.
+        Stay hungry. Stay foolish.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
@@ -81,10 +81,10 @@ export function Landing({
       </div>
 
       <Div height={100} />
-      <div className={cl.smallTitle}>Wisdom</div>
+      <div className={cl.smallTitle}>Identify your fear</div>
       <Div height={20} />
       <div className={cl.words}>
-        When we learn to accentuate thankfulness, calm, and compassion, we move through life with greater skill.
+        I am afraid of asking for recommendation letters from the bottom of my heart.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
@@ -92,14 +92,14 @@ export function Landing({
       </div>
 
       <Div height={100} />
-      <div className={cl.smallTitle}>Love</div>
+      <div className={cl.smallTitle}>Forgive</div>
       <Div height={20} />
       <div className={cl.words}>
-        Contentment in a relationship comes from looking for what you're grateful for in your mate, not the ways you think they fall short.
+        If you loved someone, you would always gain something in the end. If you resented someone, you would always carry the burden in the end.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
-        <div className={cl.image} style={{backgroundImage: 'url(/apps/Thanky/Background/loveBirds.jpg)'}} />
+        <div className={cl.image} style={{backgroundImage: 'url(/apps/Thanky/Background/gratitudeForTrees.jpg)'}} />
       </div>
       <Div height={100} />
     </LimitWidth>
