@@ -58,6 +58,11 @@ import { SvgDollar } from "./Finance/Dollar/SvgDollar"
 import { SvgPenFile } from "./Office/File/PenFile"
 import { SvgYouTube } from "./Brand/YouTube/SvgYouTube"
 import { SvgXMark } from "./School/XMark/SvgXMark"
+import { SvgHome2 } from "./Common/Home/SvgHome2"
+import { SvgProfile2 } from "./Social/Profile/SvgProfile2"
+import { SvgDollarSquare } from "./Finance/Dollar/SvgDollarSquare"
+import { SvgLightening } from "./Finance/Lightening/SvgLightening"
+import { SvgGearNonFill } from "./Common/Gear/GearNonFill"
 
 export function SvgIcon({
   name,
@@ -112,6 +117,7 @@ export function SvgIcon({
     case "email": return <SvgEmail width={width} fill={color}/>
     case "dashboard": return <SvgDashboard width={width} fill={color}/>
     case "home": return <SvgHome width={width} fill={color} />
+    case "home2": return <SvgHome2 width={width} stroke={color} strokeWidth={strokeWidth} />
     case "door.batwing": return <SvgDoorBatwing width={width} />
     case "audio": return <SvgAudio width={width} fill={color} />
     case "mic": return <SvgMic width={width} fill={color} />
@@ -142,6 +148,7 @@ export function SvgIcon({
     case "textfile": return <SvgTextFile width={width} fill={color} fill2={color2}/>
     case "penfile": return <SvgPenFile width={width} fill={color} fill2={color2}/>
     case "gear": return <SvgGear width={width} fill={color} fill2={color2}/>
+    case "gear.nonfill": return <SvgGearNonFill width={width} fill={color}/>
     case "folder.fill": return <SvgFolderFill width={width} fill={color} />
     case "folder2": return <SvgFolder2 width={width} fill={color} fill2={color2}/>
     case "pin": return <SvgPin width={width} fill={color} />
@@ -159,6 +166,7 @@ export function SvgIcon({
     
     //Social
     case "profile": return <SvgProfile width={width} fill={color} />
+    case "profile2": return <SvgProfile2 width={width} stroke={color} strokeWidth={strokeWidth} />
     case "goods": return <SvgGoods width={width} stroke={color} strokeWidth={strokeWidth} />
     case "service": return <SvgService width={width} fill={color} />
     case "help": return <SvgHelp width={width} fill={color} />
@@ -166,6 +174,11 @@ export function SvgIcon({
 
     //Finance
     case "dollar": return <SvgDollar width={width} fill={color} />
+    case "dollar.square": return <SvgDollarSquare width={width} stroke={color} strokeWidth={strokeWidth}/>
+    case "lightening": return <SvgLightening width={width} fill={color} />
+
+
+
     default: return null
   }
 }

@@ -1,0 +1,102 @@
+
+.jobCard {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topHalf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lavender;
+  width: 150%;
+  border-radius: 0 0 70% 70%;
+}
+
+.hole {
+  background-color: #f9f9f9;
+  width: 70px;
+  height: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+}
+
+.firstName {
+  font-size: 14px;
+  font-weight: 600;
+  width: 250px;
+  color: black;
+}
+
+.firstName.gray {
+  color: white;
+}
+
+.jobName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.jobName.gray {
+  color: #ccc;
+}
+
+.placeName {
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.placeName.gray {
+  color: #ccc;
+}
+
+.jobCard:hover .pencilBtn {
+  opacity: 1;
+}
+
+.jobCard .pencilBtn {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pencilBtn:hover {
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+.pencilBtn {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px dashed #0275d8;
+  box-shadow: 0 0 0 3px white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: 1s;
+}

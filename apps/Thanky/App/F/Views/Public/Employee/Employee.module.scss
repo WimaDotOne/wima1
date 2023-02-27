@@ -1,0 +1,82 @@
+@use "../../../CSS/thanky.module.scss";
+
+.grayBack {
+  background-color: thanky.$themeGray;
+}
+
+.info {
+  padding: 35px 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.photoSpace {
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstName {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.jobName {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.placeName {
+  font-size: 14px;
+  color: gray;
+}
+
+.aboutMeSpace {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.aboutMe {
+  white-space: pre-wrap;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+
+.notSetup {
+  text-align: center;
+  font-weight: 600;
+  color: #aaa;
+  font-size: 20px;
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.tipBoardSpace {
+  display: flex;
+  padding: 20px 10px 30px;
+  justify-content: center;
+}

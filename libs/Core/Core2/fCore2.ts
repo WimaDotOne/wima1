@@ -13,6 +13,7 @@ import {
 
 import { Button1 } from "./Controls/Buttons/Button1"
 import { BigButton } from "./Controls/Buttons/BigButton"
+import { BigRoundButton } from "./Controls/Buttons/BigRoundButton"
 
 import { Collapsible } from "./Controls/Collapsible/Collapsible"
 import { Scrollable } from "./Controls/Scrollable/Scrollable"
@@ -23,8 +24,14 @@ import { LimitWidth } from "./Controls/LimitWidth/LimitWidth"
 import { AutoRepeatGrid } from "./Controls/Grid/AutoRepeatGrid"
 
 import { TextEditor } from "./TextEditor/TextEditor"
+import { SvgIcon } from "./Svg/SvgIcon"
 
-import { PlaceAutoComplete1 } from "./GoogleMap/fGoogleMap"
+import { 
+  GoogleMapScript1,
+  PlaceAutoComplete1,
+  PlaceAutoComplete2
+} from "./GoogleMap/fGoogleMap"
+import { CoffeeWindow } from "./CoffeeWindow/fCoffeeWindow"
 
 export {
   GroupModel,
@@ -37,8 +44,11 @@ export {
   AppleIconButton,
   AppleIconButtons,
 
+  CoffeeWindow,
+
   Button1,
   BigButton,
+  BigRoundButton,
 
   Collapsible,
   Scrollable, Scrollable2,
@@ -49,5 +59,9 @@ export {
 
   TextEditor,
 
-  PlaceAutoComplete1
+  GoogleMapScript1,
+  PlaceAutoComplete1,
+  PlaceAutoComplete2,
+
+  SvgIcon
 }

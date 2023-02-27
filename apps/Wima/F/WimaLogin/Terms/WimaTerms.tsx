@@ -10,7 +10,7 @@ export function WimaTerms({
   const logo = "Wima"
   const domain = "wima.one"
   const brand = "Wima"
-  const lastUpdate = "June 1, 2022"
+  const lastUpdate = "Feb 27, 2023"
 
   const router = useRouter()
 
@@ -41,16 +41,7 @@ export function WimaTerms({
       <Paragraph>
         Any new features or tools which are added to the current {brand} Services shall be also subject to the Terms of Service. You can review the current version of the Terms of Service at any time here. {brand} reserves the right to update and change the Terms of Service by updating the {brand} website. You are advised to check the Terms of Service from time to time for any updates or changes that may impact you. and if you do not accept such changes, you must cease using the {brand} Services.
       </Paragraph>
-      <SectionHeader text="Movic" />
-      <Paragraph>
-      Movic content must be appropriate for general audience.
-      </Paragraph>
-      <SubParagraph>
-        Images used in the Movic app must be appropriate for general audience.
-      </SubParagraph>
-      <SubParagraph>
-        Text content used in the Movic app must be appropriate for general audience or PG-13.
-      </SubParagraph>
+      
       <SectionHeader text="Lawyer says" />
       <SubSectionHeader text="Copyright" />
       <Paragraph>

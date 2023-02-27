@@ -1,0 +1,26 @@
+.photoHamburger {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e7e7e9;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.hamburgerSpace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

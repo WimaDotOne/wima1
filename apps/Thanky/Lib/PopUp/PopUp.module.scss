@@ -1,0 +1,73 @@
+.shieldFilm {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0006;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
+@media screen and (min-width: 500px) {
+  .shieldFilm {
+    padding: 0 10px;
+  }
+}
+
+.popUp {
+  background-color: white;
+  z-index: 21;
+  width: 100%;
+  border-radius: 15px;
+  max-width: 700px;
+}
+
+.banner {
+  height: 80px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto 100px 100px;
+  grid-column-gap: 15px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cancelBtn, .saveBtn {
+  border-radius: 20px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: #f4f4f4;
+}
+
+.saveBtn {
+  color: white;
+  background-color: #0275d8;
+}
+.saveBtn.yellow {
+  color: black;
+  background-color: #ffdd04;
+}
+
+.content {
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  min-height: 100px;
+  padding: 24px;
+}

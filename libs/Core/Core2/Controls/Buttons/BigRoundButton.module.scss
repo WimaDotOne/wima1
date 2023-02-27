@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 20px;
+  min-height: 40px;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform .15s linear;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  transition: transform .15s linear;
+}
+
+.btn:hover .text {
+  transform: scale(0.952, 1);
+}

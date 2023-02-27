@@ -1,0 +1,29 @@
+.questionRow {
+  display: grid;
+  grid-template-columns: auto 30px;
+  grid-column-gap: 10px;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 700;
+  color: #444;
+}
+
+.collapseArrow {
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+  border-bottom: 1px solid #ddd;
+}
+
+.paragraph {
+  font-size: 18px;
+  padding: 0 0 16px;
+  margin: 0;
+  color: #555;
+}

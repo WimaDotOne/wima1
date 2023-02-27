@@ -1,0 +1,66 @@
+.stickyNoteSpace {
+  padding: 20px;
+}
+.stickyNote {
+  width: 250px;
+  font-family: 'Reenie Beanie';
+  min-height: 250px;
+  background-color: #ffffcc;
+  box-shadow: 2px 2px 6px rgba(33,33,33,.3);
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
+  padding: 15px;
+  position: relative;
+}
+
+.stickyNote.blue {
+  background-color: #d8ffff;
+}
+.stickyNote.pink {
+  background-color: #f4c2c2;
+}
+.stickyNote.green {
+  background-color: #ccffcc;
+}
+.stickyNote.purple {
+  background-color: #ebd9fd;
+}
+
+.stickyNote.neg3 {
+  transform: rotate(-3deg);
+}
+.stickyNote.pos3 {
+  transform: rotate(3deg);
+}
+.stickyNote.neg6 {
+  transform: rotate(6deg);
+}
+.stickyNote.up1 {
+  top: -15px;
+}
+.stickyNote.up2 {
+  top: -30px;
+}
+.stickyNote.up3 {
+  top: -45px;
+}
+.stickyNote.up4 {
+  top: -60px;
+}
+
+.stickyNote:hover {
+  box-shadow: 4px 4px 7px rgba(0,0,0,.2);
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 32px;
+  text-align: center;
+}

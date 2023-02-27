@@ -1,0 +1,46 @@
+@use "../../CSS/coffee.module.scss";
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 50px auto 75px;
+  column-gap: 10px;
+  align-items: center;
+  padding: 0 15px;
+  height: coffee.$coffeeWindowTopBarHeight;
+  background-color: white;
+}
+.topBarSpaceFill {
+  display: block;
+  width: 100%;
+  height: coffee.$coffeeWindowTopBarHeight;
+}
+
+.homeIcon {
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homeIcon.clickHomeIcon {
+  cursor: pointer;
+}
+
+.photoHamburgerSpace {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: coffee.$phoneScreenModeWidth) {
+  .photoHamburgerSpace {
+    display: none;
+  }
+  .topBar {
+    background-color: coffee.$coffeeWindowGray;
+  }
+}

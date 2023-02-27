@@ -5,13 +5,30 @@
   line-height: 18px;
 }
 
+.checkboxRow.big {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
 .input {
   width: 20px;
   height: 20px;
+  cursor: pointer;
+}
+
+.input.big {
+  width: 30px;
+  height: 30px;
 }
 
 .prompt {
   padding: 0 5px;
   position: relative;
   top: -1px;
+  cursor: pointer;
+}
+
+.prompt.big {
+  padding: 0 10px;
 }

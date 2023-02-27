@@ -1,0 +1,29 @@
+@use "../CSS/color.module";
+@use "../CSS/dimension.module";
+
+.prompt {
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 4px;
+}
+
+.textarea {
+  appearance: none;
+  outline: none;
+  border: 0.5px solid #ccc;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  font-size: dimension.$inputFontSize;
+  font-weight: normal;
+  resize: vertical;
+  background-color: #f4f4f4;
+}
+
+.textarea:focus {
+  border: 0.5px solid #999;
+  background-color: white;
+}
