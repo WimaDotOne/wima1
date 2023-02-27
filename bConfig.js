@@ -71,25 +71,33 @@ export const ThankyConfig = {
   tip1: {
     index: 1,
     price: 200, // when change must also change priceId in Stripe
+    priceText: "$2",
     priceId: "price_1MaQNdLL7rsy5kikBT5jilGE",
-    appFee: 50
+    appFee: 50,
+    appFeeText: "50¢"
   },
   tip2: {
     index: 2,
     price: 500,
+    priceText: "$5",
     priceId: "price_1MaQPVLL7rsy5kikHPQ5a2C2",
-    appFee: 100
+    appFee: 100,
+    appFeeText: "$1"
   },
   tip3: {
     index: 3,
     price: 1000,
+    priceText: "$10",
     priceId: "price_1MaQPyLL7rsy5kikFtJfgMNg",
-    appFee: 100
+    appFee: 100,
+    appFeeText: "$1"
   },
   tip4: {
     index: 4,
     price: 1500,
+    priceText: "$15",
     priceId: "price_1MaQQYLL7rsy5kikD9qR8uzu",
-    appFee: 100
+    appFee: 100,
+    appFeeText: "$1"
   }
 }

@@ -45,7 +45,7 @@ export function TipBoard({
       (res)=>{
         const session = res.session
         const url = session?.url
-        console.log(session)
+    
         if(url) {
           window.open(url)
         }
@@ -61,19 +61,19 @@ export function TipBoard({
       Tip <span className={cl.employeeName}>{job?.firstName}</span>
     </div>
     <div className={cl.dollarAmount}>
-      <CheckField1 big prompt={DollarText(ThankyConfig.tip1)} 
+      <CheckField1 big prompt={ThankyConfig.tip1.priceText} 
         checked={tipIndex===ThankyConfig.tip1.index}
         onChange={()=>{selectDollar(1)}}
       />
-      <CheckField1 big prompt={DollarText(ThankyConfig.tip2)}  
+      <CheckField1 big prompt={ThankyConfig.tip2.priceText}  
         checked={tipIndex===ThankyConfig.tip2.index}
         onChange={()=>{selectDollar(2)}}
       />
-      <CheckField1 big prompt={DollarText(ThankyConfig.tip3)}  
+      <CheckField1 big prompt={ThankyConfig.tip3.priceText}  
         checked={tipIndex===ThankyConfig.tip3.index}
         onChange={()=>{selectDollar(3)}}
       />
-      <CheckField1 big prompt={DollarText(ThankyConfig.tip4)}  
+      <CheckField1 big prompt={ThankyConfig.tip4.priceText}  
         checked={tipIndex===ThankyConfig.tip4.index}
         onChange={()=>{selectDollar(4)}}
       />
@@ -97,13 +97,29 @@ export function TipBoard({
     <Div height={20} />
     <BigRoundButton text="Tip" onClick={onClickTip}/>
     <Div height={20} />
+    <div className={cl.feeText}>{FeeText(tipIndex)}</div>
   </div>
   </>)
 }
 
-function DollarText(tip: {price: number}) {
-  const cents = tip.price
-  if(!cents) return ""
-  const dollar = cents/100
-  return "$"+dollar
+function FeeText(tipIndex: number) {
+  let fee = ""
+  
+  switch(tipIndex) {
+    case ThankyConfig.tip1.index:
+      fee = ThankyConfig.tip1.appFeeText
+      break
+    case ThankyConfig.tip2.index:
+      fee = ThankyConfig.tip2.appFeeText
+      break
+    case ThankyConfig.tip3.index:
+      fee = ThankyConfig.tip3.appFeeText
+      break
+    case ThankyConfig.tip4.index:
+      fee = ThankyConfig.tip4.appFeeText
+      break
+    default:
+      return ""
+  }
+  return `A fee of ${fee} will be taken away from the employee, part of which is for credit card transaction.`
 }

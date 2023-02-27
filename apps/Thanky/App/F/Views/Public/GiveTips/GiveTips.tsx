@@ -63,17 +63,19 @@ export function GiveTips({
     </div>
     <Div height={30} />
     <div className={cl.placeListWords}>{placeListWords}</div>
-    <div className={cl.placeList}
-      style={{backgroundImage: "url(/apps/Thanky/Background/yellowPage.jpg)"}}>
-      <div className={cl.placeListInner}>
-      {
-        places.map((place, i)=>
-        <span key={i} className={cl.placeLink}
-          onClick={()=>{goPlace(place)}}>
-          {place.name}
-        </span>
-        )
-      }
+    <div className={cl.placeListSpace}>
+      <div className={cl.placeList}
+        style={{backgroundImage: "url(/apps/Thanky/Background/yellowPage.jpg)"}}>
+        <div className={cl.placeListInner}>
+        {
+          places.map((place, i)=>
+          <span key={i} className={cl.placeLink}
+            onClick={()=>{goPlace(place)}}>
+            {place.name}
+          </span>
+          )
+        }
+        </div>
       </div>
     </div>
     <Div height={100} />

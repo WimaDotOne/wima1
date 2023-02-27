@@ -68,9 +68,9 @@ export function Landing({
     <Div height={50} />
     <LimitWidth beige>
       <Div height={50} />
-      <div className={cl.bigTitle}>random life tips</div>
+      <div className={cl.bigTitle}>space-filler life tips</div>
       <Div height={50} />
-      <div className={cl.smallTitle}>Steve Jobs Says</div>
+      <div className={cl.smallTitle}>Steve Jobs commencement speech</div>
       <Div height={40} />
       <div className={cl.words}>
         Stay hungry. Stay foolish.
@@ -84,7 +84,7 @@ export function Landing({
       <div className={cl.smallTitle}>Identify your fear</div>
       <Div height={20} />
       <div className={cl.words}>
-        I am afraid of asking for recommendation letters from the bottom of my heart.
+        I am afraid of asking people for recommendation letters from the bottom of my heart.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
@@ -95,7 +95,7 @@ export function Landing({
       <div className={cl.smallTitle}>Forgive</div>
       <Div height={20} />
       <div className={cl.words}>
-        If you loved someone, you would always gain something in the end. If you resented someone, you would always carry the burden in the end.
+        If you loved someone, you always have a net gain. If you resented someone, you always carry the burden.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
@@ -106,7 +106,7 @@ export function Landing({
     <LimitWidth>
       <Div height={50} />
       <div className={cl.iamWaitor}>
-        I am a waitress, barista, cashier, sales clerk, bar tender, receptionist, hotel housekeeper, …
+        I am a waitress barista cashier sales clerk bar tender receptionist hotel housekeeper …
       </div>
       <Div height={50} />
       <div className={cl.lastButtonSpace}>

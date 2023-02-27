@@ -21,7 +21,6 @@ export function PayoutHasSetup({
   async function openExpressDashboard() {
     await Get2(shield, "/thanky/GetExpressDashboardLoginLink", (res)=>{
       const url = res.url
-      console.log(url)
       window.open(url, "_blank")
     })
   }
