@@ -20,6 +20,7 @@ import { asyNewTempFolder, asyRemoveTempFolder,
   asyDeleteMany,
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
+  S3Url,
 
   asyShrinkImageFiles,
 
@@ -53,6 +54,7 @@ export {
   asyDeleteMany,
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
+  S3Url,
 
   asyShrinkImageFiles,
   iImageMulter,

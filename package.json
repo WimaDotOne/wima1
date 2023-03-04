@@ -7,7 +7,7 @@
     ".next/cache"
   ],
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "nodemon Server.js",
@@ -17,9 +17,9 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.282.0",
     "@googlemaps/js-api-loader": "^1.14.3",
     "@sendgrid/mail": "^7.6.2",
-    "aws-sdk": "^2.1135.0",
     "axios": "^0.26.1",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.0",

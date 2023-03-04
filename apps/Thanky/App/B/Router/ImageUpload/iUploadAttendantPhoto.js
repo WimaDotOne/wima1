@@ -1,5 +1,5 @@
 import { asyDeleteMany, asyRemoveTempFolder, 
-  asyShrinkImageFiles, asyUploadOnePlusSmallOne, 
+  asyShrinkImageFiles, asyUploadOnePlusSmallOne, S3Url,
   User } from "../../../../../../libs/Core/Core1/bCore1.js"
 import ThankyJob from "../../Model/ThankyJob.js"
 import ThankyAccount from "../../Model/ThankyAccount.js"
@@ -54,13 +54,12 @@ export async function iUploadAttendantPhoto(req, res) {
       smallKey: image.smallId
     }
 
-    const result = await asyUploadOnePlusSmallOne(process.env.AWS_THANKY_BUCKET, file)
-    
+    await asyUploadOnePlusSmallOne(process.env.AWS_THANKY_BUCKET, file)
+
     //Save files info in database
-    const img = result[0]
-    const smImg = result[1]
 
-
+    const ThankyBucket = process.env.AWS_THANKY_BUCKET
+    
     //Delete old image from Amazon S3 database
     if(job.photo) {
       const key1 = job.photo.s3Key
@@ -69,15 +68,15 @@ export async function iUploadAttendantPhoto(req, res) {
       if(key1) { keyArr.push(key1) } 
       if(key2) { keyArr.push(key2) }
       if(keyArr.length) {
-        await asyDeleteMany(process.env.AWS_THANKY_BUCKET, keyArr)
+        await asyDeleteMany(ThankyBucket, keyArr)
       }
     }
 
     job.photo = {
-      s3Key: img.Key,
-      s3KeySmall: smImg.Key,
-      url: img.Location,
-      urlSmall: smImg.Location
+      s3Key: image.id,
+      s3KeySmall: image.smallId,
+      url: S3Url(ThankyBucket, image.id),
+      urlSmall: S3Url(ThankyBucket, image.smallId)
     }
 
     await job.save()

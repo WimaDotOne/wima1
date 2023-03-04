@@ -7,6 +7,8 @@ export const bConfig = {
   sendGridSenderEmail: "fan@wima.one",
   sendGridSenderName: "Wima Auto",
   brand: "Wima",
+  awsRegion: "us-east-1",
+  s3Domain: "s3.amazonaws.com"
 }
 
 export const ImageUploadConfig = {

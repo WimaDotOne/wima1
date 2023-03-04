@@ -5,7 +5,8 @@ import {
   asyDeleteOne,
   asyDeleteMany,
   asyUploadOnePlusSmallOne,
-  asyUploadManyPlusSmall 
+  asyUploadManyPlusSmall,
+  S3Url
 } from "./B/S3.js"
 
 import { asyShrinkImageFiles } from "./B/ShrinkImageFiles.js"
@@ -21,6 +22,7 @@ export {
   asyDeleteMany,
   asyUploadOnePlusSmallOne,
   asyUploadManyPlusSmall,
+  S3Url,
 
   asyShrinkImageFiles,
 

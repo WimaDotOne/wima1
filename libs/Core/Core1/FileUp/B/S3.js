@@ -1,20 +1,30 @@
-import aws from "aws-sdk"
+import { 
+  DeleteObjectCommand,
+  PutObjectCommand, 
+  S3Client
+} from "@aws-sdk/client-s3"
 import fs from "fs"
+import { bConfig } from "../../../../../bConfig.js"
+
+// aws-sdk assumes the following are set for credentials
+// process.env.AWS_ACCESS_KEY_ID
+// process.env.AWS_SECRET_ACCESS_KEY
 
 function DeleteOnePromise(bucket, key) {
-  const s3 = new aws.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
-  })
   
-  return s3.deleteObject({
+  const s3 = new S3Client({
+    region: bConfig.awsRegion
+  })
+  const command = new DeleteObjectCommand({
     Bucket: bucket,
     Key: key
-  }).promise()
+  })
+  
+  return s3.send(command)
 }
 
 async function asyDeleteMany(bucket, keyArr) {
-  
+
   const promiseArr = []
   keyArr = keyArr || []
   for(const key of keyArr) {
@@ -33,18 +43,19 @@ async function asyDeleteOne(bucket, key) {
 
 function UploadOnePromise(bucket, file) {
 
-  const s3 = new aws.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+  const s3 = new S3Client({
+    region: bConfig.awsRegion
   })
 
   const {filePath, key} = file
-  return s3.upload({
+
+  const command = new PutObjectCommand({
     Bucket: bucket,
     Key: key,
-    Body: fs.createReadStream(filePath),
-    // ACL: 'public-read'
-  }).promise()
+    Body: fs.createReadStream(filePath)
+  })
+  
+  return s3.send(command)
 }
 
 async function asyUploadOne(bucket, file) {
@@ -82,6 +93,12 @@ async function asyUploadManyPlusSmall(bucket, fileArr) {
   return resArr
 }
 
+function S3Url(bucket, key) {
+  if(!bucket || !key) return ""
+  // example  https://wima-movic-dev.s3.amazonaws.com/sm-xfdsfs.jpg
+  return `https://${bucket}.${bConfig.s3Domain}/${key}`
+}
+
 
 
 export {
@@ -90,5 +107,6 @@ export {
   asyDeleteOne,
   asyDeleteMany,
   asyUploadOnePlusSmallOne,
-  asyUploadManyPlusSmall
+  asyUploadManyPlusSmall,
+  S3Url
 }
