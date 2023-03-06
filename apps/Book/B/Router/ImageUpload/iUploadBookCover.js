@@ -1,4 +1,10 @@
-import { asyDeleteMany, asyRemoveTempFolder, asyShrinkImageFiles, asyUploadOnePlusSmallOne, S3Url, User } from "../../../../../libs/Core/Core1/bCore1.js"
+import { asyDeleteMany, 
+  asyRemoveTempFolder, 
+  asyShrinkImageFiles, 
+  asyUploadOnePlusSmallOne, 
+  S3Url, 
+  User 
+} from "../../../../../libs/Core/Core1/bCore1.js"
 import BookBook from "../../Model/BookBook.js"
 import BookProject from "../../Model/BookProject.js"
 

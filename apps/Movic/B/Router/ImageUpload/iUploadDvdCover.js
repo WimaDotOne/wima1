@@ -1,4 +1,10 @@
-import { asyDeleteMany, asyRemoveTempFolder, asyShrinkImageFiles, asyUploadOnePlusSmallOne, User } from "../../../../../libs/Core/Core1/bCore1.js"
+import { asyDeleteMany, 
+  asyRemoveTempFolder, 
+  asyShrinkImageFiles, 
+  asyUploadOnePlusSmallOne, 
+  S3Url, 
+  User 
+} from "../../../../../libs/Core/Core1/bCore1.js"
 import Movic from "../../Model/Movic.js"
 import MovicProject from "../../Model/MovicProject.js"
 
@@ -49,12 +55,10 @@ export async function iUploadDvdCover(req, res) {
       smallKey: image.smallId
     }
 
-    const result = await asyUploadOnePlusSmallOne(process.env.AWS_MOVIC_BUCKET, file)
-    
-    //Save files info in database
-    const img = result[0]
-    const smImg = result[1]
+    const MovicBucket = process.env.AWS_MOVIC_BUCKET
 
+    await asyUploadOnePlusSmallOne(MovicBucket, file)
+    
 
     //Delete old image from Amazon S3 database
     if(movic.dvdCover) {
@@ -64,15 +68,17 @@ export async function iUploadDvdCover(req, res) {
       if(key1) { keyArr.push(key1) } 
       if(key2) { keyArr.push(key2) }
       if(keyArr.length) {
-        await asyDeleteMany(process.env.AWS_MOVIC_BUCKET, keyArr)
+        await asyDeleteMany(MovicBucket, keyArr)
       }
     }
 
+    //Save files info in database
+
     movic.dvdCover = {
-      s3Key: img.Key,
-      s3KeySmall: smImg.Key,
-      url: img.Location,
-      urlSmall: smImg.Location
+      s3Key: image.id,
+      s3KeySmall: image.smallId,
+      url: S3Url(MovicBucket, image.id),
+      urlSmall: S3Url(MovicBucket, image.smallId)
     }
 
     await movic.save()
