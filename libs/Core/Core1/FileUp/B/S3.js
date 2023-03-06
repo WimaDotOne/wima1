@@ -77,19 +77,23 @@ async function asyUploadOnePlusSmallOne(bucket, file) {
   const file1 = { filePath, key }
   const file2 = { filePath: smallFilePath, key: smallKey }
 
-  const res1 = await asyUploadOne(bucket, file1)
-  const res2 = await asyUploadOne(bucket, file2)
+  const resArr = await asyUploadMany(bucket, [file1, file2])
 
-  return [res1, res2]
+  return resArr
 }
 
 async function asyUploadManyPlusSmall(bucket, fileArr) {
 
-  const resArr = []
+  const fileArr2 = []
   for(const file of fileArr) {
-    const res = await asyUploadOnePlusSmallOne(bucket, file)
-    resArr.push(res)
+    const { filePath, key, smallFilePath, smallKey } = file
+    const file1 = { filePath, key }
+    const file2 = { filePath: smallFilePath, key: smallKey }
+
+    fileArr2.push(file1)
+    fileArr2.push(file2)
   }
+  const resArr = await asyUploadMany(bucket, fileArr2)
   return resArr
 }
 
