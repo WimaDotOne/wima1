@@ -1,4 +1,4 @@
-import { asyDeleteMany, asyRemoveTempFolder, asyShrinkImageFiles, asyUploadOnePlusSmallOne, User } from "../../../../../libs/Core/Core1/bCore1.js"
+import { asyDeleteMany, asyRemoveTempFolder, asyShrinkImageFiles, asyUploadOnePlusSmallOne, S3Url, User } from "../../../../../libs/Core/Core1/bCore1.js"
 import BookBook from "../../Model/BookBook.js"
 import BookProject from "../../Model/BookProject.js"
 
@@ -50,11 +50,8 @@ export async function iUploadBookCover(req, res) {
       smallKey: image.smallId
     }
 
-    const result = await asyUploadOnePlusSmallOne(process.env.AWS_BOOK_BUCKET, file)
-    
-    //Save files info in database
-    const img = result[0]
-    const smImg = result[1]
+    const BookBucket = process.env.AWS_BOOK_BUCKET
+    await asyUploadOnePlusSmallOne(BookBucket, file)
 
 
     //Delete old image from Amazon S3 database
@@ -65,15 +62,17 @@ export async function iUploadBookCover(req, res) {
       if(key1) { keyArr.push(key1) } 
       if(key2) { keyArr.push(key2) }
       if(keyArr.length) {
-        await asyDeleteMany(process.env.AWS_BOOK_BUCKET, keyArr)
+        await asyDeleteMany(BookBucket, keyArr)
       }
     }
 
+    //Save files info in database
+
     book.bookCover = {
-      s3Key: img.Key,
-      s3KeySmall: smImg.Key,
-      url: img.Location,
-      urlSmall: smImg.Location
+      s3Key: image.id,
+      s3KeySmall: image.smallId,
+      url: S3Url(BookBucket, image.id),
+      urlSmall: S3Url(BookBucket, image.smallId)
     }
 
     await book.save()

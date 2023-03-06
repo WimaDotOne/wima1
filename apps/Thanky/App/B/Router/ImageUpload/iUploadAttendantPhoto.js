@@ -54,12 +54,11 @@ export async function iUploadAttendantPhoto(req, res) {
       smallKey: image.smallId
     }
 
-    await asyUploadOnePlusSmallOne(process.env.AWS_THANKY_BUCKET, file)
-
-    //Save files info in database
-
     const ThankyBucket = process.env.AWS_THANKY_BUCKET
-    
+
+    await asyUploadOnePlusSmallOne(ThankyBucket, file)
+
+
     //Delete old image from Amazon S3 database
     if(job.photo) {
       const key1 = job.photo.s3Key
@@ -71,6 +70,8 @@ export async function iUploadAttendantPhoto(req, res) {
         await asyDeleteMany(ThankyBucket, keyArr)
       }
     }
+
+    //Save files info in database
 
     job.photo = {
       s3Key: image.id,
