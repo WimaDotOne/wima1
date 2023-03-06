@@ -1,4 +1,4 @@
-import { asyRemoveTempFolder, asyShrinkImageFiles, asyUploadManyPlusSmall, User } from "../../../../../libs/Core/Core1/bCore1.js"
+import { asyRemoveTempFolder, asyShrinkImageFiles, asyUploadManyPlusSmall, S3Url, User } from "../../../../../libs/Core/Core1/bCore1.js"
 import ImageFile from "../../Model/MovicImageFile.js"
 import MovicProject from "../../Model/MovicProject.js"
 
@@ -40,24 +40,22 @@ export async function iUploadImages(req, res) {
       })
     }
 
-    const resArr = await asyUploadManyPlusSmall(process.env.AWS_MOVIC_BUCKET, fileArr)
+    const MovicBucket = process.env.AWS_MOVIC_BUCKET
+
+    await asyUploadManyPlusSmall(MovicBucket, fileArr)
 
     //Save files info in database
-    const imageDict = ImageDictionay(imageList)
 
     const imageFiles = []
-    for(const res of resArr) {
-      const img = res[0]
-      const smImg = res[1]
-      const image = imageDict[img.Key]
+    for(const image of imageList) {
       if(!image) continue
       imageFiles.push({
         movicId: project.movicId,
         name: image.name,
-        s3Key: img.Key,
-        s3KeySmall: smImg.Key,
-        url: img.Location,
-        urlSmall: smImg.Location
+        s3Key: image.id,
+        s3KeySmall: image.smallId,
+        url: S3Url(MovicBucket, image.id),
+        urlSmall: S3Url(MovicBucket, image.smallId)
       })
     }
 
@@ -69,12 +67,4 @@ export async function iUploadImages(req, res) {
   } catch(err) {
     return res.json({ ok: false, error: err.message })
   }
-}
-
-function ImageDictionay(imageList) {
-  const dict = {}
-  for(const image of imageList) {
-    dict[image.id] = image
-  }
-  return dict
 }
