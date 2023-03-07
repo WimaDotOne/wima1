@@ -7,6 +7,7 @@ import { Post2, StripeButton, useShield } from "../../../../../../../../libs/Cor
 import { useRouter } from "next/router"
 import { TwoStickyNotes } from "../../../../../../Lib/TwoStickyNotes/TwoStickyNotes"
 import { QueAns } from "../../../../../../Lib/QueAns/QueAns"
+import { useWimaEnv } from "../../../../../../../Wima/fWima"
 
 interface IPayoutSetupProp {
   hasSetupStarted?: boolean
@@ -18,6 +19,7 @@ export function PayoutSetup({
 
   const shield = useShield()
   const router = useRouter()
+  const wimaEnv = useWimaEnv()
 
   async function connectStripe() {
     await Post2(shield, "/thanky/GetOrCreateConnectedAccount", {},
@@ -64,7 +66,7 @@ export function PayoutSetup({
         {Question: "Country:", Answer: "United States"},
         {Question: "Type of Business:", Answer: "Individual"},
         {Question: "Industry:", Answer: "Select one that best describes your job or one of your two jobs."},
-        {Question: "Website:", Answer: `https://www.wima.one/apps/Thanky`},
+        {Question: "Website:", Answer: `${wimaEnv?.domain}/apps/Thanky`},
       ]}/>
     </CoffeeWindowViewCard>
     <CoffeeWindowViewCard>
