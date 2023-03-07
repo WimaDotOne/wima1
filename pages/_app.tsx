@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(()=>{
   
-    let url = UrlRedirect(
+    UrlRedirect(
       ["http://www.wima.one", "http://wima-dev.herokuapp.com"],
       ["Thanky", "Social"]
       )
