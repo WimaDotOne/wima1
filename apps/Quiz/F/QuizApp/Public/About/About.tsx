@@ -1,8 +1,10 @@
 import { Div, LimitWidth } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleNewsHeader1, StripeIntroText } from "../../../../../../libs/Pop/Pop2/fPop2"
+import { AppIcon } from "../../../../../Wima/F/WimaHome/LaunchPad/AppIcon/Applcon"
 import { IQuizQuiz } from "../../../Model/IQuizQuiz"
 import { QuizSheet } from "../../QuizPlayer/QuizSheet/QuizSheet"
 import { QuizWindow } from "../../QuizWindow/QuizWindow"
+import cl from "./About.module.scss"
 
 export function About() {
 
@@ -70,6 +72,10 @@ export function About() {
     -> I live nearby the grocery store
     `
   }
+
+  function openKaylaEngish() {
+    window.open("https://www.wima.one/apps/Kayla", "_blank")
+  }
   
   return(<>
     <QuizWindow>
@@ -91,6 +97,16 @@ export function About() {
       </LimitWidth>
       <Div height={20} />
       <QuizSheet quiz={exhibitQuiz} />
+      <LimitWidth maxWidth={800}>
+        <AppleNewsHeader1 text1="More examples" h={2} />
+        <div className={cl.kaylaSpace}>
+          <div className={cl.kaylaApp} onClick={openKaylaEngish}>
+            <div className={cl.kaylaAppIcon} style={{backgroundImage: "url(/apps/WimaHome/AppIcons/KaylaEnglish.png)"}}/>
+            <div className={cl.kaylaText}>English</div>
+          </div>
+        </div>
+      </LimitWidth>
+      <Div height={100} />
     </QuizWindow>
   </>)
 }
