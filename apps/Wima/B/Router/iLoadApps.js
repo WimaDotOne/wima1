@@ -10,10 +10,11 @@ async function iLoadApps(req, res) {
       path, { encoding: "utf8" }
     )
       
-    const apps = ParseAppsText(text)
+    const [promoApps, otherApps] = ParseAppsText(text)
     return res.json({
       ok: true,
-      apps,
+      promoApps,
+      otherApps
     })
 
   } catch(err) {

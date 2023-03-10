@@ -1,7 +1,9 @@
 
 export function ParseAppsText(text) {
   const lines = (text || "").split("\n")
-  const data = []
+  const promoApps = []
+  const otherApps = []
+  const data = [promoApps, otherApps]
 
   for(let i=0; i<lines.length; i++) {
     const line = (lines[i] || "").trim()
@@ -10,12 +12,18 @@ export function ParseAppsText(text) {
     const name = (appInfo[0] || "").trim()
     const icon = (appInfo[1] || "").trim()
     const route = (appInfo[2] || "").trim()
+    const promo = (appInfo[3] || "").trim() === "*"
     if(name) {
-      data.push({
-        name, 
+      const app = {
+        name,
         icon,
         route
-      })
+      }
+      if(promo) {
+        promoApps.push(app)
+      } else {
+        otherApps.push(app)
+      }
     }
   }
 

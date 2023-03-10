@@ -1,6 +1,6 @@
-Login | login.png | Login
-Thanky | thanky.png | Thanky
-Sociable | social.jpg | Social
+Login | login.png | Login | *
+Thanky | thanky.png | Thanky | *
+Sociable | social.jpg | Social | *
 Movic | movic.webp | Movic
 Lingo | lingo.png | Lingo
 Book | book.png | Book

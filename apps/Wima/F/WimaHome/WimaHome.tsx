@@ -6,14 +6,16 @@ import { WallPaper } from "./WallPaper/WallPaper"
 
 export function WimaHome() {
 
-  const [apps, setApps] = useState<Array<IApp>>([])
+  const [promoApps, setPromoApps] = useState<Array<IApp>>([])
+  const [otherApps, setOtherApps] = useState<Array<IApp>>([])
   const shield = useShield()
 
   async function loadApps() {
 
     await Get2(shield, "/wima/LoadApps",
       (res)=>{
-        setApps(res.apps)
+        setPromoApps(res.promoApps)
+        setOtherApps(res.otherApps)
       }
     )
   }
@@ -24,6 +26,6 @@ export function WimaHome() {
 
   return(<>
     <WallPaper />
-    <LaunchPad apps={apps}/>
+    <LaunchPad promoApps={promoApps} otherApps={otherApps}/>
   </>)
 }
