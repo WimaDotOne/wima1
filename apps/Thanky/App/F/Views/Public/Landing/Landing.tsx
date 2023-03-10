@@ -54,9 +54,9 @@ export function Landing({
 
     <LimitWidth maxWidth={800}>
       <TwoStickyNotes title1="To employees:"
-        text1="Help Thanky help you. Let your customers know you accept tips @ Thanky"
+        text1="Your customers most likely don't know you accept tips @ Thanky unless you tell them."
         title2="To customers:"
-        text2="Cannot find your favorite baristas here? Well, keep tipping them in person."
+        text2="If you cannot find your favorite barista @ Thanky tip them in person."
       />
     </LimitWidth>
     <LimitWidth>
@@ -68,9 +68,9 @@ export function Landing({
     <Div height={50} />
     <LimitWidth beige>
       <Div height={50} />
-      <div className={cl.bigTitle}>space-filler life tips</div>
+      <div className={cl.bigTitle}>space-filler tips</div>
       <Div height={50} />
-      <div className={cl.smallTitle}>Steve Jobs commencement speech</div>
+      <div className={cl.smallTitle}>Steve Commencement Speech</div>
       <Div height={40} />
       <div className={cl.words}>
         Stay hungry. Stay foolish.
@@ -81,10 +81,10 @@ export function Landing({
       </div>
 
       <Div height={100} />
-      <div className={cl.smallTitle}>Identify your fear</div>
+      <div className={cl.smallTitle}>Apple Commercial</div>
       <Div height={20} />
       <div className={cl.words}>
-        I would be truly terrified if I have to ask people for recommendation letters.
+      Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo... While some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
@@ -92,10 +92,10 @@ export function Landing({
       </div>
 
       <Div height={100} />
-      <div className={cl.smallTitle}>Forgive</div>
+      <div className={cl.smallTitle}>Steve 1995 Interview</div>
       <Div height={20} />
       <div className={cl.words}>
-        If you loved someone, you always have a net gain. If you resented someone, you always carry the burden.
+        I'm convinced that about half of what separates the successful entrepreneurs from the nonsuccessful ones is pure perseverance.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
