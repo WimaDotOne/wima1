@@ -84,7 +84,7 @@ export function Landing({
       <div className={cl.smallTitle}>Apple Commercial</div>
       <Div height={20} />
       <div className={cl.words}>
-      Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo... While some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
+      Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo... ... ... While some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
       </div>
       <Div height={50} />
       <div className={cl.imageSpace}>
