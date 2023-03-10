@@ -33,6 +33,23 @@ export function PayoutSetup({
   return(<>
   <ThankyWindow selectItemId={ThankyMenuTurn.Payouts}>
     <div className={cl.pageTitle}>Payouts</div>
+    <CoffeeWindowViewCard>
+      <div className={cl.instructionFrame}>
+        <SvgIcon name="lightening" width={32} color="#333"/>
+        <div className={cl.instruction}>
+          <div className={cl.instructionTitle}>
+            {titleText}
+          </div>
+          <div className={cl.instuctionText}>
+            Get paid to your local bank account automatically. No minimum threshold. If you don't have a Stripe account, you'll be asked to create one for free.
+          </div>
+        </div>
+        <Div height={30} />
+        <StripeButton text="Connect Stripe" 
+          onClick={connectStripe}
+        />
+      </div>
+    </CoffeeWindowViewCard>
     <div className={cl.explainSpace}>
       <div className={cl.explainHeader}>
         <span className={cl.explainWord}>explain</span> 
@@ -69,24 +86,6 @@ export function PayoutSetup({
         {Question: "Website:", Answer: `${wimaEnv?.domain}/apps/Thanky`},
       ]}/>
     </CoffeeWindowViewCard>
-    <CoffeeWindowViewCard>
-      <div className={cl.instructionFrame}>
-        <SvgIcon name="lightening" width={32} color="#333"/>
-        <div className={cl.instruction}>
-          <div className={cl.instructionTitle}>
-            {titleText}
-          </div>
-          <div className={cl.instuctionText}>
-            Get paid to your local bank account automatically. No minimum threshold. If you don't have a Stripe account, you'll be asked to create one for free.
-          </div>
-        </div>
-        <Div height={30} />
-        <StripeButton text="Connect Stripe" 
-          onClick={connectStripe}
-        />
-      </div>
-    </CoffeeWindowViewCard>
-
   </ThankyWindow>
   </>)
 }
