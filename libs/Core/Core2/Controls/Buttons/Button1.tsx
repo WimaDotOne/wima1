@@ -14,24 +14,26 @@ export function Button1({
 }: IButton1Prop) {
 
   const btnRef = useRef<HTMLButtonElement>(null)
-  const lightGray = "#efefef"
-  const btnStyle = {
-    color: "",
-    backgroundColor: lightGray
-  }
-  if(color) btnStyle.color = color
+
 
   useEffect(()=>{
-    if(!color) return
+
+    const lightGray = "#efefef"
     const btn = btnRef.current
+    
     if(btn) {
-      btn.onmouseover = ()=>{
-        btn.style.color = "white"
-        btn.style.backgroundColor = color
-      }
-      btn.onmouseleave = ()=>{
-        btn.style.color = color
-        btn.style.backgroundColor = lightGray
+      btn.style.color = color || ""
+      btn.style.backgroundColor = lightGray
+
+      if(color) {
+        btn.onmouseover = ()=>{
+          btn.style.color = "white"
+          btn.style.backgroundColor = color
+        }
+        btn.onmouseleave = ()=>{
+          btn.style.color = color
+          btn.style.backgroundColor = lightGray
+        }
       }
     }
   })
@@ -39,7 +41,6 @@ export function Button1({
 
   return(<>
     <button ref={btnRef} className={ClassNames([cl.button])} 
-      style={btnStyle}
       onClick={onClick}>
       {text}
     </button>

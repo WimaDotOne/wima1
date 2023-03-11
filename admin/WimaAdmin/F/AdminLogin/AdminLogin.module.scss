@@ -1,0 +1,19 @@
+.adminLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+.buttonSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  top: -2px;
+}

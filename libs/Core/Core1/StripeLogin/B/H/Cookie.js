@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken"
 const USER = "User"
 const UNIVERSITY_ACCOUNT = "UniversityAccount"
+const ADMIN = "Admin"
 
 function SetPermanentCookie(res, _id, cookieName) {
 
@@ -29,6 +30,10 @@ function SetUserCookie(res, _id) {
 
 function SetUniversityAccountCookie(res, _id) {
   SetPermanentCookie(res, _id, UNIVERSITY_ACCOUNT)
+}
+
+function SetAdminCookie(res, _id) {
+  SetPermanentCookie(res, _id, ADMIN)
 }
 
 function GetCookie(req, cookieName) {
@@ -62,6 +67,18 @@ function TryGetUniversityAccountCookie(req) {
   }
 }
 
+function GetAdminCookie(req) {
+  return GetCookie(req, ADMIN)
+}
+
+function TryGetAdminCookie(req) {
+  try {
+    return GetAdminCookie(req)
+  } catch (err) {
+    return null
+  }
+}
+
 function DeleteCookie(res, cookieName) {
   const cookieOption =
   {
@@ -79,6 +96,10 @@ function DeleteUniversityAccountCookie(res) {
   DeleteCookie(res, UNIVERSITY_ACCOUNT)
 }
 
+function DeleteAdminCookie(res) {
+  DeleteAdminCookie(res, ADMIN)
+}
+
 export {
   SetUserCookie,
   GetUserCookie, TryGetUserCookie,
@@ -86,5 +107,9 @@ export {
 
   SetUniversityAccountCookie,
   GetUniversityAccountCookie, TryGetUniversityAccountCookie,
-  DeleteUniversityAccountCookie
+  DeleteUniversityAccountCookie,
+
+  SetAdminCookie,
+  GetAdminCookie, TryGetAdminCookie,
+  DeleteAdminCookie
 }

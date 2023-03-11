@@ -17,3 +17,13 @@ export function DevUnivAccount() {
   
   return null
 }
+
+export function DevAdmin() {
+  
+  const _id = process.env.DEV_ADMIN_ID
+  if(_id) {
+    return {_id}
+  }
+  
+  return null
+}
