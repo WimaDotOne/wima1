@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { GENERAL_INPUT_MAX } from "../../../../bConfig"
 import { Get2, Post2, TextField1, useShield } from "../../../../libs/Core/Core1/fCore1"
 import { Button1, Div } from "../../../../libs/Core/Core2/fCore2"
+import { WallPaper } from "../AdminHome/WallPaper/WallPaper"
 import cl from "./AdminLogin.module.scss"
 
 interface IAdminLoginProp {
@@ -38,6 +39,7 @@ export function AdminLogin({
   }, [])
 
   return(<>
+  <WallPaper />
   <div className={cl.adminLogin}>
     <div className={cl.row}>
       <TextField1 prompt="Password"

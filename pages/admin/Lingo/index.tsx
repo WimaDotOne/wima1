@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 
-export default function LingoPage() {
+export default function LingoAdminPage() {
 
   return (<>
     <Head>
@@ -9,7 +9,7 @@ export default function LingoPage() {
       <meta name="description" content="" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    
+    Lingo admin
   </>)
 }
 

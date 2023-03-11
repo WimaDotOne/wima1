@@ -1,0 +1,21 @@
+.padWrap {
+  padding: 20px 10px;
+}
+
+.pad {
+  background-color: #ccc2;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  .padWrap {
+    padding: 20px 100px;
+  }
+  .pad {
+    padding: 20px 10px;
+  }
+}
