@@ -10,9 +10,9 @@ const AdminRouter = express.Router()
 
 AdminRouter.get('/LoadAdminApps', iAdminAuth, iLoadAdminApps)
 
-AdminRouter.post('/AdminLogin', iAdminLogin)
 AdminRouter.get('/IsAdminLoggedIn', iIsAdminLoggedIn)
-AdminRouter.post('/Logout', iAdminLogOut)
+AdminRouter.get('/Logout', iAdminLogOut)
+AdminRouter.post('/AdminLogin', iAdminLogin)
 
 
 export {
