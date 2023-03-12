@@ -13,6 +13,7 @@ import { QuizRouter } from "./apps/Quiz/B/Router/QuizRouter.js"
 import { ThankyRouter } from "./apps/Thanky/App/B/Router/ThankyRouter.js"
 import { ThankyWebhook } from "./apps/Thanky/App/B/Webhook/ThankyWebhook.js"
 import { AdminRouter } from "./admin/WimaAdmin/B/Router/AdminRouter.js"
+import { LingoAdminRouter } from "./admin/Lingo/B/Router/LingoAdminRouter.js"
 
 dotenv.config()
 ConnectDb(process.env.MONGO_DB)
@@ -29,6 +30,8 @@ server.use(cookieParser())
 
 DevCors(server)
 
+
+server.use(bConfig.bRoute1+"/lingoAdmin", LingoAdminRouter)
 server.use(bConfig.bRoute1+"/admin", AdminRouter)
 
 server.use(bConfig.bRoute1+"/login", LoginRouter)

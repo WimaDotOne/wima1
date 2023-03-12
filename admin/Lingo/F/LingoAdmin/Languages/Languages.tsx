@@ -1,10 +1,7 @@
-import { LingoAdminWindow } from "../LingoAdminWindow/LingoAdminWindow"
-import cl from "./Languages.module.scss"
+import { LanguagesHome } from "./LanguagesHome/LanguagesHome"
 
 export function Languages() {
   return(<>
-    <LingoAdminWindow>
-      folder 1,
-    </LingoAdminWindow>
+    <LanguagesHome />
   </>)
 }
