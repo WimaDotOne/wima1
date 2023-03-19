@@ -21,6 +21,7 @@ export function NewUnit({
   const shield = useShield()
 
   async function CreateUnit() {
+
     await Post2(shield, "/lingoAdmin/CreateUnit", {
       language,
       unitName,
@@ -39,6 +40,7 @@ export function NewUnit({
           maxLength={GENERAL_INPUT_MAX}
           prompt="Unit name"
           onChange={(newValue)=>{setUnitName(newValue)}} />
+        <Div height={20} />
         <TextField1 value={unitNumber} 
           maxLength={GENERAL_INPUT_MAX}
           prompt="Unit number"

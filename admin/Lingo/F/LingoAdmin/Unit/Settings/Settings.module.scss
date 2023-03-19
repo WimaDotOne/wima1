@@ -1,0 +1,11 @@
+@use "../../../CSS/lingoAdmin.module.scss";
+
+.settings {
+  padding: 10px;
+}
+
+@media screen and (min-width: lingoAdmin.$phoneMaxHeight) {
+  .settings {
+    padding: 10px 30px;
+  }
+}

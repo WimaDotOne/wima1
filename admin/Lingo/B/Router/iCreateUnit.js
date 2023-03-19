@@ -9,6 +9,10 @@ export async function iCreateUnit(req, res) {
     let unitName = (req.body.unitName || "").trim()
     let unitNumber = +req.body.unitNumber
 
+    if(!language) {
+      return res.json({ ok:false, error: "Empty language" })
+    }
+
     if(!IsValidLanguageEnum(language)) {
       return res.json({ ok:false, error: "Invalid language" })
     }
@@ -17,6 +21,7 @@ export async function iCreateUnit(req, res) {
       const count = await LingoUnit.countDocuments({
         language
       })
+      
       unitNumber = count + 1
     }
     if(!unitName) {
@@ -26,12 +31,13 @@ export async function iCreateUnit(req, res) {
     const unit = new LingoUnit({
       _id: mongoose.Types.ObjectId(),
       language,
-      unitName,
-      unitNumber
+      name: unitName,
+      number: unitNumber
     })
 
     await unit.save()
 
+    return res.json({ok: true})
   } catch(err) {
     return res.json({ ok:false, error: err.message })
   }

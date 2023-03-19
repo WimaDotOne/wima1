@@ -1,11 +1,10 @@
-@use "../../../../../CSS/quiz.module.scss";
 
-.chapters {
+.units {
   padding: 10px;
 }
 
-@media screen and (min-width: quiz.$phoneMaxHeight) {
-  .chapters {
+@media screen and (min-width: 800px) {
+  .units {
     padding: 10px 30px;
   }
 }

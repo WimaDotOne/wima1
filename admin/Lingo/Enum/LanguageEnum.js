@@ -17,3 +17,14 @@ export function IsValidLanguageEnum(language) {
       return false
   }
 }
+
+export function LanguageEnumText(language) {
+  switch(language) {
+    case LanguageEnum.Chinese: return "Chinese"
+    case LanguageEnum.French: return "French"
+    case LanguageEnum.German: return "German"
+    case LanguageEnum.Spanish: return "Spanish"
+    default:
+      return ""
+  }
+}

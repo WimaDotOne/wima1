@@ -16,16 +16,19 @@ export function LanguagesHome() {
 
   return(<><LingoAdminWindow>
 
-    <HeadLine text="Languages" color={LingoAdminColor.themeBlue}/>
+    <div className={cl.languages}>
+      <HeadLine text="Languages" color={LingoAdminColor.themeBlue}/>
+      
+      <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
+  
+        <AppleFolder text="Spanish" onClick={()=>{openLanguage(LanguageEnum.Spanish)}} />
+        <AppleFolder text="German"  onClick={()=>{openLanguage(LanguageEnum.German) }} />
+        <AppleFolder text="French"  onClick={()=>{openLanguage(LanguageEnum.French) }} />
+        <AppleFolder text="Chinese" onClick={()=>{openLanguage(LanguageEnum.Chinese)}} />
+          
+      </AutoRepeatGrid>
+    </div>
     
-    <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={10} rowGap={10} paddingTop={25} paddingBottom={10}>
- 
-    <AppleFolder text="Spanish" onClick={()=>{openLanguage(LanguageEnum.Spanish)}} />
-    <AppleFolder text="German"  onClick={()=>{openLanguage(LanguageEnum.German) }} />
-    <AppleFolder text="French"  onClick={()=>{openLanguage(LanguageEnum.French) }} />
-    <AppleFolder text="Chinese" onClick={()=>{openLanguage(LanguageEnum.Chinese)}} />
-        
-    </AutoRepeatGrid>
 
   </LingoAdminWindow></>)
 }

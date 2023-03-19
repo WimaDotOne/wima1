@@ -35,6 +35,11 @@ export const UniversityDataConfig = {
 export const GENERAL_INPUT_MAX = 100
 export const GENERAL_TEXTAREA_MAX = 2000
 
+// Admin Apps
+export const LingoAdminConfig = {
+  scritptFileMaxLength: 200000
+}
+
 // Apps
 export const MovicConfig = {
   movicMaxPerAccount: 100,

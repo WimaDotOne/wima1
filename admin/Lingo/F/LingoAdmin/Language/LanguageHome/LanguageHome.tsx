@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
 import { Get2, useShield } from "../../../../../../libs/Core/Core1/fCore1"
-import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, AutoRepeatGrid, Div } from "../../../../../../libs/Core/Core2/fCore2"
+import { AppleIconButtons, 
+  AppleWindowBottomBarFill, 
+  AppleWindowPlainBottomBarDiv, 
+  AutoRepeatGrid, 
+  Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder, HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { LingoAdminColor } from "../../../CSS/LingoAdminColor"
 import { IUnit } from "../../../Model/IUnit"
@@ -30,7 +34,12 @@ export function LanguageHome({
 
   async function loadChapters() {
     
+    if(!language) return
+
+    // use loaded flag instead of [] in useEffect 
+    // because language might be undefined the first time load
     if(loaded) return
+  
     await Get2(shield, `/lingoAdmin/LoadLanguageUnits?language=${encodeURIComponent(language)}`,
      (res) => {
       setLoaded(true)
