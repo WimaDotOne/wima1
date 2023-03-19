@@ -1,14 +1,17 @@
 import cl from "./ViewUnitName.module.scss"
 
 interface IViewUnitNameProp {
-  title: string
+  name: string,
+  number: string
 }
 export function ViewUnitName({
-  title
+  name,
+  number
 }:IViewUnitNameProp) {
   return(<>
     <div className={cl.title}>
-      {title}
+      {name}  ( # {number} )
     </div>
+
   </>)
 }

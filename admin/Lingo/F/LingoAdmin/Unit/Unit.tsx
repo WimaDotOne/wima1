@@ -33,7 +33,7 @@ export function Unit({
     const query = router.query
     const _id = query.unitId as string
     const unitName = query.unitName as string
-    const unitNumber = +(query.unitNumber as string)
+    const unitNumber = query.unitNumber as string
 
     if(!unit || !unit._id) {
       //check unit to avoid infinitely setting
@@ -45,6 +45,11 @@ export function Unit({
   function setUnitName(name: string) {
     if(!unit) return
     setUnit({...unit, name})
+  }
+
+  function setUnitNumber(number: string) {
+    if(!unit) return 
+    setUnit({...unit, number})
   }
 
   if(!unit) {
@@ -64,6 +69,7 @@ export function Unit({
     case UnitTurn.Settings: return(
       <Settings unit={unit}  
         setUnitName={setUnitName}
+        setUnitNumber={setUnitNumber}
         backToUnitHome={backToUnitHome}/>
     )
     default: return (

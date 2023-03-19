@@ -1,25 +1,37 @@
 import { GENERAL_INPUT_MAX } from "../../../../../../../../bConfig"
-import { TextField1 } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { NumberField1, TextField1 } from "../../../../../../../../libs/Core/Core1/fCore1"
+import { Div } from "../../../../../../../../libs/Core/Core2/fCore2"
 import cl from "./EditUnitName.module.scss"
 
 interface IEditUnitName {
-  title: string,
-  setTitle: (title: string)=>void
+  name: string,
+  setName: (name: string)=>void
+  number: string,
+  setNumber: (number: string)=>void
 }
 
 export function EditUnitName({
-  title, setTitle
+  name, setName,
+  number, setNumber
 }: IEditUnitName) {
 
-  function onChange(newValue: string) {
-    setTitle(newValue)
+  function onNameChange(newValue: string) {
+    setName(newValue)
+  }
+
+  function onNumberChange(newValue: string) {
+    setNumber(newValue)
   }
 
   return(<>
-   <div className={cl.field}>
-     <TextField1 prompt=""
-       value={title} onChange={onChange} 
-       maxLength={GENERAL_INPUT_MAX}/>
+  <div className={cl.field}>
+    <TextField1 prompt=""
+      value={name} onChange={onNameChange} 
+      maxLength={GENERAL_INPUT_MAX}/>
+    <Div height={15} />
+    <NumberField1 prompt="number"
+      value={number} onChange={onNumberChange} 
+      maxLength={GENERAL_INPUT_MAX}/>
    </div>
   </>)
 }

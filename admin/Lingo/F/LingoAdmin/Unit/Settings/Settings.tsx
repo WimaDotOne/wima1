@@ -7,12 +7,14 @@ import { LingoAdminColor } from "../../../CSS/LingoAdminColor"
 
 interface ISettingsProp {
   unit: IUnit
-  setUnitName: (movicTitle: string)=>void
+  setUnitName: (name: string)=>void
+  setUnitNumber: (number: string)=>void
   backToUnitHome: ()=>void
 }
 export function Settings({
   unit,
   setUnitName,
+  setUnitNumber,
   backToUnitHome
 }: ISettingsProp) {
 
@@ -20,7 +22,8 @@ export function Settings({
   <div className={cl.settings}>
     <HeadLine text={unit.name} h={3} />
     <Div height={10} />
-    <UnitName unit={unit} setUnitName={setUnitName}/>
+    <UnitName unit={unit} setUnitName={setUnitName}
+      setUnitNumber={setUnitNumber}/>
     <Div height={20} />
   </div>
   <AppleWindowBottomBarFill />

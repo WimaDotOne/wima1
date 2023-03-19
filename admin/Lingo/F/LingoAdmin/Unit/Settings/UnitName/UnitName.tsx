@@ -8,15 +8,18 @@ import { ViewUnitName } from "./ViewUnitName/ViewUnitName"
 
 interface IUnitNameProp {
   unit: IUnit
-  setUnitName: (movicTitle: string)=>void
+  setUnitName: (name: string)=>void
+  setUnitNumber: (number: string)=>void
 }
 export function UnitName({
   unit,
-  setUnitName
+  setUnitName,
+  setUnitNumber
 }: IUnitNameProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
-  const [title, setTitle] = useState<string>(unit.name)
+  const [name, setName] = useState<string>(unit.name)
+  const [number, setNumber] = useState<string>(unit.number+"")
   const shield = useShield()
 
   async function loadUnitName(onOk?:(res:any)=>void) {
@@ -29,22 +32,28 @@ export function UnitName({
     await Post2(shield, "/lingoAdmin/SaveSettingsUnitName",
       {
         unitId: unit._id,
-        title
+        unitName: name,
+        unitNumber: number
       }, onOk
     )
   }
 
   function onCancel() {
     loadUnitName((res)=>{
-      setTitle(res.movicTitle)
+      setName(res.unitName)
+      setNumber(res.unitNumber)
+      setUnitName(res.unitName)
+      setUnitNumber(res.unitNumber)
       setIsEdit(false)
     })
   }
 
   async function onSave() {
     saveUnitName((res)=>{
-      setTitle(res.movicTitle)
-      setUnitName(res.movicTitle)
+      setName(res.unitName)
+      setUnitName(res.unitName)
+      setNumber(res.unitNumber)
+      setUnitNumber(res.unitNumber)
       setIsEdit(false)
     })
   }
@@ -58,8 +67,9 @@ export function UnitName({
     >
     {
       isEdit ? 
-      <EditUnitName title={title} setTitle={setTitle}/>:
-      <ViewUnitName title={title}/>
+      <EditUnitName name={name} setName={setName} 
+        number={number} setNumber={setNumber}/>:
+      <ViewUnitName name={name} number={number}/>
     }
     </ReadEdit>
   </>)
