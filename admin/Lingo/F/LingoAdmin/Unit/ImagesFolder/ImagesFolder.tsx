@@ -29,7 +29,7 @@ export function ImagesFolder({
 
   async function loadImageFolder() {
     if(imageFolderLoaded) return
-    await Get2(shield, `/movic/LoadImageFolder?unitId=${unit._id}`, (res)=>{
+    await Get2(shield, `/lingoAdmin/LoadImageFolder?unitId=${unit._id}`, (res)=>{
       setImageFolderLoaded(true)
       setImageFiles(OrderImageFilesByName(res.imageFiles))
     })

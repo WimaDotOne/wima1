@@ -28,7 +28,7 @@ export function LingoScript({
     backToUnitHome()
   }
   async function saveFile() {
-    await Post2(shield, "/lingoAdmin/SaveLingoScript", {
+    await Post2(shield, "/lingoAdmin/SaveUnitScript", {
       unitId: unit._id,
       script
     }, (res)=>{
@@ -39,7 +39,7 @@ export function LingoScript({
   async function LoadFile() {
     if(!unit._id) return
     if(loaded) return
-    await Get2(shield, `/lingoAdmin/LoadLingoScript?unitId=${unit._id}`, (res)=>{
+    await Get2(shield, `/lingoAdmin/LoadUnitScript?unitId=${unit._id}`, (res)=>{
       setLoaded(true)
       setScript(res.script)
     })
