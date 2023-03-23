@@ -1,7 +1,7 @@
 import { GENERAL_INPUT_MAX } from "../../../../../bConfig.js"
 import LingoUnit from "../../../../../apps/Lingo/B/Model/LingoUnit.js"
 
-export async function iSaveSettingsUnitName(req, res) {
+export async function iSaveSettingsUnitNameNum(req, res) {
   try{
     const unitId = (req.body.unitId || "").toString()
     const unitName = (req.body.unitName || "").trim()

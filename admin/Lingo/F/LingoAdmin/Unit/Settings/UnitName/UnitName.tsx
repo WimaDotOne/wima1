@@ -8,13 +8,11 @@ import { ViewUnitName } from "./ViewUnitName/ViewUnitName"
 
 interface IUnitNameProp {
   unit: IUnit
-  setUnitName: (name: string)=>void
-  setUnitNumber: (number: string)=>void
+  setUnitNameNumber: (name: string, number: string)=>void
 }
 export function UnitName({
   unit,
-  setUnitName,
-  setUnitNumber
+  setUnitNameNumber,
 }: IUnitNameProp) {
 
   const [isEdit, setIsEdit] = useState<boolean>(false)
@@ -22,14 +20,8 @@ export function UnitName({
   const [number, setNumber] = useState<string>(unit.number+"")
   const shield = useShield()
 
-  async function loadUnitName(onOk?:(res:any)=>void) {
-    await Get2(shield, `/lingoAdmin/LoadSettingsUnitName?unitId=${unit._id}`,
-      onOk
-    )
-  }
-
-  async function saveUnitName(onOk?:(res:any)=>void) {
-    await Post2(shield, "/lingoAdmin/SaveSettingsUnitName",
+  async function saveUnitNameNum(onOk?:(res:any)=>void) {
+    await Post2(shield, "/lingoAdmin/SaveSettingsUnitNameNum",
       {
         unitId: unit._id,
         unitName: name,
@@ -39,21 +31,16 @@ export function UnitName({
   }
 
   function onCancel() {
-    loadUnitName((res)=>{
-      setName(res.unitName)
-      setNumber(res.unitNumber)
-      setUnitName(res.unitName)
-      setUnitNumber(res.unitNumber)
-      setIsEdit(false)
-    })
+    setName(unit.name)
+    setNumber(unit.number)
+    setIsEdit(false)
   }
 
   async function onSave() {
-    saveUnitName((res)=>{
+    saveUnitNameNum((res)=>{
       setName(res.unitName)
-      setUnitName(res.unitName)
       setNumber(res.unitNumber)
-      setUnitNumber(res.unitNumber)
+      setUnitNameNumber(res.unitName, res.unitNumber)
       setIsEdit(false)
     })
   }

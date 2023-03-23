@@ -6,6 +6,7 @@ import { AppleIconButtons,
   AutoRepeatGrid, 
   Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { AppleFolder, HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
+import { LanguageEnumText } from "../../../../Enum/LanguageEnum"
 import { LingoAdminColor } from "../../../CSS/LingoAdminColor"
 import { IUnit } from "../../../Model/IUnit"
 import cl from "./LanguageHome.module.scss"
@@ -54,7 +55,7 @@ export function LanguageHome({
 
   return(<>
   <div className={cl.units}>
-    <HeadLine text={language} buttonText="New Unit" 
+    <HeadLine text={LanguageEnumText(language)} buttonText="New Unit" 
       buttonOnClick={goToNewUnit} 
       color={LingoAdminColor.themeBlue} h={3}/>
     

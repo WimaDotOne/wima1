@@ -18,6 +18,7 @@ export function Unit({
   const [unit, setUnit] = useState<IUnit>()
   const [unitTurn, setUnitTurn] = useState<string>("")
 
+
   const language = router.query.language as string
 
   function backToLanguageHome() {
@@ -42,14 +43,9 @@ export function Unit({
     }
   })
 
-  function setUnitName(name: string) {
-    if(!unit) return
-    setUnit({...unit, name})
-  }
-
-  function setUnitNumber(number: string) {
+  function setUnitNameNumber(name: string, number: string) {
     if(!unit) return 
-    setUnit({...unit, number})
+    setUnit({...unit, name, number})
   }
 
   if(!unit) {
@@ -67,9 +63,8 @@ export function Unit({
       <Preview unit={unit} backToUnitHome={backToUnitHome}/>
     )
     case UnitTurn.Settings: return(
-      <Settings unit={unit}  
-        setUnitName={setUnitName}
-        setUnitNumber={setUnitNumber}
+      <Settings unit={unit}
+        setUnitNameNumber={setUnitNameNumber}
         backToUnitHome={backToUnitHome}/>
     )
     default: return (
