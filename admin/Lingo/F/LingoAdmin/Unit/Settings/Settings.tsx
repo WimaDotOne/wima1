@@ -5,14 +5,17 @@ import { HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { LingoAdminColor } from "../../../CSS/LingoAdminColor"
 import { useState } from "react"
+import { Publish } from "./Publish/Publish"
 
 interface ISettingsProp {
   unit: IUnit
+  setUnitIsPublic: (isPublic: boolean)=>void
   setUnitNameNumber: (name: string, number: string)=>void
   backToUnitHome: ()=>void
 }
 export function Settings({
   unit,
+  setUnitIsPublic,
   setUnitNameNumber,
   backToUnitHome
 }: ISettingsProp) {
@@ -23,6 +26,9 @@ export function Settings({
     <Div height={10} />
     <UnitName unit={unit}
       setUnitNameNumber={setUnitNameNumber}/>
+    <Div height={20} />
+    <Publish unit={unit} 
+      setUnitIsPublic={setUnitIsPublic}/>
     <Div height={20} />
   </div>
   <AppleWindowBottomBarFill />

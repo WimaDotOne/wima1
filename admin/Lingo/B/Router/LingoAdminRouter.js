@@ -10,6 +10,7 @@ import { iLoadUnitScript } from "./iLoadUnitScript.js"
 import { iNewTempFolder } from "./ImageUpload/iNewTempFolder.js"
 import { iUploadImages } from "./ImageUpload/iUploadImages.js"
 import { iSaveUnitScript } from "./iSaveUnitScript.js"
+import { iSaveSettingsIsUnitPublic } from "./UnitSettings/iSaveSettingsIsUnitPublic.js"
 import { iSaveSettingsUnitNameNum } from "./UnitSettings/iSaveSettingsUnitNameNum.js"
 
 const LingoAdminRouter = express.Router() 
@@ -29,6 +30,7 @@ LingoAdminRouter.get('/LoadLanguageUnits', iAdminAuth, iLoadLanguageUnits)
 
 //Unit Settings
 LingoAdminRouter.post('/SaveSettingsUnitNameNum', iAdminAuth, iSaveSettingsUnitNameNum)
+LingoAdminRouter.post('/SaveSettingsIsUnitPublic', iAdminAuth, iSaveSettingsIsUnitPublic)
 
 
 export {

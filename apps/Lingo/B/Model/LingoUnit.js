@@ -5,7 +5,8 @@ const schema = mongoose.Schema({
   language: {type: String, required: true, index: true},
   name: {type: String },
   number: { type: Number, required: true },
-  script1: {type: String}
+  script1: {type: String},
+  isPublic: { type: Boolean, index: true }
 }, {
   timestamps: { currentTime: () => Date.now() }
 })

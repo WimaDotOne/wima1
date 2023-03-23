@@ -3,4 +3,5 @@ export interface IUnit {
   language: string
   name: string
   number: string
+  isPublic: boolean
 }

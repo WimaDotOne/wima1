@@ -25,7 +25,7 @@ export function Language() {
   }
 
   function goToSelectedUnit(unit: IUnit) {
-    router.push(`/admin/Lingo/Unit?language=${language}&unitId=${unit._id}&unitName=${unit.name}&unitNumber=${unit.number}`)
+    router.push(`/admin/Lingo/Unit?language=${language}&unitId=${unit._id}&unitName=${unit.name}&unitNumber=${unit.number}&isPublic=${unit.isPublic || ""}`)
   }
 
   switch(languageTurn) {

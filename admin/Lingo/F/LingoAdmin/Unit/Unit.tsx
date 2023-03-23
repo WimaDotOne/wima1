@@ -35,17 +35,29 @@ export function Unit({
     const _id = query.unitId as string
     const unitName = query.unitName as string
     const unitNumber = query.unitNumber as string
+    const isPublic = !!(query.isPublic as string)
 
     if(!unit || !unit._id) {
       //check unit to avoid infinitely setting
       //check unit.id to avoid setting a unit with undefined id.
-      setUnit({_id,name: unitName, language, number: unitNumber})
+      setUnit({
+        _id,
+        language, 
+        name: unitName, 
+        number: unitNumber, 
+        isPublic
+      })
     }
   })
 
   function setUnitNameNumber(name: string, number: string) {
     if(!unit) return 
     setUnit({...unit, name, number})
+  }
+
+  function setUnitIsPublic(isPublic: boolean) {
+    if(!unit) return 
+    setUnit({...unit, isPublic})
   }
 
   if(!unit) {
@@ -65,6 +77,7 @@ export function Unit({
     case UnitTurn.Settings: return(
       <Settings unit={unit}
         setUnitNameNumber={setUnitNameNumber}
+        setUnitIsPublic={setUnitIsPublic}
         backToUnitHome={backToUnitHome}/>
     )
     default: return (
