@@ -4,7 +4,6 @@ import { IUnit } from "../../../Model/IUnit"
 import { HeadLine } from "../../../../../../libs/Pop/Pop3/fPop3"
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, Div } from "../../../../../../libs/Core/Core2/fCore2"
 import { LingoAdminColor } from "../../../CSS/LingoAdminColor"
-import { useState } from "react"
 import { Publish } from "./Publish/Publish"
 
 interface ISettingsProp {

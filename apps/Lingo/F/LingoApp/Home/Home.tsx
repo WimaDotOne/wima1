@@ -6,7 +6,7 @@ import { Button1, Div, LimitWidth } from "../../../../../libs/Core/Core2/fCore2"
 import { StripeHeader1, StripeIntroText, Wave } from "../../../../../libs/Pop/Pop2/fPop2"
 import { LingoColor } from "../../CSS/LingoColor"
 import { Lang } from "../../Model/Lang"
-import { LanguageOptions, LessonOptions, LevelOptions, UnitIndex, WhichUnit } from "./H/CountUnit"
+import { LanguageOptions, LessonOptions, LevelOptions, UnitIndex } from "./H/CountUnit"
 import cl from "./Home.module.scss"
 
 interface IHomeProp {
