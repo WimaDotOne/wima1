@@ -33,6 +33,7 @@ export function Home({
 
   function goUnit() {
     const index = UnitIndex(+level, +lesson)
+    
     let units: Array<IUnit> = []
     switch(lang) {
       case Lang.Chinese: 

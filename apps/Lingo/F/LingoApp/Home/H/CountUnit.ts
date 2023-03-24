@@ -50,5 +50,5 @@ export function LanguageOptions() {
 }
 
 export function UnitIndex(level: number, lesson: number) {
-  return (level - 1)*LessonCountPerLevel + lesson
+  return (level - 1)*LessonCountPerLevel + lesson - 1
 }
