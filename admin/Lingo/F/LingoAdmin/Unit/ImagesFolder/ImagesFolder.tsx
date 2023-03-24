@@ -52,7 +52,6 @@ export function ImagesFolder({
 
     await Post2(shield, "/lingoAdmin/DeleteUnitImages",
     {
-      unitId: unit._id,
       imageFileIds
     }, (res)=>{
       setImageFolderLoaded(false)
@@ -117,7 +116,6 @@ export function ImagesFolder({
 
   if(isEdit) {
     return(<EditNames 
-      unit={unit}
       imageFiles0={imageFiles.filter(image => image.selected)}
       quitEdit={()=>{setIsEdit(false)}}
     />)
@@ -130,7 +128,7 @@ export function ImagesFolder({
     {
       duplicateName ? 
       <div className={cl.warning}>
-      {`There are two images with the same name (${duplicateName}). Only one can be randomly chosen to be used in a movic.`}
+      {`There are two images with the same name (${duplicateName}). Only one can be randomly chosen to be used in a unit.`}
       </div>: null
     }
     <AutoRepeatGrid autoFill cellMinWidth={100} columnGap={3} rowGap={5} padding={10}>

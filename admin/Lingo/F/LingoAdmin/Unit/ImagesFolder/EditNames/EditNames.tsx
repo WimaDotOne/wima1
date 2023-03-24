@@ -3,16 +3,13 @@ import { Alert, Post2, useShield } from "../../../../../../../libs/Core/Core1/fC
 import { AppleIconButtons, AppleWindowBottomBarFill, AppleWindowPlainBottomBarDiv, AutoRepeatGrid, Div } from "../../../../../../../libs/Core/Core2/fCore2"
 import { LingoAdminColor } from "../../../../CSS/LingoAdminColor"
 import { IImageFile2 } from "../../../../Model/IImageFile"
-import { IUnit } from "../../../../Model/IUnit"
 import { EditName } from "./EditName"
 
 interface IEditNamesProp {
-  unit: IUnit,
   imageFiles0: Array<IImageFile2>
   quitEdit: ()=>void
 }
 export function EditNames({
-  unit,
   imageFiles0,
   quitEdit
 }: IEditNamesProp) {
@@ -33,7 +30,6 @@ export function EditNames({
       Alert("Image name cannot be empty.")
     } 
     await Post2(shield, "/lingoAdmin/ChangeImageNames", {
-      unitId: unit._id,
       imageFiles
     }, (res)=>{
       quitEdit()

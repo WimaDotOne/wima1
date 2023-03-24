@@ -17,9 +17,23 @@ export async function iLoadUnit(req, res) {
       return res.json({ ok:false, error: "Cannot find unit"})
     }
 
-    const imageFiles = await LingoImageFile.find({
-      unitId: unit._id
+    // The same unit # of different languages should share the images
+    const unitNumber = unit.number
+
+    const units = await LingoUnit.find({
+      number: unitNumber
     })
+
+    const unitIds = []
+
+    for(const u of units) {
+      unitIds.push(u._id)
+    }
+
+    const imageFiles = await LingoImageFile.find({
+      unitId: { $in: unitIds }
+    })
+
     let imageDict = {}
     for(const image of imageFiles) {
       const name = image.name
