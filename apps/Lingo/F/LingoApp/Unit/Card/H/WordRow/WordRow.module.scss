@@ -1,0 +1,14 @@
+
+.wordRow.speaker {
+  display: grid;
+  grid-template-columns: auto 25px;
+  grid-column-gap: 5px;
+}
+.word {
+  padding: 20px 0;
+  font-weight: 500;
+}
+.speakerDiv {
+  display: flex;
+  align-items: center;
+}

@@ -3,7 +3,7 @@ export interface IWord {
   word: string
   pinYin?: string
   translate: string
-  illustration: string
+  imageUrl: string
 }
 
 export type IPage = Array<IWord>

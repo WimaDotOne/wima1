@@ -1,0 +1,17 @@
+.imageDiv {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+.translate {
+  font-size: 20px;
+  color: #666;
+}

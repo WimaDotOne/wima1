@@ -45,37 +45,21 @@ export function LingoWindow({
       viewId={win?.viewId} goToView={goToView}
       isLoggedIn={user?.isLoggedInUniv}
     >
-    {
-      user && win && win.viewId ? //if variable not ready, don't load children
-      <>
-      {
-        !user.isLoggedInUniv && IsViewRequreLogin(win.viewId) ?
-        <PleaseLoginUniv loginUrl="/apps/Lingo/AppTurn/UniversityLogin"/>
-        :children 
-      }
-      </>:null
-    }
+    { children }
     </AppleWindow>
-    
   </>)
 }
 
 export const AppTurn = {
-  Learn: "Learn",
+  Home: "Home",
   Exit: "Exit"
 }
 
-function IsViewRequreLogin(viewId?: string) {
-  switch (viewId) {
-    default: return false
-  }
-}
-
 function LingoMenu(viewId?: string): MenuModel | undefined {
-  if(!viewId) viewId = AppTurn.Learn
+  if(!viewId) viewId = AppTurn.Home
 
   const publicGroup = new GroupModel("Lingo", true)
-  publicGroup.AddItem(new ItemModel(AppTurn.Learn, "Learn", "language"))
+  publicGroup.AddItem(new ItemModel(AppTurn.Home, "Home", "language"))
   publicGroup.AddItem(new ItemModel(AppTurn.Exit, "Exit", "wimacircle"))
 
   const menu = new MenuModel(viewId, LingoColor.themeBlue)

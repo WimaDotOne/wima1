@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
-import { Learn } from '../../../apps/Lingo/F/LingoApp/Learn/Learn'
+import { Home } from '../../../apps/Lingo/F/LingoApp/Home/Home'
 import { AppTurn } from '../../../apps/Lingo/F/LingoApp/LingoWindow/LingoWindow'
 import { useAppleWindow } from '../../../libs/Core/Core2/AppleWindow/fAppleWindow'
 
@@ -8,7 +8,7 @@ export default function LingoPage() {
 
   const win = useAppleWindow()
   useEffect(()=>{
-    win?.setViewId(AppTurn.Learn)
+    win?.setViewId(AppTurn.Home)
   })
 
   return (<>
@@ -17,7 +17,7 @@ export default function LingoPage() {
       <meta name="description" content="Lingo" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Learn />
+    <Home />
   </>)
 }
 

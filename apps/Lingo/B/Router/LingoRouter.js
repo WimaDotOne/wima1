@@ -1,10 +1,10 @@
 import express from "express"
-import { iLoadWords } from "./Learn/iLoadWords.js"
+import { iLoadUnit } from "./iLoadUnit.js"
+import { iLoadUnits } from "./iLoadUnits.js"
 const LingoRouter = express.Router()
 
-
-LingoRouter.post('/LoadWords', iLoadWords)
-
+LingoRouter.get("/LoadUnits", iLoadUnits)
+LingoRouter.get("/LoadUnit", iLoadUnit)
 
 export {
   LingoRouter

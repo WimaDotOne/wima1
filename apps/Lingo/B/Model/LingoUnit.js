@@ -6,7 +6,7 @@ const schema = mongoose.Schema({
   name: {type: String },
   number: { type: Number, required: true },
   script1: {type: String},
-  isPublic: { type: Boolean, index: true }
+  isPublic: { type: Boolean}
 }, {
   timestamps: { currentTime: () => Date.now() }
 })

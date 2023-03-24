@@ -1,5 +1,5 @@
 
-export function ParseUnitText(data, isChinese) {
+export function ParseUnitText(data, isChinese, imageDict) {
   const words = data.split("\n")
   const json = []
   const pageDivider = "==="
@@ -15,8 +15,8 @@ export function ParseUnitText(data, isChinese) {
     const wordInfo = w.split("|")
     let word = (wordInfo[0] || "").trim()
     const translate = (wordInfo[1] || "").trim()
-    const illustration = (wordInfo[2] || "").trim()
-    
+    const imageName = (wordInfo[2] || "").trim()
+    const imageUrl = imageDict[imageName] || ""
     
     if(isChinese) {
       const word2 = word.split("^")
@@ -24,12 +24,12 @@ export function ParseUnitText(data, isChinese) {
       const pinYin = (word2[1] || "").trim()
 
       page.push({
-        word, translate, illustration, pinYin
+        word, translate, imageUrl, pinYin
       })
 
     } else {
       page.push({
-        word, translate, illustration
+        word, translate, imageUrl
       })
     }
 
