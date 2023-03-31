@@ -1,3 +1,4 @@
+import { Alert } from "../../../../libs/Core/Core1/fCore1"
 import { Lang } from "./Lang"
 
 declare global {
@@ -19,11 +20,13 @@ export class Recog {
   isRecording = false
 
   constructor(window: Window, lang?: string) {
+  
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
     const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList
     const SpeechRecognitionEvent = window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent
     
     if(!SpeechRecognition || !SpeechGrammarList || !SpeechRecognitionEvent) {
+
       this.canRecognize = false
       this.info = "The browser cannot recognize speech"
       return
@@ -37,12 +40,13 @@ export class Recog {
     this.recognition.maxAlternatives = 1;
   }
 
+  
+
   Recognize(word: string, 
     onResult:(result: string)=>void,
     onAudioStart?: ()=>void,
     onAudioEnd?: ()=>void
     ) {
-
     this.recognition.onresult = (e: any) => {
       const result = e.results[0][0].transcript
       if(onResult) { onResult(result) }
@@ -55,6 +59,10 @@ export class Recog {
     this.recognition.onaudioend = (e: any) => {
       if(onAudioEnd) { onAudioEnd() }
       this.recognition.stop()
+    }
+
+    this.recognition.onerror = (err: any)=> {
+      Alert(err.error + " " + err.message)
     }
 
     const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList
