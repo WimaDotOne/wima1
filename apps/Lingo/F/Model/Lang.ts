@@ -1,9 +1,11 @@
+import { LangCode } from "../../../../admin/Lingo/Enum/LanguageEnum"
+
 const Lang = {
-  English: "en-US",
-  Chinese: "zh-CN",
-  German: "de-DE",
-  French: "fr-FR",
-  Spanish: "es-ES"
+  English: LangCode.English,
+  Chinese: LangCode.Chinese,
+  German: LangCode.German,
+  French: LangCode.French,
+  Spanish: LangCode.Spanish
 }
 export { Lang }
 

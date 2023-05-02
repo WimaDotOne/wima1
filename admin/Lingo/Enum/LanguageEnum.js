@@ -6,6 +6,14 @@ export const LanguageEnum = {
   Spanish: "@spanish"
 }
 
+export const LangCode = {
+  English: "en-US",
+  Chinese: "zh-CN",
+  German: "de-DE",
+  French: "fr-FR",
+  Spanish: "es-ES"
+}
+
 export function IsValidLanguageEnum(language) {
   switch(language) {
     case LanguageEnum.Chinese:
@@ -28,3 +36,16 @@ export function LanguageEnumText(language) {
       return ""
   }
 }
+
+
+export function LanguageEnumCode(language) {
+  switch(language) {
+    case LanguageEnum.Chinese: return LangCode.Chinese
+    case LanguageEnum.French: return LangCode.French
+    case LanguageEnum.German: return LangCode.German
+    case LanguageEnum.Spanish: return LangCode.Spanish
+    default:
+      return ""
+  }
+}
+

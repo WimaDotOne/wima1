@@ -11,9 +11,17 @@ import { Keyboard } from "./Keyboard/Keyboard"
 import cl from "./Unit.module.scss"
 
 interface IUnitProp {
+  lang2?: string
+  unitId2?: string
+  goBack?: ()=>void
+  isAdminPreview?: boolean
 }
-export function Unit({
 
+export function Unit({
+  lang2,
+  unitId2,
+  goBack,
+  isAdminPreview
 }: IUnitProp) {
 
   const [page, setPage] = useState<number| string>(1)
@@ -23,11 +31,15 @@ export function Unit({
   const shield = useShield()
   const router = useRouter()
 
-  const lang = router.query.lang as string
-  const unitId = router.query.unitId as string
+  const lang = lang2 || router.query.lang as string
+  const unitId = unitId2 || router.query.unitId as string
 
   function goHome() {
-    router.push("/apps/Lingo")
+    if(goBack) {
+      goBack()
+    } else {
+      router.push("/apps/Lingo")
+    }
   }
 
   async function loadUnit() {
@@ -55,9 +67,8 @@ export function Unit({
 
   const words = pages[+page-1] || []
 
-  return(<><LingoWindow>
-
-  <div className={cl.book}>
+  const unitCore = 
+    <div className={cl.book}>
     <div className={cl.homeDiv} onClick={goHome}>
       <SvgIcon name="home" width={24} color="#f7f7f7" />
     </div>
@@ -91,5 +102,11 @@ export function Unit({
     </div>
     <Div height={20} />
   </div>
+
+  if(isAdminPreview) {
+    return unitCore
+  }
+  return(<><LingoWindow>
+  {unitCore}
   </LingoWindow></>)
 }
